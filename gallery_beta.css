@@ -1436,3 +1436,7 @@ border-radius: 3px;
 	border: 1px solid #898989;
 	border-radius: 3px;
 }
+
+#othergallery .para {
+border-left: 1px solid #898989; padding-left: 15px; width: 1200px; margin: auto; padding-bottom: 10px; box-sizing: border-box;
+}
