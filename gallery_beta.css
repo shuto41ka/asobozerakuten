@@ -58,14 +58,18 @@ table.gallerytable td{
 	width:600px;
 }
 .gallerylink{
-	width:600px;
-	height:275px;
-	float:right;
-	margin:0 auto;
-	padding:60px 120px;
-	box-sizing:border-box;
-		margin-bottom:50px;
-
+    width: 600px;
+    height: 150px;
+    float: right;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    padding-top: 0px;
+    padding-right: 120px;
+    padding-left: 120px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
 }
 #large1{
 	display:block;
@@ -1379,18 +1383,17 @@ border-color: transparent transparent transparent #8e1728;
 } 
 
 .shoukaigrid {
-	display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-auto-rows: 1fr;
-  grid-gap: 0.8em;
-  padding: 0.8em;
-  margin: 0 0 2em;
+
+	display: grid;
+	grid-template-rows: 450px 450px 450px;
+	grid-template-columns: 600px 600px;
+	margin-bottom: 30px;
 }
 
 .shoukaigrid > div {
-  overflow: auto;
   min-width: 0;
   padding: 1em;
+	width: auto;
 }
 .snslogos img {
 	height: 50px;
@@ -1413,4 +1416,23 @@ border-color: transparent transparent transparent #8e1728;
 }
 .souryoutable {
 	border-collapse:collapse;
+}
+.kuwashikumiru {
+	width:150px; height:30px; background-color:#898989; color:#FFFFFF; text-align:center; text-decoration: none;
+	vertical-align: middle;
+border-radius: 3px;
+}
+.kuwashikumiru a {
+	text-decoration: none;
+	color: #FFFFFF;
+	box-sizing: border-box;
+	display: block;
+
+	line-height: 30px;
+}
+.kuwashikumiru a:hover {
+	color: #898989;
+	background-color: #FFFFFF;
+	border: 1px solid #898989;
+	border-radius: 3px;
 }
