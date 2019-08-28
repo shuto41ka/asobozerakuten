@@ -1,0 +1,51 @@
+<div id="othergallery">
+<div class="swiper-container">
+ <div class="swiper-wrapper">
+  <div class="swiper-slide"> <a href="https://www.rakuten.ne.jp/gold/asoboze/gallery/gallery/wformal.html" target="_top">
+  <img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/womensformal/g_wformal_12.jpg" />
+</a>
+  </div>
+  <div class="swiper-slide"> <a href="https://www.rakuten.ne.jp/gold/asoboze/gallery/gallery/rintosh1.html" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/rintosh1/g_rintosh1_01.jpg"/></a>
+  </div>
+  <div class="swiper-slide"> <a href="https://www.rakuten.ne.jp/gold/asoboze/gallery/gallery/business1.html" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_01.jpg"/></a>
+  </div>
+  <div class="swiper-slide"> <a href="https://www.rakuten.ne.jp/gold/asoboze/gallery/gallery/business2.html" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_01.jpg"/></a>
+  </div>
+  <div class="swiper-slide"> <a href="#" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_16.jpg"/></a>
+  </div>
+  <div class="swiper-slide"> <a href="#" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_16.jpg"/></a>
+  </div>
+ </div>
+<!-- ここまでコピー　-->
+     <div class="swiper-pagination"></div>
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+<script type="text/javascript">
+    var mySwiper = new Swiper ('.swiper-container', {
+      loop: true,
+      slidesPerView: 4,
+      spaceBetween: 10,
+	  autoplay: true,
+	  speed: 6000,
+      centeredSlides : true,
+      pagination: '.swiper-pagination',
+      nextButton: '.swiper-button-next',
+      prevButton: '.swiper-button-prev',
+	  preventClicks: false,
+	  preventClicksPropagation: false, 
+      breakpoints: {
+        759: {
+          slidesPerView: 3,
+          spaceBetween: 0,
+		  speed: 3000,
+		  autoplay: true,
+        }
+      }
+    });
+	</script>
+</div>
