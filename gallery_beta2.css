@@ -2,146 +2,129 @@
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500&display=swap&subset=japanese');
 
-html{
+html, body{
+	height:100%;
 	width:100%;
-	overflow-x:hidden;
-	overflow-wrap:break-word;
-	word-wrap:break-word;
 	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
 }
 #container1200{
-	width:1200px;
+	width:760px;
 	margin:20px auto;
-	overflow-wrap:break-word;
-	word-wrap:break-word;
 }
 .wrap600{
-	width:600px;
+	width:50%;
 	float:left;
 	display:block;
-	height:600px;
 }
 .wrap600 img{
-	width:600px;
+	width:100%;
 }
 .wrap600 .wraptext{
-	margin:100px auto;
+	margin:20px auto;
 	display:block;
-	padding:0 120px;
+	padding:0 40px;
+	width:90%;
 }
 .gallerytitle p{
-	font-size:48px;
+	font-size:40px;
 	margin-bottom:0;
 }
 .gallerysub p{
-	font-size:36px;
+	font-size:26px;
 }
 .gallerytext p{
-	font-size:18px;
-	font-weight:lighter;
+	font-size:16px;
 }
 table.gallerytable{
-	width:1200px;
+	width:760px;
 	clear:both;
-	padding:50px;
+	padding:5%;
 }
 table.gallerytable td{
-	height:350px;
+	width:50px;
+}
+table.gallerytable td img{
+	width:100%;
 }
 .galleryshohin{
-	width:600px;
+	width:100%;
 	float:left;
-	height:275px;
-	margin-bottom:50px;
+	margin-bottom:5%;
+	clear:both;
 }
 .galleryshohin img{
-	width:600px;
+	width:100%;
 }
 .gallerylink{
-    width: 600px;
-    height: 150px;
-    float: right;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 25px;
-    padding-top: 0px;
-    padding-right: 120px;
-    padding-left: 120px;
-    padding-bottom: 30px;
-    box-sizing: border-box;
-    margin-bottom: 25px;
+	width:100%;
+	float:right;
+	margin:0 auto;
+	padding:5% 0 5% 5%;
+	box-sizing:border-box;
+		height:auto;
+}
+.gallerylink img{
+	width:180px;
 }
 #large1{
 	display:block;
 	height:100vh;
 	width:auto;
-	margin:auto;
 }
 #large2{
 	display:block;
 	height:100vh;
 	width:auto;
-	margin:auto;
 }
 #large3{
 	display:block;
 	height:100vh;
 	width:auto;
-	margin:auto;
 }
 #large4{
 	display:block;
 	height:100vh;
 	width:auto;
-	margin:auto;
 }
 #large5{
 	display:block;
 	height:100vh;
 	width:auto;
-	margin:auto;
 }
 #large6{
 	display:block;
 	height:100vh;
 	width:auto;
-	margin:auto;
 }
 #large7{
 	display:block;
 	height:100vh;
 	width:auto;
-	margin:auto;
 }
 #large8{
 	display:block;
 	height:100vh;
 	width:auto;
-	margin:auto;
 }
 #large9{
 	display:block;
 	height:100vh;
 	width:auto;
-	margin:auto;
 }
 #large10{
 	display:block;
 	height:100vh;
 	width:auto;
-	margin:auto;
 }
 #large11{
 	display:block;
 	height:100vh;
 	width:auto;
-	margin:auto;
 }
 #large12{
 	display:block;
 	height:100vh;
 	width:auto;
-	margin:auto;
 }
 .reviews #large1{
 	display:block;
@@ -230,10 +213,12 @@ table.gallerytable td{
 	width:100%;
 	background-color:#fff;
 }
+
 #sponly{
-	display:none !important;
+	display:none;
 	visibility:hidden;
 }
+
 
 .my-parts {
   display: none;
@@ -241,7 +226,7 @@ table.gallerytable td{
   height: 60px;
   position: fixed;
   top:18px;
-  right:25px;
+  right:45px;
   background: rgba(0,0,0,0.75);
   border-radius:50%;
 }
@@ -250,11 +235,11 @@ table.gallerytable td{
   display: block;
   content: "";
   position: absolute;
-  top: 33px;
-  right: 9px;
-  width: 70%;
+  top: 29px;
+  right: 8px;
+  width: 74%;
   height: 7%;
-  margin: -8% 0 0 -42%;
+  margin: -3% 0 0 -30%;
   background: rgb(255, 255, 255);
 }
 .my-parts span::before {
@@ -263,50 +248,43 @@ table.gallerytable td{
 .my-parts span::after {
   transform: rotate(45deg);
 }
+
 .forsp p{
-	padding-top:30px;
-	padding-left:30px;
+	padding-top:20px;
 }
 .swiper-container{
-	width:1200px;
+	width:760px;
 }
 .swiper-slide img{
-	width:250px;
-}
-.gallerytable tr td img {
-	width:300px;
-	height:300px;
+	width:85%;
 }
 .reviewwrap {
-	min-width:500px;
-	max-width:700px;
+	width:50%;
 	display:block;
-	padding:50px;
+	padding-left:20px;
 	position:fixed;
-	top:100px;
-	left:50%;
-	background:rgba(255,255,255,0.9);
+	bottom:0;
+	right:0;
+	background:rgba(255,255,255,0.75);
 }
 .reviewwrap .reviewtitle p{
-	padding:15px;
-	margin:15px;
+	padding-left:20px;
+	padding-top:10px;
 	font-size:24px;
+	line-height:20px;
 }
 .reviewwrap .reviewcomment p{
-	padding:0 15px 15px 15px;
-	margin:15px;
+	padding:0 40px 0 20px;
 	font-size:18px;
-}
-.reviewwrap .reviewcomment a img{
-	width:300px;
+	line-height:24px;
 }
 .pagejump {
-	width:400px;
+	width:300px;
 	height:30px;
 	background-color:#bbb;
 	margin:auto;
 	text-align:center;
-	margin-bottom:30px;
+	margin-bottom:15px;
 }
 .pagejump a{
 	line-height:30px;
@@ -329,16 +307,6 @@ table.gallerytable td{
 	text-decoration:none;
 	color:rgba(0,0,153,1);
 }
-.wrap600 img {
-	height: 600px;
-	width: 600px;
-}
-html{
-	width:100%;
-	overflow-x:hidden;
-}
-/*　スペック */
-
 .spec01 {
     clear: both;
     width: 720px;
@@ -450,44 +418,6 @@ html{
 	line-height: 1.7em;
 	margin: 0;
 }
-.base21 ul{
-	padding:0 120px 80px 120px;
-	font-size: 18px;
-	color: #494949;
-	line-height: 1.7em;
-	margin: 0;
-}
-.base21 ul li{
-	padding: 10px 0;
-	font-size: 18px;
-	color: #494949;
-	line-height: 1.7em;
-	margin: 0;
-}
-.cntr20 p {
-	font-size: 24px;
-	font-weight: bold;
-	color: #191919;
-	margin: 0 auto;
-	padding-bottom: 15px;
-	padding-top: 0px;
-	letter-spacing: 0.1em;
-	display: inline-block;
-	text-align: center;
-	margin: 0 auto;
-}
-.cntr21 p {
-	padding-top: 0px;
-	padding-bottom: 30px;
-	display: inline-block;
-	text-align: center;
-	font-size: 18px;
-	color: #494949;
-	line-height: 1.5em;
-	letter-spacing: 0.1em;
-	margin: 0;
-}
-
 .base10 ul{
 	padding-bottom: 40px;
 	padding-left: 55px;
@@ -638,13 +568,13 @@ html{
 }
 
 .alpha span:nth-child(1) {
-	display: block;
-	position: absolute;
-	width: 83px;
-	left: 0;
-	top: 0;
-	padding-left: 37px;
-	line-height: 43px;
+	display:block;
+	position:absolute;
+	width:83px;
+	left:0;
+	top:0;
+	padding-left:37px;
+	line-height:43px;
 }
 .alpha span:nth-child(2) {
 	display: block;
@@ -1021,27 +951,28 @@ html{
 			vertical-align: middle;
 		}
 /* サイドバナー終わり */
+
 /*　ページフッター旧ページより　*/
 
 .midashifot2 .fottertitle2 tr th {
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #898989;
 	border-right-width: 1px;
 	border-right-style: solid;
 	border-right-color: #898989;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #898989;
 	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #898989;
 	height: 40px;
 	color: #898989;
-	background-color: #ffffff;
 	background-position: left top;
 	padding-right: 1em;
 	padding-left: 1em;
 	font-size: 15px;
 	text-align: left;
 	line-height: 40px;
+	font-weight: bold;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 }
 .midashifot2 .fottertitle2 {
@@ -1051,11 +982,9 @@ html{
 	border-collapse: collapse;
 	border-spacing: 0;
 	empty-cells: show;
-	max-width: 100%;
-	width: 1200px;
+	width: 760px;
 }
 .midashifot2 .fottertitle2 tr td {
-	width: 390px;
 	border-right-width: 1px;
 	border-right-style: solid;
 	border-right-color: #898989;
@@ -1065,26 +994,28 @@ html{
 	line-height: 160%;
 	font-size: 12px;
 	list-style-position: inside;
+	padding-bottom: 15px;
+	padding-right: 1em;
+	padding-left: 1em;
 	text-align: left;
-	margin-top: 30px;
-	padding: 20px;
+	margin-top: 0px;
 	vertical-align: top;
 	padding-top: 15px;
 	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-
 }
 
 .midashifot2 .fottertitle2 tr {
-	text-align: left;
+	text-align:left;
 }
 
 .midashifot2 {
-	text-align: center;
-	margin-top: 15px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 1200px;
-	margin-bottom: 60px;
+	text-align:center;
+	margin-top:15px;
+	margin-bottom:15px;
+	margin-left:auto;
+   	margin-right:auto;
+	width:760px;
+	margin-bottom:60px;
 }
 /*　ヘッダーall背景など　*/
 
@@ -1099,7 +1030,7 @@ html{
 #allfotter #footer1 .foota {
 	padding: 15px;
 	color: #fff;
-	width: 700px;
+	width: 650px;
 	text-align: center;
 	margin: auto;
 }
@@ -1140,7 +1071,6 @@ html{
 
 #footer3 {
 	background-color: #8E1728;
-	width: 1200px;
 	margin-right: auto;
 	margin-left : auto;
 	font-size: 10px;
@@ -1149,14 +1079,20 @@ html{
 	clear: both;
 }
 
-.souryou span:nth-child(1) {
-	display:inline-block;
-}
-.souryou span:nth-child(2) {
+.narrowhide {
 	display:none;
 }
 
-
+.souryou span:nth-child(1) {
+	display:none;
+}
+.souryou span:nth-child(2) {
+	display:inline-block;
+	width:150px;
+}
+.souryou span:nth-child(2)  img{
+	width:150px;
+}
 #header {
 	text-align: center;
 	width: 1000px;
@@ -1322,59 +1258,49 @@ border-color: transparent transparent transparent #8e1728;
 
 
 .midashifot2 .fottertitle2 tr td img {
-	width: 350px;
+	width: 200px;
 }
 .sponly{
 	display:none;
 }
+
 .gallerywrap .reviewcomment .galnext img{
-	width:300px;
+	width:220px;
 	margin:auto;
-	padding:0;
+	padding:30px 0;
 	display:block;
 }
 .gallerywrap .reviewcomment .galback img{
-	width:300px;
+	width:220px;
 	margin:auto;
-	padding:0;
+	padding:30px 0;
 	display:block;
 }
 .galback{
-		margin:0;
-	padding:0;
+		margin-right:0;
+	padding-right:20px;
 	display:block;
 }
 .galnext{
-		margin:0;
-		padding:0;
+	margin-right:0;
+	padding-right:20px;
 	display:block;
 }
 .gallerywrap {
-	max-width:400px;
+	width:250px;
 	display:block;
-	padding:50px;
+	padding-left:20px;
 	position:fixed;
-	top:-30px;
-	left:900px;
-	background:rgba(255,255,255,0.9);
+	top:0;
+	right:10px;
+	background:rgba(255,255,255,0.75);
 	height:100%;
 }
 .gallerywrap .reviewcomment p{
-	padding:0 15px 15px 20px;
-	margin:15px;
+	padding:0 20px 0 15px;
 	font-size:18px;
+	line-height:24px;
 }
-.basewrap600{
-	width:600px;
-	float:left;
-	display:block;
-}
-.clearbox{
-	clear:both;
-	height:30px;
-	width:100%;
-}
-
 /* ふわっと表示させるアレ */
 .effect div {
   margin: auto;
@@ -1385,8 +1311,8 @@ border-color: transparent transparent transparent #8e1728;
 .shoukaigrid {
 
 	display: grid;
-	grid-template-rows: 450px 450px 450px;
-	grid-template-columns: 600px 600px;
+	grid-template-rows: 350px 350px 350px;
+	grid-template-columns: 350px 350px;
 	margin-bottom: 30px;
 }
 
