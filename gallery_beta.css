@@ -2083,7 +2083,7 @@ html{
 .cntr21 p {
 	padding-top: 0px;
 	padding-bottom: 30px;
-	display: inline-block;
+	display: block;
 	text-align: center;
 	font-size: 18px;
 	color: #494949;
