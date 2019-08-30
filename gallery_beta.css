@@ -20,7 +20,7 @@ html{
 	width:600px;
 	float:left;
 	display:block;
-	height:600px;
+	max-height:600px;
 }
 .wrap600 img{
 	width:600px;
@@ -331,8 +331,9 @@ table.gallerytable td{
 	color:rgba(0,0,153,1);
 }
 .wrap600 img {
-	height: 600px;
+	max-height: 600px;
 	width: 600px;
+	height:auto;
 }
 html{
 	width:100%;
