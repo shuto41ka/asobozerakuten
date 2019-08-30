@@ -307,6 +307,108 @@ table.gallerytable td img{
 	text-decoration:none;
 	color:rgba(0,0,153,1);
 }
+
+.shoukaigrid {
+
+	display: grid;
+	grid-template-rows: 350px 350px 350px;
+	grid-template-columns: 350px 350px;
+	margin-bottom: 30px;
+}
+
+.shoukaigrid > div {
+  min-width: 0;
+  padding: 1em;
+	width: auto;
+}
+.snslogos img {
+	height: 50px;
+	padding: 10px;
+	text-align:center;
+}
+.snslogos a img:hover {
+	opacity:0.8;
+}
+.snslogos {
+	width:500px;
+	margin:60px auto 0;
+}
+.souryoutable tr td{
+	vertical-align:middle;
+	border:1px solid #898989;
+	border-collapse:collapse;
+	border-spacing:0;
+	padding:5px;
+}
+.souryoutable {
+	border-collapse:collapse;
+}
+.kuwashikumiru {
+	width:150px; height:30px; background-color:#898989; color:#FFFFFF; text-align:center; text-decoration: none;
+	vertical-align: middle;
+border-radius: 3px;
+}
+.kuwashikumiru a {
+	text-decoration: none;
+	color: #FFFFFF;
+	box-sizing: border-box;
+	display: block;
+
+	line-height: 30px;
+}
+.kuwashikumiru a:hover {
+	color: #898989;
+	background-color: #FFFFFF;
+	border: 1px solid #898989;
+	border-radius: 3px;
+	transition-duration: 0.5s;
+}
+
+#othergallery .para {
+	border-left: 1px solid #898989; padding-left: 15px; width: 1000px; margin:0 auto; padding-bottom: 5px; box-sizing: border-box;
+	line-height:18px;
+}
+
+.gallerywrap .reviewcomment .galnext img{
+	width:220px;
+	margin:auto;
+	padding:30px 0;
+	display:block;
+}
+.gallerywrap .reviewcomment .galback img{
+	width:220px;
+	margin:auto;
+	padding:30px 0;
+	display:block;
+}
+.galback{
+		margin-right:0;
+	padding-right:20px;
+	display:block;
+}
+.galnext{
+	margin-right:0;
+	padding-right:20px;
+	display:block;
+}
+.gallerywrap {
+	width:250px;
+	display:block;
+	padding-left:20px;
+	position:fixed;
+	top:0;
+	right:10px;
+	background:rgba(255,255,255,0.75);
+	height:100%;
+}
+.gallerywrap .reviewcomment p{
+	padding:0 20px 0 15px;
+	font-size:18px;
+	line-height:24px;
+}
+
+
+/* ギャラリー関係終わり */
 .spec01 {
     clear: both;
     width: 720px;
@@ -384,6 +486,7 @@ table.gallerytable td img{
 	display: inline-block;
 	text-align: center;
 	margin: 0 auto;
+	width:100%;
 }
 .cntr12 p {
 	padding-top: 0px;
@@ -394,7 +497,7 @@ table.gallerytable td img{
 	color: #494949;
 	line-height: 1.5em;
 	letter-spacing: 0.1em;
-	margin: 0;
+	margin: 0 auto;
 }
 .base22 p {
 	font-size: 20px;
@@ -461,18 +564,6 @@ table.gallerytable td img{
 	line-height:45px;
 	text-align: center;
 	margin:0;
-}
-.sfbanner p.alpha{
-}
-.sfbanner.side1{
-
-}
-.sfbanner.side2{
-
-}
-.sfbanner.side3{
-}
-.sfbanner.side4{
 }
 .ac-container2{
 	width: 120px;
@@ -1093,6 +1184,10 @@ table.gallerytable td img{
 .souryou span:nth-child(2)  img{
 	width:150px;
 }
+
+/*　フッター終わり　*/
+
+/*　ヘッダー　*/
 #header {
 	text-align: center;
 	width: 1000px;
@@ -1255,52 +1350,12 @@ border-color: transparent transparent transparent #8e1728;
 	border-bottom-style: none;
 	border-left-style: none;
 }
-
+/*　ヘッダー終わり　*/
 
 .midashifot2 .fottertitle2 tr td img {
 	width: 200px;
 }
-.sponly{
-	display:none;
-}
 
-.gallerywrap .reviewcomment .galnext img{
-	width:220px;
-	margin:auto;
-	padding:30px 0;
-	display:block;
-}
-.gallerywrap .reviewcomment .galback img{
-	width:220px;
-	margin:auto;
-	padding:30px 0;
-	display:block;
-}
-.galback{
-		margin-right:0;
-	padding-right:20px;
-	display:block;
-}
-.galnext{
-	margin-right:0;
-	padding-right:20px;
-	display:block;
-}
-.gallerywrap {
-	width:250px;
-	display:block;
-	padding-left:20px;
-	position:fixed;
-	top:0;
-	right:10px;
-	background:rgba(255,255,255,0.75);
-	height:100%;
-}
-.gallerywrap .reviewcomment p{
-	padding:0 20px 0 15px;
-	font-size:18px;
-	line-height:24px;
-}
 /* ふわっと表示させるアレ */
 .effect div {
   margin: auto;
@@ -1308,63 +1363,3 @@ border-color: transparent transparent transparent #8e1728;
   transition-delay: .1s;
 } 
 
-.shoukaigrid {
-
-	display: grid;
-	grid-template-rows: 350px 350px 350px;
-	grid-template-columns: 350px 350px;
-	margin-bottom: 30px;
-}
-
-.shoukaigrid > div {
-  min-width: 0;
-  padding: 1em;
-	width: auto;
-}
-.snslogos img {
-	height: 50px;
-	padding: 10px;
-	text-align:center;
-}
-.snslogos a img:hover {
-	opacity:0.8;
-}
-.snslogos {
-	width:500px;
-	margin:60px auto 0;
-}
-.souryoutable tr td{
-	vertical-align:middle;
-	border:1px solid #898989;
-	border-collapse:collapse;
-	border-spacing:0;
-	padding:5px;
-}
-.souryoutable {
-	border-collapse:collapse;
-}
-.kuwashikumiru {
-	width:150px; height:30px; background-color:#898989; color:#FFFFFF; text-align:center; text-decoration: none;
-	vertical-align: middle;
-border-radius: 3px;
-}
-.kuwashikumiru a {
-	text-decoration: none;
-	color: #FFFFFF;
-	box-sizing: border-box;
-	display: block;
-
-	line-height: 30px;
-}
-.kuwashikumiru a:hover {
-	color: #898989;
-	background-color: #FFFFFF;
-	border: 1px solid #898989;
-	border-radius: 3px;
-	transition-duration: 0.5s;
-}
-
-#othergallery .para {
-	border-left: 1px solid #898989; padding-left: 15px; width: 1000px; margin:0 auto; padding-bottom: 5px; box-sizing: border-box;
-	line-height:18px;
-}
