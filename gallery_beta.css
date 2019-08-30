@@ -490,6 +490,18 @@ html{
     margin: 0;
 }
 
+/* 半分の要素 */
+.wraphalf{
+	width:600px;
+	float:left;
+	display:block;
+	max-height:600px;
+}
+.wraphalf img{
+	width:600px;
+}
+
+
 .base10 ul{
 	padding-bottom: 40px;
 	padding-left: 55px;

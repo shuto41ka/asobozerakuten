@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.mt18002 {
+	background-image:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/mt18002/2019/mt18002_32.jpg); 
+	width:1200px; 
+	height:550px; background-repeat: no-repeat; position:relative; background-size: contain;
+	
+}
+
+.mt18002 .inner {
+	position: absolute; left: 735px; top: 146px;
+}
+
+@media screen and (max-width:1200px) {
+	.inner p {
+		font-size: 14px !important;
+	}
+	.mt18002 {
+			background-image:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/mt18002/2019/mt18002_32.jpg); width: 760px; height: 348px; background-repeat: no-repeat; position:relative; background-size: contain;	
+	}
+	.mt18002 .inner {
+    position: absolute;
+    left: 454px;
+    top: 70px;
+    width: 250px;
+	}
+}
