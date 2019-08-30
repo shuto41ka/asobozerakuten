@@ -381,14 +381,14 @@ table.gallerytable td img{
 	padding-bottom: 15px;
 	padding-top: 0px;
 	letter-spacing: 0.1em;
-	display: inline-block;
+	display: block;
 	text-align: center;
 	margin: 0 auto;
 }
 .cntr12 p {
 	padding-top: 0px;
 	padding-bottom: 30px;
-	display: inline-block;
+	display: block;
 	text-align: center;
 	font-size: 14px;
 	color: #494949;
