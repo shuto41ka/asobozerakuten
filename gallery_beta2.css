@@ -12,6 +12,10 @@ html, body{
 	width:760px;
 	margin:20px auto;
 }
+#container1200 img {
+	width: 100%;
+	max-width: 760px;
+}
 .wrap600{
 	width:50%;
 	float:left;
@@ -359,7 +363,7 @@ table.gallerytable td img{
 	color: #191919;
 	margin: auto 0;
 	padding-top: 30px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	letter-spacing: -0.05em;
 	width: auto;
 	text-align: center;
@@ -398,27 +402,71 @@ table.gallerytable td img{
 	margin: 0;
 }
 .base22 p {
-	font-size: 20px;
-	font-weight: bold;
-	letter-spacing: 0.2em;
-	margin: 0;
-	padding:40px 120px 15px 120px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin: 0;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 15px;
 }
 .base20 p {
-	font-size: 24px;
-	font-weight: bold;
-	color: #191919;
-	margin: 0px;
-	line-height: 1.4em;
-	padding:0 120px 30px 120px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #191919;
+    margin: 0px;
+    line-height: 1.4em;
+    padding-top: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 30px;
 }
 .base21 p {
-	padding:0 120px 80px 120px;
-	font-size: 18px;
+	padding:0 30px 80px 30px;
+	font-size: 12px;
 	color: #494949;
 	line-height: 1.7em;
 	margin: 0;
 }
+
+.cntr20 p {
+    font-size: 18px;
+    font-weight: bold;
+    color: #191919;
+    margin: 0 auto;
+    padding-bottom: 15px;
+    padding-top: 0px;
+    letter-spacing: 0.1em;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+.cntr21 p {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #494949;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
+/* 半分の要素 */
+.wraphalf{
+	width:50%;
+	float:left;
+	display:block;
+	max-height:380px;
+}
+.wraphalf img{
+	width:50%;
+}
+
+
+
 .base10 ul{
 	padding-bottom: 40px;
 	padding-left: 55px;
@@ -1838,13 +1886,16 @@ border-radius: 3px;
 	text-align: center;
 }
 .cntr_ctgr_left p {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 36px;
-	font-weight: bold;
-	color: #191919;
-	margin: 0;
-	padding:40px 120px 15px 120px;
-	letter-spacing: -0.05em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #191919;
+    margin: 0;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    letter-spacing: -0.05em;
 }
 
 .cntr11 p {
@@ -1872,26 +1923,35 @@ border-radius: 3px;
 	margin: 0 auto;
 }
 .base22 p {
-	font-size: 20px;
-	font-weight: bold;
-	letter-spacing: 0.2em;
-	margin: 0;
-	padding:40px 120px 15px 120px;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    margin: 0;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 15px;
 }
 .base20 p {
-	font-size: 24px;
-	font-weight: bold;
-	color: #191919;
-	margin: 0px;
-	line-height: 1.4em;
-	padding:0 120px 30px 120px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #191919;
+    margin: 0px;
+    line-height: 1.4em;
+    padding-top: 0;
+    padding-right: 22px;
+    padding-left: 30px;
+    padding-bottom: 30px;
 }
 .base21 p {
-	padding:0 120px 80px 120px;
-	font-size: 18px;
-	color: #494949;
-	line-height: 1.7em;
-	margin: 0;
+    padding-top: 0;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 80px;
+    font-size: 12px;
+    color: #494949;
+    line-height: 1.7em;
+    margin: 0;
 }
 .base10 ul{
 	padding-bottom: 40px;

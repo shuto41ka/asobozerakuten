@@ -392,7 +392,7 @@ html{
 	color: #191919;
 	margin: auto 0;
 	padding-top: 30px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 	letter-spacing: -0.05em;
 	width: auto;
 	text-align: center;
@@ -489,6 +489,18 @@ html{
     letter-spacing: 0.1em;
     margin: 0;
 }
+
+/* 半分の要素 */
+.wraphalf{
+	width:600px;
+	float:left;
+	display:block;
+	max-height:600px;
+}
+.wraphalf img{
+	width:600px;
+}
+
 
 .base10 ul{
 	padding-bottom: 40px;
@@ -2071,7 +2083,7 @@ html{
 .cntr21 p {
 	padding-top: 0px;
 	padding-bottom: 30px;
-	display: inline-block;
+	display: block;
 	text-align: center;
 	font-size: 18px;
 	color: #494949;
