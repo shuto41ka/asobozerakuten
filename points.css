@@ -14,11 +14,11 @@
 }
 
 .walpac {
-	background:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/kg-y167/1200ver/kg-y167_03b.jpg); width:1200px; height:548px; position:relative; margin-top:50px;
+	background:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/kg-y167/1200ver/kg-y167_03b.jpg); width:1200px; height:548px; position:relative;
 }
 
 .walpac .inner {
-	position: absolute; left: 444px; top: 200px; width: 316px;
+	position: absolute; width:350px; top:200px; left:0; right:0; margin:auto;
 }
 
 @media screen and (max-width:1200px) {
@@ -32,14 +32,12 @@
     width: 250px;
 	}
 	
-	.walpac {
-		background:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/kg-y167/1200ver/kg-y167_03b.jpg); width:760px; height:347px; position:relative; margin-top:50px; background-size: contain; background-repeat: no-repeat;
-	}
-	
-	.walpac .inner {
-    position: absolute;
-    left: 262px;
-    top: 119px;
-    width: 230px;
-	}
+	.walpac { 
+	background:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/kg-y167/1200ver/kg-y167_03b.jpg); width:760px; height:347px; position:relative; background-size:contain; background-repeat:no-repeat;
+}
+
+.walpac .inner {
+	position: absolute; width:250px; top:130px; left:0; right:0; margin:	auto;
+}
+
 }
