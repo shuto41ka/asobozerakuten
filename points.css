@@ -21,6 +21,22 @@
 	position: absolute; width:350px; top:200px; left:0; right:0; margin:auto;
 }
 
+.walpac2 {
+	background: url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/kg-y167/1200ver/kg-y167_06.jpg); width: 1200px; height: 10px; position: relative; bottom: -10px;
+}
+
+.walpac2 .inner {
+	position: absolute; width:500px; top:150px;
+}
+
+.walpac3 {
+	background:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/kg-y167/1200ver/kg-y167_07.jpg); width:1200px; height:637px; position:relative;
+}
+
+.walpac3 .inner {
+	position:absolute; width:600px; top:20px;
+}
+
 @media screen and (max-width:1200px) {
 	.mt18002 {
 			background-image:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/mt18002/2019/mt18002_32.jpg); width: 760px; height: 348px; background-repeat: no-repeat; position:relative; background-size: contain;	
