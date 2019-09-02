@@ -55,5 +55,21 @@
 .walpac .inner {
 	position: absolute; width:250px; top:130px; left:0; right:0; margin:	auto;
 }
+.walpac2 {
+	background: url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/kg-y167/1200ver/kg-y167_06.jpg); width: 760px; height: 10px; position: relative; bottom: -10px; position:relative; background-size:contain; background-repeat:no-repeat;
+}
+
+.walpac2 .inner {
+	position: absolute; width:317px; top:95px;
+}
+
+.walpac3 {
+	background:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/kg-y167/1200ver/kg-y167_07.jpg); width:760px; height:403px; position:relative;
+	position:relative; background-size:contain; background-repeat:no-repeat;
+}
+
+.walpac3 .inner {
+	position:absolute; width:400px; top:20px;
+}
 
 }
