@@ -16,6 +16,8 @@ html{
 	word-wrap:break-word;
 	font-family:  'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
 }
+
+/*　ギャラリー関係　*/
 .wrap600{
 	width:600px;
 	float:left;
@@ -335,6 +337,8 @@ table.gallerytable td{
 	width: 600px;
 	height:auto;
 }
+
+/*　ギャラリー関係終わり　*/
 html{
 	width:100%;
 	overflow-x:hidden;
@@ -385,8 +389,9 @@ html{
 	text-align: left;
 }
 
+
+/* 商品ページ、英字太字カテゴリ（センター） */
 .cntr_ctgr p {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 40px;
 	font-weight: bold;
 	color: #191919;
@@ -397,8 +402,8 @@ html{
 	width: auto;
 	text-align: center;
 }
+/* 商品ページ　英字太字カテゴリ（レフト） */
 .cntr_ctgr_left p {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 36px;
 	font-weight: bold;
 	color: #191919;
@@ -415,14 +420,15 @@ html{
 	padding-bottom: 15px;
 	padding-top: 0px;
 	letter-spacing: 0.1em;
-	display: inline-block;
+	display: block;
 	text-align: center;
 	margin: 0 auto;
 }
+
 .cntr12 p {
 	padding-top: 0px;
 	padding-bottom: 30px;
-	display: inline-block;
+	display: block;
 	text-align: center;
 	font-size: 14px;
 	color: #494949;
@@ -430,6 +436,8 @@ html{
 	letter-spacing: 0.1em;
 	margin: 0;
 }
+
+/*　商品ページ　上見出し　*/
 .base22 p {
 	font-size: 20px;
 	font-weight: bold;
@@ -437,6 +445,8 @@ html{
 	margin: 0;
 	padding:40px 120px 15px 120px;
 }
+
+/*　商品ページ　中見出し　*/
 .base20 p {
 	font-size: 24px;
 	font-weight: bold;
@@ -445,6 +455,8 @@ html{
 	line-height: 1.4em;
 	padding:0 120px 30px 120px;
 }
+
+/*　商品ページ　本文　*/
 .base21 p {
 	padding:0 120px 80px 120px;
 	font-size: 18px;
@@ -452,6 +464,8 @@ html{
 	line-height: 1.7em;
 	margin: 0;
 }
+/*　商品ページ　リストを使う場合　*/
+
 .base21 ul{
 	padding:0 120px 80px 120px;
 	font-size: 18px;
@@ -466,6 +480,9 @@ html{
 	line-height: 1.7em;
 	margin: 0;
 }
+
+/*　商品ページ　センターに置く場合　見出し　*/
+
 .cntr20 p {
     font-size: 24px;
     font-weight: bold;
@@ -478,6 +495,9 @@ html{
     text-align: center;
     margin: 0 auto;
 }
+
+/*　商品ページ　センターに置く場合　本文　*/
+
 .cntr21 p {
     padding-top: 0px;
     padding-bottom: 30px;

@@ -15,6 +15,8 @@ html, body{
 	width: 100%;
 	max-width: 760px;
 }
+
+/*　ギャラリー関係　*/
 .wrap600{
 	width:50%;
 	float:left;
@@ -311,6 +313,10 @@ table.gallerytable td img{
 	text-decoration:none;
 	color:rgba(0,0,153,1);
 }
+
+/*　ギャラリー関係終わり　*/
+/*　スペック　*/
+
 .spec01 {
     clear: both;
     width: 720px;
@@ -355,8 +361,10 @@ table.gallerytable td img{
 	text-align: left;
 }
 
+
+/*　商品ページ　センターに置く場合　英字太字　*/
+
 .cntr_ctgr p {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 40px;
 	font-weight: bold;
 	color: #191919;
@@ -367,8 +375,10 @@ table.gallerytable td img{
 	width: auto;
 	text-align: center;
 }
+
+/*　商品ページ　レフト　英字太字　*/
+
 .cntr_ctgr_left p {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 36px;
 	font-weight: bold;
 	color: #191919;
@@ -400,6 +410,9 @@ table.gallerytable td img{
 	letter-spacing: 0.1em;
 	margin: 0;
 }
+
+/*　商品ページ　ベース　上見出し　*/
+
 .base22 p {
     font-size: 14px;
     font-weight: bold;
@@ -410,6 +423,9 @@ table.gallerytable td img{
     padding-left: 30px;
     padding-bottom: 15px;
 }
+
+/*　商品ページ　ベース　中見出し　*/
+
 .base20 p {
     font-size: 18px;
     font-weight: bold;
@@ -421,6 +437,9 @@ table.gallerytable td img{
     padding-left: 30px;
     padding-bottom: 30px;
 }
+
+/*　商品ページ　ベース　本文　*/
+
 .base21 p {
 	padding:0 30px 80px 30px;
 	font-size: 12px;
@@ -428,6 +447,8 @@ table.gallerytable td img{
 	line-height: 1.7em;
 	margin: 0;
 }
+
+/*　商品ページ　ベース　センター　中見出し　*/
 
 .cntr20 p {
     font-size: 18px;
@@ -441,6 +462,9 @@ table.gallerytable td img{
     text-align: center;
     margin: 0 auto;
 }
+
+/*　商品ページ　ベース　センター　本文　*/
+
 .cntr21 p {
     padding-top: 0px;
     padding-bottom: 30px;
@@ -509,18 +533,6 @@ table.gallerytable td img{
 	line-height:45px;
 	text-align: center;
 	margin:0;
-}
-.sfbanner p.alpha{
-}
-.sfbanner.side1{
-
-}
-.sfbanner.side2{
-
-}
-.sfbanner.side3{
-}
-.sfbanner.side4{
 }
 .ac-container2{
 	width: 120px;
