@@ -2983,3 +2983,15 @@ border-color: transparent transparent transparent #8e1728;
 	.asobase02 {
 		font-size: 12px; margin-top: 3px;
 	}
+
+/* 動画へのリンク */
+#container1200 .asomovie {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#container1200 .asomovie tr td img {
+	width: 100%;
+	display: block;
+	margin:auto;
+}
