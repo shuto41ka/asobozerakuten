@@ -364,7 +364,7 @@ table.gallerytable td img{
 
 /*　商品ページ　センターに置く場合　英字太字　*/
 
-.cntr_ctgr p {
+.cntr_ctgr2 p {
 	font-size: 40px;
 	font-weight: bold;
 	color: #191919;
@@ -378,7 +378,7 @@ table.gallerytable td img{
 
 /*　商品ページ　レフト　英字太字　*/
 
-.cntr_ctgr_left p {
+.cntr_ctgr2_left p {
 	font-size: 36px;
 	font-weight: bold;
 	color: #191919;
@@ -1884,7 +1884,7 @@ border-radius: 3px;
 	text-align: left;
 }
 
-.cntr_ctgr p {
+.cntr_ctgr2 p {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 40px;
 	font-weight: bold;
@@ -1896,7 +1896,7 @@ border-radius: 3px;
 	width: auto;
 	text-align: center;
 }
-.cntr_ctgr_left p {
+.cntr_ctgr2_left p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 36px;
     font-weight: bold;

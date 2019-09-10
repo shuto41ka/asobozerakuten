@@ -391,7 +391,7 @@ html{
 
 
 /* 商品ページ、英字太字カテゴリ（センター） */
-.cntr_ctgr p {
+.cntr_ctgr2 p {
 	font-size: 40px;
 	font-weight: bold;
 	color: #191919;
@@ -403,7 +403,7 @@ html{
 	text-align: center;
 }
 /* 商品ページ　英字太字カテゴリ（レフト） */
-.cntr_ctgr_left p {
+.cntr_ctgr2_left p {
 	font-size: 36px;
 	font-weight: bold;
 	color: #191919;
@@ -2003,7 +2003,7 @@ html{
 	text-align: left;
 }
 
-.cntr_ctgr p {
+.cntr_ctgr2 p {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 40px;
 	font-weight: bold;
@@ -2015,7 +2015,7 @@ html{
 	width: auto;
 	text-align: center;
 }
-.cntr_ctgr_left p {
+.cntr_ctgr2_left p {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 36px;
 	font-weight: bold;
@@ -2988,10 +2988,11 @@ border-color: transparent transparent transparent #8e1728;
 #container1200 .asomovie {
 	width: 100%;
 	box-sizing: border-box;
+	margin: auto;
 }
 
 #container1200 .asomovie tr td img {
-	width: 100%;
+	width: 80%;
 	display: block;
 	margin:auto;
 }
