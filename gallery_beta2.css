@@ -1003,13 +1003,13 @@ table.gallerytable td img{
 	line-height: 25px;
 		}
 		.icon::before {
-			 content: "\f0da";
-			font-family:'Font Awesome 5 Free';
-			position: absolute;
+   width: 4px;
+    height: 4px;
+    border: 4px solid transparent;
+    border-left: 4px solid #7a0;			position: absolute;
 			right: 7px;
 			top: 13px;
 			vertical-align: middle;
-			font-weight: 400;
 		}
 /* サイドバナー終わり */
 
