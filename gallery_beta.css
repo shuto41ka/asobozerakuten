@@ -1,7 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500&display=swap&subset=japanese');
-@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 
 html{
 	width:100%;
@@ -640,7 +639,7 @@ html{
 .navimidashi p {
 	height:45px;
 	display:block;
-	width: 110px;
+	width: 115px;
 	box-sizing: border-box;
 	margin-left: 0;
 	padding-left: 0
@@ -648,7 +647,7 @@ html{
 .navimidashi p span:nth-child(1) {
 	display:block;
 	position:absolute;
-	width:110px;
+	width:115px;
 	text-align:center;
 	vertical-align:middle;
 	margin:0;
@@ -658,7 +657,7 @@ html{
 .navimidashi p span:nth-child(2) {
 	display:block;
 	position:absolute;
-	width:110px;
+	width:115px;
 	text-align:center;
 	vertical-align:middle;
 	margin:0;
@@ -1054,11 +1053,19 @@ html{
 		}
 		.icon::before {
 			 content: "\f0da";
-			font-family:'Font Awesome 5 Free';
+			font-family:"Font Awesome 5 Free";
 			position: absolute;
 			right: 7px;
 			top: 13px;
 			vertical-align: middle;
+			font-weight:400;
+		}
+		.fa-caret-right {
+			position: absolute;
+			right: 7px;
+			top: 13px;
+			vertical-align: middle;
+			font-weight:400;
 		}
 /* サイドバナー終わり */
 /*　ページフッター旧ページより　*/
@@ -2228,7 +2235,7 @@ html{
 .navimidashi p span:nth-child(1) {
 	display:block;
 	position:absolute;
-	width:120px;
+	width:115px;
 	text-align:center;
 	vertical-align:middle;
 	margin:0;
@@ -2237,7 +2244,7 @@ html{
 .navimidashi p span:nth-child(2) {
 	display:block;
 	position:absolute;
-	width:120px;
+	width:115px;
 	text-align:center;
 	vertical-align:middle;
 	margin:0;
@@ -2261,7 +2268,7 @@ html{
 	width: 83px;
 	left: 0;
 	top: 0;
-	padding-left: 37px;
+	padding-left: 39px;
 	line-height: 43px;
 }
 .alpha span:nth-child(2) {
@@ -2270,7 +2277,7 @@ html{
 	width: 83px;
 	left: 0;
 	top: 0;
-	padding-left: 37px;
+	padding-left: 39px;
 	line-height: 43px;
 }
 
@@ -2629,14 +2636,6 @@ html{
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 25px;
-		}
-		.icon::before {
-			 content: "\f0da";
-			font-family:'Font Awesome 5 Free';
-			position: absolute;
-			right: 7px;
-			top: 13px;
-			vertical-align: middle;
 		}
 /* サイドバナー終わり */
 /*　ページフッター旧ページより　*/

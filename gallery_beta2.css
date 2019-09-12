@@ -1009,6 +1009,7 @@ table.gallerytable td img{
 			right: 7px;
 			top: 13px;
 			vertical-align: middle;
+			font-weight: 400;
 		}
 /* サイドバナー終わり */
 
@@ -2475,14 +2476,6 @@ border-radius: 3px;
 	font-weight: bold;
 	font-size: 12px;
 	line-height: 25px;
-		}
-		.icon::before {
-			 content: "\f0da";
-			font-family:'Font Awesome 5 Free';
-			position: absolute;
-			right: 7px;
-			top: 13px;
-			vertical-align: middle;
 		}
 /* サイドバナー終わり */
 
