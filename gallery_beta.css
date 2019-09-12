@@ -1,6 +1,7 @@
-f@charset "utf-8";
+@charset "utf-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500&display=swap&subset=japanese');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 
 html{
 	width:100%;
@@ -647,7 +648,8 @@ html{
 	text-align:center;
 	vertical-align:middle;
 	margin:0;
-	top:10px;
+	top:11px;
+	padding-right: 2px;
 }
 .navimidashi p span:nth-child(2) {
 	display:block;
@@ -656,9 +658,10 @@ html{
 	text-align:center;
 	vertical-align:middle;
 	margin:0;
-	top:10px;
+	top:11px;
 	font-weight:normal;
 	font-size:14px;
+	padding-right: 2px;
 }
 .navimidashi p span:nth-child(2) {
 	display:none;
@@ -676,7 +679,7 @@ html{
 	width: 83px;
 	left: 0;
 	top: 0;
-	padding-left: 37px;
+	padding-left: 39px;
 	line-height: 43px;
 }
 .alpha span:nth-child(2) {
@@ -685,7 +688,7 @@ html{
 	width: 83px;
 	left: 0;
 	top: 0;
-	padding-left: 37px;
+	padding-left: 39px;
 	line-height: 43px;
 }
 
