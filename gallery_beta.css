@@ -640,6 +640,10 @@ html{
 .navimidashi p {
 	height:45px;
 	display:block;
+	width: 110px;
+	box-sizing: border-box;
+	margin-left: 0;
+	padding-left: 0
 }
 .navimidashi p span:nth-child(1) {
 	display:block;
@@ -648,7 +652,7 @@ html{
 	text-align:center;
 	vertical-align:middle;
 	margin:0;
-	top:11px;
+	top:13px;
 	padding-right: 2px;
 }
 .navimidashi p span:nth-child(2) {
@@ -658,7 +662,7 @@ html{
 	text-align:center;
 	vertical-align:middle;
 	margin:0;
-	top:11px;
+	top:13px;
 	font-weight:normal;
 	font-size:14px;
 	padding-right: 2px;
