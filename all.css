@@ -4394,3 +4394,12 @@ readers do not read off random characters that represent icons */
 .fas {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
+
+		.icon::before {
+			 content: "\f0da";
+			font-family:'Font Awesome 5 Free';
+			position: absolute;
+			right: 7px;
+			top: 13px;
+			vertical-align: middle;
+		}
