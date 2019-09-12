@@ -1003,13 +1003,12 @@ table.gallerytable td img{
 	line-height: 25px;
 		}
 		.icon::before {
-   width: 4px;
-    height: 4px;
-    border: 4px solid transparent;
-    border-left: 4px solid #7a0;			position: absolute;
+			 content: ">";
+			position: absolute;
 			right: 7px;
-			top: 13px;
+			top: 10px;
 			vertical-align: middle;
+			font-weight:bold;
 		}
 /* サイドバナー終わり */
 

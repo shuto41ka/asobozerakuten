@@ -1052,13 +1052,12 @@ html{
 	line-height: 25px;
 		}
 		.icon::before {
-			 content: "\f0da";
-			font-family:"Font Awesome 5 Free";
+			 content: ">";
 			position: absolute;
 			right: 7px;
-			top: 13px;
+			top: 10px;
 			vertical-align: middle;
-			font-weight:400;
+			font-weight:bold;
 		}
 		.fa-caret-right {
 			position: absolute;
@@ -3002,3 +3001,4 @@ border-color: transparent transparent transparent #8e1728;
 	display: block;
 	margin:auto;
 }
+
