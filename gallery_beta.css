@@ -540,7 +540,7 @@ html{
 #sidefloat{
 	width:120px;
 	position:fixed;
-	top:0;
+	top:20px;
 	left:5px;
 }
 .sfbanner a{
