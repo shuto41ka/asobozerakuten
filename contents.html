@@ -81,14 +81,66 @@ $(function() {
   transition-delay: .1s;
 } 
 .contentstop2 {
-	width: 700px;
+	width: 1200px;
+	display: block;
+	margin: auto;
+}
+	.contentstop2 .contentsTopImage {
+		display: block;
+		margin: auto;
+		width: 700px;
+	}
+.tokubox2 {
+	display: table;
+	max-width: 1200px;
+	width: 100%;
+	border: none;
+	box-sizing: border-box;
+}
+	.tokubox2 .cont-box {
+		display: table-cell;
+		border: none;
+		box-sizing: border-box;
+		width: 33%;
+	}
+	.contents21 p {
+	padding:10px 30px 20px 30px;
+	font-size: 14px;
+	color: #494949;
+	line-height: 1.7em;
+	margin: 0;
+
+	}
+	@media only screen and (max-width: 1159px) and (min-width: 760px) {
+.contentstop2 {
+	width: 760px;
 	display: block;
 	margin: auto;
 }
 .tokubox2 {
-	display: grid;
-	max-width: 1200px;
+	display: block;
+	max-width: 760px;
+	width: 100%;
+	border: none;
+	box-sizing: border-box;
 }
+	.tokubox2 .cont-box {
+		display: block;
+		border: none;
+		box-sizing: border-box;
+		width: 50%;
+		float: left;
+	}
+	.contents21 p {
+	padding:10px 30px 20px 30px;
+	font-size: 12px;
+	color: #494949;
+	line-height: 1.7em;
+	margin: 0;
+
+	}
+		
+	}
 </style>
 
 </head>
@@ -124,16 +176,15 @@ jQuery(function($){
 </script>
 <div class="pconly" id="container1200">
 <div class="contentstop2">
-<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/top/contentstop.jpg"></p> 
-<div class="base21"><p style="padding-bottom:20px;">
-ビジネスバッグをはじめとした各種バッグ、革小物の知識やお手入れ、保管方法といったメンテナンス情報や、asobozeの商品が開発されるまでのストーリーなど、役立つ情報をまとめてありますので是非ご参考下さい。</p></div></div>
-<div class="tokubox">
+<div class="contentsTopImage"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/top/contentstop.jpg"></div> 
+<div class="base21"><p style="padding-bottom:20px;"><br /><br />
+ビジネスバッグをはじめとした各種バッグ、革小物の知識やお手入れ、保管方法といったメンテナンス情報や、asobozeの商品が開発されるまでのストーリーなど、役立つ情報をまとめてありますので是非ご覧下さい。</p></div></div>
+<div class="tokubox2">
 
 <div class="effect">
   <div class="cont-box">
     <p><a href="https://item.rakuten.co.jp/asoboze/c/0000000162/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/top/co_top_05maintenance.jpg" alt="革製品のお手入れ" border="0"style=""></a></p>
-    <div class="base21"><p style="padding-bottom:20px;"><br />
-<br />
+    <div class="contents21"><p>
 革製品の日々のケアやお手入れは<br>
       どのようにやるの？<br>
     </p></div>
@@ -142,8 +193,7 @@ jQuery(function($){
 <div class="effect">
 <div class="cont-box"> 
   <p><a href="https://item.rakuten.co.jp/asoboze/c/0000000164/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/top/co_top_06gohimainte.jpg" alt="合皮帆布ナイロンのお手入れ" border="0"style=""></a></p>
-    <div class="base21"><p style="padding-bottom:20px;"><br />
-<br />
+    <div class="contents21"><p>
 合皮・帆布・ナイロン製品などの<br>
       日々のケアやお手入れはどのようにやるの？&nbsp;<br>
       </p>
@@ -154,8 +204,7 @@ jQuery(function($){
 <div class="effect">
   <div class="cont-box">
     <p><a href="https://item.rakuten.co.jp/asoboze/c/0000000165/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/top/co_top_01handle.jpg" alt="持ち手ハンドル" border="0"style=""></a></p>
-      <div class="base21"><p style="padding-bottom:20px;"><br />
-<br />
+      <div class="contents21"><p>
 思い入れのあるカバンを長く使うために。<br>
         買い換える前にハンドルを交換してみよう。<br>
     </p>
@@ -164,8 +213,7 @@ jQuery(function($){
 <div class="effect">
 <div class="cont-box"> 
     <p><a href="https://item.rakuten.co.jp/asoboze/c/0000000166/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/top/co_top_02fakeleather.jpg" alt="合皮" border="0"style=""></a></p>
-      <div class="base21"><p style="padding-bottom:20px;"><br />
-<br />
+      <div class="contents21"><p>
 意外に知らない！ビジネスバッグでよくある<br />
 「合成皮革」これって、どんな素材？<br>
 </p>
@@ -176,8 +224,7 @@ jQuery(function($){
 <div class="effect">
   <div class="cont-box">
     <p><a href="https://item.rakuten.co.jp/asoboze/c/0000000167/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/top/co_top_03baginbag.jpg" alt="バッグインバッグ" border="0"style=""></a></p>
-    <div class="base21"><p style="padding-bottom:20px;"><br />
-<br />
+    <div class="contents21"><p>
 出張や会社帰りのジム通いの方必見！！<br>
     着替えも入るバッグインバッグが新しい！<br>
 </p></div>
@@ -186,8 +233,7 @@ jQuery(function($){
 <div class="effect">
 <div class="cont-box"> 
     <p><a href="https://item.rakuten.co.jp/asoboze/c/0000000168/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/top/co_top_04recruit.jpg" alt="リクルートバッグ" border="0"style=""></a></p>
-      <div class="base21"><p style="padding-bottom:20px;"><br />
-<br />
+      <div class="contents21"><p>
 選び方が分からない方必見！<br>
         買って後悔しない！リクルートバッグの選び方<br>
        </p>
@@ -196,8 +242,7 @@ jQuery(function($){
  <div class="effect">
   <div class="cont-box">
     <p><a href="https://item.rakuten.co.jp/asoboze/c/0000000193/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/top/co_top_07leather_a.jpg" alt="バッグインバッグ" border="0"style=""></a></p>
-    <div class="base21"><p style="padding-bottom:20px;"><br />
-<br />
+    <div class="contents21"><p>
 そもそも牛革とは？<br />
 牛革カバンの原皮は肉牛？乳牛？オス？メス？<br>
 </p></div>

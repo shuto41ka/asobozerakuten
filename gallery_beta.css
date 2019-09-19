@@ -3002,3 +3002,36 @@ border-color: transparent transparent transparent #8e1728;
 	margin:auto;
 }
 
+/* コンテンツページ */
+
+.contentstop2 {
+	width: 1200px;
+	display: block;
+	margin: auto;
+}
+	.contentstop2 .contentsTopImage {
+		display: block;
+		margin: auto;
+		width: 700px;
+	}
+.tokubox2 {
+	display: table;
+	max-width: 1200px;
+	width: 100%;
+	border: none;
+	box-sizing: border-box;
+}
+	.tokubox2 .cont-box {
+		display: table-cell;
+		border: none;
+		box-sizing: border-box;
+		width: 33%;
+	}
+	.contents21 p {
+	padding:10px 30px 20px 30px;
+	font-size: 14px;
+	color: #494949;
+	line-height: 1.7em;
+	margin: 0;
+
+	}
