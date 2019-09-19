@@ -2835,28 +2835,58 @@ border-color: transparent transparent transparent #8e1728;
 	display: block;
 	margin: auto;
 }
+	.contentstop2 .contentsTopImage {
+		display: block;
+		margin: auto;
+		width: 700px;
+	}
 .tokubox2 {
-	display: block;
+	display: table;
 	max-width: 760px;
 	width: 100%;
 	border: none;
 	box-sizing: border-box;
 }
-	.tokubox2 .cont-box {
-		display: block;
+	.tokubox2 .cont-box2 {
+		display: table-cell;
 		border: none;
 		box-sizing: border-box;
 		width: 50%;
-		float: left;
 	}
 	.contents21 p {
 	padding:10px 30px 20px 30px;
-	font-size: 12px;
+	font-size: 14px;
 	color: #494949;
 	line-height: 1.7em;
 	margin: 0;
 
 	}
+	.cont-box2 {
+	float: left;
+	width: 330px;
+	padding: 10px;
+}
+.cont-box2_last {
+	float: right;
+	width: 330px;
+	padding: 10px;
+}
+.tokubox {
+	padding-right: 2px;
+	padding-left: 2px;
+	overflow: hidden;
+}
+.cont-box2 p {
+	font-size: 12px;
+	text-align: left;
+	width: 330px;
+}
+.cont-box2_last p {
+	font-size: 12px;
+	text-align: left;
+	width: 330px;
+}
+
 /*　コンテンツ　革製品のお手入れ newpage　*/
 
 .mentetop01 p {

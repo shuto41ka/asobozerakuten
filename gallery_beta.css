@@ -3021,7 +3021,7 @@ border-color: transparent transparent transparent #8e1728;
 	border: none;
 	box-sizing: border-box;
 }
-	.tokubox2 .cont-box {
+	.tokubox2 .cont-box2 {
 		display: table-cell;
 		border: none;
 		box-sizing: border-box;
@@ -3035,6 +3035,33 @@ border-color: transparent transparent transparent #8e1728;
 	margin: 0;
 
 	}
+	.cont-box2 {
+	float: left;
+	width: 330px;
+	margin-right: 3px;
+	padding: 10px;
+}
+.cont-box2_last {
+	float: right;
+	width: 330px;
+	padding: 10px;
+}
+.tokubox {
+	padding-right: 2px;
+	padding-left: 2px;
+	overflow: hidden;
+}
+.cont-box2 p {
+	font-size: 12px;
+	text-align: left;
+	width: 330px;
+}
+.cont-box2_last p {
+	font-size: 12px;
+	text-align: left;
+	width: 330px;
+}
+
 /*　コンテンツ　革製品のお手入れ newpage　*/
 
 .mentetop01 p {
