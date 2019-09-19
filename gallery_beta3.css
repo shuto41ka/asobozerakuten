@@ -675,3 +675,59 @@ border-radius: 3px;
 	margin: 0;
 
 	}
+/*　コンテンツ　革製品のお手入れ newpage　*/
+
+.mentetop01 p {
+	font-size:16px;
+	text-align:center;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+}
+
+.mentetop02 p {
+	font-size:20px;
+	text-align:center;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+}
+
+.mente01 p {
+	font-size:20px;
+	text-align:center;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+	text-decoration: underline;
+}
+
+.mente02 p {
+	font-size:16px;
+	text-align:left;
+	line-height: 1.75;
+	letter-spacing: 0.15em;
+	word-break: normal;
+}
+
+.mente01 .suuzi {
+	font-size:20px;
+	text-align:center;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+}
+.mentetop01  {
+	padding:10px;
+}
+.mentetop02 {
+	padding:10px;
+}
+
+.mente01 {
+	padding:10px;
+}
+
+.mente02 p {
+	padding:10px;
+}
