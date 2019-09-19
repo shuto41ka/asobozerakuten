@@ -667,8 +667,7 @@ border-radius: 3px;
 		display: block;
 		border: none;
 		box-sizing: border-box;
-		width: 50%;
-		float: left;
+		width: 100%;
 	}
 	.contents21 p {
 	padding:5px;
@@ -697,7 +696,7 @@ border-radius: 3px;
 }
 
 .mente01 p {
-	font-size:20px;
+	font-size:16px;
 	text-align:center;
 	line-height: 1.5;
 	letter-spacing: 0.1em;
