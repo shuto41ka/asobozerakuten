@@ -577,16 +577,6 @@ html{
 }
 .sfbanner.side4{
 }
-.ac-container2{
-	width: 120px;
-	margin: 0;
-	float: left;
-	padding: 0;
-	position:fixed;
-	top:10%;
-	z-index:3000000;
-	left:8px;
-}
 /*--トップラベル--*/
 .ac-container2 .navimidashi{
 	padding-top: 0px;
@@ -1028,17 +1018,6 @@ html{
 	background-position: 3px;
 	background-color: #909090;
 	transition-duration: .5s;
-}
-.ac-container2{
-    width: 120px;
-    margin: 0;
-    float: left;
-    padding: 0;
-    position: fixed;
-    top: 10%;
-    z-index: 3000000;
-    left: 8px;
-    display: table;
 }
 		.categoryHead {
 	height: 25px;
@@ -2168,16 +2147,6 @@ html{
 	text-align: center;
 	margin:0;
 }
-.ac-container2{
-	width: 120px;
-	margin: 0;
-	float: left;
-	padding: 0;
-	position:fixed;
-	top:10%;
-	z-index:3000000;
-	left:8px;
-}
 /*--トップラベル--*/
 .ac-container2 .navimidashi{
 	padding-top: 0px;
@@ -2620,7 +2589,7 @@ html{
     float: left;
     padding: 0;
     position: fixed;
-    top: 10%;
+    top: 15%;
     z-index: 3000000;
     left: 8px;
     display: table;
