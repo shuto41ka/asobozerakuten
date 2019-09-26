@@ -1952,25 +1952,221 @@ border-radius: 3px;
 }
 
 
+
+/* 四角で文字を囲む */
+
 #containercate1200 .kakomi-box1 {
+
 	margin: 2em auto;
+
 	padding: 1em;
+
 	width: 400px;
+
+	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
+
 	text-align:center;
+
 	background-color: #fff; /* 背景色 */
-	border: 1px solid #ccc;
+
+	border: 1px solid #494949;
+
+	color: #494949;
+
 }
+
+
+
+/* 塗りで文字を囲む */
+
+#containercate1200 .kakomi-box2 {
+
+	background:#CCC;
+
+  	padding: 0.5em;
+
+	width: 700px;
+
+	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
+
+	text-align:center;
+
+	color: #494949;
+
+	margin: 0 auto;
+
+}
+
+
+
+
+
+/* 上下点線で字を挟む */
+
+
+
+#containercate1200 .tenline {
+
+	font-size: 18px;
+
+	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
+
+	text-align: center;
+
+	color: #494949;
+
+	width: 800px;
+
+	margin: 0 auto;
+
+	border-bottom: dotted 2px #494949;
+
+	border-top: dotted 2px #494949;
+
+}
+
+
+
 
 
 /* 半分の要素 */
+
 #containercate1200 .wraphalf{
-	width:50%;
+
+	width:600px;
+
 	float:left;
+
 	display:block;
+
 }
 
+
+
 #containercate1200 .wraphalf img{
-	width:50%;
+
+	width:600px;
+
+}
+
+
+
+/* 画像２つ並び */
+
+
+
+#container1200 .contetwo {
+
+	margin-top:20px;
+
+	margin-bottom:60px;
+
+}
+
+
+
+#container1200 .contetwo .asoconte {
+
+	width: 1000px;
+
+	box-sizing: border-box;
+
+	margin: auto;
+
+}
+
+
+
+#container1200 .contetwo .asoconte tr td img {
+
+	display: block;
+
+	text-align: center;
+
+	margin-right: auto;
+
+	margin-left: auto;
+
+}
+
+
+
+/* 画像3つ並び */
+
+
+
+#containercate1200 .three-box {
+
+	float:left;
+
+	width:375px;
+
+	margin-right:3px;
+
+	padding:10px;
+
+}
+
+
+
+#containercate1200 .three-box_last  {
+
+	float:left;
+
+	width:365px;
+
+	padding:10px;
+
+	text-align:left;
+
+}
+
+
+
+#containercate1200 .threebox3  {
+
+	padding-right: 2px;
+
+	padding-left: 2px;
+
+	overflow: hidden;
+
+	padding-bottom: 10px;
+
+	padding-top: 10px;
+
+}
+
+
+
+#containercate1200 .threebox3 p {
+
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+	font-size:16px;
+
+	text-align:left;
+
+	color:#494949;
+
+	padding:30px 45px;
+
+}
+
+
+
+#containercate1200 .three-box_last p {
+
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+
+	font-size: 16px;
+
+	text-align:left;
+
+	color:#494949;
+
+	padding:30px 45px;
+
 }
 
 
