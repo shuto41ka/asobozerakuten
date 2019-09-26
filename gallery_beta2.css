@@ -1922,6 +1922,36 @@ border-radius: 3px;
 }
 
 
+#containercate1200 .catebase05 p {
+	font-size: 15px;
+	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
+	text-align: center;
+	color: #CCCCCC;
+	padding-top: 15px;
+}
+
+#containercate1200 .catebase06 p {
+	font-size: 25px;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	text-align: center;
+	color: #494949;
+}
+
+#containercate1200 .catebase07 p {
+	font-size: 20px;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	text-align: center;
+	color: #494949;
+}
+
+#containercate1200 .catebase08 p {
+	font-size: 15px;
+	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	text-align: center;
+	color: #CCCCCC;
+}
+
+
 #containercate1200 .kakomi-box1 {
 	margin: 2em auto;
 	padding: 1em;
