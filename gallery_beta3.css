@@ -55,9 +55,11 @@ table.gallerytable td img{
 .galleryshohin{
 	width:100%;
 	clear:both;
+	box-sizing: border-box;
 }
 .galleryshohin img{
 	width:100%;
+	box-sizing: border-box;
 }
 .gallerylink{
 	width: 90%;
@@ -573,10 +575,10 @@ input[type="checkbox"]#sample + #cover > iframe {
 
 /* 商品紹介グリッド */
 .shoukaigrid {
+	width: 100%;
+	
+	box-sizing: border-box;
 
-	display: grid;
-	grid-template-rows:auto;
-	grid-template-columns: 100%;
 	margin-bottom: 15px;
 }
 

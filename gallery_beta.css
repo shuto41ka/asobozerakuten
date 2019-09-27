@@ -42,14 +42,15 @@ table.gallerytable{
 table.gallerytable td{
 	height:350px;
 }
-.galleryshohin{
+.galleryshohin img{
+	width:100%;
+	box-sizing: border-box;
+}
+.shoukaigrid .galleryshohin{
 	width:600px;
 	float:left;
-	height:275px;
 	margin-bottom:50px;
-}
-.galleryshohin img{
-	width:600px;
+	box-sizing: border-box;
 }
 .gallerylink{
     width: 600px;
@@ -485,9 +486,9 @@ border-color: transparent transparent transparent #8e1728;
 
 .shoukaigrid {
 
-	display: grid;
-	grid-template-rows: 450px 450px 450px;
-	grid-template-columns: 600px 600px;
+	display: block;
+	width: 1200px;
+	box-sizing: border-box;
 	margin-bottom: 30px;
 }
 

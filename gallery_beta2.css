@@ -14,6 +14,10 @@ html, body{
 	width: 100%;
 	max-width: 760px;
 }
+#containercate1200 img {
+	width: 100%;
+	max-width: 760px;
+}
 
 /*　ギャラリー関係　*/
 .wrap600{
@@ -52,13 +56,14 @@ table.gallerytable td img{
 	width:100%;
 }
 .galleryshohin{
-	width:100%;
+	width:50%;
 	float:left;
 	margin-bottom:5%;
-	clear:both;
+	box-sizing: border-box;
 }
 .galleryshohin img{
 	width:100%;
+	box-sizing: border-box;
 }
 .gallerylink{
 	width:100%;
@@ -1284,11 +1289,13 @@ border-color: transparent transparent transparent #8e1728;
 } 
 
 .shoukaigrid {
+	width: 760px;
+	
+	display: block;
+	
+	box-sizing: border-box;
 
-	display: grid;
-	grid-template-rows: 350px 350px 350px;
-	grid-template-columns: 350px 350px;
-	margin-bottom: 30px;
+	margin:0 auto 30px;
 }
 
 .shoukaigrid > div {
@@ -1342,6 +1349,7 @@ border-radius: 3px;
 #othergallery .para {
 	border-left: 1px solid #898989; padding-left: 15px; width: 760px; margin:0 auto; padding-bottom: 5px; box-sizing: border-box;
 	line-height:18px;
+
 }
 
 
@@ -1856,7 +1864,6 @@ border-radius: 3px;
 
 /*　201910　NEW カテゴリ　*/
 
-
 #containercate1200{
 	width:760px;
 	margin:20px auto;
@@ -1874,7 +1881,7 @@ border-radius: 3px;
 
 #containercate1200 .catebase02 p {
 	font-size: 14px;
-	width: 600px;
+	width: 70%;
 	text-align: center;
 	color: #494949;
 	margin: 0 auto;
@@ -1883,7 +1890,7 @@ border-radius: 3px;
 
 #containercate1200 .catebase03 p {
 	font-size: 14px;
-	width: 800px;
+	width: 80%;
 	text-align: left;
 	color: #494949;
 	margin: 0 auto;
