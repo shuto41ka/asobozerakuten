@@ -501,9 +501,7 @@ table.gallerytable td img{
 	opacity:0.95;
 }
 .sfbanner .navimidashi{
-	color:#fff;
-	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
-	font-weight:bold;
+	color:#fff;font-weight:bold;
 	font-size:16px;
 	line-height:45px;
 	text-align: center;
@@ -522,9 +520,7 @@ table.gallerytable td img{
 	cursor: pointer;
 	color: #8E1728;
 	font-size: 14px;
-	background: #ffffff;
-	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
-	margin: 0;
+	background: #ffffff;margin: 0;
 	width: 120px;
 	box-sizing: border-box;
 	text-align: center;
@@ -634,9 +630,7 @@ table.gallerytable td img{
 	height: 0px;
 	z-index: 1000000;
 	margin-left: 0;
-	padding-left: 0;
-	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
-	left: 120px;
+	padding-left: 0;left: 120px;
 	position: relative;
 }
 .ac-container2 .navimidashi:hover ~ ul{
@@ -830,9 +824,7 @@ table.gallerytable td img{
 	box-sizing: border-box;
 }
 .sfbanner p.alpha{
-	color: #909090;
-	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
-	font-size: 13px;
+	color: #909090;font-size: 13px;
 	line-height: 40px;
 	margin: 0;
 	text-align: left;
@@ -1365,7 +1357,6 @@ border-radius: 3px;
 
 
 .cntr_ctgr2_left p {
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 36px;
     font-weight: bold;
     color: #191919;
@@ -1391,9 +1382,7 @@ border-radius: 3px;
 	cursor: pointer;
 	color: #8E1728;
 	font-size: 14px;
-	background: #ffffff;
-	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
-	margin: 0;
+	background: #ffffff;margin: 0;
 	width: 120px;
 	box-sizing: border-box;
 	text-align: center;
@@ -1503,9 +1492,7 @@ border-radius: 3px;
 	height: 0px;
 	z-index: 1000000;
 	margin-left: 0;
-	padding-left: 0;
-	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
-	left: 120px;
+	padding-left: 0;left: 120px;
 	position: relative;
 }
 .ac-container2 .navimidashi:hover ~ ul{
@@ -1879,16 +1866,14 @@ border-radius: 3px;
 }
 
 #containercate1200 .catebase01 p {
-	font-size: 25px;
-	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
+	font-size: 20px;
 	text-align: center;
 	color: #494949;
 	padding-top: 15px;
 }
 
 #containercate1200 .catebase02 p {
-	font-size: 18px;
-	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
+	font-size: 14px;
 	width: 600px;
 	text-align: center;
 	color: #494949;
@@ -1897,8 +1882,7 @@ border-radius: 3px;
 }
 
 #containercate1200 .catebase03 p {
-	font-size: 18px;
-	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
+	font-size: 14px;
 	width: 800px;
 	text-align: left;
 	color: #494949;
@@ -1908,9 +1892,7 @@ border-radius: 3px;
 }
 
 #containercate1200 .catebase04 p {
-	font-size: 18px;
-	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
-	text-align: center;
+	font-size: 14px;text-align: center;
 	color: #494949;
 	margin: 0;
 	text-decoration: underline;
@@ -1922,29 +1904,27 @@ border-radius: 3px;
 
 
 #containercate1200 .catebase05 p {
-	font-size: 15px;
-	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
-	text-align: center;
+	font-size: 11px;text-align: center;
 	color: #CCCCCC;
 	padding-top: 15px;
 }
 
 #containercate1200 .catebase06 p {
-	font-size: 25px;
-	font-family: 'Noto Serif JP', serif;
-	text-align: center;
-	color: #494949;
-}
-
-#containercate1200 .catebase07 p {
 	font-size: 20px;
 	font-family: 'Noto Serif JP', serif;
 	text-align: center;
 	color: #494949;
 }
 
+#containercate1200 .catebase07 p {
+	font-size: 18px;
+	font-family: 'Noto Serif JP', serif;
+	text-align: center;
+	color: #494949;
+}
+
 #containercate1200 .catebase08 p {
-	font-size: 15px;
+	font-size: 11px;
 	font-family: 'Noto Serif JP', serif;
 	text-align: center;
 	color: #CCCCCC;
@@ -1960,11 +1940,7 @@ border-radius: 3px;
 
 	padding: 1em;
 
-	width: 400px;
-
-	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
-
-	text-align:center;
+	width: 400px;text-align:center;
 
 	background-color: #fff; /* 背景色 */
 
@@ -1984,11 +1960,7 @@ border-radius: 3px;
 
   	padding: 0.5em;
 
-	width: 700px;
-
-	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
-
-	text-align:center;
+	width: 700px;text-align:center;
 
 	color: #494949;
 
@@ -2006,15 +1978,11 @@ border-radius: 3px;
 
 #containercate1200 .tenline {
 
-	font-size: 18px;
-
-	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
-
-	text-align: center;
+	font-size: 18px;text-align: center;
 
 	color: #494949;
 
-	width: 800px;
+	width: 6000px;
 
 	margin: 0 auto;
 
@@ -2027,26 +1995,6 @@ border-radius: 3px;
 
 
 
-
-/* 半分の要素 */
-
-#containercate1200 .wraphalf{
-
-	width:600px;
-
-	float:left;
-
-	display:block;
-
-}
-
-
-
-#containercate1200 .wraphalf img{
-
-	width:600px;
-
-}
 
 
 
@@ -2066,7 +2014,7 @@ border-radius: 3px;
 
 #container1200 .contetwo .asoconte {
 
-	width: 1000px;
+	width: 760px;
 
 	box-sizing: border-box;
 
@@ -2098,7 +2046,7 @@ border-radius: 3px;
 
 	float:left;
 
-	width:375px;
+	width:230px;
 
 	margin-right:3px;
 
@@ -2112,7 +2060,7 @@ border-radius: 3px;
 
 	float:left;
 
-	width:365px;
+	width: 230px;
 
 	padding:10px;
 
@@ -2140,7 +2088,6 @@ border-radius: 3px;
 
 #containercate1200 .threebox3 p {
 
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 
 	font-size:16px;
 
@@ -2156,7 +2103,6 @@ border-radius: 3px;
 
 #containercate1200 .three-box_last p {
 
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 
 	font-size: 16px;
 

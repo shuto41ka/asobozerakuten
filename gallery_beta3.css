@@ -740,3 +740,272 @@ border-radius: 3px;
 .mente02 p {
 	padding:10px;
 }
+
+/*　201910　NEW カテゴリ　*/
+
+
+#containercate1200{
+	width:100%;
+	margin:10px auto;
+	overflow-wrap:break-word;
+	word-wrap:break-word;
+	font-family:  'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
+}
+
+#containercate1200 .catebase01 p {
+	font-size: 16px;
+	text-align: center;
+	color: #494949;
+	padding-top: 15px;
+}
+
+#containercate1200 .catebase02 p {
+	font-size: 12px;
+	width: 600px;
+	text-align: center;
+	color: #494949;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+#containercate1200 .catebase03 p {
+	font-size: 12px;
+	width: 800px;
+	text-align: left;
+	color: #494949;
+	margin: 0 auto;
+	line-height: 1.7em;
+	padding-bottom: 20px;
+}
+
+#containercate1200 .catebase04 p {
+	font-size: 12px;
+	text-align: center;
+	color: #494949;
+	margin: 0;
+	text-decoration: underline;
+	padding-top: 40px;
+	padding-right: 0;
+	padding-bottom: 20px;
+	padding-left: 0;
+}
+
+
+#containercate1200 .catebase05 p {
+	font-size: 11px;
+	text-align: center;
+	color: #CCCCCC;
+	padding-top: 15px;
+}
+
+#containercate1200 .catebase06 p {
+	font-size: 16px;
+	font-family: 'Noto Serif JP', serif;
+	text-align: center;
+	color: #494949;
+}
+
+#containercate1200 .catebase07 p {
+	font-size: 16px;
+	font-family: 'Noto Serif JP', serif;
+	text-align: center;
+	color: #494949;
+}
+
+#containercate1200 .catebase08 p {
+	font-size: 11px;
+	font-family: 'Noto Serif JP', serif;
+	text-align: center;
+	color: #CCCCCC;
+}
+
+
+
+/* 四角で文字を囲む */
+
+#containercate1200 .kakomi-box1 {
+
+	margin: 2em auto;
+
+	padding: 1em;
+
+	width: 70%;
+	
+	text-align:center;
+
+	background-color: #fff; /* 背景色 */
+
+	border: 1px solid #494949;
+
+	color: #494949;
+
+}
+
+
+
+/* 塗りで文字を囲む */
+
+#containercate1200 .kakomi-box2 {
+
+	background:#CCC;
+
+  	padding: 0.5em;
+
+	width: 70%;
+	
+	text-align:center;
+
+	color: #494949;
+
+	margin: 0 auto;
+
+}
+
+
+
+
+
+/* 上下点線で字を挟む */
+
+
+
+#containercate1200 .tenline {
+
+	font-size: 18px;text-align: center;
+
+	color: #494949;
+
+	width: 6000px;
+
+	margin: 0 auto;
+
+	border-bottom: dotted 2px #494949;
+
+	border-top: dotted 2px #494949;
+
+}
+
+
+
+
+
+
+
+/* 画像２つ並び */
+
+
+
+#container1200 .contetwo {
+
+	margin-top:20px;
+
+	margin-bottom:60px;
+
+}
+
+
+
+#container1200 .contetwo .asoconte {
+
+	width: 100%;
+
+	box-sizing: border-box;
+
+	margin: auto;
+
+}
+
+
+
+#container1200 .contetwo .asoconte tr td img {
+
+	display: block;
+
+	text-align: center;
+
+	margin-right: auto;
+
+	margin-left: auto;
+
+}
+
+
+
+/* 画像3つ並びですが、sp版なので1つ並び */
+
+
+
+#containercate1200 .three-box {
+
+
+	width:85%;
+
+	margin-right:3px;
+
+	padding:10px;
+
+}
+
+
+
+#containercate1200 .three-box_last  {
+
+
+
+	width: 85%;
+
+	padding:10px;
+
+	text-align:left;
+
+}
+
+
+
+#containercate1200 .threebox3  {
+
+	padding-right: 2px;
+
+	padding-left: 2px;
+
+	overflow: hidden;
+
+	padding-bottom: 10px;
+
+	padding-top: 10px;
+
+}
+
+
+
+#containercate1200 .threebox3 p {
+
+
+	font-size:12px;
+
+	text-align:left;
+
+	color:#494949;
+
+	padding:10px 15px;
+
+}
+
+
+
+#containercate1200 .three-box_last p {
+
+
+	font-size: 12px;
+
+	text-align:left;
+
+	color:#494949;
+
+	padding:10px 15px;
+
+}
+
+
+
+
