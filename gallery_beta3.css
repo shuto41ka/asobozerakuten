@@ -761,33 +761,37 @@ border-radius: 3px;
 
 #containercate1200 .catebase02 p {
 	font-size: 12px;
-	width: 600px;
 	text-align: center;
 	color: #494949;
 	margin: 0 auto;
 	padding-bottom: 20px;
+	width: 80%;
+	display: block;
 }
 
 #containercate1200 .catebase03 p {
+	width: 80%;
 	font-size: 12px;
-	width: 800px;
 	text-align: left;
 	color: #494949;
 	margin: 0 auto;
 	line-height: 1.7em;
 	padding-bottom: 20px;
+	display: block;
 }
 
 #containercate1200 .catebase04 p {
 	font-size: 12px;
 	text-align: center;
 	color: #494949;
-	margin: 0;
+	margin: 0 auto;
 	text-decoration: underline;
 	padding-top: 40px;
 	padding-right: 0;
 	padding-bottom: 20px;
 	padding-left: 0;
+	width: 80%;
+	display: block;
 }
 
 
@@ -796,20 +800,29 @@ border-radius: 3px;
 	text-align: center;
 	color: #CCCCCC;
 	padding-top: 15px;
+	width: 80%;
+	display: block;
+	margin: auto;
 }
 
 #containercate1200 .catebase06 p {
-	font-size: 16px;
+	font-size: 14px;
 	font-family: 'Noto Serif JP', serif;
 	text-align: center;
 	color: #494949;
+	width: 80%;
+	display: block;
+	margin: 0 auto;
 }
 
 #containercate1200 .catebase07 p {
-	font-size: 16px;
+	font-size: 12px;
 	font-family: 'Noto Serif JP', serif;
 	text-align: center;
 	color: #494949;
+	width: 90%;
+	display: block;
+	margin: 10px auto 20px;
 }
 
 #containercate1200 .catebase08 p {
@@ -817,6 +830,9 @@ border-radius: 3px;
 	font-family: 'Noto Serif JP', serif;
 	text-align: center;
 	color: #CCCCCC;
+	width: 80%;
+	display: block;
+	margin: 0 auto;
 }
 
 
@@ -827,7 +843,6 @@ border-radius: 3px;
 
 	margin: 2em auto;
 
-	padding: 1em;
 
 	width: 70%;
 	
@@ -838,6 +853,8 @@ border-radius: 3px;
 	border: 1px solid #494949;
 
 	color: #494949;
+	
+	vertical-align: middle;
 
 }
 
@@ -849,7 +866,6 @@ border-radius: 3px;
 
 	background:#CCC;
 
-  	padding: 0.5em;
 
 	width: 70%;
 	
@@ -859,6 +875,7 @@ border-radius: 3px;
 
 	margin: 0 auto;
 
+	vertical-align: middle;
 }
 
 
@@ -870,6 +887,7 @@ border-radius: 3px;
 
 
 #containercate1200 .tenline {
+	vertical-align: middle;
 
 	font-size: 18px;text-align: center;
 
@@ -943,12 +961,19 @@ border-radius: 3px;
 	margin-right:3px;
 
 	padding:10px;
+	
+	display: block;
+	
+	margin: 0 auto;
 
 }
 
 
 
 #containercate1200 .three-box_last  {
+	display: block;
+	
+	margin: 0 auto;
 
 
 
@@ -1007,5 +1032,7 @@ border-radius: 3px;
 }
 
 
-
+#containercate1200 img {
+	width: 100%;
+}
 
