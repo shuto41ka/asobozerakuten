@@ -1,7 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500&display=swap&subset=japanese');
-
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700|Noto+Serif+JP:200,300,400,600&display=swap&subset=japanese');
 html{
 	width:100%;
 	overflow-x:hidden;
@@ -1673,21 +1672,22 @@ html{
 
 #containercate1200 .catebase06 p {
 	font-size: 25px;
-	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	font-family: 'Noto Serif JP', serif;
 	text-align: center;
 	color: #494949;
+	margin-top: 0;
 }
 
 #containercate1200 .catebase07 p {
 	font-size: 20px;
-	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	font-family: 'Noto Serif JP', serif;
 	text-align: center;
 	color: #494949;
 }
 
 #containercate1200 .catebase08 p {
 	font-size: 15px;
-	font-family: "ＭＳ Ｐ明朝", "MS PMincho", "ヒラギノ明朝 Pro W3", "Hiragino Mincho Pro", serif;
+	font-family: 'Noto Serif JP', serif;
 	text-align: center;
 	color: #CCCCCC;
 }

@@ -1,6 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500&display=swap&subset=japanese');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700|Noto+Serif+JP:200,300,400,600&display=swap&subset=japanese');
 
 html, body{
 	height:100%;
