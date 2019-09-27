@@ -126,6 +126,56 @@ $(function(){
 <body>
 	<div id="header" class="pconly">
 </div>
+	<div id="sponly">
+<!-- トップへ戻るボタン -->
+<script type="text/javascript">
+$(function() {
+    var topBtn = $('#page-top');    
+    topBtn.hide();
+    //スクロールが100に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+</script>
+<p id="page-top" style="z-index:999;"><a href="#wrap" target="_top">▲</a></p>
+<!-- トップへ戻るボタン終わり -->
+<!-- /#nav -->
+<SCRIPT src="https://www.rakuten.ne.jp/gold/asoboze/kensaku_sp2.js">
+</SCRIPT>
+<div id="shouhinkensaku" style="position:fixed; top:0; left:0; z-index:10;">
+<div class="asoaso"> <a href="https://www.rakuten.ne.jp/gold/asoboze/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/sp_floattop.jpg" height="35"/></a></div>
+<form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" id="search"> 
+<input type="hidden" name="sv" value="6"> 
+<input type="hidden" name="sid" value="362200"> 
+<input type="hidden" name="su" value="asoboze"> 
+<input type="hidden" name="sn" value="asoboze アソボーゼ"> 
+<input type="hidden" name="f" value="A">
+<input value="ストア内検索"  type="image" src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/raku_top018_sagasu.jpg" class="btn" alt="検索"/>
+</form>
+<p style="clear:both;"></p> 
+<br>
+<br>
+<br>
+<label for="sample"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/sp_floatmenu01a.gif" height="45" /></label>
+<input type="checkbox" id="sample">
+<div id="cover">
+  <iframe src="https://www.rakuten.ne.jp/gold/asoboze/sp_floatmenu.html" frameborder="0" scrolling="auto" style="z-index: 2147483647;"></iframe>
+</div>
+
+</div>
+</div>
 <div class="ac-container2 pconly" id="sidenavi">
   
 </div>
@@ -152,69 +202,172 @@ jQuery(function($){
 
 	<div id="containercate1200">
 <img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_01.jpg" alt="asobozeのブランドコンセプト" />
-<div class="catebase05"><p>
-brand concept</p></div><div class="catebase06"><p>“素材・色・カタチにあそびを”</p></div>
+
+		<div class="effect">
+		<div class="catebase05"><p>
+brand concept</p></div>
+		</div>
+				<div class="effect">
+		<div class="catebase06"><p>“素材・色・カタチにあそびを”</p></div>
+		</div>
+		<div class="effect">
 <div class="catebase07"><p>デザインにほんの少しの<br />
   “あそび”をそえるバッグブランド<br />
   それがasobozeです。
-</p></div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_02.jpg" alt="メンズ向けバッグと革小物の企画販売" /><br /><br /><div class="catebase03"><p>大阪府泉佐野市を拠点に2012年スタートしたメンズ向けバッグと革小物の企画販売を行なうasoboze（アソボーゼ）。<br />
+</p></div>
+		</div>
+		
+		<div class="effect">
+		<p>
+		<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_02.jpg" alt="メンズ向けバッグと革小物の企画販売" />	
+			</p>
+		</div><br /><br />
+<div class="effect">
+<div class="catebase03"><p>大阪府泉佐野市を拠点に2012年スタートしたメンズ向けバッグと革小物の企画販売を行なうasoboze（アソボーゼ）。<br />
   決まった素材にとらわれず、 国内外の良いものを取り入れてカタチ作り上げる
   “ものづくり”を<br />
   行なっています。</p>
-</div><div class="kakomi-box1">わたしたちがasobozeです。</div><br /><br /><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_03.jpg" /><br /><br /><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_04.jpg" /><br /><br /><br />
-<div class="kakomi-box1">asobozeのコンセプト</div><br />
+</div>		
+		</div>	
+	<div class="effect">
+		<div class="kakomi-box1">わたしたちがasobozeです。</div>
+		</div>
+		<br /><br />
+		<div class="effect">
+		<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_03.jpg" />
+		</div>
+		<br /><br />
+		<div class="effect">
+		<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_04.jpg" />
+		</div>
+		<br /><br /><br />
+	<div class="effect">
+		<div class="kakomi-box1">asobozeのコンセプト</div>
+		</div>
+<br />
+	<div class="effect">
 	<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_05.jpg" />
+		
+		</div>
+		<div class="effect">
 		<div class="catebase06"><p>素材×あそび</p>
 </div>
+		</div>
+		<div class="effect">
 		<div class="catebase08"><p>material</p>
 </div>
+		</div>
+		<div class="effect">
 <div class="catebase07"><p>国内外にこだわらず&ldquo;素材の強み&rdquo;を<br />
   活かせるものを厳選。</p>
 </div>
+		
+		</div>
+		<div class="effect">
 <img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_06.jpg" />
+		
+		</div>
 <br /><br /><div class="threebox3">
+		<div class="effect">
 <div class="three-box"> <a href="https://item.rakuten.co.jp/asoboze/av-w162/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_07.jpg" alt="asobozeコンセプト　素材×あそび" />
 </a>
 
 <p>革の鞣し（なめし）から国内製造にこだわった姫路レザービジネスバッグ</p>
 </div>
+		
+		</div>
+		<div class="effect">
 <div class="three-box"> <a href="https://item.rakuten.co.jp/asoboze/toftsack/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_08.jpg" alt="日本製リュックタフトサック" border="0"></a>
 <p>[MAKUAKE掲載商品]スーツスタイルに合うシンプルな都会的デザインのビジネスリュック</p></div>
+		
+		</div>
+		<div class="effect">
 <div class="three-box_last"> <a href="https://item.rakuten.co.jp/asoboze/av-g144/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_09.jpg" alt="日本製コードバン名刺入れ" border="0"></a>
 <p>美しく輝く“革のダイヤ”革愛好家たちに愛されるコードバン名刺入れ</p>
-</div></div><br /><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_10.jpg" alt="asobozeコンセプト　色×あそび" />
-	<div class="catebase06">
+		
+		</div>
+</div></div><br />
+		<div class="effect">
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_10.jpg" alt="asobozeコンセプト　色×あそび" />
+		
+		</div>
+		<div class="effect">
+			<div class="catebase06">
   <p>色×あそび</p>
-</div><div class="catebase08">
+</div>		
+		</div>
+		<div class="effect">
+<div class="catebase08">
   <p>color</p>
 </div>
+		
+		</div>
+<div class="effect">
+		
 <div class="catebase07"><p>ファッションのアクセントとなる色使い。<br />
   ビジネスや冠婚葬祭などシーンに合わせた色合い。</p>
-</div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_11.jpg" />
-<br /><br /><div class="threebox3">
+</div>		</div>
+		<div class="effect">
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_11.jpg" />
+		
+		</div>
+		<br /><br /><div class="threebox3">
+		<div class="effect">
 <div class="three-box"> <a href="https://item.rakuten.co.jp/asoboze/ze-v158/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_12.jpg" alt="姫路産レザーのブックカバー" border="0"></a>
 
 <p>使うごとに味が出る、色鮮やかな姫路レザーを使用したブックカバー</p>
-</div><div class="three-box"> <a href="https://item.rakuten.co.jp/asoboze/le-c001/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_13.jpg" alt="日本製靴べらキーホルダー" border="0"></a>
+</div>		
+		</div>
+		<div class="effect">
+<div class="three-box"> <a href="https://item.rakuten.co.jp/asoboze/le-c001/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_13.jpg" alt="日本製靴べらキーホルダー" border="0"></a>
 <p>１つひとつ異なる革の風合いと色合いコンパクトな靴べらキーホルダー</p>
-</div><div class="three-box_last"> <a href="https://item.rakuten.co.jp/asoboze/ch-p123/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_14.jpg" alt="キメの細かい革を使用した本革ボディバッグ" border="0"></a>
+</div>		
+		</div>
+		<div class="effect">
+<div class="three-box_last"> <a href="https://item.rakuten.co.jp/asoboze/ch-p123/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_14.jpg" alt="キメの細かい革を使用した本革ボディバッグ" border="0"></a>
 <p>滑らかな手触りと艶のある光沢が美しい本革ボディバッグ</p>
-</div></div><br /><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_15.jpg" alt="asobozeコンセプト　カタチ×あそび" /><div class="catebase06">
+</div>		
+		</div>
+</div><br />
+		<div class="effect">
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_15.jpg" alt="asobozeコンセプト　カタチ×あそび" />		
+		</div>
+		<div class="effect">
+<div class="catebase06">
   <p>カタチ×あそび</p>
-</div><div class="catebase08">
+</div>		
+		</div>
+<div class="effect">
+<div class="catebase08">
   <p>form</p>
-</div>
+</div>		
+		</div>
+		<div class="effect">
 <div class="catebase07"><p>シンプルな中にも一工夫。<br />
-  愛着を持って永く大事に使って貰えるものを。</p></div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_16.jpg" /><br /><br /><div class="threebox3">
+  愛着を持って永く大事に使って貰えるものを。</p></div>		
+		</div>
+		<div class="effect">
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_16.jpg" />		
+		</div>
+<br /><br /><div class="threebox3">
+		<div class="effect">
 <div class="three-box"> <a href="https://item.rakuten.co.jp/asoboze/kg-y167/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_17.jpg" alt="キャッシュレス時代の新しいカタチ" border="0"></a>
 
 <p>独立した２つの収納が重なるユニークなカタチのコンパクト財布</p>
-</div><div class="three-box"> <a href="https://item.rakuten.co.jp/asoboze/so-u157/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_18.jpg" alt="日本製レディースフォーマルバッグ" border="0"></a>
+</div>		
+		</div>
+		<div class="effect">
+<div class="three-box"> <a href="https://item.rakuten.co.jp/asoboze/so-u157/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_18.jpg" alt="日本製レディースフォーマルバッグ" border="0"></a>
 <p>シンプルな中にも一工夫。<br />
   愛着を持って永く大事に使って貰えるものを。</p>
-</div><div class="three-box_last"> <a href="https://item.rakuten.co.jp/asoboze/av-e010/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_19.jpg" alt="豊岡製ダレスバッグ" border="0"></a>
+</div>		
+		</div>
+
+		<div class="effect">
+<div class="three-box_last"> <a href="https://item.rakuten.co.jp/asoboze/av-e010/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_19.jpg" alt="豊岡製ダレスバッグ" border="0"></a>
 <p>独特な三角形のシルエットが印象的な兵庫県豊岡産のダレスバッグ</p>
-</div></div><br />
+</div>		
+		</div></div><br />
 
 
 
@@ -256,5 +409,23 @@ brand concept</p></div><div class="catebase06"><p>“素材・色・カタチに
 
 <div id="footer_all" class="pconly">
 </div>
-
+<div class="footer sponly" id="spfooter">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+      <a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html" target="_top">トップページ</a></td>
+      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">
+     お支払い・送料</a></td>
+    </tr> 
+    <tr>
+      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">特定商取引法に基づく表記</a></td>
+      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">プライバシーポリシー</a></td>
+    </tr>
+    <tr>
+      <td><a href="https://item.rakuten.co.jp/asoboze/c/" target="_top">サイトマップ</a></td>
+      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">会社概要</a></td>
+    </tr>
+  </table>
+<a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html" target="_top"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/bar_fot.jpg" alt="トップページ" width="100%" border="0"></a>
+</div>
 </body>
