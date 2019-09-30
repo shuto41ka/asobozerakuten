@@ -1,3 +1,4 @@
+<!-- saved from url=(0014)about:internet -->
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -7,7 +8,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="革製品とビジネスバッグの通販サイトasoboze楽天市場店です。ブリーフケース、クラッチバッグなどメンズ向けのカバンからコインケース、ブックカバーなどこだわりの革小物を各種揃えています。">
 <meta name="keywords" content="ビジネスバッグ,クラッチバッグ,セカンドバッグ,カバン,財布,革製品,小銭入れ,ブリーフケース">
-<meta content="サイバール株式会社" name="author">
+<meta content="サイバール株式会社"name="author">
 <title>革製品とビジネスバッグの通販サイト｜asoboze</title>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/css_for_new.css" media="screen and (min-width:760px)"/>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/slider-pro.min.css"  media="screen and (min-width:760px)"/>
@@ -30,6 +31,15 @@
 .sp-horizontal .sp-previous-arrow { background: url(file:///C|/Users/KAMEI/Desktop/jquery-slider-pro/img/prev.png) no-repeat; }
 .sp-horizontal .sp-next-arrow { background: url(file:///C|/Users/KAMEI/Desktop/jquery-slider-pro/img/next.png) no-repeat; }
 .sp-previous-arrow:before, .sp-previous-arrow:after, .sp-next-arrow:before, .sp-next-arrow:after { content: inherit;}
+
+.rPamphBtn {
+	border:none; background:none; cursor: pointer; padding: 0;
+}
+
+.rPamphBtn:hover {
+	opacity: 0.8;
+}
+	
 .effect div {
   transition: 1.0s;
   transition-delay: .1s;
@@ -92,15 +102,8 @@ forceSize: 'fullWidth' //スライダーの幅をブラウザ幅に設定する
 });
 </script>
 <script src="http://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
-<script>
-$(function() {
-	$("#sidenavi").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_left_beta.html");
-	$("#header").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_top_beta.html");
-	$("#banners").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/banners.html");
-	$("#footer_all").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/footer.html");
-	$("#othergallery").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/othergallery.html");
-});
-</script>
+	
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(function(){
@@ -122,10 +125,47 @@ $(function(){
 });
 </script>
 
+<script>
+$(function() {
+	$("#sidenavi").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_left_beta.html");
+	$("#header").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_top_beta.html");
+	$("#banners").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/banners.html");
+	$("#footer_all").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/footer.html");
+	$("#othergallery").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/othergallery.html");
+	
+	
+});
+</script>
 </head>
+
 <body>
-	<div id="header" class="pconly">
+<div id="header" class="pconly">
 </div>
+
+
+
+<div class="ac-container2 pconly" id="sidenavi">
+  
+</div>
+<script type="text/javascript">
+function getScrollBottom() {
+  var body = window.document.body;
+  var html = window.document.documentElement;
+  var scrollTop = body.scrollTop || html.scrollTop;
+  return html.scrollHeight - html.clientHeight - scrollTop;
+}
+jQuery(function($){
+	$(window).on('load scroll',
+	function(){
+		if (getScrollBottom() < 800){
+			$("#sidenavi").fadeOut();
+		}else {
+			$("#sidenavi").fadeIn();
+		}
+ });
+});
+</script>
+
 	<div id="sponly">
 <!-- トップへ戻るボタン -->
 <script type="text/javascript">
@@ -176,214 +216,96 @@ $(function() {
 
 </div>
 </div>
-<div class="ac-container2 pconly" id="sidenavi">
-  
-</div>
-<script type="text/javascript">
-function getScrollBottom() {
-  var body = window.document.body;
-  var html = window.document.documentElement;
-  var scrollTop = body.scrollTop || html.scrollTop;
-  return html.scrollHeight - html.clientHeight - scrollTop;
-}
-jQuery(function($){
-	$(window).on('load scroll',
-	function(){
-		if (getScrollBottom() < 800){
-			$("#sidenavi").fadeOut();
-		}else {
-			$("#sidenavi").fadeIn();
-		}
- });
-});
-</script>
 
-<div style="width:auto; height:70px;" class="pconly"></div>
-
-	<div id="containercate1200">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_01.jpg" alt="asobozeのブランドコンセプト" />
-
-		<div class="catebase05"><p>
-brand concept</p></div>
-				<div class="effect">
-		<div class="catebase06"><p>“素材・色・カタチにあそびを”</p></div>
-		</div>
-		<div class="effect">
-<div class="catebase07"><p>デザインにほんの少しの<br />
-  “あそび”をそえるバッグブランド<br />
-  それがasobozeです。
-</p></div>
-		</div>
-		
-		<div class="effect">
-		<p>
-		<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_02.jpg" alt="メンズ向けバッグと革小物の企画販売" />	
-			</p>
-		</div><br /><br />
-<div class="effect">
-<div class="catebase03"><p>大阪府泉佐野市を拠点に2012年スタートしたメンズ向けバッグと革小物の企画販売を行なうasoboze（アソボーゼ）。<br />
-  決まった素材にとらわれず、 国内外の良いものを取り入れてカタチ作り上げる
-  “ものづくり”を<br />
-  行なっています。</p>
-</div>		
-		</div>	
-	<div class="effect">
-		<div class="kakomi-box1"><br />
-わたしたちがasobozeです。<br /><br />
+<div id="containercate1200">
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/repair_01.jpg" />
+<div class="catebase01"><p>
+REPAIR  CONSULTATION</p></div><div class="catebase02">
+  <p>修理のご相談</p>
 </div>
-		</div>
-		<br /><br />
-		<div class="effect">
-		<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_03.jpg" />
-		</div>
-		<br /><br />
-		<div class="effect">
-		<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_04.jpg" />
-		</div>
-		<br /><br /><br />
-	<div class="effect">
-		<div class="kakomi-box1"><br />
-asobozeのコンセプト<br /><br />
-</div>
-		</div>
+<div class="catebase03"><p>asobozeのバッグをご愛用いただいておりますお客様には「長くお使いいただきたい」、そんな想いで日々商品をお作りしております。<br>
+  けれども、長くお使いいただく中で持ち手が磨耗したりパーツが破損することもございます。<br>
+  日本製で販売させていただいております商品の場合はご修理ができる場合もございますので、まずは当店までご相談ください。</p>
+</div><br />
 <br />
 	<div class="effect">
-	<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_05.jpg" />
-		
-		</div>
-		<div class="effect">
-		<div class="catebase06"><p>素材×あそび</p>
-</div>
-		</div>
-		<div class="effect">
-		<div class="catebase08"><p>material</p>
-</div>
-		</div>
-		<div class="effect">
-<div class="catebase07"><p>国内外にこだわらず&ldquo;素材の強み&rdquo;を<br />
-  活かせるものを厳選。</p>
-</div>
-		
-		</div>
-		<div class="effect">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_06.jpg" />
-		
-		</div>
-<br /><br /><div class="threebox3">
-		<div class="effect">
-<div class="three-box"> <a href="https://item.rakuten.co.jp/asoboze/av-w162/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_07.jpg" alt="asobozeコンセプト　素材×あそび" />
-</a>
-
-<p>革の鞣し（なめし）から国内製造にこだわった姫路レザービジネスバッグ</p>
-</div>
-		
-		</div>
-		<div class="effect">
-<div class="three-box"> <a href="https://item.rakuten.co.jp/asoboze/toftsack/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_08.jpg" alt="日本製リュックタフトサック" border="0"></a>
-<p>[MAKUAKE掲載商品]スーツスタイルに合うシンプルな都会的デザインのビジネスリュック</p></div>
-		
-		</div>
-		<div class="effect">
-<div class="three-box_last"> <a href="https://item.rakuten.co.jp/asoboze/av-g144/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_09.jpg" alt="日本製コードバン名刺入れ" border="0"></a>
-<p>美しく輝く“革のダイヤ”革愛好家たちに愛されるコードバン名刺入れ</p>
-		
-		</div>
-</div></div><br />
-		<div class="effect">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_10.jpg" alt="asobozeコンセプト　色×あそび" />
-		
-		</div>
-		<div class="effect">
-			<div class="catebase06">
-  <p>色×あそび</p>
-</div>		
-		</div>
-		<div class="effect">
-<div class="catebase08">
-  <p>color</p>
-</div>
-		
-		</div>
-<div class="effect">
-		
-<div class="catebase07"><p>ファッションのアクセントとなる色使い。<br />
-  ビジネスや冠婚葬祭などシーンに合わせた色合い。</p>
-</div>		</div>
-		<div class="effect">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_11.jpg" />
-		
-		</div>
-		<br /><br /><div class="threebox3">
-		<div class="effect">
-<div class="three-box"> <a href="https://item.rakuten.co.jp/asoboze/ze-v158/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_12.jpg" alt="姫路産レザーのブックカバー" border="0"></a>
-
-<p>使うごとに味が出る、色鮮やかな姫路レザーを使用したブックカバー</p>
-</div>		
-		</div>
-		<div class="effect">
-<div class="three-box"> <a href="https://item.rakuten.co.jp/asoboze/le-c001/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_13.jpg" alt="日本製靴べらキーホルダー" border="0"></a>
-<p>１つひとつ異なる革の風合いと色合いコンパクトな靴べらキーホルダー</p>
-</div>		
-		</div>
-		<div class="effect">
-<div class="three-box_last"> <a href="https://item.rakuten.co.jp/asoboze/ch-p123/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_14.jpg" alt="キメの細かい革を使用した本革ボディバッグ" border="0"></a>
-<p>滑らかな手触りと艶のある光沢が美しい本革ボディバッグ</p>
-</div>		
-		</div>
-</div><br />
-		<div class="effect">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_15.jpg" alt="asobozeコンセプト　カタチ×あそび" />		
-		</div>
-		<div class="effect">
-<div class="catebase06">
-  <p>カタチ×あそび</p>
-</div>		
-		</div>
-<div class="effect">
-<div class="catebase08">
-  <p>form</p>
-</div>		
-		</div>
-		<div class="effect">
-<div class="catebase07"><p>シンプルな中にも一工夫。<br />
-  愛着を持って永く大事に使って貰えるものを。</p></div>		
-		</div>
-		<div class="effect">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_16.jpg" />		
-		</div>
-<br /><br /><div class="threebox3">
-		<div class="effect">
-<div class="three-box"> <a href="https://item.rakuten.co.jp/asoboze/kg-y167/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_17.jpg" alt="キャッシュレス時代の新しいカタチ" border="0"></a>
-
-<p>独立した２つの収納が重なるユニークなカタチのコンパクト財布</p>
-</div>		
-		</div>
-		<div class="effect">
-<div class="three-box"> <a href="https://item.rakuten.co.jp/asoboze/so-u157/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_18.jpg" alt="日本製レディースフォーマルバッグ" border="0"></a>
-<p>シンプルな中にも一工夫。<br />
-  愛着を持って永く大事に使って貰えるものを。</p>
-</div>		
-		</div>
-
-		<div class="effect">
-<div class="three-box_last"> <a href="https://item.rakuten.co.jp/asoboze/av-e010/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/bra_aso_19.jpg" alt="豊岡製ダレスバッグ" border="0"></a>
-<p>独特な三角形のシルエットが印象的な兵庫県豊岡産のダレスバッグ</p>
-</div>		
-		</div></div><br />
-
-
-
-
-
-
-
+			<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/repair_02.jpg" />
+	</div>
+<br />
 <br /><br />
-
-
-
-
+	<div class="effect">
+	 <img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/repair_03.jpg" />
+	</div>
+	<br /><br />
+	<div class="effect">
+	<div class="tenline"><p>＜修理ご相談内容＞　長年の使用によりエレメント部分がファスナーテープから外れた。</p></div>	
+	</div>
+	<br /><br />
+	<div class="effect">
+	<div class="catebase03">
+    <p>
+メインの止水ファスナー部分の縫製を解き外し、新しいファスナーに交換。<br>
+　　参考）修理日数　約4週間<br>
+　　　　　概算費用　約3,000円～5,000円（税別）※別途、振込手数料がかかります。
 </div>	
-	<div id="othergallery"></div>
+	</div>
+	<br /><br /><br />
+	<div class="effect">
+		<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/repair_05.jpg" />
+	</div>
+	<br />
+<br /><br /><br /><br />
+	<div class="effect">
+			<div class="tenline">
+  <p>＜修理ご相談内容＞　日々の使用によりショルダー取り付け部分の金具が磨耗。</p>
+</div>
+	</div>
+<br /><br />
+	<div class="effect">
+	<div class="catebase03">
+    <p>フレーム部分にネジ止めしている金具を新しい金具に取り替え。<br>
+      　　参考）修理日数　約3週間<br>
+    　　　　　概算費用　お預かり修理の場合　
+    約2,000円～5,000円（税別)<br>
+    　　　　　　　　　　
+    ※別途、振込手数料がかかります。　<br /><br /></div>		
+	</div>
+	<div class="effect">
+		<div class="kakomi-box2"><br />
+パーツをご購入していただき、お客様ご自身で修理していただく場合、「パーツ代+送料」で対応可能です。→お問い合わせ下さい。<br /><br />
+</div>
+	</div>
+<br /><br />
+	<div class="effect">
+	<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/repair_06.jpg" />		
+	</div>
+<br /><br /><br /><br />
+	<div class="effect">
+		<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/repair_07.jpg" />	
+	</div>
+<br /><br /><br />
+	<div class="effect">
+		<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/repair_08.jpg" />	
+	</div>
+<br /><br /><br /><br />
+	<div class="effect">
+		<div class="tenline"><p>「お気に入りのカバンを長く使いたい」そんなお声から生まれた本革日本製ハンドル</p></div>	
+	</div>
+<br /><br />
+	<div class="effect">
+		<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/repair_09.jpg" />	
+	</div>
+<br /><br />
+	<div class="effect">
+		<div class="kakomi-box1"><a href="https://item.rakuten.co.jp/asoboze/hd-h153/"><br />
+こちらの商品を詳しく見る<br /><br />
+</a> </div>
+</div>
+	
+	</div>
+<div style="width:auto; height:70px;" class="pconly"></div>
+
+<div id="othergallery"></div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 <script type="text/javascript">
     var mySwiper = new Swiper ('.swiper-container', {
@@ -431,3 +353,4 @@ asobozeのコンセプト<br /><br />
 <a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html" target="_top"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/bar_fot.jpg" alt="トップページ" width="100%" border="0"></a>
 </div>
 </body>
+</html>

@@ -39,6 +39,16 @@
 .rPamphBtn:hover {
 	opacity: 0.8;
 }
+	
+.effect div {
+  transition: 1.0s;
+  transition-delay: .1s;
+} 
+.effect img {
+  transition: 1.0s;
+  transition-delay: .1s;
+} 
+
 </style>
 
 <!-- スライダー -->
@@ -92,6 +102,29 @@ forceSize: 'fullWidth' //スライダーの幅をブラウザ幅に設定する
 });
 </script>
 <script src="http://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+	
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+  $('.effect div,.effect img').css({"opacity":"0", "padding-top":"15px"});
+  $(window).scroll(function (){
+    $(".effect").each(function(){
+      var imgPos = $(this).offset().top;    
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > imgPos - windowHeight + windowHeight/5){
+        $("div, img",this).css({"opacity":"1", "padding-top": "0" });
+        $("i",this).css({ 
+          "font-size": "100px",
+          "padding": "0 20px 40px"
+        });
+      } 
+    });
+  });
+});
+</script>
+
 <script>
 $(function() {
 	$("#sidenavi").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_left_beta.html");
@@ -99,6 +132,14 @@ $(function() {
 	$("#banners").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/banners.html");
 	$("#footer_all").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/footer.html");
 	$("#othergallery").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/othergallery.html");
+	
+	$("#chip004").load("https://www.rakuten.ne.jp/gold/asoboze/contents/chip_004.html");
+	
+	$("#chip157").load("https://www.rakuten.ne.jp/gold/asoboze/contents/chip_157.html");
+	
+	$("#chipmatsu").load("https://www.rakuten.ne.jp/gold/asoboze/contents/chip_matsu.html");
+	
+	$("#chiprint").load("https://www.rakuten.ne.jp/gold/asoboze/contents/chip_rint.html");
 });
 </script>
 </head>
@@ -131,8 +172,7 @@ jQuery(function($){
 });
 </script>
 
-	<div id="containercate1200">
-    <div id="sponly">
+	<div id="sponly">
 <!-- トップへ戻るボタン -->
 <script type="text/javascript">
 $(function() {
@@ -182,44 +222,56 @@ $(function() {
 
 </div>
 </div>
+	
+	<div id="containercate1200">
+    
 <img src="https://image.rakuten.co.jp/asoboze/cabinet/kawachip/kawachip_01.jpg" style="width:100%; max-width:1200px; padding-bottom:30px; display:block; margin:auto;" /> 
 <div id="topics2019">
-	<p class="catebase01" align="center">革見本請求</p>
-	<p class="catebase03" align="center">sample&nbsp;leather</p>
-	<p class="catebase04" align="center">実際に手に取って、革の素材感をお確かめください。無料でお届けします。</p>
-	<p class="asobase04" align="left">請求できるサンプル一覧<br />
+	<div class="catebase01">
+	<p align="center">sample&nbsp;leather</p>
+	</div>
+	<div class="catebase02">
+	<p align="center">革見本請求</p>
+	</div>
+	<div class="catebase03">
+	<p>実際に手に取って、革の素材感をお確かめください。無料でお届けします。</p>
+	</div>
+	<div class="catebase03">
+	<p>請求できるサンプル一覧<br />
 <span style="font-size:smaller; text-decoration:underline;">※お届けできる数量に限りがございますので、お届けはお1人様1回限り、1部ずつとさせていただきます。</span></p>
-		<form method="post" action="https://pamphlet.step.rakuten.co.jp/rms/mall/pa/pamphlet/vc?l-id=item_PC_Panf">
-        <table class="topicstable">
+
+	</div>
+	        <table class="topicstable">
 			<tr>
-				<td>	<div class="topicsitem">	<button type="submit" class="rPamphBtn" ><img src="https://image.rakuten.co.jp/asoboze/cabinet/kawachip/kawachip_02.jpg"></button><input value="PA01_000_001" type="hidden" name="__event"><input value="%BB%F1%CE%C1%C0%C1%B5%E1" type="hidden" name="panf_text"><input value="362200" type="hidden" name="shop_bid"><input value="asoboze+%A5%A2%A5%BD%A5%DC%A1%BC%A5%BC" type="hidden" name="shop_name"><input value="10000098" type="hidden" name="item_id"><input value="%5B%A5%A2%A5%BD%A5%DC%A1%BC%A5%BC%5D%A5%D6%A5%EA%A1%BC%A5%D5%A5%B1%A1%BC%A5%B9+%A5%E1%A5%F3%A5%BA+%CB%DC%B3%D7+%C6%FC%CB%DC%C0%BD+B4+%C9%B1%CF%A9%A5%EC%A5%B6%A1%BC+%A5%D3%A5%B8%A5%CD%A5%B9%A5%D0%A5%C3%A5%B0+%B5%ED%B3%D7+%C2%E7%CD%C6%CE%CC%3Cbr%3Easoboze+%A5%A2%A5%BD%A5%DC%A1%BC%A5%BC+AV-W162%3Cbr%3E%22Rintosh%A1%CA%A5%EA%A5%F3%A5%C8%A5%C3%A5%B7%A5%E5%A1%CB%22" type="hidden" name="item_name"><input value="av-w162" type="hidden" name="item_number"><input value="asoboze" type="hidden" name="shopurl"><input value="/asoboze/av-w162/" type="hidden" name="pageurl"><input value="0" type="hidden" name="sell_type">
-			<p class="asobase03" align="left" style="padding-left:10px;">SMOOTH&nbsp;LEATHER</p>
-			<p class="asobase04" align="left" style="padding-left:10px;">①スムースレザー</p>
-			<p class="asobase04" align="left" style="padding-left:10px;">使用モデル：AV-W162<br />
-”リントッシュ”</p>
-					</div></td>
-				<td>	<div class="topicsitem">		<img src="https://image.rakuten.co.jp/asoboze/cabinet/kawachip/kawachip_03.jpg">
-			<p class="asobase03" align="left" style="padding-left:10px;">CALF&nbsp;LEATHER</p>
-			<p class="asobase04" align="left" style="padding-left:10px;">②カーフレザー</p>
-			<p class="asobase04" align="left" style="padding-left:10px;">使用モデル：松岡皮革<br />
-カーフレザーシリーズ</p>
-					</div></td>
-				<td>	<div class="topicsitem">		<img src="https://image.rakuten.co.jp/asoboze/cabinet/kawachip/kawachip_04.jpg">
-			<p class="asobase03" align="left" style="padding-left:10px;">STEER&nbsp;HIDE</p>
-			<p class="asobase04" align="left" style="padding-left:10px;">③ステアハイド</p>
-					<p class="asobase04" align="left" style="padding-left:10px;">使用モデル：SO-U157<br />
-レディースフォーマルバッグ</p></div>
+				<td>	
+					<div class="effect">
+					<div class="topicsitem" id="chiprint">		
+					</div>
+					</div>
+					</td>
+				<td>	
+					<div class="effect">
+					<div class="topicsitem" id="chipmatsu">		
+					</div>
+					</div>
+					</td>
+				<td>	
+					<div class="effect">
+					<div class="topicsitem" id="chip157">		</div>
+					</div>
+					
 </td>
 			</tr>
 		</table>
 		<table class="topicstable">
 			<tr>
-				<td>	<div class="topicsitem">		<img src="https://image.rakuten.co.jp/asoboze/cabinet/kawachip/kawachip_05.jpg">
-			<p class="asobase03" align="left" style="padding-left:10px;">GLASS&nbsp;COATING</p>
-			<p class="asobase04" align="left" style="padding-left:10px;">④ガラスコーティングレザー</p>
-			<p class="asobase04" align="left" style="padding-left:10px;">使用モデル：AV-E004<br />
-ダレスバッグ</p>
-					</div></td>
+				<td>	
+					<div class="effect">
+					<div class="topicsitem" id="chip004">			
+
+					</div>
+					</div>
+					</td>
 				<td>	<div class="topicsitem">	&nbsp;
 					</div></td>
 				<td>	<div class="topicsitem">		&nbsp;
