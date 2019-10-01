@@ -438,11 +438,12 @@ table.gallerytable td img{
     font-weight: bold;
     color: #191919;
     margin: 0 auto;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
     padding-top: 0px;
-    letter-spacing: 0.1em;
     display: block;
     text-align: center;
+	line-height:1.4em;
+
 }
 
 /*　商品ページ　ベース　センター　本文　*/
