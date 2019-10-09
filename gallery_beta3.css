@@ -1038,3 +1038,15 @@ border-radius: 3px;
 	width: 100%;
 }
 
+/* 動画へのリンク */
+#container1200 .asomovie {
+	width: 100%;
+	box-sizing: border-box;
+	margin: auto;
+}
+
+#container1200 .asomovie tr td img {
+	width: 80%;
+	display: block;
+	margin:auto;
+}
