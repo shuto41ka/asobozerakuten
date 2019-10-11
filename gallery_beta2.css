@@ -397,7 +397,7 @@ table.gallerytable td img{
 /*　商品ページ　ベース　上見出し　*/
 
 .base22 p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 0.2em;
     margin: 0;
@@ -410,7 +410,7 @@ table.gallerytable td img{
 /*　商品ページ　ベース　中見出し　*/
 
 .base20 p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #191919;
     margin: 0px;
@@ -425,7 +425,7 @@ table.gallerytable td img{
 
 .base21 p {
 	padding:0 30px 80px 30px;
-	font-size: 16px;
+	font-size: 12px;
 	color: #494949;
 	line-height: 1.7em;
 	margin: 0;
@@ -434,7 +434,7 @@ table.gallerytable td img{
 /*　商品ページ　ベース　センター　中見出し　*/
 
 .cntr20 p {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     color: #191919;
     margin: 0 auto;
@@ -453,7 +453,7 @@ table.gallerytable td img{
     padding-bottom: 30px;
     display: block;
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
     color: #494949;
     line-height: 1.5em;
     letter-spacing: 0.1em;
