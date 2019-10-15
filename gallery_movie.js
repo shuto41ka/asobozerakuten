@@ -45,11 +45,25 @@ $(function() {
 		$('#movies_113').load("av-e113.html #movies_113");
 		$('#movies_113').show();
 });
-	$('#dougaswitch09').click(function() {
+	$('#dougaswitch10').click(function() {
     	$("[id ^= 'movies']").hide();
 		$('#movies_toftsack2').load("toftsack2.html #movies_toftsack2");
 		$('#movies_toftsack2').show();
 });
-	
+	$('#dougaswitch11').click(function() {
+    	$("[id ^= 'movies']").hide();
+		$('#movies_to-v172').load("to-v172.html #movies_to-v172");
+		$('#movies_to-v172').show();
+});
+	$('#dougaswitch12').click(function() {
+    	$("[id ^= 'movies']").hide();
+		$('#movies_ze-v168').load("ze-v168.html #movies_ze-v168");
+		$('#movies_ze-v168').show();
+});
+	$('#dougaswitch13').click(function() {
+    	$("[id ^= 'movies']").hide();
+		$('#movies_sk-w171').load("sk-w171.html #movies_sk-w171");
+		$('#movies_sk-w171').show();
+});	
 	
 });

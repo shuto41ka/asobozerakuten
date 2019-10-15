@@ -471,6 +471,11 @@ table.gallerytable td img{
 	width:50%;
 }
 
+.clearbox{
+	clear:both;
+	height:30px;
+	width:100%;
+}
 
 
 .base10 ul{
