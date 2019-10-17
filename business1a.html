@@ -2,18 +2,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45604769-3"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
- 
-  gtag('config', 'UA-45604769-3');
-</script>
-
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
-
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"  charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="革製品とビジネスバッグの通販サイトasoboze楽天市場店です。ブリーフケース、クラッチバッグなどメンズ向けのカバンからコインケース、ブックカバーなどこだわりの革小物を各種揃えています。">
@@ -71,9 +59,8 @@
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/slick.css" media="screen and (min-width:760px)"/>
   <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/slick-theme.css" media="screen and (min-width:760px)"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-<link rel="stylesheet" type="text/css" href="../cssjs/gallery_beta.css"  media="screen and (min-width:1200px)"/>
-<link rel="stylesheet" type="text/css" href="../cssjs/gallery_beta2.css"  media="screen and (max-width:1199px) and (min-width:760px)"/>
+<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta.css"  media="screen and (min-width:1200px)"/>
+<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta2.css"  media="screen and (max-width:1199px) and (min-width:760px)"/>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta3.css"  media="screen and (max-width:759px)"/>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" type="text/css">
  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
@@ -85,16 +72,37 @@ $(function() {
 	$("#header").load("../parts/new_top_beta.html");
 	$("#banners").load("../parts/banners.html");
 	$("#footer_all").load("../parts/footer.html");
-	$("#othergallery").load("../parts/othergallery.html");
 });
 </script>
 
 </head>
 
 <body>
-<div class="ac-container2 pconly" id="sidenavi">
+<div class="ac-container2" id="sidenavi">
   
 </div>
+<script type="text/javascript">
+function getScrollBottom() {
+  var body = window.document.body;
+  var html = window.document.documentElement;
+  var scrollTop = body.scrollTop || html.scrollTop;
+  return html.scrollHeight - html.clientHeight - scrollTop;
+}
+function(){
+	var windowWidth = $(window).width();
+	if(windowWidth > 760) {
+jQuery(function($){
+	$(window).on('load scroll',
+	function(){
+		if (getScrollBottom() < 800){
+			$("#sidenavi").fadeOut();
+		}else {
+			$("#sidenavi").fadeIn();
+		}
+ });
+});
+}};
+</script>
 <div id="header" class="pconly">
 </div>
 <div style="width:auto; height:28px;" class="pconly"></div>
@@ -127,13 +135,13 @@ $(function() {
     });
 });
 </script>
-<p id="page-top" style="z-index:999;"><a href="#wrap" target="_top">▲</a></p>
+<p id="page-top" style="z-index:999;"><a href="#wrap">▲</a></p>
 <!-- トップへ戻るボタン終わり -->
 <!-- /#nav -->
 <SCRIPT src="https://www.rakuten.ne.jp/gold/asoboze/kensaku_sp2.js">
 </SCRIPT>
 <div id="shouhinkensaku" style="position:fixed; top:0; left:0; z-index:10;">
-<div class="asoaso"> <a href="https://www.rakuten.ne.jp/gold/asoboze/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/sp_floattop.jpg" height="35"/></a></div>
+<div class="asoaso"> <a href="https://www.rakuten.ne.jp/gold/asoboze/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/sp_floattop.jpg" height="35"/></a></div>
 <form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" id="search"> 
 <input type="hidden" name="sv" value="6"> 
 <input type="hidden" name="sid" value="362200"> 
@@ -173,7 +181,7 @@ $(function() {
 </div>
 </div>
 <div class="base10 forsp" style="clear:both;"><p style="padding-bottom:5px;">
-画像をクリックすると、拡大画像をご覧いただけます。<br />
+画像をクリックすると、その商品に寄せられたレビューをご覧いただけます。<br />
 ×マークをクリックすると元の画面に戻ります。
 </p></div>
 <table class="gallerytable">
@@ -479,69 +487,82 @@ back
 <div class="my-parts"><span></span></div>
 </div>
 <script type="text/javascript" src="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta.js"></script>
-
 <div class="base09 forsp"><p>
 商品情報
 </p></div>
-<div class="shoukaigrid">
-<div class="galleryshohin">
-<a href="https://item.rakuten.co.jp/asoboze/av-e113/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_14.jpg" /></a>
+<div class="galleryshohin"> <a href="https://item.rakuten.co.jp/asoboze/av-e113/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_14.jpg" /></a>
+</div>
 <div class="gallerylink">
 <p>
 ベーシックなスタイル。<br />
 就職活動にも
-</p><div class="kuwashikumiru">
-<a href="https://item.rakuten.co.jp/asoboze/av-e113/" target="_top">詳しく見る</a></div>
+</p>
+<a href="https://item.rakuten.co.jp/asoboze/av-e113/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/categories/kuwashikumiru.jpg" /></a>
 </div>
+<div class="galleryshohin"> <a href="https://item.rakuten.co.jp/asoboze/ze-v158/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_15.jpg" /></a>
 </div>
-<div class="galleryshohin">
-	 <a href="https://item.rakuten.co.jp/asoboze/ze-v158/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_15.jpg" /></a>
-
 <div class="gallerylink">
 <p>
 柔らかな手触りが優しい<br />
 本革ブックカバー
-</p><div class="kuwashikumiru">
-<a href="https://item.rakuten.co.jp/asoboze/ze-v158/" target="_top">詳しく見る</a></div>
+</p>
+<a href="https://item.rakuten.co.jp/asoboze/ze-v158/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/categories/kuwashikumiru.jpg" /></a>
 </div>
-	</div>
-<div class="galleryshohin">
-<a href="https://item.rakuten.co.jp/asoboze/ze-v159/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_16.jpg" /></a>
-
+<div class="galleryshohin"> <a href="https://item.rakuten.co.jp/asoboze/ze-v159/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_16.jpg" /></a>
+</div>
 <div class="gallerylink">
 <p>
 素朴な本革しおりは<br />
 プレゼントにも
-</p><div class="kuwashikumiru">
-<a href="https://item.rakuten.co.jp/asoboze/ze-v159/" target="_top">詳しく見る</a></div>
+</p>
+<a href="https://item.rakuten.co.jp/asoboze/ze-v159/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/categories/kuwashikumiru.jpg" /></a>
 </div>
+<div class="galleryshohin"> <a href="https://item.rakuten.co.jp/asoboze/av-e027/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_17.jpg" /></a>
 </div>
-<div class="galleryshohin">
-<a href="https://item.rakuten.co.jp/asoboze/av-e027/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_17.jpg" /></a>
-
 <div class="gallerylink">
 <p>
 ビジネスカジュアルに<br />
 マッチするトートバッグ
-</p><div class="kuwashikumiru">
-<a href="https://item.rakuten.co.jp/asoboze/av-e027/" target="_top">詳しく見る</a></div>
+</p>
+<a href="https://item.rakuten.co.jp/asoboze/av-e027/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/categories/kuwashikumiru.jpg" /></a>
 </div>
+<div class="galleryshohin"> <a href="https://item.rakuten.co.jp/asoboze/av-e072/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_18.jpg" /></a>
 </div>
-	<div class="galleryshohin">
-<a href="https://item.rakuten.co.jp/asoboze/av-e072/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_18.jpg" /></a>
 <div class="gallerylink">
 <p>
 端正な顔立ちの<br />
 ブリーフケース
 </p>
-<div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/av-e072/" target="_top">詳しく見る</a></div>
-</div></div>
-
+<a href="https://item.rakuten.co.jp/asoboze/av-e072/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/categories/kuwashikumiru.jpg" /></a>
 </div>
-
 <div style="clear:both;"></div>
 <!-- ここからその他のギャラリー　-->
-<div class="swiper-container" id="othergallery">
+<div class="forsp"><p>
+その他のギャラリーはこちらから
+</p></div>
+<div class="swiper-container">
+ <div class="swiper-wrapper">
+  <div class="swiper-slide"> <a href="https://www.rakuten.ne.jp/gold/asoboze/gallery/gallery/wformal.html">
+  <img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/womensformal/g_wformal_12.jpg" />
+</a>
+  </div>
+  <div class="swiper-slide"> <a href="https://www.rakuten.ne.jp/gold/asoboze/gallery/gallery/rintosh1.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/rintosh1/g_rintosh1_01.jpg"/></a>
+  </div>
+  <div class="swiper-slide"> <a href="https://www.rakuten.ne.jp/gold/asoboze/gallery/gallery/business1.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_01.jpg"/></a>
+  </div>
+  <div class="swiper-slide"> <a href="https://www.rakuten.ne.jp/gold/asoboze/gallery/gallery/business2.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_01.jpg"/></a>
+  </div>
+  <div class="swiper-slide"> <a href="#"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_16.jpg"/></a>
+  </div>
+  <div class="swiper-slide"> <a href="#"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_16.jpg"/></a>
+  </div>
+ </div>
+<!-- ここまでコピー　-->
+     <div class="swiper-pagination"></div>
+    
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 <script type="text/javascript">
@@ -555,8 +576,6 @@ back
       pagination: '.swiper-pagination',
       nextButton: '.swiper-button-next',
       prevButton: '.swiper-button-prev',
-	  preventClicks: false,
-	  preventClicksPropagation: false, 
       breakpoints: {
         759: {
           slidesPerView: 3,
@@ -565,7 +584,7 @@ back
 		  autoplay: true,
         }
       }
-    });
+    })
 	</script>
 </div>
 
@@ -575,20 +594,20 @@ back
   <table width="100%" border="0" cellpadding="0" cellspacing="0">
     <tr>
       <td>
-      <a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html" target="_top">トップページ</a></td>
-      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">
+      <a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html">トップページ</a></td>
+      <td><a href="https://www.rakuten.co.jp/asoboze/info.html">
      お支払い・送料</a></td>
     </tr> 
     <tr>
-      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">特定商取引法に基づく表記</a></td>
-      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">プライバシーポリシー</a></td>
+      <td><a href="https://www.rakuten.co.jp/asoboze/info.html">特定商取引法に基づく表記</a></td>
+      <td><a href="https://www.rakuten.co.jp/asoboze/info.html">プライバシーポリシー</a></td>
     </tr>
     <tr>
-      <td><a href="https://item.rakuten.co.jp/asoboze/c/" target="_top">サイトマップ</a></td>
-      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">会社概要</a></td>
+      <td><a href="https://item.rakuten.co.jp/asoboze/c/">サイトマップ</a></td>
+      <td><a href="https://www.rakuten.co.jp/asoboze/info.html">会社概要</a></td>
     </tr>
   </table>
-<a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html" target="_top"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/bar_fot.jpg" alt="トップページ" width="100%" border="0"></a>
+<a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/bar_fot.jpg" alt="トップページ" width="100%" border="0"></a>
 </div>
 </body>
 </html>

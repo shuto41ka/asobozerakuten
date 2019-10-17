@@ -73,7 +73,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <link rel="stylesheet" type="text/css" href="../cssjs/gallery_beta.css"  media="screen and (min-width:1200px)"/>
-<link rel="stylesheet" type="text/css" href="../cssjs/gallery_beta2.css"  media="screen and (max-width:1199px) and (min-width:760px)"/>
+<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta2.css"  media="screen and (max-width:1199px) and (min-width:760px)"/>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta3.css"  media="screen and (max-width:759px)"/>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" type="text/css">
  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
@@ -95,11 +95,32 @@ $(function() {
 <div class="ac-container2 pconly" id="sidenavi">
   
 </div>
+<script type="text/javascript">
+function getScrollBottom() {
+  var body = window.document.body;
+  var html = window.document.documentElement;
+  var scrollTop = body.scrollTop || html.scrollTop;
+  return html.scrollHeight - html.clientHeight - scrollTop;
+}
+jQuery(function($){
+	$(window).on('load scroll',
+	function(){
+		if (getScrollBottom() < 800){
+			$("#sidenavi").fadeOut();
+		}else {
+			$("#sidenavi").fadeIn();
+		}
+ });
+});
+</script>
 <div id="header" class="pconly">
 </div>
 <div style="width:auto; height:28px;" class="pconly"></div>
 
 <div align="center" class="pconly" id="banners">
+
+</div>
+
 </div>
 <div style="width:auto; height:70px;" class="pconly"></div>
 
@@ -156,19 +177,19 @@ $(function() {
 </div>
 
 <div class="wrap600">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_01.jpg" />
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_01.jpg" />
 </div>
 <div class="wrap600">
 <div class="wraptext">
 <div class="gallerytitle"><p>
-<span style="letter-spacing:.16em;">business&nbsp;1</span>
+<span style="letter-spacing:.16em;">business&nbsp;2</span>
 </p>
 </div>
 <div class="gallerysub"><p>
-それぞれの夏
+Be&nbsp;executive!
 </p></div>
 <div class="gallerytext"><p>
-夏のビジネスパーソンは過酷な暑さの中でも、その足が休まることはない。どんなスタイルの仕事であろうと、夏を制する者はビジネスを制する、かもしれない。
+みんな、バッグは持ったか？長年かけて培った”経験”と”信頼”が僕らの武器だ。さあ、今日もビジネスという冒険に出かけよう。
 </p></div>
 </div>
 </div>
@@ -179,52 +200,51 @@ $(function() {
 <table class="gallerytable">
 <tr>
 <td>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_02.jpg" id="small1"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_02.jpg" id="small1"/>
 </td>
 <td>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_03.jpg" id="small2"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_03.jpg" id="small2"/>
 </td>
 <td>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_04.jpg" id="small3"/>
-</td>
-</tr>
-<tr>
-<td>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_05.jpg" id="small4"/>
-</td>
-<td>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_06.jpg" id="small5"/>
-</td>
-<td>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_07.jpg" id="small6"/>
-
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_04.jpg" id="small3"/>
 </td>
 </tr>
 <tr>
 <td>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_08.jpg" id="small7"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_05.jpg" id="small4"/>
 </td>
 <td>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_09.jpg" id="small8"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_06.jpg" id="small5"/>
 </td>
 <td>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_10.jpg" id="small9"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_07.jpg" id="small6"/>
 </td>
 </tr>
 <tr>
 <td>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_11.jpg" id="small10"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_08.jpg" id="small7"/>
 </td>
 <td>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_12.jpg" id="small11"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_09.jpg" id="small8"/>
 </td>
 <td>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_13.jpg" id="small12"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_10.jpg" id="small9"/>
+</td>
+</tr>
+<tr>
+<td>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_11.jpg" id="small10"/>
+</td>
+<td>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_12.jpg" id="small11"/>
+</td>
+<td>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_13.jpg" id="small12"/>
 </td>
 </tr>
 </table>
 <div class="largeImg reviews">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_02.jpg" id="large1"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_02.jpg" id="large1"/>
 <div class="gallerywrap" id="comment1">
 <div class="reviewcomment">
 <p>&nbsp;
@@ -236,11 +256,11 @@ $(function() {
 <p>
 next
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_03.jpg" id='next1'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_03.jpg" id='next1'/>
 </div>
 </div>
 </div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_03.jpg" id="large2"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_03.jpg" id="large2"/>
 <div class="gallerywrap" id="comment2">
 <div class="reviewcomment">
 <p>&nbsp;
@@ -252,17 +272,17 @@ next
 <p>
 back
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_02.jpg" id='back2'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_02.jpg" id='back2'/>
 </div>
 <div class="galnext">
 <p>
 next
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_04.jpg" id='next2'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_04.jpg" id='next2'/>
 </div>
 </div>
 </div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_04.jpg" id="large3"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_04.jpg" id="large3"/>
 <div class="gallerywrap" id="comment3">
 <div class="reviewcomment">
 <p>&nbsp;
@@ -274,17 +294,17 @@ next
 <p>
 back
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_03.jpg" id='back3'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_03.jpg" id='back3'/>
 </div>
 <div class="galnext">
 <p>
 next
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_05.jpg" id='next3'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_05.jpg" id='next3'/>
 </div>
 </div>
 </div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_05.jpg" id="large4"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_05.jpg" id="large4"/>
 <div class="gallerywrap" id="comment4">
 <div class="reviewcomment">
 <p>&nbsp;
@@ -296,17 +316,17 @@ next
 <p>
 back
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_04.jpg" id='back4'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_04.jpg" id='back4'/>
 </div>
 <div class="galnext">
 <p>
 next
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_06.jpg" id='next4'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_06.jpg" id='next4'/>
 </div>
 </div>
 </div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_06.jpg" id="large5"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_06.jpg" id="large5"/>
 <div class="gallerywrap" id="comment5">
 <div class="reviewcomment">
 <p>&nbsp;
@@ -318,17 +338,17 @@ next
 <p>
 back
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_05.jpg" id='back5'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_05.jpg" id='back5'/>
 </div>
 <div class="galnext">
 <p>
 next
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_07.jpg" id='next5'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_07.jpg" id='next5'/>
 </div>
 </div>
 </div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_07.jpg" id="large6"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_07.jpg" id="large6"/>
 <div class="gallerywrap" id="comment6">
 <div class="reviewcomment">
 <p>&nbsp;
@@ -340,17 +360,17 @@ next
 <p>
 back
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_06.jpg" id='back6'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_06.jpg" id='back6'/>
 </div>
 <div class="galnext">
 <p>
 next
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_08.jpg" id='next6'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_08.jpg" id='next6'/>
 </div>
 </div>
 </div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_08.jpg" id="large7"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_08.jpg" id="large7"/>
 <div class="gallerywrap" id="comment7">
 <div class="reviewcomment">
 <p>&nbsp;
@@ -362,17 +382,17 @@ next
 <p>
 back
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_07.jpg" id='back7'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_07.jpg" id='back7'/>
 </div>
 <div class="galnext">
 <p>
 next
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_09.jpg" id='next7'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_09.jpg" id='next7'/>
 </div>
 </div>
 </div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_09.jpg" id="large8"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_09.jpg" id="large8"/>
 <div class="gallerywrap" id="comment8">
 <div class="reviewcomment">
 <p>&nbsp;
@@ -384,17 +404,17 @@ next
 <p>
 back
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_08.jpg" id='back8'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_08.jpg" id='back8'/>
 </div>
 <div class="galnext">
 <p>
 next
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_10.jpg" id='next8'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_10.jpg" id='next8'/>
 </div>
 </div>
 </div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_10.jpg" id="large9"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_10.jpg" id="large9"/>
 <div class="gallerywrap" id="comment9">
 <div class="reviewcomment">
 <p>&nbsp;
@@ -406,17 +426,17 @@ next
 <p>
 back
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_09.jpg" id='back9'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_09.jpg" id='back9'/>
 </div>
 <div class="galnext">
 <p>
 next
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_11.jpg" id='next9'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_11.jpg" id='next9'/>
 </div>
 </div>
 </div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_11.jpg" id="large10"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_11.jpg" id="large10"/>
 <div class="gallerywrap" id="comment10">
 <div class="reviewcomment">
 <p>&nbsp;
@@ -428,17 +448,17 @@ next
 <p>
 back
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_10.jpg" id='back10'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_10.jpg" id='back10'/>
 </div>
 <div class="galnext">
 <p>
 next
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_12.jpg" id='next10'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_12.jpg" id='next10'/>
 </div>
 </div>
 </div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_12.jpg" id="large11"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_12.jpg" id="large11"/>
 <div class="gallerywrap" id="comment11">
 <div class="reviewcomment">
 <p>&nbsp;
@@ -450,17 +470,17 @@ next
 <p>
 back
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_11.jpg" id='back11'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_11.jpg" id='back11'/>
 </div>
 <div class="galnext">
 <p>
 next
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_13.jpg" id='next11'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_13.jpg" id='next11'/>
 </div>
 </div>
 </div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_13.jpg" id="large12"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_13.jpg" id="large12"/>
 <div class="gallerywrap" id="comment12">
 <div class="reviewcomment">
 <p>&nbsp;
@@ -472,74 +492,75 @@ next
 <p>
 back
 </p>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_12.jpg" id='back12'/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_12.jpg" id='back12'/>
 </div>
 </div>
 </div>
 <div class="my-parts"><span></span></div>
 </div>
 <script type="text/javascript" src="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta.js"></script>
-
 <div class="base09 forsp"><p>
 商品情報
 </p></div>
 <div class="shoukaigrid">
-<div class="galleryshohin">
-<a href="https://item.rakuten.co.jp/asoboze/av-e113/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_14.jpg" /></a>
+<div class="galleryshohin"> <a href="https://item.rakuten.co.jp/asoboze/av-e010/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_14.jpg" /></a>
 <div class="gallerylink">
 <p>
-ベーシックなスタイル。<br />
-就職活動にも
-</p><div class="kuwashikumiru">
-<a href="https://item.rakuten.co.jp/asoboze/av-e113/" target="_top">詳しく見る</a></div>
+重厚感と扱いやすさの両立。<br />
+高級ダレスバッグ
+</p>
+<div class="kuwashikumiru">
+<a href="https://item.rakuten.co.jp/asoboze/av-e010/" target="_top">詳しく見る</a>
 </div>
 </div>
-<div class="galleryshohin">
-	 <a href="https://item.rakuten.co.jp/asoboze/ze-v158/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_15.jpg" /></a>
-
+</div>
+<div class="galleryshohin"> <a href="https://item.rakuten.co.jp/asoboze/le-e004/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_15.jpg" /></a>
 <div class="gallerylink">
 <p>
-柔らかな手触りが優しい<br />
-本革ブックカバー
-</p><div class="kuwashikumiru">
-<a href="https://item.rakuten.co.jp/asoboze/ze-v158/" target="_top">詳しく見る</a></div>
-</div>
-	</div>
-<div class="galleryshohin">
-<a href="https://item.rakuten.co.jp/asoboze/ze-v159/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_16.jpg" /></a>
-
-<div class="gallerylink">
-<p>
-素朴な本革しおりは<br />
-プレゼントにも
-</p><div class="kuwashikumiru">
-<a href="https://item.rakuten.co.jp/asoboze/ze-v159/" target="_top">詳しく見る</a></div>
+艶のある本革が美しい<br />
+頼れる人のためのバッグ
+</p>
+<div class="kuwashikumiru">
+<a href="https://item.rakuten.co.jp/asoboze/le-e004/" target="_top">詳しく見る</a>
 </div>
 </div>
-<div class="galleryshohin">
-<a href="https://item.rakuten.co.jp/asoboze/av-e027/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_17.jpg" /></a>
-
+</div>
+<div class="galleryshohin"> <a href="https://item.rakuten.co.jp/asoboze/av-e027/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_16.jpg" /></a>
 <div class="gallerylink">
 <p>
 ビジネスカジュアルに<br />
 マッチするトートバッグ
-</p><div class="kuwashikumiru">
-<a href="https://item.rakuten.co.jp/asoboze/av-e027/" target="_top">詳しく見る</a></div>
+</p>
+<div class="kuwashikumiru">
+<a href="https://item.rakuten.co.jp/asoboze/av-e027/" target="_top">詳しく見る</a>
 </div>
 </div>
-	<div class="galleryshohin">
-<a href="https://item.rakuten.co.jp/asoboze/av-e072/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business1/g_business1_18.jpg" /></a>
+</div>
+<div class="galleryshohin"> <a href="https://item.rakuten.co.jp/asoboze/av-t152/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_17.jpg" /></a>
 <div class="gallerylink">
 <p>
-端正な顔立ちの<br />
-ブリーフケース
+バッグ内部をスッキリ整理<br />
+着換えも入るバッグインバッグ
 </p>
-<div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/av-e072/" target="_top">詳しく見る</a></div>
-</div></div>
-
+<div class="kuwashikumiru">
+<a href="https://item.rakuten.co.jp/asoboze/av-t152/" target="_top">詳しく見る</a>
 </div>
-
+</div>
+</div>
+<div class="galleryshohin"> <a href="https://item.rakuten.co.jp/asoboze/av-e006/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/business2/g_business2_18.jpg" /></a>
+<div class="gallerylink">
+<p>
+大容量で出張も安心。<br />
+ビジネスのためのボストンバッグ
+</p>
+<div class="kuwashikumiru">
+<a href="https://item.rakuten.co.jp/asoboze/av-e006/" target="_top">詳しく見る</a>
+</div>
+</div>
+</div></div>
 <div style="clear:both;"></div>
+
+
 <!-- ここからその他のギャラリー　-->
 <div class="swiper-container" id="othergallery">
 </div>
@@ -568,7 +589,6 @@ back
     });
 	</script>
 </div>
-
 <div id="footer_all" class="pconly">
 </div>
 <div class="footer sponly" id="spfooter">
