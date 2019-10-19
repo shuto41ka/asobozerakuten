@@ -895,13 +895,15 @@ border-radius: 3px;
 
 	color: #494949;
 
-	width: 6000px;
+	width: 600px;
 
 	margin: 0 auto;
 
 	border-bottom: dotted 2px #494949;
 
 	border-top: dotted 2px #494949;
+	
+	display: block;
 
 }
 

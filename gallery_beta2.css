@@ -658,13 +658,13 @@ table.gallerytable td img{
 	margin-left:0;
 }
 .ac-container2 .navimidashi:hover ~ ul.ac-bag{
-	height: 470px;
+	height: 506px;
 	left: 120px;
 	position: relative;
 	top: 5px;
 }
 .ac-container2 ul.ac-bag:hover{
-	height: 470px;
+	height: 506px;
 	left: 120px;
 	position: relative;
 	top:5px;
