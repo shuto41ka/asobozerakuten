@@ -1845,3 +1845,78 @@ border-radius: 3px;
 	margin:auto;
 }
 
+/* ライトバナー */
+
+	.floatRightAll {
+		height: 220px;
+		width: 80px;
+		transition: 1.0s;
+	}
+	.floatRightAll:hover {
+		width: 700px;
+	}
+	.floatRightHead {
+		float: left;
+		margin: 0;
+		padding: 0;
+		position: relative;
+		height: 220px;
+		width: 80px;
+	}
+	.floatRightHead p {
+		transform: rotate(90deg);
+		display: block;
+		margin: auto;
+		position: absolute;
+		top: 0;
+		right: -30px;
+		line-height: 220px;
+		font-size: 24px;
+		font-weight: bold;
+		letter-spacing: .1em;
+	}
+	.firstBody p {
+		color: #8e1728;		
+	}
+	.secondBody p {
+		color: #8e8e88;
+	}
+	.floatRightBody {
+		width: 0;
+		height: 220px;
+	}
+	.floatRightBody img {
+		width:0;
+		height: 0;
+	}
+	.floatRightAll:hover .floatRightBody {
+		width: 720px;
+		display: block;
+	}
+	.floatRightAll:hover .floatRightBody img {
+		width: 200px;
+		height: 200px;
+		padding: 10px 5px;
+		margin: 0;
+		display: block;
+		float: left;
+	}
+	.floatRightBody img:last-child{
+		padding: 10px 0;
+	}
+	.firstFloat {
+		top: 150px;
+		right: 0;
+		border: 5px solid #8e1728;
+		position: fixed;
+		border-radius: 10px 0 0 10px;
+		border-right: none;
+	}
+	.secondFloat {
+		top: 390px;
+		right: 0;
+		border: 5px solid #8e8e88;
+		position: fixed;
+		border-radius: 10px 0 0 10px;
+		border-right: none;
+	}
