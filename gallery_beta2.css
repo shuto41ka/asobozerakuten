@@ -273,7 +273,7 @@ table.gallerytable td img{
 	display:block;
 	padding-left:20px;
 	position:fixed;
-	bottom:0;
+	top: 100px;
 	right:0;
 	background:rgba(255,255,255,0.75);
 }
@@ -1851,6 +1851,7 @@ border-radius: 3px;
 		height: 220px;
 		width: 80px;
 		transition: 1.0s;
+		background-color: #ffffff;
 	}
 	.floatRightAll:hover {
 		width: 700px;
@@ -1869,7 +1870,6 @@ border-radius: 3px;
 		margin: auto;
 		position: absolute;
 		top: 0;
-		right: -30px;
 		line-height: 220px;
 		font-size: 24px;
 		font-weight: bold;
@@ -1877,9 +1877,11 @@ border-radius: 3px;
 	}
 	.firstBody p {
 		color: #8e1728;		
+		right: -30px;
 	}
 	.secondBody p {
 		color: #8e8e88;
+		right: -17px;
 	}
 	.floatRightBody {
 		width: 0;
