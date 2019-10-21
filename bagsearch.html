@@ -48,7 +48,11 @@
   transition: 1.0s;
   transition-delay: .1s;
 } 
-
+	.jump p {
+		color: hsla(240,56%,45%,1.00) !important;
+		text-decoration: underline;
+		cursor: pointer;
+	}
 </style>
 
 <!-- スライダー -->
@@ -81,7 +85,9 @@
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta.css"  media="screen and (min-width:1200px)"/>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta2.css"  media="screen and (max-width:1199px) and (min-width:760px)"/>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta3.css"  media="screen and (max-width:759px)"/>
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" type="text/css">
+ <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/asobozerakuten_sp4.css" media="screen and (max-width:759px)"/>
+<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsagasu_sp.css"  media="screen and (max-width:759px)"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" type="text/css">
  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="https://www.rakuten.ne.jp/gold/asoboze/jquery-1.11.3.min.js"></script>
@@ -109,19 +115,105 @@ $(function() {
 	$("#banners").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/banners.html");
 	$("#footer_all").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/footer.html");
 	$("#othergallery").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/othergallery.html");
+	$("#rightFloat").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_right_beta.html");
+	
+	$("#bagsgs_katachi").hide();
+
+	$("#bagsgs_scene").hide();
+
+	$("#bagsgs_yosan").hide();
+	
+	$("[id *= 'bagsgs_brief']").hide();
+	$("[id *= 'bagsgs_dalles']").hide();
+	$("[id *= 'bagsgs_tote']").hide();
+	$("[id *= 'bagsgs_ruck']").hide();
+	$("[id *= 'bagsgs_garment']").hide();
+	$("[id *= 'bagsgs_shoulder']").hide();
+	$("[id *= 'bagsgs_body']").hide();
+	$("[id *= 'bagsgs_boston']").hide();
+	$("[id *= 'bagsgs_second']").hide();
+	
+	$("#jump_katachi").click(function() {
+		$("#bagsgs_katachi").fadeIn(1000);
+	});
+	$("#jump_scene").click(function() {
+		$("#bagsgs_scene").fadeIn(1000);
+	});
+	$("#jump_yosan").click(function() {
+		$("#bagsgs_yosan").fadeIn(1000);
+	});
+	$("#jump_brief1").click(function() {
+		$("#bagsgs_brief1").fadeIn(1000);
+	});
+	$("#jump_dalles1").click(function() {
+		$("#bagsgs_dalles1").fadeIn(1000);
+	});
+	$("#jump_tote1").click(function() {
+		$("#bagsgs_tote1").fadeIn(1000);
+	});
+	$("#jump_ruck1").click(function() {
+		$("#bagsgs_ruck1").fadeIn(1000);
+	});
+	$("#jump_garment").click(function() {
+		$("#bagsgs_garment").fadeIn(1000);
+	});
+	$("#jump_shoulder").click(function() {
+		$("#bagsgs_shoulder").fadeIn(1000);
+	});
+	$("#jump_body").click(function() {
+		$("#bagsgs_body").fadeIn(1000);
+	});
+	$("#jump_boston").click(function() {
+		$("#bagsgs_boston").fadeIn(1000);
+	});
+	$("#jump_second").click(function() {
+		$("#bagsgs_second").fadeIn(1000);
+	});
+	$("#jump_brief2").click(function() {
+		$("#bagsgs_brief2").fadeIn(1000);
+	});
+	$("#jump_dalles2").click(function() {
+		$("#bagsgs_dalles2").fadeIn(1000);
+	});
+	$("#jump_tote2").click(function() {
+		$("#bagsgs_tote2").fadeIn(1000);
+	});
+	$("#jump_ruck2").click(function() {
+		$("#bagsgs_ruck2").fadeIn(1000);
+	});
+	
+	$(".topmodoru").click(function() {
+	$("#bagsgs_katachi").hide();
+
+	$("#bagsgs_scene").hide();
+
+	$("#bagsgs_yosan").hide();
+	
+	$("[id *= 'bagsgs_brief']").hide();
+	$("[id *= 'bagsgs_dalles']").hide();
+	$("[id *= 'bagsgs_tote']").hide();
+	$("[id *= 'bagsgs_ruck']").hide();
+	$("[id *= 'bagsgs_garment']").hide();
+	$("[id *= 'bagsgs_shoulder']").hide();
+	$("[id *= 'bagsgs_body']").hide();
+	$("[id *= 'bagsgs_boston']").hide();
+	$("[id *= 'bagsgs_second']").hide();
+		
+	});
+
 });
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(function(){
-  $('.effect div,.effect img').css({"opacity":"0", "padding-top":"15px"});
+  $('.effect div,.effect img,.effect p').css({"opacity":"0", "padding-top":"15px"});
   $(window).scroll(function (){
     $(".effect").each(function(){
       var imgPos = $(this).offset().top;    
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
       if (scroll > imgPos - windowHeight + windowHeight/5){
-        $("div, img",this).css({"opacity":"1", "padding-top": "0" });
+        $("div, img, p",this).css({"opacity":"1", "padding-top": "0" });
         $("i",this).css({ 
           "font-size": "100px",
           "padding": "0 20px 40px"
@@ -134,6 +226,194 @@ $(function(){
 
 </head>
 <body>
+	<div id="rightFloat" class="pconly">
+	</div>
+	<div id="bagsagasu_sp" class="sponly">
+<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_01.jpg" width="100%" />
+<p>「新しいバッグが欲しい！」「でも、どんなバッグを選べばいいか迷う…」そんなご経験はありませんか？こちらのページでは、様々な視点からあなたのニーズに合ったバッグをご提案いたします。</p>
+<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_02.jpg" width="100%" />
+<ol>
+ <li><a href="#katachi_sp">1.&nbsp;カバンの形から選ぶ</a></li>
+  <ul>
+   <li>1-1.&nbsp;書類やファイルを収納</li>
+   <li>1-2.&nbsp;お弁当など多彩な収納</li>
+  </ul>
+ <li><a href="#scene">2.&nbsp;使用シーンから選ぶ</a></li>
+  <ul>
+   <li>2-1.&nbsp;ビジネスシーンで使う</li>
+   <li>2-2.&nbsp;カジュアルなシーンで使う</li>
+   <li>2-3.&nbsp;フォーマルシーンで使う</li>
+  </ul>
+ <li><a href="#yosan">3.&nbsp;ご予算別で選ぶ</a></li>
+</ol>
+		<div class="effect">
+<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_03.jpg" width="100%"  id="katachi_sp"/>
+<p>
+カバンに何を入れるのか？を考えることは、カバンを選ぶうえで重要なポイントとなります。同じ”仕事用バッグ”でも、書類やファイルを収納ファイルだけを収納する場合もあれば、お弁当を持っていくという方もいらっしゃるかと思います。容量も、多いに越したことはありませんが、荷物が少ない時にはできるだけスリムに行きたいですよね。ここでは、様々なバッグの形から、荷物に合わせたおすすめのバッグをご紹介します。
+</p>
+		
+		</div>
+		<div class="effect">
+<ol>
+ <li><a href="#shorui">1-1.&nbsp;書類やファイルなどを収納</a></li>
+ <li><a href="#obento">1-2.&nbsp;お弁当など多彩な収納</a></li>
+</ol>
+		
+		</div>
+<br />
+<br />
+		<div class="effect">
+<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_04.jpg" width="100%"  id="shorui"/>
+<p>
+ビジネスパーソンの持ち物として、最もイメージしやすいのが書類やファイルなど資料の持ち運び。近年ではスリムで軽量なナイロン素材のものを使う方が増えていますが、合皮や本革でひと味違う印象を与えるのも効果的と言えます。当店では、より見た目の質感にこだわったものを揃えております。
+</p>
+		
+		</div>
+		<div class="effect">
+<a href="https://item.rakuten.co.jp/asoboze/c/0000000134/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_05.jpg" width="100%" /></a>
+<p class="midashi">ブリーフケース</p>
+<p>ビジネスシーンにおいて最もよく使用されているスタンダードなバッグ。新人からベテランまで、幅広く活躍します。スマートにしっかりと自立する佇まいで、あなたのビジネスに欠かせない戦力になってくれます。</p>
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000134/">＞＞ブリーフケースについて詳しく見る</a></p>
+		
+		</div>
+		<div class="effect">
+<a href="https://item.rakuten.co.jp/asoboze/c/0000000136/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_06.jpg" width="100%" /></a>
+<p class="midashi">ダレスバッグ</p>
+<p>留め金式で天井が開き、中身を取り出しやすいのがこのバッグの特徴。マチ幅が大きいので、容量が欲しい時に最適です。英語圏では”ドクターズバッグ”と呼ばれ、医師や士業、企業役員などのエグゼクティブが好んでこのバッグを愛用するなど、ステータスとしての一面も。</p>
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000136/">＞＞ダレスバッグについて詳しく見る</a></p>
+		
+		</div>
+		<div class="effect">
+<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_07.jpg" width="100%"  id="obento"/>
+<p>お仕事場にお弁当を持って出勤するスタイルが広まって久しい現在、従来のスリムなバッグでは不便というケースも。またそれだけではなく、様々なものが収納できることは仕事の幅を広げることにもつながります。</p>
+		
+		</div>
+		<div class="effect">
+<a href="https://item.rakuten.co.jp/asoboze/c/0000000135/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_08.jpg" width="100%" /></a>
+<p class="midashi">トートバッグ</p>
+<p>マチ幅がブリーフケースに比べて広いので、様々なものを収納できる柔軟性がトートバッグの魅力の一つ。スーツスタイルにもよくマッチし、出勤時にひと味違う個性を発揮することができます。オシャレを楽しみたいビジネスパーソンにもおすすめ。</p>
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000135/">＞＞トートバッグについて詳しく見る</a></p>
+		
+		</div>
+		<div class="effect">
+<a href="https://item.rakuten.co.jp/asoboze/c/0000000139/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_09.jpg" width="100%" /></a>
+<p class="midashi">リュックサック（ビジネスリュック）</p>
+<p>リュックサックもまた、様々な荷物を持ち運ぶビジネスパーソンにオススメのバッグ。中に重い荷物を入れても、身体にかかる負担を軽減することができます。両手を空けることができるので、通勤や移動の際にとても便利です。</p>
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000139/">＞＞リュックサック（ビジネスリュック）について詳しく見る</a></p>
+		
+		</div>
+		<div class="effect">
+<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_10.jpg" width="100%"  id="scene"/>
+<p>どんなシーンで使うのかによっても、カバンの選び方は変わってきます。仕事とプライベートなどの使い分けはもちろん、仕事用でも出張に行くときと出勤用、商談用細かい用途に合わせてお選びいただけます。</p>
+		
+		</div>
+		<div class="effect">
+ <ol>
+  <li><a href="#business">2-1.&nbsp;ビジネスシーンで使う</a></li>
+  <li><a href="#casual">2-2.&nbsp;カジュアルなシーンで使う</a></li>
+  <li><a href="#formal">2-3.&nbsp;フォーマルシーンで使う</a></li>
+ </ol>
+		
+		</div>
+		<div class="effect">
+<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_11.jpg" width="100%"  id="business"/>
+<p>ビジネスシーンで使うバッグは自宅と職場の往復のみで使う場合と、商談など社外の人と会う場合が考えられます。それぞれのシーンに合うバッグを選ぶのが良いでしょう。また、遠方への出張時には、スーツを収納できるガーメントバッグも必要になります。</p>
+		
+		</div>
+		<div class="effect">
+<a href="https://item.rakuten.co.jp/asoboze/c/0000000134/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_12.jpg" width="100%" /></a>
+<p class="midashi">ブリーフケース</p>
+<p>シンプルかつスリムなデザインは出勤時に嬉しいだけでなく、取引先や顧客にも良い印象を与えることができます。様々なスタイルのビジネスにマッチするのが、ブリーフケースの持つ最大の魅力と言えるでしょう。</p>
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000134/">＞＞ブリーフケースについて詳しく見る</a></p>
+		
+		</div>
+		<div class="effect">
+<a href="https://item.rakuten.co.jp/asoboze/c/0000000136/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_13.jpg" width="100%" /></a>
+<p class="midashi">ダレスバッグ</p>
+<p>所有感抜群のダレスバッグは、ここぞというビジネスシーンにおいて絶大な威力を発揮します。持つだけで相手方の印象を変えてしまうパワーを持っており、大事な仕事をこなすビジネスパーソンにこそうってつけのバッグであるといえます。</p>
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000136/">＞＞ダレスバッグについて詳しく見る</a></p>
+		
+		</div>
+		<div class="effect">
+<a href="https://item.rakuten.co.jp/asoboze/c/0000000135/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_14.jpg" width="100%" /></a>
+<p class="midashi">トートバッグ</p>
+<p>ブリーフケースよりもややカジュアルな印象のトートバッグ。近年、オシャレ好きのビジネスパーソンの間で注目を集めています。誰ともかぶらない、通好みのバッグを是非一度ご覧ください。</p>
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000135/">＞＞トートバッグについて詳しく見る</a></p>
+		
+		</div>
+		<div class="effect">
+<a href="https://item.rakuten.co.jp/asoboze/c/0000000139/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_15.jpg" width="100%" /></a>
+<p class="midashi">リュックサック（ビジネスリュック）</p>
+<p>通勤時に荷物が重く感じるというう方には、リュックサックの使用をおすすめします。スーツに合わせることを前提にデザインしたビジネスリュックは、手軽ながらも落ち着いた雰囲気を演出します。中でもTOFTSACK（タフトサック）は約700gという軽量さが魅力。</p>
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000139/">＞＞リュックサック（ビジネスリュック）について詳しく見る</a></p>
+		
+		</div>
+		<div class="effect">
+<a href="https://item.rakuten.co.jp/asoboze/c/0000000153/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_16.jpg" width="100%" /></a>
+<p class="midashi">ガーメントバッグ</p>
+<p>遠方への出張時など、スーツを持ち運ぶ必要がある時に使うガーメントバッグ。他の荷物が多くなることを想定し、スリムで持ちやすく、見た目も主張しすぎないデザインにこだわって作りました。</p>
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000153/">＞＞ガーメントバッグについて詳しく見る</a></p>
+		
+		</div>
+		<div class="effect">
+<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_17.jpg" width="100%"  id="casual"/>
+<p>必要最低限の荷物だけでお出かけする場合だけでなく、お弁当などちょっとした荷物を持って行ったり、旅行やゴルフなどのスポーツレジャーに使う場合と、様々な容量のバッグがあれば便利にお出かけを楽しむことができます。</p>
+		
+		</div>
+		<div class="effect">
+<a href="https://item.rakuten.co.jp/asoboze/c/0000000141/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_18.jpg" width="100%" /></a>
+<p class="midashi">ショルダーバッグ</p>
+<p>両手が空くのでアクティブに動けるのがショルダーバッグの特徴。荷物の量に応じてお選びいただけます。艶やかな本革を使用しており、落ち着いた雰囲気を演出します。経年変化を楽しむことができる、長く使いたくなるバッグを取り揃えております。</p>
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000141/">＞＞ショルダーバッグについて詳しく見る</a></p>
+		
+		</div>
+		<div class="effect">
+<a href="https://item.rakuten.co.jp/asoboze/c/0000000138/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_19.jpg" width="100%" /></a>
+<p class="midashi">ボディバッグ</p>
+<p>スマートなフォルムながらしっかりと容量を確保しているのが当店のボディバッグの特徴になります。こちらも全て本革を使用しており、大人の休日にふさわしい質感をお楽しみいただけます。</p>
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000138/">＞＞ボディバッグについて詳しく見る</a></p>
+		
+		</div>
+		<div class="effect">
+<a href="https://item.rakuten.co.jp/asoboze/c/0000000137/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_20.jpg" width="100%" /></a>
+<p class="midashi">ボストンバッグ</p>
+<p>ゴルフなど、荷物が多くなりがちなスポーツレジャーの際に活躍するのがボストンバッグ。旅行はもちろん、出張などのビジネスシーンでもお使いいただけます。大容量だけでなく、見た目の美しさにもこだわりました。</p>
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000137/">＞＞ボストンバッグについて詳しく見る</a></p>
+		
+		</div>
+		<div class="effect">
+<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_21.jpg" width="100%"  id="formal"/>
+<p>冠婚葬祭の際には大きな荷物が不要になる場合もありますが、その分細かい荷物をスマートに持ち運べるバッグがとても役立ちます。シンプルなデザインのものを選ぶことで、普段使いもこなせるのが魅力的。</p>
+		
+		</div>
+		<div class="effect">
+<a href="https://item.rakuten.co.jp/asoboze/c/0000000140/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_22.jpg" width="100%" /></a>
+<p class="midashi">セカンドバッグ</p>
+<p>財布、スマートフォン、袱紗など最低限の荷物をコンパクトに持ち運べるセカンドバッグ。本革の落ち着いた色合いが気品を感じさせます。普段のちょっとしたお出かけにも使えるので、1つ持っておいて損はありません。</p>
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000140/">＞＞セカンドバッグについて詳しく見る</a></p>
+		
+		</div>
+		<div class="effect">
+<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_sp/sagasusp_23.jpg" width="100%"  id="yosan"/>
+<p>こちらでは、ご予算別に商品をお探しいただけます。近年ではコストパフォーマンスが高いバッグが数多く登場しており、安価でも十分な質感をお楽しみいただけます。本革を使用したバッグはその他の素材に比べて高価になっておりますが、その分美しいツヤ感と長く使うことで得られる経年変化をお楽しみいただくことができます。</p>
+		
+		</div>
+		<div class="effect">
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000174/">～10,000円</a></p>
+<p>コストパフォーマンスに優れた商品を数多く取り揃えております。就職活動やはじめてのビジネスバッグにももちろん、キャリアを積んだビジネスパーソンにも満足いただけます。</p>
+		
+		</div>
+		<div class="effect">
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000175/">～20,000円</a></p>
+<p>用途に応じて様々なバッグからお選びいただけるのがこちらの価格帯。本革製のバッグもこちらよりお探しいただけます。個性をアピールしたい、という方にもおすすめ。</p>
+		
+		</div>
+		<div class="effect">
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000176/">20,000円～</a></p>
+<p>長くお使いいただける、持つ人の相棒となる高品質なバッグが勢揃い。お仕事やお出かけの質を高めてくれる、そんなバッグを集めました。</p>
+		
+		</div>
+</div>
 	<div id="header" class="pconly">
 </div>
 <div id="sponly">
@@ -211,163 +491,293 @@ jQuery(function($){
 <div style="width:auto; height:70px;" class="pconly"></div>
 
 
-<div id="bagsagasu" style="display: block; margin: auto;">
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_01.jpg" />
-<div class="erabikata">
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_02.jpg" />
 
-<div class="shiyou">
-<a href="#sceneerabu"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_02_shiyou.jpg" /></a>
-</div>
-<div class="goyosan" style="left: 521px; top: 568px;">
-<a href="#yosande"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_02_goyosan.jpg" /></a></div>
-</div>
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_03.jpg" />
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_04.jpg" />
-<div class="takusnshorui">
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_05.jpg" />
-<div class="shoruifile">
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagshorui.jpg">
-</div>
-<div class="shoruibento">
-<a href="#arekore"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagbento.jpg"></a>
-</div>
-<div class="takudares01">
-<a href="https://item.rakuten.co.jp/asoboze/le-e004/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_06.jpg" /></a>
-</div>
-<div class="takudares02">
-<a href="https://item.rakuten.co.jp/asoboze/av-e010"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_07.jpg" /></a>
-</div>
-<div class="takuata01">
-<a href="https://item.rakuten.co.jp/asoboze/av-e156"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_08.jpg" /></a>
-</div>
-<div class="takuata02">
-<a href="https://item.rakuten.co.jp/asoboze/ba-e002"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_09.jpg" /></a></div>
-</div>
-<div class="smaahorui">
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_10.jpg" />
+<div id="containercate1200" class="pconly">
+<center><p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_01a.jpg" id="bagsgs_top"></p></center>
+	
+	<div class="base21">
+	<p>「新しいバッグが欲しい！」「でも、どんなバッグを選べばいいか迷う…」そんなご経験はありませんか？こちらのページでは、様々な視点からあなたのニーズに合ったバッグをご提案いたします。</p>
 
-<div class="smabri01"> <a href="https://item.rakuten.co.jp/asoboze/av-w162/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_63.jpg" /></a>
-</div>
-<div class="smabri02"> <a href="https://item.rakuten.co.jp/asoboze/av-e072/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_12.jpg" /></a>
-</div></div>
-<div id="arekore">
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_13.jpg" />
-<div class="bentosukkiri"><a href="#bensmart"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsukkiri.jpg" /></a></div>
-<div class="ruck01">
-<a href="https://item.rakuten.co.jp/asoboze/toftsack/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_14.jpg" /></a>
-</div>
-<div class="ruck02">
-<a href="https://item.rakuten.co.jp/asoboze/ch-p147/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_66.jpg" /></a>
-</div>
-<div class="should01">
-<a href="https://item.rakuten.co.jp/asoboze/av-h150/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_16.jpg" /></a>
-</div>
-<div class="should02">
-<a href="https://item.rakuten.co.jp/asoboze/ff202/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_17.jpg" /></a>
-</div>
-<div id="bensmart">
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_18.jpg" />
-<div class="bentote01">
-<a href="https://item.rakuten.co.jp/asoboze/av-h002/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_19.jpg" /></a>
-</div>
-<div class="bentote02">
-<a href="https://item.rakuten.co.jp/asoboze/av-e027/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_20.jpg" /></a>
-</div>
-<div class="benbody01">
-<a href="https://item.rakuten.co.jp/asoboze/ze-h155/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_21.jpg" /></a>
-</div>
-<div class="benbody02">
-<a href="https://item.rakuten.co.jp/asoboze/ch-p123/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_22.jpg" /></a>
-</div>
-</div>
-</div>
-<div id="sceneerabu">
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_23.jpg" />
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_24.jpg" />
-<div class="3scenes">
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_25.jpg" />
-<div class="busy">
-<a href="#scebusy"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_26.jpg" /></a>
-</div>
-<div class="priv">
-<a href="#sceca"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_27.jpg" /></a>
-</div>
-<div class="cele">
-<a href="#scefor"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_28.jpg" /></a>
-</div></div>
-<div class="scebusy" id="scebusy">
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_29.jpg" />
-<div class="scebri01"> <a href="https://item.rakuten.co.jp/asoboze/av-w162/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_64.jpg" /></a>
-</div>
-<div class="scebri02"> <a href="https://item.rakuten.co.jp/asoboze/av-e072/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_31.jpg" /></a>
-</div>
-<div class="scedare01"> <a href="https://item.rakuten.co.jp/asoboze/le-e004/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_32.jpg" /></a>
-</div>
-<div class="scedare02"> <a href="https://item.rakuten.co.jp/asoboze/av-e010/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_33.jpg" /></a>
-</div>
-</div>
-<div class="scebc">
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_34.jpg" />
-<div class="scetot01"> <a href="https://item.rakuten.co.jp/asoboze/fa102/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_35.jpg" /></a>
-</div>
-<div class="scetot02"> <a href="https://item.rakuten.co.jp/asoboze/ch-p124/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_36.jpg" /></a>
-</div>
-<div class="scegar01"> <a href="https://item.rakuten.co.jp/asoboze/av-e109/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_37.jpg" /></a>
-</div>
-<div class="scegar02"> <a href="https://item.rakuten.co.jp/asoboze/av-k040/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_38.jpg" /></a>
-</div>
-<div class="scefli01"> <a href="https://item.rakuten.co.jp/asoboze/av-e156/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_39.jpg" /></a>
-</div>
-<div class="scefli02"> <a href="https://item.rakuten.co.jp/asoboze/le-e014/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_40.jpg" /></a>
-</div>
+	</div>
+	<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_02.jpg"></p>
+	<div class="base20 jump" id="jump_katachi">
+		<p>1.カバンの形から選ぶ</p>
+		</div>
+	<div class="base20 jump" id="jump_scene">
+		<p>2.使用シーンから選ぶ</p>
+		</div>
+	<div class="base20 jump" id="jump_yosan">
+		<p>3.ご予算別から選ぶ</p>
+		</div>
+	<div id="bagsgs_katachi">
+	<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_03.jpg"></p>
+	<div class="base21">
+		<p>カバンに何を入れるのか？を考えることは、カバンを選ぶうえで重要なポイントとなります。<br />
+同じ”仕事用バッグ”でも、書類やファイルだけを収納する場合もあれば、お弁当を持って行くという方もいらっしゃるかと思います。容量も、多いに越したことはありませんが、荷物が少ない時にはできるだけスリムに行きたいですよね。<br />
+ここでは、様々なバッグの形から、荷物の量に合わせたおすすめバッグをご紹介します。</p>
+		</div>
+		<div class="base20">
+		<p>1-1.書類やファイルなどを収納</p>
+		</div>
+		<div class="base21">
+		<p>外回り営業や取引先への訪問など、最もベーシックなビジネスシーンで必要となる、資料の持ち運び。スリムで軽量なものであれば移動が楽になるというメリットがありますが、その分容量が少なくなってしまうというデメリットも。</p>
+		</div>
+	<div class="base20 jump" id="jump_brief1">
+	<p>ブリーフケース</p>
+	</div>
+		<div id="bagsgs_brief1">
+		<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_brief.jpg"></p>
+			<div class="base21">
+			<p>ビジネスシーンにおいて最もよく使用されているスタンダードなバッグ。新人からベテランまで、幅広く活躍します。スマートにしっかりと自立する佇まいで、あなたのビジネスに欠かせない戦力になってくれます。
+<center><div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/c/0000000134/">詳しく見る</a></div>				
+</center>
+				</p>
+			</div>
 
-</div>
-<div class="sceca" id="sceca">
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_41a.jpg" />
-<div class="scebod01"> <a href="https://item.rakuten.co.jp/asoboze/ze-h155/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_42.jpg" /></a>
-</div>
-<div class="scebod02"> <a href="https://item.rakuten.co.jp/asoboze/ch-p123/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_43.jpg" /></a>
-</div>
-<div class="scesho01"> <a href="https://item.rakuten.co.jp/asoboze/ff202/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_44.jpg" /></a>
-</div>
-<div class="scesho02"> <a href="https://item.rakuten.co.jp/asoboze/ff201/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_45.jpg" /></a>
-</div></div>
-<div id="scefor">
-<img src="http://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_49.jpg" />
-<div class="scefor01"> <a href="https://item.rakuten.co.jp/asoboze/av-m108/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_50.jpg" /></a>
-</div>
-<div class="scefor02"> <a href="https://item.rakuten.co.jp/asoboze/so-u157/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_51.jpg" /></a>
-</div>
+			
+		</div>
+	<div class="base20 jump" id="jump_dalles1">
+	<p>ダレスバッグ</p>
+	</div>
+		<div id="bagsgs_dalles1">
+		<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_dall.jpg"></p>
+			<div class="base21">
+<p>留め金式で天井が開き、中身を取り出しやすいのがこのバッグの特徴。マチ幅が大きいので、容量が欲しい時に最適です。英語圏では”ドクターズバッグ”と呼ばれ、医師や士業、企業役員などのエグゼクティブが好んでこのバッグを愛用するなど、ステータスとしての一面も。</p>
+<center><div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/c/0000000136/">詳しく見る</a></div></center>
 
-</div>
-</div>
-<div id="yosande">
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_52.jpg" />
-<div class="yosans">
-<img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_53.jpg" />
-<div class="under01"> <a href="https://item.rakuten.co.jp/asoboze/av-e113-sale/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_54.jpg" /></a>
-</div>
-<div class="under02"> <a href="https://item.rakuten.co.jp/asoboze/vo-e003ol/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_68.jpg" /></a>
-</div>
-<div class="under03"> <a href="https://item.rakuten.co.jp/asoboze/av-t152-sale/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_56.jpg" /></a>
-</div>
-<div class="between01"> <a href="https://item.rakuten.co.jp/asoboze/ch-p123/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_57.jpg" /></a>
-</div>
-<div class="between02"> <a href="https://item.rakuten.co.jp/asoboze/av-e072/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_58.jpg" /></a>
-</div>
-<div class="between03"> <a href="https://item.rakuten.co.jp/asoboze/ch-p124/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_59.jpg" /></a>
-</div>
-<div class="over01"> <a href="https://item.rakuten.co.jp/asoboze/av-m108/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_60.jpg" /></a>
-</div>
-<div class="over02"> <a href="https://item.rakuten.co.jp/asoboze/ze-h155/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_61.jpg" /></a>
-</div>
-<div class="over03"> <a href="https://item.rakuten.co.jp/asoboze/av-w162/"><img src="https://www.rakuten.ne.jp/gold/asoboze/bagsearch/bagsearch_65.jpg" /></a>
-</div>
-</div>
-</div>
-</div>
-<!-- フッター -->
+			</div>
+			
+		</div>
+		<div class="base20">
+		<p>1-2. お弁当など多彩な収納</p>
+		</div>
+		<div class="base21">
+		<p>お仕事場にお弁当を持って出勤するスタイルが広まって久しい現在、従来のスリムなバッグでは不便というケースも。またそれだけではなく、様々なものが収納できることは仕事の幅を広げることにもつながります。</p>
+		</div>
+	<div class="base20 jump" id="jump_tote1">
+	<p>トートバッグ</p>
+	</div>
+		<div id="bagsgs_tote1">
+		<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_tote.jpg"></p>
+			<div class="base21">
+<p>マチ幅がブリーフケースに比べて広いので、様々なものを収納できる柔軟性がトートバッグの魅力の一つ。スーツスタイルにもよくマッチし、出勤時にひと味違う個性を発揮することができます。オシャレを楽しみたいビジネスパーソンにもおすすめ。</p>
+<center><div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/c/0000000135/">詳しく見る</a></div></center>
+
+
+			</div>
+			
+		</div>
+	<div class="base20 jump" id="jump_ruck1">
+	<p>リュックサック（ビジネスリュック）</p>
+	</div>
+		<div id="bagsgs_ruck1">
+		<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_ruck.jpg"></p>
+			<div class="base21">
+
+				<p>リュックサックもまた、様々な荷物を持ち運ぶビジネスパーソンにオススメのバッグ。中に重い荷物を入れても、身体にかかる負担を軽減することができます。両手を空けることができるので、通勤や移動の際にとても便利です。</p>
+
+				<center><div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/c/0000000139/">詳しく見る</a></div></center>
+
+
+
+			</div>
+			
+		</div>
+		<div class="base21 jump"><p>
+	<a href="#bagsgs_top" class="topmodoru">
+		トップに戻る
+	</a>
+		
+		</p>
+		</div>
+	</div>
+	
+<div id="bagsgs_scene">
+	<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_25.jpg"></p>
+	<div class="base21">
+		<p>どんなシーンで使うのかによっても、カバンの選び方は変わってきます。仕事とプライベートなどの使い分けはもちろん、仕事用でも出張に行く時と出勤用、商談用など細かい用途に合わせてお選びいただけます。</p>
+	</div>
+		<div class="base20" id="jump_business">
+		<p>2-1. ビジネスシーンで使う</p>
+		</div>
+	<div class="base21">
+	<p>ビジネスシーンで使うバッグは自宅と職場の往復のみで使う場合と、商談など社外の人と会う際に使う場合が考えられます。それぞれのシーンに合うバッグを選ぶのが良いでしょう。また、遠方への出張時には、スーツを収納できるガーメントバッグも必要になります。</p>
+	</div>
+	<div class="base20 jump" id="jump_brief2">
+	<p>ブリーフケース</p>
+	</div>
+	<div id="bagsgs_brief2">
+		<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_brief.jpg"></p>
+			<div class="base21">
+
+				<p>シンプルかつスリムなデザインは出勤時に嬉しいだけでなく、取引先や顧客にも良い印象を与えることができます。様々なスタイルのビジネスにマッチするのが、ブリーフケースの持つ最大の魅力と言えるでしょう。</p>
+
+				<center><div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/c/0000000134/">詳しく見る</a></div></center>
+
+			</div>
+			
+		</div>
+	<div class="base20 jump" id="jump_dalles2">
+	<p>ダレスバッグ</p>
+	</div>
+	<div id="bagsgs_dalles2">
+		<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_dall.jpg"></p>
+			<div class="base21">
+
+				<p>所有感抜群のダレスバッグは、ここぞというビジネスシーンにおいて絶大な威力を発揮します。持つだけで相手方の印象を変えてしまうパワーを持っており、大事な仕事をこなすビジネスパーソンにこそうってつけのバッグであるといえます。</p>
+
+				<center><div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/c/0000000136/">詳しく見る</a></div></center>
+
+			</div>
+			
+		</div>
+	<div class="base20 jump" id="jump_tote2">
+	<p>トートバッグ</p>
+	</div>
+	<div id="bagsgs_tote2">
+		<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_tote.jpg"></p>
+			<div class="base21">
+
+				<p>ブリーフケースよりもややカジュアルな印象のトートバッグ。近年、オシャレ好きのビジネスパーソンの間で注目を集めています。誰ともかぶらない、通好みのバッグを是非一度ご覧ください。</p><center><div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/c/0000000135/">詳しく見る</a></div></center>
+
+
+			</div>
+			
+		</div>
+	<div class="base20 jump" id="jump_ruck2">
+	<p>リュックサック（ビジネスリュック）</p>
+	</div>
+	<div id="bagsgs_ruck2">
+		<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_ruck.jpg"></p>
+			<div class="base21">
+
+				<p>通勤時に荷物が重く感じるというう方には、リュックサックの使用をおすすめします。スーツに合わせることを前提にデザインしたビジネスリュックは、手軽ながらも落ち着いた雰囲気を演出します。中でもTOFTSACK（タフトサック）は約700gという軽量が魅力。</p>
+				<center><div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/c/0000000139/">詳しく見る</a></div></center>
+
+			</div>
+			
+		</div>
+
+	<div class="base20 jump" id="jump_garment">
+	<p>ガーメントバッグ</p>
+	</div>
+
+	<div id="bagsgs_garment">
+		<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_ga.jpg"></p>
+			<div class="base21">
+				<p>遠方への出張時など、スーツを持ち運ぶ必要がある時に使うガーメントバッグ。他の荷物が多くなることを想定し、スリムで持ちやすく、見た目も主張しすぎないデザインにこだわって作りました。</p>
+				<center><div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/c/0000000153/">詳しく見る</a></div></center>
+			</div>
+			
+		</div>
+	<div class="base20" id="jump_casual">
+		<p>2-2. カジュアルなシーンで使う</p>
+		</div>
+	<div class="base21">
+	<p>必要最低限の荷物だけでお出かけする場合だけでなく、お弁当などちょっとした荷物を持って行ったり、旅行やゴルフなどのスポーツレジャーに使う場合と、様々な容量のバッグがあれば便利にお出かけを楽しむことができます。</p>
+	</div>
+	<div class="base20 jump" id="jump_shoulder">
+	<p>ショルダーバッグ</p>
+	</div>
+	<div id="bagsgs_shoulder">
+		<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_shoulder.jpg"></p>
+			<div class="base21">
+
+				<p>両手が空くのでアクティブに動けるのがショルダーバッグの特徴。荷物の量に応じてお選びいただけます。艶やかな本革を使用しており、落ち着いた雰囲気を演出します。経年変化を楽しむことができる、長く使いたくなるバッグを取り揃えております。</p>
+				<center><div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/c/0000000141/">詳しく見る</a></div></center>
+
+		</div>
+			
+		</div>
+	<div class="base20 jump" id="jump_body">
+	<p>ボディバッグ</p>
+	</div>
+	<div id="bagsgs_body">
+		<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_body.jpg"></p>
+			<div class="base21">
+				<p>スマートなフォルムながらしっかりと容量を確保しているのが当店のボディバッグの特徴になります。こちらも全て本革を使用しており、大人の休日にふさわしい質感をお楽しみいただけます。</p>
+				<center><div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/c/0000000138/">詳しく見る</a></div></center>
+
+
+		</div>
+			
+		</div>
+	<div class="base20 jump" id="jump_boston">
+	<p>ボストンバッグ</p>
+	</div>
+	<div id="bagsgs_boston">
+		<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_boston.jpg"></p>
+			<div class="base21">
+				<p>ゴルフなど、荷物が多くなりがちなスポーツレジャーの際に活躍するのがボストンバッグ。旅行はもちろん、出張などのビジネスシーンでもお使いいただけます。大容量だけでなく、見た目の美しさにもこだわりました。</p>
+
+				<center><div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/c/0000000137/">詳しく見る</a></div></center>
+		</div>
+			
+		</div>
+		<div class="base20" id="jump_formal">
+		<p>2-3. フォーマルなシーンで使う</p>
+		</div>
+	<div class="base21">
+	<p>冠婚葬祭の際には大きな荷物こそ不要ですが、その分細かい荷物をスマートに持ち運べるバッグがとても役立ちます。シンプルなデザインのものを選ぶことで、普段使いもこなせるのが魅力的。</p>
+	</div>
+	<div class="base20 jump" id="jump_second">
+	<p>セカンドバッグ</p>
+	</div>
+		<div id="bagsgs_second">
+		<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_sec.jpg"></p>
+			<div class="base21">
+				<p>財布、スマートフォン、袱紗など最低限の荷物をコンパクトに持ち運べるセカンドバッグ。本革の落ち着いた色合いが気品を感じさせます。普段のちょっとしたお出かけにも使えるので、1つ持っておいて損はありません。</p>
+
+				<center><div class="kuwashikumiru"><a href="https://item.rakuten.co.jp/asoboze/c/0000000140/">詳しく見る</a></div></center>
+			</div>
+			
+		</div>
+<div class="base21 jump"><p>	<a href="#bagsgs_top" class="topmodoru">
+		トップに戻る
+</a>
+		
+		</p>
+		</div>
+	</div>
+	
+	<div id="bagsgs_yosan">
+	<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/bagsagasu/bagsagasu_29.jpg"></p>
+		<div class="base21">
+		<p>こちらでは、ご予算別に商品をお探しいただけます。近年はコストパフォーマンスが高いバッグが数多く登場しており、安価でも十分な質感をお楽しみいただけます。本革を使用したバッグは高価になっておりますが、その分美しいツヤ感と長く使うことで見られる経年変化をお楽しみ頂くことができます。</p>
+		</div>
+		<div class="base20 jump">
+		<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000174/">～10,000円</a></p>
+		</div>
+		<div class="base21">
+		<p>コストパフォーマンスに優れた商品を数多く取り揃えております。就職活動やはじめてのビジネスバッグにももちろん、キャリアを積んだビジネスパーソンにも満足いただけます。</p>
+
+		</div>
+		<div class="base20 jump">
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000175/">～20,000円</a></p>
+		
+		</div>
+		<div class="base21">
+		<p>用途に応じて様々なバッグからお選びいただけるのがこちらの価格帯。本革製のバッグもこちらよりお探しいただけます。個性をアピールしたい、という方にもおすすめ。</p>
+
+		</div>
+		<div class="base20 jump">
+<p><a href="https://item.rakuten.co.jp/asoboze/c/0000000176/">20,000円～</a></p>
+		
+		</div>
+		<div class="base21">
+<p>長くお使いいただける、持つ人の相棒となる高品質なバッグが勢揃い。お仕事やお出かけの質を高めてくれる、そんなバッグを集めました。</p>
+		
+		</div>
+<div class="base21 jump"><p>	<a href="#bagsgs_top" class="topmodoru">
+		トップに戻る
+</a>
+		
+		</p>
+		</div>
+	</div>
+		
+
+</div>	
 	
 			<div class="clearbox"></div>
 
