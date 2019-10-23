@@ -569,6 +569,8 @@ table.gallerytable td img{
 .navimidashi p {
 	height:45px;
 	display:block;
+	padding: 0;
+	margin: 0;
 }
 .navimidashi p span:nth-child(1) {
 	display:block;
@@ -577,7 +579,8 @@ table.gallerytable td img{
 	text-align:center;
 	vertical-align:middle;
 	margin:0;
-	top:10px;
+	top:12px;
+	padding: 0;
 }
 .navimidashi p span:nth-child(2) {
 	display:block;
@@ -589,6 +592,7 @@ table.gallerytable td img{
 	top:10px;
 	font-weight:normal;
 	font-size:14px;
+	padding: 0;
 }
 .navimidashi p span:nth-child(2) {
 	display:none;
@@ -1922,3 +1926,126 @@ border-radius: 3px;
 		border-radius: 10px 0 0 10px;
 		border-right: none;
 	}
+
+/* レビューギャラリー　ホバーでコメント表示 */
+
+		.small1 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_17cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small1 img:hover {
+			opacity: 0;
+		}
+
+		.small2 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_02cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small2 img:hover {
+			opacity: 0;
+		}
+
+		.small3 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_20cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small3 img:hover {
+			opacity: 0;
+		}
+
+		.small4 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_21cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small4 img:hover {
+			opacity: 0;
+		}
+
+		.small5 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_19cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small5 img:hover {
+			opacity: 0;
+		}
+
+		.small6 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_18cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small6 img:hover {
+			opacity: 0;
+		}
+
+		.small7 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_15cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small7 img:hover {
+			opacity: 0;
+		}
+
+		.small8 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_12cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small8 img:hover {
+			opacity: 0;
+		}
+
+		.small9 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_11cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small9 img:hover {
+			opacity: 0;
+		}
+
+		.small10 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_14cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small10 img:hover {
+			opacity: 0;
+		}
+
+		.small11 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_13cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small11 img:hover {
+			opacity: 0;
+		}
+
+		.small12 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_16cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small12 img:hover {
+			opacity: 0;
+		}
+
