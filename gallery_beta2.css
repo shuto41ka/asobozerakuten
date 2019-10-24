@@ -1854,6 +1854,7 @@ border-radius: 3px;
 	.floatRightAll {
     height: 170px;
     width: 40px;
+		z-index: 999999;
     transition: 1.0s;
     background-color: #ffffff;
 	}
