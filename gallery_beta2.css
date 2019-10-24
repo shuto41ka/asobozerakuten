@@ -1916,7 +1916,7 @@ border-radius: 3px;
 		padding: 10px 0;
 	}
 	.firstFloat {
-		top: 60px;
+		top: 120px;
     right: 0;
     border: 5px solid #8e1728;
     position: fixed;
@@ -1924,7 +1924,7 @@ border-radius: 3px;
     border-right: none;
 	}
 	.secondFloat {
-    top: 250px;
+    top: 310px;
     right: 0;
     border: 5px solid #8e8e88;
     position: fixed;
