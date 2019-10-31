@@ -679,6 +679,17 @@ border-radius: 3px;
 	margin: 0;
 
 	}
+.base20 p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #191919;
+    margin: 0px;
+    line-height: 1.4em;
+    padding-top: 0;
+    padding-right: 22px;
+    padding-left: 30px;
+    padding-bottom: 30px;
+}
 
 .base21 p {
 	padding:0 30px 80px 30px;
@@ -687,6 +698,19 @@ border-radius: 3px;
 	line-height: 1.7em;
 	margin: 0;
 }
+
+.cntr21 p {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    color: #494949;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    margin: 0;
+}
+
 /*　コンテンツ　革製品のお手入れ newpage　*/
 
 .mentetop01 p {
@@ -1053,3 +1077,9 @@ border-radius: 3px;
 	margin:auto;
 }
 
+/*  ふわっと表示させるアレ*/
+.effect div {
+  margin: auto;
+  transition: 1.0s;
+  transition-delay: .1s;
+} 
