@@ -9,7 +9,6 @@ html, body{
 #container1200{
 	width:760px;
 	margin:20px 100px;
-	display:block;
 }
 #container1200 img {
 	width: 100%;
@@ -426,7 +425,7 @@ table.gallerytable td img{
 
 .base21 p {
 	padding:0 30px 80px 30px;
-	font-size: 12px;
+	font-size: 14px;
 	color: #494949;
 	line-height: 1.7em;
 	margin: 0;
