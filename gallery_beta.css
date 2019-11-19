@@ -928,13 +928,13 @@ html{
 	transition-duration: .5s;
 }
 .ac-container2 .navimidashi:hover ~ ul.ac-kawakomono{
-	height: 250px;
+	height: 108px;
 	left: 120px;
 	position: relative;
 	top: 40px;
 }
 .ac-container2 ul.ac-kawakomono:hover{
-	height: 250px;
+	height: 108px;
 	left: 120px;
 	position: relative;
 	top: 40px;
@@ -1156,7 +1156,7 @@ html{
 	transition-duration: .5s;
 }
 .ac-container2 .navimidashi:hover ~ ul.ac-small{
-	height: 108px;
+	height: 216px;
 	left: 120px;
 	position: relative;
 	top: 75px;
@@ -1186,7 +1186,7 @@ html{
 	transition-duration: .5s;
 }
 .ac-container2 ul.ac-small:hover{
-	height: 108px;
+	height: 216px;
 	left: 120px;
 	position: relative;
 	top: 75px;
