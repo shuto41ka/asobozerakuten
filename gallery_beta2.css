@@ -2054,3 +2054,21 @@ border-radius: 3px;
 			opacity: 0;
 		}
 
+/* 一緒にちがおうプロジェクト */
+.interview {
+	opacity: 0.7;
+}
+.familylink {
+	width: 100%;
+	max-width: 760px;
+}
+.linkbanner {
+	width: 380px;
+	padding: 10px;
+	float:left;
+	box-sizing: border-box;
+}
+.linkbanner img {
+	width: 100%;
+}
+

@@ -2092,3 +2092,20 @@ background-repeat: no-repeat;
 		.small12 img:hover {
 			opacity: 0;
 		}
+/* 一緒にちがおうプロジェクト */
+.interview {
+	opacity: 0.7;
+}
+.familylink {
+	width: 100%;
+	max-width: 1200px;
+}
+.linkbanner {
+	width: 380px;
+	padding: 10px;
+	float:left;
+}
+.linkbanner img {
+	width: 380px;
+}
+
