@@ -662,13 +662,13 @@ table.gallerytable td img{
 	margin-left:0;
 }
 .ac-container2 .navimidashi:hover ~ ul.ac-bag{
-	height: 506px;
+	height: 542px;
 	left: 120px;
 	position: relative;
 	top: 5px;
 }
 .ac-container2 ul.ac-bag:hover{
-	height: 506px;
+	height: 542px;
 	left: 120px;
 	position: relative;
 	top:5px;
@@ -775,7 +775,7 @@ table.gallerytable td img{
 
 }
 	.ac-container2 .navimidashi:hover ~ ul.ac-brand{
-    height: 170px;
+    height: 206px;
 	left: 120px;
 	position: relative;
 	top:110px;
@@ -806,7 +806,7 @@ table.gallerytable td img{
 	transition-duration: .5s;
 }
 .ac-container2 ul.ac-brand:hover{
-	height: 170px;
+	height: 206px;
 	left: 120px;
 	position: relative;
 	top: 110px;
@@ -814,7 +814,7 @@ table.gallerytable td img{
 
 }
 	.ac-container2 .navimidashi:hover ~ ul.ac-brand{
-	height: 170px;
+	height: 206px;
 	left: 120px;
 	position: relative;
 	top: 110px;
