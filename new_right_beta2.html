@@ -10,15 +10,34 @@
 		z-index: 999999;
 	}
 	.rightBanner2:hover{
-		right: 0;
+		right: 40px;
 }
 	.newItem {
 		top: 120px;
 	}
+		.rightBanner3 {
+		position: fixed;
+		cursor: pointer;
+		width: 520px;
+		height: 180px;
+		transition: 1.0s;
+		right: -480px;		
+		background-color: #ffffff;
+		z-index: 999;	
+	}
+	.rightBanner3:hover{
+		right: 0;
+}
+	.rightBanner3:hover + .rightBanner2{
+		right: 520px;
+}
 
 </style>
 <body ontouchstart="">
 <div id="rightFloat">
+
+<div class="rightBanner3 firstFloat newItem"> <a href="https://www.rakuten.ne.jp/gold/asoboze/contents/braikenohata.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/rightbanner/right_ikenohata.jpg"></a>
+</div>
 <div class="rightBanner2 firstFloat newItem"> <a href="https://www.rakuten.ne.jp/gold/asoboze/contents/bramatsu.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/rightbanner/right_matsuoka.jpg"></a>
 </div>
 <div class="floatRightAll secondFloat">
