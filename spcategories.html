@@ -51,5 +51,14 @@
  </tr></table>
 </center>
 	</div>
+	<script type="text/javascript">
+		(function(){
+  function iframeHeight(){
+    var h = 'iframe<' + document.body.clientHeight + '>height';
+    window.parent.postMessage(h,'*');
+  }
+  setInterval(iframeHeight, 500);
+})();
+	</script>
 </body>
 </html>
