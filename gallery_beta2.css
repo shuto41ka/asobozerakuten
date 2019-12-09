@@ -700,13 +700,13 @@ table.gallerytable td img{
 	transition-duration: .5s;
 }
 .ac-container2 .navimidashi:hover ~ ul.ac-kawakomono{
-	height: 180px;
+	height: 144px;
 	left: 120px;
 	position: relative;
 	top: 40px;
 }
 .ac-container2 ul.ac-kawakomono:hover{
-	height: 180px;
+	height: 144px;
 	left: 120px;
 	position: relative;
 	top: 40px;
