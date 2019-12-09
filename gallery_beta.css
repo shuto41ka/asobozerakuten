@@ -1156,7 +1156,7 @@ html{
 	transition-duration: .5s;
 }
 .ac-container2 .navimidashi:hover ~ ul.ac-small{
-	height: 216px;
+	height: 242px;
 	left: 120px;
 	position: relative;
 	top: 75px;
@@ -1186,7 +1186,7 @@ html{
 	transition-duration: .5s;
 }
 .ac-container2 ul.ac-small:hover{
-	height: 216px;
+	height: 242px;
 	left: 120px;
 	position: relative;
 	top: 75px;
