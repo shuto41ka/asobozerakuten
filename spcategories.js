@@ -1,6 +1,6 @@
 // JavaScript Document
 (function () {(
-  var url = 'https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/spcategories.html';//読み込むiframeのアドレス
+  var url = 'https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/spcategories2.html';//読み込むiframeのアドレス
   var code = '<iframe src="' + url + '" scrolling="no" frameborder="0"></iframe>';
   document.getElementById("iframe-box").innerHTML = code;
 })();
