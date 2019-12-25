@@ -76,6 +76,9 @@ table.gallerytable td img{
 .gallerylink img{
 	width:180px;
 }
+.gallerylinkfutoji{
+	font-weight: bold;
+}
 #large1{
 	display:block;
 	height:100vh;

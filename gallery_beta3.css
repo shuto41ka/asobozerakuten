@@ -70,9 +70,13 @@ table.gallerytable td img{
 .gallerylink p{
 	font-size: 12px;
 	padding-left: 5%;
+	padding-right: 5%;
 }
 .gallerylink img{
 	width:50%;
+}
+.gallerylinkfutoji{
+	font-weight: bold;
 }
 #large1{
 	display:block;
@@ -600,7 +604,7 @@ input[type="checkbox"]#sample + #cover > iframe {
 	margin:20px auto 0;
 }
 .kuwashikumiru {
-	width: 50%; height:20px; background-color:#898989; color:#FFFFFF; text-align:center; text-decoration: none;
+	width: 50%; height:30px; background-color:#898989; color:#FFFFFF; text-align:center; text-decoration: none;
 	vertical-align: middle;
 border-radius: 3px;
 }
@@ -610,7 +614,7 @@ border-radius: 3px;
 	box-sizing: border-box;
 	display: block;
 
-	line-height: 20px;
+	line-height: 30px;
 }
 
 #othergallery .para {

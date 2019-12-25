@@ -52,7 +52,6 @@ table.gallerytable td{
 }
 .gallerylink{
     width: 600px;
-    height: 150px;
     float: right;
     margin-right: auto;
     margin-left: auto;
@@ -62,6 +61,9 @@ table.gallerytable td{
     padding-left: 120px;
     padding-bottom: 30px;
     box-sizing: border-box;
+}
+.gallerylinkfutoji{
+	font-weight: bold;
 }
 #large1{
 	display:block;
