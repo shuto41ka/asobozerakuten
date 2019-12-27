@@ -73,7 +73,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta.css"  media="screen and (min-width:1200px)"/>
-<link rel="stylesheet" type="text/css" href="../cssjs/gallery_beta2.css"  media="screen and (max-width:1199px) and (min-width:760px)"/>
+<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta2.css"  media="screen and (max-width:1199px) and (min-width:760px)"/>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta3.css"  media="screen and (max-width:759px)"/>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" type="text/css">
  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
@@ -86,9 +86,11 @@ $(function() {	$("#sidenavi").load("https://www.rakuten.ne.jp/gold/asoboze/galle
 	$("#footer_all").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/footer.html");
 	$("#othergallery").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/othergallery.html");
 	$("#rightFloat").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_right_beta.html");
+			 $("#regileMonitor").hide();
 });
 </script>
 	<style>
+		@media screen and (min-width:900px){
 		.monitorOpen {
 			width: 100%;
 			margin: 0;
@@ -107,7 +109,7 @@ $(function() {	$("#sidenavi").load("https://www.rakuten.ne.jp/gold/asoboze/galle
 			height: 300px;
 			display: block;
 			float: left;
-			border: 1px solid #494949;
+			border: 1px solid #cccccc;
 			border-collapse: collapse;
 			box-sizing: border-box;
 		}
@@ -117,11 +119,82 @@ $(function() {	$("#sidenavi").load("https://www.rakuten.ne.jp/gold/asoboze/galle
 			font-size: 18px;
 		}
 		.regileMonitor {
-			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monitor/ze168_image_color_l.jpg);
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monitor/ze-1.jpg);
 			background-size: cover;
+			background-repeat: no-repeat;
 			background-position: center center;
+			width: 100%;
+			height: 900px;
+		}
+		.monitorComment a:link {
+			color: #494949;
+			text-decoration: none;
+		}
+		.monitorComment a:visited {
+			color: #494949;
+			text-decoration: none;
+		}
+		}
+		@media screen and (max-width:899px) {
+					.monitorOpenSP {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		.monitorOpenSP div {
+			width: 50%;
+			float: left;
+			display: block;
+		}
+		.monitorOpenSP div img {
+			width: 100%;
+		}
+		.monitorComment {
+			width: 50%;
+			display: block;
+			float: left;
+			border: 1px solid #cccccc;
+			border-collapse: collapse;
+			box-sizing: border-box;
+		}
+		.monitorComment p {
+			padding: 10%;
+			vertical-align: middle;
+			font-size: 12px;
+		}
+		.regileMonitor {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monitor/ze-1.jpg);
+			background-size: content;
+			background-repeat: no-repeat;
+			background-position: center bottom;
+			width: 100%;
+			height: 1000px;
+		}
+		.monitorComment a:link {
+			color: #494949;
+			text-decoration: none;
+		}
+		.monitorComment a:visited {
+			color: #494949;
+			text-decoration: none;
+		}
+
 		}
 	</style>
+	<script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 400; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+      });
+    </script>
 </head>
 
 <body>
@@ -207,18 +280,36 @@ $(function() {
 </div>
 </div>
 
-<div class="base10 forsp" style="clear:both;"><p style="padding-bottom:5px;">
+<div class="base10 forsp" style="clear:both;" id="monitorTop"><p style="padding-bottom:5px;">
 コメントをご覧になりたい商品を選択してください。
 	</p></div>
 	<br /><br />
 	<div class="pconly monitorOpen effect">
-			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/imgrc0093813496.jpg" id="regileOpen"></div>
+			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/imgrc0093813496.jpg" id="regileOpen1"></div>
 			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/imgrc0093813791.jpg"></div>
 			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/imgrc0093813791.jpg"></div>
 			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/imgrc0093813791.jpg"></div>
 	</div>
+	<div class="sponly monitorOpenSP effect">
+			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/monitor_sp_regi.jpg" id="regileOpen2"></div>
+			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/monitor_junbi.jpg"></div>
+			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/monitor_junbi.jpg"></div>
+			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/monitor_junbi.jpg"></div>
+	</div>
+	<script>
+		$(function() {
+			$("#regileOpen1").click(function(){
+				$("#regileMonitor").show(1000);
+			});
+			$("#regileOpen2").click(function(){
+				$("#regileMonitor").show(1000);
+			});
+		})
+	</script>
 	<div class="clearbox"></div>
-<div id="regileMonitor" class="regileMonitor effect monitors">
+	<div id="regileMonitor">
+<div class="regileMonitor effect monitors">
+	<div class="monitorComment"><a href="#regileNishi"><p>エコバッグを初めて使いましたが、レジ袋と形が同じなので気軽に使いやすく…</p><p>（20代　男性スタッフN）</p></a></div>
 	<div class="monitorComment"><p>エコバッグを初めて使いましたが、レジ袋と形が同じなので気軽に使いやすく…</p><p>（20代　男性スタッフN）</p></div>
 	<div class="monitorComment"><p>エコバッグを初めて使いましたが、レジ袋と形が同じなので気軽に使いやすく…</p><p>（20代　男性スタッフN）</p></div>
 	<div class="monitorComment"><p>エコバッグを初めて使いましたが、レジ袋と形が同じなので気軽に使いやすく…</p><p>（20代　男性スタッフN）</p></div>
@@ -228,13 +319,41 @@ $(function() {
 	<div class="monitorComment"><p>エコバッグを初めて使いましたが、レジ袋と形が同じなので気軽に使いやすく…</p><p>（20代　男性スタッフN）</p></div>
 	<div class="monitorComment"><p>エコバッグを初めて使いましたが、レジ袋と形が同じなので気軽に使いやすく…</p><p>（20代　男性スタッフN）</p></div>
 	<div class="monitorComment"><p>エコバッグを初めて使いましたが、レジ袋と形が同じなので気軽に使いやすく…</p><p>（20代　男性スタッフN）</p></div>
-	<div class="monitorComment"><p>エコバッグを初めて使いましたが、レジ袋と形が同じなので気軽に使いやすく…</p><p>（20代　男性スタッフN）</p></div>
-		<div class="monitorComment"></div>
-		<div class="monitorComment"></div>
+		<div class="monitorComment">&nbsp;</div>
+		<div class="monitorComment">&nbsp;</div>
 	</div>
 <div class="clearbox"></div>
+	<div class="monitorDetails">
+		<div class="monitorDetail" id="regileNishi">
+			<div class="wraphalf">
+				<p>
+					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/imgrc0093813792.jpg">
+				</p>
+			</div>
+			<div class="wraphalf">
+				<div class="base21"><br />
+					<p>■良い点<br />
+<br />
+エコバッグを初めて使いましたが、レジ袋と形が同じなので気軽に使いやすく、重宝しています。中身が透けて買った商品が見えるのが気になっていたのでネイビーにしたのですが、外から見ても何を買ったか分からないので良かったです。Mサイズを使っているのですが、横幅がコンビニのお弁当のサイズとぴったりで温めたお弁当が片方に寄ってしまうことがなくなりました。<br />
+<br />
+■悪い点<br />
+<br />
+適当に折って机に入れたりしてしまうので、畳んで入れるための内袋がたまに邪魔に感じます。<br />
+<br />
+■追加されたら嬉しい点<br />
+<br />
+お弁当などと一緒にペットボトルや缶の飲み物などを買った場合、大抵横向きに入れるのですが、中で転がらないようなポケットがあれば良いなと思います。<br /><br />
+						（20代　男性スタッフN）<br /><br />
+						<a href="https://item.rakuten.co.jp/asoboze/ze-v168/">Regileの商品情報をもっと見る</a><br />
+						<a href="#monitorTop">トップに戻る</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
 <script type="text/javascript" src="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta.js"></script>
-
+<div class="clearbox"></div>
 <div class="base09 forsp"><p>
 商品情報
 </p></div>
