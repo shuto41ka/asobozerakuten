@@ -86,7 +86,7 @@ $(function() {	$("#sidenavi").load("https://www.rakuten.ne.jp/gold/asoboze/galle
 	$("#footer_all").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/footer.html");
 	$("#othergallery").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/othergallery.html");
 	$("#rightFloat").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_right_beta.html");
-			 $("#regileMonitor").hide();
+			// $("#regileMonitor").hide();
 });
 </script>
 	<style>
@@ -120,7 +120,7 @@ $(function() {	$("#sidenavi").load("https://www.rakuten.ne.jp/gold/asoboze/galle
 		}
 		.regileMonitor {
 			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monitor/ze-1.jpg);
-			background-size: cover;
+			background-size: 100% auto;
 			background-repeat: no-repeat;
 			background-position: center center;
 			width: 100%;
@@ -157,7 +157,9 @@ $(function() {	$("#sidenavi").load("https://www.rakuten.ne.jp/gold/asoboze/galle
 		}
 		.monitorComment {
 			width: 50%;
-			display: block;
+			height: auto;
+			min-height: 250px;
+			display: table-cell;
 			float: left;
 			border: 1px solid #cccccc;
 			border-collapse: collapse;
@@ -170,9 +172,9 @@ $(function() {	$("#sidenavi").load("https://www.rakuten.ne.jp/gold/asoboze/galle
 		}
 		.regileMonitor {
 			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monitor/ze-1.jpg);
-			background-size: content;
+			background-size: 100% auto;
 			background-repeat: no-repeat;
-			background-position: center bottom;
+			background-position: center center;
 			width: 100%;
 			height: 1000px;
 		}
@@ -269,7 +271,7 @@ $(function() {
 </div>
 </div>
 <div id="container1200"><div class="wrap600">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/monitor_01.jpg" />
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/monitor_01a.jpg" />
 </div>
 <div class="wrap600">
 <div class="wraptext">
@@ -292,15 +294,26 @@ $(function() {
 	<br /><br />
 	<div class="pconly monitorOpen effect">
 			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/imgrc0093813496.jpg" id="regileOpen1" class="pcButton"></div>
-			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/imgrc0093813791.jpg"></div>
-			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/imgrc0093813791.jpg"></div>
-			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/imgrc0093813791.jpg"></div>
+			<div style="border: 5px solid #191919; border-right: none; box-sizing: border-box; width: 300px; height: 600px;"><p style="text-align: center; vertical-align: middle; font-weight: bold; display: table-cell; height: 600px; width: 300px; margin: auto; padding: 0;">In&nbsp;preparation<br />
+準備中</p></div>
+			<div style="border: 5px solid #191919; border-right: none; box-sizing: border-box; width: 300px; height: 600px;"><p style="text-align: center; vertical-align: middle; font-weight: bold; display: table-cell; height: 600px; width: 300px; margin: auto; padding: 0;">In&nbsp;preparation<br />
+準備中</p></div>
+			<div style="border: 5px solid #191919; box-sizing: border-box; width: 300px; height: 600px;"><p style="text-align: center; vertical-align: middle; font-weight: bold; display: table-cell; height: 600px; width: 300px; margin: auto; padding: 0;">In&nbsp;preparation<br />
+準備中</p></div>
 	</div>
+	<style>
+		.box-1x1:before {
+			content: "";
+			display: block;
+			padding-top: 100%;
+		}
+	</style>
 	<div class="sponly monitorOpenSP effect">
 			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/monitor_sp_regi.jpg" id="regileOpen2"></div>
-			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/monitor_junbi.jpg"></div>
-			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/monitor_junbi.jpg"></div>
-			<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/monitor_junbi.jpg"></div>
+			<div style="border: 5px solid #191919; box-sizing: border-box; width: 50%; height: auto; position: relative;" class="box-1x1"><p style="position: absolute; left: 0; width: 100%; height: 60%; top: 40%; font-weight: bold; display: table-cell; vertical-align: middle; text-align: center; margin: 0; padding: 0;">In&nbsp;preparation<br />
+準備中</p></div>
+			<div></div>
+			<div></div>
 	</div>
 	<script>
 		$(function() {
@@ -321,12 +334,15 @@ $(function() {
 	<div class="monitorComment"><a href="#regileMiyazaki"><p>Regileの一番気に入っているところは、小さくかつ、薄く折り畳めるので、財布…</p><p>（40代　女性スタッフM）</p></a></div>
 	<div class="monitorComment"><a href="#regileSanada"><p>普段カバンを持ち歩かないことが多いのでズボンのポケットに常備できて便利…</p><p>（スタッフの旦那さん　30代）</p></a></div>
 	<div class="monitorComment"><a href="#regileSakuma"><p>コンビニやスーパーの袋にそっくり。コンビニ袋よりシワにならずにいい。…</p><p>（スタッフの息子さん　20代）</p></a></div>
-<div class="monitorComment">&nbsp;</div>
-	<div class="monitorComment">&nbsp;</div>
-	<div class="monitorComment">&nbsp;</div>
-	<div class="monitorComment">&nbsp;</div>
-		<div class="monitorComment">&nbsp;</div>
-		<div class="monitorComment">&nbsp;</div>
+<div class="monitorComment"><a href="#regileWatariya"><p>大学内のコンビニで買い物したり、教科書を1〜2冊入れてベンチで友達とランチしたり…</p></a></div>
+	<div class="monitorComment"><a href="#regileChiho"><p>・サイズが大きいので2〜3日分の食材を買い込んでも大丈夫なのが◯。…</p></a></div>
+	<div class="monitorComment"><a href="#regileNihiyama"><p>・手触りがすごく良い<br /><br />
+						・重い物を入れても楽に持てる。…</p></a></div>
+	<div class="monitorComment"><a href="#regileToyoda"><p>・かなり軽量かつコンパクト<br /><br />
+						・持ち手にバイアステープ（縫い目）などもなく、ペタンコにたたみやすい。…</p></a></div>
+		<div class="monitorComment"><a href="#regileSuzuki"><p>・商品が入っている物（パッケージ）がエコっぽくていいとおもった。<br /><br />
+						・シンプルでオシャレ、男の人が使用しやすいデザインで良いと思う。…</p></a></div>
+		<div class="monitorComment"><a href="#regileYamamoto2"><p>薄い生地でしたが、牛乳や大きめのペットボトルを入れても頑丈だなと思いました。…</p></a></div>
 		</div>
 <div class="clearbox"></div>
 	<div class="monitorDetails">
@@ -420,13 +436,13 @@ $(function() {
 		<div class="monitorDetail" id="regileMiyazaki">
 			<div class="wraphalf">
 				<p>
-					<div style="width: 100%; height: 100px;" class="pconly"></div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/regile_miyazaki.jpg" class="pconly">
+					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/regile_miyazaki.jpg" class="pconly">
 					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/regile_miyazaki_sp.jpg" class="sponly">
 				</p>
 			</div>
 			<div class="wraphalf">
-				<div class="base21">
-					<p>Regileの一番気に入っているところは、小さくかつ、薄く折り畳めるので、財布とスマホだけを入れるような厚みの無いサコッシュやポーチだけで出かける時も、かさばらないところです。とにかく、バッグに潜ませておくという安心感が抜群です。<br /><br />友達のお家に遊びに行って突如帰りにお菓子をいただいたり、ジュースをもらったりして帰りに増える荷物にも対応できるし、暑くなってマフラーやジャケットをとりあえず突っ込むこともできました。ネイビーはテカテカしておらず、透け感もほとんどないので中身も見えないし、色も落ち着いていて、シンプルなデザインなので、どんな服装でも合いやすくてよかったです。<br /><br />息子の習い事の道具（スポーツチャンバラの剣や、空気入れやジャージ、サッカーボールや水筒）をがさっと入れておいても、布製とは違い汚れてもさっと拭けばOKですし、スポーツウェアに合わせてカッコよい感じがします。とにかく、がさっと入れるガサツな息子にはちょうどいいようです。<br /><br />また、Lサイズは普段のスーパーの買い物にピッタリで、小さすぎず大きすぎないので、1週間ぶんのまとめ買いには小さいですが、2・3日分だと余裕でした。帰りにドラッグストアのウォーターサーバーで1.5リットルの水を2本入れても余裕でした。<br /><br />ガシガシ使いまくっていると、持ち手の部分の糸が出てきてしまっているのが、少し残念です。<br /><br />総合的に、もう1枚欲しいと思っているぐらい、気に入っています。
+				<div class="base21"><br /><br />
+					<p>Regileの一番気に入っているところは、小さくかつ、薄く折り畳めるので、財布とスマホだけを入れるような厚みの無いサコッシュやポーチだけで出かける時も、かさばらないところです。とにかく、バッグに潜ませておくという安心感が抜群です。<br /><br />息子の習い事の道具（スポーツチャンバラの剣や、空気入れやジャージ、サッカーボールや水筒）をがさっと入れておいても、布製とは違い汚れてもさっと拭けばOKですし、スポーツウェアに合わせてカッコよい感じがします。とにかく、がさっと入れるガサツな息子にはちょうどいいようです。<br /><br />また、Lサイズは普段のスーパーの買い物にピッタリで、小さすぎず大きすぎないので、1週間ぶんのまとめ買いには小さいですが、2・3日分だと余裕でした。帰りにドラッグストアのウォーターサーバーで1.5リットルの水を2本入れても余裕でした。<br /><br />総合的に、もう1枚欲しいと思っているぐらい、気に入っています。
 <br /><br />
 						（40代　女性スタッフM）<br /><br />
 						<a href="https://item.rakuten.co.jp/asoboze/ze-v168-l/">Regileの商品情報をもっと見る</a><br />
@@ -455,7 +471,7 @@ $(function() {
 </div>
 					<p>・使用タイプ：ネイビー　Mサイズ<br />
 						・使用者：息子　20歳　22歳<br /><br />
-						感想：コンビニやスーパーの袋にそっくり。コンビニ袋よりシワにならずにいい。コンビニで店員さんに「これに入れてください」とは恥ずかしくて言えないけど、ジュースやグミを買うことが多いから、「袋はいらない」と断って、後で入れることはできる。<a href="https://item.rakuten.co.jp/asoboze/toftsack/">TOFTSACK</a>に入れる際のサブバッグとして使える。<br /><br />二人とも雑な性格のため、綺麗に畳んで保管はしないとのこと。くしゃくしゃと丸めてポケットに入れられる形がよかった。この袋を持っていて、「ゴミを出さないために」とか、「有料化されたから」とか思われるのが節約家みたいで恥ずかしいとのこと。
+						感想：コンビニやスーパーの袋にそっくり。コンビニ袋よりシワにならずにいい。コンビニで店員さんに「これに入れてください」とは恥ずかしくて言えないけど、ジュースやグミを買うことが多いから、「袋はいらない」と断って、後で入れることはできる。<a href="https://item.rakuten.co.jp/asoboze/toftsack/">TOFTSACK</a>に入れる際のサブバッグとして使える。<br /><br />二人とも雑な性格のため、綺麗に畳んで保管はしないとのこと。くしゃくしゃと丸めてポケットに入れられる形がよかった。この袋を持っていて、「ゴミを出さないために」とか、「有料化されたから」とか思われるのが節約家みたいで恥ずかしいとのこと。<br /><br />
 						<a href="https://item.rakuten.co.jp/asoboze/ze-v168/">Regileの商品情報をもっと見る</a><br />
 						<a href="#monitorTop">トップに戻る</a>
 					</p>
@@ -480,11 +496,174 @@ $(function() {
 						・使用者：旦那さん<br /><br />
 						■良いところ<br />
 <br />
-						普段カバンを持ち歩かないことが多いのでズボンのポケットに常備できて便利。コンパクトでポケットが膨らまないところがいい。レジ袋みたいにガサガサ音がしないから恥ずかしくない。<br />たたみ方が覚えやすく、1回で観ずにできるようになった。<br />透け感が好き。中身が見えたらアウトだけどスケスケすぎないからOK。<br />夜勤帰りにスーパーでカップラーメンや飲料水のまとめ買いをすることが多いのでLを選んで正解だった。コンビニではいちいちマイバッグありますとかいうのが恥ずかしい。面倒くさいから使わない。<br /><br />■悪いところ<br /><br />薄くて切りっぱなしなので耐久性がなさそうに感じる。雑に扱うので破れそうで怖い。
+						普段カバンを持ち歩かないことが多いのでズボンのポケットに常備できて便利。コンパクトでポケットが膨らまないところがいい。レジ袋みたいにガサガサ音がしないから恥ずかしくない。<br />たたみ方が覚えやすく、1回で観ずにできるようになった。<br />透け感が好き。中身が見えたらアウトだけどスケスケすぎないからOK。<br />夜勤帰りにスーパーでカップラーメンや飲料水のまとめ買いをすることが多いのでLを選んで正解だった。コンビニではいちいちマイバッグありますとかいうのが恥ずかしい。面倒くさいから使わない。<br /><br />■悪いところ<br /><br />薄くて切りっぱなしなので耐久性がなさそうに感じる。雑に扱うので破れそうで怖い。<br /><br />
 						<a href="https://item.rakuten.co.jp/asoboze/ze-v168-l/">Regileの商品情報をもっと見る</a><br />
 						<a href="#monitorTop">トップに戻る</a>
 					</p>
 				</div>
+			</div>
+		</div>
+	</div>
+		<div class="clearbox"></div>
+		<div class="monitorDetails">
+		<div class="monitorDetail" id="regileWatariya">
+			<div class="wraphalf">
+				<p>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/regile_watariya.jpg" class="pconly">
+					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/regile_watariya_sp.jpg" class="sponly">
+				</p>
+			</div>
+			<div class="wraphalf">
+				<div class="base21"><div class="pconly"><br /><br /><br /><br /><br />
+<br />
+</div>
+				  <p>
+						・使用者：息子さん（大学生）<br /><br />
+<br />
+大学内のコンビニで買い物したり、教科書を1、2冊入れてベンチで友達とランチしたりするときにちょうど良いと活躍しています。雨が降ったとき、教室に入る前に折り畳み傘を入れるのにも良いと言っていました。<br />
+<br />
+<a href="https://item.rakuten.co.jp/asoboze/ze-v168">Regileの商品情報をもっと見る</a>					  <br />
+<a href="#monitorTop">トップに戻る</a></div>
+		</div>
+	</div>
+	</div>
+		<div class="clearbox"></div>
+		<div class="monitorDetails">
+		<div class="monitorDetail" id="regileChiho">
+			<div class="wraphalf">
+				<p>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/hanyou_02.jpg" class="pconly">
+					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/hanyou_sp02.jpg" class="sponly">
+				</p>
+			</div>
+			<div class="wraphalf">
+				<div class="base21"><div class="pconly"><br /><br /><br /><br /><br /><br /><br />
+<br />
+</div>
+					<p>・サイズが大きいので2〜3日分の食材を買い込んでも大丈夫なのが◯。<br />
+<br />
+畳むと小さくて軽いので常にカバンに入れておける。<br /><br />
+						不器用でも畳むのが簡単で使った後も割と綺麗に畳むことができる。<br /><br />
+						雨の日も問題なく使えて良し。<br /><br />
+						買い物してくるまで帰る時に揺れで中身が出てしまうのでそこが気になる。少量の買い物だと気にならないです！
+						<br /><br />
+<a href="https://item.rakuten.co.jp/asoboze/ze-v168/">Regileの商品情報をもっと見る</a><br />
+						<a href="#monitorTop">トップに戻る</a>
+					</p>
+			
+			</div>
+		</div>
+	</div>
+	</div>
+		<div class="clearbox"></div>
+		<div class="monitorDetails">
+		<div class="monitorDetail" id="regileNishiyama">
+			<div class="wraphalf">
+				<p>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/hanyou_05.jpg" class="pconly">
+					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/hanyou_sp05.jpg" class="sponly">
+				</p>
+			</div>
+			<div class="wraphalf">
+				<div class="base21"><div class="pconly"><br /><br /><br /><br />
+<br />
+</div>
+					<p>
+						■良かった所<br /><br />
+						・手触りがすごく良い<br /><br />
+						・重い物を入れても楽に持てる<br /><br />
+						・コンパクトで畳みやすかった。<br /><br />
+						・思ったよりしっかりしていてビニールみたいに伸びたり破れる心配がない<br /><br />
+						■もっとこうなら良かった点<br /><br />
+						・真ん中のピラピラした部分がもう少し長かったら袋いっぱいに物を入れた時に結べるのでさらに安心できる。<br /><br />
+						・スーパーのカゴに被せることができるほど大きいサイズがあればもっと便利になると思った。
+						<br />
+						<br />
+<a href="https://item.rakuten.co.jp/asoboze/ze-v168-l/">Regileの商品情報をもっと見る</a><br />
+						<a href="#monitorTop">トップに戻る</a>
+					</p>
+			
+			</div>
+		</div>
+	</div>
+	</div>
+		<div class="clearbox"></div>
+		<div class="monitorDetails">
+		<div class="monitorDetail" id="regileToyoda">
+			<div class="wraphalf">
+				<p>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/hanyou_03.jpg" class="pconly">
+					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/hanyou_sp03.jpg" class="sponly">
+				</p>
+			</div>
+			<div class="wraphalf">
+				<div class="base21"><div class="pconly"><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+					<p>
+						・かなり軽量かつコンパクト<br /><br />
+						・持ち手にバイアステープ（縫い目）などもなく、ペタンコにたたみやすい。<br /><br />
+						・女性が持つ小さなバッグにも邪魔にならないので、常に入れておける。ので急な買い物にも重宝している。<br /><br />
+						・今まで使ったエコバッグの中で1番使いやすいです。
+						<br />
+						<br />
+<a href="https://item.rakuten.co.jp/asoboze/ze-v168/">Regileの商品情報をもっと見る</a><br />
+						<a href="#monitorTop">トップに戻る</a>
+					</p>
+			
+			</div>
+		</div>
+	</div>
+	</div>
+		<div class="clearbox"></div>
+		<div class="monitorDetails">
+		<div class="monitorDetail" id="regileSuzuki">
+			<div class="wraphalf">
+				<p>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/regile_suzuki.jpg" class="pconly">
+					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/regile_suzuki_sp.jpg" class="sponly">
+				</p>
+			</div>
+			<div class="wraphalf">
+				<div class="base21"><div class="pconly"><br />
+<br />
+</div>
+					<p>■良いところ<br /><br />
+						・商品が入っている物（パッケージ）がエコっぽくていいとおもった。<br /><br />
+						・シンプルでオシャレ、男の人が使用しやすいデザインで良いと思う。<br /><br />
+						・これからの時代に男の人が使いやすいエコバッグは他にない物なので、新しいものに感じた。<br /><br />
+						・色も選択できて良い。<br /><br />
+						・畳みやすい。よくあるエコバッグよりコンパクトで邪魔にならない。<br /><br />
+						■悪いところ<br /><br />
+						・エコバッグの素材タグ（CORDURA）をもっと目立つようにあっても良いと思った。<br /><br />
+						・素材の良さがわかれば価格も納得できるかもしれないが、高いというイメージが強い。<br /><br />
+<a href="https://item.rakuten.co.jp/asoboze/ze-v168/">Regileの商品情報をもっと見る</a><br />
+						<a href="#monitorTop">トップに戻る</a>
+					</p>
+			
+			</div>
+		</div>
+	</div>
+	</div>
+		<div class="clearbox"></div>
+		<div class="monitorDetails">
+		<div class="monitorDetail" id="regileYamamoto2">
+			<div class="wraphalf">
+				<p>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/hanyou_04.jpg" class="pconly">
+					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monitor/hanyou_sp04.jpg" class="sponly">
+				</p>
+			</div>
+			<div class="wraphalf">
+				<div class="base21"><div class="pconly"><br />
+<br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div>
+					<p>
+						薄い生地でしたが、牛乳や大きめのペットボトルを入れても頑丈だなと思いました。畳んで持ち歩くのも便利でした。リュックやショルダーバッグに変身するタイプも出てきたら嬉しいです。値段はもう少し安い方が買いやすいと思います。<br /><br />
+<a href="https://item.rakuten.co.jp/asoboze/ze-v168/">Regileの商品情報をもっと見る</a><br />
+						<a href="#monitorTop">トップに戻る</a>
+					</p>
+			
 			</div>
 		</div>
 	</div>
