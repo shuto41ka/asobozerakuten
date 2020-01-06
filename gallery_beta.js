@@ -105,6 +105,86 @@ $('#small12').click(function(e) {
 	$('.my-parts').show();
 	$('.swiper-wrapper').hide();
 });
+$('#small13').click(function(e) {
+	$('#large13').show();
+	$('#comment13').show();
+	$('.my-parts').show();
+	$('.swiper-wrapper').hide();
+});
+$('#small14').click(function(e) {
+	$('#large14').show();
+	$('#comment14').show();
+	$('.my-parts').show();
+	$('.swiper-wrapper').hide();
+});
+$('#small15').click(function(e) {
+	$('#large15').show();
+	$('#comment15').show();
+	$('.my-parts').show();
+	$('.swiper-wrapper').hide();
+});
+$('#small16').click(function(e) {
+	$('#large16').show();
+	$('#comment16').show();
+	$('.my-parts').show();
+	$('.swiper-wrapper').hide();
+});
+$('#small17').click(function(e) {
+	$('#large17').show();
+	$('#comment17').show();
+	$('.my-parts').show();
+	$('.swiper-wrapper').hide();
+});
+$('#small18').click(function(e) {
+	$('#large18').show();
+	$('#comment18').show();
+	$('.my-parts').show();
+	$('.swiper-wrapper').hide();
+});
+$('#small19').click(function(e) {
+	$('#large19').show();
+	$('#comment19').show();
+	$('.my-parts').show();
+	$('.swiper-wrapper').hide();
+});
+$('#small20').click(function(e) {
+	$('#large20').show();
+	$('#comment20').show();
+	$('.my-parts').show();
+	$('.swiper-wrapper').hide();
+});
+$('#small20').click(function(e) {
+	$('#large20').show();
+	$('#comment20').show();
+	$('.my-parts').show();
+	$('.swiper-wrapper').hide();
+});
+$('#small21').click(function(e) {
+	$('#large21').show();
+	$('#comment21').show();
+	$('.my-parts').show();
+	$('.swiper-wrapper').hide();
+});
+$('#small22').click(function(e) {
+	$('#large22').show();
+	$('#comment22').show();
+	$('.my-parts').show();
+	$('.swiper-wrapper').hide();
+});
+$('#small23').click(function(e) {
+	$('#large23').show();
+	$('#comment23').show();
+	$('.my-parts').show();
+	$('.swiper-wrapper').hide();
+});
+$('#small24').click(function(e) {
+	$('#large24').show();
+	$('#comment24').show();
+	$('.my-parts').show();
+	$('.swiper-wrapper').hide();
+});
+
+
 
 //ギャラリージャンプ
 
