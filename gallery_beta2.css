@@ -76,136 +76,12 @@ table.gallerytable td img{
 .gallerylink img{
 	width:180px;
 }
-.gallerylinkfutoji{
-	font-weight: bold;
-}
-#large1{
+img[id*="large"]{
 	display:block;
 	height:100vh;
 	width:auto;
 }
-#large2{
-	display:block;
-	height:100vh;
-	width:auto;
-}
-#large3{
-	display:block;
-	height:100vh;
-	width:auto;
-}
-#large4{
-	display:block;
-	height:100vh;
-	width:auto;
-}
-#large5{
-	display:block;
-	height:100vh;
-	width:auto;
-}
-#large6{
-	display:block;
-	height:100vh;
-	width:auto;
-}
-#large7{
-	display:block;
-	height:100vh;
-	width:auto;
-}
-#large8{
-	display:block;
-	height:100vh;
-	width:auto;
-}
-#large9{
-	display:block;
-	height:100vh;
-	width:auto;
-}
-#large10{
-	display:block;
-	height:100vh;
-	width:auto;
-}
-#large11{
-	display:block;
-	height:100vh;
-	width:auto;
-}
-#large12{
-	display:block;
-	height:100vh;
-	width:auto;
-}
-.reviews #large1{
-	display:block;
-	height:100vh;
-	width:auto;
-	float:left;
-}
-.reviews #large2{
-	display:block;
-	height:100vh;
-	width:auto;
-	float:left;
-}
-.reviews #large3{
-	display:block;
-	height:100vh;
-	width:auto;
-	float:left;
-}
-.reviews #large4{
-	display:block;
-	height:100vh;
-	width:auto;
-	float:left;
-}
-.reviews #large5{
-	display:block;
-	height:100vh;
-	width:auto;
-	float:left;
-}
-.reviews #large6{
-	display:block;
-	height:100vh;
-	width:auto;
-	float:left;
-}
-.reviews #large7{
-	display:block;
-	height:100vh;
-	width:auto;
-	float:left;
-}
-.reviews #large8{
-	display:block;
-	height:100vh;
-	width:auto;
-	float:left;
-}
-.reviews #large9{
-	display:block;
-	height:100vh;
-	width:auto;
-	float:left;
-}
-.reviews #large10{
-	display:block;
-	height:100vh;
-	width:auto;
-	float:left;
-}
-.reviews #large11{
-	display:block;
-	height:100vh;
-	width:auto;
-	float:left;
-}
-.reviews #large12{
+.reviews img[id*="large"]{
 	display:block;
 	height:100vh;
 	width:auto;
@@ -1920,7 +1796,7 @@ border-radius: 3px;
 	}
 	.firstFloat {
 		top: 120px;
-    right: -480px;
+    right: 0;
     border: 5px solid #8e1728;
     position: fixed;
     border-radius: 10px 0 0 10px;
@@ -2054,6 +1930,125 @@ border-radius: 3px;
 			background-position: center center;
 		}
 		.small12 img:hover {
+			opacity: 0;
+		}
+		.small13 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_matsu01cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small13 img:hover {
+			opacity: 0;
+		}
+
+		.small14 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_walpac02cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small14 img:hover {
+			opacity: 0;
+		}
+
+		.small15 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_walpac01cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small15 img:hover {
+			opacity: 0;
+		}
+
+		.small16 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_toft01cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small16 img:hover {
+			opacity: 0;
+		}
+
+		.small17 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_2way01cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small17 img:hover {
+			opacity: 0;
+		}
+
+		.small18 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_rint01cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small18 img:hover {
+			opacity: 0;
+		}
+
+		.small19 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_regile01cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small19 img:hover {
+			opacity: 0;
+		}
+
+		.small20 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_regile03cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small20 img:hover {
+			opacity: 0;
+		}
+
+		.small21 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_regile02cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small21 img:hover {
+			opacity: 0;
+		}
+
+		.small22 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_regile04cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small22 img:hover {
+			opacity: 0;
+		}
+
+		.small23 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_mono01cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small23 img:hover {
+			opacity: 0;
+		}
+
+		.small24 {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_case01cover.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+		.small24 img:hover {
 			opacity: 0;
 		}
 
