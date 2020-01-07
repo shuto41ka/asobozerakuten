@@ -117,7 +117,7 @@ jQuery(function($){
 <script type="text/javascript">
 $(function() {
     var topBtn = $('#page-top');    
-    topBtn.hide(1000);
+    topBtn.slideUp();
     //スクロールが100に達したらボタン表示
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -184,7 +184,7 @@ Review&nbsp;Gallery</p>
 画像をクリックすると、その商品に寄せられたレビューをご覧いただけます。<br />
 もう一度クリックすると元の画面に戻ります。
 </p></div>
-<table class="gallerytable" id="galleryPage1">
+<table class="gallerytable" id="galleryPage2">
 <tr>
 <td class="small1">
 <img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_17.jpg" id="small1"/>
@@ -230,7 +230,7 @@ Review&nbsp;Gallery</p>
 </td>
 </tr>
 </table>
-	<table class="gallerytable" id="galleryPage2">
+	<table class="gallerytable" id="galleryPage1">
 <tr>
 <td class="small13">
 <img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_matsu01.jpg" id="small13"/>
@@ -401,18 +401,18 @@ nav.cp_navi {
 			
 			$("#prev").click(function() {
 				if(currentPage === 2) {
-					$("#galleryPage1").show(1000);
+					$("#galleryPage1").slideDown(1000);
 					$("#pagination1").addClass("current");
-					$("#galleryPage2").hide(1000);
+					$("#galleryPage2").slideUp();
 					$("#pagination2").removeClass("current");
 					currentPage = 1
 				};
 			});
 			$("#next").click(function() {
 				if(currentPage === 1) {
-					$("#galleryPage2").show(1000);
+					$("#galleryPage2").slideDown(1000);
 					$("#pagination2").addClass("current");
-					$("#galleryPage1").hide(1000);
+					$("#galleryPage1").slideUp();
 					$("#pagination1").removeClass("current");
 					currentPage = 2
 					
@@ -420,18 +420,18 @@ nav.cp_navi {
 			});
 			$("#pagination1").click(function() {
 				if(currentPage === 2) {
-					$("#galleryPage1").show(1000);
+					$("#galleryPage1").slideDown(1000);
 					$("#pagination1").addClass("current");
-					$("#galleryPage2").hide(1000);
+					$("#galleryPage2").slideUp();
 					$("#pagination2").removeClass("current");
 					currentPage = 1
 				};
 			});
 			$("#pagination2").click(function() {
 				if(currentPage === 1) {
-					$("#galleryPage2").show(1000);
+					$("#galleryPage2").slideDown(1000);
 					$("#pagination2").addClass("current");
-					$("#galleryPage1").hide(1000);
+					$("#galleryPage1").slideUp();
 					$("#pagination1").removeClass("current");
 					currentPage = 2
 					
