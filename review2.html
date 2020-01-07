@@ -117,7 +117,7 @@ jQuery(function($){
 <script type="text/javascript">
 $(function() {
     var topBtn = $('#page-top');    
-    topBtn.hide();
+    topBtn.hide(1000);
     //スクロールが100に達したらボタン表示
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {
@@ -233,54 +233,212 @@ Review&nbsp;Gallery</p>
 	<table class="gallerytable" id="galleryPage2">
 <tr>
 <td class="small13">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_17.jpg" id="small13"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_matsu01.jpg" id="small13"/>
 </td>
 <td class="small14">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_02.jpg" id="small14"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_walpac02.jpg" id="small14"/>
 </td>
 <td class="small15">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_20.jpg" id="small15"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_walpac01.jpg" id="small15"/>
 </td>
 </tr>
 <tr>
 <td class="small16">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_21.jpg" id="small17"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_toftsack01.jpg" id="small16"/>
 </td>
 <td class="small17">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_19.jpg" id="small17"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_toft2way01.jpg" id="small17"/>
 </td>
 <td class="small18">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_18.jpg" id="small18"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_rintosh01.jpg" id="small18"/>
 </td>
 </tr>
 <tr>
 <td class="small19">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/to-v172/to-v172_color.jpg" name="small7" id="small19"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_regile01.jpg" name="small19" id="small19"/>
 </td>
 <td class="small20">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_12.jpg" id="small20"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_regile03.jpg" id="small20"/>
 </td>
 <td class="small21">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_11.jpg" id="small21"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_regile02.jpg" id="small21"/>
 </td>
 </tr>
 <tr>
 <td class="small22">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_14.jpg" id="small22"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_regile04.jpg" id="small22"/>
 </td>
 <td class="small23">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_13.jpg" id="small23"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_monobrass01.jpg" id="small23"/>
 </td>
 <td class="small24">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_16.jpg" id="small24"/>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_case01.jpg" id="small24"/>
 </td>
 </tr>
 </table>
+	<nav class="cp_navi">
+	<div class="cp_pagination">
+		<div class="cp_pagenum prev" id="prev">prev</div>
+		<div class="cp_pagenum current" id="pagination1">1</div>
+		<div class="cp_pagenum" id="pagination2">2</div>
+		<div class="cp_pagenum next" id="next">next</div>
+	</div>
+</nav>
+	<style>
+		.cp_pagenum {
+			cursor: pointer;
+		}
+		nav.cp_navi *, nav.cp_navi *:after, nav.cp_navi *:before {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+nav.cp_navi a {
+	text-decoration: none;
+}
+nav.cp_navi {
+	margin: 2em 0;
+	text-align: center;
+}
+.cp_navi .cp_pagination {
+	display: inline-block;
+	margin-top: 2em;
+	padding: 0 0.5em;
+}
+.cp_navi .cp_pagenum {
+	font-size: 1em;
+	line-height: 50px;
+	display: block;
+	float: left;
+	transition: 400ms ease;
+	letter-spacing: 0.1em;
+	color: #37474F;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	margin: auto .5em;
+}
+.cp_navi .cp_pagenum:hover,
+.cp_navi .cp_pagenum.current {
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #8E1728;
+	border-radius: 50%;
+}
+.cp_navi .cp_pagenum.prev:hover,
+.cp_navi .cp_pagenum.next:hover {
+	color: #8E1728;
+	background-color: transparent;
+	border-radius: 50%;
+}
+@media only screen and (max-width: 960px) {
+	.cp_navi .cp_pagination {
+		margin-top: 50px;
+		padding: 0 10px;
+	}
+	.cp_navi .cp_pagenum {
+	font-size: 0.8em;
+	line-height: 25px;
+	width: 45px;
+	height: 25px;
+	margin: auto .1em;
+	border-radius: 0.3em;
+}
+	.cp_navi .cp_pagenum.prev,
+	.cp_navi .cp_pagenum.next {
+		padding: 0 25px 0 0;
+	}
+	.cp_navi .cp_pagenum:hover,
+	.cp_navi .cp_pagenum.current {
+		border-radius: 0.3em;
+	}
+	.cp_navi .cp_pagenum.prev:hover,
+	.cp_navi .cp_pagenum.next:hover {
+		border-radius: 0.3em;
+	}
+}
+@media only screen and (min-width: 120px) and (max-width: 767px) {
+	.cp_navi .cp_pagenum {
+	display: none;
+	border-radius: 0.3em;
+	}
+	.cp_navi .cp_pagenum:nth-of-type(2) {
+	position: relative;
+	padding-right: 20px;
+	}
+	.cp_navi .cp_pagenum:nth-of-type(2)::after {
+	font-size: 1.2em;
+	position: absolute;
+	top: 0;
+	left: 25px;
+	content: '...';
+	}
+	.cp_navi .cp_pagenum:nth-child(-n+3),
+	.cp_navi .cp_pagenum:nth-last-child(-n+3) {
+		display: block;
+	}
+	.cp_navi .cp_pagenum:nth-last-child(-n+4) {
+		padding: 0 5px;
+	}
+	.cp_navi .cp_pagenum:nth-last-child(-n+4)::after {
+		content: none;
+	}
+	.cp_navi .cp_pagenum:hover,
+	.cp_navi .cp_pagenum.current {
+		border-radius: 0.3em;
+	}
+	.cp_navi .cp_pagenum.prev:hover,
+	.cp_navi .cp_pagenum.next:hover {
+		border-radius: 0.3em;
+	}
+}
+	</style>
 	
 	<script>
 		$(function() {
+			$("#galleryPage1").show();
 			$("#galleryPage2").hide();
-		})
+			var currentPage = 1;
+			
+			$("#prev").click(function() {
+				if(currentPage === 2) {
+					$("#galleryPage1").show(1000);
+					$("#pagination1").addClass("current");
+					$("#galleryPage2").hide(1000);
+					$("#pagination2").removeClass("current");
+					currentPage = 1
+				};
+			});
+			$("#next").click(function() {
+				if(currentPage === 1) {
+					$("#galleryPage2").show(1000);
+					$("#pagination2").addClass("current");
+					$("#galleryPage1").hide(1000);
+					$("#pagination1").removeClass("current");
+					currentPage = 2
+					
+				};
+			});
+			$("#pagination1").click(function() {
+				if(currentPage === 2) {
+					$("#galleryPage1").show(1000);
+					$("#pagination1").addClass("current");
+					$("#galleryPage2").hide(1000);
+					$("#pagination2").removeClass("current");
+					currentPage = 1
+				};
+			});
+			$("#pagination2").click(function() {
+				if(currentPage === 1) {
+					$("#galleryPage2").show(1000);
+					$("#pagination2").addClass("current");
+					$("#galleryPage1").hide(1000);
+					$("#pagination1").removeClass("current");
+					currentPage = 2
+					
+				};
+			});
+
+		});
 	</script>
 <div class="largeImg reviews">
 <img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_17.jpg"  id="large1"/>
@@ -449,7 +607,177 @@ Review&nbsp;Gallery</p>
 </div>
 </div>
 <div class="my-parts"><span></span></div>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_matsu01.jpg" id="large13"/>
+<div class="reviewwrap" id="comment13">
+<div class="reviewtitle"><p>
+シンプルで良い
+</p>
 </div>
+<div class="reviewcomment">
+<p>
+配送も丁寧で好印象です。長く大切に使います。
+	</p>
+</div>
+<div class="pagejump"><a href="https://item.rakuten.co.jp/asoboze/mt18002/">こちらの商品を詳しく見る</a>
+</div>
+</div>
+<div class="my-parts"><span></span></div>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_walpac02.jpg" id="large14"/>
+<div class="reviewwrap" id="comment14">
+<div class="reviewtitle"><p>
+薄くてコンパクト
+</p>
+</div>
+<div class="reviewcomment">
+<p>
+ブルーを購入、珍しい色で持ち歩きも楽、使い勝手も上々。今までスマホカバーにSuicaを入れてたけど、今はこれにSuicaをとクレジットカードと小銭を入れているので、普通の財布を使わなくなった。キャッシュレス時代にあったミニ財布ですね。
+	</p>
+</div>
+<div class="pagejump"><a href="https://item.rakuten.co.jp/asoboze/kg-y167/">こちらの商品を詳しく見る</a>
+</div>
+</div>
+<div class="my-parts"><span></span></div>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_walpac01.jpg" id="large15"/>
+<div class="reviewwrap" id="comment15">
+<div class="reviewtitle"><p>
+財布の代わり
+</p>
+</div>
+<div class="reviewcomment">
+<p>
+PASMOとチャージ用のお札を入れてます。シンプルなのでどんな服装で持ち歩いても良い感じです。
+	</p>
+</div>
+<div class="pagejump"><a href="https://item.rakuten.co.jp/asoboze/kg-y167/">こちらの商品を詳しく見る</a>
+</div>
+</div>
+<div class="my-parts"><span></span></div>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_toftsack01.jpg" id="large16"/>
+<div class="reviewwrap" id="comment16">
+<div class="reviewtitle"><p>
+素敵でした
+</p>
+</div>
+<div class="reviewcomment">
+<p>
+夫へのプレゼントに購入しました。夫に選んでもらったから、数あるビジネスリュックの中からこちらがいいと。軽いのとデザインがポイントだったようです。届きましたら、本当に軽い！デザインもかっこいいです。夫の荷物的には、もう少し大きめだと良かったようですが、コンパクトも売りだと思うので・・・ありがとうございました。
+	</p>
+</div>
+<div class="pagejump"><a href="https://item.rakuten.co.jp/asoboze/toftsack/">こちらの商品を詳しく見る</a>
+</div>
+</div>
+<div class="my-parts"><span></span></div>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_toft2way01.jpg" id="large17"/>
+<div class="reviewwrap" id="comment17">
+<div class="reviewtitle"><p>
+満足です。
+</p>
+</div>
+<div class="reviewcomment">
+<p>
+新作の2WAYか、リュックタイプのタフトサックか迷いましたが、3ヶ月待った新作を購入しました。まだ1週間しか使用していませんが、軽くて収納力もあり満足しています。欲を言えば、ペットボトルを入れられるポケットが外側に欲しかったです。
+	</p>
+</div>
+<div class="pagejump"><a href="https://item.rakuten.co.jp/asoboze/toft2way/">こちらの商品を詳しく見る</a>
+</div>
+</div>
+<div class="my-parts"><span></span></div>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_rintosh01.jpg" id="large18"/>
+<div class="reviewwrap" id="comment18">
+<div class="reviewtitle"><p>
+とても素敵で上質なビジネスバックです。
+</p>
+</div>
+<div class="reviewcomment">
+<p>
+とても素敵で上質なビジネスバックです。中の仕分けもとてもシンプルでジッパーなどもとても上質なものが使われています。
+	</p>
+</div>
+<div class="pagejump"><a href="https://item.rakuten.co.jp/asoboze/av-w162/">こちらの商品を詳しく見る</a>
+</div>
+</div>
+<div class="my-parts"><span></span></div>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_regile01.jpg" id="large19"/>
+<div class="reviewwrap" id="comment19">
+
+<div class="reviewcomment">
+<p>
+他のエコバッグよりも小さくて軽量なのが良い。ブラック生地も発売してほしい。
+	</p>
+</div>
+<div class="pagejump"><a href="https://item.rakuten.co.jp/asoboze/ze-v168/">こちらの商品を詳しく見る</a>
+</div>
+</div>
+<div class="my-parts"><span></span></div>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_regile03.jpg" id="large20"/>
+<div class="reviewwrap" id="comment20">
+<div class="reviewtitle"><p>
+Mサイズを購入イメージ通りの物でした
+</p>
+</div>
+<div class="reviewcomment">
+<p>
+Mサイズを購入<br />イメージ通りの物でした。エコバッグとしては考えずに出かける時に必要なものだけをラフに入れて使おうと思います
+	</p>
+</div>
+<div class="pagejump"><a href="https://item.rakuten.co.jp/asoboze/ze-v168/">こちらの商品を詳しく見る</a>
+</div>
+</div>
+<div class="my-parts"><span></span></div>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_regile02.jpg" id="large21"/>
+<div class="reviewwrap" id="comment21">
+<div class="reviewcomment">
+<p>
+他社製品に比べて、小さく折り畳めることができ、また軽いのでとても便利です。ポケットにも入る。このLサイズよりもひとまわり大きい製品も作ってほしいです。
+	</p>
+</div>
+<div class="pagejump"><a href="https://item.rakuten.co.jp/asoboze/ze-v168-l/">こちらの商品を詳しく見る</a>
+</div>
+</div>
+<div class="my-parts"><span></span></div>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_regile04.jpg" id="large22"/>
+<div class="reviewwrap" id="comment22">
+<div class="reviewtitle"><p>
+シンプルなデザインで軽くて使いやすいです
+</p>
+</div>
+<div class="reviewcomment">
+<p>
+シンプルなデザインで軽くて使いやすいです。黒は透けにくいので中のものが見られたくない時には良いです。サイズは2種類購入させていただきましたが、大きい方をよく利用しています。
+	</p>
+</div>
+<div class="pagejump"><a href="https://item.rakuten.co.jp/asoboze/ze-v168-l/">こちらの商品を詳しく見る</a>
+</div>
+</div>
+<div class="my-parts"><span></span></div>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_monobrass01.jpg" id="large23"/>
+<div class="reviewwrap" id="comment23">
+<div class="reviewcomment">
+<p>
+スーツへの胸ポケットへの出し入れもスムーズで使いやすいです。
+	</p>
+</div>
+<div class="pagejump"><a href="https://item.rakuten.co.jp/asoboze/um-s170/">こちらの商品を詳しく見る</a>
+</div>
+</div>
+<div class="my-parts"><span></span></div>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_case01.jpg" id="large24"/>
+<div class="reviewwrap" id="comment24">
+<div class="reviewtitle"><p>
+自分だけのスマホ、つくれました
+</p>
+</div>
+<div class="reviewcomment">
+<p>
+iPhoneXへの装着です。プラケース（？）に天然石シートを貼り付けた商品です。これまで使っていた純正革ケースだと完全にカメラと面一だったのが、少し奥まった形となりました。カメラ周りにかなり余裕がありますので、もしかしたらXとXSのカメラの出っ張りサイズの差かも知れません。<br />革素材から天然石シートへの変更だったので、最初もった時は違和感ありましたが、数時間触ったら、これはこれでアリかな、と。イメージしたのとはちょっと異なる、思ったよりゴツゴツした触感ですが、逆に「自然なモノに触れている！」という感触が強く、癖になりそうです。一点もの故、柄については完全にお任せになってしまいますが、今回はなかなか味のあるものが届きました。3倍の値段でもいいので店頭で現物選べたら最高だろうなあ、と妄想してしまいました。<br />耐久性はまだ本日装着したばかりなのでわかりません。注意書きにもあったとおり、自然素材を切り出し（剥がした？）モノなので、衝撃には弱そう。ベースの素材がしっかりしているので、スマホ自体はちゃんと保護してくれます。今後もチャレンジングな商品、期待してます。
+	</p>
+</div>
+<div class="pagejump"><a href="https://item.rakuten.co.jp/asoboze/fs-j169/">こちらの商品を詳しく見る</a>
+</div>
+</div>
+<div class="my-parts"><span></span></div>
+
+	</div>
 <script type="text/javascript" src="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta.js"></script>
 <div style="clear:both;"></div>
 <div class="forsp"><p>
