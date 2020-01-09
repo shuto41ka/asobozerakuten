@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+#bagsagasu_sp p{
+	width: 90%;
+	margin: 20px auto;
+	font-size:12px;
+}
+#bagsagasu_sp ol{
+	width:90%;
+	margin:10px 0 15px 0;
+}
+#bagsagasu_sp ul{
+	width:90%;
+	margin:0;
+	padding:0 0 10px 0;
+}
+#bagsagasu_sp ol li{
+	padding:0px;
+}
+#bagsagasu_sp li{
+	line-height:1.3em;
+	margin:10px;
+}
+#bagsagasu_sp ol ul li{
+	list-style-type: none;
+	font-size: 1em;
+	padding-left: 5px;
+}
+#bagsagasu_sp a{
+	font-size:1.3em;
+	color:#00C;
+	text-decoration:underline;
+}
+#bagsagasu_sp .midashi{
+	font-size:1.3em;
+	font-weight:bold;
+}
+#bagsagasu_sp ol ul li {
+	padding:0 10px;
+	margin:0 10px;
+}

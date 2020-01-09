@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無題ドキュメント</title>
+<link rel="stylesheet" type="text/css" href="file:///C|/Users/KAMEI/Desktop/asoboze2018/asobozerakuten_sp.css"/>
+<style type="text/css">
+/*開くボタン*/
+label[for="sample"]{
+	position: absolute;
+	top: 3px;
+	right: 0px;
+	z-index: 999;
+	font-size: 30px;
+	color: #fff;
+	height: 15px;
+}
+
+/*inputは隠す*/
+input[type="checkbox"]#sample {
+    visibility: hidden;
+}
+
+/*疑似要素で背景*/
+input[type="checkbox"]#sample:checked:before{
+	width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    z-index: 2147483645;
+}
+
+/*疑似要素で閉じるボタン*/
+input[type="checkbox"]#sample:checked:after{
+	width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.80);
+    content: "\00d7";
+	color: #000;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+	visibility: visible;
+	display: block;
+	z-index: 2147483647;
+    position: fixed;
+    top: 5px;
+    left: 80%;
+}
+/*iframeを格納*/
+input[type="checkbox"]#sample + #cover { 
+	width: 80%;
+	height: 100%;
+	background:rgba(245, 245, 245, 0.1);
+    transition: 0.1s ease-in-out;
+    position:fixed;
+    top:0;
+    left: -80%;
+}
+
+/*iframeを格納(オープン時)*/
+input[type="checkbox"]#sample:checked + #cover {
+    overflow:scroll;
+	-webkit-overflow-scrolling:touch;
+    z-index: 2147483646;
+    left: 0;
+}
+
+/*iframe*/
+input[type="checkbox"]#sample + #cover > iframe {
+    width: 100%;
+    height: 100%;
+    background:rgba(245, 245, 245, 0.95);
+    border:none;
+    z-index: 2147483646;
+}
+
+.spfloat_top {
+	float: left;
+	height: 15px;
+}
+</style>
+</head>
+
+<body>
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/sp_floattop.jpg" height="60" />
+<label for="sample"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/sp_floatmenu.jpg" height="60" /></label>
+<input type="checkbox" id="sample">
+<div id="cover">
+  <iframe src="https://www.rakuten.ne.jp/gold/asoboze/sp_floatmenu.html" frameborder="0" scrolling="auto"></iframe>
+</div>
+</body>
+</html>

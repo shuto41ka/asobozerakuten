@@ -194,13 +194,11 @@ p.caption {
 	margin: 0 auto;
 	text-align: center;
 	padding-top: 10px;
-	font-family: "メイリオ", sans-serif;
 }
 
 /*　ページフッター旧ページより　*/
 
 .midashifot .fottertitle tr th {
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	border-right-width:1px;
 	border-right-style:solid;
 	border-right-color:#666666;
@@ -220,7 +218,6 @@ p.caption {
 	text-align:left;
 }
 .midashifot .fottertitle {
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	width:1000px;
 	border-top-width:1px;
 	border-top-style:solid;
@@ -233,7 +230,6 @@ p.caption {
 	empty-cells:show;
 }
 .midashifot .fottertitle tr td {
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	height:220px;
 	width:490px;
 	border-right-width:1px;
@@ -271,7 +267,6 @@ p.caption {
 	width: 100%;
 	height: 150px;
 	overflow: hidden;
-	font-family:"メイリオ", "小塚ゴシック Pro R", "游ゴシック Medium", sans-serif;
 }
 
 
@@ -284,13 +279,11 @@ p.caption {
 	margin-right: auto;
 	margin-left : auto;
 	font-size: 10px;
-	font-family: "游明朝"
 	color: #FFF;
 }
 
 #footer1 a{
 	text-decoration: none;
-	font-family:  "Kozuka Gothic Pro R", "Kozuka Gothic Pro R", "小塚ゴシック Pro R", "メイリオ", sans-serif;
 	color: #FFFFFF;
 	
 }
@@ -314,7 +307,6 @@ p.caption {
 	margin-right: auto;
 	margin-left : auto;
 	font-size: 10px;
-	font-family:  "Kozuka Gothic Pro R", "小塚ゴシック Pro R", "メイリオ", sans-serif;
 	color: #FFF;
 	text-align: center;
 	clear: both;
@@ -340,7 +332,6 @@ p.caption {
 }
 
 #contents_main .asocolumn .title {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 16px;
 	padding: 0.5em;/*文字周りの余白*/
 	color: #000;/*文字色*/
@@ -349,7 +340,6 @@ p.caption {
 	width:300px;
 }
 #contents_main .asocolumn .cate_text {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 14px;
 }
 #contents_main .asocolumn .fot_right {
@@ -359,21 +349,17 @@ p.caption {
 	padding-top: 20px;
 }
 #contents_main .asocolumn .fot_right .setumei {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 11px;
 }
 #contents_main .asocolumn .fot_left .setumei {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 11px;
 }
 #contents_main .asocolumn .fot_left {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 11px;
 	margin-right: 20px;
 	float: left;
 }
 #contents_main .asocolumn .cate_text2 {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 14px;
 	margin-left: 30px;
 	float: left;
@@ -386,7 +372,6 @@ p.caption {
 /* newpage base */
 
 #container .base01 p {
-	font-family:"メイリオ", "小塚ゴシック Pro R", "游ゴシック Medium", sans-serif;
 	font-size:28px;
 	text-align:left;
 	line-height: 1.5;
@@ -395,7 +380,6 @@ p.caption {
 	padding:30px 50px 0px 30px;
 }
 #container .base02 p {
-	font-family:"メイリオ", "小塚ゴシック Pro R", "游ゴシック Medium", sans-serif;
 	font-size:20px;
 	text-align:left;
 	line-height: 1.5;
@@ -410,7 +394,6 @@ p.caption {
 }
 
 #container #frameunder {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size:12px;
 }
 
@@ -420,7 +403,6 @@ p.caption {
 
 
 .jyofive01{
-	font-family:"メイリオ", "小塚ゴシック Pro R", "游ゴシック Medium", sans-serif;
 	font-size:20px;
 	text-align:left;
 	line-height:1.3;
@@ -463,13 +445,11 @@ p.caption {
 	padding-bottom: 100px;
 }
 .gazo-box p {
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size:12px;
 	text-align:left;
 }
 
 .listbox .gazo-box_last p {
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 12px;;
 	text-align: left;
 }
@@ -493,7 +473,6 @@ p.caption {
 	padding-bottom: 100px;
 }
 .spec p {
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size:12px;
 	text-align:left;
 }
@@ -515,7 +494,6 @@ p.caption {
 
 #container .coment01 p {
 	font-size: 18px;
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	text-align:left;
 	padding-top: 80px;
 }
@@ -582,7 +560,6 @@ p.caption {
 
 #container .coment p {
 	font-size:12px;
-	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	text-align:left;
 	padding-top: 80px;
 }
@@ -597,7 +574,6 @@ p.caption {
 	padding:0px auto;
 }
 .book01 p{
-	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 	font-size: 28px;
 	letter-spacing: 2.5px;
 	line-height: 1.8;
@@ -605,7 +581,6 @@ p.caption {
 
 }
 .book02 p{
-	font-family:"メイリオ", "小塚ゴシック Pro R", "游ゴシック Medium", sans-serif;
 	font-size:20px;
 	letter-spacing:3px;
 	line-height:2.0;
@@ -616,7 +591,6 @@ p.caption {
 
 
 .jyofive01{
-	font-family:"メイリオ", "小塚ゴシック Pro R", "游ゴシック Medium", sans-serif;
 	font-size:20px;
 	text-align:left;
 	line-height:1.3;
@@ -642,7 +616,6 @@ p.caption {
 }
 /* SoLL SO-U157 */
 #container .base03 p {
-	font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 	font-size:25px;
 	text-align:left;
 	line-height: 1.5;
@@ -651,7 +624,6 @@ p.caption {
 	padding:10px 50px 0px 20px;
 }
 #container .base04 p {
-	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 	font-size:20px;
 	text-align:left;
 	line-height: 1.5;
@@ -669,7 +641,6 @@ p.caption {
 }
 
 #contents_main .asocolumn .title {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 16px;
 	padding: 0.5em;/*文字周りの余白*/
 	color: #000;/*文字色*/
@@ -678,7 +649,6 @@ p.caption {
 	width:300px;
 }
 #contents_main .asocolumn .cate_text {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 14px;
 }
 #contents_main .asocolumn .fot_right {
@@ -688,21 +658,17 @@ p.caption {
 	padding-top: 20px;
 }
 #contents_main .asocolumn .fot_right .setumei {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 11px;
 }
 #contents_main .asocolumn .fot_left .setumei {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 11px;
 }
 #contents_main .asocolumn .fot_left {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 11px;
 	margin-right: 20px;
 	float: left;
 }
 #contents_main .asocolumn .cate_text2 {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 14px;
 	margin-left: 30px;
 	float: left;
@@ -720,7 +686,6 @@ p.caption {
 }
 
 .contentstop p {
-	font-family:"メイリオ", "小塚ゴシック Pro R", "游ゴシック Medium", sans-serif;
 	font-size: 13px;
 	text-align: left;
 }
@@ -734,7 +699,6 @@ p.caption {
 /*　コンテンツページ共通設定　*/
 
 #container .asocontop01 p {
-	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
 	font-size:20px;
 	text-align:center;
 	line-height: 1.5;
@@ -744,7 +708,6 @@ p.caption {
 }
 
 #container .asocontop02 p {
-	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
 	font-size:28px;
 	text-align:center;
 	line-height: 1.5;
@@ -761,7 +724,6 @@ p.caption {
 
 #container .asocon02 p {
 	padding:5px 65px 25px 65px;
-	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
 	font-size:20px;
 	text-align:left;
 	line-height: 1.75;
@@ -770,7 +732,6 @@ p.caption {
 }
 
 h4.con01 {
-    font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
 	font-size : 23px;
    	text-align:center;
 	line-height: 1.5;
@@ -781,7 +742,6 @@ h4.con01 {
 }
 
 h5.con02 {
-    font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
 	font-size:18px;
 	text-align:left;
 	line-height: 1.75;
@@ -795,7 +755,6 @@ h5.con02 {
 /*　商品のお手入れページ　*/
 
 #care {
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	width:760px;
 	font-size: 14px;
 	display: block;
@@ -806,7 +765,6 @@ h5.con02 {
 	float:left;
 	width:180px;
 	margin-right:3px;
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 14px;
 	text-align: center;
 	padding-top: 2px;
@@ -819,7 +777,6 @@ h5.con02 {
 #care table tr td .listboxcare .care_a_last{
 	float:left;
 	width:180px;
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	font-size: 14px;
 	text-align: center;
 	padding-top: 2px;
@@ -843,7 +800,6 @@ h5.con02 {
 /*　コンテンツ　革製品のお手入れ newpage　*/
 
 #container .mentetop01 p {
-	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light', 'Meiryo', 'Osaka', sans-serif;
 	font-size:20px;
 	text-align:center;
 	line-height: 1.5;
@@ -853,7 +809,6 @@ h5.con02 {
 }
 
 #container .mentetop02 p {
-	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 	font-size:28px;
 	text-align:center;
 	line-height: 1.5;
@@ -863,7 +818,6 @@ h5.con02 {
 }
 
 #container .mente01 p {
-	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light', 'Meiryo', 'Osaka', sans-serif;
 	font-size:28px;
 	text-align:center;
 	line-height: 1.5;
@@ -874,7 +828,6 @@ h5.con02 {
 }
 
 #container .mente02 p {
-	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light', 'Meiryo', 'Osaka', sans-serif;
 	font-size:20px;
 	text-align:left;
 	line-height: 1.75;
@@ -884,7 +837,6 @@ h5.con02 {
 }
 
 #container .mente01 .suuzi {
-	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light', 'Meiryo', 'Osaka', sans-serif;
 	font-size:28px;
 	text-align:center;
 	line-height: 1.5;
@@ -912,7 +864,6 @@ h5.con02 {
 /* newpage base */
 
 #container .base01 p {
-	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light', 'Meiryo', 'Osaka', sans-serif;
 	font-size: 28px;
 	text-align: left;
 	line-height: 1.5;
@@ -922,7 +873,6 @@ h5.con02 {
 	margin: 0;
 }
 #container .base02 p {
-	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light', 'Meiryo', 'Osaka', sans-serif;
 	font-size: 20px;
 	text-align: left;
 	line-height: 1.5;
@@ -949,14 +899,12 @@ h5.con02 {
 	overflow: hidden;
 }
 .cont-box p {
-	font-family: "メイリオ", sans-serif;
 	font-size: 12px;
 	text-align: left;
 	width: 330px;
 	padding-left: 10px;
 }
 .cont-box_last p {
-	font-family: "メイリオ", sans-serif;
 	font-size: 12px;
 	text-align: left;
 	width: 330px;
@@ -1155,12 +1103,10 @@ border-color: transparent transparent transparent #8e1728;
 	background: #ccc;
 }
 #header #h-concept p {
-	font-family: "メイリオ", sans-serif;
 	font-size: 14px;
 	color: #494949;
 }
 #header #headlist #h-listitems {
-	font-family: "メイリオ", sans-serif;
 	margin: 0px;
 	margin-top: 10px;
 	padding: 0;
@@ -1168,7 +1114,6 @@ border-color: transparent transparent transparent #8e1728;
 	margin-bottom: 28px;
 }
 #header {
-	font-family: "メイリオ", sans-serif;
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
@@ -1394,7 +1339,6 @@ border-color: transparent transparent transparent #8e1728;
 	width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
-	font-family: "メイリオ", sans-serif;
 }
 .toptop {
 	cursor: default;
@@ -1536,7 +1480,6 @@ table.calbase_rakuten     {
     width: 196px;
     border-collapse: collapse;
     padding:0;
-	font-family: "Kozuka Gothic Pro R", "小塚ゴシック Pro R", "メイリオ", sans-serif;
     }
 table.calbase_rakuten *   {
     font-size: 98%;
@@ -1750,7 +1693,6 @@ table.text_rakuten       {
 }
 .leftnavi table tr td p {
 	text-align: left;
-	font-family:"メイリオ";
 	font-size: 12px;
 	font-weight: 500;
 	color: #494949;
@@ -1759,7 +1701,6 @@ table.text_rakuten       {
 }
 .leftnavi .dramacoope p {
 	text-align: left;
-	font-family:"メイリオ";
 	font-size: 13px;
 	color: #494949;
 	margin: 0;
@@ -1995,7 +1936,6 @@ table.text_rakuten       {
 /* newpage base リニューアル　フォントサイズ小さい 2018/10/29 */
  
 #container .base03 p {
-	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 	font-size: 25px;
 	text-align: left;
 	line-height: 1.5;
@@ -2005,7 +1945,6 @@ table.text_rakuten       {
 	margin: 0;
 }
 #container .base04 p {
-	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 	font-size: 20px;
 	text-align: left;
 	line-height: 1.5;
@@ -2075,20 +2014,17 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	color: #494949;
 	line-height: 1.5em;
 	letter-spacing: 0.1em;
-	font-family:"メイリオ", "小塚ゴシック Pro R", "游ゴシック Medium", sans-serif;
 	margin: 0;
 	padding-top: 20px;
 	padding-bottom: 40px;
 }
 #container .base05 p {
-	font-family: "メイリオ", sans-serif;
 	font-size: 20px;
 	color: #494949;
 	padding-top: 20px;
 	margin: 0;
 }
 #container .mida03 p {
-	font-family:"メイリオ", "小塚ゴシック Pro R", "游ゴシック Medium", sans-serif;
 	font-size: 20px;
 	text-align: left;
 	line-height: 1.5;
@@ -2103,7 +2039,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	font-weight: normal;
 	line-height: 43px;
 	font-size: 32px;
-	font-family: "游明朝", "YuMincho" ,YuMincho;
 	margin: 0;
 }
 #container .mida02 p{
@@ -2158,7 +2093,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	padding: 0;
 }
 .base07 p {
-	font-family:  "Kozuka Gothic Pro R", "小塚ゴシック Pro R", "メイリオ", sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 	color: #191919;
@@ -2175,11 +2109,9 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	color: #494949;
 	line-height: 1.5em;
 	letter-spacing: 0.1em;
-	font-family:"小塚ゴシック Pro R", "Kozuka Gothic Pro R", "メイリオ", sans-serif;
 	margin: 0;
 }
 .basetop p {
-	font-family:  "Kozuka Gothic Pro R", "小塚ゴシック Pro R", "メイリオ", sans-serif;
 	font-size: 14px;
 	font-weight: bold;
 	padding-top: 20px;
@@ -2189,7 +2121,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	padding-bottom: 5px;
 }
 .base09 p {
-	font-family:  "Kozuka Gothic Pro R", "小塚ゴシック Pro R", "メイリオ", sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 	color: #191919;
@@ -2205,7 +2136,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	color: #494949;
 	line-height: 1.5em;
 	letter-spacing: 0.1em;
-	font-family:  "Kozuka Gothic Pro R", "小塚ゴシック Pro R", "メイリオ", sans-serif;
 	margin: 0;
 	padding-top: 0px;
 	padding-right: 10px;
@@ -2217,7 +2147,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	color: #494949;
 	line-height: 1.5em;
 	letter-spacing: 0.1em;
-	font-family:  "Kozuka Gothic Pro R", "小塚ゴシック Pro R", "メイリオ", sans-serif;
 	margin: 0;
 	padding-top: 0px;
 	padding-right: 10px;
@@ -2230,7 +2159,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	width: 380px;
 }
 .base_ctgr p {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 30px;
 	font-weight: bold;
 	color: #191919;
@@ -2242,7 +2170,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	text-align: left;
 }
 .base11 p {
-	font-family:  "Kozuka Gothic Pro R", "小塚ゴシック Pro R", "メイリオ", sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	color: #191919;
@@ -2264,7 +2191,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	color: #494949;
 	line-height: 1.5em;
 	letter-spacing: 0.1em;
-	font-family:  "Kozuka Gothic Pro R", "小塚ゴシック Pro R", "メイリオ", sans-serif;
 	margin: 0;
 }
 .ctgr_wrap {
@@ -2291,7 +2217,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	margin: 0 auto;
 }
 .cntr_ctgr p {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 30px;
 	font-weight: bold;
 	color: #191919;
@@ -2303,7 +2228,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	text-align: center;
 }
 .cntr_ctgr_left p {
-	font-family: Arial, Helvetica, sans-serif;
 	font-size: 30px;
 	font-weight: bold;
 	color: #191919;
@@ -2314,7 +2238,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 }
 
 .cntr11 p {
-	font-family:  "Kozuka Gothic Pro R", "小塚ゴシック Pro R", "メイリオ", sans-serif;
 	font-size: 16px;
 	font-weight: bold;
 	color: #191919;
@@ -2335,7 +2258,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	color: #494949;
 	line-height: 1.5em;
 	letter-spacing: 0.1em;
-	font-family:  "Kozuka Gothic Pro R", "小塚ゴシック Pro R", "メイリオ", sans-serif;
 	margin: 0;
 }
 .new_point{
@@ -2344,9 +2266,7 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	left:360px; 
 	right:360px; 
 	width:20px; 
-	font-weight:bold; 
-	font-family:Arial, Helvetica, sans-serif; 
-	font-size:18px;
+	font-weight:bold;font-size:18px;
 }
 .toft_onbase{
 	background-image:url(https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/toft2019/toftsack2019_02g.jpg);
@@ -2530,7 +2450,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 }
 
 #container .giftwrap_01 p {
-	font-family:  "Kozuka Gothic Std B";
 	font-size: 24px;
 	font-weight: bold;
 	margin: auto 0;
@@ -2541,7 +2460,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 }
 
 #container .giftwrap_02 p {
-	font-family:  "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 	font-size: 16px;
 	margin: 0 auto;
 	padding-bottom: 5px;
@@ -2555,7 +2473,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	font-size: 15px;
 	line-height: 1.5em;
 	letter-spacing: 0.1em;
-	font-family:  "Kozuka Gothic Std R", "小塚ゴシック Pro R", "メイリオ";
 }
 
 #container .giftwrap_04 p {
@@ -2565,7 +2482,6 @@ background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/tof
 	font-size: 14px;
 	line-height: 1.5em;
 	letter-spacing: 0.1em;
-	font-family:  "Kozuka Gothic Std R", "小塚ゴシック Pro R", "メイリオ";
 }
 
 #container .giftwrap_05  {

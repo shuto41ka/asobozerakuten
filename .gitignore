@@ -1,7 +1,8 @@
+.DS_Store
+node_modules
+build
+custom
+*.log
 
-index_beta1200.html
-2019december.html
-2019december.html
-2019december.html
-2019december.html
-2019december.html
+.versions
+.idea

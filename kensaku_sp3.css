@@ -1,0 +1,51 @@
+	 /*--商品検索---*/
+#shouhinkensaku {
+	padding: 0px;
+	margin-bottom: 10px;
+	width: 99%;
+	background-color: #fff;
+	border: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index:2147483647;
+	height:80px;
+}
+#shouhinkensaku .asotext {
+	float: left;
+	width: 80%;
+	height: 30px;
+	border: none;
+	text-indent: 10px;
+	margin-right: 0px;
+	padding: 0;
+}
+#shouhinkensaku .btn {
+ float:left;
+ padding-top:0px;
+}
+	 /*--商品検索---*/
+#cateshouhinkensaku {
+	padding: 0px;
+	margin-bottom: 10px;
+	width: 99%;
+	background-color: #fff;
+	border: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index:2147483647;
+	height:80px;
+}
+#cateshouhinkensaku .asotext {
+	float: left;
+	height: 30px;
+	border: none;
+	text-indent: 10px;
+	margin-right: 0px;
+	padding: 1%;
+}
+#cateshouhinkensaku .btn {
+ float:left;
+ padding-top:5%;
+}
