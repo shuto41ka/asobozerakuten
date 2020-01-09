@@ -1155,6 +1155,40 @@ html, body{
     border-right: none;
 	}
 
+		.rightBanner2 {
+		position: fixed;
+		cursor: pointer;
+		width: 520px;
+		height: 180px;
+		transition: 1.0s;
+		right: -480px;		
+		background-color: #ffffff;
+		z-index: 999999;
+	}
+	.rightBanner2:hover{
+		right: 40px;
+}
+	.newItem {
+		top: 120px;
+	}
+		.rightBanner3 {
+		position: fixed;
+		cursor: pointer;
+		width: 520px;
+		height: 180px;
+		transition: 1.0s;
+		right: -480px;		
+		background-color: #ffffff;
+		z-index: 999;	
+	}
+	.rightBanner3:hover{
+		right: 0;
+}
+	.rightBanner3:hover + .rightBanner2{
+		right: 520px;
+}
+
+
 /* ライトバナー終わり */
 
 /*　ギャラリー関係　*/
