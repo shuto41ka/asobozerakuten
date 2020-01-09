@@ -1,6 +1,6 @@
-@charset "utf-8";
+@charset "UTF-8";
 /* CSS Document */
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700|Noto+Serif+JP:200,300,400,600&display=swap&subset=japanese');
+
 
 html, body{
 	height:100%;
@@ -213,158 +213,9 @@ img[id*="large"] {
 	color:rgba(0,0,153,1);
 }
 
-/*--SPページ共通パーツ--*/
 
-#shouhinkensaku {
-	padding: 0px;
-	margin: 0px;
-	width: 100%;
-	background: rgba(255,255,255,0.7);
-	height: 50px;
-	padding-top:3px;
-}
-#shouhinkensaku .asotext {
-	float: left;
-	margin: 1%;
-	height: 0;
-	margin-top: 3%;
-}
-#shouhinkensaku .btn {
-	display: block;
-	height: 45px;
-	width: auto;
-	position:absolute;
-	top:3px;
-	right:45px;
-}
-.frame iframe {
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	left: 0px;
-	top: 0px;
-}
-label[for="sample"]{
-	position: absolute;
-	top: 3px;
-	right: 0px;
-	z-index: 9999;
-	font-size: 30px;
-	color: #fff;
-	height: 45px;
-}
+/* PC用の要素を表示しない */
 
-/*inputは隠す*/
-input[type="checkbox"]#sample {
-    visibility: hidden;
-	height:0;
-	margin-top:-50px;
-}
-
-/*疑似要素で背景*/
-input[type="checkbox"]#sample:checked:before{
-	width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.40);
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    visibility: visible;
-    z-index: 2147483645;
-}
-
-/*疑似要素で閉じるボタン*/
-input[type="checkbox"]#sample:checked:after{
-	width: 45px;
-    height: 45px;
-    background: rgba(255, 255, 255, 0.80);
-    content: "\00d7";
-	color: #000;
-    text-align: center;
-    font-size: 40px;
-    line-height: 40px;
-    border-radius: 50%;
-	visibility: visible;
-	display: block;
-	z-index: 2147483647;
-    position: fixed;
-    top: 5px;
-    left: 80%;
-}
-/*iframeを格納*/
-input[type="checkbox"]#sample + #cover { 
-	width: 80%;
-	height: 415px;
-	background:rgba(245, 245, 245, 0.1);
-    transition: 0.1s ease-in-out;
-    position:fixed;
-    top:0;
-    left: -80%;
-}
-
-/*iframeを格納(オープン時)*/
-input[type="checkbox"]#sample:checked + #cover {
-    overflow:scroll;
-	-webkit-overflow-scrolling:touch;
-    z-index: 2147483646;
-    left: 0;
-}
-
-/*iframe*/
-input[type="checkbox"]#sample + #cover > iframe {
-    width: 100%;
-    height: 100%;
-    background:rgba(245, 245, 245, 0.95);
-    border:none;
-    z-index: 2147483646;
-}
-
-.spfloat_top {
-	float: left;
-	height: 40px;
-}
-#shouhinkensaku #search {
-	width: 100%;
-	margin: 0;
-	padding: 0;
-	height:0;
-	margin-top:-50px;
-}
-.asoaso a img {
-	position: absolute;
-	left: 3px;
-	top: 7px;
-}
-
-/* ------ ＴＯＰ戻るボタン ------- */
-#page-top {
-     position: fixed;
-    bottom: 10px;
-    right: 12px;
-    font-size:25px;
-    font-weight: bold;
-}
-#page-top a {
-    background: #8e8e88;
-        filter:alpha(opacity=60);
-        -moz-opacity:0.6;
-        -khtml-opacity: 0.6;
-        opacity:0.6;
-        text-decoration: none;
-        color: #fff;
-     width: 33px;
-  height: 33px;
-        padding: 8px;
-        text-align: center;
-        display: block;
-        border-radius: 30px;
-
-}
-#page-top a:hover {
-   border-style: none;
-            background: #8e8e88;
-}
 #sidenavi{
 	display:none;
 }
@@ -374,24 +225,7 @@ input[type="checkbox"]#sample + #cover > iframe {
 .pconly{
 	display:none;
 }
-.footer{
-	background-color: #000;
-	color: #fff;
-}
-.footer table tr td{
-	text-decoration: none;
-	margin: 0;
-	height: 30px;
-	font-size: 13px;
-	width: 50%;
-	border: solid 1px #aaa;
-	border-collapse: collapse;
-	padding: 10px;
-}
-.footer table tr td a{
-	text-decoration:none;
-	color:#fff;
-}
+
 .gallerywrap .reviewcomment .galnext img{
 	width:90%;
 	margin:auto;

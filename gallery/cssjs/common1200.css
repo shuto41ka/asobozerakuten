@@ -1,4 +1,6 @@
-@charset "utf-8";
+@charset "UTF-8";
+/* CSS Document */
+
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:100,300,400,500,700|Noto+Serif+JP:200,300,400,600&display=swap&subset=japanese');
 html{
@@ -16,232 +18,8 @@ html{
 	font-family:  'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
 }
 
-/*　ギャラリー関係　*/
-.wrap600{
-	width:600px;
-	float:left;
-	display:block;
-	max-height:600px;
-}
-.gallerytitle p{
-	font-size:48px;
-	margin-bottom:0;
-}
-.gallerysub p{
-	font-size:36px;
-}
-.gallerytext p{
-	font-size:18px;
-	font-weight:lighter;
-}
-table.gallerytable{
-	width:1200px;
-	clear:both;
-}
-table.gallerytable td{
-}
-.galleryshohin img{
-	width:100%;
-	box-sizing: border-box;
-}
-.shoukaigrid .galleryshohin{
-	width:600px;
-	float:left;
-	margin-bottom:50px;
-	box-sizing: border-box;
-}
-.gallerylink{
-    width: 600px;
-    float: right;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 25px;
-    padding-top: 0px;
-    padding-right: 60px;
-    padding-left: 60px;
-    padding-bottom: 30px;
-    box-sizing: border-box;
-}
-.gallerylinkfutoji{
-	font-weight: bold;
-	padding-top: 20px;
-}
-img[id*="large"]{
-	display:block;
-	height:100vh;
-	width:auto;
-	margin:auto;
-}
-
-.largeImg{
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	background-color:#ddd;
-}
-.wrap600 img {
-	max-height: 600px;
-	width: 600px;
-	height:auto;
-}
-
-.wrap600 .wraptext{
-	margin:100px auto;
-	display:block;
-	padding:0 120px;
-}
-.gallerywrap .reviewcomment .galnext img{
-	width:300px;
-	margin:auto;
-	padding:0;
-	display:block;
-}
-.gallerywrap .reviewcomment .galback img{
-	width:300px;
-	margin:auto;
-	padding:0;
-	display:block;
-}
-.galback{
-		margin:0;
-	padding:0;
-	display:block;
-}
-.galnext{
-		margin:0;
-		padding:0;
-	display:block;
-}
-.gallerywrap {
-	max-width:400px;
-	display:block;
-	padding:50px;
-	position:fixed;
-	top:-30px;
-	left:900px;
-	background:rgba(255,255,255,0.9);
-	height:100%;
-}
-.gallerywrap .reviewcomment p{
-	padding:0 15px 15px 20px;
-	margin:15px;
-	font-size:18px;
-}
-
-/* レビューギャラリー */
-.reviews img[id*="large"]{
-	display:block;
-	height:100vh;
-	width:auto;
-	float:left;
-}
-.reviews{
-	position:fixed;
-	top:0;
-	left:0;
-	width:100%;
-	background-color:#fff;
-}
-/* レビューギャラリー終わり　*/
-
-/* ギャラリーの閉じるボタン */
-.my-parts {
-  display: none;
-  width: 60px;
-  height: 60px;
-  position: fixed;
-  top:18px;
-  right:25px;
-  background: rgba(0,0,0,0.75);
-  border-radius:50%;
-}
-.my-parts span::before,
-.my-parts span::after {
-  display: block;
-  content: "";
-  position: absolute;
-  top: 33px;
-  right: 9px;
-  width: 70%;
-  height: 7%;
-  margin: -8% 0 0 -42%;
-  background: rgb(255, 255, 255);
-}
-.my-parts span::before {
-  transform: rotate(-45deg);
-}
-.my-parts span::after {
-  transform: rotate(45deg);
-}
-.forsp p{
-	padding-top:30px;
-	padding-left:30px;
-}
-.swiper-container{
-	width:1200px;
-}
-.swiper-slide img{
-	width:250px;
-}
-.gallerytable tr td img {
-	width:300px;
-}
-.reviewwrap {
-	min-width:500px;
-	max-width:700px;
-	display:block;
-	padding:50px;
-	position:fixed;
-	top:100px;
-	left:50%;
-	background:rgba(255,255,255,0.9);
-}
-.reviewwrap .reviewtitle p{
-	padding:15px;
-	margin:15px;
-	font-size:24px;
-}
-.reviewwrap .reviewcomment p{
-	padding:0 15px 15px 15px;
-	margin:15px;
-	font-size:18px;
-}
-.reviewwrap .reviewcomment a img{
-	width:300px;
-}
-.pagejump {
-	width:400px;
-	height:30px;
-	background-color:#bbb;
-	margin:auto;
-	text-align:center;
-	margin-bottom:30px;
-}
-.pagejump a{
-	line-height:30px;
-	display:block;
-}
-.pagejump a:link{
-	text-decoration:none;
-	color:rgba(0,0,153,1);
-}
-.pagejump a:hover{
-	text-decoration:none;
-	color:rgba(0,0,153,1);
-	background-color:#ddd;
-}
-.pagejump a:visited{
-	text-decoration:none;
-	color:rgba(0,0,153,1);
-}
-.pagejump a:active{
-	text-decoration:none;
-	color:rgba(0,0,153,1);
-}
 
 
-/*　ギャラリー関係終わり　*/
 
 
 /* 商品ページ、英字太字カテゴリ（センター） */
@@ -373,213 +151,16 @@ img[id*="large"]{
 	width:600px;
 }
 
-
-
-/*　フッター　*/
-
-#footer1 {
-	background-color: #8E1728;
-	width: 750px;
-	padding-top: 30px;
-	margin-right: auto;
-	margin-left : auto;
-	font-size: 10px;
-	color: #FFF;
-	padding-left: 0px;
-	padding-right: 0px;
-}
-
-#footer1 a{
-	text-decoration: none;
-	color: #FFFFFF;
-	
-}
-
-#footer1 nav img {
-	vertical-align:middle;
-}
-
-
-#footer2 {
-	background-color: #8E1728;
-	width:780px;
-	padding-top:50px;
-	margin-right: auto;
-	margin-left : auto;
-}
-
-#footer3 {
-	background-color: #8E1728;
-	width: 1200px;
-	margin-right: auto;
-	margin-left : auto;
-	font-size: 10px;
-	color: #FFF;
-	text-align: center;
-	clear: both;
-}
-
-.souryou span:nth-child(1) {
-	display:inline-block;
-}
-.souryou span:nth-child(2) {
+/* スマホ用の要素を表示しない */
+.sponly{
 	display:none;
 }
-
-
-#header {
-	text-align: center;
-	width: 1000px;
-	margin-top: 0px;
-	padding-top: 0px;
-}
-#header #h-lefttop {
-	float: left;
-	font-size: 10px;
-	font-weight: 500;
-	padding: 5px 10px;
-	color: #494949;
-}
-#header #h-righttop {
-	float: right;
-	font-weight: 500;
-	font-size: 13px;
-	padding: 3px 10px;
-	background: #8e1728;
-	color: #fff;
-}
-
-#header #h-leftbottom img {
-	float: left;
-	margin-top: 10px;
-}
-#header #h-rightbottom {
-	float: right;
-	margin: 0;
-	padding-right: 0;
-	font-size: 13px;
-	margin-top: 10px;
-	padding-top: 1px;
-	height: 44px;
-	width:520px;
-	padding-left:0;
-}
-#header #h-rightbottom #headmenu .h-menu {
-	float: left;
-	list-style-type: none;
-	padding: 10px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-}
-#headmenu .h-menu{
-	 position: relative;
-padding: 0em 0.3em 0.3em 0.3em;
-}
-li.h-menu:before {
-position:absolute;
-content:'';
-top: 1em;
-left: 0;
-height:0;
-width:0;
-border-style: solid;
-border-width: 6px 0 6px 9px;
-border-color: transparent transparent transparent #8e1728;
-}
-#header hr {
-	height: 0.5px;
-	width: 100%;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-	background-color: #ddd;
-}
-#header #headlist #h-listitems .items {
-	float: left;
-	height: 70px;
-	border-right-width: 0.5px;
-	border-right-style: solid;
-	border-right-color: #ddd;
-	list-style-type: none;
-	text-align: center;
-	width: 110px;
-	padding-top: 12px;
-
-	line-height: 13px;
-	font-size: 12px;
-}
-#header .clearboth {
-	clear: both;
-}
-#header #headlist #h-listitems .itemslast {
-	text-align: center;
-	list-style-type: none;
-	float: left;
-	padding-left: 15px;
-	padding-top: 12px;
-	line-height: 13px;
-	font-size: 12px;
-}
-#header #h-concept {
-	float: left;
-	padding-left: 10px;
-	margin-top: 20px;
-	padding-top: 0px;
-	height: 44px;
-}
-.h-menu a:link {
-	color: #494949;
-	text-decoration: none;
-}
-.h-menu a:visited {
-	color: #000;
-	text-decoration: none;
-}
-.items a:link {
-	color: #494949;
-	text-decoration: none;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-}
-.items a:visited {
-	color: #494949;
-	text-decoration: none;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-}
-.itemslast a:link {
-	color: #494949;
-	text-decoration: none;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-}
-.itemslast a:visited {
-	color: #494949;
-	text-decoration: none;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: none;
-}
-
-/* スマホ版のみの要素を表示しない */
 #sponly{
 	display:none !important;
 	visibility:hidden;
 }
 
-.sponly{
-	display:none;
-}
-
+/* 2つ並びの商品紹介*/
 .shoukaigrid {
 
 	display: block;
@@ -593,28 +174,8 @@ border-color: transparent transparent transparent #8e1728;
   padding: 1em;
 	width: auto;
 }
-.snslogos img {
-	height: 50px;
-	padding: 10px;
-	text-align:center;
-}
-.snslogos a img:hover {
-	opacity:0.8;
-}
-.snslogos {
-	width:500px;
-	margin:60px auto 0;
-}
-.souryoutable tr td{
-	vertical-align:middle;
-	border:1px solid #898989;
-	border-collapse:collapse;
-	border-spacing:0;
-	padding:5px;
-}
-.souryoutable {
-	border-collapse:collapse;
-}
+
+/* 2つ並びの商品紹介で使う「詳しくみる」 */
 .kuwashikumiru {
 	width:150px; height:30px; background-color:#898989; color:#FFFFFF; text-align:center; text-decoration: none;
 	vertical-align: middle;
@@ -635,12 +196,6 @@ border-radius: 3px;
 	border-radius: 3px;
 	transition-duration: 0.5s;
 }
-
-#othergallery .para {
-	border-left: 1px solid #898989; padding-left: 15px; width: 1000px; margin:0 auto; padding-bottom: 5px; box-sizing: border-box;
-	line-height:18px;
-}
-
 /*  index page */
 	.topicstable tr td {
 		width: 400px;
@@ -672,14 +227,20 @@ border-radius: 3px;
 		font-size: 12px; margin-top: 3px;
 	}
 
+/* フッターにはるsnsのロゴ */
+.snslogos img {
+	height: 50px;
+	padding: 10px;
+	text-align:center;
+}
+.snslogos a img:hover {
+	opacity:0.8;
+}
+.snslogos {
+	width:500px;
+	margin:60px auto 0;
+}
 
-/* ギャラリー関係　*/
-
-
-
-
-
-/*　ギャラリー関係終わり　*/
 /*　スペック */
 
 .spec01 {
@@ -720,21 +281,7 @@ border-radius: 3px;
 
 /*　スペック終わり　*/
 
-/*　商品ページベース　*/
-.ctgr_wrap {
-	text-align: center;
-}
-.ctgr_wrap .base_ctgr {
-	margin-bottom: 0px;
-	display: inline-block;
-	text-align: left;
-}
-
-
-
-/* 2019年9月のサイドバナー */
-		/*　newトップラベル　*/
-/*--トップラベル--*/
+/* 2019年9月の左サイドバナー */
 .ac-container2 .navimidashi{
 	padding-top: 0px;
 	padding-right: 0;
@@ -855,12 +402,7 @@ border-radius: 3px;
 	font-size: 12px;
 	line-height: 25px;
 		}
-/* サイドバナー終わり */
-/*　ページフッター旧ページより　*/
 
-
-/* 2019年9月のサイドバナー */
-		/*　newトップラベル　*/
 #sidefloat{
 	width:120px;
 	position:fixed;
@@ -1106,8 +648,6 @@ border-radius: 3px;
 }
 
 
-
-
 .sfbanner{
 	width:120px;
 	background-color:#ffffff;
@@ -1211,125 +751,16 @@ border-radius: 3px;
 			vertical-align: middle;
 			font-weight:400;
 		}
-/* サイドバナー終わり */
-/*　ページフッター旧ページより　*/
 
-.midashifot2 .fottertitle2 tr th {
-	border-top-width: 1px;
-	border-top-style: solid;
-	border-top-color: #898989;
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: #898989;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #898989;
-	height: 40px;
-	color: #898989;
-	background-color: #ffffff;
-	background-position: left top;
-	padding-right: 1em;
-	padding-left: 1em;
-	font-size: 15px;
-	text-align: left;
-	line-height: 40px;
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-}
-.midashifot2 .fottertitle2 {
-	border-left-width: 1px;
-	border-left-style: solid;
-	border-left-color: #898989;
-	border-collapse: collapse;
-	border-spacing: 0;
-	empty-cells: show;
-	max-width: 100%;
-	width: 1200px;
-}
-.midashifot2 .fottertitle2 tr td {
-	width: 390px;
-	border-right-width: 1px;
-	border-right-style: solid;
-	border-right-color: #898989;
-	border-bottom-width: 1px;
-	border-bottom-style: solid;
-	border-bottom-color: #898989;
-	line-height: 160%;
-	font-size: 12px;
-	list-style-position: inside;
-	text-align: left;
-	margin-top: 30px;
-	padding: 20px;
-	vertical-align: top;
-	padding-top: 15px;
-	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+/* 左サイドバナー終わり */
 
-}
-
-.midashifot2 .fottertitle2 tr {
-	text-align: left;
-}
-
-.midashifot2 {
-	text-align: center;
-	margin-top: 15px;
-	margin-left: auto;
-	margin-right: auto;
-	width: 1200px;
-	margin-bottom: 60px;
-}
-/*　ヘッダーall背景など　*/
-
-#allfotter {
-	background-color: #8E1728;
-	width: 100%;
-	height: 150px;
-	overflow: hidden;
-	text-align: center;
-	margin: auto;
-}
-#allfotter #footer1 .foota {
-	padding: 15px;
-	color: #fff;
-	width: 700px;
-	text-align: center;
-	margin: auto;
-}
-
-
-
-/*　フッター終わり　*/
-/*　ヘッダー　*/
-#header #headlist {
-	margin: 0px;
-	padding: 0px;
-	width: 1000px;
-	height: 100px;
-}
-#header #headlist #h-listitems {
-
-	width: 1000px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: inherit;
-	padding-right: inherit;
-	text-align: center;
-	padding-top: 30px;
-}
-
-/*　ヘッダー終わり　*/
-.midashifot2 .fottertitle2 tr td img {
-	width: 350px;
-}
-.basewrap600{
-	width:600px;
-	float:left;
-	display:block;
-}
+/* フロートを解除 */
 .clearbox{
 	clear:both;
 	height:30px;
 	width:100%;
 }
+/*フロート解除終わり */
 
 /* ふわっと表示させるアレ */
 .effect div {
@@ -1337,20 +768,8 @@ border-radius: 3px;
   transition: 1.0s;
   transition-delay: .1s;
 } 
+/*フワッと表示させるアレ終わり */
 
-
-/* 動画へのリンク */
-#container1200 .asomovie {
-	width: 100%;
-	box-sizing: border-box;
-	margin: auto;
-}
-
-#container1200 .asomovie tr td img {
-	width: 80%;
-	display: block;
-	margin:auto;
-}
 
 /* コンテンツページ */
 
@@ -1849,6 +1268,231 @@ border-radius: 3px;
     border-right: none;
 	}
 
+/*　ギャラリー関係　*/
+.wrap600{
+	width:600px;
+	float:left;
+	display:block;
+	max-height:600px;
+}
+.gallerytitle p{
+	font-size:48px;
+	margin-bottom:0;
+}
+.gallerysub p{
+	font-size:36px;
+}
+.gallerytext p{
+	font-size:18px;
+	font-weight:lighter;
+}
+table.gallerytable{
+	width:1200px;
+	clear:both;
+}
+table.gallerytable td{
+}
+.galleryshohin img{
+	width:100%;
+	box-sizing: border-box;
+}
+.shoukaigrid .galleryshohin{
+	width:600px;
+	float:left;
+	margin-bottom:50px;
+	box-sizing: border-box;
+}
+.gallerylink{
+    width: 600px;
+    float: right;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 25px;
+    padding-top: 0px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+.gallerylinkfutoji{
+	font-weight: bold;
+	padding-top: 20px;
+}
+img[id*="large"]{
+	display:block;
+	height:100vh;
+	width:auto;
+	margin:auto;
+}
+
+.largeImg{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color:#ddd;
+}
+.wrap600 img {
+	max-height: 600px;
+	width: 600px;
+	height:auto;
+}
+
+.wrap600 .wraptext{
+	margin:100px auto;
+	display:block;
+	padding:0 120px;
+}
+.gallerywrap .reviewcomment .galnext img{
+	width:300px;
+	margin:auto;
+	padding:0;
+	display:block;
+}
+.gallerywrap .reviewcomment .galback img{
+	width:300px;
+	margin:auto;
+	padding:0;
+	display:block;
+}
+.galback{
+		margin:0;
+	padding:0;
+	display:block;
+}
+.galnext{
+		margin:0;
+		padding:0;
+	display:block;
+}
+.gallerywrap {
+	max-width:400px;
+	display:block;
+	padding:50px;
+	position:fixed;
+	top:-30px;
+	left:900px;
+	background:rgba(255,255,255,0.9);
+	height:100%;
+}
+.gallerywrap .reviewcomment p{
+	padding:0 15px 15px 20px;
+	margin:15px;
+	font-size:18px;
+}
+
+.reviews img[id*="large"]{
+	display:block;
+	height:100vh;
+	width:auto;
+	float:left;
+}
+.reviews{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	background-color:#fff;
+}
+
+/* ギャラリーの閉じるボタン */
+.my-parts {
+  display: none;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top:18px;
+  right:25px;
+  background: rgba(0,0,0,0.75);
+  border-radius:50%;
+}
+.my-parts span::before,
+.my-parts span::after {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 33px;
+  right: 9px;
+  width: 70%;
+  height: 7%;
+  margin: -8% 0 0 -42%;
+  background: rgb(255, 255, 255);
+}
+.my-parts span::before {
+  transform: rotate(-45deg);
+}
+.my-parts span::after {
+  transform: rotate(45deg);
+}
+.forsp p{
+	padding-top:30px;
+	padding-left:30px;
+}
+.swiper-container{
+	width:1200px;
+}
+.swiper-slide img{
+	width:250px;
+}
+.gallerytable tr td img {
+	width:300px;
+}
+.reviewwrap {
+	min-width:500px;
+	max-width:700px;
+	display:block;
+	padding:50px;
+	position:fixed;
+	top:100px;
+	left:50%;
+	background:rgba(255,255,255,0.9);
+}
+.reviewwrap .reviewtitle p{
+	padding:15px;
+	margin:15px;
+	font-size:24px;
+}
+.reviewwrap .reviewcomment p{
+	padding:0 15px 15px 15px;
+	margin:15px;
+	font-size:18px;
+}
+.reviewwrap .reviewcomment a img{
+	width:300px;
+}
+.pagejump {
+	width:400px;
+	height:30px;
+	background-color:#bbb;
+	margin:auto;
+	text-align:center;
+	margin-bottom:30px;
+}
+.pagejump a{
+	line-height:30px;
+	display:block;
+}
+.pagejump a:link{
+	text-decoration:none;
+	color:rgba(0,0,153,1);
+}
+.pagejump a:hover{
+	text-decoration:none;
+	color:rgba(0,0,153,1);
+	background-color:#ddd;
+}
+.pagejump a:visited{
+	text-decoration:none;
+	color:rgba(0,0,153,1);
+}
+.pagejump a:active{
+	text-decoration:none;
+	color:rgba(0,0,153,1);
+}
+
+
+
+
 /* レビューギャラリー　ホバーでコメント表示 */
 
 		.small1 {
@@ -2078,7 +1722,7 @@ background-repeat: no-repeat;
 		.small24 img:hover {
 			opacity: 0;
 		}
-
+/*　ギャラリー関係終わり　*/
 
 
 /* 一緒にちがおうプロジェクト */
@@ -2097,4 +1741,5 @@ background-repeat: no-repeat;
 .linkbanner img {
 	width: 380px;
 }
+
 
