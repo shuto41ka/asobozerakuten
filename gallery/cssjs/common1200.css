@@ -1268,6 +1268,7 @@ border-radius: 3px;
     border-right: none;
 	}
 
+
 		.rightBanner2 {
 		position: fixed;
 		cursor: pointer;
@@ -1300,7 +1301,6 @@ border-radius: 3px;
 	.rightBanner3:hover + .rightBanner2{
 		right: 520px;
 }
-
 
 /*　ギャラリー関係　*/
 .wrap600{
