@@ -90,6 +90,17 @@ html, body{
 }
 
 /*　商品ページ　レフト　英字太字　*/
+.cntr_ctgr2_left p {
+    font-size: 36px;
+    font-weight: bold;
+    color: #191919;
+    margin: 0;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+    letter-spacing: -0.05em;
+}
 
 
 .cntr11 p {
