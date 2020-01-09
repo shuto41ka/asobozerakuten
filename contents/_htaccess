@@ -1,0 +1,6 @@
+﻿<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} (iPhone|Android.*Mobile|Windows.*Phone) [NC]
+RewriteCond %{QUERY_STRING} !mode=pc
+RewriteRule 2019valentine_raku_pc.html 2019valentine_raku_sp.html [R,L]
+</IfModule>
