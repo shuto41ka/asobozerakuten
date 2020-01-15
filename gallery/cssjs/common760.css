@@ -196,7 +196,7 @@ html, body{
 /*　商品ページ　ベース　本文　*/
 
 .base21 p {
-	padding:0 30px 80px 30px;
+	padding:10px 30px 80px 30px;
 	font-size: 14px;
 	color: #494949;
 	line-height: 1.7em;
@@ -449,13 +449,13 @@ html, body{
 	height: 542px;
 	left: 120px;
 	position: relative;
-	top: 5px;
+	top: 16px;
 }
 .ac-container2 ul.ac-bag:hover{
 	height: 542px;
 	left: 120px;
 	position: relative;
-	top:5px;
+	top:16px;
     box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
 }
 
@@ -487,13 +487,13 @@ html, body{
 	height: 144px;
 	left: 120px;
 	position: relative;
-	top: 40px;
+	top: 68npx;
 }
 .ac-container2 ul.ac-kawakomono:hover{
 	height: 144px;
 	left: 120px;
 	position: relative;
-	top: 40px;
+	top: 68px;
 	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
 
 }
@@ -524,7 +524,7 @@ html, body{
 	height: 252px;
 	left: 120px;
 	position: relative;
-	top: 75px;
+	top: 120px;
 }
 .ac-container2 div .ac-small li {
 	text-decoration: none;
@@ -554,7 +554,7 @@ html, body{
 	height: 252px;
 	left: 120px;
 	position: relative;
-	top: 75px;
+	top: 120px;
 	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
 
 }
@@ -562,7 +562,7 @@ html, body{
     height: 206px;
 	left: 120px;
 	position: relative;
-	top:110px;
+	top:170px;
 }
 
 .ac-container2 div .ac-brand li {
@@ -593,7 +593,7 @@ html, body{
 	height: 206px;
 	left: 120px;
 	position: relative;
-	top: 110px;
+	top: 170px;
 	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
 
 }

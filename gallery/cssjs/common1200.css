@@ -115,7 +115,7 @@ a img:hover{
 
 /*　商品ページ　本文　*/
 .base21 p {
-	padding:0 120px 80px 120px;
+	padding:20px 120px 80px 120px;
 	font-size: 18px;
 	color: #494949;
 	line-height: 1.7em;
@@ -460,13 +460,13 @@ border-radius: 3px;
 	height: 144px;
 	left: 120px;
 	position: relative;
-	top: 40px;
+	top: 68px;
 }
 .ac-container2 ul.ac-kawakomono:hover{
 	height: 144px;
 	left: 120px;
 	position: relative;
-	top: 40px;
+	top: 68px;
 	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
 
 }
@@ -645,13 +645,13 @@ border-radius: 3px;
 	height: 542px;
 	left: 120px;
 	position: relative;
-	top: 5px;
+	top: 16px;
 }
 .ac-container2 ul.ac-bag:hover{
 	height: 542px;
 	left: 120px;
 	position: relative;
-	top:5px;
+	top:16px;
     box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
 }
 
@@ -683,7 +683,7 @@ border-radius: 3px;
 	height: 252px;
 	left: 120px;
 	position: relative;
-	top: 75px;
+	top: 120px;
 }
 .ac-container2 div .ac-small li {
 	text-decoration: none;
@@ -713,7 +713,7 @@ border-radius: 3px;
 	height: 252px;
 	left: 120px;
 	position: relative;
-	top: 75px;
+	top: 120px;
 	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
 
 }
@@ -721,7 +721,7 @@ border-radius: 3px;
 	height: 206px;
 	left: 120px;
 	position: relative;
-	top:110px;
+	top:170px;
 }
 
 .ac-container2 div .ac-brand li {
@@ -753,7 +753,7 @@ border-radius: 3px;
 	height: 206px;
 	left: 120px;
 	position: relative;
-	top: 110px;
+	top: 170px;
 	box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
 
 }
