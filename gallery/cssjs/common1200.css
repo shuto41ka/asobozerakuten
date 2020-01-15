@@ -1358,6 +1358,7 @@ border-radius: 3px;
     position: fixed;
     border-radius: 10px 0 0 10px;
     border-right: none;
+        z-index: 999;
 	}
 
 

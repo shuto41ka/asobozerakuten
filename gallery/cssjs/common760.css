@@ -1161,6 +1161,7 @@ html, body{
     top: 310px;
     right: 0;
     border: 5px solid #8e8e88;
+        z-index: 999;
     position: fixed;
     border-radius: 10px 0 0 10px;
     border-right: none;
