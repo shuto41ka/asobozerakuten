@@ -1018,7 +1018,7 @@ border-radius: 3px;
 	font-family: 'Roboto', 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
 	text-align: center;
 	color: #494949;
-	padding-top: 15px;
+	padding-top: 20px;
 }
 
 #containercate1200 .catebase02 p {
@@ -1430,9 +1430,11 @@ border-radius: 3px;
 }
 .gallerysub p{
 	font-size:36px;
+    padding-bottom: 15px;
 }
 .gallerytext p{
 	font-size:18px;
+    padding-left: 6px;
 	font-weight:lighter;
 }
 table.gallerytable{
@@ -1462,6 +1464,10 @@ table.gallerytable td{
     padding-left: 60px;
     padding-bottom: 30px;
     box-sizing: border-box;
+}
+.gallerylink p {
+    padding: 10px 0;
+    line-height: 30px;
 }
 .gallerylinkfutoji{
 	font-weight: bold;

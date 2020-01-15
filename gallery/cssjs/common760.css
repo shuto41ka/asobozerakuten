@@ -886,6 +886,7 @@ html, body{
 	font-size: 20px;
 	text-align: center;
 	color: #494949;
+    line-height: 30px;
 	padding-top: 15px;
     padding-bottom: 10px;
 }
@@ -1263,9 +1264,9 @@ html, body{
 	width:100%;
 }
 .wrap600 .wraptext{
-	margin:20px auto;
+	margin:30px auto;
 	display:block;
-	padding:0 40px;
+	padding:60px;
 	width:90%;
 }
 .gallerytitle p{
@@ -1274,9 +1275,12 @@ html, body{
 }
 .gallerysub p{
 	font-size:26px;
+    padding: 20px 0;
 }
 .gallerytext p{
 	font-size:16px;
+    padding-left: 6px;
+    line-height: 24px;
 }
 table.gallerytable{
 	width:760px;
@@ -1306,6 +1310,10 @@ table.gallerytable td img{
 	padding:5% 0 5% 5%;
 	box-sizing:border-box;
 		height:auto;
+}
+.gallerylink p {
+    padding: 10px 0;
+    line-height: 30px;
 }
 .gallerylink img{
 	width:180px;
