@@ -940,25 +940,6 @@ h5.con02 {
 	float: left;
 	margin-top: 10px;
 }
-#header #h-rightbottom {
-	float: right;
-	margin: 0;
-	padding-right: 0;
-	font-size: 13px;
-	margin-top: 10px;
-	padding-top: 1px;
-	height: 44px;
-	width:520px;
-	padding-left:0;
-}
-#header #h-rightbottom #headmenu .h-menu {
-	float: left;
-	list-style-type: none;
-	padding: 10px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-}
 #headmenu .h-menu{
 	 position: relative;
 padding: 0em 0.3em 0.3em 0.3em;
@@ -1101,10 +1082,6 @@ border-color: transparent transparent transparent #8e1728;
 	border-left-style: none;
 	background: #ccc;
 }
-#header #h-concept p {
-	font-size: 14px;
-	color: #494949;
-}
 #header #headlist #h-listitems {
 	margin: 0px;
 	margin-top: 10px;
@@ -1169,7 +1146,7 @@ border-color: transparent transparent transparent #8e1728;
     height: 24px;
     top: 7px;
 	left:0;
-    background: transparent url(../images/arrow_down.png) no-repeat center center;
+    background: transparent url(file:///share/%E5%BA%97%E8%88%97_%E6%A5%BD%E5%A4%A9/images/arrow_down.png) no-repeat center center;
 }
 
 .ac-container input{

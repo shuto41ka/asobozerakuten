@@ -177,9 +177,9 @@
 	padding-right: 0;
 	font-size: 13px;
 	margin-top: 10px;
-	padding-top: 1px;
+	padding-top: 10px;
 	height: 44px;
-	width:520px;
+	width:470px;
 	padding-left:0;
 }
 #header #h-rightbottom #headmenu .h-menu {
@@ -266,6 +266,11 @@ border-color: transparent transparent transparent #8e1728;
 	margin-top: 20px;
 	padding-top: 0px;
 	height: 44px;
+}
+header #h-concept p {
+	font-size: 14px;
+    color: #494949;
+    line-height: 44px;
 }
 .h-menu a:link {
 	color: #494949;
