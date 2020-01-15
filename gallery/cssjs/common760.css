@@ -190,7 +190,7 @@ html, body{
     padding-top: 0;
     padding-right: 22px;
     padding-left: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 
 /*　商品ページ　ベース　本文　*/
@@ -210,7 +210,7 @@ html, body{
     font-weight: bold;
     color: #191919;
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
     padding-top: 0px;
     display: block;
     text-align: center;
@@ -221,7 +221,7 @@ html, body{
 /*　商品ページ　ベース　センター　本文　*/
 
 .cntr21 p {
-    padding-top: 0px;
+    padding-top: 10px;
     padding-bottom: 30px;
     display: block;
     text-align: center;

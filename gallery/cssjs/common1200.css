@@ -110,7 +110,7 @@ a img:hover{
 	color: #191919;
 	margin: 0px;
 	line-height: 1.4em;
-	padding:0 120px 30px 120px;
+	padding:0 120px 10px 120px;
 }
 
 /*　商品ページ　本文　*/
@@ -145,7 +145,7 @@ a img:hover{
     font-weight: bold;
     color: #191919;
     margin: 0 auto;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
     padding-top: 0px;
     display: block;
     text-align: center;
@@ -156,7 +156,7 @@ a img:hover{
 /*　商品ページ　センターに置く場合　本文　*/
 
 .cntr21 p {
-    padding-top: 0px;
+    padding-top: 20px;
     padding-bottom: 30px;
     display: block;
     text-align: center;
