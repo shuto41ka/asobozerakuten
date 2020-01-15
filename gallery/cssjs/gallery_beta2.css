@@ -177,7 +177,7 @@
 	padding-right: 0;
 	font-size: 13px;
 	margin-top: 10px;
-	padding-top: 10px;
+	padding-top: 14px;
 	height: 44px;
 	width:470px;
 	padding-left:0;
@@ -267,7 +267,7 @@ border-color: transparent transparent transparent #8e1728;
 	padding-top: 0px;
 	height: 44px;
 }
-header #h-concept p {
+#header #h-concept p {
 	font-size: 14px;
     color: #494949;
     line-height: 44px;
