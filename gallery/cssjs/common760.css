@@ -1280,7 +1280,7 @@ html, body{
 .gallerytext p{
 	font-size:16px;
     padding-left: 6px;
-    line-height: 24px;
+    line-height: 30px;
 }
 table.gallerytable{
 	width:760px;
@@ -1313,7 +1313,7 @@ table.gallerytable td img{
 }
 .gallerylink p {
     padding: 10px 0;
-    line-height: 30px;
+    line-height: 24px;
 }
 .gallerylink img{
 	width:180px;
