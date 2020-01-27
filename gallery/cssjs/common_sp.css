@@ -17,6 +17,13 @@ html, body{
 #container1200 img {
 	width: 100%;
 }
+.clearbox {
+    display: block;
+    clear: both;
+    height: 30px;
+    width: 100%;
+    overflow: hidden;
+}
 .wrap600{
 	width:100%;
 	display:block;
