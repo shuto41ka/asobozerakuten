@@ -816,7 +816,7 @@ border-radius: 3px;
 .interview {
 	opacity: 0.7;
 }
-/* 2020トップ */
+
 /* スライド下のページャー */
 .sp-buttons { padding-top: 10px; }
 .sp-button { width: 20px; height: 10px; border: none; border-radius: 0; margin: 7px; background: #ccc; }
@@ -828,6 +828,10 @@ border-radius: 3px;
 
 .sp-horizontal .sp-next-arrow { background: url(../jquery-slider-pro/img/next.png) no-repeat; }
 .sp-previous-arrow:before, .sp-previous-arrow:after, .sp-next-arrow:before, .sp-next-arrow:after { content: inherit;}
+
+body {
+	-webkit-text-size-adjust: 100%;
+}
 
 table {
 	margin-left: 0px;
@@ -914,7 +918,7 @@ table {
         box-sizing: border-box;
     }
     .tabletopgenre tr td p{
-        font-size: 8px;
+        font-size: 10px;
         letter-spacing: -0.05em;
         padding-bottom: 30px;
     }
@@ -937,8 +941,10 @@ table {
         font-weight: bold;
         padding-left: 20px;
         font-size: 16px;
-        color: #707070;
         letter-spacing: 0.1em;
+    }
+    .priceselect p a {
+        color: #707070;
     }
     .priceselect p:after {
         content: "▶︎";
@@ -960,6 +966,8 @@ table {
         font-weight: bold;
         line-height: 60px;
         padding-left: 20px;
+    }
+    .sptop_service p a {
         color: #707070;
     }
     .sptop_service p:after {
@@ -975,6 +983,9 @@ table {
     .spfooter2020 p {
         float: left;
         font-size: 12px;
+    }
+    .spfooter2020 p a {
+        color: #707070;
     }
     .spfooter2020 p:nth-child(1):after {
         content: "　｜　"
@@ -1052,7 +1063,7 @@ table {
 }
 label[for="sample2"]{
 	position: absolute;
-	top: 5px;
+	top: 9px;
 	left: 10px;
 	z-index: 9999;
 	height: 22px;
