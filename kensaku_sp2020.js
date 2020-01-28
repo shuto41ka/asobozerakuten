@@ -1,6 +1,6 @@
 // JavaScript Document
 $(function() {
-    var topMenu = $('#shouhinkensaku');    
+    var topMenu = $('#shouhinkensaku2');    
     topMenu.hide();
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
@@ -20,7 +20,7 @@ $(function() {
 });
 // JavaScript Document
 $(function() {
-    var topMenu = $('#sptopmenu');    
+    var topMenu = $('#sptopmenu2');    
     topMenu.hide();
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
