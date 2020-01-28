@@ -9,6 +9,7 @@ html, body{
 	margin:0;
 	font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
 	padding:0;
+	-webkit-text-size-adjust: 100%;
 }
 #container1200{
 	width:100%;
@@ -815,3 +816,337 @@ border-radius: 3px;
 .interview {
 	opacity: 0.7;
 }
+
+/* スライド下のページャー */
+.sp-buttons { padding-top: 10px; }
+.sp-button { width: 20px; height: 10px; border: none; border-radius: 0; margin: 7px; background: #ccc; }
+.sp-selected-button { background: #8E1728; }
+@media only screen and (min-width: 768px) and (max-width: 1024px) { .sp-button { width: 25px; height: 8px; } }
+@media only screen and (min-width: 568px) and (max-width: 768px) { .sp-button { width: 25px; height: 8px; } }
+@media only screen and (min-width: 320px) and (max-width: 568px) { .sp-button { width: 25px; height: 8px; } }
+
+
+.sp-horizontal .sp-next-arrow { background: url(../jquery-slider-pro/img/next.png) no-repeat; }
+.sp-previous-arrow:before, .sp-previous-arrow:after, .sp-next-arrow:before, .sp-next-arrow:after { content: inherit;}
+
+body {
+	-webkit-text-size-adjust: 100%;
+}
+
+table {
+	margin-left: 0px;
+	margin-right: 0px;
+	text-align: center;
+}
+
+
+#sptopleft {
+	font-size: 10px;
+	margin: 10px;
+	font-family: sans-serif;
+	margin-bottom: 0px;
+}
+#headlist #h-listitems .items p {
+	font-family: sans-serif;
+	font-size:10px;
+}
+
+	#acces {
+		width: 0px;
+		height: 0px;
+		visibility: hidden;
+	}
+    .sptop_title {
+        text-align: center;
+        margin-top: 40px;
+        padding: 0;
+        font-weight: bold;
+        color: #707070;
+    }
+    .sptop_title .sptoptitle_alpha {
+        font-size: 20px;
+        padding-bottom: 10px;
+        letter-spacing: 0.1em
+    }
+    .sptop_title .sptoptitle_kana {
+        font-size: 12px;
+        padding-bottom: 10px;
+    }
+    table.sptop_article img {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .sptop_article {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        color: #707070;
+    }
+    .sptop_article tr {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .sptop_article tr td {
+        box-sizing: border-box;
+        width: 50%;
+    }
+    .sptop_article tr td img:first-child {
+        padding-right: 5%;
+        clear: both;
+    }
+    .sptop_article tr td img:last-child{
+        padding-left: 5%;
+        text-align: right;
+    }
+    .sptop_article tr td p.sptoparticle_alpha {
+        font-size: 12px;
+        font-weight: bold;
+        padding: 16px 0 0 0;
+    }
+    .sptop_article tr td p.sptoparticle_kana {
+        font-size: 12px;
+        padding: 7px 0 26px 0;
+        letter-spacing: -0.05em;
+    }
+    .tabletopgenre img {
+        width: 100%;
+        box-sizing: border-box;
+        padding:0 15%;
+    }
+    .tabletopgenre tr {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .tabletopgenre tr td p{
+        font-size: 10px;
+        letter-spacing: -0.05em;
+        padding-bottom: 30px;
+    }
+    .tabletopgenre {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .tabletopgenre tr.sptoptable_lastlaw td p {
+        padding-bottom: 0;
+    }
+    .priceselect {
+        width: 100%;
+        box-sizing: border-box;
+        border: 1px solid #707070;
+        height: 60px;
+        position: relative;
+    }
+    .priceselect p {
+        line-height: 60px;
+        font-weight: bold;
+        padding-left: 20px;
+        font-size: 16px;
+        letter-spacing: 0.1em;
+    }
+    .priceselect p a {
+        color: #707070;
+    }
+    .priceselect p:after {
+        content: "▶︎";
+        position: absolute;
+        right: 25px;
+    }
+    .sptop_service {
+        width: 100%;
+        box-sizing: border-box;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        border: 1px solid #707070;
+        border-collapse: collapse;
+        position: relative;
+    }
+    .sptop_service p {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 60px;
+        padding-left: 20px;
+    }
+    .sptop_service p a {
+        color: #707070;
+    }
+    .sptop_service p:after {
+        content: "▶︎";
+        position: absolute;
+        right: 25px;
+        
+    }
+    .spfooter2020 {
+        padding: 30px 18px 20px;
+        box-sizing: border-box;
+    }
+    .spfooter2020 p {
+        float: left;
+        font-size: 12px;
+    }
+    .spfooter2020 p a {
+        color: #707070;
+    }
+    .spfooter2020 p:nth-child(1):after {
+        content: "　｜　"
+    }
+    .spfooter2020 p:nth-child(3):after {
+        content: "　｜　"
+    }
+    .spfooterlogo {
+        padding-top: 30px;
+        margin: auto;
+        display: block;
+        clear: both;
+    }
+    .spfooterlogo img {
+        width: 150px;
+        padding-left: 15px;
+    }
+    .spfooterlogo p {
+        padding-left: 18px;
+        font-size: 12px;
+        padding-bottom: 20px;
+    }
+    	 /*--商品検索---*/
+#shouhinkensaku2 {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	background: rgba(255,255,255,1);
+	height: 35px;
+	padding-top:3px;
+    position: relative;
+}
+
+#shouhinkensaku2 .btn {
+	display: block;
+	height: 26px;
+	width: auto;
+	position:absolute;
+	top: 5px;
+	right: 10px;
+}
+    .sp_rakuten2 {
+        height: 40px;
+        position: relative;
+    }
+    .sp_rakuten2 .sptopbanner img {
+        left: 0;
+        right: 0;
+        top: 0;
+        margin: auto;
+        box-sizing: border-box;
+        position: absolute;
+        display: block;
+        width: 150px;
+        padding: 0;
+    }
+    .sp_rakuten2 .rakutenmark img {
+        position: absolute;
+        top: 7px;
+        right: 40px;
+    }
+    .sp_rakuten2 .rakutencart img {
+        position: absolute;
+        top: 7px;
+        right: 5px;
+    }
+.asoaso2 a img {
+	position: absolute;
+	left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+	top: 0;
+    width: 150px;
+}
+label[for="sample2"]{
+	position: absolute;
+	top: 9px;
+	left: 10px;
+	z-index: 9999;
+	height: 22px;
+}
+
+/*inputは隠す*/
+input[type="checkbox"]#sample2 {
+    visibility: hidden;
+}
+
+/*疑似要素で背景*/
+input[type="checkbox"]#sample2:checked:before{
+	width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: visible;
+    z-index: 2147483645;
+}
+
+/*疑似要素で閉じるボタン*/
+input[type="checkbox"]#sample2:checked:after{
+	width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.80);
+    content: "\00d7";
+	color: #000;
+    text-align: center;
+    font-size: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+	visibility: visible;
+	display: block;
+	z-index: 2147483647;
+    position: fixed;
+    top: 5px;
+    left: 80%;
+}
+/*iframeを格納*/
+input[type="checkbox"]#sample2 + #cover { 
+	width: 80%;
+	height: 415px;
+	background:rgba(245, 245, 245, 0.1);
+    transition: 0.1s ease-in-out;
+    position:fixed;
+    top:0;
+    left: -80%;
+}
+
+/*iframeを格納(オープン時)*/
+input[type="checkbox"]#sample2:checked + #cover {
+    overflow:scroll;
+	-webkit-overflow-scrolling:touch;
+    z-index: 2147483646;
+    left: 0;
+}
+
+/*iframe*/
+input[type="checkbox"]#sample2 + #cover > iframe {
+    width: 100%;
+    height: 100%;
+    background:rgba(245, 245, 245, 0.95);
+    border:none;
+    z-index: 2147483646;
+}
+
+    @media screen and (min-width: 350px) {
+        .spfooter2020 p:nth-child(4):after {
+            content: "　｜　"
+        }
+    }
+    @media screen and (max-width: 319px) {
+        .tabletopgenre tr td p {
+            font-size: 6px;
+            text-align: left;
+            width: 70%;
+            display: block;
+            margin: auto;
+        }
+        .sptop_article tr td p.sptoparticle_kana {
+            font-size: 8px;
+        }
+    }
