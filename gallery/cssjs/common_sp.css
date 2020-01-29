@@ -937,7 +937,7 @@ table {
         height: 60px;
         position: relative;
     }
-.priceselect:last-child {
+.priceselect_last {
     border-bottom: 1px solid #707070;
 }
     .priceselect p {
@@ -966,7 +966,7 @@ table {
         border-bottom: none;
         position: relative;
     }
-.sptop_service:last-child {
+.sptop_service_last {
     border-bottom: 1px solid #707070;
 }
     .sptop_service p {
