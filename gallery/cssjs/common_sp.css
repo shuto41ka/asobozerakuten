@@ -992,6 +992,7 @@ table {
     .spfooter2020 p {
         float: left;
         font-size: 12px;
+        padding-bottom: 10px;
     }
     .spfooter2020 p a {
         color: #707070;
