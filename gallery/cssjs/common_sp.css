@@ -871,6 +871,7 @@ table {
     .sptop_title .sptoptitle_kana {
         font-size: 12px;
         padding-bottom: 10px;
+        letter-spacing: 0.1em;
     }
     table.sptop_article img {
         width: 100%;
