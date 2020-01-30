@@ -1,0 +1,68 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>asoboze　スマートフォン用フロートメニュー</title>
+<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta3.css" media="screen and (max-width:759px)">
+<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/common_sp.css" media="screen and (max-width:759px)">
+<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/asobozerakuten_sp4.css" media="screen and (max-width:759px;)">
+    
+<style>
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .spfloatwrap {
+        width: 85%;
+        display: block;
+        margin: 20px auto;
+        overflow-x: hidden;
+    }
+    .spfloatwrap img {
+        width: 100%;
+        height: auto;
+    }
+    .kensakubox {
+        text-align: center;
+        position: relative;
+    }
+    .kensakubox .kensakutextspace {
+        width: 100%;
+        height: 60px;
+        border: 1px solid #707070;
+        box-sizing: border-box;
+        z-index: 99;
+        border-radius: 5px;
+    }
+    .kensakubox .kensakuimage {
+        position: absolute;
+        top: 11px;
+        width: 35px;
+        right: 11px;
+        z-index: 100;
+    }
+    </style>
+</head>
+<body>
+    <div class="spfloatwrap" id="spfloatwrap">
+        <img src="https://image.rakuten.co.jp/asoboze/cabinet/toppage/spfloat2020_mail.jpg">
+        <div class="sptop_title">
+            <p class="sptoptitle_alpha">SEARCH</p>
+            <p class="sptoptitle_kana">ストア内検索</p>
+        </div>
+        <div class="kensakubox">
+        <form action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" method="get" target="_top"><input type="hidden" name="sv" value="6" />
+<input type="hidden" name="sid" value="362200" />
+<input type="hidden" name="su" value="https://www.rakuten.co.jp/asoboze/" />
+<input type="hidden" name="sn" value="asoboze アソボーゼ" />
+<input type="text" name="sitem"  class="kensakutextspace"/>
+<input type="hidden" name="f" value="A" />
+<input onclick="document.charset='utf-8'; document.rakutenSubmit.submit();" type="image" name="submit" src="https://image.rakuten.co.jp/asoboze/cabinet/toppage/spindex_16.jpg" value="検索" class="kensakuimage"/></form>
+        </div>
+        <div class="sptop_title">
+            <p class="sptoptitle_alpha">BRAND</p>
+            <p class="sptoptitle_kana">取り扱いブランド</p>
+        </div>
+    </div>
+</body>
+</html>
