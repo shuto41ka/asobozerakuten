@@ -33,6 +33,8 @@
         box-sizing: border-box;
         z-index: 99;
         border-radius: 5px;
+        font-size: 20px;
+        padding: 0 15px;
     }
     .kensakubox .kensakuimage {
         position: absolute;
@@ -51,13 +53,13 @@
             <p class="sptoptitle_kana">ストア内検索</p>
         </div>
         <div class="kensakubox">
-        <form action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" method="get" target="_top"><input type="hidden" name="sv" value="6" />
+        <form action="http://esearch.rakuten.co.jp/rms/sd/esearch/vc" method="get" target="_top" accept-charset="EUC-JP"><input type="hidden" name="sv" value="6" />
 <input type="hidden" name="sid" value="362200" />
 <input type="hidden" name="su" value="https://www.rakuten.co.jp/asoboze/" />
 <input type="hidden" name="sn" value="asoboze アソボーゼ" />
-<input type="text" name="sitem"  class="kensakutextspace"/>
+<input type="text" name="sitem"  class="kensakutextspace" placeholder="asoboze内を検索"/>
 <input type="hidden" name="f" value="A" />
-<input onclick="document.charset='utf-8'; document.rakutenSubmit.submit();" type="image" name="submit" src="https://image.rakuten.co.jp/asoboze/cabinet/toppage/spindex_16.jpg" value="検索" class="kensakuimage"/></form>
+<input onclick="document.charset='EUC-JP'; document.rakutenSubmit.submit();" type="image" name="submit" src="https://image.rakuten.co.jp/asoboze/cabinet/toppage/spindex_16.jpg" value="検索" class="kensakuimage"/></form>
         </div>
         <div class="sptop_title">
             <p class="sptoptitle_alpha">BRAND</p>
