@@ -984,7 +984,7 @@ input[type="checkbox"]#sample:checked:after{
 /*iframeを格納*/
 input[type="checkbox"]#sample + #cover { 
 	width: 80%;
-	height: 415px;
+	height: 100%;
 	background:rgba(245, 245, 245, 0.1);
     transition: 0.1s ease-in-out;
     position:fixed;

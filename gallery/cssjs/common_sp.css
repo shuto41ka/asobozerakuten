@@ -1150,8 +1150,7 @@ input[type="checkbox"]#sample2 + #cover > iframe {
     }
     @media screen and (max-width: 319px) {
         .tabletopgenre tr td p {
-            font-size: 6px;
-            text-align: left;
+            font-size: 8px;
             width: 70%;
             display: block;
             margin: auto;
