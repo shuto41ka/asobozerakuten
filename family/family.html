@@ -113,35 +113,11 @@ $(function(){
 </head>
 
 <body>
-<div class="ac-container2 pconly" id="sidenavi">
-  
-</div>
-<script type="text/javascript">
-function getScrollBottom() {
-  var body = window.document.body;
-  var html = window.document.documentElement;
-  var scrollTop = body.scrollTop || html.scrollTop;
-  return html.scrollHeight - html.clientHeight - scrollTop;
-}
-jQuery(function($){
-	$(window).on('load scroll',
-	function(){
-		if (getScrollBottom() < 800){
-			$("#sidenavi").fadeOut();
-		}else {
-			$("#sidenavi").fadeIn();
-		}
- });
-});
-</script>
-<div id="header" class="pconly">
-</div>
-<div style="width:auto; height:28px;" class="pconly"></div>
 	<div id="rightFloat" class="pconly">
 	</div>
-<div align="center" class="pconly" id="banners">
+	<div id="header" class="pconly">
 </div>
-<div style="width:auto; height:70px;" class="pconly"></div>
+	<div id="sponly">
 
 <!-- トップへ戻るボタン -->
 <script type="text/javascript">
@@ -165,7 +141,7 @@ $(function() {
     });
 });
 </script>
-<p id="page-top" style="z-index:999;"><a href="#wrap" target="_top">▲</a></p>
+<p id="page-top" style="z-index:999;"><a href="#wrap">▲</a></p>
 <!-- トップへ戻るボタン終わり -->
 <!-- /#nav -->
 <SCRIPT src="https://www.rakuten.ne.jp/gold/asoboze/kensaku_sp2020.js">
@@ -176,7 +152,7 @@ $(function() {
 <div id="cover">
   <iframe src="https://www.rakuten.ne.jp/gold/asoboze/sp_floatmenu2020.html" frameborder="0" scrolling="auto" style="z-index: 2147483647;"></iframe>
 </div>
-<div class="asoaso2"> <a href="https://www.rakuten.ne.jp/gold/asoboze/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/sp_floattop.jpg"/></a></div>
+<div class="asoaso2"> <a href="https://www.rakuten.ne.jp/gold/asoboze/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/sp_floattop.jpg"/></a></div>
 <form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" id="search"> 
 <input type="hidden" name="sv" value="6"> 
 <input type="hidden" name="sid" value="362200"> 
@@ -196,10 +172,34 @@ $(function() {
 <!-- 看板 -->
 
 <div class="sp_rakuten2">
-    <a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html" target="_top" class="sptopbanner"><img src="https://image.rakuten.co.jp/asoboze/cabinet/toppage/spindex_17.jpg"></a>
-    <a href="https://www.rakuten.co.jp/" target="_top" class="rakutenmark"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/r_mark.jpg" width="25" style></a> 
-    <a href="https://www.rakuten.co.jp/cgi-bin/RRS?MIval=basket&shop_bid=347028" target="_top" class="rakutencart"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/sp_rakuten_cart.jpg" height="25"></a>
+    <a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html" class="sptopbanner"><img src="https://image.rakuten.co.jp/asoboze/cabinet/toppage/spindex_17.jpg"></a>
+    <a href="https://www.rakuten.co.jp/" class="rakutenmark"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/r_mark.jpg" width="25" style></a> 
+    <a href="https://www.rakuten.co.jp/cgi-bin/RRS?MIval=basket&shop_bid=347028" class="rakutencart"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/sp_rakuten_cart.jpg" height="25"></a>
         </div>
+</div>
+<div class="ac-container2 pconly" id="sidenavi">
+  
+</div>
+<script type="text/javascript">
+function getScrollBottom() {
+  var body = window.document.body;
+  var html = window.document.documentElement;
+  var scrollTop = body.scrollTop || html.scrollTop;
+  return html.scrollHeight - html.clientHeight - scrollTop;
+}
+jQuery(function($){
+	$(window).on('load scroll',
+	function(){
+		if (getScrollBottom() < 800){
+			$("#sidenavi").fadeOut();
+		}else {
+			$("#sidenavi").fadeIn();
+		}
+ });
+});
+</script>
+
+<div style="width:auto; height:70px;" class="pconly"></div>
 <div id="containercate1200">
 
 
