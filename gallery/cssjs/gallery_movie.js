@@ -65,5 +65,9 @@ $(function() {
 		$('#movies_sk-w171').load("sk-w171.html #movies_sk-w171");
 		$('#movies_sk-w171').show();
 });	
-	
+	$("#dougaswitch14").click(function() {
+        $("#[id ^= 'movies']").hide();
+        $('#movies_toftsack2way').load("toftsack2way.html #movies_toftsack2way");
+        $('#movies_toftsack2way').show();
+    })
 });
