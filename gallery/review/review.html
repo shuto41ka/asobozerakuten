@@ -2,6 +2,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45604769-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+ 
+  gtag('config', 'UA-45604769-3');
+</script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"  charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="description" content="革製品とビジネスバッグの通販サイトasoboze楽天市場店です。ブリーフケース、クラッチバッグなどメンズ向けのカバンからコインケース、ブックカバーなどこだわりの革小物を各種揃えています。">
@@ -29,6 +41,7 @@
 .sp-horizontal .sp-previous-arrow { background: url(file:///C|/Users/KAMEI/Desktop/jquery-slider-pro/img/prev.png) no-repeat; }
 .sp-horizontal .sp-next-arrow { background: url(file:///C|/Users/KAMEI/Desktop/jquery-slider-pro/img/next.png) no-repeat; }
 .sp-previous-arrow:before, .sp-previous-arrow:after, .sp-next-arrow:before, .sp-next-arrow:after { content: inherit;}
+
 </style>
 
 <!-- スライダー -->
@@ -58,10 +71,10 @@
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/slick.css" media="screen and (min-width:760px)"/>
   <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/slick-theme.css" media="screen and (min-width:760px)"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta.css"  media="screen and (min-width:1200px)"/>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/common1200.css"  media="screen and (min-width:1200px)"/>
-<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta2.css"  media="screen and (max-width:1199px) and (min-width:760px)"/>
-<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/common760.css"  media="screen and (max-width:1199px) and (min-width:760px)"/>
+<link rel="stylesheet" type="text/css" href="../cssjs/gallery_beta2.css"  media="screen and (max-width:1199px) and (min-width:760px)"/>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta3.css"  media="screen and (max-width:759px)"/>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/common_sp.css"  media="screen and (max-width:759px)"/>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" type="text/css">
@@ -69,51 +82,35 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script>
-$(function() {
-	$("#sidenavi").load("../parts/new_left_beta.html");
-	$("#header").load("../parts/new_top_beta.html");
-	$("#banners").load("../parts/banners.html");
-	$("#footer_all").load("../parts/footer.html");
-	$("#othergallery").load("../parts/othergallery.html");
-	$("#rightFloat").load("../parts/new_right_beta.html");
+$(function() {	$("#sidenavi").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_left_beta.html");
+	$("#header").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_top_beta.html");
+	$("#banners").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/banners.html");
+	$("#footer_all").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/footer.html");
+	$("#othergallery").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/othergallery.html");
+	$("#rightFloat").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_right_beta.html");
+              
+    $("#spfooter2").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/spfooter2.html")
 });
 </script>
-	<style>
-	
-	</style>
+
 </head>
 
-<body ontouchstart="">
+<body>
 <div class="ac-container2 pconly" id="sidenavi">
   
 </div>
-<script type="text/javascript">
-function getScrollBottom() {
-  var body = window.document.body;
-  var html = window.document.documentElement;
-  var scrollTop = body.scrollTop || html.scrollTop;
-  return html.scrollHeight - html.clientHeight - scrollTop;
-}
-jQuery(function($){
-	$(window).on('load scroll',
-	function(){
-		if (getScrollBottom() < 800){
-			$("#sidenavi").fadeOut();
-		}else {
-			$("#sidenavi").fadeIn();
-		}
- });
-});
-</script>
+	<div id="rightFloat" class="pconly">
+	</div>
 <div id="header" class="pconly">
 </div>
 <div style="width:auto; height:28px;" class="pconly"></div>
-<div id="rightFloat" class="pconly"></div>
-<div align="center" class="pconly" id="banners">
 
+<div align="center" class="pconly" id="banners">
 </div>
 <div style="width:auto; height:70px;" class="pconly"></div>
 
+
+<div id="sponly">
 
 <!-- トップへ戻るボタン -->
 <script type="text/javascript">
@@ -137,7 +134,7 @@ $(function() {
     });
 });
 </script>
-<p id="page-top" style="z-index:999;"><a href="#wrap" target="_top">▲</a></p>
+<p id="page-top" style="z-index:999;"><a href="#wrap">▲</a></p>
 <!-- トップへ戻るボタン終わり -->
 <!-- /#nav -->
 <SCRIPT src="https://www.rakuten.ne.jp/gold/asoboze/kensaku_sp2020.js">
@@ -148,7 +145,7 @@ $(function() {
 <div id="cover">
   <iframe src="https://www.rakuten.ne.jp/gold/asoboze/sp_floatmenu2020.html" frameborder="0" scrolling="auto" style="z-index: 2147483647;"></iframe>
 </div>
-<div class="asoaso2"> <a href="https://www.rakuten.ne.jp/gold/asoboze/" target="_top"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/sp_floattop.jpg"/></a></div>
+<div class="asoaso2"> <a href="https://www.rakuten.ne.jp/gold/asoboze/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/sp_floattop.jpg"/></a></div>
 <form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" id="search"> 
 <input type="hidden" name="sv" value="6"> 
 <input type="hidden" name="sid" value="362200"> 
@@ -168,11 +165,11 @@ $(function() {
 <!-- 看板 -->
 
 <div class="sp_rakuten2">
-    <a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html" target="_top" class="sptopbanner"><img src="https://image.rakuten.co.jp/asoboze/cabinet/toppage/spindex_17.jpg"></a>
-    <a href="https://www.rakuten.co.jp/" target="_top" class="rakutenmark"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/r_mark.jpg" width="25" style></a> 
-    <a href="https://www.rakuten.co.jp/cgi-bin/RRS?MIval=basket&shop_bid=347028" target="_top" class="rakutencart"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/sp_rakuten_cart.jpg" height="25"></a>
+    <a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html" class="sptopbanner"><img src="https://image.rakuten.co.jp/asoboze/cabinet/toppage/spindex_17.jpg"></a>
+    <a href="https://www.rakuten.co.jp/" class="rakutenmark"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/r_mark.jpg" width="25" style></a> 
+    <a href="https://www.rakuten.co.jp/cgi-bin/RRS?MIval=basket&shop_bid=347028" class="rakutencart"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/sp_rakuten_cart.jpg" height="25"></a>
         </div>
-
+</div>
 <div id="container1200">
 <div class="wrap600">
 <img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_thumbnail.jpg" />
@@ -824,7 +821,7 @@ iPhoneXへの装着です。プラケース（？）に天然石シートを貼�
 
 <div id="footer_all" class="pconly">
 </div>
-<div id="spfooter" class="sponly">
+<div id="spfooter2" class="sponly">
 </div>
 </body>
 </html>
