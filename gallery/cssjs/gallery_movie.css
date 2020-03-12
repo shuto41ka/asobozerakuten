@@ -30,3 +30,20 @@ div.movietable div{
 	width:180px;
 	height:180px;
 }
+
+ 
+        .movietexts {
+            width: 33%;
+            box-sizing: border-box;
+            padding: 0 20px;
+            float: left;
+            display: block;
+        }
+            .movietext {
+                height: 200px;
+            }
+        .movietexts img {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
