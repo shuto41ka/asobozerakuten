@@ -1900,4 +1900,63 @@ background-repeat: no-repeat;
 	width: 380px;
 }
 
+/* モニターページ */
+		.monitorOpen {
+			width: 100%;
+			margin: 0;
+			padding: 0;
+		}
+		.monitorOpen div {
+			width: 25%;
+			float: left;
+			display: block;
+		}
+		.monitorOpen div img {
+			width: 100%;
+		}
+		.monitorComment {
+			width: 300px;
+			height: 300px;
+			display: block;
+			float: left;
+			border: 1px solid #cccccc;
+			border-collapse: collapse;
+			box-sizing: border-box;
+		}
+		.monitorComment p {
+			padding: 40px;
+			vertical-align: middle;
+			font-size: 18px;
+		}
+		.regileMonitor {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monitor/ze-1.jpg);
+			background-size: 100% auto;
+			background-repeat: no-repeat;
+			background-position: center center;
+			width: 100%;
+			height: 900px;
+		}
+		.monitorComment a:link {
+			color: #494949;
+			text-decoration: none;
+		}
+		.monitorComment a:visited {
+			color: #494949;
+			text-decoration: none;
+		}
+			.pcButton {
+				cursor: pointer;
+			}
+			.pcButton:hover {
+				opacity: 0.8;
+			}
+			.preparation {
+				border: 3px solid #191919; border-right: none; box-sizing: border-box; width: 300px; height: 600px;
+			}
+			.preparation:last-child {
+				border-right: 3px solid #191919;
+			}
+			.preparation p {
+				text-align: center; vertical-align: middle; font-weight: bold; display: table-cell; height: 600px; width: 300px; margin: auto; padding: 0;
+			}
 
