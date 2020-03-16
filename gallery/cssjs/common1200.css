@@ -201,66 +201,7 @@ a img:hover{
 	width: 400px;
 }
 
-.walpac {
-	background:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/kg-y167/1200ver/kg-y167_03b.jpg); width:1200px; height:548px; position:relative;
-}
 
-.walpac .inner {
-	position: absolute; width:350px; top:200px; left:0; right:0; margin:auto;
-}
-
-.walpac2 {
-	background: url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/kg-y167/1200ver/kg-y167_06.jpg); width: 1200px; height: 10px; position: relative; bottom: -10px;
-}
-
-.walpac2 .inner {
-	position: absolute; width:500px; top:150px;
-}
-
-.walpac3 {
-	background:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/kg-y167/1200ver/kg-y167_07.jpg); width:1200px; height:637px; position:relative;
-}
-
-.walpac3 .inner {
-	position:absolute; width:600px; top:20px;
-}
-
-@media screen and (max-width:1200px) {
-	.mt18002 {
-			background-image:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/mt18002/2019/mt18002_32.jpg); width: 760px; height: 348px; background-repeat: no-repeat; position:relative; background-size: contain;	
-	}
-	.mt18002 .inner {
-    position: absolute;
-    left: 454px;
-    top: 90px;
-    width: 250px;
-	}
-	
-	.walpac { 
-	background:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/kg-y167/1200ver/kg-y167_03b.jpg); width:760px; height:347px; position:relative; background-size:contain; background-repeat:no-repeat;
-}
-
-.walpac .inner {
-	position: absolute; width:250px; top:130px; left:0; right:0; margin:	auto;
-}
-.walpac2 {
-	background: url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/kg-y167/1200ver/kg-y167_06.jpg); width: 760px; height: 10px; position: relative; bottom: -10px; position:relative; background-size:contain; background-repeat:no-repeat;
-}
-
-.walpac2 .inner {
-	position: absolute; width:317px; top:95px;
-}
-
-.walpac3 {
-	background:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/kg-y167/1200ver/kg-y167_07.jpg); width:760px; height:403px; position:relative;
-	position:relative; background-size:contain; background-repeat:no-repeat;
-}
-
-.walpac3 .inner {
-	position:absolute; width:360px; top:20px;
-}
-
-}
 /* 商品ページ終わり */
 /* スマホ用の要素を表示しない */
 .sponly{
@@ -435,7 +376,6 @@ border-radius: 3px;
     height: 24px;
     top: 0;
 	left:0;
-    background: transparent url(file:///C|/Users/KAMEI/AppData/Local/images/arrow_down.png) no-repeat center center;
 }
 
 
@@ -774,6 +714,8 @@ border-radius: 3px;
 	.sfbanner p:hover {
 		color: #ffffff; 
 	}
+
+/*アイコンurlは各々調整してください。*/
 .sfbanner.side1{
 	top: 240px;
 	position: absolute;
