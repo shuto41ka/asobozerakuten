@@ -97,6 +97,27 @@ $(function() {
 <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="../cssjs/gallery_movie.js">
 </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function(){
+  $('.effect div,.effect img').css({"opacity":"0", "padding-top":"15px"});
+  $(window).scroll(function (){
+    $(".effect").each(function(){
+      var imgPos = $(this).offset().top;    
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > imgPos - windowHeight + windowHeight/5){
+        $("div, img",this).css({"opacity":"1", "padding-top": "0" });
+        $("i",this).css({ 
+          "font-size": "100px",
+          "padding": "0 20px 40px"
+        });
+      } 
+    });
+  });
+});
+</script>
+
 </head>
 
 <body>
@@ -207,70 +228,300 @@ Movie&nbsp;Gallery</p>
 </p></div>
 </div>
 </div>
-<div class="base10 forsp" style="clear:both;"><p style="padding-bottom:5px;">
-画像をクリックすると、その商品の紹介動画がご覧いただけます。
-</p></div>
+
+    <div class="pconly">
+        <br>
+        <br>
+        <br>
+    </div>
 
 <!--ここにギャラリーを-->
-<div id="movies_asoboze"></div>
-    <div id="movies_toftsack2way"></div>
-<div id="movies_walpac"></div>
-<div id="movies_toftsack"></div>
-<div id="movies_naire"></div>
-<div id="movies_lformal"></div>
-<div id="movies_koutei"></div>
-<div id="movies_chichinohi"></div>
-<div id="movies_hahanohi"></div>
-<div id="movies_113"></div>
-<div id="movies_toftsack2"></div>
+    <style>
+        .moviebox {
+            max-height: 100%;
+            max-width: 1200px;
+            width: 100%;
+            display: block;
+            position: relative;
+        }
+    </style>
+<div class="moviebox" id="moviebox">
+        <div id="movies_toftsack2way"></div>
 <div id="movies_to-v172"></div>
 <div id="movies_ze-v168"></div>
-<div id="movies_sk-w171"></div>
-    
-    
+        <div id="movies_sk-w171"></div>
+<div id="movies_walpac"></div>
+<div id="movies_toftsack"></div>
+        <div id="movies_naire"></div>
+<div id="movies_lformal"></div>
+<div id="movies_koutei"></div>
+    <div id="movies_chichinohi"></div>
+<div id="movies_hahanohi"></div>
+<div id="movies_113"></div>
+    <div id="movies_asoboze"></div>
+<div id="movies_toftsack2"></div>
+
+    </div>
+
+    <style>
+        @media only screen and (min-width:760px){
+        .movietexts {
+            width: 33%;
+            box-sizing: border-box;
+            padding: 0 20px 40px;
+            float: left;
+            display: block;
+
+        }
+            .movietext {
+                min-height: 180px;
+            }
+        .movietexts img {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        }
+        @media only screen and (max-width:759px) {
+            .movietexts {
+                width: 100%;
+                box-sizing: border-box;
+                padding: 0 20px;
+                overflow-x: hidden;
+            }
+            .movietext {
+                max-width: 70%;
+                display: block;
+                float: left;
+                box-sizing: border-box;
+                margin-left: 10%;
+                padding-left: 10%;
+            }
+            
+            .movietexts .textimage {
+                display: block;
+                box-sizing: border-box;
+                float: left;
+                width: 30%;
+            }
+        }
+        @media only screen and (max-width:349px) {
+            .gallerytext p {
+                font-size: 10px;
+                min-width: 150px;
+            }
+            .gallerysub p {
+                font-size: 12px;
+                min-width: 150px;
+            }
+            .movietexts{
+                padding: 0;
+            }
+        }
+    </style>
+<div class="clearbox"></div>
+        <div class="movietexts effect" name="dougasetsumei14" id="dougasetsumei14">
+                <div class="textimage">
+                    <p><a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/toft2way_squarethumb.jpg" alt=""></a></p>
+                </div>
+            <div class="movietext">
+                <div class="gallerysub">
+                    <p>TOFTSACK&nbsp;2WAY</p>
+                </div>
+                <div class="gallerytext">
+                    <p>TOFTSACK（タフトサック）2WAYのご紹介です。カバンの中身とは…？</p>
+                </div>
+            </div>
+
+        </div>
+   <div class="movietexts effect" name="dougasetsumei11
+                        " id="dougasetsumei11">
+                <div class="textimage">
+                    <p><a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/notecover.jpg" alt=""></a></p>
+                </div>
+            <div class="movietext">
+                <div class="gallerysub">
+                    <p>本革ノートカバー</p>
+                </div>
+                <div class="gallerytext">
+                    <p>実はややこしい"B5サイズ”。お手持ちのノートにご注意ください。</p>
+                </div>
+            </div>
+
+        </div>
+    <div class="movietexts effect" name="dougasetsumei12" id="dougasetsumei12">
+                <div class="textimage">
+                    <p><a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/regile.jpg" alt=""></a></p>
+                </div>
+            <div class="movietext">
+                <div class="gallerysub">
+                    <p>エコバッグ“Regile”</p>
+                </div>
+                <div class="gallerytext">
+                    <p>使い慣れたコンビニ袋をちょっとだけオシャレに彩りました。</p>
+                </div>
+            </div>
+
+        </div>
+
+       <div class="movietexts effect" name="dougasetsumei13" id="dougasetsumei13">
+                <div class="textimage">
+                    <p><a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/sk-w172.jpg" alt=""></a></p>
+                </div>
+            <div class="movietext">
+                <div class="gallerysub">
+                    <p>日本製本革ペンケース</p>
+                </div>
+                <div class="gallerytext">
+                    <p>2本挿しのスリムなペンケース。ミニマル志向のビジネスパーソンに。</p>
+                </div>
+            </div>
+
+        </div>
+       <div class="movietexts effect" name="dougasetsumei10" id="dougasetsumei10">
+                <div class="textimage">
+                    <p><a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/toftsack2.jpg" alt=""></a></p>
+                </div>
+            <div class="movietext">
+                <div class="gallerysub">
+                    <p>TOFTSACK（タフトサック）</p>
+                </div>
+                <div class="gallerytext">
+                    <p>新素材でビジネスに最適な機能を手に入れました。</p>
+                </div>
+            </div>
+
+        </div>
+       <div class="movietexts effect" name="dougasetsumei02" id="dougasetsumei02">
+                <div class="textimage">
+                    <p><a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/walpac.jpg" alt=""></a></p>
+                </div>
+            <div class="movietext">
+                <div class="gallerysub">
+                    <p>walpac（ウォルパック）</p>
+                </div>
+                <div class="gallerytext">
+                    <p>コインケースとカード入れがくっついたミニマル財布。キャッシュレス時代に備え、持ち物をスマートにまとめてみませんか。</p>
+                </div>
+            </div>
+
+        </div>
+
+    <div class="movietexts effect" name="dougasetsumei04" id="dougasetsumei04">
+                <div class="textimage">
+                    <p><a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/10.jpg" alt=""></a></p>
+                </div>
+            <div class="movietext">
+                <div class="gallerysub">
+                    <p>名入れ革小物特集</p>
+                </div>
+                <div class="gallerytext">
+                    <p>名入れをして、世界に一つだけのブックカバーやしおりに。</p>
+                </div>
+            </div>
+
+        </div>
+    <div class="movietexts effect" name="dougasetsumei06" id="dougasetsumei06">
+                <div class="textimage">
+                    <p><a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/img016_1500x1500b.jpg" alt=""></a></p>
+                </div>
+            <div class="movietext">
+                <div class="gallerysub">
+                    <p>革製品ができるまで</p>
+                </div>
+                <div class="gallerytext">
+                    <p>本革のバッグはどのように作られているのか、革工場に潜入してきました。</p>
+                </div>
+            </div>
+
+        </div>
+    <div class="movietexts effect" name="dougasetsumei05" id="dougasetsumei05">
+                <div class="textimage">
+                    <p><a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/womensformal/g_wformal_01.jpg" alt=""></a></p>
+                </div>
+            <div class="movietext">
+                <div class="gallerysub">
+                    <p>レディースフォーマルバッグ</p>
+                </div>
+                <div class="gallerytext">
+                    <p>人生の大切な時を彩るフォーマルバッグの美しさをお楽しみください。</p>
+                </div>
+            </div>
+
+        </div>
+
+    <div class="movietexts effect" name="dougasetsumei07" id="dougasetsumei07">
+                <div class="textimage">
+                    <p><a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/samu.jpg" alt=""></a></p>
+                </div>
+            <div class="movietext">
+                <div class="gallerysub">
+                    <p>父の日ギフト</p>
+                </div>
+                <div class="gallerytext">
+                    <p>お父様へ、日頃の感謝の気持ちを込めたギフトを応援します。</p>
+                </div>
+            </div>
+
+        </div>
+    <div class="movietexts effect" name="dougasetsumei08" id="dougasetsumei08">
+                <div class="textimage">
+                    <p><a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/1a.jpg" alt=""></a></p>
+                </div>
+            <div class="movietext">
+                <div class="gallerysub">
+                    <p>母の日ギフト</p>
+                </div>
+                <div class="gallerytext">
+                    <p>毎年のように母の日のプレゼントとしてご好評いただいている商品をご紹介します。</p>
+                </div>
+            </div>
+
+        </div>
+    <div class="movietexts effect" name="dougasetsumei09" id="dougasetsumei09">
+                <div class="textimage">
+                    <p><a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/1.jpg" alt=""></a></p>
+                </div>
+            <div class="movietext">
+                <div class="gallerysub">
+                    <p>メンズリクルートバッグ</p>
+                </div>
+                <div class="gallerytext">
+                    <p>ハイコストパフォーマンスなリクルートバッグ。就職活動はもちろん、ベテランのビジネスパーソンにも人気。</p>
+                </div>
+            </div>
+
+        </div>
+
 <div class="movietable">
-<div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/3.jpg" name="dougaswitch01" id="dougaswitch01"/>
+<div> <a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/3.jpg" name="dougaswitch01" id="dougaswitch01"/></a>
 </div>
-<div>
-       <img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/toft2way_squarethumb.jpg" name="dougaswitch14" id="dougaswitch14" alt="">
+<div> <a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/toft2way_squarethumb.jpg" name="dougaswitch14" id="dougaswitch14" alt=""></a>
  
     </div>
-    <div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/notecover.jpg" name="dougaswitch11" id="dougaswitch11"/>
+    <div> <a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/notecover.jpg" name="dougaswitch11" id="dougaswitch11"/></a>
+    </div>
+<div> <a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/regile.jpg" name="dougaswitch12" id="dougaswitch12"/></a>
 </div>
-<div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/regile.jpg" name="dougaswitch12" id="dougaswitch12"/>
+<div> <a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/sk-w172.jpg" name="dougaswitch13" id="dougaswitch13"/></a>
 </div>
-<div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/sk-w172.jpg" name="dougaswitch13" id="dougaswitch13"/>
+<div> <a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/toftsack2.jpg" name="dougaswitch10" id="dougaswitch10"/></a>
 </div>
-<div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/toftsack2.jpg" name="dougaswitch10" id="dougaswitch10"/>
+<div> <a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/walpac.jpg" name="dougaswitch02" id="dougaswitch02"/></a>
 </div>
-<div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/walpac.jpg" name="dougaswitch02" id="dougaswitch02"/>
+<div> <a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/1c.jpg" name="dougaswitch03" id="dougaswitch03"/></a>
 </div>
-<div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/1c.jpg" name="dougaswitch03" id="dougaswitch03"/>
+<div> <a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/10.jpg" name="dougaswitch04" id="dougaswitch04"/></a>
 </div>
-<div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/10.jpg" name="dougaswitch04" id="dougaswitch04"/>
+<div> <a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/womensformal/g_wformal_01.jpg" id="dougaswitch05"/></a>
 </div>
-<div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/womensformal/g_wformal_01.jpg" id="dougaswitch05"/>
+<div> <a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/img016_1500x1500b.jpg" name="dougaswitch06" id="dougaswitch06"/></a>
 </div>
-<div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/img016_1500x1500b.jpg" name="dougaswitch06" id="dougaswitch06"/>
+<div> <a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/samu.jpg" name="dougaswitch07" id="dougaswitch07"/></a>
 </div>
-<div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/samu.jpg" name="dougaswitch07" id="dougaswitch07"/>
+<div> <a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/1a.jpg" name="dougaswitch08" id="dougaswitch08"/></a>
 </div>
-<div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/1a.jpg" name="dougaswitch08" id="dougaswitch08"/>
-</div>
-<div>
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/1.jpg" name="dougaswitch09" id="dougaswitch09"/>
+<div> <a href="#moviebox"><img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/moviegallery/1.jpg" name="dougaswitch09" id="dougaswitch09"/></a>
 </div>
 </div>
 <!--ここにギャラリーを-->
