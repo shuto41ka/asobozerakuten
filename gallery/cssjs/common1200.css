@@ -188,18 +188,6 @@ a img:hover{
 	height:30px;
 	width:100%;
 }
-/* 一部の商品ページ */
-.mt18002 {
-	background-image:url(https://image.rakuten.co.jp/asoboze/cabinet/kawakomono/mt18002/2019/mt18002_32.jpg); 
-	width:1200px; 
-	height:550px; background-repeat: no-repeat; position:relative; background-size: contain;
-	
-}
-
-.mt18002 .inner {
-	position: absolute; left: 720px; top: 146px;
-	width: 400px;
-}
 
 
 /* 商品ページ終わり */
