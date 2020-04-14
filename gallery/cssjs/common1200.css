@@ -1654,15 +1654,28 @@ border-radius: 3px;
 	display:block;
 	max-height:600px;
 }
-.gallerytitle p{
+.gallerytitle p {
 	font-size:48px;
 	margin-bottom:0;
 }
-.gallerysub p{
+.gallerysub p {
 	font-size:36px;
     padding-bottom: 15px;
 }
-.gallerytext p{
+.gallerytext p { 
+	font-size:18px;
+    padding-left: 6px;
+	font-weight:lighter;
+}
+.gallerytitle div {
+	font-size:48px;
+	margin-bottom:0;
+}
+.gallerysub div {
+	font-size:36px;
+    padding-bottom: 15px;
+}
+.gallerytext div {
 	font-size:18px;
     padding-left: 6px;
 	font-weight:lighter;
@@ -1764,7 +1777,12 @@ img[id*="large"]{
 	background:rgba(255,255,255,0.9);
 	height:100%;
 }
-.gallerywrap .reviewcomment p{
+.gallerywrap .reviewcomment p {
+	padding:0 15px 15px 20px;
+	margin:15px;
+	font-size:18px;
+}
+.gallerywrap .reviewcomment div {
 	padding:0 15px 15px 20px;
 	margin:15px;
 	font-size:18px;
@@ -1813,7 +1831,11 @@ img[id*="large"]{
 .my-parts span::after {
   transform: rotate(45deg);
 }
-.forsp p{
+.forsp p {
+	padding-top:30px;
+	padding-left:30px;
+}
+.forsp div {
 	padding-top:30px;
 	padding-left:30px;
 }
@@ -1836,12 +1858,22 @@ img[id*="large"]{
 	left:50%;
 	background:rgba(255,255,255,0.9);
 }
-.reviewwrap .reviewtitle p{
+.reviewwrap .reviewtitle p {
 	padding:15px;
 	margin:15px;
 	font-size:24px;
 }
-.reviewwrap .reviewcomment p{
+.reviewwrap .reviewcomment p {
+	padding:0 15px 15px 15px;
+	margin:15px;
+	font-size:18px;
+}
+.reviewwrap .reviewtitle div {
+	padding:15px;
+	margin:15px;
+	font-size:24px;
+}
+.reviewwrap .reviewcomment div {
 	padding:0 15px 15px 15px;
 	margin:15px;
 	font-size:18px;

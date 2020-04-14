@@ -1556,15 +1556,28 @@ html, body{
 	padding:60px;
 	width:90%;
 }
-.gallerytitle p{
+.gallerytitle p {
 	font-size:40px;
 	margin-bottom:0;
 }
-.gallerysub p{
+.gallerysub p {
 	font-size:26px;
     padding: 20px 0;
 }
-.gallerytext p{
+.gallerytext p {
+	font-size:16px;
+    padding-left: 6px;
+    line-height: 30px;
+}
+.gallerytitle div {
+	font-size:40px;
+	margin-bottom:0;
+}
+.gallerysub div {
+	font-size:26px;
+    padding: 20px 0;
+}
+.gallerytext div {
 	font-size:16px;
     padding-left: 6px;
     line-height: 30px;
@@ -1667,7 +1680,10 @@ img[id*="large"]{
   transform: rotate(45deg);
 }
 
-.forsp p{
+.forsp p {
+	padding-top:20px;
+}
+.forsp div {
 	padding-top:20px;
 }
 .swiper-container{
@@ -1685,13 +1701,24 @@ img[id*="large"]{
 	right:0;
 	background:rgba(255,255,255,0.75);
 }
-.reviewwrap .reviewtitle p{
+.reviewwrap .reviewtitle p {
 	padding-left:20px;
 	padding-top:10px;
 	font-size:24px;
 	line-height:20px;
 }
-.reviewwrap .reviewcomment p{
+.reviewwrap .reviewcomment p {
+	padding:0 40px 0 20px;
+	font-size:18px;
+	line-height:24px;
+}
+.reviewwrap .reviewtitle div {
+	padding-left:20px;
+	padding-top:10px;
+	font-size:24px;
+	line-height:20px;
+}
+.reviewwrap .reviewcomment div {
 	padding:0 40px 0 20px;
 	font-size:18px;
 	line-height:24px;
@@ -1757,7 +1784,12 @@ img[id*="large"]{
 	background:rgba(255,255,255,0.75);
 	height:100%;
 }
-.gallerywrap .reviewcomment p{
+.gallerywrap .reviewcomment p {
+	padding:0 20px 0 15px;
+	font-size:18px;
+	line-height:24px;
+}
+.gallerywrap .reviewcomment div {
 	padding:0 20px 0 15px;
 	font-size:18px;
 	line-height:24px;
