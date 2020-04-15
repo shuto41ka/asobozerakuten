@@ -20,29 +20,65 @@
 <meta name="keywords" content="ビジネスバッグ,クラッチバッグ,セカンドバッグ,カバン,財布,革製品,小銭入れ,ブリーフケース">
 <meta content="サイバール株式会社"name="author">
 <title>革製品とビジネスバッグの通販サイト｜asoboze</title>
-<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/css_for_new.css" media="screen and (min-width:760px)"/>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/slider-pro.min.css"  media="screen and (min-width:760px)"/>
 <link rel="shortcut icon" href="http://www.rakuten.ne.jp/gold/asoboze/favicon.ico" type="image/vnd.microsoft.icon">
 <link rel="icon" href="http://www.rakuten.ne.jp/gold/asoboze/favicon.ico" type="image/vnd.microsoft.icon">
 <link rel="apple-touch-icon" href="https://image.rakuten.co.jp/asoboze/cabinet/appleicon.jpg" sizes="180x180" />
 <link rel="icon" href="https://image.rakuten.co.jp/asoboze/cabinet/androidicon.jpg" sizes="192x192" />
+<style>
 
+/* スライド下のページャー */
+.sp-buttons { padding-top: 10px; }
+.sp-button { width: 30px; height: 10px; border: none; border-radius: 0; margin: 7px; background: #ccc; }
+.sp-selected-button { background: #000; }
+@media only screen and (min-width: 768px) and (max-width: 1024px) { .sp-button { width: 25px; height: 8px; } }
+@media only screen and (min-width: 568px) and (max-width: 768px) { .sp-button { width: 25px; height: 8px; } }
+@media only screen and (min-width: 320px) and (max-width: 568px) { .sp-button { width: 25px; height: 8px; } }
+/* 左右の矢印の設定 */
+.sp-arrow { width: 48px; height: 48px; }
+.sp-vertical .sp-arrow { -webkit-transform: none; -ms-transform: none; transform: none; }
+.sp-horizontal .sp-previous-arrow { background: url(file:///C|/Users/KAMEI/Desktop/jquery-slider-pro/img/prev.png) no-repeat; }
+.sp-horizontal .sp-next-arrow { background: url(file:///C|/Users/KAMEI/Desktop/jquery-slider-pro/img/next.png) no-repeat; }
+.sp-previous-arrow:before, .sp-previous-arrow:after, .sp-next-arrow:before, .sp-next-arrow:after { content: inherit;}
+
+</style>
+
+<!-- スライダー -->
+<!-- スライダー2 -->
+    <script type="text/javascript">
+    $(window).load(function () {
+        $("#myslider").endlessScroll({
+            width: '760px',
+            height: '200px',
+            steps: -2,
+            speed: 100,
+            mousestop: true
+         });
+    });
+</script>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/slick.css" media="screen and (min-width:760px)"/>
   <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/slick-theme.css" media="screen and (min-width:760px)"/>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta.css"  media="screen and (min-width:1200px)"/>
-<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta2.css"  media="screen and (max-width:1199px) and (min-width:760px)"/>
-<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta3.css"  media="screen and (max-width:759px)"/>
 
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/common1200.css"  media="screen and (min-width:1200px)"/>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/common760.css"  media="screen and (max-width:1199px) and (min-width:760px)"/>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/common_sp.css"  media="screen and (max-width:759px)"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" type="text/css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css" type="text/css">
  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="https://www.rakuten.ne.jp/gold/asoboze/jquery-1.11.3.min.js"></script>
-<script type="text/javascript" src="https://www.rakuten.ne.jp/gold/asoboze/jquery.sliderPro.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script>
+$(function() {
+	$("#sidenavi").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_left_beta.html");
+	$("#header").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_top_beta.html");
+	$("#banners").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/banners.html");
+	$("#footer_all").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/footer.html");
+	$("#othergallery").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/othergallery.html");
+	$("#rightFloat").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_right_beta.html");
+    $("#spfooter").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/spfooter2.html")
 
+});
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
 <script type="text/javascript">
 $(function(){
@@ -63,54 +99,14 @@ $(function(){
   });
 });
 </script>
-
-<script src="http://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
-<script>
-$(function() {
-	$("#sidenavi").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_left_beta.html");
-	$("#header").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_top_beta.html");
-	$("#banners").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/banners.html");
-	$("#footer_all").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/footer.html");
-	$("#othergallery").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/othergallery.html");
-	$("#rightFloat").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_right_beta.html");
-});
-</script>
-
-<style>
-
-/* スライド下のページャー */
-.sp-buttons { padding-top: 10px; }
-.sp-button { width: 30px; height: 10px; border: none; border-radius: 0; margin: 7px; background: #ccc; }
-.sp-selected-button { background: #000; }
-@media only screen and (min-width: 768px) and (max-width: 1024px) { .sp-button { width: 25px; height: 8px; } }
-@media only screen and (min-width: 568px) and (max-width: 768px) { .sp-button { width: 25px; height: 8px; } }
-@media only screen and (min-width: 320px) and (max-width: 568px) { .sp-button { width: 25px; height: 8px; } }
-/* 左右の矢印の設定 */
-.sp-arrow { width: 48px; height: 48px; }
-.sp-vertical .sp-arrow { -webkit-transform: none; -ms-transform: none; transform: none; }
-.sp-horizontal .sp-previous-arrow { background: url(file:///C|/Users/KAMEI/Desktop/jquery-slider-pro/img/prev.png) no-repeat; }
-.sp-horizontal .sp-next-arrow { background: url(file:///C|/Users/KAMEI/Desktop/jquery-slider-pro/img/next.png) no-repeat; }
-.sp-previous-arrow:before, .sp-previous-arrow:after, .sp-next-arrow:before, .sp-next-arrow:after { content: inherit;}
-.effect div {
-  transition: 1.0s;
-  transition-delay: .1s;
-} 
-	#container1200 div img{
-		width: 100%;
-	}
-
-</style>
-
 </head>
 
 <body>
-<div id="rightFloat" class="pconly">
+	<div id="rightFloat" class="pconly">
 	</div>
-<div id="header" class="pconly">
+	<div id="header" class="pconly">
 </div>
-<div style="width:auto; height:28px;"></div>
-
-<div id="sponly">
+	<div id="sponly">
 
 <!-- トップへ戻るボタン -->
 <script type="text/javascript">
@@ -170,7 +166,6 @@ $(function() {
     <a href="https://www.rakuten.co.jp/cgi-bin/RRS?MIval=basket&shop_bid=347028" class="rakutencart"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/sp_rakuten_cart.jpg" height="25"></a>
         </div>
 </div>
-
 <div class="ac-container2 pconly" id="sidenavi">
   
 </div>
@@ -192,142 +187,125 @@ jQuery(function($){
  });
 });
 </script>
-<div id="container1200">
-<div class="mentetop01">
-  <p>♯01　革のお手入れ</p></div>
-  <div class="mentetop02">
-    <p>革の日々のケアや<br>
-      お手入れはどのようにやるの？ </p>
-    
-  </div>
-  
-<div class="effect"><div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/maintainance_31.jpg" alt=""></div> </div>
-  <div class="effect">
-	<div class="mente01">
-    <div class="suuzi"><br><br>00</div>
-    <p>革製品はお手入れを<br />
-することでより長く<br />
-使えて、味わいが出ます。</p>
-    
-	  </div></div>
-	<div class="effect">
-   <div class="mente02">
-     <p>革は使い方や手入れの仕方で味わいが変化していきます。 「革を育てる愉しみ」の中にお手入れも含まれています。 より魅力的なバッグになるためのお手入れ方法をご紹介。</p>
-  </div>
-	</div>
-<div class="effect"><div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/maintainance_32.jpg" alt=""></div></div>
-<div class="effect">
-	<div class="mente01">
-    <div class="suuzi"><br><br>01</div>
-   <p>日々のケアは布やブラシで<br>
-     軽くふくだけで十分。 </p>
-	</div></div>
-<div class="effect">
-	<div class="mente02">
-     <p>まずはなめらかな布やブラシで表面の埃やゴミを払い落とし次に布のきれいな部分で乾拭きしてください。日々のケアはこれで十分。</p></div>
-</div>
-	<div class="effect"><div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/maintainance_33.jpg" alt=""></div></div>
-	<div class="effect">
- <div class="mente01">
-    <div class="suuzi"><br><br>02</div>
-<p>月1-2回のお手入れ<br>
-  何をすればいいの？ </p>
-		</div></div>
-<div class="effect">
-	<div class="mente02">
-     <p>少し革が乾燥してきたそんな時はクリームを使用します。ここで気を付けて頂きたいのが日々のケアをした後にクリームをつけること。埃やゴミが落ち切っていない状態で行うと傷や汚れを悪化させる原因になります。クリームのケアは月1-2回が目安。</p></div>
-</div>
-	<div class="effect"><div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/maintainance_34.jpg" alt=""></div></div>
-<div class="effect">
-	<div class="mente01">
-    <div class="suuzi"><br><br>03</div>
-<p>クリームを塗るときは<br>
-うすく均一に </p>
-	</div></div>
-	<div class="effect">
-   <div class="mente02">
-     <p>毎日のケアの後、やわらかい布に1円玉程度のクリームを取り円を描くように均一に伸ばしていきます。同じ場所につけ過ぎるとシミの原因となりますので素早く塗るとキレイにクリームがのります。</p></div>
-</div>
-	<div class="effect"><div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/maintainance_35.jpg" alt=""></div></div>
-<div class="effect">
-	<div class="mente02">
-     <p>クリームを塗った後30～60分乾燥させて表面に残ったクリームを拭き取ったらおしまい。</p></div>
-</div>
-	<div class="effect"><div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/maintainance_36.jpg" alt=""></div></div>
-<div class="effect">
-	<div class="mente01">
-    <div class="suuzi"><br><br>04</div>
-<p>防水スプレーをする時は<br>
-前日がベスト！ </p>
-	</div></div>
-	<div class="effect">
-   <div class="mente02">
-     <p>クリームが塗り終わったらお好みで防水スプレー。防水スプレーをするときはスプレーをしてから30分程度置いてご使用ください。鞄を休ませることで液が革に馴染みます。最後は乾拭きをしておしまい。2週間に一回の目安がおすすめです。
-</p></div>
-</div>
-	<div class="effect"><div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/maintainance_37.jpg" alt=""></div></div>
-<div class="effect">
-	<div class="mente02">
-     <p>防水スプレーをすると雨に濡れた時シミになりにくいですがあまりやりすぎると革独特の経年変化も遅くなります。経年変化を楽しみたい方は雨の日の前日に防水スプレーをすると革を育てる楽しさを早く味わえます。
-</p></div>
-</div><div class="effect"><div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/maintainance_38.jpg" alt=""></div></div>
-<div class="effect">
-	<div class="mente01">
-    <div class="suuzi"><br><br>05</div>
-<p>おすすめのケア用品は？ </p>
-	</div></div>
-<div class="effect">
-	<div class="mente02">
-     <p>ケア用品は種類がありすぎてどんなものを揃えればいいかわからない。そんな方に当店おすすめの商品をご紹介。</p></div>
-</div><div class="effect"><div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/maintainance_39.jpg" alt=""></div></div><div class="effect"><div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/maintainance_40.jpg" alt=""></div></div><div class="effect"><div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/maintainance_41.jpg" alt=""></div></div><div class="effect"><div><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/maintainance_42.jpg" alt=""></div></div></div>
-<div style="width:auto; height:40px; clear: both;" class="pconly"></div>
 
-<div id="othergallery"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-<script type="text/javascript">
-    var mySwiper = new Swiper ('.swiper-container', {
-      loop: true,
-      slidesPerView: 4,
-      spaceBetween: 10,
-	  autoplay: true,
-	  speed: 6000,
-      centeredSlides : true,
-      pagination: '.swiper-pagination',
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-	  preventClicks: false,
-	  preventClicksPropagation: false, 
-      breakpoints: {
-        759: {
-          slidesPerView: 3,
-          spaceBetween: 0,
-		  speed: 3000,
-		  autoplay: true,
-        }
-      }
-    });
-	</script>
+<div style="width:auto; height:70px;" class="pconly"></div>
+<div id="container1200">
+<div class="wraphalf">
+<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/con01_01.jpg"border="0"></p>
+</div>
+<div class="wraphalf"><div class="pconly">
+<br />
+<br />
+<br />
+<br />
+<br />
+ </div>
+<div class="base20">
+  <div>♯01<br>
+    革製品のお手入れについて</div></div>
+ <div class="base21">
+   <div>革は使い方や手入れの仕方で味わいが変化していきます。 「革を育てる愉しみ」の中にお手入れも含まれています。<br>
+より魅力的なバッグになるためのお手入れ方法をご紹介します。</div></div>
+</div>
+<div class="clearbox"></div>
+<div class="wraphalf pconly"><br />
+<br />
+
+<div class="base20"><div>日々のケアは布やブラシで軽く拭くだけで十分</div></div>
+ <div class="base21"><div>まずはなめらかな布やブラシで表面の埃やゴミを払い落とし次に布のきれいな部分で<br>
+   乾拭きしてください。日々のケアはこれで十分です。</div></div>
+<br><br>
+</div>
+
+<div class="wraphalf">
+<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/con01_02.jpg" border="0"></p>
+</div>
+
+
+<div class="clearbox"></div>
+<p align="center" class="pconly"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/con01_03.jpg" width="800" border="0"></p>
+
+<div class="base20"><div>
+    <span class="pconly"><br><br></span>
+    革のアイテムを長く使うために（月1-2回のお手入れ）</div></div>
+ <div class="base21">
+   <div>少し革が乾燥してきたそんな時はクリームを使用します。ここで気を付けて頂きたいのが日々のケアをした後にクリームをつけること。埃やゴミが落ち切っていない状態で行うと傷や汚れを悪化させる原因になります。クリームのケアは月1-2回が目安。</div></div>
+ <div class="effect pconly">
+   <div class="wraphalf">
+<br />
+<br />
+<br />
+<br />
+<div class="base20">
+  <div>クリームを塗る時はうすく均一に</div></div>
+ <div class="base21">
+   <div>毎日のケアの後、やわらかい布に1円玉程度のクリームを取り円を描くように均一に伸ばしていきます。<br>
+     同じ場所につけ過ぎるとシミの原因となりますので素早く塗るとキレイにクリームがのります。クリームを塗った後30〜60分乾燥させて表面に残ったクリームを拭き取ったら完了です。</div></div>
+</div>
+
+ </div>
+ <div class="effect">
+   <div class="wraphalf">
+<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/con01_04.jpg" border="0"></p>
+</div>
+
+ </div>
+ <div class="effect sponly">
+   <div class="wraphalf">
+<div class="base20">
+  <div>クリームを塗る時はうすく均一に</div></div>
+ <div class="base21">
+   <div>毎日のケアの後、やわらかい布に1円玉程度のクリームを取り円を描くように均一に伸ばしていきます。<br>
+     同じ場所につけ過ぎるとシミの原因となりますので素早く塗るとキレイにクリームがのります。クリームを塗った後30〜60分乾燥させて表面に残ったクリームを拭き取ったら完了です。</div></div>
+</div>
+
+ </div>
+
+<div class="clearbox"></div>
+ <div class="effect">
+  <div class="wraphalf">
+<p><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/con01_05.jpg" border="0"></p>
+</div>
+
+ </div>
+<span class="pconly">
+    <br>
+    <br>
+    <br>
+</span>
+    <div class="effect">
+  <div class="wraphalf">
+<div class="base20"><div>効果的な防水スプレーの使い方</div></div>
+ <div class="base21">
+   <div>スプレーをするタイミングは雨の日の前日がベスト。スプレーを全体に均一に吹きかけ、30分程度置くことで液が革に馴染みます。<br>
+     防水スプレーをすると雨に濡れた時シミになりにくいですが、あまりやりすぎると革独特の経年変化も遅くなります。</div></div>
+</div>
+
+ </div>
+<div class="clearbox"></div>
+    <span class="pconly">
+        <br>
+        <br>
+        <br>
+    </span>
+
+    <div class="clearbox"></div>
+<p align="center"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/con01_06.jpg" width="800" border="0"></p>
+<br><br>
+<div class="base20 effect">
+  <div>革製品おすすめのケア用品</div></div>
+ <div class="base21 effect">
+   <div>大切な商品を長く使うためには、定期的なお手入れが大切です。汚れやホコリの付着防止、保湿などに役立つアイテムをご紹介します。 
+     </div>
+     <div style="max-width: 100%; width: 800px; box-sizing: border-box;">
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/con01_07.jpg"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/letheroteire/con01_08.jpg">
+</div></div>
+</div></div></div>
 
 <div id="footer_all" class="pconly">
 </div>
-<div class="footer sponly" id="spfooter">
-  <table width="100%" border="0" cellpadding="0" cellspacing="0">
-    <tr>
-      <td>
-      <a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html" target="_top">トップページ</a></td>
-      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">
-     お支払い・送料</a></td>
-    </tr> 
-    <tr>
-      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">特定商取引法に基づく表記</a></td>
-      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">プライバシーポリシー</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://item.rakuten.co.jp/asoboze/c/" target="_top">サイトマップ</a></td>
-      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">会社概要</a></td>
-    </tr>
-  </table>
-<a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html" target="_top"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/bar_fot.jpg" alt="トップページ" width="100%" border="0"></a>
+<div class="sponly" id="spfooter">
+  
 </div>
 </body>
 </html>
