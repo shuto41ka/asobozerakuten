@@ -28,8 +28,9 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, "sans-serif";
+            font-family: "A+EqpB-游ゴシック体 Pr6N M", sans-serif;
             color: #3e3a39;
+            line-height: 1.1.8em;
         }
         .clearbox {
             clear: both;
@@ -136,8 +137,8 @@
 
         }
         .popular {
-            background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_25.jpg);
-            background-size: contain;
+            background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_74.jpg);
+            background-size:contain;
             background-position: right top;
             background-repeat: no-repeat;
 
@@ -148,14 +149,14 @@
             
         }
         .topthree .text {
-            padding:0 5%;
+            padding:0 0 0 5%;
             border-left: 1px solid #3e3a39;
             margin: 0 0 5% 10%;
-            font-weight: bold;
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+            line-height: 1.8em;
         }
         .topthree .text .title {
-            font-size: 16px;
-            line-height: 24px;
+            font-size: 15px;
         }
         .topthree .text .title .nihongotitle {
             font-size: 10.67px;
@@ -181,9 +182,10 @@
             margin: 12px 6px 12px 0;
         }
         .grid_title {
-            font-weight: bold;
-            font-size: 16px;
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+            font-size: 15px;
             padding-bottom: 12px;
+            line-height: 1.8em;
         }
         .grid_title .nihongotitle {
             font-size: 10.67px;
@@ -191,6 +193,7 @@
         .grid_text {
             font-size: 10.67px;
             padding-bottom: 25px;
+            line-height: 1.5em;
         }
         .hop {
             transition-duration: 1.0s;
@@ -205,8 +208,8 @@
         }
         .asomidashi_eng {
             text-align: center;
-            font-weight: bold;
-            font-size: 16px;
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+            font-size: 15px;
             letter-spacing: .4em;
             margin-top: 30px;
         }
@@ -323,7 +326,7 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
             width: 100%;
             height: 100%;
             padding: 1em 0 1em 1em;
-            font-size: 16px;
+            font-size: 15px;
         }
          .kensaku2box {
         position: relative;
@@ -360,12 +363,12 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         .spmenumidashi_eng {
             font-size: 20px;
             letter-spacing: .3em;
-            font-weight: bold;
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
             margin-bottom: 9px;
             padding-left: 15px;
         }
         .spmenumidashi_jpn {
-            font-size: 16px;
+            font-size: 15px;
             padding-left: 1em;
         }
         .sidecategory a {
@@ -373,7 +376,7 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
             width: 100%;
             clear: both;
             padding: 1em 0 1em 1em;
-            font-size: 16px;
+            font-size: 15px;
             border-bottom: 1px solid #727171;
         }
         .sidecategory a:first-child {
@@ -462,9 +465,45 @@ $(window).scroll(function(){
   }
   startPos = currentPos;
 });    </script>
-</head>
+    <!-- webフォント -->
+    <script
+    src                       = "https://font.realtype.jp/api/script/v4"
+    data-rt-user              = "GNBcJ26oceJJeERcKWLJHCPjXG0iWWiZ"
+    data-rt-input             = "true"
+></script>
+    <!-- webフォント終わり -->
+
+    </head>
 
 <body>
+    <!-- トップへ戻るボタン -->
+<script type="text/javascript">
+$(function() {
+    var topBtn = $('#page-top');    
+    topBtn.hide();
+    //スクロールが100に達したらボタン表示
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            topBtn.fadeIn();
+        } else {
+            topBtn.fadeOut();
+        }
+    });
+    //スクロールしてトップ
+    topBtn.click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+});
+</script>
+<p id="page-top" style="z-index:999;"><a href="#wrap" target="_top">▲</a></p>
+<!-- トップへ戻るボタン終わり -->
+
+
+
+    
     <div id="spheader_aso" class="sponly spheader_aso">
         <div class="head_top">
             <a href="https://www.rakuten.ne.jp/gold/asoboze/">
@@ -556,7 +595,7 @@ $(window).scroll(function(){
                 <a href="https://item.rakuten.co.jp/asoboze/sk-w171/" class="hop">
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_59.jpg" alt="">
                 </a>
-                <div class="grid_tag" class="hop">
+                <div class="grid_tag hop">
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_10.jpg" alt="">
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_09.jpg" alt="">
                 </div>
@@ -575,9 +614,9 @@ $(window).scroll(function(){
             <div class="grid_2line effect">
                 <a href="https://item.rakuten.co.jp/asoboze/sh-n175/" class="hop">
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_66.jpg" alt="">
-                </a>
-                <div class="grid_tag" class="hop">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_11.jpg" alt="">
+                </a>                
+                <div class="grid_tag hop">
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_11.jpg" alt="">
                 </div>
                 <div style="clear: both;"></div>
                 <div class="text effect">
@@ -919,7 +958,7 @@ $(window).scroll(function(){
             </div>
             <div class="contentbutton hop">
                 <a href="https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/moviegallery.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_48.jpg" alt=""></a>
-                <a href="https://www.rakuten.ne.jp/gold/asoboze/gallery/review/review.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_49.jpg" alt=""></a>
+                <a href="https://www.rakuten.ne.jp/gold/asoboze/gallery/review/review.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_75.jpg" alt=""></a>
                 <a href="https://www.rakuten.ne.jp/gold/asoboze/contents/kawachip.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_50.jpg" alt=""></a>
             </div>
         </div>
