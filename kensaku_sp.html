@@ -8,9 +8,15 @@
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/asobozerakuten_sp.css">
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/slider-pro.min.css">
 <script src="https://www.rakuten.ne.jp/gold/asoboze/jquery.min.js"></script>
-
+<script>
+        $(function() {
+        $(".icon-wrap").click(function() {
+            $(this).toggleClass("active");
+            $("body").toggleClass("fixing");
+        });
+    });
+    </script>
 </head>
-
 <body style="margin:0;padding:0;"><!-- 上下余白も消す -->
 <!-- /#nav -->
 <script type="text/javascript">

@@ -112,56 +112,25 @@ jQuery(function($){
 <div style="width:auto; height:70px;" class="pconly"></div>
 
 
-<div id="sponly">
-<!-- トップへ戻るボタン -->
-<script type="text/javascript">
-$(function() {
-    var topBtn = $('#page-top');    
-    topBtn.slideUp();
-    //スクロールが100に達したらボタン表示
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            topBtn.fadeIn();
-        } else {
-            topBtn.fadeOut();
-        }
-    });
-    //スクロールしてトップ
-    topBtn.click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
-});
-</script>
-<p id="page-top" style="z-index:999;"><a href="#wrap">▲</a></p>
-<!-- トップへ戻るボタン終わり -->
-<!-- /#nav -->
-<SCRIPT src="https://www.rakuten.ne.jp/gold/asoboze/kensaku_sp2.js">
-</SCRIPT>
-<div id="shouhinkensaku" style="position:fixed; top:0; left:0; z-index:10;">
-<div class="asoaso"> <a href="https://www.rakuten.ne.jp/gold/asoboze/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/sp_floattop.jpg" height="35"/></a></div>
-<form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" id="search"> 
-<input type="hidden" name="sv" value="6"> 
-<input type="hidden" name="sid" value="362200"> 
-<input type="hidden" name="su" value="asoboze"> 
-<input type="hidden" name="sn" value="asoboze アソボーゼ"> 
-<input type="hidden" name="f" value="A">
-<input value="ストア内検索"  type="image" src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/raku_top018_sagasu.jpg" class="btn" alt="検索"/>
-</form>
-<p style="clear:both;"></p> 
-<br>
-<br>
-<br>
-<label for="sample"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/sp_floatmenu01a.gif" height="45" /></label>
-<input type="checkbox" id="sample">
-<div id="cover">
-  <iframe src="https://www.rakuten.ne.jp/gold/asoboze/sp_floatmenu.html" frameborder="0" scrolling="auto" style="z-index: 2147483647;"></iframe>
-</div>
+<div id="spheader" class="sponly spheader_aso"></div>
+    <script>
+var menuHeight = 50;
+var startPos = 0;
+$(window).scroll(function(){
+  var currentPos = $(this).scrollTop();
+  if (currentPos > startPos && $("body").hasClass("fixing") == false) {
+    if($(window).scrollTop() >= 200) {
+      $(".spheader_aso").css("top", "-" + 50 + "px");
+    }
+  } else {
+    $(".spheader_aso").css("top", 0 + "px");
+  }
+  startPos = currentPos;
+});  
+    </script>
+    <div style="width: 100%; height: 80px;">
+    </div>
 
-</div>
-</div>
 <div id="container1200">
 <div class="wrap600">
 <img src="https://image.rakuten.co.jp/asoboze/cabinet/gallery/review/review_thumbnail.jpg" />
@@ -781,10 +750,9 @@ iPhoneXへの装着です。プラケース（？）に天然石シートを貼�
 <script type="text/javascript" src="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta.js"></script>
 <div style="clear:both;"></div>
 <div class="forsp"><p>
-その他のギャラリーはこちらから
+
 </p></div>
-<div class="swiper-container" id="othergallery">
-</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 <script type="text/javascript">
     var mySwiper = new Swiper ('.swiper-container', {
@@ -813,7 +781,6 @@ iPhoneXへの装着です。プラケース（？）に天然石シートを貼�
 
 <div id="footer_all" class="pconly">
 </div>
-<div id="spfooter" class="sponly">
-</div>
+<div id="footer_aso" class="sponly footer_aso"></div>
 </body>
 </html>

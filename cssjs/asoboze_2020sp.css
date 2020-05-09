@@ -292,7 +292,6 @@ a img {
             background-color: #f9f7f5;
             padding-bottom: 70%;
             padding-top: 2%;
-            margin-top: 420px;
             margin-bottom: 30px;
         }
         .asomidashi_eng {
@@ -499,7 +498,7 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         .brand_jpn {
             font-size: 10.67px;
             line-height: 16px;
-            vertical-align:text-top;
+            vertical-align: middle;
         }
         .aidaspace {
             width: 100%;

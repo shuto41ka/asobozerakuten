@@ -323,8 +323,7 @@ border-color: transparent transparent transparent #8e1728;
 
 /* ふわっと表示させるアレ */
 .effect div {
-  margin: auto;
-  transition: 1.0s;
+transition: 1.0s;
   transition-delay: .1s;
 } 
 	

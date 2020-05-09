@@ -94,9 +94,25 @@ $(function() {
 	$("#othergallery").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/othergallery.html");
 });
 </script>
+<script>
+        $(function() {
+        $(".icon-wrap").click(function() {
+            $(this).toggleClass("active");
+            $("body").toggleClass("fixing");
+        });
+    });
+    </script>
 </head>
-
 <body>
+            <!-- webフォント -->
+<script
+    src                       = "https://font.realtype.jp/api/script/v4"
+    data-rt-user              = "GNBcJ26oceJJeERcKWLJHCPjXG0iWWiZ"
+    data-rt-input             = true
+    data-rt-cache             = true
+></script>
+    <!-- webフォント終わり -->
+
 <div id="header" class="pconly">
 <div id="h-lefttop">ビジネスバッグ・ボディバッグなどメンズ向けバッグ通販｜asoboze&nbsp;アソボーゼ楽天市場店</div>
 <div id="h-righttop">店内全品送料無料<span style="font-size:10px;">（※北海道･沖縄･離島を除く）</span></div>
@@ -331,7 +347,7 @@ jQuery(function($){
 
 
 
-<div id="othergallery">
+
 	
 <div style="" class="para">
 	<p style="font-size: 18px; font-weight: bolder; padding:0; margin:0;" class="asobase01">PRODUCT&nbsp;GALLERY</p>
@@ -386,7 +402,7 @@ jQuery(function($){
       }
     });
 	</script>
-</div>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 <script type="text/javascript">
     var mySwiper = new Swiper ('.swiper-container', {

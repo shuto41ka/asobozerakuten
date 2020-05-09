@@ -110,6 +110,9 @@ $(function() {
 	$("#footer_all").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/footer.html");
 	$("#othergallery").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/othergallery.html");
 	$("#rightFloat").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/new_right_beta.html");
+ $("#spheader").load("https://www.rakuten.ne.jp/gold/asoboze/parts/header_aso.html");
+    $("#footer_aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
+
 });
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
@@ -132,73 +135,48 @@ $(function(){
   });
 });
 </script>
-
+<script>
+        $(function() {
+        $(".icon-wrap").click(function() {
+            $(this).toggleClass("active");
+            $("body").toggleClass("fixing");
+        });
+    });
+    </script>
 </head>
 <body>
+            <!-- webフォント -->
+<script
+    src                       = "https://font.realtype.jp/api/script/v4"
+    data-rt-user              = "GNBcJ26oceJJeERcKWLJHCPjXG0iWWiZ"
+    data-rt-input             = true
+    data-rt-cache             = true
+></script>
+    <!-- webフォント終わり -->
+
 	<div id="header" class="pconly">
 </div>
 	<div id="rightFloat" class="pconly">
 	</div>
-<div id="sponly">
+<div id="spheader" class="sponly spheader_aso"></div>
+    <script>
+var menuHeight = 50;
+var startPos = 0;
+$(window).scroll(function(){
+  var currentPos = $(this).scrollTop();
+  if (currentPos > startPos && $("body").hasClass("fixing") == false) {
+    if($(window).scrollTop() >= 200) {
+      $(".spheader_aso").css("top", "-" + 50 + "px");
+    }
+  } else {
+    $(".spheader_aso").css("top", 0 + "px");
+  }
+  startPos = currentPos;
+});  
+    </script>
+    <div style="width: 100%; height: 80px;">
+    </div>
 
-<!-- トップへ戻るボタン -->
-<script type="text/javascript">
-$(function() {
-    var topBtn = $('#page-top');    
-    topBtn.hide();
-    //スクロールが100に達したらボタン表示
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 100) {
-            topBtn.fadeIn();
-        } else {
-            topBtn.fadeOut();
-        }
-    });
-    //スクロールしてトップ
-    topBtn.click(function () {
-        $('body,html').animate({
-            scrollTop: 0
-        }, 500);
-        return false;
-    });
-});
-</script>
-<p id="page-top" style="z-index:999;"><a href="#wrap">▲</a></p>
-<!-- トップへ戻るボタン終わり -->
-<!-- /#nav -->
-<SCRIPT src="https://www.rakuten.ne.jp/gold/asoboze/kensaku_sp2020.js">
-</SCRIPT>
-<div id="shouhinkensaku2" style="position:fixed; top:0; left:0; z-index:999;">
-<label for="sample2" class="kensakuicon"><img src="https://image.rakuten.co.jp/asoboze/cabinet/toppage/spindex_15.jpg" /></label>
-<input type="checkbox" id="sample2">
-<div id="cover">
-  <iframe src="https://www.rakuten.ne.jp/gold/asoboze/sp_floatmenu2020.html" frameborder="0" scrolling="auto" style="z-index: 2147483647;"></iframe>
-</div>
-<div class="asoaso2"> <a href="https://www.rakuten.ne.jp/gold/asoboze/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/footer/sp_floattop.jpg"/></a></div>
-<form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" id="search"> 
-<input type="hidden" name="sv" value="6"> 
-<input type="hidden" name="sid" value="362200"> 
-<input type="hidden" name="su" value="asoboze"> 
-<input type="hidden" name="sn" value="asoboze アソボーゼ"> 
-<input type="hidden" name="f" value="A">
-<input value="ストア内検索"  type="image" src="https://image.rakuten.co.jp/asoboze/cabinet/toppage/spindex_16.jpg" class="btn" alt="検索"/>
-</form>
-<p style="clear:both;"></p> 
-<br>
-<br>
-<br>
-
-</div>
-<!--spHeader-->
-
-<!-- 看板 -->
-
-<div class="sp_rakuten2">
-    <a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html" class="sptopbanner"><img src="https://image.rakuten.co.jp/asoboze/cabinet/toppage/spindex_17.jpg"></a>
-    <a href="https://www.rakuten.co.jp/" class="rakutenmark"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/r_mark.jpg" width="25" style></a> 
-    <a href="https://www.rakuten.co.jp/cgi-bin/RRS?MIval=basket&shop_bid=347028" class="rakutencart"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/sp_rakuten_cart.jpg" height="25"></a>
-        </div>
-</div>
 <div class="ac-container2 pconly" id="sidenavi">
   
 </div>
@@ -298,7 +276,7 @@ GROUP NOVELTY GOODS</p></div><div class="catebase02">
 
 			<div class="clearbox"></div>
 
-	<div id="othergallery"></div>
+	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
 <script type="text/javascript">
     var mySwiper = new Swiper ('.swiper-container', {
@@ -326,24 +304,6 @@ GROUP NOVELTY GOODS</p></div><div class="catebase02">
 
 <div id="footer_all" class="pconly">
 </div>
-	<div class="footer sponly" id="spfooter">
-  <table width="100%" border="0" cellpadding="0" cellspacing="0">
-    <tr>
-      <td>
-      <a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html" target="_top">トップページ</a></td>
-      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">
-     お支払い・送料</a></td>
-    </tr> 
-    <tr>
-      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">特定商取引法に基づく表記</a></td>
-      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">プライバシーポリシー</a></td>
-    </tr>
-    <tr>
-      <td><a href="https://item.rakuten.co.jp/asoboze/c/" target="_top">サイトマップ</a></td>
-      <td><a href="https://www.rakuten.co.jp/asoboze/info.html" target="_top">会社概要</a></td>
-    </tr>
-  </table>
-<a href="https://www.rakuten.ne.jp/gold/asoboze/index_sp.html" target="_top"><img src="https://www.rakuten.ne.jp/gold/asoboze/sp_top_images/bar_fot.jpg" alt="トップページ" width="100%" border="0"></a>
-</div>
+	<div id="footer_aso" class="sponly footer_aso"></div>
 </body>
 </html>

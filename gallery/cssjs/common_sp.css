@@ -40,24 +40,26 @@ html, body{
 }
 .gallerytitle p {
 	font-size:32px;
-	margin-bottom:0;
+	margin-bottom:10px;
 	line-height:32px;
 	margin-top:20px;
 }
 .gallerysub p {
 	font-size:20px;
 	line-height:20px;
+    margin: 10px 0;
 }
 .gallerytext p {
 	font-size:12px;
 }
 .gallerytitle div {
 	font-size:32px;
-	margin-bottom:0;
+	margin-bottom:10px;
 	line-height:32px;
 	margin-top:20px;
 }
 .gallerysub div {
+    margin: 10px 0;
 	font-size:20px;
 	line-height:20px;
 }
@@ -96,11 +98,13 @@ table.gallerytable td img{
 	font-size: 12px;
 	padding-left: 5%;
 	padding-right: 5%;
+    margin: 10px auto;
 }
 .gallerylink div {
 	font-size: 12px;
 	padding-left: 5%;
 	padding-right: 5%;
+    margin: 10px auto;
 }
 .gallerylink img{
 	width:50%;
@@ -202,32 +206,19 @@ img[id*="large"] {
 .reviewwrap {
 	width:100%;
 	display:block;
-	padding-left:20px;
+	padding:0 20px 40px;
 	position:fixed;
 	top:59%;
 	right:0;
 	background:rgba(255,255,255,1);
 	overflow:auto;
 	height:41%;
-	padding-bottom:40px;
-}
-.reviewwrap .reviewtitle div {
-	padding-left:5%;
-	padding-top:2%;
-	font-size:20px;
-	line-height:24px;
 }
 .reviewwrap .reviewcomment div {
 	padding:0 20px 0 20px;
 	font-size:12px;
 	line-height:24px;
 	overflow:auto;
-}
-.reviewwrap .reviewtitle div {
-	padding-left:5%;
-	padding-top:2%;
-	font-size:20px;
-	line-height:24px;
 }
 .reviewwrap .reviewcomment div {
 	padding:0 20px 0 20px;
@@ -341,10 +332,9 @@ img[id*="large"] {
 	padding-bottom:40px;
 }
 .reviewwrap .reviewtitle p {
-	padding-left:5%;
-	padding-top:2%;
 	font-size:20px;
 	line-height:24px;
+    padding: 5%;
 }
 .reviewwrap .reviewcomment p {
 	padding:0 20px 0 20px;
@@ -353,8 +343,7 @@ img[id*="large"] {
 	overflow:auto;
 }
 .reviewwrap .reviewtitle div {
-	padding-left:5%;
-	padding-top:2%;
+    padding: 5%;
 	font-size:20px;
 	line-height:24px;
 }
@@ -476,8 +465,8 @@ border-radius: 3px;
     font-size: 16px;
     font-weight: bold;
     color: #191919;
-    margin: 0px;
-    line-height: 1.4em;
+    margin: 10px 0 0 0;
+line-height: 1.4em;
     padding-top: 0;
     padding-right: 22px;
     padding-left: 30px;
@@ -1057,8 +1046,7 @@ border-radius: 3px;
 
 /*  ふわっと表示させるアレ*/
 .effect div {
-  margin: auto;
-  transition: 1.0s;
+transition: 1.0s;
   transition-delay: .1s;
 } 
 

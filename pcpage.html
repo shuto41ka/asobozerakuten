@@ -10,8 +10,7 @@
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta.css"  media="screen and (min-width:1200px)"/>
 <style>
 .effect div {
-  margin: auto;
-  transition: 1.0s;
+transition: 1.0s;
   transition-delay: .1s;
 } 
 .effect img {
@@ -71,10 +70,25 @@ jQuery(function($){
 });
 
 </script>
-
+<script>
+        $(function() {
+        $(".icon-wrap").click(function() {
+            $(this).toggleClass("active");
+            $("body").toggleClass("fixing");
+        });
+    });
+    </script>
 </head>
-
 <body>
+            <!-- webフォント -->
+<script
+    src                       = "https://font.realtype.jp/api/script/v4"
+    data-rt-user              = "GNBcJ26oceJJeERcKWLJHCPjXG0iWWiZ"
+    data-rt-input             = true
+    data-rt-cache             = true
+></script>
+    <!-- webフォント終わり -->
+
 <section class="ac-container2" id="sidenavi">
 </section>
 <div id="header">

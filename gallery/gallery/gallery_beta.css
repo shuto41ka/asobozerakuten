@@ -1464,8 +1464,7 @@ html{
 
 /* ふわっと表示させるアレ */
 .effect div {
-  margin: auto;
-  transition: 1.0s;
+transition: 1.0s;
   transition-delay: .1s;
 } 
 
