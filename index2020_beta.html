@@ -1,496 +1,27 @@
 <!doctype html>
-<html lang="ja">
+<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
-<title>革製品とビジネスバッグの通販サイト | asoboze (アソボーゼ)楽天市場店｜</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"  charset="utf-8"/>
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>革製品とビジネスバッグの通販サイト | asoboze (アソボーゼ)楽天市場店｜</title>
 <meta name="description" content="革製品とビジネスバッグの通販サイトasoboze楽天市場店です。ブリーフケース、クラッチバッグなどメンズ向けのカバンからコインケース、ブックカバーなどこだわりの革小物を各種揃えています。">
 <meta name="keywords" content="ビジネスバッグ,メンズ,ブリーフケース,カバン,鞄,セカンドバッグ,ガーメントバッグ,財布,小銭入れ,コインケース,ブックカバー,アタッシュケース,ダレスバッグ">
-<script src="jquery-3.2.1.min.js"></script>
-    <style>
-        @media only screen and (min-width:760px) {
-            .sponly {
-                display: none;
-            }
-        }
-        @media only screen and (max-width:759px) {
-            .pconly {
-                display: none;
-            }
-        }
-        div,p {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            width: 100%;
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: "A+EqpB-游ゴシック体 Pr6N M", sans-serif;
-            color: #3e3a39;
-            text-align: justify;
-            text-justify: inter-ideograph;
-            text-align-last: left;
-        }
-        .clearbox {
-            clear: both;
-        }
-        .container_aso a img {
-            max-width: 100%;
-        }
-        .spheader_aso {
-            background-color: #666464;
-            width: 100%;
-            height: 50px;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            position: fixed;
-            top: 0;
-            left: 0;
-            float: left;
-            z-index: 999999;
-        }
-        .head_top {
-            float: left;
-            display: block;
-        }
-        .headtopimg {
-            width: 100px;
-            padding: 13px 15px;
-        }
-        .head_menu {
-            display: block;
-            float:left;
-            position: relative;
-        }
-        .btn {
-            width: 22px;
-            position: absolute;
-            top: 14px;
-            right: 15%;
-            border-radius: 0;
+    <link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/index2020_beta.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <script src="jquery-3.2.1.min.js"></script>
+<style>
+    .swiper-container {
+        width: 100vw;
     }
-        .humb-icon {
-            width: 24px;
-            height: 18px;
-            position: absolute;
-            top: 16px;
-            right: 5%;
-            background-color: #666464;
-        }
-        .humb-icon .icon-wrap {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-        .humb-icon .icon-bars {
-            position: absolute;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: #b5b5b6;
-            border-radius: 2px;
-        }
-        .humb-icon .icon-bars:nth-of-type(1){
-            top: 0;
-        }
-        .humb-icon .icon-bars:nth-of-type(2) {
-            top: 8px;
-        }
-        .humb-icon .icon-bars:nth-of-type(3) {
-            bottom: 0;
-        }
-        .humb-icon,.humb-icon span {
-            display: inline-block;
-            transition: all .4s;
-            box-sizing: border-box;
-        }
-        #input-humbmenu {
-            display: none;
-        }
-        .icon-wrap.active .icon-bars:nth-of-type(1) {
-  -webkit-transform: translateY(8px) rotate(-45deg);
-  transform: translateY(8px) rotate(-45deg);
-}
-.icon-wrap.active .icon-bars:nth-of-type(2) {
-  opacity: 0;
-}
-.icon-wrap.active .icon-bars:nth-of-type(3) {
-  -webkit-transform: translateY(-8px) rotate(45deg);
-  transform: translateY(-8px) rotate(45deg);
-}
-        .topthree {
-            width: 100%;
-        }
-        .restock {
-            background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_23.jpg);
-            background-size: contain;
-            background-position: right top;
-            background-repeat: no-repeat;
-
-        }
-        .new {
-            background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_24.jpg);
-            background-size: contain;
-            background-position: right top;
-            background-repeat: no-repeat;
-
-        }
-        .popular {
-            background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_74.jpg);
-            background-size:contain;
-            background-position: right top;
-            background-repeat: no-repeat;
-
-        }
-        .topthree a img {
-            width: 80%;
-            padding: 13% 15% 5% 5%;
-            
-        }
-        .topthree .text {
-            padding:0 0 0 7%;
-            border-left: 1px solid #727171;
-            margin: 0 0 15% 8%;
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
-            line-height: 1.8em;
-            height: 77px;
-        }
-        .topthree .text .title {
-            font-size: 15px;
-            padding-bottom: 10px;
-            line-height: 0.9em;
-        }
-        .topthree.topthree3  .text {
-            margin: 0 0 5% 8%;
-        }
-        .topthree .text .title .nihongotitle {
-            font-size: 10.67px;
-        }
-        .index_grid {
-            width: 100%;
-            padding:12% 2% 6%;
-        }
-        .index_grid .grid_2line {
-            width: 50%;
-            display: block;
-            float: left;
-            box-sizing: border-box;
-            padding: 0 2% 2%;
-        }
-        .grid_2line img {
-            width: 100%;
-        }
-        .space {
-            width: 100%;
-            height: 23px;
-            clear: both;
-        }
-        .grid_1line .text {
-            padding:0 2% 23px;
-        }
-        .grid_1line .grid_tag {
-            padding: 0 2%;
-        }
-        .index_grid .grid_tag img {
-            width: 60px;
-            display: block;
-            float: left;
-            margin: 13px 5px 5px 2px;
-        }
-        .grid_title {
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
-            padding-bottom: 8px;
-            line-height: 1.8em;
-        }
-        .grid_2line .grid_title {
-            font-size: 15px;
-        }
-        .grid_2line .text {
-            padding: 0 2% 0 2%;
-        }
-        .grid_1line .grid_title {
-            font-size: 17px;
-        }
-        .grid_title .nihongotitle {
-            font-size: 10.67px;
-        }
-        .grid_2line .grid_text {
-            font-size: 12px;
-        }
-        .grid_1line .grid_text {
-            font-size: 13px;
-            
-        }
-        .grid_text {
-            padding-bottom: 25px;
-            line-height: 1.7em;
-            color: #000000;
-        }
-        .grid_text .product_name {
-            color: #898989;
-        }
-        .hop {
-            transition-duration: 1.0s;
-        }
-        .category_aso {
-            width: 100%;
-            background-color: #f9f7f5;
-            padding-bottom: 70%;
-            padding-top: 2%;
-            margin-top: 420px;
-            margin-bottom: 30px;
-        }
-        .asomidashi_eng {
-            text-align: center;
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
-            font-size: 15px;
-            letter-spacing: .4em;
-            margin-top: 30px;
-        }
-        .asomidashi_jpn {
-            text-align: center;
-            font-size: 10.67px;
-            margin-bottom: 20px;
-        }
-        .cate_images {
-            width: 80%;
-            margin: 0 auto;
-            display: block;
-        }
-        .cate_image {
-            width: 33%;
-            float: left;
-        }
-        .cate_image a img {
-            width: 70%;
-            padding: 15% 15% 0 15%;
-        }
-        .cate_image .cate_text {
-            font-size: 10.67px;
-            text-align: center;
-            padding:0.5em 0 1em 0;
-        }
-        .price_aso {
-            margin: 50px 0;
-        }
-        .pricebutton {
-            width: 100%;
-        }
-        .pricebutton a img {
-            width: 90%;
-            padding:6px 5%;
-        }
-        .contentbutton {
-            width: 100%;
-        }
-        .contentbutton a img {
-            width: 90%;
-            padding: 3px 5%;
-        }
-        .guide_aso {
-            width: 100%;
-        }
-        .guide_grids {
-            width: 90%;
-            margin: 0 5%;
-            box-sizing: border-box;
-        }
-        .guide_grid {
-            width: 50%;
-            float: left;
-            box-sizing: border-box;
-            padding: 1px 2px;
-        }
-        .guide_grid a img {
-            width: 100%;
-        }
-        .spmenu_aso {
-            top: 50px;
-            background-color: #666464;
-            color: #ffffff;
-            scroll-behavior: auto;
-            right: 0;
-            overflow-y: scroll;
-            transition: .4s ease-in-out;
-        }
-/*iframeを格納*/
-input[type="checkbox"]#input-humbmenu + #spmenu_aso { 
-	width: 80%;
-	height: 100%;
-    transition: 0.5s ease-in-out;
-    position:fixed;
-    top: 50px;
-    right: -80%;
-}
-
-/*iframeを格納(オープン時)*/
-input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
-    overflow:scroll;
-	-webkit-overflow-scrolling:touch;
-    z-index: 2147483646;
-    right: 0;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-}
-input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
-        }
-        .spmenu_aso a:link {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        .spmenu_aso a:visited {
-            color: #ffffff;
-            text-decoration: none;
-        }
-        .cart a img {
-            width: 80%;
-            padding: 20px 10%;
-        }
-        .threemenus {
-            width: 90%;
-            padding: 10px 10%;
-            margin-bottom: 20px;
-        }
-        .threemenu {
-            border-bottom: 2px solid #727171;
-            width: 100%;
-        }
-        .threemenu a {
-            display: block;
-            width: 100%;
-            height: 100%;
-            padding: 1em 0 1em 1em;
-            font-size: 15px;
-        }
-         .kensaku2box {
-        position: relative;
-             text-align: center;
-    }
-        .kensaku2box .kensaku2textspace {
-        width: 80%;
-        height: 50px;
-        -webkit-appearance: none;
-        border: 1px solid #b5b5b6;
-        box-sizing: border-box;
-        z-index: 99;
-        border-radius: 37px;
-        font-size: 14px;
-        padding:0 0 0 20%;
-            
-        color: #ffffff;
-            background-color: #666464;
-            margin-bottom: 50px;
-            line-height: 50px;
-    }
-        .kensaku2box .kensaku2image {
-        position: absolute;
-        top: 14px;
-        width: 22px;
-        right: 18%;
-        z-index: 100;
-        }
-        .spmenu_category {
-            width: 90%;
-            padding-left: 10%;
-            box-sizing: border-box;
-        }
-        .spmenumidashi_eng {
-            font-size: 20px;
-            letter-spacing: .3em;
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
-            margin-bottom: 9px;
-            padding-left: 15px;
-        }
-        .spmenumidashi_jpn {
-            font-size: 15px;
-            padding-left: 1em;
-        }
-        .sidecategory a {
-            display: block;
-            width: 100%;
-            clear: both;
-            padding: 1em 0 1em 1em;
-            font-size: 15px;
-            border-bottom: 2px solid #727171;
-        }
-        .sidecategory a:first-child {
-            border-top: 2px solid #727171;
-            margin-top: 15px;
-        }
-        .brand_jpn {
-            font-size: 10.67px;
-            line-height: 16px;
-            vertical-align:text-top;
-        }
-        .aidaspace {
-            width: 100%;
-            height: 60px;
-        }
-
-        .menuinfo_aso li {
-            padding-bottom: 12px;
-        }
-        .menuinfo_aso {
-            margin-top: 26px;
-        }
-        .contact {
-            margin-top: 16px;
-        }
-        .contact div {
-            padding: 1em 0 0 1em;
-        }
-        .contact div:last-child {
-            margin-bottom: 3em;
-        }
-.spheader_aso{
-    transition: .5s;
-}
- 
-.spheader_aso.hide{
-    transform: translateY(-100%);
-}    
-        .fixing {
-            overflow:hidden;
-        }
-        /* ------ ＴＯＰ戻るボタン ------- */
-#page-top {
-     position: fixed;
-    bottom: 10px;
-    right: 12px;
-    font-size:25px;
-    font-weight: bold;
-}
-#page-top a {
-    background: #8e8e88;
-        filter:alpha(opacity=60);
-        -moz-opacity:0.6;
-        -khtml-opacity: 0.6;
-        opacity:0.6;
-        text-decoration: none;
-        color: #fff;
-     width: 33px;
-  height: 33px;
-        padding: 8px;
-        text-align: center;
-        display: block;
-        border-radius: 30px;
-
-}
-#page-top a:hover {
-   border-style: none;
-            background: #8e8e88;
-}
-
     </style>
-
 <script type="text/javascript">
 $(function(){
-  $('.effect .hop').css({"opacity":"0", "padding-top":"20px"});
+  $('.effect .hop').css({"opacity":"0", "padding-top":"10px"});
   $(window).scroll(function (){
     $(".effect").each(function(){
       var imgPos = $(this).offset().top;    
@@ -511,10 +42,12 @@ $(function(){
 <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script>
 $(function() {
-    $("#spmenu_aso").load("https://www.rakuten.ne.jp/gold/asoboze/2020sidemenu.html #spmenu_aso");
+
     $("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020_beta.html .topthree2");
     $("#pcthreemenu3").load("https://www.rakuten.ne.jp/gold/asoboze/index2020_beta.html .topthree3");
-
+	$("#othergallery").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/othergallery.html .swiper-container");
+    $("#spheader").load("https://www.rakuten.ne.jp/gold/asoboze/parts/header_aso.html");
+    $("#footer_aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
 });
 </script>
 <script>
@@ -526,20 +59,6 @@ $(function() {
     });
 
     </script>
-    <script>
-var menuHeight = 50;
-var startPos = 0;
-$(window).scroll(function(){
-  var currentPos = $(this).scrollTop();
-  if (currentPos > startPos) {
-    if($(window).scrollTop() >= 200) {
-      $("#spheader_aso").css("top", "-" + menuHeight + "px");
-    }
-  } else {
-    $("#spheader_aso").css("top", 0 + "px");
-  }
-  startPos = currentPos;
-});    </script>
     </head>
 
 <body>
@@ -556,36 +75,23 @@ $(window).scroll(function(){
 
 
     
-    <div id="spheader_aso" class="sponly spheader_aso">
-        <div class="head_top">
-            <a href="https://www.rakuten.ne.jp/gold/asoboze/">
-                <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_33.jpg" alt="" class="headtopimg">
-            </a>
-            <div class="kensaku2">
-              <form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" id="search"> 
-                    <input type="hidden" name="sv" value="6"> 
-                    <input type="hidden" name="sid" value="362200"> 
-                    <input type="hidden" name="su" value="asoboze"> 
-                    <input type="hidden" name="sn" value="asoboze アソボーゼ"> 
-                    <input type="hidden" name="f" value="A">
-                  <input value="ストア内検索"  type="image" src="https://www.rakuten.ne.jp/gold/asoboze/images/meganemushi.svg" class="btn" alt="検索"/>
-                </form>
-            </div>
-            <div id="humbmenu" class="humbmenu">
-                <label for="input-humbmenu" id="humb-open" class="humb-icon">
-                    <span class="icon-wrap">
-                        <span class="icon-bars"></span>
-                        <span class="icon-bars"></span>
-                        <span class="icon-bars"></span>
-                    </span>
-                </label>
-                <input type="checkbox" id="input-humbmenu">
-        <div class="spmenu_aso sponly" id="spmenu_aso">
-        </div>                
-            </div>
-        </div>
-
+    <div id="spheader" class="sponly spheader_aso">
     </div>
+    <script>
+var menuHeight = 50;
+var startPos = 0;
+$(window).scroll(function(){
+  var currentPos = $(this).scrollTop();
+  if (currentPos > startPos && $("body").hasClass("fixing") == false) {
+    if($(window).scrollTop() >= 200) {
+      $(".spheader_aso").css("top", "-" + 50 + "px");
+    }
+  } else {
+    $(".spheader_aso").css("top", 0 + "px");
+  }
+  startPos = currentPos;
+});  
+    </script>
     <div style="width: 100%; height: 80px;">
     </div>
     <div id="container_aso" class="container_aso">
@@ -598,8 +104,8 @@ $(window).scroll(function(){
                     Regile&nbsp;Gift&nbsp;<span class="nihongotitle">&nbsp;-&nbsp;レジル&nbsp;&nbsp;ギフトセット</span>
                 </div>
                 <div class="disc">
-                    「あの人を、地球にも優しくする」<br>
-                    ギフトセット
+                    あの人と、地球にも優しくなれる<br>
+                    サステイナブルな贈り物。
                 </div>
 
           </div>
@@ -617,7 +123,7 @@ $(window).scroll(function(){
                     </div>
                     <div class="disc hop">
                         ビジネスリュックをスタイリッシュに。<br>
-                        新素材でできた近未来型リュック
+                        第三の素材でできた近未来型リュック
                     </div>
 
                 </div>
@@ -635,29 +141,30 @@ $(window).scroll(function(){
                         monobrass&nbsp;Gift&nbsp;<span class="nihongotitle">&nbsp;-&nbsp;モノブラス&nbsp;&nbsp;ギフトセット</span>
                     </div>
                     <div class="disc hop">
-                        ビジネスに映える<br>
-                        身だしなみギフト
+                        スーツな彼に、身だしなみという<br>
+                        オシャレを贈ろう。
                     </div>
 
                 </div>
             </div>
         </div>
+        <div class="space"></div>
         <div class="index_grid">
             <div class="grid_2line effect">
                 <a href="https://item.rakuten.co.jp/asoboze/sk-w171/" class="hop">
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_59.jpg" alt="">
                 </a>
                 <div class="grid_tag hop">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_81.jpg" alt="">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_09.jpg" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_130.png" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_136.png" alt="">
                 </div>
                 <div class="clearbox"></div>
                 <div class="text effect">
                     <div class="grid_title hop">
-                        第1世代でも、第2世代でも収納できます
+                        第一世代も、第二世代も入ります。
                   </div>
                     <div class="grid_text hop">
-                        ペン形のデバイスを使うようになって、筆箱はいらなくなった。けれど、もしものために予備のボールペンは一本。<span class="product_name">／&nbsp;本革ペンケース&nbsp;&nbsp;¥4,600</span>
+                        iPad好きのスタッフが考案した、Apple&nbsp;Pencil対応のレザーペンケース。スタイラスはもちろん、お気に入りの万年筆も入ります。<span class="product_name">／本革ペンケース&nbsp;&nbsp;¥4,600</span>
                     </div>                    
                 </div>
             </div>
@@ -666,15 +173,15 @@ $(window).scroll(function(){
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_66.jpg" alt="">
                 </a>                
                 <div class="grid_tag hop">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_11.jpg" alt="">
+<img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_131.png" alt="">
                 </div>
                 <div class="clearbox"></div>
                 <div class="text effect">
                     <div class="grid_title hop">
-                        いつもと一味違う名刺交換の時間を
+                        名刺交換をコミュニケーションの時間に
                     </div>
                     <div class="grid_text hop">
-                        名刺交換のシーンをいつもより少しだけ盛り上げるアイテム。受け取った人にも喜んでもらいたいという思いで作りました。<br><span class="product_name">／&nbsp;THE&nbsp;CARD&nbsp;JACKET&nbsp;-ザ・カードジャケット&nbsp;&nbsp;¥880&nbsp;~</span>
+                        ありきたりな時間にあえて目を付けた、カードジャケット。いつもと一味違う名刺交換の時間を作ります。<span class="product_name">／THE&nbsp;CARD&nbsp;JACKET&nbsp;-ザ・カードジャケット&nbsp;&nbsp;3枚セット：¥880&nbsp;4色アソート：¥1,100</span>
                     </div>                    
                 </div>
             </div>
@@ -684,15 +191,15 @@ $(window).scroll(function(){
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_63.jpg" alt="">
                 </a>
                 <div class="grid_tag hop">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_13.jpg" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_125.png" alt="">
                 </div>
                 <div class="clearbox"></div>
                 <div class="text effect">
                     <div class="grid_title hop">
-                        世界に一つだけの名入れ刻印グッズ
+                        世界に一つだけのブックカバーをつくろう
                   </div>
                     <div class="grid_text hop">
-                        お名前や好きな言葉を刻印できるブックカバー。大切な人から「自分だけ」のプレゼントをもらえたら、嬉しいですよね。<span class="product_name">ZE-V160&nbsp;ブックカバー&nbsp;&nbsp;¥4,300</span>
+                        お名前や好きな言葉を刻印できるブックカバー。大切な人から「自分だけ」のプレゼントをもらえたら、嬉しいですよね。                        <span class="product_name">／ZE-V160&nbsp;ブックカバー&nbsp;&nbsp;¥4,300</span>
                     </div>                    
                 </div>
             </div>
@@ -701,12 +208,12 @@ $(window).scroll(function(){
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_57.jpg" alt="">
                 </a>
                 <div class="grid_tag hop">
-                  <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_09.jpg" alt="">
+                  <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_136.png" alt="">
                 </div>
                 <div class="clearbox"></div>
                 <div class="text effect">
                     <div class="grid_title hop">
-                        お得にゲット！アウトレットセール
+                        お得なアウトレット商品が入荷しました。
                   </div>
                     <div class="grid_text hop">
                         使用に問題がない程度の外観の傷や新品未使用の旧モデル製品などをお得にゲットできるアウトレット商品をピックアップしました。
@@ -724,17 +231,17 @@ $(window).scroll(function(){
                     </div>
                 </a>
                 <div class="grid_tag hop">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_08.jpg" alt="">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_09.jpg" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_127.png" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_136.png" alt="">
                 </div>
                 <div class="clearbox"></div>
                 <div class="text effect">
                     <div class="grid_title hop">
-                        ミニマムなエコバッグ<br>
-                        Regile　<span class="nihongotitle">‐レジル</span>
+                        コンビニには、<br>
+                        エコなコンビニ袋を。
                     </div>
                     <div class="grid_text hop">
-                        レジ袋が有料化される今こそ、エコバッグデビューしてみませんか。コンパクトに畳んでポケットにしまえるから、使わない時もスマート。
+                        レジ袋が有料化される今こそ、エコバッグデビューしてみませんか。コンパクトに畳んでポケットにしまえるから、使わない時もスマート。<span class="product_name">／Regile（レジル）&nbsp;&nbsp;Mサイズ：¥2,300&nbsp;Lサイズ：¥2,600</span>
                     </div>                    
                 </div>
             </div>
@@ -745,16 +252,16 @@ $(window).scroll(function(){
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_70.jpg" alt="">
                 </a>
                 <div class="grid_tag hop">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_81.jpg" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_130.png" alt="">
                 </div>
                 <div class="clearbox"></div>
                 <div class="text effect">
                     <div class="grid_title hop">
-                        MAPLE&nbsp;-<span class="nihongotitle">メイプル</span><br>
-                        本革トートバッグ
+                        シベリアの風を
+                        <br>身に纏ってみる
                   </div>
                     <div class="grid_text hop">
-                        ロシア・シベリアの女性職人が手作りで仕上げたトートバッグ。均一な艶が美しい本革を使用しており、清潔感あるコーディネートをお楽しみいただけます。
+                        ロシア・シベリアの女性職人が手作りで仕上げたトートバッグ。清潔感あるコーディネートをお楽しみいただけます。<span class="product_name">／MAPLE（メイプル）トートバッグ&nbsp;¥37,400</span>
                     </div>                    
                 </div>
             </div>
@@ -763,16 +270,15 @@ $(window).scroll(function(){
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_61.jpg" alt="">
                 </a>
                 <div class="grid_tag hop">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_07.jpg" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_129.png" alt="">
                 </div>
                 <div class="clearbox"></div>
                 <div class="text effect">
                     <div class="grid_title hop">
-                        いっしょに、ちがおう<br>
-                        プロジェクト「笑」
-                  </div>
+                        誰かを笑わせることって大切じゃない？
+                    </div>
                     <div class="grid_text hop">
-                        「笑」をテーマに、asobozeと4つの姉妹ブランドで商品開発。日々の生活を豊かにしてくれる「笑い」について考えてみました。
+                        asobozeも参加をしている「いっしょに、ちがおう」プロジェクト。今回のテーマは「笑」、一体どんな商品が生まれたのでしょうか？
                     </div>                    
                 </div>
             </div>
@@ -782,16 +288,16 @@ $(window).scroll(function(){
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_65.jpg" alt="">
                 </a>
                 <div class="grid_tag hop">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_13.jpg" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_125.png" alt="">
                 </div>
                 <div class="clearbox"></div>
                 <div class="text effect">
                     <div class="grid_title hop">
-                        コイン＋カードケース<br>
-                        Walpac&nbsp;-&nbsp;<span class="nihongotitle">ウォルパック</span>
+                        ミニマル志向の<br>
+                        ベストバイ
                   </div>
                     <div class="grid_text hop">
-                        コインケースとカード入れがドッキングした、キャッシュレス時代にメインで使えるスマート財布。イタリアンレザーの鮮やかな発色が楽しめます。
+                        コインケースとカード入れがドッキングした、キャッシュレス時代にメインで使えるスマート財布。イタリアンレザーの鮮やかな発色が楽しめます。<span class="product_name">／walpac（ウォルパック）&nbsp;&nbsp;¥8,400</span>
                     </div>                    
                 </div>
             </div>
@@ -800,17 +306,17 @@ $(window).scroll(function(){
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_68.jpg" alt="">
                 </a>
                 <div class="grid_tag hop">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_08.jpg" alt="">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_09.jpg" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_127.png" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_136.png" alt="">
                 </div>
                 <div class="clearbox"></div>
                 <div class="text effect">
                     <div class="grid_title hop">
-                        頼れる人の<br>
-                        本革ダレスバッグ
+                        仕事に、より一層の<br>
+                        風格と信頼を。
                     </div>
                     <div class="grid_text hop">
-                        どっしりと重厚な雰囲気を漂わせる本革ダレスバッグ。日本製ならではの高級感が、重要な業務をこなすビジネスパーソンにぴったりの風格を演出します。
+                        どっしりと重厚な雰囲気を漂わせる本革ダレスバッグ。重要な業務をこなすビジネスパーソンにぴったりの風格を演出します。<span class="product_name">／AV-E004&nbsp;&nbsp;ダレスバッグ&nbsp;&nbsp;¥42,200</span>
                     </div>                    
                 </div>
             </div>
@@ -822,18 +328,17 @@ $(window).scroll(function(){
                     </div>
                 </a>
                 <div class="grid_tag hop">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_13.jpg" alt="">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_11.jpg" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_125.png" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_131.png" alt="">
                 </div>
                 <div class="clearbox"></div>
                 <div class="text effect">
                     <div class="grid_title hop">
-                        新世代型ビジネスリュック<br>
-                        TOFTSACK&nbsp;2WAY<span class="nihongotitle">‐タフトサック&nbsp;2WAY</span>
+                        縦でも横でも<br>
+                        どんとこい
                     </div>
                     <div class="grid_text hop">
-                        人気の「タフトサック」に、2WAYタイプが新登場。前作よりさらにシャープなフォルムを手に入れ、使いやすさは2倍以上。
-
+                        第3の素材を使用したビジネスリュック「タフトサック」に、2WAYタイプが新登場。前作よりさらにシャープなフォルムを手に入れ、使いやすさは2倍以上。<span class="product_name">／TOFTSACK（タフトサック）2WAY&nbsp;&nbsp;¥28,500</span>
                     </div>                    
                 </div>
             </div>
@@ -844,16 +349,16 @@ $(window).scroll(function(){
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_60.jpg" alt="">
                 </a>
                 <div class="grid_tag hop">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_09.jpg" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_136.png" alt="">
                 </div>
                 <div class="clearbox"></div>
                 <div class="text effect">
                     <div class="grid_title hop">
-                        世界が認めた本革バッグ<br>
-                        Rintosh<span class="nihongotitle">‐リントッシュ</span>
+                        その革の質感は、<br>
+                        世界基準。
                     </div>
                     <div class="grid_text hop">
-                        世界の有名ブランドが所属する国際団体「レザー・ワーキング・グループ」の情報認証を国内で初めて取得した日本の名門タンナーが仕上げた革で作りました。
+                        世界の有名ブランドが所属する国際団体の認証を国内で初めて取得した革を使ったビジネスバッグ。<span class="product_name">／Rintosh（リントッシュ）&nbsp;&nbsp;¥43,800</span>
                   </div>                    
                 </div>
             </div>
@@ -862,15 +367,16 @@ $(window).scroll(function(){
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_64.jpg" alt="">
                 </a>
                 <div class="grid_tag hop">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_13.jpg" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_125.png" alt="">
                 </div>
                 <div class="clearbox"></div>
                 <div class="text effect">
                     <div class="grid_title hop">
-                        大切に本を使いたい人の本革しおり
+                        大切な本だから使って欲しい
                   </div>
                     <div class="grid_text hop">
-                        小さいしおりでも、丁寧に作りました。革くずが出ないから、大切な本を汚さずに長くお使いいただけます。名入れ刻印もできるので、ギフトとしても好評です。
+                        小さいしおりでも、丁寧に作りました。革くずが出ないから、大切な本を汚さずに長くお使いいただけます。<span class="product_name">／ZE-V159&nbsp;本革しおり&nbsp;&nbsp;¥840&nbsp;〜
+                        </span>
                     </div>                    
                 </div>
             </div>
@@ -880,13 +386,12 @@ $(window).scroll(function(){
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_62.jpg" alt="">
                 </a>
                 <div class="grid_tag hop">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_12.jpg" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_128.png" alt="">
                 </div>
                 <div class="clearbox"></div>
                 <div class="text effect">
                     <div class="grid_title hop">
-                        いっしょに、ちがおう<br>
-                        プロジェクト
+                        「いっしょに、ちがおう」プロジェクト
                     </div>
                     <div class="grid_text hop">
                         asobozeを運営するサイバール株式会社の5ブランドが1つのテーマで商品開発。全く新しいアプローチから生み出された商品を、ぜひお楽しみくださいませ。
@@ -898,138 +403,23 @@ $(window).scroll(function(){
                     <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_69.jpg" alt="">
                 </a>
                 <div class="grid_tag hop">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_08.jpg" alt="">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_09.jpg" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_127.png" alt="">
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_136.png" alt="">
                 </div>
                 <div class="clearbox"></div>
                 <div class="text effect">
                     <div class="grid_title hop">
-                        ドラマ衣装協力<br>
-                        日本製ダレスバッグ
+                        見た目も実用性も迫力満点
                     </div>
                     <div class="grid_text hop">
-                        機能性を重視し、軽量合皮を使用したダレスバッグ。ビジネスシーンでの使いやすさがさらにアップしました。人気ドラマ「半沢直樹」に衣装協力しております。
+                        機能性を重視し、軽量合皮を使用したダレスバッグ。ビジネスシーンでの使いやすさがさらにアップしました。<span class="product_name">／AV-E010&nbsp;ダレスバッグ&nbsp;&nbsp;¥27,700</span>
                     </div>                    
                 </div>
             </div>            
         </div>
     </div>
     <div id="footer_aso" class="footer_aso">
-        <div class="category_aso effect">
-            <div class="asomidashi_eng hop">
-                CATEGORY
-            </div>
-            <div class="asomidashi_jpn hop">
-                ー
-                <br>
-                <br>
-                当店の人気カテゴリー
-            </div>
-            <div class="cate_images effect">
-                <div class="cate_image hop">
-                    <a href="https://item.rakuten.co.jp/asoboze/c/0000000134/">
-                        <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_42.jpg" alt="">
-                    </a> 
-                    <div class="cate_text">
-                        ブリーフケース
-                    </div>
-                </div>
-                <div class="cate_image hop">
-                    <a href="https://item.rakuten.co.jp/asoboze/c/0000000135/">
-                        <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_43.jpg" alt="">
-                    </a>
-                    <div class="cate_text">
-                        トートバッグ
-                    </div>
-                </div>
-                <div class="cate_image hop">
-                    <a href="https://item.rakuten.co.jp/asoboze/c/0000000139/">
-                        <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_44.jpg" alt="">
-                    </a>
-                    <div class="cate_text">
-                        リュックサック
-                    </div>
-                </div>
-                <div class="cate_image hop">
-                    <a href="https://item.rakuten.co.jp/asoboze/c/0000000202/">
-                        <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_45.jpg" alt="">
-                    </a>
-                    <div class="cate_text">
-                        エコバッグ
-                    </div>
-                </div>
-                <div class="cate_image hop">
-                    <a href="https://item.rakuten.co.jp/asoboze/c/0000000205/">                           <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_46.jpg" alt="">
-                    </a>
-                    <div class="cate_text">
-                        ブックカバー
-                    </div>
-
-                </div>
-                <div class="cate_image hop">
-                    <a href="https://item.rakuten.co.jp/asoboze/c/0000000210/">
-                        <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_47.jpg" alt="">
-                    </a>
-                    <div class="cate_text">
-                        ギフトセット
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="price_aso effect">
-            <div class="asomidashi_eng hop">
-                PRICE
-            </div>
-            <div class="asomidashi_jpn hop">
-                ー
-                <br>
-                <br>
-                価格から選ぶ
-            </div>
-            <div class="pricebutton hop">
-                <a href="https://item.rakuten.co.jp/asoboze/c/0000000173/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_26.jpg" alt=""></a>
-                <a href="https://item.rakuten.co.jp/asoboze/c/0000000174/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_27.jpg" alt=""></a>
-                <a href="https://item.rakuten.co.jp/asoboze/c/0000000175/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_28.jpg" alt=""></a>
-                <a href="https://item.rakuten.co.jp/asoboze/c/0000000176/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_29.jpg" alt=""></a>
-            </div>
-        </div>
-        <div class="contents_aso effect">
-            <div class="asomidashi_eng hop">
-                CONTENTS
-            </div>
-            <div class="asomidashi_jpn hop">
-                ー
-                <br>
-                <br>
-                asobozeの商品をもっと知る
-            </div>
-            <div class="contentbutton hop">
-                <a href="https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/moviegallery.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_48.jpg" alt=""></a>
-                <a href="https://www.rakuten.ne.jp/gold/asoboze/gallery/review/review.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_75.jpg" alt=""></a>
-                <a href="https://www.rakuten.ne.jp/gold/asoboze/contents/kawachip.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_77.jpg" alt=""></a>
-                <a href="https://www.rakuten.ne.jp/gold/asoboze/contents/repair.html">
-                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_76.jpg" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="guide_aso effect">
-            <div class="asomidashi_eng hop">
-                GUIDE
-            </div>
-            <div class="asomidashi_jpn hop">
-                ー
-                <br><br>
-                お買い物ガイド
-            </div>
-            <div class="guide_grids">
-                <div class="guide_grid hop"><a href="https://www.rakuten.ne.jp/gold/asoboze/contents/giftwrap.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_17.jpg" alt=""></a></div>
-                <div class="guide_grid hop"><a href="https://www.rakuten.co.jp/asoboze/info2.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_18.jpg" alt=""></a></div>
-                <div class="clearbox"></div>
-                <div class="guide_grid hop"><a href="https://www.rakuten.ne.jp/gold/asoboze/contents/maintainance.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_19.jpg" alt=""></a></div>
-                <div class="guide_grid hop"><a href="https://item.rakuten.co.jp/asoboze/c/0000000192/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_20.jpg" alt=""></a></div>
-            </div>
-        </div>
     </div>
-</body>
+
+    </body>
 </html>

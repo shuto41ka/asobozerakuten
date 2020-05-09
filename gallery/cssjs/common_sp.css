@@ -312,6 +312,7 @@ img[id*="large"] {
 	overflow:auto;
 	height:41%;
 	padding-bottom:40px;
+    box-sizing: border-box;
 	padding-top:-20px;
 }
 .gallerywrap .reviewcomment p {
@@ -325,6 +326,7 @@ img[id*="large"] {
 	font-size:12px;
 	line-height:24px;
 	overflow:auto;
+    box-sizing: border-box;
 }
 .reviewwrap {
 	width:100%;
