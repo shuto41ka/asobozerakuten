@@ -140,4 +140,9 @@ $(function() {
 		$('#movies_toftsack2way').load("toftsack2way.html #movies_toftsack2way");
 		$('#movies_toftsack2way').show();
 });	
+	$('#dougasetsumei15').click(function() {
+    	$("[id ^= 'movies']").hide();
+		$('#movies_thecdj').load("cardjacket.html #movies_thecdj");
+		$('#movies_thecdj').show();
+});	
 });
