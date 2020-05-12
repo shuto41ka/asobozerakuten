@@ -10,7 +10,7 @@
             .pconly {
                 display: none;
             }
-        }
+    
         div,p {
             margin: 0;
             padding: 0;
@@ -656,4 +656,5 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
     position: fixed;
     top: 0;
     left: 0;
+}
 }
