@@ -44,7 +44,12 @@ $('a img, a').bind({
       loop: true,
       slidesPerView: 3,
       spaceBetween: 2,
-	  autoplay: true,
+	autoplay: {
+		delay: 3000,
+		stopOnLastSlide: false,
+		disableOnInteraction: false,
+		reverseDirection: false
+	},
 	  speed: 6000,
       centeredSlides : true,
       pagination: '.swiper-pagination',
@@ -52,10 +57,14 @@ $('a img, a').bind({
       prevButton: '.swiper-button-prev',
 	  preventClicks: false,
 	  preventClicksPropagation: false, 
+        mousewheel: {
+            forceToAxis: true,
+            invert: true
+        },
       breakpoints: {
         759: {
-          slidesPerView: 3,
-          spaceBetween: 0,
+          slidesPerView: 4,
+          spaceBetween: 10,
 		  speed: 3000,
 		  autoplay: true,
         }
