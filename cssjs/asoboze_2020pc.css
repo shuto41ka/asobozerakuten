@@ -1,0 +1,1105 @@
+@charset "UTF-8";
+/* CSS Document */
+@media screen and (orientation: landscape) {
+    .sponly {
+        display: none;
+    }
+    .clearbox {
+        clear: both;
+    }
+    div, p, img, body {
+        padding: 0;
+        margin: 0;
+           font-family: "A+EqpB-游ゴシック体 Pr6N M", sans-serif;        
+    }
+    div, p, body {
+        box-sizing: border-box;
+    }
+    a img:hover {
+        opacity: 0.8;
+    }
+    .swiper-container {
+        width: 80vw;
+    }
+    .aso_linebanner {
+        position: fixed;
+        top: 0;
+        left: 5%;
+        width: 87%;
+        z-index: 10000;
+        height: auto;
+    }
+    .aso_linebanner img {
+        width: 25%;
+        margin: 0;
+        box-sizing: border-box;
+        float: left;
+    }
+    .container_aso {
+        width: 92%;
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+    .aso_pcleft {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 5%;
+        height: 100vh;
+        border-right: 1px solid #ffffff;
+        background-color: transparent;
+        z-index: 100;
+    }
+    .aso_pcleft img {
+        width: 35%;
+        padding-left: 27%;
+        padding-top: 70px;
+    }
+    .aso_pcleft .pcleft_sns {
+        padding-top: 45vh;
+    }
+    .aso_pcleft .pcleft_sns img {
+        padding-top: 20px;
+        width: 30px;
+    }
+    .aso_pcleft .pcleft_sns .sns_youtube img {
+        width: 36px;
+        padding-left: 25%;
+    }
+    .container_aso {
+        margin-top: 0px;
+        position: relative;
+    }
+    .pcindex_right {
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 8%;
+        height: 100vh;
+        background-color: #ffffff;
+        border-left: 1px solid #b5b5b6;
+        z-index: 100;
+    }
+    .index_right_menus {
+        position: relative;
+    }
+            .humb-icon {
+            width: 35px;
+            height: 29px;
+            position: absolute;
+            top: 5vh;
+            left: 27%;
+            background-color: #ffffff;
+                cursor: pointer;
+        }
+        .humb-icon .icon-wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .humb-icon .icon-bars {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: #b49d92;
+            border-radius: 3px;
+        }
+        .humb-icon .icon-bars:nth-of-type(1){
+            top: 0;
+        }
+        .humb-icon .icon-bars:nth-of-type(2) {
+            top: 13px;
+        }
+        .humb-icon .icon-bars:nth-of-type(3) {
+            bottom: 0;
+        }
+        .humb-icon,.humb-icon span {
+            display: inline-block;
+            transition: all .4s;
+            box-sizing: border-box;
+        }
+        .icon-wrap.active .icon-bars:nth-of-type(1) {
+  -webkit-transform: translateY(13px) rotate(-45deg);
+  transform: translateY(13px) rotate(-45deg);
+}
+.icon-wrap.active .icon-bars:nth-of-type(2) {
+  opacity: 0;
+}
+.icon-wrap.active .icon-bars:nth-of-type(3) {
+  -webkit-transform: translateY(-13px) rotate(45deg);
+  transform: translateY(-13px) rotate(45deg);
+}
+    .jump-dots a {
+        color: #b5b5b6;
+        text-decoration: none;
+        padding-bottom: 15em;
+        font-size: 2em;
+    }
+    .jump-dots a.nowhere {
+        color: #b49d92 !important;
+    }
+    .dots-wrap {
+        display: block;
+    }
+    .jump-dots {
+        position: absolute;
+        left: 40%;
+        top: 40vh;
+        width: 1em;
+        height: auto;
+        line-height: 2em;
+    }
+    .right-icons {
+        position: absolute;
+        top: 75vh;
+        left: 35%;
+    }
+    .right-icons input.btn {
+        width: 36px;
+    }
+    .right-cart a img {
+        width: 32px;
+        padding-top: 25px;
+    }
+        .pcmenu_aso {
+            background-color: #f9f9f9;
+            color: #666464;
+            scroll-behavior: auto;
+            right: 0;
+            overflow-y: hidden;
+            transition: .4s ease-in-out;
+ 	width: 100%;
+	height: 70%;
+           z-index: 99;
+        }
+/*iframeを格納*/
+input[type="checkbox"]#input-pchumbmenu + #pcmenu_aso { 
+    transition: 0.5s ease-in-out;
+    position:fixed;
+    top: 0;
+    right: -100%;
+    z-index: 99;
+}
+    @media screen and (max-width:1300px) {
+        .pcmenu_aso {
+            height: 100%;
+        }
+    }
+
+/*iframeを格納(オープン時)*/
+input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
+    overflow: hidden;
+	-webkit-overflow-scrolling:touch;
+    z-index: 99;
+    right: 0;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+}
+    #input-humbmenu {
+        display: none;
+    }
+    .pc4menu-grid a {
+        color: #666464;
+        text-decoration: none;
+    }
+    .pc4menu-grid a:hover {
+        opacity: 0.8;
+    }
+    .pc4menu-title {
+        font-size: 1.3vw;
+        border-bottom: 1px solid #666464;
+        padding-left: 1vw;
+        padding-bottom: 0.5em;
+        margin-bottom: 15px;
+    }
+    .pc4menu-title .4menu_jpn {
+        font-size: 0.6vw;
+    }
+    .pc4menu {
+        display: inline-block;
+        box-sizing: border-box;
+        margin-top: 5vh;
+        vertical-align: top;
+    }
+    .pc_4menus {
+        width: 80%;
+        margin-left: 12%;
+        box-sizing: border-box;
+        margin-top: 5vh;
+    }
+    .pc4menu-grid {
+        display: inline-block;
+        width: 200px;
+        padding: 15px;
+        box-sizing: border-box;
+        font-size: 0.8vw;
+    }
+    .pc4menu:first-child {
+        width: 50%;
+    }
+    .pc4menu:nth-child(3) {
+        width: 50%;
+    }
+    .pc4menu:nth-child(2) {
+        width: 22%;
+        margin-left: 10%;
+    }
+    .pc4menu:last-child {
+        width: 22%;
+        margin-left: 10%;
+    }
+    .topthree a {
+        display: inline-block;
+        max-width: 95vh;
+        width: 70vw;
+        float: left;
+    }
+    .topthree .text {
+        position: relative;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 25vh;
+        width: calc(92vw - 95vh);
+        display: block;
+        left: 95vh;
+
+        top: 0;
+        height: 70vw;
+        max-height: 95vh;
+        min-width: min-content;
+    }
+    .topthree a img {
+        width: 100%;
+    }
+    .topthree {
+        width: 100%;
+        background-size: calc(92vw - 95vh) auto;
+        background-position: bottom right;
+        background-repeat: no-repeat;
+    }
+    .brown {
+        background-image: url(https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_11.png);
+    }
+    .gray {
+        background-image: url(https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_13.png);
+    }
+    .yellow {
+        background-image: url(https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_12.png);
+    }
+    .topthree .text::before {
+        position: absolute;
+        top: 15vh; 
+        left: 50%;
+        transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);        
+        color: #b49d92;
+    }
+    .popular .text::before {
+        content: "Trend";
+    }
+    .new .text::before {
+        content: "New";
+    }
+    .restock .text::before {
+        content: "Restock";
+    }
+    .text .title {
+        font-size: 2.5vw;
+        line-height: 1.3em;
+        position: absolute;
+        top: 20vh;
+        left: 50%;
+    transform: translateX(-50%);
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;                
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    }
+    .text .title .nihongotitle {
+        font-size: 1vw;
+        display: block;
+    }
+    .text .disc {
+        font-size: 1.6vw;
+        text-align: left;
+        display: block;
+        position: absolute;
+        top: 35vh;
+        width: max-content;
+        margin-left: 10%;
+        left: 40%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+        line-height: 2em;
+    }
+    .kuwashiku {
+        position: absolute;
+        width: 15vw;
+
+        height: 2.6vw;
+        top: 60vh;
+        left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+        background-color: #666464;
+        border-radius: 2.6vw
+    }
+    .kuwashiku a {
+        display: block;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        line-height: 2.6vw;
+        transition-duration: .3s;
+        box-sizing: border-box;
+        font-size: 1.3vw;
+    }
+    .kuwashiku a:hover {
+        background-color: #ffffff;
+        color: #666464;
+        border: 1px solid #666464;
+        border-radius: 2.6vw;
+    }
+        .space {
+            width: 100%;
+            height: 23px;
+        }
+        .index_grid {
+            width: 100%;
+            padding:12% 6% 6%;
+            display: inline-grid;
+            box-sizing: border-box;
+            grid-template-rows: auto;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-row-gap: 2%;
+            grid-column-gap: 2%;
+        }
+        .index_grid .grid_2line {
+            width: 100%;
+            display: block;
+            box-sizing: border-box;
+        }
+        .index_grid .grid_2line:nth-child(1) {
+            grid-row: 1;
+            grid-column: -1 / -2;
+        }
+        .index_grid .grid_2line:nth-child(2) {
+            grid-row: 1;
+            grid-column: -2 / -3;
+        }
+        .index_grid .grid_2line:nth-child(4) {
+            grid-row: 2;
+            grid-column: -1 / -2;
+        }
+        .index_grid .grid_2line:nth-child(5) {
+            grid-row: 2;
+            grid-column: -2 / -3;
+        }
+        .index_grid .grid_1line:nth-child(7) {
+            grid-row: 1 / 3;
+            grid-column: 1 / 2;
+            position: relative;
+        }
+        .index_grid .grid_1line:nth-child(7)::after {
+            content: "";
+            width: 100%;
+            height: 1px;
+            border-bottom: 1px solid;
+            border-bottom-color: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            left: -10vw;
+            bottom: 5vw;
+            transform: rotate(-10.64deg);
+        }
+    .index_grid #pcthreemenu2 .pconly:nth-child(8) {
+        grid-row: 4 / 6;
+        grid-column: 1 / 4;
+    }
+        .grid_2line img {
+            width: 100%;
+        }
+        .grid_1line img {
+            width: 100%;
+        }
+    .index_grid .grid_1line {
+        width: 100%;
+        box-sizing: border-box;
+    }
+        .grid_1line .text {
+            padding:0 2% 23px;
+            width: 70%;
+            margin-left: 30%;
+            box-sizing: border-box;
+        }
+        .grid_1line .grid_tag {
+            width: 70%;
+            margin-left: 30%;
+        }
+        .index_grid .grid_tag img {
+            height: 2vw;
+            width: auto;
+            display: block;
+            float: left;
+            margin: 2vh 5px 5px 0;
+            padding-left: 3%;
+        }
+        .grid_title {
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+            padding-bottom: 8px;
+            line-height: 1.8em;
+        }
+        .grid_2line .grid_title {
+            font-size: 1.4vw;
+        }
+        .grid_2line .text {
+            padding: 0 5% 0 5%;
+        }
+        .grid_1line .grid_title {
+            font-size: 1.8vw;
+        }
+        .grid_title .nihongotitle {
+            font-size: 1.2vw;
+        }
+        .grid_2line .grid_text {
+            font-size: 1vw;
+        }
+        .grid_1line .grid_text {
+            font-size: 1.4vw;
+            
+        }
+        .grid_text {
+            padding-bottom: 25px;
+            line-height: 1.7em;
+            color: #000000;
+        }
+        .grid_text .product_name {
+            color: #898989;
+            text-align: left;
+            text-justify: none;
+        }
+    .grid_text .product_name::before {
+        content: '／';
+    }    
+        .hop {
+            transition-duration: 1.0s;
+        }
+    .footer_aso {
+        display: inline-grid;
+        grid-template-rows: auto;
+        grid-template-columns: 55vw 37vw 8vw;
+    }
+    .category_aso {
+        grid-column: 1 / 2;
+        grid-row: 1;
+        float: left;
+           background-color: #f9f7f5;
+        margin: 0 0 90px 0;
+        display: inline-block;
+    }
+    .asomidashi_eng {
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+        display: inline-block;
+        font-size: 1.4vw;
+        margin: 5vh 3vw 6vh 11vw;
+        padding-left: 1vw;
+        letter-spacing: .4em;
+    }
+    .asomidashi_jpn {
+        display: inline-block;
+        font-size: 1.2vw;
+        margin: 3vh 0;
+    }
+        .cate_images {
+            width: 60%;
+            margin: 0 auto;
+            display: block;
+        }
+        .cate_image {
+            width: 25%;
+            float: left;
+        }
+        .cate_image a img {
+            width: 70%;
+            padding: 5% 15% 0 15%;
+        }
+        .cate_image .cate_text {
+            font-size: 10.67px;
+            text-align: center;
+            padding:0.5em 0 5vh 0;
+        }
+        .price_aso {
+            grid-row: 1;
+            grid-column: 2 / 3;
+        }
+        .pricebutton {
+            width: 100%;
+        }
+        .pricebutton a img {
+            width: 60%;
+            padding:6px 5%;
+            margin: 0 15%;
+        }
+    .price_aso .asomidashi_eng {
+        margin-left: 6vw;
+    }
+    .contents_aso {
+        grid-row: 2;
+        grid-column: 1 / 3;
+    }
+        .contentbutton {
+            width: 100%;
+        }
+    .contentbutton a img {
+        width: 100%;
+            padding: 3vh 1vw;
+            box-sizing: border-box;
+            border-right: 2px solid #dacec8;
+    }
+        .contentbutton a {
+            width: 20%;
+            display: inline-block;
+            float: left;
+        }
+    .contentbutton a:nth-child(1) {
+        margin-left: 11vw;
+        border-left: 2px solid #dacec8;
+    }
+    .contentbutton a:nth-child(5) {
+        width: 90%;
+        margin: 5vh 2% 2vh 8%;
+        clear: both;
+    }
+    .contentbutton a:nth-child(5) img {
+        border: none;
+    }
+        .contentbutton .contentsns {
+            width: 100%;
+            padding: 5vh 4% 2vh 8%;
+        }
+    .contentbutton .contentsns a {
+            margin: 0;
+            padding: 0;
+        border: none;
+        display: block;
+        float: left;
+    }
+    .contentbutton .contentsns a:nth-child(1) {
+        width: 50%;
+    }
+    .contentbutton .contentsns a:nth-child(2) {
+        width: 50%;
+    }
+        .contentbutton .contentsns a img {
+            padding: 0;
+            border: none;
+        }
+        .rank_aso {
+            grid-row: 3;
+            grid-column: 1 / 3;
+            width: 100%;
+            margin: 10vh 0;
+            position: relative;
+            height: auto;
+        }
+        .rank_4lines {
+            width: 90%;
+            margin: 5vh 0 0;
+            padding-left: 10%;
+            display: inline-grid;
+            grid-template-rows: auto 60px auto;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        .rank_4lines .rank {
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-size: auto 30%;
+            margin: 0 0 0 40px;
+        }
+        .rank_4lines img {
+            width: 80%;
+            margin-left: 20%;
+        }
+        .rank img {
+            display: block;
+        }
+    
+        .rank_4lines .rank_1 {
+            background-image: url(https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_25.png);
+        }
+        .rank_1 img, .rank_2 img, .rank_3 img, .rank_5 img, .rank_4 img {
+            margin-top: 30px;
+        }
+        .rank_4lines .rank_2 {
+            background-image: url(https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_26.png);
+        }
+        .rank_4lines .rank_3 {
+            background-image: url(https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_27.png);
+        }
+        .rank_4lines .rank_4 {
+            background-size: auto 25%;
+            background-position: 0 20%;
+            background-image: url(https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_28.png);
+        }
+        .rank_4lines .rank_5 {
+            background-size: auto 25%;
+            background-position: 0 20%;
+            background-image: url(https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_29.png);
+        }
+        .rank_date {
+            width: 100%;
+            font-size: 0.8vw;
+            position: relative;
+        }
+        .rank_date div {
+            position: absolute;
+            right: 10vw;
+            bottom: 0;
+        }
+        .swiper-slide img {
+            width: 100%;
+        }
+    .style_aso {
+        grid-row: 4;
+        grid-column: 1 / 3;
+    }
+    #styles {
+        grid-row: 5;
+        grid-column: 1 / 3;
+    }
+:root {
+--swiper-theme-color: #ffffff !important;
+}
+        .guide_aso {
+            width: 100%;
+            grid-row: 6;
+            grid-column: 1 / 3;
+            margin: 10vh 0;
+        }
+        .guide_grids {
+            width: 85%;
+            margin: 0 0 5vh 8%;
+            box-sizing: border-box;
+    }
+        .guide_grid {
+            width: 25%;
+            float: left;
+            box-sizing: border-box;
+            padding: 1px 2px;
+        }
+        .guide_grid a img {
+            width: 100%;
+        }
+             .kensaku2box {
+        width: 100%;
+        position: relative;
+                 display: block;
+                 height: 10vh;
+    }
+        .copyright_aso {
+        grid-column: 1 / 3;
+            grid-row: 7;
+            width: 100%;
+            background-color: #666464;
+            justify-content: center;
+        }
+        .copyright_aso span {
+            text-align: center;
+            
+            color: #ffffff;
+            font-size: 8px;
+            display: inline-block;
+            vertical-align: bottom;
+            padding-top: 35px;
+            width: 100%;
+            padding-bottom: 10px;
+        }
+    
+        .kensaku2box .kensaku2textspace {
+            position: absolute;
+            top: 3.3vh;
+            right: 10vw;
+        width: 230px;
+        height: 40px;
+        -webkit-appearance: none;
+        border: 1px solid #b5b5b6;
+        box-sizing: border-box;
+        z-index: 20;
+        border-radius: 37px;
+        font-size: 0.8em;
+            text-align: center;
+            padding-right: 2vw;
+        color: #ffffff;
+            background-color: #666464;
+            margin-bottom: 30px;
+            line-height: 50px;
+    }
+::placeholder {
+  color: #eeeeee;
+}
+
+/* IE */
+:-ms-input-placeholder {
+  color: #eeeeee;
+}
+
+/* Edge */
+::-ms-input-placeholder {
+  color: #eeeeee;
+}
+.kensaku2textspace:focus {
+    outline: none;
+}
+        .kensaku2box .kensaku2image {
+        position: absolute;
+        top: 4.4vh;
+        width: 20px;
+        right: 12vw;
+        z-index: 20;
+            border-radius: 0;
+        }
+    .footercate {
+        width: 80%;
+        margin: 0 10% 5vh;
+        text-align: center;
+        font-size: 1vw;
+        color: #ffffff;
+        line-height: 2em;
+    }
+    .footercate a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .footercate a:hover {
+        text-decoration: underline;
+    }
+    .footerguide {
+        width: 65vw;
+        margin-left: 15vw;
+        display: inline-grid;
+        grid-template-rows: auto;
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-gap: 5vw;;
+        color: #ffffff;
+    }
+        .contents_border {
+            border-top: 1px solid; 
+            border-top-color: rgba(180,157,146,0.25);
+            width: 90%; 
+            display: block; 
+            margin: 14px auto 0; 
+            height: 14px;
+            clear: both;
+        }
+    
+    .fguide .fguide_title {
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+        border-bottom: 1px solid #ffffff;
+        padding-bottom: 10px;
+        font-size: 1vw;
+    }
+    .fguide_texts {
+        font-size: 0.8vw;
+        padding-top: 10px;
+        line-height: 1.7em;
+    }
+    
+    .fguide_texts a {
+        color: #ffffff;
+        text-decoration: none;
+    }
+    .fguide_texts a:hover {
+        text-decoration: underline;
+    }
+
+        .aso_right_menus {
+        position: relative;
+    }
+        .aso_right_menus .humb-icon {
+            width: 115px;
+            height: 115px;
+            border-radius: 50%;
+            background-color: #b49c92;
+            position: absolute;
+            top: 10vh;
+            right: 3vw;
+            left: auto;
+            z-index: 10000;
+                cursor: pointer;
+        }
+        .aso_right_menus .humb-icon .icon-wrap {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+        .aso_right_menus .humb-icon .menu-bars {
+            position: absolute;
+            left: 30%;
+            width: 40%;
+            height: 3px;
+            background-color: #ffffff;
+            border-radius: 3px;
+        }
+        .aso_right_menus .humb-icon .menu-bars:nth-of-type(1){
+            top: 40px;
+        }
+        .aso_right_menus .humb-icon .menu-bars:nth-of-type(2) {
+            top: 60px;
+        }
+        .aso_right_menus .humb-icon,.humb-icon .menu-bars {
+            display: inline-block;
+            transition: all .4s;
+            box-sizing: border-box;
+        }
+    .aso_right_menus .humb-icon .icon-menu::before {
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+        font-size: 13px;
+        bottom: 20px;
+        left: 0;
+        width: 100%;
+        position: absolute;
+        content: 'MENU';
+        text-align: center;
+        color: #ffffff;
+    }
+        .aso_right_menus .icon-wrap.active .menu-bars:nth-of-type(1) {
+  -webkit-transform: translateY(5px) rotate(-45deg);
+  transform: translateY(5px) rotate(-45deg);
+}
+.aso_right_menus .icon-wrap.active .menu-bars:nth-of-type(2) {
+  -webkit-transform: translateY(-15px) rotate(45deg);
+  transform: translateY(-15px) rotate(45deg);
+}
+.aso_right_menus .icon-wrap.active .icon-menu::before {
+    content: 'CLOSE'
+    }
+    input#input-humbmenu {
+        display: none;
+    }
+    input#input-pchumbmenu {
+        display: none;
+    }
+        .pick_brand {
+            display: block;
+            position: fixed;
+            right: 0;
+            top: 25vh;
+            width: 163px;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .pick_brand div {
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            position: relative;
+        }
+        .pickup {
+            width: 100%;
+            background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_35.jpg);
+            background-size: 100% auto;
+        }
+        .brand {
+            width: 100%;
+            background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_34.jpg);
+            background-size: 100% auto;
+        }
+        .pick_brand img {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            transition: 0.3s ease-in-out;
+        }
+        .pick_brandbutton:hover {
+            opacity: 0;
+        }
+        .pick_brandmenu {
+            display: none;
+        }
+input[type="checkbox"]#pickup_open ~ div#pickup_menu { 
+    transition: 0.5s ease-in-out;
+    top: 0;
+    right: -1000px;
+            width: 700px;
+            height: 700px;
+            padding: 30px;
+            position: absolute;
+            border: 2px solid #c9caca;
+    z-index: -1;
+}
+
+/*iframeを格納(オープン時)*/
+input[type="checkbox"]#pickup_open:checked ~ div#pickup_menu {
+    right: 170px;
+}
+        input[type="checkbox"]#pickup_open:checked + img {
+            opacity: 0;
+        }        
+input[type="checkbox"]#brand_open ~ #brand_menu { 
+    transition: 0.5s ease-in-out;
+    top: 0;
+    right: -800px;
+            width: 800px;
+            height: auto;
+            padding: 30px 67px 67px;
+    display: inline-grid;
+            grid-template-rows: auto auto auto;
+            grid-template-columns: auto auto;
+            grid-gap: 20px;
+            position: absolute;
+            border: 2px solid #c9caca;
+    z-index: -1;
+}
+        input[type="checkbox"]#brand_open:checked ~ #brand_menu {
+            right: 180px
+        }
+        input[type="checkbox"]#brand_open:checked + img {
+            opacity: 0;
+        }
+        .pick_brand .pickup_menu .pick6menus {
+            display: inline-grid;
+            grid-template-rows: 300px 300px;
+            grid-template-columns: 200px 200px 200px;
+            grid-gap: 10px;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            
+        }
+        .pick_brand .pickup {
+            width: 100%;
+            height: 100%;
+        }
+        .pick_brand .pickup .pick_copy {
+            position: absolute;
+            transition: .2s ease-in-out;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            display: table;
+            opacity: 1;
+            z-index: 3;
+            padding: 25% 0;
+        }
+    .pick_brand .pickup .pick_link {
+        position: absolute;
+        top: 0;
+        z-index: 4;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }    
+    .pick_brand .pickup .pick_link a:hover {
+        opacity: 0.1;
+    }
+        .pick_brand .pickup .pick_copy::after {
+            content: '';
+            display: block;
+            margin-top: 50%;
+        }        
+        .pick_brand .pickup .pick_copy div {
+            width: 100%;
+            height: 50%;
+            background: url(https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_43.png);
+            background-size: 100% auto;
+            background-position: top;
+            background-repeat: no-repeat;
+            text-align: center;
+            display: table-cell;
+            vertical-align: middle;
+            padding: o 1em 2em;
+  word-wrap: break-word;
+            margin: 25% 0;
+  overflow-wrap: break-word;
+            
+        }        
+        .pick_brand .pickup .pick_copy div::after {
+            display: block;
+            content: '';
+            margin-top: 50%;
+        }        
+        .pick_brand .pickup .pick_img {
+            position: absolute;
+            top: 0;
+            z-index: 2;
+            left: 0;
+            width: 100%;
+            height: auto;
+        }
+        .pick_brand .pickup .pick_img img:hover {
+            opacity: 1;
+        }        
+        .pick_brand .pickup .pick_copy:hover {
+            opacity: 1;
+        }
+        .pick_brand .pickup .pick_tag {
+            position: relative;
+            width: 30%;
+            padding: 5px;
+        }        
+        .pick_brand .pickup .pick_name {
+            padding: 0 5px 5px;
+            font-size: 0.8em;
+        }        
+        .pick_image_after {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        .pick_image_after::after {
+            display: block;
+            content: '';
+            margin-top: 50%;
+        }        
+        #pick_01 {
+            grid-row: 1;
+            grid-column: 1;
+        }
+        #pick_02 {
+            grid-row: 1;
+            grid-column: 2;
+        }
+        #pick_03 {
+            grid-row: 1;
+            grid-column: 3;
+        }
+        #pick_04 {
+            grid-row: 2;
+            grid-column: 1;
+        }
+        #pick_05 {
+            grid-row: 2;
+            grid-column: 2;
+        }
+        #pick_06 {
+            grid-row: 2;
+            grid-column: 3;
+        }
+}
+    @media screen and (min-width:760px) and　(max-width:1200px) {
+        .text .disc {
+            margin-left: 0;
+              text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
+              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
+              0px 1px 0 #FFF,  0-1px 0 #FFF,
+              -1px 0 0 #FFF, 1px 0 0 #FFF;
+        }
+        .topthree .text {
+            left: 75vw;
+        }
+        .text .title {
+            left: 40%;
+        }
+        .topthree .text::before {
+            left: 40%;
+        }
+        .kuwashiku {
+            left: 40%;
+        }
+    }
+

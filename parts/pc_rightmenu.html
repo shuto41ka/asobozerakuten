@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="ja">
+    <meta charset="utf-8">
+    <head>
+    <link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020pc.css">
+    <script src="https://www.rakuten.ne.jp/gold/asoboze/jquery-3.2.1.min.js"></script>
+        
+<script>
+    $(function() {
+        $("#aso_pcmenu").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pcmenu_aso.html"); 
+        $("#pick_01 > .pick_img").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(1) > a img");
+        $("#pick_02 > .pick_img").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(2) > a img");
+        $("#pick_03 > .pick_img").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(3) > a img");
+        $("#pick_04 > .pick_img").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(4) > a img");
+        $("#pick_05 > .pick_img").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(5) > a img");
+        $("#pick_06 > .pick_img").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(6) > a img");
+        $("#pick_01 > .pick_link").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(1) > a");
+        $("#pick_02 > .pick_link").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(2) > a");
+        $("#pick_03 > .pick_link").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(3) > a");
+        $("#pick_04 > .pick_link").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(4) > a");
+        $("#pick_05 > .pick_link").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(5) > a");
+        $("#pick_06 > .pick_link").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(6) > a");
+        $("#pick_01 > .pick_copy").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(1) > .text > .grid_title");
+        $("#pick_02 > .pick_copy").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(2) > .text > .grid_title");
+        $("#pick_03 > .pick_copy").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(3) > .text > .grid_title");
+        $("#pick_04 > .pick_copy").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(4) > .text > .grid_title");
+        $("#pick_05 > .pick_copy").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(5) > .text > .grid_title");
+        $("#pick_06 > .pick_copy").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(6) > .text > .grid_title");
+        $("#pick_01 > .pick_tag").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(1) > .grid_tag > img:first");
+        $("#pick_02 > .pick_tag").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(2) > .grid_tag > img:first");
+        $("#pick_03 > .pick_tag").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(3) > .grid_tag > img:first");
+        $("#pick_04 > .pick_tag").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(4) > .grid_tag > img:first");
+        $("#pick_05 > .pick_tag").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(5) > .grid_tag > img:first");
+        $("#pick_06 > .pick_tag").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(6) > .grid_tag > img:first");
+        $("#pick_01 > .pick_name").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(1) > .text > .grid_text > .product_name");
+        $("#pick_02 > .pick_name").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(2) > .text > .grid_text > .product_name");
+        $("#pick_03 > .pick_name").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(3) > .text > .grid_text > .product_name");
+        $("#pick_04 > .pick_name").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(4) > .text > .grid_text > .product_name");
+        $("#pick_05 > .pick_name").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(5) > .text > .grid_text > .product_name");
+        $("#pick_06 > .pick_name").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(6) > .text > .grid_text > .product_name");
+
+        $(".icon-wrap").click(function() {
+            $(this).toggleClass("active");
+            $("body").toggleClass("fixing");
+        });
+    });
+    </script>
+    
+    </head>
+    <body>
+            <!-- webフォント -->
+<script
+    src                       = "https://font.realtype.jp/api/script/v4"
+    data-rt-user              = "GNBcJ26oceJJeERcKWLJHCPjXG0iWWiZ"
+    data-rt-input             = true
+></script>
+    <!-- webフォント終わり -->
+
+
+
+<div class="aso_right_menus">
+            <div class="">
+                <label for="input-pchumbmenu" id="humb-open" class="humb-icon">                
+                    <div class="icon-wrap">
+                        <span class="menu-bars"></span>
+                        <span class="menu-bars"></span>
+                        <span class="icon-menu"></span>
+                        </div>
+                </label>
+                </div>
+    <div class="pick_brand">
+        <label for="pickup_open">
+            <div class="pickup">
+                <input type="checkbox" id="pickup_open" class="pick_brandmenu">                <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_32.jpg" alt="" class="pick_brandbutton">
+
+                <div class="pickup_menu" id="pickup_menu">
+                    <div class="pick6menus">
+                        <div class="pick" id="pick_01">
+                            <div class="pick_link"></div>
+                           <div class="pick_copy">
+                               
+                            </div>                            
+                            <div class="pick_img">
+                            </div>                            <div class="pick_image_after"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_42.png"></div>
+<div class="pick_tag">
+                            </div>
+                            <div class="pick_name">
+                            </div>
+                        </div>
+                        <div class="pick" id="pick_02">
+                            <div class="pick_link"></div>
+                            <div class="pick_copy">                           
+                            </div>
+                            <div class="pick_img">
+                            </div>                            <div class="pick_image_after"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_42.png"></div>
+<div class="pick_tag">
+                            </div>
+                            <div class="pick_name">
+                            </div>
+                        </div>
+                        <div class="pick" id="pick_03">
+                            <div class="pick_link"></div>
+                            <div class="pick_copy">                           
+                            </div>
+                            <div class="pick_img">
+                            </div>                            <div class="pick_image_after"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_42.png"></div>
+<div class="pick_tag">
+                            </div>
+                            <div class="pick_name">
+                            </div>
+                        </div>
+                        <div class="pick" id="pick_04">
+                            <div class="pick_link"></div>
+                            <div class="pick_copy">                           
+                            </div>
+                            <div class="pick_img">
+                            </div>                            <div class="pick_image_after"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_42.png"></div>
+<div class="pick_tag">
+                            </div>
+                            <div class="pick_name">
+                            </div>
+                        </div>
+                        <div class="pick" id="pick_05">
+                            <div class="pick_link"></div>
+                            <div class="pick_copy">
+                            </div>                            
+                            <div class="pick_img">
+                            </div>                            <div class="pick_image_after"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_42.png"></div>
+<div class="pick_tag">
+                            </div>
+                            <div class="pick_name">
+                            </div>
+                        </div>
+                        <div class="pick" id="pick_06">
+                            <div class="pick_link"></div>
+                            <div class="pick_copy">                           
+                            </div>
+                            <div class="pick_img">
+                            </div>                            <div class="pick_image_after"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_42.png"></div>
+<div class="pick_tag">
+                            </div>
+                            <div class="pick_name">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </label>
+        <label for="brand_open">
+            <div class="brand">
+                <input type="checkbox" id="brand_open" class="pick_brandmenu">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_33.jpg" alt="" class="pick_brandbutton">
+                <div class="brand_menu" id="brand_menu">
+                    <a href=""><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_36.jpg" alt=""></a>
+                    <a href=""><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_37.jpg" alt=""></a>
+                    <a href=""><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_38.jpg" alt=""></a>
+                    <a href=""><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_39.jpg" alt=""></a>
+                    <a href=""><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_40.jpg" alt=""></a>
+                    <a href=""><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_41.jpg" alt=""></a>
+                </div>
+            </div>
+
+            
+        </label>
+    </div>
+            </div>
+
+    <div id="aso_pcmenu" class="pconly">
+    </div>
+    </body>
+
+</html>
