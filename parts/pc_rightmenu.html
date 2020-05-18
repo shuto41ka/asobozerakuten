@@ -43,6 +43,15 @@
             $(this).toggleClass("active");
             $("body").toggleClass("fixing");
         });
+var nowchecked = $('input[name=pick_brand]:checked').val();
+$('input[name=pick_brand]').click(function(){
+	if($(this).val() == nowchecked) {
+		$(this).prop('checked', false);
+		nowchecked = false;
+	} else {
+		nowchecked = $(this).val();
+	}
+});        
     });
     </script>
     
@@ -71,7 +80,7 @@
     <div class="pick_brand">
         <label for="pickup_open">
             <div class="pickup">
-                <input type="checkbox" id="pickup_open" class="pick_brandmenu">                <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_32.jpg" alt="" class="pick_brandbutton">
+                <input type="radio" id="pickup_open" class="pick_brandmenu" name="pick_brand">                <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_32.jpg" alt="" class="pick_brandbutton">
 
                 <div class="pickup_menu" id="pickup_menu">
                     <div class="pick6menus">
@@ -148,7 +157,7 @@
         </label>
         <label for="brand_open">
             <div class="brand">
-                <input type="checkbox" id="brand_open" class="pick_brandmenu">
+                <input type="radio" id="brand_open" class="pick_brandmenu" name="pick_brand">
                 <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_33.jpg" alt="" class="pick_brandbutton">
                 <div class="brand_menu" id="brand_menu">
                     <a href=""><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_36.jpg" alt=""></a>

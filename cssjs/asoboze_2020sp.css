@@ -655,7 +655,7 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
     left: 0;
 }
     .nontablet {
-        height: 420px;
+        height: 0px;
     }
 }
 @media screen and (orientation: portrait) and (min-width: 600px) {

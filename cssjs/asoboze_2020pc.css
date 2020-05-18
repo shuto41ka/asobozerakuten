@@ -354,11 +354,12 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         text-align: center;
         width: 100%;
         line-height: 2.6vw;
-        transition-duration: .3s;
+        transition: .3s ease-in-out;
         box-sizing: border-box;
         font-size: 1.3vw;
     }
     .kuwashiku a:hover {
+        transition: .3s ease-in-out;
         background-color: #ffffff;
         color: #666464;
         border: 1px solid #666464;
@@ -430,7 +431,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         box-sizing: border-box;
     }
         .grid_1line .text {
-            padding:0 2% 23px;
+            padding: 10px 2% 23px;
             width: 70%;
             margin-left: 30%;
             box-sizing: border-box;
@@ -444,10 +445,13 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             width: auto;
             display: block;
             float: left;
-            margin: 2vh 5px 5px 0;
+            margin: 40px 5px 5px 0;
             padding-left: 3%;
         }
-        .grid_title {
+    .grid_1line .grid_tag img {
+    margin-top: 35px;
+    }
+    .grid_title {
    font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
             padding-bottom: 8px;
             line-height: 1.8em;
@@ -456,7 +460,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             font-size: 1.4vw;
         }
         .grid_2line .text {
-            padding: 0 5% 0 5%;
+            padding: 7px 5% 0 5%;
         }
         .grid_1line .grid_title {
             font-size: 1.8vw;
@@ -738,17 +742,17 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             line-height: 50px;
     }
 ::placeholder {
-  color: #eeeeee;
+  color: #B5B5B6;
 }
 
 /* IE */
 :-ms-input-placeholder {
-  color: #eeeeee;
+  color: #B5B5B6;
 }
 
 /* Edge */
 ::-ms-input-placeholder {
-  color: #eeeeee;
+  color: #B5B5B6;
 }
 .kensaku2textspace:focus {
     outline: none;
@@ -819,13 +823,13 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         position: relative;
     }
         .aso_right_menus .humb-icon {
-            width: 115px;
-            height: 115px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             background-color: #b49c92;
             position: absolute;
-            top: 10vh;
-            right: 3vw;
+            top: 50px;
+            right: 30px;
             left: auto;
             z-index: 10000;
                 cursor: pointer;
@@ -844,10 +848,10 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             border-radius: 3px;
         }
         .aso_right_menus .humb-icon .menu-bars:nth-of-type(1){
-            top: 40px;
+            top: 30px;
         }
         .aso_right_menus .humb-icon .menu-bars:nth-of-type(2) {
-            top: 60px;
+            top: 50px;
         }
         .aso_right_menus .humb-icon,.humb-icon .menu-bars {
             display: inline-block;
@@ -885,10 +889,10 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         .pick_brand {
             display: block;
             position: fixed;
-            right: 0;
-            top: 25vh;
-            width: 163px;
-            height: 200px;
+            right: 20px;
+            top: 180px;
+            width: 120px;
+            height: auto;
             box-sizing: border-box;
         }
         .pick_brand div {
@@ -920,12 +924,12 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         .pick_brandmenu {
             display: none;
         }
-input[type="checkbox"]#pickup_open ~ div#pickup_menu { 
+input[type="radio"]#pickup_open ~ div#pickup_menu { 
     transition: 0.5s ease-in-out;
     top: 0;
     right: -1000px;
             width: 700px;
-            height: 700px;
+            height: auto;
             padding: 30px;
             position: absolute;
             border: 2px solid #c9caca;
@@ -933,19 +937,19 @@ input[type="checkbox"]#pickup_open ~ div#pickup_menu {
 }
 
 /*iframeを格納(オープン時)*/
-input[type="checkbox"]#pickup_open:checked ~ div#pickup_menu {
+input[type="radio"]#pickup_open:checked ~ div#pickup_menu {
     right: 170px;
 }
-        input[type="checkbox"]#pickup_open:checked + img {
+        input[type="radio"]#pickup_open:checked + img {
             opacity: 0;
         }        
-input[type="checkbox"]#brand_open ~ #brand_menu { 
+input[type="radio"]#brand_open ~ #brand_menu { 
     transition: 0.5s ease-in-out;
     top: 0;
-    right: -800px;
+    right: -100vw;
             width: 800px;
             height: auto;
-            padding: 30px 67px 67px;
+            padding: 30px 67px;
     display: inline-grid;
             grid-template-rows: auto auto auto;
             grid-template-columns: auto auto;
@@ -954,10 +958,10 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
             border: 2px solid #c9caca;
     z-index: -1;
 }
-        input[type="checkbox"]#brand_open:checked ~ #brand_menu {
+        input[type="radio"]#brand_open:checked ~ #brand_menu {
             right: 180px
         }
-        input[type="checkbox"]#brand_open:checked + img {
+        input[type="radio"]#brand_open:checked + img {
             opacity: 0;
         }
         .pick_brand .pickup_menu .pick6menus {
@@ -1005,7 +1009,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         .pick_brand .pickup .pick_copy div {
             width: 100%;
             height: 50%;
-            background: url(https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_43.png);
+            background: url(https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_46.png);
             background-size: 100% auto;
             background-position: top;
             background-repeat: no-repeat;
@@ -1045,6 +1049,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         .pick_brand .pickup .pick_name {
             padding: 0 5px 5px;
             font-size: 0.8em;
+            line-height: 1.5em;
         }        
         .pick_image_after {
             position: relative;
