@@ -56,7 +56,9 @@
         padding-top: 70px;
     }
     .aso_pcleft .pcleft_sns {
-        padding-top: 45vh;
+        position: absolute;
+        bottom: 13vh;
+
     }
     .aso_pcleft .pcleft_sns img {
         padding-top: 20px;
@@ -145,18 +147,19 @@
     .jump-dots {
         position: absolute;
         left: 40%;
-        top: 40vh;
+        top: 30vh;
         width: 1em;
         height: auto;
         line-height: 2em;
     }
     .right-icons {
         position: absolute;
-        top: 75vh;
         left: 35%;
+        bottom: calc(13vh - 1px);
     }
     .right-icons input.btn {
         width: 36px;
+        border: none;
     }
     .right-cart a img {
         width: 32px;
@@ -556,7 +559,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         width: 100%;
             padding: 3vh 0;
             box-sizing: border-box;
-            border-right: 2px solid #dacec8;
+            border-right: 1px solid #dacec8;
     }
         .contentbutton a {
             width: 20%;
@@ -565,7 +568,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         }
     .contentbutton a:nth-child(1) {
         margin-left: 11vw;
-        border-left: 2px solid #dacec8;
+        border-left: 1px solid #dacec8;
     }
     .contentbutton a:nth-child(5) {
         width: 90%;
@@ -616,7 +619,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             background-repeat: no-repeat;
             background-position: left top;
             background-size: auto 30%;
-            margin: 0 0 0 40px;
+            margin: 0 0 0 20px;
         }
         .rank_4lines img {
             width: 80%;
@@ -657,6 +660,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             position: absolute;
             right: 10vw;
             bottom: 0;
+            font-size: 1.2vw;
         }
         .swiper-slide img {
             width: 100%;
@@ -1111,5 +1115,30 @@ input[type="radio"]#brand_open ~ #brand_menu {
         }
         .topthree {
             background-size: 40vw auto;
+        }
+        .humb-icon {
+            left: 20%;
+        }
+        .jump-dots {
+            left: 30%;
+        }
+        .right-icons {
+            left: 30%;
+        }
+        .aso_pcleft img {
+            padding-left: 20%;
+        }
+        .aso_pcleft .pcleft_sns .sns_youtube img {
+            padding-left: 15%;
+        }
+        .aso_pcleft:first-child > a:first-child img {
+            padding-left: 30%;
+            width: 40%;
+        }
+        .right-cart a img {
+            width: 28px;
+        }
+        .right-icons input.btn {
+            width: 30px;
         }
     }

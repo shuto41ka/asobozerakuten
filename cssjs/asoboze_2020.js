@@ -1,11 +1,15 @@
 // JavaScript Document
 $(function() {
+    $("#pcIndexRight").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pcindex_rightmenu.html");
+    $("#pc_toplinebanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_toplinebanner.html");
+    $("#pcleftbanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_leftbanner.html")
 
-    $("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020_beta.html .topthree2");
-    $("#pcthreemenu3").load("https://www.rakuten.ne.jp/gold/asoboze/index2020_beta.html .topthree3");
-	$("#othergallery").load("https://www.rakuten.ne.jp/gold/asoboze/gallery/parts/othergallery.html .swiper-container");
+    $("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .topthree2");
+    $("#pcthreemenu3").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .topthree3");
     $("#spheader").load("https://www.rakuten.ne.jp/gold/asoboze/parts/header_aso.html");
-    $("#footer_aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
+    $("#footer-aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
+        $("#styles").load("https://www.rakuten.ne.jp/gold/asoboze/parts/othergallery.html");
+        });
 });
 $(function(){
   $('.effect .hop').css({"opacity":"0", "padding-top":"10px"});
