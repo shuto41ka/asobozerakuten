@@ -181,11 +181,6 @@ input[type="checkbox"]#input-pchumbmenu + #pcmenu_aso {
     right: -100%;
     z-index: 99;
 }
-    @media screen and (max-width:1300px) {
-        .pcmenu_aso {
-            height: 100%;
-        }
-    }
 
 /*iframeを格納(オープン時)*/
 input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
@@ -559,7 +554,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         }
     .contentbutton a img {
         width: 100%;
-            padding: 3vh 1vw;
+            padding: 3vh 0;
             box-sizing: border-box;
             border-right: 2px solid #dacec8;
     }
@@ -582,7 +577,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
     }
         .contentbutton .contentsns {
             width: 100%;
-            padding: 5vh 4% 2vh 8%;
+            padding: 5vh 2% 2vh 8%;
         }
     .contentbutton .contentsns a {
             margin: 0;
@@ -739,7 +734,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         color: #ffffff;
             background-color: #666464;
             margin-bottom: 30px;
-            line-height: 50px;
+            line-height: 40px;
     }
 ::placeholder {
   color: #B5B5B6;
@@ -1086,25 +1081,35 @@ input[type="radio"]#brand_open ~ #brand_menu {
             grid-column: 3;
         }
 }
-    @media screen and (min-width:760px) and　(max-width:1200px) {
+    @media screen and (orientation: landscape) and (max-width: 1200px) {
+        .pcmenu_aso {
+            height: 100%;
+        }
         .text .disc {
-            margin-left: 0;
-              text-shadow:1px 1px 0 #FFF, -1px -1px 0 #FFF,
-              -1px 1px 0 #FFF, 1px -1px 0 #FFF,
-              0px 1px 0 #FFF,  0-1px 0 #FFF,
-              -1px 0 0 #FFF, 1px 0 0 #FFF;
+            margin-left: 10%;
+            display: inline-block;
         }
         .topthree .text {
-            left: 75vw;
+            left: 60vw;
+            width: 32vw;
+            height: 60vw;
         }
         .text .title {
-            left: 40%;
+            left: 50%;
         }
         .topthree .text::before {
-            left: 40%;
+            left: 50%;
         }
         .kuwashiku {
-            left: 40%;
+            left: 50%;
+        }
+        .topthree a {
+            width: 60vw;
+        }
+        .kuwashiku a {
+            width: 100%;
+        }
+        .topthree {
+            background-size: 40vw auto;
         }
     }
-
