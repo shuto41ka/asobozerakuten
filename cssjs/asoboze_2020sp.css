@@ -233,7 +233,7 @@ a img {
             clear: both;
         }
         .grid_1line .text {
-            padding:0 2% 23px;
+            padding:0 2% 40px;
         }
         .grid_1line .grid_tag {
             padding: 0 2%;
@@ -661,12 +661,40 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
 @media screen and (orientation: portrait) and (min-width: 600px) {
     .btn {
         right: 80px;
+        width: 30px;
+        top: 18px;
+    }
+    .humb-icon {
+        width: 32px;
+        height: 24px;
+        top: 21px;
+        right: 30px;
+        
+    }
+    .humb-icon .icon-bars:nth-of-type(2) {
+        top: 11px;
+    }
+    .icon-wrap.active .icon-bars:nth-of-type(3) {
+        transform: translateY(-11px) rotate(-45deg);
+    }
+    .icon-wrap.active .icon-bars:nth-of-type(1) {
+        transform: translateY(11px) rotate(45deg);
     }
     .index_grid {
         padding-top: 3%;
+        padding-bottom: 0;
+    }
+    .index_grid .grid_2line {
+        padding-bottom: 3%;
+    }
+    .grid_text {
+        padding-bottom: 30px;
     }
     .asomidashi_eng {
         font-size: 20px;
+    }
+    .asomidashi_jpn {
+        font-size: 14px;
     }
     .rank_4lines .rank {
         background-size: auto 40px;
@@ -685,6 +713,8 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
     }
     input[type="checkbox"]#input-humbmenu + #spmenu_aso {
         width: 60%;
+        max-width: 300px;
+        top: 70px;
     }
     .nontablet {
         height: 0;
@@ -693,16 +723,19 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         width: 50%;
         float: left;
         padding-bottom: 5%;
+        margin-bottom: 100px;
+        padding-top: 3%;
     }
     .price_aso {
         margin: 0;
         width: 50%;
         display: block;
-        padding-top: 2%;
+        padding-top: 3%;
         float: left;
     }
     .contents_aso {
         clear: both;
+        margin-top: 43px;
     }
     .contents_aso .contentbutton.sponly {
         display: none;
@@ -715,22 +748,24 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         }
     .contentbutton a img {
         width: 100%;
-            padding: 3vh 1vw;
+            padding: 0 0 1vh;
             box-sizing: border-box;
-            border-right: 2px solid #dacec8;
+            border-right: 1px solid #dacec8;
     }
         .contentbutton a {
-            width: 20%;
+            width: 24%;
             display: inline-block;
             float: left;
+            margin-top: 15px;
         }
     .contentbutton a:nth-child(1) {
-        margin-left: 11vw;
-        border-left: 2px solid #dacec8;
+        margin-left: 2%;
+        border-left: 1px solid #dacec8;
+        box-sizing: border-box;
     }
     .contentbutton a:nth-child(5) {
-        width: 90%;
-        margin: 5vh 2% 2vh 8%;
+        width: 95%;
+        margin: 1vh 2.5% 0;
         clear: both;
     }
     .contentbutton a:nth-child(5) img {
@@ -738,7 +773,7 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
     }
         .contentbutton .contentsns {
             width: 100%;
-            padding: 5vh 4% 2vh 8%;
+            padding: 1vh 2.5%;
         }
     .contentbutton .contentsns a {
             margin: 0;
@@ -763,5 +798,39 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
     }
     .guide_aso .guide_grids .guide_grid {
         width: 25%;
+    }
+    .topthree .text .title {
+        font-size: 30px;
+    }
+    .topthree .text {
+        height: auto;
+        margin-bottom: 10%;
+    }
+    .pricebutton a img {
+         width: 80%;
+        padding: 6px 8%;
+    }
+    .pricebutton a:first-child img {
+        padding-top: 15px;
+    }
+    .cate_image {
+        margin-bottom: 5px;
+    }
+    .spheader_aso {
+        height: 70px;
+    }
+    .headtopimg {
+        width: 120px;
+        padding: 20px 30px;
+    }
+    .grid_1line {
+        padding: 1% 2% 0;
+    }
+    .space.first {
+        height: 45px;
+    }
+    .guide_grids {
+        width: 95%;
+        margin: 0 2.5%;
     }
 }
