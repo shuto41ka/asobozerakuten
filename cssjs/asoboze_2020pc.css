@@ -36,7 +36,7 @@
         float: left;
     }
     .container_aso {
-        width: 92%;
+        width: 94%;
         box-sizing: border-box;
         margin-left: 0;
     }
@@ -76,7 +76,7 @@
         position: fixed;
         right: 0;
         top: 0;
-        width: 8%;
+        width: 6%;
         height: 100vh;
         background-color: #ffffff;
         border-left: 1px solid #b5b5b6;
@@ -90,7 +90,9 @@
             height: 29px;
             position: absolute;
             top: 5vh;
-            left: 27%;
+            left: 50%;
+                transform: translateX(-50%);
+                -webkit-transform: translateX(-50%);
             background-color: #ffffff;
                 cursor: pointer;
         }
@@ -146,20 +148,29 @@
     }
     .jump-dots {
         position: absolute;
-        left: 40%;
+        left: 50%;
+        transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+        
         top: 30vh;
-        width: 1em;
+        width: min-content;
         height: auto;
         line-height: 2em;
     }
     .right-icons {
         position: absolute;
-        left: 35%;
+        left: 50%;
+        transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+        
         bottom: calc(13vh - 1px);
     }
     .right-icons input.btn {
-        width: 36px;
+        width: 30px;
         border: none;
+        padding-left: 1px;
     }
     .right-cart a img {
         width: 32px;
@@ -258,7 +269,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         text-align: center;
         box-sizing: border-box;
         padding-top: 25vh;
-        width: calc(92vw - 95vh);
+        width: calc(94vw - 95vh);
         display: block;
         left: 95vh;
 
@@ -272,7 +283,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
     }
     .topthree {
         width: 100%;
-        background-size: calc(92vw - 95vh) auto;
+        background-size: calc(94vw - 95vh) auto;
         background-position: bottom right;
         background-repeat: no-repeat;
     }
@@ -287,12 +298,13 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
     }
     .topthree .text::before {
         position: absolute;
-        top: 15vh; 
+        top: 18vh; 
         left: 50%;
         transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);        
         color: #b49d92;
+        font-size: 1.6vw;
     }
     .popular .text::before {
         content: "Trend";
@@ -307,7 +319,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         font-size: 2.5vw;
         line-height: 1.3em;
         position: absolute;
-        top: 20vh;
+        top: 25vh;
         left: 50%;
     transform: translateX(-50%);
    font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;                
@@ -323,7 +335,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         text-align: left;
         display: block;
         position: absolute;
-        top: 35vh;
+        top: 40vh;
         width: max-content;
         margin-left: 10%;
         left: 40%;
@@ -337,7 +349,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         width: 15vw;
 
         height: 2.6vw;
-        top: 60vh;
+        top: 70vh;
         left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -369,7 +381,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         }
         .index_grid {
             width: 100%;
-            padding:12% 6% 6%;
+            padding:12% 2% 6% 6%;
             display: inline-grid;
             box-sizing: border-box;
             grid-template-rows: auto;
@@ -443,7 +455,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             width: auto;
             display: block;
             float: left;
-            margin: 40px 5px 5px 0;
+            margin: 3.5vh 5px 5px 0;
             padding-left: 3%;
         }
     .grid_1line .grid_tag img {
@@ -492,7 +504,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
     .footer_aso {
         display: inline-grid;
         grid-template-rows: auto;
-        grid-template-columns: 55vw 37vw 8vw;
+        grid-template-columns: 55vw 39vw 6vw;
     }
     .category_aso {
         grid-column: 1 / 2;
@@ -529,7 +541,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             padding: 5% 15% 0 15%;
         }
         .cate_image .cate_text {
-            font-size: 10.67px;
+            font-size: 12px;
             text-align: center;
             padding:0.5em 0 5vh 0;
         }
@@ -716,14 +728,14 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             font-size: 8px;
             display: inline-block;
             vertical-align: bottom;
-            padding-top: 35px;
+            padding-top: 50px;
             width: 100%;
             padding-bottom: 10px;
         }
     
         .kensaku2box .kensaku2textspace {
             position: absolute;
-            top: 3.3vh;
+            top: 30px;
             right: 10vw;
         width: 230px;
         height: 40px;
@@ -758,7 +770,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
 }
         .kensaku2box .kensaku2image {
         position: absolute;
-        top: 4.4vh;
+        top: 40px;
         width: 20px;
         right: 12vw;
         z-index: 20;
@@ -766,7 +778,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         }
     .footercate {
         width: 80%;
-        margin: 0 10% 5vh;
+        margin: 0 10vh 5vh 10%;
         text-align: center;
         font-size: 1vw;
         color: #ffffff;
@@ -785,7 +797,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         display: inline-grid;
         grid-template-rows: auto;
         grid-template-columns: 2fr 2fr 1fr;
-        grid-gap: 5vw;;
+        grid-gap: 3vw 5vw;;
         color: #ffffff;
     }
         .contents_border {
@@ -1085,7 +1097,7 @@ input[type="radio"]#brand_open ~ #brand_menu {
             grid-column: 3;
         }
 }
-    @media screen and (orientation: landscape) and (max-width: 1200px) {
+    @media screen and (orientation: landscape) and (max-aspect-ratio: 8 / 5) {
         .pcmenu_aso {
             height: 100%;
         }
@@ -1095,7 +1107,7 @@ input[type="radio"]#brand_open ~ #brand_menu {
         }
         .topthree .text {
             left: 60vw;
-            width: 32vw;
+            width: 34vw;
             height: 60vw;
         }
         .text .title {
@@ -1106,6 +1118,7 @@ input[type="radio"]#brand_open ~ #brand_menu {
         }
         .kuwashiku {
             left: 50%;
+            top: 60vh;
         }
         .topthree a {
             width: 60vw;
@@ -1117,13 +1130,8 @@ input[type="radio"]#brand_open ~ #brand_menu {
             background-size: 40vw auto;
         }
         .humb-icon {
-            left: 20%;
-        }
-        .jump-dots {
-            left: 30%;
-        }
-        .right-icons {
-            left: 30%;
+            width: 30px;
+            height: 25px;
         }
         .aso_pcleft img {
             padding-left: 20%;
@@ -1135,10 +1143,31 @@ input[type="radio"]#brand_open ~ #brand_menu {
             padding-left: 30%;
             width: 40%;
         }
-        .right-cart a img {
-            width: 28px;
+        .guide_grids {
+            width: 90%;
         }
-        .right-icons input.btn {
-            width: 30px;
+        .cate_image .cate_text {
+            font-size: 10.67px;
         }
+        .humb-icon .icon-bars:nth-of-type(2) {
+            top: 11px;
+        }
+        .icon-wrap.active .icon-bars:nth-of-type(1) {
+  -webkit-transform: translateY(11px) rotate(-45deg);
+  transform: translateY(11px) rotate(-45deg);
+}
+.icon-wrap.active .icon-bars:nth-of-type(3) {
+  -webkit-transform: translateY(-11px) rotate(45deg);
+  transform: translateY(-11px) rotate(45deg);
+}
+        .pc4menu-grid{
+            font-size: 1vw;
+        }
+        .kensaku2box .kensaku2textspace {
+            height: 30px;
+        }        
+        .kensaku2box .kensaku2image {
+            top: 37px;
+            width: 15px;
+        }        
     }
