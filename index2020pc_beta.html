@@ -55,7 +55,7 @@ $(function() {
     $("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .topthree2");
     $("#pcthreemenu3").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .topthree3");
     $("#spheader").load("https://www.rakuten.ne.jp/gold/asoboze/parts/header_aso.html");
-    $("#footer_aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
+    $("#footer-aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
         $("#styles").load("https://www.rakuten.ne.jp/gold/asoboze/parts/othergallery.html");
     $(".icon-wrap").click(function() {
             $(this).toggleClass("active");
@@ -239,7 +239,7 @@ $(window).scroll(function(){
                         お得なアウトレット商品が入荷しました。
                   </div>
                     <div class="grid_text hop">
-                        使用に問題がない程度の外観の傷や新品未使用の旧モデル製品などをお得にゲットできるアウトレット商品をピックアップしました。
+                        使用に問題がない程度の外観の傷や新品未使用の旧モデル製品などをお得にゲットできるアウトレット商品をピックアップしました。<span class="product_name">アウトレットセール</span>
 
                         
                     </div>                    
@@ -469,7 +469,7 @@ $(window).scroll(function(){
       </div>
     </div>
     <div style="width: 100%;" class="sponly nontablet"></div>
-<div id="footer_aso" class="footer_aso">
+<div id="footer-aso" class="footer_aso">
     </div>
     <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
     
@@ -494,18 +494,10 @@ $(function(){
     
         $(window).on('load resize',function(){
   var pos01 = 0;
-  var pos02 = Math.round($("#dots_2").offset().top);
-  var pos03 = Math.round($("#pcthreemenu2").offset().top);
-  var pos04 = Math.round($("#pcthreemenu3").offset().top);
-  var pos05 = Math.round($("#dots_3").offset().top);
-            console.log(pos02);
-            console.log(pos03);
-            console.log(pos04);
-            console.log(pos05);
-            pos02 -= 200;
-            pos03 -= 400;
-            pos04 -= 1600;
-            pos05 -= 1300;
+  var pos02 = Math.round($("#pcthreemenu2").offset().top);
+  var pos03 = Math.round($("#pcthreemenu3").offset().top);
+  var pos04 = Math.round($("#footer_aso").offset().top);
+  var pos05 = Math.round($("#contents_aso").offset().top);
             console.log(pos02);
             console.log(pos03);
             console.log(pos04);
