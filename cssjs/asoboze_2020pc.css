@@ -24,8 +24,8 @@
     .aso_linebanner {
         position: fixed;
         top: 0;
-        left: 5%;
-        width: 87%;
+        left: 5.64%;
+        width: 86.48%;
         z-index: 10000;
         height: auto;
     }
@@ -455,7 +455,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             width: auto;
             display: block;
             float: left;
-            margin: 3.5vh 5px 5px 0;
+            margin: 2vw 5px 5px 0;
             padding-left: 3%;
         }
     .grid_1line .grid_tag img {
@@ -840,7 +840,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             background-color: #b49c92;
             position: absolute;
             top: 50px;
-            right: 30px;
+            right: -19px;
             left: auto;
             z-index: 10000;
                 cursor: pointer;
@@ -939,7 +939,7 @@ input[type="radio"]#pickup_open ~ div#pickup_menu {
     transition: 0.5s ease-in-out;
     top: 0;
     right: -1000px;
-            width: 700px;
+            width: auto;
             height: auto;
             padding: 30px;
             position: absolute;
@@ -949,7 +949,7 @@ input[type="radio"]#pickup_open ~ div#pickup_menu {
 
 /*iframeを格納(オープン時)*/
 input[type="radio"]#pickup_open:checked ~ div#pickup_menu {
-    right: 170px;
+    right: 140px;
 }
         input[type="radio"]#pickup_open:checked + img {
             opacity: 0;
@@ -970,7 +970,7 @@ input[type="radio"]#brand_open ~ #brand_menu {
     z-index: -1;
 }
         input[type="radio"]#brand_open:checked ~ #brand_menu {
-            right: 180px
+            right: 150px
         }
         input[type="radio"]#brand_open:checked + img {
             opacity: 0;
@@ -1165,6 +1165,7 @@ input[type="radio"]#brand_open ~ #brand_menu {
         }
         .kensaku2box .kensaku2textspace {
             height: 30px;
+            line-height: 30px;
         }        
         .kensaku2box .kensaku2image {
             top: 37px;
