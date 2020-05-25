@@ -5,6 +5,9 @@
             .pconly {
                 display: none;
             }
+    .sponly {
+        display: block;
+    }
     
         div,p {
             margin: 0;

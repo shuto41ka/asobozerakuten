@@ -39,10 +39,7 @@
         $("#pick_05 > .pick_name").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(5) > .text > .grid_text > .product_name");
         $("#pick_06 > .pick_name").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .index_grid > .grid_2line:eq(6) > .text > .grid_text > .product_name");
 
-        $(".icon-wrap").click(function() {
-            $(this).toggleClass("active");
-            $("body").toggleClass("fixing");
-        });
+
 var nowchecked = $('input[name=pick_brand]:checked').val();
 $('input[name=pick_brand]').click(function(){
 	if($(this).val() == nowchecked) {

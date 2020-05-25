@@ -1380,7 +1380,7 @@ html, body{
 
 	color:#494949;
 
-	padding:30px 45px;
+
 
 }
 
@@ -1557,7 +1557,7 @@ html, body{
 	width:90%;
 }
 .gallerytitle p {
-	font-size:40px;
+	font-size:32px;
 	margin-bottom:0;
 }
 .gallerysub p {
@@ -1570,7 +1570,7 @@ html, body{
     line-height: 30px;
 }
 .gallerytitle div {
-	font-size:40px;
+	font-size:32px;
 	margin-bottom:0;
 }
 .gallerysub div {
@@ -1598,13 +1598,14 @@ table.gallerytable td img{
 	float:left;
 	margin-bottom:5%;
 	box-sizing: border-box;
+    clear: both;
 }
 .galleryshohin img{
 	width:100%;
 	box-sizing: border-box;
 }
 .gallerylink{
-	width:100%;
+	width:50%;
 	float:right;
 	margin:0 auto;
 	padding:5% 0 5% 5%;
@@ -1618,8 +1619,8 @@ table.gallerytable td img{
 .gallerylink div {
     line-height: 24px;
 }
-.gallerylink img{
-	width:180px;
+.gallerylink a img{
+	width:180px !important;
 }
 img[id*="large"]{
 	display:block;
@@ -1645,6 +1646,7 @@ img[id*="large"]{
 	top:0;
 	left:0;
 	width:100%;
+     z-index: 100000;
 	background-color:#fff;
 }
 

@@ -17,15 +17,15 @@
     <title>革製品とビジネスバッグの通販サイト | asoboze (アソボーゼ)楽天市場店｜</title>
 <meta name="description" content="革製品とビジネスバッグの通販サイトasoboze楽天市場店です。ブリーフケース、クラッチバッグなどメンズ向けのカバンからコインケース、ブックカバーなどこだわりの革小物を各種揃えています。" />
 <meta name="keywords" content="ビジネスバッグ,メンズ,ブリーフケース,カバン,鞄,セカンドバッグ,ガーメントバッグ,財布,小銭入れ,コインケース,ブックカバー,アタッシュケース,ダレスバッグ" />
-    <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta.css"  media="screen and (min-width:1200px)"/>
+    <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/common1200.css"  media="screen and (orientation: landscape) and (min-width: 1200px)"/>
+<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta.css"  media="screen and (min-width:1200px)"/>
 <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta2.css"  media="screen and (max-width:1199px) and (min-width:760px)"/>
-<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta3.css"  media="screen and (max-width:759px)"/>
+<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/gallery_beta3.css"  media="screen and (max-width:759px)"/><link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/common760.css"  media="screen and (min-width: 760px) and (max-width: 1199px) and (orientation: landscape)"/>
+<link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/common_sp.css"  media="screen and (orientation: portrait)"/>
 <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020sp.css" media="screen and (orientation: portrait)" />
     <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020pc.css" media="screen and (orientation: landscape)" />    
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> 
     <script src="https://www.rakuten.ne.jp/gold/asoboze/jquery-3.2.1.min.js"></script>    
 
 <script type="text/javascript">
@@ -59,10 +59,6 @@ $("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta
     $("#spheader").load("https://www.rakuten.ne.jp/gold/asoboze/parts/header_aso.html");
     $("#footer-aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
         $("#styles").load("https://www.rakuten.ne.jp/gold/asoboze/parts/othergallery.html");
-    $(".icon-wrap").click(function() {
-            $(this).toggleClass("active");
-            $("body").toggleClass("fixing");
-        });
 
 });
 </script>
@@ -77,11 +73,10 @@ $("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta
 ></script>
     <!-- webフォント終わり -->
 
-<div class="ac-container2 pconly" id="sidenavi">
+<div class="pconly" id="pcleftbanner">
   
-</div>
-	<div id="pcrightmenu" class="pconly">
-	</div>
+</div><div class="pconly" id="pcrightmenu"></div>
+
 <div id="spheader" class="sponly spheader_aso">
 </div>
 <div style="width:auto; height:28px;" class="pconly"></div>
@@ -497,33 +492,12 @@ back
 <!-- ここからその他のギャラリー　-->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
-<script type="text/javascript">
-    var mySwiper = new Swiper ('.swiper-container', {
-      loop: true,
-      slidesPerView: 4,
-      spaceBetween: 10,
-	  autoplay: true,
-	  speed: 6000,
-      centeredSlides : true,
-      pagination: '.swiper-pagination',
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-	  preventClicks: false,
-	  preventClicksPropagation: false, 
-      breakpoints: {
-        759: {
-          slidesPerView: 3,
-          spaceBetween: 0,
-		  speed: 3000,
-		  autoplay: true,
-        }
-      }
-    });
-	</script>
+
 </div>
 
 
     <div id="footer-aso" class="footer_aso"></div>
 
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 </body>
 </html>

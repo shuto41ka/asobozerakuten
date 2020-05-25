@@ -23,6 +23,10 @@ $('.my-parts').click(function(e) {
 	$('.my-parts').hide();	$('.swiper-wrapper').show();
         $('.para').show();
     $("#spheader").show();
+$('#humb-open').show();
+$('#aso_pcleft').show();
+$('#pc_toplinebanner').show();
+
 
 	var windowWidth = $(window).width();
 	var widthBPoint = 760;
@@ -34,6 +38,9 @@ $('.my-parts').click(function(e) {
 $('.gallerytable').click(function(e) {
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 	$('#sidenavi').hide();
@@ -44,6 +51,9 @@ $('#small1').click(function(e) {
 	$('#comment1').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -52,6 +62,9 @@ $('#small2').click(function(e) {
 	$('#comment2').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -60,6 +73,9 @@ $('#small3').click(function(e) {
 	$('#comment3').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -68,6 +84,9 @@ $('#small4').click(function(e) {
 	$('#comment4').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -76,6 +95,9 @@ $('#small5').click(function(e) {
 	$('#comment5').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -84,6 +106,9 @@ $('#small6').click(function(e) {
 	$('#comment6').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -92,6 +117,9 @@ $('#small7').click(function(e) {
 	$('#comment7').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -100,6 +128,9 @@ $('#small8').click(function(e) {
 	$('#comment8').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -108,6 +139,9 @@ $('#small9').click(function(e) {
 	$('#comment9').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -116,6 +150,9 @@ $('#small10').click(function(e) {
 	$('#comment10').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -124,6 +161,9 @@ $('#small11').click(function(e) {
 	$('#comment11').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -132,6 +172,9 @@ $('#small12').click(function(e) {
 	$('#comment12').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -140,6 +183,9 @@ $('#small13').click(function(e) {
 	$('#comment13').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -148,6 +194,9 @@ $('#small14').click(function(e) {
 	$('#comment14').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -156,6 +205,9 @@ $('#small15').click(function(e) {
 	$('#comment15').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -164,6 +216,9 @@ $('#small16').click(function(e) {
 	$('#comment16').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -172,6 +227,9 @@ $('#small17').click(function(e) {
 	$('#comment17').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -180,6 +238,9 @@ $('#small18').click(function(e) {
 	$('#comment18').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -188,6 +249,9 @@ $('#small19').click(function(e) {
 	$('#comment19').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -196,6 +260,9 @@ $('#small20').click(function(e) {
 	$('#comment20').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -204,6 +271,9 @@ $('#small21').click(function(e) {
 	$('#comment21').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -212,6 +282,9 @@ $('#small22').click(function(e) {
 	$('#comment22').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -220,6 +293,9 @@ $('#small23').click(function(e) {
 	$('#comment23').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
@@ -228,6 +304,9 @@ $('#small24').click(function(e) {
 	$('#comment24').show();
 	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
         $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
 
 
 });
