@@ -88,22 +88,5 @@
   </div>
 </section>
 
-<script type="text/javascript">
-function getScrollBottom() {
-  var body = window.document.body;
-  var html = window.document.documentElement;
-  var scrollTop = body.scrollTop || html.scrollTop;
-  return html.scrollHeight - html.clientHeight - scrollTop;
-}
-jQuery(function($){
-	$(window).on('load scroll',
-	function(){
-		if (getScrollBottom() < 800){
-			$("#sidenavi").fadeOut();
-		}else {
-			$("#sidenavi").fadeIn();
-		}
- });
-});
-</script>
+
 
