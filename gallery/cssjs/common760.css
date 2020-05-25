@@ -1563,6 +1563,7 @@ html, body{
 .gallerysub p {
 	font-size:20px;
     padding: 20px 0;
+    word-break: break-word;
 }
 .gallerytext p {
 	font-size:16px;
@@ -1576,6 +1577,7 @@ html, body{
 .gallerysub div {
 	font-size:20px;
     padding: 20px 0;
+    word-break: break-word;
 }
 .gallerytext div {
 	font-size:16px;
