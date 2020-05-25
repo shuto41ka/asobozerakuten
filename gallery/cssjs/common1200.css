@@ -1657,12 +1657,13 @@ transition: 1.0s;
 	margin-bottom:0;
 }
 .gallerysub p {
-	font-size:36px;
+	font-size:26px;
     padding-bottom: 15px;
+    padding-top: 15px;
 }
 .gallerytext p { 
 	font-size:18px;
-    padding-left: 6px;
+
 	font-weight:lighter;
 }
 .gallerytitle div {
@@ -1670,12 +1671,13 @@ transition: 1.0s;
 	margin-bottom:0;
 }
 .gallerysub div {
-	font-size:36px;
+	font-size:26px;
     padding-bottom: 15px;
+    padding-top: 15px;
 }
 .gallerytext div {
 	font-size:18px;
-    padding-left: 6px;
+
 	font-weight:lighter;
 }
 table.gallerytable{

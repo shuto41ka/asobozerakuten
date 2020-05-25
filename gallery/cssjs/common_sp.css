@@ -334,11 +334,11 @@ img[id*="large"] {
 }
 .reviewwrap .reviewtitle p {
 	font-size:20px;
-	line-height:24px;
+	line-height: 1.5em;
     padding: 20px 20px 0;
 }
 .reviewwrap .reviewcomment p {
-	padding:20px 20px 0 20px;
+	padding:20px 3px;
 	font-size:12px;
 	line-height:24px;
 	overflow:auto;
@@ -346,10 +346,10 @@ img[id*="large"] {
 .reviewwrap .reviewtitle div {
     padding: 20px 20px 0;
 	font-size:20px;
-	line-height:24px;
+	line-height: 1.5em;
 }
 .reviewwrap .reviewcomment div {
-	padding:20px 20px 0 20px;
+	padding:20px 3px;
 	font-size:12px;
 	line-height:24px;
 	overflow:auto;

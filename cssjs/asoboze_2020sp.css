@@ -6,7 +6,7 @@
                 display: none;
             }
     .sponly {
-        display: block;
+        display: inherit;
     }
     
         div,p {
@@ -218,7 +218,7 @@ a img {
         }
         .index_grid {
             width: 100%;
-            padding:12% 2% 6%;
+            padding:6% 2%;
         }
         .index_grid .grid_2line {
             width: 50%;
@@ -236,7 +236,7 @@ a img {
             clear: both;
         }
         .grid_1line .text {
-            padding:0 2% 40px;
+            padding:0 2%;
         }
         .grid_1line .grid_tag {
             padding: 0 2%;
@@ -303,7 +303,7 @@ a img {
             letter-spacing: .4em;
             margin-top: 30px;
             margin-bottom: 5px;
-            line-height: 1.8em;
+
         }
         .asomidashi_jpn {
             text-align: center;
