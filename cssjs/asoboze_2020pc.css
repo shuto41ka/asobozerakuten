@@ -840,6 +840,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
 
         .aso_right_menus {
         position: relative;
+            z-index: 100;
     }
         .aso_right_menus .humb-icon {
             width: 100px;
