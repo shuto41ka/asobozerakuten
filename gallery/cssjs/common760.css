@@ -1553,7 +1553,7 @@ html, body{
 .wrap600 .wraptext{
 	margin:30px auto;
 	display:block;
-	padding:30px;
+	padding:30px 0 30px 30px;
 
 }
 .gallerytitle p {
@@ -1568,8 +1568,8 @@ html, body{
 }
 .gallerytext p {
 	font-size:16px;
-    padding-left: 6px;
-    line-height: 1.3em;
+
+    line-height: 1.5em;
 }
 .gallerytitle div {
 	font-size:32px;
@@ -1583,8 +1583,8 @@ html, body{
 }
 .gallerytext div {
 	font-size:16px;
-    padding-left: 6px;
-    line-height: 1.3em;
+
+    line-height: 1.5em;
 }
 table.gallerytable{
 	width:760px;

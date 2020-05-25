@@ -1740,7 +1740,7 @@ img[id*="large"]{
 .wrap600 .wraptext{
 	margin:100px auto;
 	display:block;
-	padding:0 120px;
+	padding:0 0 0 120px;
 }
 .gallerywrap .reviewcomment .galnext img{
 	width:300px;

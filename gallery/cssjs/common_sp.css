@@ -47,7 +47,7 @@ html, body{
 .gallerysub p {
 	font-size:20px;
 	line-height:20px;
-    margin: 10px 0;
+    margin: 20px 0;
 }
 .gallerytext p {
 	font-size:12px;
@@ -59,7 +59,7 @@ html, body{
 	margin-top:20px;
 }
 .gallerysub div {
-    margin: 10px 0;
+    margin: 20px 0;
 	font-size:20px;
 	line-height:20px;
 }
@@ -235,6 +235,7 @@ img[id*="large"] {
 	margin-bottom:15px;
 	font-size:12px;
 	overflow:auto;
+    margin-top: 20px;
 }
 .pagejump a{
 	line-height:30px;
@@ -334,21 +335,21 @@ img[id*="large"] {
 .reviewwrap .reviewtitle p {
 	font-size:20px;
 	line-height:24px;
-    padding: 5%;
+    padding: 20px 20px 0;
 }
 .reviewwrap .reviewcomment p {
-	padding:0 20px 0 20px;
+	padding:20px 20px 0 20px;
 	font-size:12px;
 	line-height:24px;
 	overflow:auto;
 }
 .reviewwrap .reviewtitle div {
-    padding: 5%;
+    padding: 20px 20px 0;
 	font-size:20px;
 	line-height:24px;
 }
 .reviewwrap .reviewcomment div {
-	padding:0 20px 0 20px;
+	padding:20px 20px 0 20px;
 	font-size:12px;
 	line-height:24px;
 	overflow:auto;

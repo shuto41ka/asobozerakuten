@@ -660,6 +660,9 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
     .nontablet {
         height: 0px;
     }
+    .base10.forsp {
+        padding: 20px 0;
+    }
 }
 @media screen and (orientation: portrait) and (min-width: 600px) {
     .btn {
