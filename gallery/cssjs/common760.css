@@ -1564,11 +1564,12 @@ html, body{
 	font-size:20px;
     padding: 20px 0;
     word-break: break-word;
+    line-height: 1.3em;
 }
 .gallerytext p {
 	font-size:16px;
     padding-left: 6px;
-    line-height: 30px;
+    line-height: 1.3em;
 }
 .gallerytitle div {
 	font-size:32px;
@@ -1578,11 +1579,12 @@ html, body{
 	font-size:20px;
     padding: 20px 0;
     word-break: break-word;
+    line-height: 1.3em;
 }
 .gallerytext div {
 	font-size:16px;
     padding-left: 6px;
-    line-height: 30px;
+    line-height: 1.3em;
 }
 table.gallerytable{
 	width:760px;
