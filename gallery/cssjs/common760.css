@@ -1553,8 +1553,8 @@ html, body{
 .wrap600 .wraptext{
 	margin:30px auto;
 	display:block;
-	padding:60px;
-	width:90%;
+	padding:30px;
+
 }
 .gallerytitle p {
 	font-size:32px;
@@ -1602,8 +1602,8 @@ table.gallerytable td img{
 	box-sizing: border-box;
     clear: both;
 }
-.galleryshohin img{
-	width:100%;
+.galleryshohin a img{
+	width:50% !important;
 	box-sizing: border-box;
 }
 .gallerylink{
