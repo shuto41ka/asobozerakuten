@@ -663,6 +663,11 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
     .base10.forsp {
         padding: 20px 0;
     }
+    .familylink {
+        display: inline-grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto;
+    }
 }
 @media screen and (orientation: portrait) and (min-width: 600px) {
     .btn {
