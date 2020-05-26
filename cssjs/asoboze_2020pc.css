@@ -888,7 +888,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
     .aso_right_menus .humb-icon .icon-menu::before {
    font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
         font-size: 13px;
-        bottom: 20px;
+        bottom: 17px;
         left: 0;
         width: 100%;
         position: absolute;
