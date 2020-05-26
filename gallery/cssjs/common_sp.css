@@ -361,7 +361,6 @@ img[id*="large"] {
 	width: 100%;
 	
 	box-sizing: border-box;
-
 	margin-bottom: 15px;
 }
 
@@ -471,11 +470,11 @@ line-height: 1.4em;
     padding-top: 0;
     padding-right: 22px;
     padding-left: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 0px;
 }
 
 .base21 p {
-	padding:0 30px 40px 30px;
+	padding:30px 30px 40px 30px;
 	font-size: 12px;
 	color: #494949;
 	line-height: 1.7em;
@@ -637,14 +636,14 @@ line-height: 1.4em;
 	font-family:  'Noto Sans JP', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, Osaka, sans-serif;
 }
 
-#containercate1200 .catebase01 p {
+ .catebase01 p {
 	font-size: 16px;
 	text-align: center;
 	color: #494949;
 	padding-top: 15px;
 }
 
-#containercate1200 .catebase02 p {
+ .catebase02 p {
 	font-size: 12px;
 	text-align: center;
 	color: #494949;
@@ -654,18 +653,18 @@ line-height: 1.4em;
 	display: block;
 }
 
-#containercate1200 .catebase03 p {
+ .catebase03 p {
 	width: 80%;
 	font-size: 12px;
 	text-align: left;
 	color: #494949;
-	margin: 0 auto;
+	margin: 20px auto;
 	line-height: 1.7em;
-	padding-bottom: 20px;
+
 	display: block;
 }
 
-#containercate1200 .catebase04 p {
+ .catebase04 p {
 	font-size: 12px;
 	text-align: center;
 	color: #494949;
@@ -680,7 +679,7 @@ line-height: 1.4em;
 }
 
 
-#containercate1200 .catebase05 p {
+ .catebase05 p {
 	font-size: 11px;
 	text-align: center;
 	color: #CCCCCC;
@@ -690,7 +689,7 @@ line-height: 1.4em;
 	margin: auto;
 }
 
-#containercate1200 .catebase06 p {
+ .catebase06 p {
 	font-size: 14px;
 	font-family: 'Noto Serif JP', serif;
 	text-align: center;
@@ -700,7 +699,7 @@ line-height: 1.4em;
 	margin: 0 auto;
 }
 
-#containercate1200 .catebase07 p {
+ .catebase07 p {
 	font-size: 12px;
 	font-family: 'Noto Serif JP', serif;
 	text-align: center;
@@ -710,7 +709,7 @@ line-height: 1.4em;
 	margin: 10px auto 20px;
 }
 
-#containercate1200 .catebase08 p {
+ .catebase08 p {
 	font-size: 11px;
 	font-family: 'Noto Serif JP', serif;
 	text-align: center;
@@ -719,14 +718,14 @@ line-height: 1.4em;
 	display: block;
 	margin: 0 auto;
 }
-#containercate1200 .catebase01 div {
+ .catebase01 div {
 	font-size: 16px;
 	text-align: center;
 	color: #494949;
 	padding-top: 15px;
 }
 
-#containercate1200 .catebase02 div {
+ .catebase02 div {
 	font-size: 12px;
 	text-align: center;
 	color: #494949;
@@ -736,7 +735,7 @@ line-height: 1.4em;
 	display: block;
 }
 
-#containercate1200 .catebase03 div {
+ .catebase03 div {
 	width: 80%;
 	font-size: 12px;
 	text-align: left;
@@ -747,7 +746,7 @@ line-height: 1.4em;
 	display: block;
 }
 
-#containercate1200 .catebase04 div {
+ .catebase04 div {
 	font-size: 12px;
 	text-align: center;
 	color: #494949;
@@ -762,7 +761,7 @@ line-height: 1.4em;
 }
 
 
-#containercate1200 .catebase05 div {
+ .catebase05 div {
 	font-size: 11px;
 	text-align: center;
 	color: #CCCCCC;
@@ -772,7 +771,7 @@ line-height: 1.4em;
 	margin: auto;
 }
 
-#containercate1200 .catebase06 div {
+ .catebase06 div {
 	font-size: 14px;
 	font-family: 'Noto Serif JP', serif;
 	text-align: center;
@@ -782,7 +781,7 @@ line-height: 1.4em;
 	margin: 0 auto;
 }
 
-#containercate1200 .catebase07 div {
+ .catebase07 div {
 	font-size: 12px;
 	font-family: 'Noto Serif JP', serif;
 	text-align: center;
@@ -792,7 +791,7 @@ line-height: 1.4em;
 	margin: 10px auto 20px;
 }
 
-#containercate1200 .catebase08 div {
+ .catebase08 div {
 	font-size: 11px;
 	font-family: 'Noto Serif JP', serif;
 	text-align: center;
@@ -806,7 +805,7 @@ line-height: 1.4em;
 
 /* 四角で文字を囲む */
 
-#containercate1200 .kakomi-box1 {
+ .kakomi-box1 {
 
 	margin: 2em auto;
 
@@ -829,7 +828,7 @@ line-height: 1.4em;
 
 /* 塗りで文字を囲む */
 
-#containercate1200 .kakomi-box2 {
+ .kakomi-box2 {
 
 	background:#CCC;
 
@@ -853,7 +852,7 @@ line-height: 1.4em;
 
 
 
-#containercate1200 .tenline {
+ .tenline {
 	vertical-align: middle;
 
 	font-size: 12px;
@@ -922,7 +921,7 @@ line-height: 1.4em;
 
 
 
-#containercate1200 .three-box {
+ .three-box {
 
 
 	width:85%;
@@ -939,7 +938,7 @@ line-height: 1.4em;
 
 
 
-#containercate1200 .three-box_last  {
+ .three-box_last  {
 	display: block;
 	
 	margin: 0 auto;
@@ -956,7 +955,7 @@ line-height: 1.4em;
 
 
 
-#containercate1200 .threebox3  {
+ .threebox3  {
 
 	padding-right: 2px;
 
@@ -972,7 +971,7 @@ line-height: 1.4em;
 
 
 
-#containercate1200 .threebox3 p {
+ .threebox3 p {
 
 
 	font-size:12px;
@@ -987,7 +986,7 @@ line-height: 1.4em;
 
 
 
-#containercate1200 .three-box_last p {
+ .three-box_last p {
 
 
 	font-size: 12px;
@@ -999,7 +998,7 @@ line-height: 1.4em;
 	padding:10px 15px;
 
 }
-#containercate1200 .threebox3 div {
+ .threebox3 div {
 
 
 	font-size:12px;
@@ -1014,7 +1013,7 @@ line-height: 1.4em;
 
 
 
-#containercate1200 .three-box_last div {
+ .three-box_last div {
 
 
 	font-size: 12px;
@@ -1523,3 +1522,10 @@ input[type="checkbox"]#sample2 + #cover > iframe {
 				position: absolute; left: 0; width: 100%; height: 60%; top: 40%; font-weight: bold; display: table-cell; vertical-align: middle; text-align: center; margin: 0; padding: 0;
 			}
 
+@media screen and (min-width: 760px) {
+    .shoukaigrid {
+     display: inline-grid;
+    grid-template-columns: auto auto;
+        
+    }
+}

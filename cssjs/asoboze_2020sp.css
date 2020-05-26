@@ -39,6 +39,10 @@ a img {
         .container_aso a img {
             max-width: 100%;
         }
+    .contents_container img {
+        width: 100%;
+    }
+
         .spheader_aso {
             background-color: #666464;
             width: 100%;
