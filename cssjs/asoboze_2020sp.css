@@ -306,8 +306,8 @@ a img {
             font-size: 15px;
             letter-spacing: .4em;
             margin-top: 30px;
-            margin-bottom: 5px;
-
+            margin-bottom: 15px;
+            line-height: 0.5em;
         }
         .asomidashi_jpn {
             text-align: center;
