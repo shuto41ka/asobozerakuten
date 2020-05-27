@@ -1,0 +1,281 @@
+<!-- ヘッダー -->
+<header>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/common1200.css" media="screen and (orientation: landscape) and (min-width: 1200px)"/>
+    <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/common760.css" media="screen and (min-width: 760px) and (max-width: 1199px) and (orientation: landscape)"/>
+    <link rel="stylesheet" type="text/css" href="https://www.rakuten.ne.jp/gold/asoboze/gallery/cssjs/common_sp.css" media="screen and (orientation: portrait)"/>
+    <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020sp.css" media="screen and (orientation: portrait)"/>
+    <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020pc.css" media="screen and (orientation: landscape)"/>
+
+</head>
+<body onpageshow="
+jQuery(document).ready(function ($) {
+
+    $(function() {
+
+        $('.effect .hop').css({
+
+            'opacity': '0',
+
+            'padding-top': '10px'
+
+        });
+
+        $(window).scroll(function() {
+
+            $('.effect').each(function() {
+
+                var imgPos = $(this).offset().top;
+
+                var scroll = $(window).scrollTop();
+
+                var windowHeight = $(window).height();
+
+                if (scroll > imgPos - windowHeight + windowHeight / 10) {
+
+                    $('.hop', this).css({
+
+                        'opacity': '1',
+
+                        'padding-top': '0'
+
+                    });
+
+                    $('i', this).css({
+
+                        'font-size': '100px',
+
+                        'padding': '0 20px 40px'
+
+                    });
+
+                }
+
+            });
+
+        });
+
+    });
+
+    $(function() {
+
+        
+        $('.icon-wrap').click(function() {
+
+            $(this).toggleClass('active');
+
+            $('body').toggleClass('fixing');
+
+        });
+    });
+var nowchecked = $('input[name=pick_brand]:checked').val();
+$('input[name=pick_brand]').click(function(){
+	if($(this).val() == nowchecked) {
+		$(this).prop('checked', false);
+		nowchecked = false;
+	} else {
+		nowchecked = $(this).val();
+	}
+});        
+
+                  });
+                  ">
+<div id="pc_toplinebanner">
+<div id="aso_linebanner" class="aso_linebanner pconly" style="top: 55px;">
+        <img src="https://image.rakuten.co.jp/asoboze/cabinet/eventpc/soryomuryo.jpg" alt="">
+        <a href="https://soko.rms.rakuten.co.jp/asoboze/c/0000000196/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/eventpc/reviewcp.jpg" alt=""></a>
+        <a href="https://item.rakuten.co.jp/asoboze/ma-cl05/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/eventpc/head_maple.jpg" alt=""></a>
+        <a href="https://item.rakuten.co.jp/asoboze/sh-n175-as4/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/eventpc/banner_tcj_495.jpg" alt=""></a>
+    </div>
+</div>
+    <div id="pcrightmenu" class="pconly">
+<div class="aso_right_menus">
+            <div class="">
+                <label for="input-pchumbmenu" id="humb-open" class="humb-icon">                
+                    <div class="icon-wrap">
+                        <span class="menu-bars"></span>
+                        <span class="menu-bars"></span>
+                        <span class="icon-menu"></span>
+                        </div>
+                </label>
+                </div>
+    <div class="pick_brand">
+        <label for="pickup_open">
+            <div class="pickup">
+                <input type="checkbox" id="pickup_open" class="pick_brandmenu" name="pick_brand">                <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_32.jpg" alt="" class="pick_brandbutton">
+
+                <div class="pickup_menu" id="pickup_menu">
+<div class="pick6menus">
+                        <div class="pick" id="pick_01">
+                            <div class="pick_link"><a href="https://item.rakuten.co.jp/asoboze/sh-n175/" class="hop">
+                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_66.jpg" alt="">
+                </a></div>
+                           <div class="pick_copy"><div class="grid_title hop">
+                        名刺交換をコミュニケーションの時間に
+                    </div></div>                            
+                            <div class="pick_img"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_66.jpg" alt=""></div>                            <div class="pick_image_after"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_42.png"></div>
+<div class="pick_tag"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_131.png" alt=""></div>
+                            <div class="pick_name"><span class="product_name">THE&nbsp;CARD&nbsp;JACKET&nbsp;-ザ・カードジャケット&nbsp;&nbsp;3枚セット：\880&nbsp;4色アソート：\1,100</span></div>
+                        </div>
+                        <div class="pick" id="pick_02">
+                            <div class="pick_link"><a href="https://item.rakuten.co.jp/asoboze/ze-v160/" class="hop">
+                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_63.jpg" alt="">
+                </a></div>
+                            <div class="pick_copy"><div class="grid_title hop">
+                        世界に一つだけのブックカバーをつくろう
+                  </div></div>
+                            <div class="pick_img"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_63.jpg" alt=""></div>                            <div class="pick_image_after"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_42.png"></div>
+<div class="pick_tag"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_125.png" alt=""></div>
+                            <div class="pick_name"><span class="product_name">ZE-V160&nbsp;ブックカバー&nbsp;&nbsp;\4,300</span></div>
+                        </div>
+                        <div class="pick" id="pick_03">
+                            <div class="pick_link"><a href="https://item.rakuten.co.jp/asoboze/c/0000000170/" class="hop">
+                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_57.jpg" alt="">
+                </a></div>
+                            <div class="pick_copy"><div class="grid_title hop">
+                        お得なアウトレット商品が入荷しました。
+                  </div></div>
+                            <div class="pick_img"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_57.jpg" alt=""></div>                            <div class="pick_image_after"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_42.png"></div>
+<div class="pick_tag"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_136.png" alt=""></div>
+                            <div class="pick_name"><span class="product_name">アウトレットセール</span></div>
+                        </div>
+                        <div class="pick" id="pick_04">
+                            <div class="pick_link"><a href="https://item.rakuten.co.jp/asoboze/ma-cl05/" class="hop">
+                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_70.jpg" alt="">
+                </a></div>
+                            <div class="pick_copy"><div class="grid_title hop">
+                        シベリアの風を
+                        <br>身に纏ってみる
+                  </div></div>
+                            <div class="pick_img"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_70.jpg" alt=""></div>                            <div class="pick_image_after"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_42.png"></div>
+<div class="pick_tag"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_130.png" alt=""></div>
+                            <div class="pick_name"><span class="product_name">MAPLE（メイプル）トートバッグ&nbsp;\37,400</span></div>
+                        </div>
+                        <div class="pick" id="pick_05">
+                            <div class="pick_link"><a href="https://www.rakuten.ne.jp/gold/asoboze/family/warai.html" class="hop">
+                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_61.jpg" alt="">
+                </a></div>
+                            <div class="pick_copy"><div class="grid_title hop">
+                        誰かを笑わせることって大切じゃない？
+                    </div></div>                            
+                            <div class="pick_img"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_61.jpg" alt=""></div>                            <div class="pick_image_after"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_42.png"></div>
+<div class="pick_tag"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_129.png" alt=""></div>
+                            <div class="pick_name"><span class="product_name">「いっしょに、ちがおう」プロジェクト第2弾「笑」</span></div>
+                        </div>
+                        <div class="pick" id="pick_06">
+                            <div class="pick_link"><a href="https://item.rakuten.co.jp/asoboze/kg-y167/" class="hop">
+                    <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_65.jpg" alt="">
+                </a></div>
+                            <div class="pick_copy"><div class="grid_title hop">
+                        ミニマル志向の<br>
+                        ベストバイ
+                  </div></div>
+                            <div class="pick_img"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_65.jpg" alt=""></div>                            <div class="pick_image_after"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_42.png"></div>
+<div class="pick_tag"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_125.png" alt=""></div>
+                            <div class="pick_name"><span class="product_name">walpac（ウォルパック）&nbsp;&nbsp;\8,400</span></div>
+                        </div>
+                    </div>                </div>
+            </div>
+        </label>
+        <label for="brand_open">
+            <div class="brand">
+                <input type="checkbox" id="brand_open" class="pick_brandmenu" name="pick_brand">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindexpc_33.jpg" alt="" class="pick_brandbutton">
+                <div class="brand_menu" id="brand_menu">
+                    <a href="https://www.rakuten.ne.jp/gold/asoboze/contents/braaso.html"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_59.png" alt=""></a>
+                    <a href="https://item.rakuten.co.jp/asoboze/ma-cl05/"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_60.png" alt=""></a>
+                    <a href="https://www.rakuten.ne.jp/gold/asoboze/contents/bramatsu.html"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_61.png" alt=""></a>
+                    <a href="https://www.rakuten.ne.jp/gold/asoboze/contents/braikenohata.html"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_65.png" alt=""></a>
+                    <a href="https://www.rakuten.ne.jp/gold/asoboze/contents/brafla.html"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_63.png" alt=""></a>
+                    <a href="https://www.rakuten.ne.jp/gold/asoboze/contents/blasasaki.html"><img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindexpc_64.png" alt=""></a>
+                </div>
+            </div>
+
+            
+        </label>
+    </div>
+            </div>
+    <div id="aso_pcmenu" class="pconly">
+                    <input type="checkbox" id="input-pchumbmenu" class="pconly">
+<div id="pcmenu_aso" class="pconly pcmenu_aso">
+        <div class="pc_4menus">
+            <div class="pc4menu">
+                <div class="pc4menu-title">
+                    Bag&nbsp;&nbsp;
+                    <span class="4menu_jpn" style="font-size: 0.8vw; vertical-align: middle;">-バッグ</span>
+                </div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000134/">ブリーフケース </a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000139/">リュックサック</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000202/">エコバッグ</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000135/">トートバッグ</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000138/">ボディバッグ</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000214/">サコッシュ</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000136/">ダレスバッグ</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000137/">ボストンバッグ</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000141/">ショルダーバッグ</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000153/">ガーメントバッグ</a></div>
+            </div>
+            <div class="pc4menu">
+                <div class="pc4menu-title">
+                    Stationery&nbsp;&nbsp;
+                    <span class="4menu_jpn" style="font-size: 0.8vw; vertical-align: middle;">-文具</span>
+                </div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000116/">ブックカバー</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000117/">しおり</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/sk-w171/">ペンケース</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/to-v172/">ノートカバー</a></div>
+            </div>
+            <div class="pc4menu">
+                <div class="pc4menu-title">
+                    Wallet&nbsp;&amp;&nbsp;Accessory&nbsp;&nbsp;
+                    <span class="4menu_jpn" style="font-size: 0.8vw; vertical-align: middle;">-財布・雑貨</span>
+                </div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000118/">財布</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000211/">名刺入れ</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000120/">キーリング</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000119/">コインケース</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000215/">靴べら</a></div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/fs-j169/">スマホケース</a></div>
+            </div>
+            <div class="pc4menu">
+                <div class="pc4menu-title">
+                    Gift&nbsp;&nbsp;
+                    <span class="4menu_jpn" style="font-size: 0.8vw; vertical-align: middle;">-ギフト</span>
+                </div>
+                <div class="pc4menu-grid"><a href="https://item.rakuten.co.jp/asoboze/c/0000000113/">ギフトセット</a></div>
+                <div class="pc4menu-grid"><a href="https://www.rakuten.ne.jp/gold/asoboze/contents/giftwrap.html">ラッピングについて</a></div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</div>
+
+
+
+    <div style="width:auto; height:70px;" class="pconly"></div>
+
+</header>
+    <!-- ヘッダー -->
+
+    <!-- レフト -->
+    <nav>
+    <div class="aso_pcleft">
+        <div style="height: 100%; width: 100%;">
+<iframe src="https://www.rakuten.ne.jp/gold/asoboze/parts/pc_leftbanner.html" id="pcleftbanner" style="overflow: hidden; width: 5vw; height: 100%; padding: 0; margin: 0;" scrolling="no" frameborder="0">
+</iframe>
+        </div>
+</div>
+    
+    </nav>
+                                                                                                       
+<!-- レフト-->
+<!-- フッター -->
+    <footer style="width: 100%; height:100%; position: relative; margin: 0 auto;">
+<div style="width:100%; height: 0; padding-bottom: 62.5%;">
+        <iframe src="https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso_rms.html" frameborder="0" scrolling="no" style=" border: none; position: absolute; top: 0; left: 0; width: 100%; height: 13000px; overflow-y: visible;"></iframe>
+</div>
+    </footer>
+<!-- フッター -->
+    
+    

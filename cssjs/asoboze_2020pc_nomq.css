@@ -1,6 +1,5 @@
 @charset "UTF-8";
 /* CSS Document */
-@media screen and (orientation: landscape) {
     .sponly {
         display: none;
     }
@@ -63,9 +62,9 @@
         z-index: 100;
     }
     .aso_pcleft img {
-        width: 35%;
-        padding-left: 27%;
-        padding-top: 70px;
+        width: 35vw;
+        padding-left: 20vw;
+        padding-top: calc(55px + 5vh);
     }
     .aso_pcleft .pcleft_sns {
         position: absolute;
@@ -855,7 +854,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             border-radius: 50%;
             background-color: #b49c92;
             position: fixed;
-            top: calc(55px + 5vh);
+            top: 50px;
             right: -19px;
             left: auto;
             z-index: 10000;
@@ -917,7 +916,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             display: block;
             position: fixed;
             right: 20px;
-            top: calc(175px + 5vh);
+            top: 180px;
             width: 120px;
             height: auto;
             box-sizing: border-box;
@@ -991,48 +990,6 @@ input[type="radio"]#brand_open ~ #brand_menu {
             right: 150px
         }
         input[type="radio"]#brand_open:checked + img {
-            opacity: 0;
-        }
-input[type="checkbox"]#pickup_open ~ div#pickup_menu { 
-    transition: 0.5s ease-in-out;
-    top: 0;
-    right: -1000px;
-            width: auto;
-            height: auto;
-            padding: 30px;
-            position: absolute;
-            border: 2px solid #c9caca;
-    background-color: #ffffff;
-    z-index: -1;
-}
-
-/*iframeを格納(オープン時)*/
-input[type="checkbox"]#pickup_open:checked ~ div#pickup_menu {
-    right: 140px;
-}
-        input[type="checkbox"]#pickup_open:checked + img {
-            opacity: 0;
-        }        
-input[type="checkbox"]#brand_open ~ #brand_menu { 
-    transition: 0.5s ease-in-out;
-    top: 0;
-    right: -100vw;
-            width: 800px;
-            height: auto;
-            padding: 30px 67px;
-    display: inline-grid;
-            grid-template-rows: auto auto auto;
-            grid-template-columns: auto auto;
-            grid-gap: 20px;
-            position: absolute;
-    background-color: #ffffff;
-            border: 2px solid #c9caca;
-    z-index: -1;
-}
-        input[type="checkbox"]#brand_open:checked ~ #brand_menu {
-            right: 150px
-        }
-        input[type="checkbox"]#brand_open:checked + img {
             opacity: 0;
         }
         .pick_brand .pickup_menu .pick6menus {
@@ -1228,8 +1185,8 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
             top: 37px;
             width: 15px;
         }        
-    }
-@media screen and (orientation: landscape) and (max-height: 800px) {
+
+@media screen and (max-height: 800px) {
 .pick_brand .pickup_menu .pick6menus {
     grid-template-rows: 281px 281px;
     grid-template-columns: 150px 150px 150px;
