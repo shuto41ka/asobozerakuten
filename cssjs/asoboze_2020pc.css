@@ -1,4 +1,4 @@
-@charset "EUC-JP";
+@charset "UTF-8";
 /* CSS Document */
 @media screen and (orientation: landscape) {
     .sponly {
@@ -13,7 +13,7 @@
     div, p, img, body {
         padding: 0;
         margin: 0;
-           font-family: "A+EqpB-游ゴシック体 Pr6N M","游ゴシック", YuGothic, sans-serif;        
+           font-family: "A+EqpB-游ゴシック体 Pr6N M", YuGothic, sans-serif;        
     }
     div, p, body {
         box-sizing: border-box;
@@ -199,7 +199,7 @@
 	height: 70%;
            z-index: 99;
         }
-/*iframeを格納*/
+/*iframe???主?*/
 input[type="checkbox"]#input-pchumbmenu + #pcmenu_aso { 
     transition: 0.5s ease-in-out;
     position:fixed;
@@ -208,7 +208,7 @@ input[type="checkbox"]#input-pchumbmenu + #pcmenu_aso {
     z-index: 99;
 }
 
-/*iframeを格納(オープン時)*/
+/*iframe???主?(??若?恰)*/
 input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
     overflow: hidden;
 	-webkit-overflow-scrolling:touch;
@@ -334,7 +334,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         top: 25vh;
         left: 50%;
     transform: translateX(-50%);
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B',"游ゴシック", YuGothic,  sans-serif;                
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     }
@@ -474,7 +474,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
     margin-top: 35px;
     }
     .grid_title {
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B',"游ゴシック", YuGothic,  sans-serif;
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
             padding-bottom: 8px;
             line-height: 1.8em;
         }
@@ -508,7 +508,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             text-justify: none;
         }
     .grid_text .product_name::before {
-        content: '／';
+        content: '鐚?';
     }    
         .hop {
             transition-duration: 1.0s;
@@ -527,7 +527,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         display: inline-block;
     }
     .asomidashi_eng {
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B',"游ゴシック", YuGothic,  sans-serif;
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
         display: inline-block;
         font-size: 1.4vw;
         margin: 5vh 3vw 6vh 11vw;
@@ -826,7 +826,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         }
     
     .fguide .fguide_title {
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', "游ゴシック", YuGothic, sans-serif;
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
         border-bottom: 1px solid #ffffff;
         padding-bottom: 10px;
         font-size: 1vw;
@@ -886,7 +886,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             box-sizing: border-box;
         }
     .aso_right_menus .humb-icon .icon-menu::before {
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', "游ゴシック", YuGothic, sans-serif;
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
         font-size: 13px;
         bottom: 17px;
         left: 0;
@@ -964,7 +964,7 @@ input[type="radio"]#pickup_open ~ div#pickup_menu {
     z-index: -1;
 }
 
-/*iframeを格納(オープン時)*/
+/*iframe???主?(??若?恰)*/
 input[type="radio"]#pickup_open:checked ~ div#pickup_menu {
     right: 140px;
 }
@@ -1006,7 +1006,7 @@ input[type="checkbox"]#pickup_open ~ div#pickup_menu {
     z-index: -1;
 }
 
-/*iframeを格納(オープン時)*/
+/*iframe???主?(??若?恰)*/
 input[type="checkbox"]#pickup_open:checked ~ div#pickup_menu {
     right: 140px;
 }
