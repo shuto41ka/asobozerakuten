@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@charset "EUC-JP";
 /* CSS Document */
 @media screen and (orientation: landscape) {
     .sponly {
@@ -13,7 +13,7 @@
     div, p, img, body {
         padding: 0;
         margin: 0;
-           font-family: "A+EqpB-游ゴシック体 Pr6N M", sans-serif;        
+           font-family: "A+EqpB-游ゴシック体 Pr6N M","游ゴシック", YuGothic, sans-serif;        
     }
     div, p, body {
         box-sizing: border-box;
@@ -334,7 +334,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         top: 25vh;
         left: 50%;
     transform: translateX(-50%);
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;                
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B',"游ゴシック", YuGothic,  sans-serif;                
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     }
@@ -474,7 +474,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
     margin-top: 35px;
     }
     .grid_title {
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B',"游ゴシック", YuGothic,  sans-serif;
             padding-bottom: 8px;
             line-height: 1.8em;
         }
@@ -527,7 +527,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         display: inline-block;
     }
     .asomidashi_eng {
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B',"游ゴシック", YuGothic,  sans-serif;
         display: inline-block;
         font-size: 1.4vw;
         margin: 5vh 3vw 6vh 11vw;
@@ -826,7 +826,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         }
     
     .fguide .fguide_title {
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', "游ゴシック", YuGothic, sans-serif;
         border-bottom: 1px solid #ffffff;
         padding-bottom: 10px;
         font-size: 1vw;
@@ -886,7 +886,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             box-sizing: border-box;
         }
     .aso_right_menus .humb-icon .icon-menu::before {
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+   font-family: 'A+EqpB-游ゴシック体 Pr6N B', "游ゴシック", YuGothic, sans-serif;
         font-size: 13px;
         bottom: 17px;
         left: 0;
