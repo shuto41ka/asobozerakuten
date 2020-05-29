@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 @media screen and (orientation: landscape) {
     .sponly {
         display: none;
@@ -13,7 +14,8 @@
     div, p, img, body {
         padding: 0;
         margin: 0;
-           font-family: "A+EqpB-游ゴシック体 Pr6N M", YuGothic, sans-serif;        
+           font-family: 'Noto Sans JP', sans-serif;
+        font-weight: 400;
     }
     div, p, body {
         box-sizing: border-box;
@@ -22,6 +24,7 @@
         opacity: 0.8;
     }
     .swiper-container {
+        width: 92%;
         width: 92%;
         margin-left: 6%;
         margin-right: 2%;
@@ -334,7 +337,8 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         top: 25vh;
         left: 50%;
     transform: translateX(-50%);
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+   font-family: 'Noto Sans JP', sans-serif;
+font-weight: 700;
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     }
@@ -474,7 +478,8 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
     margin-top: 35px;
     }
     .grid_title {
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+   font-family: 'Noto Sans JP', sans-serif;
+font-weight: 700;
             padding-bottom: 8px;
             line-height: 1.8em;
         }
@@ -527,7 +532,8 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         display: inline-block;
     }
     .asomidashi_eng {
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+   font-family: 'Noto Sans JP', sans-serif;
+font-weight: 700;
         display: inline-block;
         font-size: 1.4vw;
         margin: 5vh 3vw 6vh 11vw;
@@ -834,7 +840,8 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         }
     
     .fguide .fguide_title {
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+   font-family: 'Noto Sans JP', sans-serif;
+font-weight: 700;
         border-bottom: 1px solid #ffffff;
         padding-bottom: 10px;
         font-size: 1vw;
@@ -894,7 +901,8 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             box-sizing: border-box;
         }
     .aso_right_menus .humb-icon .icon-menu::before {
-   font-family: 'A+EqpB-游ゴシック体 Pr6N B', sans-serif;
+   font-family: 'Noto Sans JP', sans-serif;
+font-weight: 700;
         font-size: 13px;
         bottom: 17px;
         left: 0;
@@ -931,7 +939,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             box-sizing: border-box;
         }
         .pick_brand div {
-            margin: 10px 0 0;
+            margin: 0;
             padding: 0;
             background-repeat: no-repeat;
             cursor: pointer;
@@ -1235,6 +1243,9 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
             top: 37px;
             width: 15px;
         }        
+        .aso_right_menus .pick_brand label:nth-child(2) {
+            margin-top: 10px;
+        }
     }
 @media screen and (orientation: landscape) and (max-height: 800px) {
 .pick_brand .pickup_menu .pick6menus {
@@ -1243,9 +1254,6 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
 }
     .pick_brand .pickup .pick_tag {
         width: 50%;
-    }
-    .pick_brand .pickup .pick_copy div::after {
-        margin-top: 130px;
     }
     .pick_brand .pickup .pick_copy div {
         font-size: 12px;
