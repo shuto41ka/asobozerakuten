@@ -605,6 +605,14 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
     .contentbutton a:nth-child(5) img {
         border: none;
     }
+    .contentbutton a:nth-child(6) {
+        width: 90%;
+        margin: 5vh 2% 2vh 8%;
+        clear: both;
+    }
+    .contentbutton a:nth-child(6) img {
+        border: none;
+    }
         .contentbutton .contentsns {
             width: 100%;
             padding: 5vh 2% 2vh 8%;
