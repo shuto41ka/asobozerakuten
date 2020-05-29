@@ -931,7 +931,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
             box-sizing: border-box;
         }
         .pick_brand div {
-            margin: 0;
+            margin: 10px 0 0;
             padding: 0;
             background-repeat: no-repeat;
             cursor: pointer;
