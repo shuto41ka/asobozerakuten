@@ -70,6 +70,11 @@ $(function() {
 		$('#movies_toftsack2way').load("toftsack2way.html #movies_toftsack2way");
 		$('#movies_toftsack2way').show();
 });	
+	$('#dougaswitch16').click(function() {
+    	$("[id ^= 'movies']").hide();
+		$('#movies_regile').load("https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/regile.html #movies_regile");
+		$('#movies_regile').show();
+});	
 	$('#dougasetsumei01').click(function() {
     	$("[id ^= 'movies']").hide();
 		$('#movies_asoboze').load("shoukai.html #movies_asoboze");
@@ -144,5 +149,10 @@ $(function() {
     	$("[id ^= 'movies']").hide();
 		$('#movies_thecdj').load("cardjacket.html #movies_thecdj");
 		$('#movies_thecdj').show();
+});	
+	$('#dougasetsumei16').click(function() {
+    	$("[id ^= 'movies']").hide();
+		$('#movies_regile').load("https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/regile.html #movies_regile");
+		$('#movies_regile').show();
 });	
 });
