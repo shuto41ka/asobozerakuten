@@ -288,7 +288,7 @@ a img {
             text-justify: none;
         }
     .grid_text .product_name::before {
-        content: '�?';
+        content: '-';
     }    
     
         .hop {

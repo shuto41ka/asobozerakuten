@@ -513,7 +513,7 @@ font-weight: 700;
             text-justify: none;
         }
     .grid_text .product_name::before {
-        content: '鐚?';
+        content: '-';
     }    
         .hop {
             transition-duration: 1.0s;
