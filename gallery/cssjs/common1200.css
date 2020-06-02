@@ -2171,14 +2171,21 @@ background-repeat: no-repeat;
 
 /* モニターページ */
 		.monitorOpen {
+            display: inline-grid;
+            grid-template-columns: 25% 25% 25% 25%;
 			width: 100%;
 			margin: 0;
 			padding: 0;
 		}
+.monitorDetails {
+    margin: 0 auto;
+    max-width: 1200px;
+}
 		.monitorOpen div {
-			width: 25%;
+			width: 100%;
 			float: left;
 			display: block;
+            height: 100%;
 		}
 		.monitorOpen div img {
 			width: 100%;
@@ -2196,8 +2203,18 @@ background-repeat: no-repeat;
 			padding: 40px;
 			vertical-align: middle;
 			font-size: 18px;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            align-items: center;
 		}
 		.monitorComment div {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            align-items: center;
 			padding: 40px;
 			vertical-align: middle;
 			font-size: 18px;
@@ -2208,7 +2225,9 @@ background-repeat: no-repeat;
 			background-repeat: no-repeat;
 			background-position: center center;
 			width: 100%;
-			height: 900px;
+			height: auto;
+            display: inline-grid;
+            grid-template-columns: 25% 25% 25% 25%;
 		}
 		.monitorComment a:link {
 			color: #494949;
