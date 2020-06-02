@@ -2170,7 +2170,7 @@ background-repeat: no-repeat;
 }
 
 /* モニターページ */
-		.monitorOpen {
+.contents_container .monitorOpen {
             display: inline-grid;
             grid-template-columns: 25% 25% 25% 25%;
 			width: 100%;
@@ -2191,7 +2191,7 @@ background-repeat: no-repeat;
 			width: 100%;
 		}
 		.monitorComment {
-			width: 300px;
+			width: 100%;
 			height: 300px;
 			display: block;
 			float: left;
@@ -2203,18 +2203,12 @@ background-repeat: no-repeat;
 			padding: 40px;
 			vertical-align: middle;
 			font-size: 18px;
-            display: flex;
-            justify-content: center;
             width: 100%;
-            height: 100%;
-            align-items: center;
+            height: 50%;
 		}
 		.monitorComment div {
-            display: flex;
-            justify-content: center;
             width: 100%;
-            height: 100%;
-            align-items: center;
+            height: 50%;
 			padding: 40px;
 			vertical-align: middle;
 			font-size: 18px;
@@ -2250,9 +2244,9 @@ background-repeat: no-repeat;
 				border-right: 3px solid #191919;
 			}
 			.preparation p {
-				text-align: center; vertical-align: middle; font-weight: bold; display: table-cell; height: 600px; width: 300px; margin: auto; padding: 0;
+				text-align: center; vertical-align: middle; font-weight: bold; display: flex; height: 100%; width: 100%; margin: auto; padding: 0; justify-content: center; align-content: center; -webkit-justify-content: center;  -webkit-align-items: center;
 			}
 			.preparation div {
-				text-align: center; vertical-align: middle; font-weight: bold; display: table-cell; height: 600px; width: 300px; margin: auto; padding: 0;
+				text-align: center; vertical-align: middle; font-weight: bold; display: flex; height: 100%; width: 100%; margin: auto; padding: 0; justify-content: center; align-content: center; -webkit-justify-content: center;  -webkit-align-items: center;
 			}
 

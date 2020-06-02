@@ -2143,26 +2143,29 @@ border-radius: 3px;
 				border: 3px solid #191919; box-sizing: border-box; width: 190px; height: 380px; position: relative;
 			}
 				.preparation p {
-				position: absolute; left: 0; width: 100%; height: 60%; top: 45%; font-weight: bold; display: table-cell; vertical-align: middle; text-align: center; margin: 0; padding: 0;
+				text-align: center; vertical-align: middle; font-weight: bold; display: flex; height: 100%; width: 100%; margin: auto; padding: 0; justify-content: center; align-content: center; -webkit-justify-content: center;  -webkit-align-items: center;
 			}
 				.preparation div {
-				position: absolute; left: 0; width: 100%; height: 60%; top: 45%; font-weight: bold; display: table-cell; vertical-align: middle; text-align: center; margin: 0; padding: 0;
+				text-align: center; vertical-align: middle; font-weight: bold; display: flex; height: 100%; width: 100%; margin: auto; padding: 0; justify-content: center; align-content: center; -webkit-justify-content: center;  -webkit-align-items: center;
 			}
 		
 					.monitorOpen {
 			width: 760px;
 			margin: 0;
 			padding: 0;
+                        display: inline-grid;
+                        grid-template-columns: 25% 25% 25% 25%;
 		}
 			
 		.monitorOpen div {
-			width: 190px;
+			width: 100%;
 			float: left;
 			display: block;
 		}
 		.monitorOpen div img {
 			width: 50%;
 		}
+
 		.monitorComment {
 			width: 33%;
 			height: auto;
@@ -2189,7 +2192,9 @@ border-radius: 3px;
 			background-repeat: no-repeat;
 			background-position: center center;
 			width: 100%;
-			height: 1000px;
+			height: auto;
+            display: inline-grid;
+            grid-template-columns: 1br 1br 1br;
 		}
 		.monitorComment a:link {
 			color: #494949;

@@ -1464,12 +1464,14 @@ input[type="checkbox"]#sample2 + #cover > iframe {
     }
 /*モニターページ*/
 					.monitorOpenSP {
+            display: inline-grid;
+                        grid-template-columns: 50% 50%;
 			width: 100%;
 			margin: 0;
 			padding: 0;
 		}
 		.monitorOpenSP div {
-			width: 50%;
+			width: 100%;
 			float: left;
 			display: block;
 		}
