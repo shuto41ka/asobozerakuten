@@ -522,6 +522,7 @@ font-weight: 700;
         display: inline-grid;
         grid-template-rows: auto;
         grid-template-columns: 55vw 39vw 6vw;
+        text-align: left;
     }
     .category_aso {
         grid-column: 1 / 2;
