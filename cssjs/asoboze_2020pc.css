@@ -840,7 +840,9 @@ font-weight: 700;
             height: 14px;
             clear: both;
         }
-    
+    .fguide {
+        color: #ffffff;
+    }
     .fguide .fguide_title {
    font-family: 'Noto Sans JP', sans-serif;
 font-weight: 700;
