@@ -1176,9 +1176,6 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         }
 }
     @media screen and (orientation: landscape) and (max-aspect-ratio: 8 / 5) {
-        .pcmenu_aso {
-            height: 100%;
-        }
         .text .disc {
             margin-left: 10%;
             display: inline-block;
@@ -1265,4 +1262,10 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     .pick_brand .pickup .pick_copy {
         height: 150px;
     }
+}
+@media screen and (orientation: landscape) and (max-height: 700px) {
+        .pcmenu_aso {
+            height: 100%;
+        }
+    
 }
