@@ -311,6 +311,138 @@ $('#pc_toplinebanner').hide();
 
 });
 
+$('#small25').click(function(e) {
+	$('#large25').show();
+	$('#comment25').show();
+	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
+        $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
+
+
+});
+$('#small26').click(function(e) {
+	$('#large26').show();
+	$('#comment26').show();
+	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
+        $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
+
+
+});
+$('#small27').click(function(e) {
+	$('#large27').show();
+	$('#comment27').show();
+	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
+        $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
+
+
+});
+$('#small28').click(function(e) {
+	$('#large28').show();
+	$('#comment28').show();
+	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
+        $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
+
+
+});
+$('#small29').click(function(e) {
+	$('#large29').show();
+	$('#comment29').show();
+	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
+        $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
+
+
+});
+$('#small30').click(function(e) {
+	$('#large30').show();
+	$('#comment30').show();
+	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
+        $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
+
+
+});
+$('#small31').click(function(e) {
+	$('#large31').show();
+	$('#comment31').show();
+	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
+        $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
+
+
+});
+$('#small32').click(function(e) {
+	$('#large32').show();
+	$('#comment32').show();
+	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
+        $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
+
+
+});
+$('#small33').click(function(e) {
+	$('#large33').show();
+	$('#comment33').show();
+	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
+        $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
+
+
+});
+$('#small34').click(function(e) {
+	$('#large34').show();
+	$('#comment34').show();
+	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
+        $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
+
+
+});
+$('#small35').click(function(e) {
+	$('#large35').show();
+	$('#comment35').show();
+	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
+        $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
+
+
+});
+$('#small36').click(function(e) {
+	$('#large36').show();
+	$('#comment36').show();
+	$('.my-parts').show();	$('.swiper-wrapper').hide();        $('.para').hide();
+        $('#spheader').hide();
+$('#humb-open').hide();
+$('#aso_pcleft').hide();
+$('#pc_toplinebanner').hide();
+
+
+});
 
 
 //ギャラリージャンプ
