@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
-@media screen and (orientation: portrait) {
+@media screen and (max-width: 759px) {
             .pconly {
                 display: none;
             }
@@ -675,7 +675,7 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
     }
     
 }
-@media screen and (orientation: portrait) and (min-width: 600px) {
+@media screen and (max-width: 760px) and (min-width: 600px) {
     .btn {
         right: 80px;
         width: 30px;
