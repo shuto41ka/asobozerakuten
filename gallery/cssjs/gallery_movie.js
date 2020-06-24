@@ -155,4 +155,14 @@ $(function() {
 		$('#movies_regile').load("https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/regile.html #movies_regile");
 		$('#movies_regile').show();
 });	
+	$('#dougasetsumei17').click(function() {
+    	$("[id ^= 'movies']").hide();
+		$('#movies_maple').load("https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/maple.html #movies_maple");
+		$('#movies_maple').show();
+});	
+	$('#dougasetsumei18').click(function() {
+    	$("[id ^= 'movies']").hide();
+		$('#movies_sacoche').load("https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/sacoche.html #movies_sacoche");
+		$('#movies_sacoche').show();
+});	
 });
