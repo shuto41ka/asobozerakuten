@@ -64,7 +64,7 @@
         height: 100vh;
         border-right: 1px solid #ffffff;
         background-color: transparent;
-        z-index: 100;
+        z-index: 10001;
     }
     .aso_pcleft img {
         width: 35%;
@@ -811,7 +811,7 @@ font-weight: 700;
         width: max-content;
         margin: 0 auto 5vh;
         text-align: center;
-        font-size: calc(0.2vw + 12px);
+        font-size: calc(0.2vw + 8px);
         max-width: 1200px;
         color: #ffffff;
         line-height: 2em;
@@ -1334,12 +1334,9 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     .pick_brand .pickup .pick_copy {
         height: 150px;
     }
-}
-@media screen and (orientation: landscape) and (max-height: 700px) {
         .pcmenu_aso {
             height: 100%;
         }
-    
 }
 @media screen and (max-width: 800px) {
             .category_blocks {
