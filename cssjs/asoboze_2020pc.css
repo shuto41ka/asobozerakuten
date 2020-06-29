@@ -811,7 +811,7 @@ font-weight: 700;
         width: max-content;
         margin: 0 auto 5vh;
         text-align: center;
-        font-size: 0.9vw;
+        font-size: calc(0.2vw + 12px);
         max-width: 1200px;
         color: #ffffff;
         line-height: 2em;
