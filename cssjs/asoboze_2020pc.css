@@ -564,7 +564,7 @@ font-weight: 700;
             padding: 5% 15% 0 15%;
         }
         .cate_image .cate_text {
-            font-size: 12px;
+            font-size: calc(0.3vw + 10px);
             text-align: center;
             padding:0.5em 0 5vh 0;
         }
@@ -808,10 +808,11 @@ font-weight: 700;
             border-radius: 0;
         }
     .footercate {
-        width: 80%;
-        margin: 0 10vh 5vh 10%;
+        width: max-content;
+        margin: 0 auto 5vh;
         text-align: center;
-        font-size: 1vw;
+        font-size: 0.9vw;
+        max-width: 1200px;
         color: #ffffff;
         line-height: 2em;
     }
@@ -828,7 +829,8 @@ font-weight: 700;
         display: inline-grid;
         grid-template-rows: auto;
         grid-template-columns: 2fr 2fr 1fr;
-        grid-gap: 3vw 5vw;;
+        grid-gap: 40px 100px;
+        max-width: 1200px;
         color: #ffffff;
     }
         .contents_border {
