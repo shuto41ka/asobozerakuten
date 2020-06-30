@@ -1334,9 +1334,12 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     .pick_brand .pickup .pick_copy {
         height: 150px;
     }
+}
+@media screen and (orientation: landscape) and (max-height: 800px) or (max-width: 1200px) {
         .pcmenu_aso {
-            height: 100%;
+            height: 95%;
         }
+    
 }
 @media screen and (max-width: 800px) {
             .category_blocks {
