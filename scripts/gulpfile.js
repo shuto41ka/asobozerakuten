@@ -14,12 +14,12 @@ gulp.task('playground', (cb) => {
     .pipe(modifyFile((content) => {
       if (env === 'development') {
         return content
-          .replace('../dist/css/swiper.min.css', '../build/css/swiper.css')
-          .replace('../dist/js/swiper.min.js', '../build/js/swiper.js');
+          .replace('../dist/swiper-bundle.min.css', '../build/css/swiper.css')
+          .replace('../dist/swiper-bundle.min.js', '../build/js/swiper.js');
       }
       return content
-        .replace('../build/css/swiper.css', '../dist/css/swiper.min.css')
-        .replace('../build/js/swiper.js', '../dist/js/swiper.min.js');
+        .replace('../build/css/swiper.css', '../dist/swiper-bundle.min.css')
+        .replace('../build/js/swiper.js', '../dist/swiper-bundle.min.js');
     }))
     .pipe(gulp.dest('./playground/'))
     .on('end', () => {
