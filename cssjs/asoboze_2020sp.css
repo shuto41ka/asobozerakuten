@@ -42,7 +42,12 @@ a img {
     .contents_container img {
         width: 100%;
     }
+    .contents_container button {
+        height: max-content;
+        background:none;
+        border: none;
 
+    }
         .spheader_aso {
             background-color: #666464;
             width: 100%;
