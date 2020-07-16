@@ -527,6 +527,7 @@ font-weight: 700;
     left: 50%;
     transform: translateX(-50%);
     position: relative;
+        width: 100%;
     }
     .category_aso {
         grid-column: 1 / 2;
@@ -1348,6 +1349,15 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     .pick_brand .pickup .pick_copy {
         height: 150px;
     }
+    .copyright_aso {
+        margin-left: 0;
+    }
+}
+@media screen and (orientation: landscape) and (max-width: 1200px) {
+    .copyright_aso {
+        margin-left: 0;
+    }
+    
 }
 @media screen and (orientation: landscape) and (max-height: 800px) or (max-width: 1200px) {
         .pcmenu_aso {
