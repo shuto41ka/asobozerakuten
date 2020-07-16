@@ -1542,3 +1542,20 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         margin-left: 5vw;
     }
 }
+@media screen and (min-width: 760px) and (orientation: portrait) {
+    .topthree .text {
+        left: 82vw;
+    }
+    .topthree .text::before {
+        top: 10vh;
+    }
+    .text .title {
+        top: 15vh;
+    }
+    .text .disc{
+        top: 25vh;
+    }
+    .kuwashiku {
+        top: 40vh;
+    }
+}
