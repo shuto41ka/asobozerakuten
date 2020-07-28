@@ -1353,11 +1353,28 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         margin-left: 0;
     }
 }
-@media screen and (orientation: landscape) and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .copyright_aso {
         margin-left: 0;
     }
-    
+    .cate_images {
+        width: 80%;
+    }
+    .category_aso {
+        padding-left: 10vw;
+    }
+    .contents_aso {
+        padding: 0 10vw;
+    }
+    .rank_aso {
+        padding: 0 10vw;
+    }
+    .style_aso {
+        padding: 0 10vw;
+    }
+    .guide_aso {
+        padding: 0 10vw;
+    }
 }
 @media screen and (orientation: landscape) and (max-height: 800px) or (max-width: 1200px) {
         .pcmenu_aso {
@@ -1568,5 +1585,15 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     }
     .kuwashiku {
         top: 40vh;
+    }    
+}
+@media screen and (max-width: 1000px) {
+    .footerguide {
+        grid-gap: 10px 50px;
+        width: 80vw;
+        margin-left: 10vw;
+    }
+    .footercate {
+        max-width: 80vw;
     }
 }
