@@ -1375,6 +1375,15 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     .guide_aso {
         padding: 0 10vw;
     }
+    .footerguide {
+        grid-gap: 10px 50px;
+        width: 80vw;
+        margin-left: 10vw;
+    }
+    .footercate {
+        max-width: 85vw;
+    }
+
 }
 @media screen and (orientation: landscape) and (max-height: 800px) or (max-width: 1200px) {
         .pcmenu_aso {
@@ -1588,12 +1597,4 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     }    
 }
 @media screen and (max-width: 1000px) {
-    .footerguide {
-        grid-gap: 10px 50px;
-        width: 80vw;
-        margin-left: 10vw;
-    }
-    .footercate {
-        max-width: 80vw;
-    }
 }
