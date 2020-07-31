@@ -75,6 +75,27 @@ $(function() {
 		$('#movies_regile').load("https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/regile.html #movies_regile");
 		$('#movies_regile').show();
 });	
+	$('#dougaswitch17').click(function() {
+    	$("[id ^= 'movies']").hide();
+		$('#movies_maple').load("https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/maple.html #movies_maple");
+		$('#movies_maple').show();
+});	
+	$('#dougaswitch18').click(function() {
+    	$("[id ^= 'movies']").hide();
+		$('#movies_sacoche').load("https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/sacoche.html #movies_sacoche");
+		$('#movies_sacoche').show();
+});	
+	$('#dougaswitch19').click(function() {
+    	$("[id ^= 'movies']").hide();
+		$('#movies_regilessize').load("https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/regile_ssize.html #movies_regilessize");
+		$('#movies_regilessize').show();
+});	
+	$('#dougaswitch20').click(function() {
+    	$("[id ^= 'movies']").hide();
+		$('#movies_regileoteire').load("https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/regile_oteire.html #movies_regileoteire");
+		$('#movies_regileoteire').show();
+});	
+    
 	$('#dougasetsumei01').click(function() {
     	$("[id ^= 'movies']").hide();
 		$('#movies_asoboze').load("shoukai.html #movies_asoboze");
@@ -164,5 +185,15 @@ $(function() {
     	$("[id ^= 'movies']").hide();
 		$('#movies_sacoche').load("https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/sacoche.html #movies_sacoche");
 		$('#movies_sacoche').show();
+});	
+	$('#dougasetsumei19').click(function() {
+    	$("[id ^= 'movies']").hide();
+		$('#movies_regilessize').load("https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/regile_ssize.html #movies_regilessize");
+		$('#movies_regilessize').show();
+});	
+	$('#dougasetsumei20').click(function() {
+    	$("[id ^= 'movies']").hide();
+		$('#movies_regileoteire').load("https://www.rakuten.ne.jp/gold/asoboze/gallery/movies/regile_oteire.html #movies_regileoteire");
+		$('#movies_regileoteire').show();
 });	
 });
