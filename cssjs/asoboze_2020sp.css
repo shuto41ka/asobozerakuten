@@ -359,6 +359,7 @@ a img {
         .contentbutton .contentsns {
             width: 100%;
             padding: 3px 5%;
+            display: inline-block;
         }
         .contentbutton .contentsns a img {
             width: 50%;
