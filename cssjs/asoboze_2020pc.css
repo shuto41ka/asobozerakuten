@@ -591,8 +591,8 @@ font-weight: 700;
             width: 100%;
         }
         .pricebutton a img {
-            width: 75%;
-            padding:6px 5%;
+            width: 90%;
+            padding:12px 5%;
             margin: 0 15%;
         }
     .price_aso .asomidashi_eng {
@@ -1360,7 +1360,13 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         margin-left: 0;
     }
     .cate_images {
+        width: 100%;
+    }
+    .pricebutton a img {
         width: 80%;
+        padding: 6px 0;
+        margin: 0 10%;
+        box-sizing: border-box;
     }
     .category_aso {
         padding-left: 10vw;
