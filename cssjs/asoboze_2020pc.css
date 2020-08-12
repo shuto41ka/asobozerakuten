@@ -563,7 +563,8 @@ font-weight: 700;
         margin: 3vh 0;
     }
         .cate_images {
-            width: 60%;
+            width: 80%;
+            max-width: 612px;
             position: relative;
             left: calc(50vw - 600px);
             display: block;
@@ -573,8 +574,9 @@ font-weight: 700;
             float: left;
         }
         .cate_image a img {
-            width: 70%;
-            padding: 5% 15% 0 15%;
+            width: 100%;
+            padding: 0 10% 5% 10%;
+            box-sizing: border-box;
         }
         .cate_image .cate_text {
             font-size: calc(0.3vw + 10px);
