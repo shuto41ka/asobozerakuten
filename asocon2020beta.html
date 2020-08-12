@@ -1,9 +1,16 @@
 <!doctype html>
 <html>
-<head>
+<head>    
 <meta charset="UTF-8">
 <title>無題ドキュメント</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"  charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020pc.css">    
+<link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020sp.css" media="screen and (orientation: portrait)">    
+<link rel="stylesheet" href="hhttps://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.css">
+<link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.css">
+<script src="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.js"></script>
+<script src="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.js"></script>
 <script src="https://www.rakuten.ne.jp/gold/asoboze/jquery-3.2.1.min.js"></script>    
 <script type="text/javascript">
 $(function(){
@@ -31,8 +38,6 @@ $(function() {
     $("#pcIndexRight").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pcindex_rightmenu.html");
     $("#pc_toplinebanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_toplinebanner.html");    $("#pcleftbanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_leftbanner.html");
     $("#pcrightmenu").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_rightmenu.html");
-$("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .topthree2");
-    $("#pcthreemenu3").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .topthree3");
     $("#spheader").load("https://www.rakuten.ne.jp/gold/asoboze/parts/header_aso.html");
     $("#footer-aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
         $("#styles").load("https://www.rakuten.ne.jp/gold/asoboze/parts/othergallery.html");
@@ -76,21 +81,28 @@ $("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta
             left: 49%; 
             top: 50%; 
             transform: translateY(-50%);
-            height: 64%; 
+            height: 68%; 
             overflow-y: scroll; 
             scroll-snap-type: y mandatory;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            max-height: 35vw;
+        }
+        .vsp::-webkit-scrollbar {
+            display: none;
         }
         .readmore {
             position: absolute; 
             top: 83%; 
             left: 64%; 
             width: 61px;
+            cursor: pointer;
         }
         .readmore img {
             width: 100%;
         }
         /* スマホをイメージ */
-        @media and screen and (orientation: portrait) {
+        @media screen and (orientation: portrait) {
         .asocon_container {
             background-image: url(https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_01.png); 
             width: 100vw; 
@@ -109,10 +121,11 @@ $("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta
             width: 88%; 
             position: absolute; 
             left: 5.5%; 
-            top: 34%; 
+            top: 50%; 
             height: 40%; 
             overflow-y: scroll; 
             scroll-snap-type: y mandatory;
+            max-height: inherit;
         }
         .readmore {
             text-align: center; 
@@ -124,8 +137,23 @@ $("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta
             .readmore img {
                 width: 12%;
             }
+            .pconly {
+                display: none;
+            }
         }
     </style>
+<script>
+$(function(){
+  $('a[href^="#"]').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});        
+</script>
 </head>
 
 <body>
@@ -143,6 +171,7 @@ $("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta
     <!-- PCトップのライト -->
     <div id="spheader" class="sponly spheader_aso">
     </div>
+    
     <script>
 var menuHeight = 50;
 var startPos = 0;
@@ -157,21 +186,37 @@ $(window).scroll(function(){
   }
   startPos = currentPos;
 });  
-    </script>    
+
+    </script> 
+    
 <!-- 2020コンセプトページ　-->
     <div class="asocon_container">
         <img class="spupdate" src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_02.png" alt="">
-        <div class="vsp" style="">
-            <div class="asocon3lines_01 asocon3lines"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_03.png" alt=""></div>
+        <div class="vsp" id="vsp">
+            <div class="asocon3lines_01 asocon3lines" id="spthreemenu1"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_03.png" alt=""></div>
             <br><br><br>
-            <div class="asocon3lines_02 asocon3lines"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_04.png" alt=""></div>
+            <div class="asocon3lines_02 asocon3lines" id="pcthreemenu2"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_04.png" alt=""></div>
             <br><br><br>
-            <div class="asocon3lines_03 asocon3lines"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_05.png" alt=""></div>
+            <div class="asocon3lines_03 asocon3lines" id="pcthreemenu3"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_05.png" alt=""></div>
         </div>
-        <div class="readmore">
+        <div class="readmore" id="readmore">
             <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
         </div>
     </div>
-<!-- 2020コンセプトページ　-->    
+<div id="footer-aso">
+    </div>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script>
+        var vsppoint = $('#vsp').scroll();
+        var vspline = $(window).height() * 0.64;
+        var vspmovepoint = vsppoint + vspline;
+        $('#readmore').on('click', function() {
+            $('#vsp').scrollTop(vspmovepoint);
+        });
+        console.log(vsppoint);
+        console.log(vspline);
+        console.log(vspmovepoint);        
+    </script>
+            <!-- スムーズスクロール部分の記述 -->
 </body>
 </html>

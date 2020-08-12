@@ -4,8 +4,22 @@
     $(function() {
             $("#aso_pcmenu").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pcmenu_aso.html");
 
-    })
+    });
+    
 </script>
+<script type="text/javascript">
+$(function(){
+  $('a[href^="#"]').click(function(){
+    var speed = 500;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
+    return false;
+  });
+});        
+</script>
+
     <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020pc.css" media="screen and (orientation: landscape)">  
 <div id="pcindex_right" class="pcindex_right pconly">
         <div class="index_right_menus">
