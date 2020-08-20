@@ -32,23 +32,25 @@ $(function(){
     $('html, body').animate({scrollTop:asoconLink4}, speed, 'swing');
     return false;
   });
-    $('#pcthreemenu2').click(function() {
-    $('html, body').animate({scrollTop:position}, speed, 'swing').dequeue();        
-    $('#vsp').scrollTop(target2).dequeue();
+    $('a[href^="#pcthreemenu2"]').click(function() {
+    $('html, body').animate({scrollTop: 0}, speed, 'swing', function() {
+    $('#vsp').animate({scrollTop:target2}, speed, 'swing');
+    }).dequeue();
         return false;
     });
-    $('#pcthreemenu3').click(function() {
-    $('html, body').animate({scrollTop:position}, speed, 'swing').dequeue();        
-    $('#vsp').scrollTop(target3).dequeue()
-    };
+    $('a[href^="#pcthreemenu3"]').click(function() {
+    $('html, body').animate({scrollTop: 0}, speed, 'swing', function() {
+    $('#vsp').animate({scrollTop:target3}, speed, 'swing');
+    }).dequeue();
         return false;
     });
-    $('#spthreemenu1').click(function() {
-    $('html, body').animate({scrollTop:position}, speed, 'swing').dequeue();        
-    $('#vsp')..scrollTop().dequeue();
+    $('a[href^="#spthreemenu1"]').click(function() {
+    $('html, body').animate({scrollTop: 0}, speed, 'swing', function() {
+    $('#vsp').animate({scrollTop:0}, speed, 'swing');
+    }).dequeue();
         return false;
     });
-});        
+});
 </script>
     <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020pc.css" media="screen and (orientation: landscape)">  
 <div id="pcindex_right" class="pcindex_right pconly">
