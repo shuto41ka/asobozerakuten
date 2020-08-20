@@ -59,7 +59,7 @@ html, body{
 }
 #container1200{
 	width:760px;
-	margin:20px 100px;
+	margin:20px auto;
 }
 #container1200 img {
 	width: 100%;

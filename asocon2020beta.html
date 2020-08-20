@@ -62,7 +62,7 @@ $(function() {
             background-repeat: no-repeat;
             width: 100vw; 
             height: 100vh; 
-            background-size: 100% auto; 
+            background-size: cover; 
             background-position: top left; 
             position: relative;            
         }
@@ -278,22 +278,37 @@ $(window).scroll(function(){
         var windowHeight = $(window).height();
         var windowWidth = $(window).width();
         var windowScrollGain = windowHeight + windowScroll;
+        var scroll3points1 = $('#asocon_3point1').offset().top;
+        var scroll3points2 = $('#asocon_3point2').offset().top;
+        var scroll3points3 = $('#asocon_3point3').offset().top;
+        var scroll3points4 = $('#asocon_3point4').offset().top;
+            console.log(scroll3points1);
+            console.log(scroll3points2);
+            console.log(scroll3points3);
+            console.log(scroll3points4);
+            console.log(scrollHeight);
             if (windowWidth <= 600) {
                 windowScrollGain += 80;
-            }
-            console.log(scrollLength);
-            console.log(windowScroll);
-            console.log(height);
-            console.log(height2x);
-            console.log(scrollGain);
-            console.log(scrollHeight);
-            console.log(windowScrollGain);
+            };
         if (scrollHeight <= 0) {
             $('#vsp').animate({scrollTop:scrollGain}, 800, 'swing');
-        } else {
-            $('body,html').animate({scrollTop:windowScrollGain}, 800, 'swing');
-            console.log(windowScrollGain);
-        }
+        } else if (scrollHeight > 0 && windowScroll < windowHeight) {
+            $('body,html').animate({scrollTop:scroll3points1}, 800, 'swing');
+            scrollHeight += windowHeight;
+            return;
+        } else if (windowScroll >= windowHeight && windowScroll < (windowHeight * 2)) {
+            $('body,html').animate({scrollTop:scroll3points2}, 800, 'swing');
+            scrollHeight += windowHeight;
+            return;
+        } else if (windowScroll >= scroll3points2 && windowScroll < (windowHeight * 3)) {
+            $('body,html').animate({scrollTop:scroll3points3}, 800, 'swing');
+            scrollHeight += windowHeight;
+            return;
+        } else if (windowScroll >= scroll3points3 && windowScroll < (windowHeight * 4)) {
+            $('body,html').animate({scrollTop:scroll3points4}, 800, 'swing');
+            scrollHeight += windowHeight;
+            return;
+        };
         })
     </script>
             <!-- スムーズスクロール部分の記述 -->

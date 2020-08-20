@@ -9,32 +9,43 @@
 </script>
 <script>
 $(function(){
-    var speed = 500;
+    var speed = 800;
     var target2 = $('#vsp').innerHeight() * 1.1;
     var target3 = target2 * 2;
-  $('a[href^="#asocon_3point"]').click(function(){
-    var href= $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-    $("html, body").animate({scrollTop:position}, speed, "swing");
+        var asoconLink1 = $('#asocon_3point1').offset().top;
+        var asoconLink2 = $('#asocon_3point2').offset().top;
+        var asoconLink3 = $('#asocon_3point3').offset().top;
+        var asoconLink4 = $('#asocon_3point4').offset().top;
+  $('a[href^="#asocon_3point1"]').click(function(){
+    $('html, body').animate({scrollTop:asoconLink1}, speed, 'swing');
+    return false;
+  });
+  $('a[href^="#asocon_3point2"]').click(function(){
+    $('html, body').animate({scrollTop:asoconLink2}, speed, 'swing');
+    return false;
+  });
+  $('a[href^="#asocon_3point3"]').click(function(){
+    $('html, body').animate({scrollTop:asoconLink3}, speed, 'swing');
+    return false;
+  });
+  $('a[href^="#asocon_3point4"]').click(function(){
+    $('html, body').animate({scrollTop:asoconLink4}, speed, 'swing');
     return false;
   });
     $('#pcthreemenu2').click(function() {
-    $("#vsp").animate({scrollTop:target2}, 1000, "swing", function() {
-    $("html, body").animate({scrollTop:position}, speed, "swing").dequeue();        
-    });
+    $('html, body').animate({scrollTop:position}, speed, 'swing').dequeue();        
+    $('#vsp').scrollTop(target2).dequeue();
         return false;
     });
     $('#pcthreemenu3').click(function() {
-    $("#vsp").animate({scrollTop:target3}, 1000, "swing", function() {
-    $("html, body").animate({scrollTop:position}, speed, "swing").dequeue();        
-    });
+    $('html, body').animate({scrollTop:position}, speed, 'swing').dequeue();        
+    $('#vsp').scrollTop(target3).dequeue()
+    };
         return false;
     });
     $('#spthreemenu1').click(function() {
-    $("#vsp").animate({scrollTop: 0}, 1000, "swing", function() {
-    $("html, body").animate({scrollTop:position}, speed, "swing").dequeue();        
-    });
+    $('html, body').animate({scrollTop:position}, speed, 'swing').dequeue();        
+    $('#vsp')..scrollTop().dequeue();
         return false;
     });
 });        
