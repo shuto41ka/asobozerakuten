@@ -190,7 +190,8 @@ $(function() {
             line-height: 4em;
             top: 47%;
             left: 15%;
-            font-size: 22px;
+            font-size: 1.8vw;
+            min-width: max-content;
             transform: translateY(-50%);
             position: relative;
         }
@@ -229,10 +230,10 @@ $(function() {
         .update_text div:nth-child(2) {
             padding:0 0 20px 0;
             font-weight: bold;
-            font-size: 24px;
+            font-size: 1.6vw;
         }
         .update_text div:nth-child(3) {
-            font-size: 22px;
+            font-size: 1.3vw;
             padding-bottom: 10px;
         }
         .hop {
@@ -279,7 +280,7 @@ $(function() {
         .readmore {
             text-align: center; 
             position: absolute; 
-            top: 75%; 
+            top: 77%; 
             left: 0; 
             width: 100%;
         }
@@ -292,6 +293,62 @@ $(function() {
             .pconly {
                 display: none;
             }
+        .update_disc {
+            width: max-content;
+            height: auto;
+            line-height: 3em;
+            top: 30%;
+            left: 50%;
+            font-size: 14px;
+            transform: translateX(-50%);
+            position: relative;
+        }
+        .update_3dots img {
+            width: 100%;
+        }
+        .update_3dots {
+            width: 30%;
+            margin: 0 auto;
+            height: auto;
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .update_img img {
+            width: 100%;
+        }
+        .update_img {
+            width: 25vh;
+            min-width: 70%;
+            position: relative;
+            top: 7vh;
+            left: 47%;
+            transform: translateX(-50%);
+        }
+        .update_text {
+            width: 70%;
+            position: relative;
+            top: 10vh;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .update_text div:nth-child(1) {
+            padding: 5px 0 2.5px;
+            font-size: 10.67px;
+        }
+        .update_text div:nth-child(2) {
+            padding:0 0 10px 0;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        .update_text div:nth-child(3) {
+            font-size: 10.67px;
+            padding-bottom: 5px;
+        }
+        .asocon_3point {
+            background-size: 100% auto;
+        }
         }
     </style>
 </head>
@@ -361,7 +418,8 @@ $(window).scroll(function(){
         </div>
         <div id="asocon_3point2" class="asocon_3point effect">
             <div class="update_img hop">
-                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_14.png" alt="">                
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_14.png" alt="" class="pconly">
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_19.png" alt="" class="sponly">
             </div>
             <div class="update_text effect2">
                 <div class="hop2 effect3">
@@ -376,7 +434,8 @@ $(window).scroll(function(){
         </div>
         <div id="asocon_3point3" class="asocon_3point effect">
             <div class="update_img hop">
-                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_15.png" alt="">                
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_20.png" alt="" class="sponly">                
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_15.png" alt="" class="pconly">
             </div>
             <div class="update_text effect2">
                 <div class="hop2 effect3">
@@ -392,7 +451,8 @@ $(window).scroll(function(){
         </div>
         <div id="asocon_3point4" class="asocon_3point effect">
             <div class="update_img hop">
-                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_16.png" alt="">                
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_16.png" alt="" class="pconly">                
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_21.png" alt="" class="sponly">                
             </div>
             <div class="update_text effect2">
                 <div class="hop2 effect3">
