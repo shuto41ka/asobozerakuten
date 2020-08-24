@@ -32,6 +32,46 @@ $(function(){
 });
 
 </script>
+<script type="text/javascript">
+$(function(){
+  $('.effect2 .hop2').css({"opacity":"0", "padding-top":"0"});
+  $(window).scroll(function (){
+    $(".effect2").each(function(){
+      var imgPos = $(this).offset().top;    
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > imgPos - windowHeight + windowHeight/10){
+        $(".hop2",this).css({"opacity":"1", "padding-top": "0" });
+        $("i",this).css({ 
+          "font-size": "100px",
+          "padding": "0 20px 40px"
+        });
+      } 
+    });
+  });
+});
+
+</script>
+<script type="text/javascript">
+$(function(){
+  $('.effect3 .hop3').css({"opacity":"0", "padding-top":"0"});
+  $(window).scroll(function (){
+    $(".effect3").each(function(){
+      var imgPos = $(this).offset().top;    
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll > imgPos - windowHeight + windowHeight/10){
+        $(".hop3",this).css({"opacity":"1", "padding-top": "0" });
+        $("i",this).css({ 
+          "font-size": "100px",
+          "padding": "0 20px 40px"
+        });
+      } 
+    });
+  });
+});
+
+</script>
 
 <script>
 $(function() {
@@ -69,7 +109,7 @@ $(function() {
         .asocon_container .spupdate {
             position: absolute;
             left: 40%;
-            top: 12%;
+            top: 10%;
             width: 39%;
         }
         .asocon3lines img {
@@ -119,7 +159,9 @@ $(function() {
             height: 100vh;
             position: relative;
             scroll-snap-align: start;
-            
+            background-repeat: no-repeat;
+            background-position: left top;
+            background-size: auto 90%;
         }
         .asocon_3points_container {
             width: 100%;
@@ -134,13 +176,75 @@ $(function() {
             display: none;
         }
         .asocon_3point:nth-child(2) {
-            background-color: pink;
+            background-image: url(https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_11.png);
         }
         .asocon_3point:nth-child(3) {
-            background-color: aqua;
+            background-image: url(https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_12.png);
         }
         .asocon_3point:nth-child(4) {
-            background-color: beige;
+            background-image: url(https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_13.png);
+        }
+        .update_disc {
+            width: 30%;
+            height: auto;
+            line-height: 4em;
+            top: 47%;
+            left: 15%;
+            font-size: 22px;
+            transform: translateY(-50%);
+            position: relative;
+        }
+        .update_3dots img {
+            width: 100%;
+        }
+        .update_3dots {
+            width: 20%;
+            height: auto;
+            position: absolute;
+            top: 47%;
+            transform: translateY(-50%);
+            right: 20%;
+        }
+        .update_img img {
+            width: 100%;
+        }
+        .update_img {
+            width: 40%;
+            position: relative;
+            top: 40%;
+            transform: translateY(-50%);
+            left: 6vw;
+        }
+        .update_text {
+            width: 30%;
+            position: absolute;
+            top: 45%;
+            right: 15%;
+            transform: translateY(-50%);
+        }
+        .update_text div:nth-child(1) {
+            padding: 10px 0;
+            font-size: 22px;
+        }
+        .update_text div:nth-child(2) {
+            padding:0 0 20px 0;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .update_text div:nth-child(3) {
+            font-size: 22px;
+            padding-bottom: 10px;
+        }
+        .hop {
+            transition-delay: .5s;
+        }
+        .hop2 {
+            transition-delay: 1.5s;
+            transition-duration: .5s;
+        }
+        .hop3 {
+            transition-duration: .5s;
+            transition-delay: 2.5s;
         }
         /* スマホをイメージ */
         @media screen and (orientation: portrait) {
@@ -242,32 +346,60 @@ $(window).scroll(function(){
     </div>
     <div id="asocon_3points" class="asocon_3points_container">
         <div id="asocon_3point1" class="asocon_3point effect">
-            <div class="update_disc">
+            <div class="update_disc hop">
                 asobozeは、バッグ作りを通して<br>
                 「自分らしくアップデートできる日々を<br>
                 皆様と一緒に作っていきます。
             </div>
+            <div class="update_3dots effect">
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_09.png" class="hop" alt="">
+            </div>
             <div class="readmore hop" id="readmore2">
-                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_10.png" alt="">
             </div>
             
         </div>
         <div id="asocon_3point2" class="asocon_3point effect">
-            <div class="hop">
+            <div class="update_img hop">
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_14.png" alt="">                
+            </div>
+            <div class="update_text effect2">
+                <div class="hop2 effect3">
+                    <div>ものづくり</div>
+                    <div>自慢したくなるようなものを作りたい。</div>
+                    <div class="hop3">これまで培ってきた技術や素材へのこだわりをベースに、現代的な視点から得たコンセプトに忠実でミニマルなデザインの製品を生み出していきたい。便利で楽しく、自分をアップデートしてくれるような生活を提供します。</div>
+                </div>
             </div>
             <div class="readmore hop" id="readmore3">
-                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_10.png" alt="">
             </div>                
         </div>
         <div id="asocon_3point3" class="asocon_3point effect">
-            <div class="hop">
+            <div class="update_img hop">
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_15.png" alt="">                
+            </div>
+            <div class="update_text effect2">
+                <div class="hop2 effect3">
+                    <div>伝える姿勢</div>
+                    <div>想いを商品と一緒にお届けします。</div>
+                    <div class="hop3">ネットならではの特徴を活かし、商品にまつわる機能や細部までを正確に伝え、リアルなお買い物体験を提供いたします。<br>
+                        また、商品にまつわるリアルな声や作り手からのメッセージも商品と供にお届けして参ります。</div>
+                </div>
             </div>
             <div class="readmore hop" id="readmore4">
-                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_10.png" alt="">
             </div>
         </div>
         <div id="asocon_3point4" class="asocon_3point effect">
-            <div class="hop">
+            <div class="update_img hop">
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_16.png" alt="">                
+            </div>
+            <div class="update_text effect2">
+                <div class="hop2 effect3">
+                    <div>安心のサポート</div>
+                    <div>長く商品を使っていただきたいから。</div>
+                    <div class="hop3">徹底した検品から、梱包の工夫、お手入れ方法のご案内など、充実した製品サポート体勢をご用意しております。一人一人のお客様に対するお問い合わせへの心配りをはじめ、</div>
+                </div>
             </div>
         </div>
     </div>
