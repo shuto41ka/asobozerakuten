@@ -88,69 +88,15 @@ $(function() {
 
 });
 </script>
- <script>
-        $(window).on('load resize',function(){
-  var pos01 = 0;
-  var pos02 = $("#pcthreemenu2").offset().top;
-  var pos03 = $("#pcthreemenu3").offset().top;
-  var pos04 = $("#asocon_3point1").offset().top;
-  var pos05 = $("#asocon_3point2").offset().top;
-  var pos06 = $("#asocon_3point3").offset().top;
-  var pos07 = $("#asocon_3point4").offset().top;
-            var windowHeight = $(window).height();
-            console.log(pos02);
-            console.log(pos03);
-            console.log(pos04);
-            console.log(pos05);
-            console.log(pos06);
-            console.log(pos07);
-            pos05 *= 1.05;
-            pos06 *= 1.05;
-            pos07 *= 1.05;
-            console.log(windowHeight);
-            console.log(pos3lines);
-  $(window).on('load resize scroll',function(){
-    var posScroll = $(window).scrollTop();
-    var pos3lines = $('#vsp').scrollTop();
-            console.log(pos3lines);
-    if(pos01 <= posScroll && posScroll < pos02) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-        if(pos01 <= pos3lines && pos3lines < pos02) {
-            $("#navi-dot1").addClass('nowhere');
-        } else if(pos02 <= pos3lines && pos3lines <= pos03) {
-            $("#navi-dot2").addClass('nowhere');            
-        } else if(pos03 < pos3lines) {
-            $("#navi-dot3").addClass('nowhere');            
-        }
-    } else if(pos02 <= posScroll && posScroll < pos03) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot4").addClass('nowhere');
-    } else if(pos03 <= posScroll && posScroll < pos04) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot5").addClass('nowhere');
-    } else if(pos04 <= posScroll && posScroll < pos05) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot5").addClass('nowhere');
-    } else if(pos05 <= posScroll && posScroll < pos06) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot6").addClass('nowhere');
-    } else if(pos06 <= posScroll && posScroll < pos07) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot7").addClass('nowhere');
-    };
-  });
-});
-
-</script>
     <style>
         div, body{
             margin: 0;
             padding: 0;
-            
+            position: relative;
         }
         body {
-            scroll-snap-type: y mandatory;
-            scroll-snap-points-y: repeat(100vh);            
+            scroll-snap-type: y mandatory !important;
+            scroll-snap-points-y: repeat(100vh);      
         }
         .vsp img {
             width: 100%;
@@ -178,32 +124,27 @@ $(function() {
         }
         .asocon_container .spupdate {
             position: fixed;
-            left: 39%;
-            top: 10%;
+            left: 42%;
+            top: 5%;
             width: 39%;
         }
         .asocon3lines img {
             width: 100%;
             position: relative;
-            top: 50%;
+            top: 48%;
             transform: translateY(-50%);
         }
         .asocon3lines {
             scroll-snap-align: start;
             width: 50%; 
-            left: 40%; 
+            left: 43%; 
             height: 100vh;
             max-width: 700px;
             vertical-align: middle;
-            position: relative;
-            top: 0;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
         }
         .readmore {
             position: absolute; 
-            bottom: 7vh;
+            bottom: 8vh;
             left: 0;
             width: 100%;
             text-align: center;
@@ -212,7 +153,7 @@ $(function() {
             position: fixed;
         }
         .readmore img {
-            width: 70px;
+            width: 60px;
 
         }
         .asocon_3point {
@@ -228,7 +169,6 @@ $(function() {
         .asocon_3points_container {
             width: 100%;
             position: relative;
-            scroll-snap-align: start;
         }
         .asocon_3point:nth-child(2) {
             background-image: url(https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_11.png);
@@ -542,6 +482,44 @@ $('#asocon_update').scroll(function(){
     </div>
 </div>
     <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+ <script>
+        $(window).on('load resize',function(){
+  var pos01 = 0;
+  var pos02 = $("#pcthreemenu2").offset().top;
+  var pos03 = $("#pcthreemenu3").offset().top;
+  var pos04 = $("#asocon_3point1").offset().top;
+  var pos05 = $("#asocon_3point2").offset().top;
+  var pos06 = $("#asocon_3point3").offset().top;
+  var pos07 = $("#asocon_3point4").offset().top;
+            var windowHeight = $(window).height();
+  $(window).on('load resize scroll',function(){
+    var posScroll = $(window).scrollTop();
+    if(pos01 <= posScroll && posScroll < pos02) {
+      $("[id *= 'navi-dot']").removeClass('nowhere');
+      $("#navi-dot1").addClass('nowhere');        
+    } else if(pos02 <= posScroll && posScroll < pos03) {
+      $("[id *= 'navi-dot']").removeClass('nowhere');
+      $("#navi-dot2").addClass('nowhere');
+    } else if(pos03 <= posScroll && posScroll < pos04) {
+      $("[id *= 'navi-dot']").removeClass('nowhere');
+      $("#navi-dot3").addClass('nowhere');
+    } else if(pos04 <= posScroll && posScroll < pos05) {
+      $("[id *= 'navi-dot']").removeClass('nowhere');
+      $("#navi-dot4").addClass('nowhere');
+    } else if(pos05 <= posScroll && posScroll < pos06) {
+      $("[id *= 'navi-dot']").removeClass('nowhere');
+      $("#navi-dot5").addClass('nowhere');
+    } else if(pos06 <= posScroll && posScroll < pos07) {
+      $("[id *= 'navi-dot']").removeClass('nowhere');
+      $("#navi-dot6").addClass('nowhere');
+    } else {
+      $("[id *= 'navi-dot']").removeClass('nowhere');
+      $("#navi-dot7").addClass('nowhere');        
+    }
+  });
+});
+
+</script>
 
 </body>
 </html>

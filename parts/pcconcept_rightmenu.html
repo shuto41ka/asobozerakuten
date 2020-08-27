@@ -9,48 +9,16 @@
 </script>
 <script>
 $(function(){
-    var speed = 800;
-    var target2 = $('#vsp').innerHeight() * 1.1;
-    var target3 = target2 * 2;
-        var asoconLink1 = $('#asocon_3point1').offset().top;
-        var asoconLink2 = $('#asocon_3point2').offset().top;
-        var asoconLink3 = $('#asocon_3point3').offset().top;
-        var asoconLink4 = $('#asocon_3point4').offset().top;
-  $('a[href^="#asocon_3point1"]').click(function(){
-    $('html, body').animate({scrollTop:asoconLink1}, speed, 'swing');
+  $('a[href^="#"]').click(function(){
+    var speed = 1000;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+    $("html, body").animate({scrollTop:position}, speed, "swing");
     return false;
   });
-  $('a[href^="#asocon_3point2"]').click(function(){
-    $('html, body').animate({scrollTop:asoconLink2}, speed, 'swing');
-    return false;
-  });
-  $('a[href^="#asocon_3point3"]').click(function(){
-    $('html, body').animate({scrollTop:asoconLink3}, speed, 'swing');
-    return false;
-  });
-  $('a[href^="#asocon_3point4"]').click(function(){
-    $('html, body').animate({scrollTop:asoconLink4}, speed, 'swing');
-    return false;
-  });
-    $('a[href^="#pcthreemenu2"]').click(function() {
-    $('html, body').animate({scrollTop: 0}, speed, 'swing', function() {
-    $('#vsp').animate({scrollTop:target2}, speed, 'swing');
-    }).dequeue();
-        return false;
-    });
-    $('a[href^="#pcthreemenu3"]').click(function() {
-    $('html, body').animate({scrollTop: 0}, speed, 'swing', function() {
-    $('#vsp').animate({scrollTop:target3}, speed, 'swing');
-    }).dequeue();
-        return false;
-    });
-    $('a[href^="#spthreemenu1"]').click(function() {
-    $('html, body').animate({scrollTop: 0}, speed, 'swing', function() {
-    $('#vsp').animate({scrollTop:0}, speed, 'swing');
-    }).dequeue();
-        return false;
-    });
-});
+});        
+
 </script>
     <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020pc.css" media="screen and (orientation: landscape)">  
 <div id="pcindex_right" class="pcindex_right pconly">
