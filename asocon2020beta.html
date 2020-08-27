@@ -20,7 +20,7 @@ $(function(){
       var imgPos = $(this).offset().top;    
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll >= imgPos){
+      if (scroll > imgPos - windowHeight + windowHeight/10){
         $(".hop",this).css({"opacity":"1", "padding-top": "0" });
         $("i",this).css({ 
           "font-size": "100px",
@@ -36,11 +36,11 @@ $(function(){
 $(function(){
   $('.effect2 .hop2').css({"opacity":"0", "padding-top":"0"});
   $(window).scroll(function (){
-    $(".effect").each(function(){
+    $(".effect2").each(function(){
       var imgPos = $(this).offset().top;    
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll >= imgPos){
+      if (scroll > imgPos - windowHeight + windowHeight/10){
         $(".hop2",this).css({"opacity":"1", "padding-top": "0" });
         $("i",this).css({ 
           "font-size": "100px",
@@ -56,11 +56,11 @@ $(function(){
 $(function(){
   $('.effect3 .hop3').css({"opacity":"0", "padding-top":"0"});
   $(window).scroll(function (){
-    $(".effect").each(function(){
+    $(".effect3").each(function(){
       var imgPos = $(this).offset().top;    
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
-      if (scroll >= imgPos){
+      if (scroll > imgPos - windowHeight + windowHeight/10){
         $(".hop3",this).css({"opacity":"1", "padding-top": "0" });
         $("i",this).css({ 
           "font-size": "100px",
@@ -88,138 +88,76 @@ $(function() {
 
 });
 </script>
- <script>
-        $(window).on('load resize',function(){
-  var pos01 = 0;
-  var pos02 = $("#pcthreemenu2").offset().top;
-  var pos03 = $("#pcthreemenu3").offset().top;
-  var pos04 = $("#asocon_3point1").offset().top;
-  var pos05 = $("#asocon_3point2").offset().top;
-  var pos06 = $("#asocon_3point3").offset().top;
-  var pos07 = $("#asocon_3point4").offset().top;
-            var windowHeight = $(window).height();
-            console.log(pos02);
-            console.log(pos03);
-            console.log(pos04);
-            console.log(pos05);
-            console.log(pos06);
-            console.log(pos07);
-            pos05 *= 1.05;
-            pos06 *= 1.05;
-            pos07 *= 1.05;
-            console.log(windowHeight);
-            console.log(pos3lines);
-  $(window).on('load resize scroll',function(){
-    var posScroll = $(window).scrollTop();
-    var pos3lines = $('#vsp').scrollTop();
-            console.log(pos3lines);
-    if(pos01 <= posScroll && posScroll < pos02) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-        if(pos01 <= pos3lines && pos3lines < pos02) {
-            $("#navi-dot1").addClass('nowhere');
-        } else if(pos02 <= pos3lines && pos3lines <= pos03) {
-            $("#navi-dot2").addClass('nowhere');            
-        } else if(pos03 < pos3lines) {
-            $("#navi-dot3").addClass('nowhere');            
-        }
-    } else if(pos02 <= posScroll && posScroll < pos03) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot4").addClass('nowhere');
-    } else if(pos03 <= posScroll && posScroll < pos04) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot5").addClass('nowhere');
-    } else if(pos04 <= posScroll && posScroll < pos05) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot5").addClass('nowhere');
-    } else if(pos05 <= posScroll && posScroll < pos06) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot6").addClass('nowhere');
-    } else if(pos06 <= posScroll && posScroll < pos07) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot7").addClass('nowhere');
-    };
-  });
-});
-
-</script>
+ 
     <style>
         div, body{
             margin: 0;
             padding: 0;
-            
-        }
-        body {
-            scroll-snap-type: y mandatory;
-            scroll-snap-points-y: repeat(100vh);            
         }
         .vsp img {
             width: 100%;
         }
-        .asocon_update {
-            width: 100vw; 
-            position: relative; 
-            top: 0;
-            left: 0; 
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        .asocon_update::-webkit-scrollbar {
-            display: none;
-        }
-        
         .asocon_container {
             background-image: url(https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_17.jpg); 
             background-repeat: no-repeat;
-            background-attachment: fixed;
             width: 100vw; 
+            height: 100vh; 
             background-size: cover; 
             background-position: top left; 
             position: relative;            
         }
         .asocon_container .spupdate {
-            position: fixed;
-            left: 42%;
+            position: absolute;
+            left: 40%;
             top: 10%;
             width: 39%;
         }
         .asocon3lines img {
             width: 100%;
-            position: relative;
-            top: 50%;
-            transform: translateY(-50%);
+            padding-top: 5vh;
         }
         .asocon3lines {
             scroll-snap-align: start;
             width: 50%; 
             left: 43%; 
-            height: 100vh;
+            height: 100%; 
             max-width: 700px;
             vertical-align: middle;
             position: relative;
             top: 0;
             display: flex;
             justify-content: center;
-            align-items: flex-start;
+            align-items: center;
+        }
+        .vsp {
+            width: 100%; 
+            position: absolute; 
+            top: 0;
+            left: 0; 
+            height: 100%; 
+            overflow-y: scroll; 
+            scroll-snap-type: y mandatory;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+        .vsp::-webkit-scrollbar {
+            display: none;
         }
         .readmore {
             position: absolute; 
-            bottom: 10vh;
+            top: 83%; 
             left: 0;
             width: 100%;
             text-align: center;
         }
-        .asocon_container .readmore {
-            position: fixed;
-        }
         .readmore img {
             width: 70px;
-
+            cursor: pointer;
         }
         .asocon_3point {
             width: 100vw;
             height: 100vh;
             position: relative;
-            background-attachment: fixed;
             scroll-snap-align: start;
             background-repeat: no-repeat;
             background-position: left top;
@@ -227,8 +165,15 @@ $(function() {
         }
         .asocon_3points_container {
             width: 100%;
+            height: auto;
             position: relative;
-            scroll-snap-align: start;
+            scroll-snap-type: y mandatory;
+            overflow-y: scroll;
+            -ms-overflow-style: none;
+            scrollbar-width: none;            
+        }
+        .asocon_3points_container::-webkit-scrollbar {
+            display: none;
         }
         .asocon_3point:nth-child(2) {
             background-image: url(https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_11.png);
@@ -242,11 +187,10 @@ $(function() {
         .update_disc {
             width: 30%;
             height: auto;
-            line-height: 3em;
+            line-height: 4em;
             top: 47%;
             left: 15%;
-            font-size: 1.3vw;
-            font-weight: bold;
+            font-size: 1.8vw;
             min-width: max-content;
             transform: translateY(-50%);
             position: relative;
@@ -281,7 +225,7 @@ $(function() {
         }
         .update_text div:nth-child(1) {
             padding: 10px 0;
-            font-size: 1.3vw;
+            font-size: 22px;
         }
         .update_text div:nth-child(2) {
             padding:0 0 20px 0;
@@ -291,65 +235,58 @@ $(function() {
         .update_text div:nth-child(3) {
             font-size: 1.3vw;
             padding-bottom: 10px;
-            line-height: 1.6em;
         }
         .hop {
-            transition-delay: 1s;
+            transition-delay: .5s;
         }
         .hop2 {
-            transition-delay: 2s;
-            transition-duration: 2s;
+            transition-delay: 1.5s;
+            transition-duration: .5s;
         }
         .hop3 {
-            transition-duration: 2s;
-            transition-delay: 3s;
+            transition-duration: .5s;
+            transition-delay: 2.5s;
         }
         /* スマホをイメージ */
         @media screen and (orientation: portrait) {
         .asocon_container {
-            background-image: url(https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_23.jpg); 
+            background-image: url(https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_01.png); 
             width: 100vw; 
             background-repeat: no-repeat;
             height: 100vh; 
             background-size: 100% auto; 
             background-position: top left; 
             position: relative;
-            
         }
         .asocon_container .spupdate {
             width: 88%; 
-            position: fixed; 
-            left: 7.5%; 
+            position: absolute; 
+            left: 1.33px; 
             top: 22%;
         }
+            .asocon3lines {
+                width: 85%;
+                height: 100%;
+                top: 0;
+                left: 7.5%;
+            }
         .vsp {
             position: absolute; 
             overflow-y: scroll; 
             scroll-snap-type: y mandatory;
             height: 100%;
             max-height: inherit;
-            -ms-overflow-style: none;
-            scrollbar-width: none;                            
         }
-        .vsp::-webkit-scrollbar {
-            display: none;
-        }            
-        .asocon3lines {
-                width: 85%;
-                height: 100%;
-                top: 0;
-                left: 7.5%;
-            }
-         .asocon_3point {
-                height: 100vh;
-            }
-            .readmore {
+        .readmore {
             text-align: center; 
             position: absolute; 
             top: 77%; 
             left: 0; 
             width: 100%;
         }
+            .asocon_3point {
+                height: 100vh;
+            }
             .readmore img {
                 width: 14%;
             }
@@ -362,8 +299,7 @@ $(function() {
             line-height: 3em;
             top: 30%;
             left: 50%;
-            font-size: 10.67px;
-            font-weight: bold;
+            font-size: 14px;
             transform: translateX(-50%);
             position: relative;
         }
@@ -412,20 +348,7 @@ $(function() {
         }
         .asocon_3point {
             background-size: 100% auto;
-            background-attachment: scroll;
-                height: 100vh;            
         }
-        .hop {
-            transition-delay: 1s;
-        }
-        .hop2 {
-            transition-delay: 2s;
-            transition-duration: 1.5s;
-        }
-        .hop3 {
-            transition-duration: 1.5s;
-            transition-delay: 3.5s;
-        }            
         }
     </style>
 </head>
@@ -449,10 +372,10 @@ $(function() {
     <script>
 var menuHeight = 50;
 var startPos = 0;
-$('#asocon_update').scroll(function(){
+$(window).scroll(function(){
   var currentPos = $(this).scrollTop();
   if (currentPos > startPos && $("body").hasClass("fixing") == false) {
-    if($('#asocon_update').scrollTop() >= 200) {
+    if($(window).scrollTop() >= 200) {
       $(".spheader_aso").css("top", "-" + 50 + "px");
     }
   } else {
@@ -464,12 +387,13 @@ $('#asocon_update').scroll(function(){
     </script> 
     
 <!-- 2020コンセプトページ　-->
-<div class="asocon_update" id="asocon_update">
-    <div class="asocon_container" id="asocon_container">
-        <img class="spupdate" src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_24.png" alt="">
+    <div class="asocon_container">
+        <img class="spupdate" src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_02.png" alt="">
             <div class="vsp" id="vsp">
                 <div class="asocon3lines_01 asocon3lines" id="spthreemenu1"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_03.png" alt=""></div>
+                <br><br><br>
                 <div class="asocon3lines_02 asocon3lines" id="pcthreemenu2"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_04.png" alt=""></div>
+                <br><br><br>
                 <div class="asocon3lines_03 asocon3lines" id="pcthreemenu3"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_05.png" alt=""></div>
             </div>
         <div class="readmore" id="readmore1">
@@ -527,21 +451,66 @@ $('#asocon_update').scroll(function(){
         </div>
         <div id="asocon_3point4" class="asocon_3point effect">
             <div class="update_img hop">
-                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_25.png" alt="" class="pconly">                
-                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_22.png" alt="" class="sponly">                
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_16.png" alt="" class="pconly">                
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_21.png" alt="" class="sponly">                
             </div>
             <div class="update_text effect2">
                 <div class="hop2 effect3">
                     <div>安心のサポート</div>
                     <div>長く商品を使っていただきたいから。</div>
-                    <div class="hop3">徹底した検品から、梱包の工夫、お手入れ方法のご案内など、充実した製品サポート体勢をご用意しております。一人一人のお客様に対するお問い合わせに、丁寧に向き合って参ります。  
-                    </div>
+                    <div class="hop3">徹底した検品から、梱包の工夫、お手入れ方法のご案内など、充実した製品サポート体勢をご用意しております。一人一人のお客様に対するお問い合わせへの心配りをはじめ、</div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <div id="footer-aso">
+    </div>
     <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
-
+    <script>
+        $("[id ^= 'readmore'] img").click(function() {
+        var scrollLength = $('#vsp').scrollTop();
+        var windowScroll = $(window).scrollTop();
+        var height = $('#vsp').innerHeight();
+        var height2x = height * 2;
+        var height5x = height * 0.1;
+        var scrollGain = scrollLength + height5x + height;
+        var scrollHeight = scrollLength - height2x;
+        var windowHeight = $(window).height();
+        var windowWidth = $(window).width();
+        var windowScrollGain = windowHeight + windowScroll;
+        var scroll3points1 = $('#asocon_3point1').offset().top;
+        var scroll3points2 = $('#asocon_3point2').offset().top;
+        var scroll3points3 = $('#asocon_3point3').offset().top;
+        var scroll3points4 = $('#asocon_3point4').offset().top;
+            console.log(scroll3points1);
+            console.log(scroll3points2);
+            console.log(scroll3points3);
+            console.log(scroll3points4);
+            console.log(scrollHeight);
+            if (windowWidth <= 600) {
+                windowScrollGain += 80;
+            };
+        if (scrollHeight <= 0) {
+            $('#vsp').animate({scrollTop:scrollGain}, 800, 'swing');
+        } else if (scrollHeight > 0 && windowScroll < windowHeight) {
+            $('body,html').animate({scrollTop:scroll3points1}, 800, 'swing');
+            scrollHeight += windowHeight;
+            return;
+        } else if (windowScroll >= windowHeight && windowScroll < (windowHeight * 2)) {
+            $('body,html').animate({scrollTop:scroll3points2}, 800, 'swing');
+            scrollHeight += windowHeight;
+            return;
+        } else if (windowScroll >= scroll3points2 && windowScroll < (windowHeight * 3)) {
+            $('body,html').animate({scrollTop:scroll3points3}, 800, 'swing');
+            scrollHeight += windowHeight;
+            return;
+        } else if (windowScroll >= scroll3points3 && windowScroll < (windowHeight * 4)) {
+            $('body,html').animate({scrollTop:scroll3points4}, 800, 'swing');
+            scrollHeight += windowHeight;
+            return;
+        };
+        })
+    </script>
+            <!-- スムーズスクロール部分の記述 -->
 </body>
 </html>
