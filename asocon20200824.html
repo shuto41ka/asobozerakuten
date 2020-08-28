@@ -14,10 +14,10 @@
 <script src="https://www.rakuten.ne.jp/gold/asoboze/jquery-3.2.1.min.js"></script>    
 <script type="text/javascript">
 $(function(){
-  $('.effect .hop').css({"opacity":"0", "padding-top":"0"});
-  $(window).on('load resize scroll',function(){
+  $('.effect .hop').css({"opacity":"0", "padding-top":"10px"});
+  $(window).scroll(function (){
     $(".effect").each(function(){
-      var imgPos = $(this).offset().top - 100;    
+      var imgPos = $(this).offset().top;    
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
       if (scroll >= imgPos){
@@ -35,9 +35,9 @@ $(function(){
 <script type="text/javascript">
 $(function(){
   $('.effect2 .hop2').css({"opacity":"0", "padding-top":"0"});
-  $(window).on('load resize scroll',function(){
+  $(window).scroll(function (){
     $(".effect").each(function(){
-      var imgPos = $(this).offset().top - 100;    
+      var imgPos = $(this).offset().top;    
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
       if (scroll >= imgPos){
@@ -55,9 +55,9 @@ $(function(){
 <script type="text/javascript">
 $(function(){
   $('.effect3 .hop3').css({"opacity":"0", "padding-top":"0"});
-  $(window).on('load resize scroll',function(){
+  $(window).scroll(function (){
     $(".effect").each(function(){
-      var imgPos = $(this).offset().top - 100;    
+      var imgPos = $(this).offset().top;    
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
       if (scroll >= imgPos){
@@ -88,21 +88,69 @@ $(function() {
 
 });
 </script>
+ <script>
+        $(window).on('load resize',function(){
+  var pos01 = 0;
+  var pos02 = $("#pcthreemenu2").offset().top;
+  var pos03 = $("#pcthreemenu3").offset().top;
+  var pos04 = $("#asocon_3point1").offset().top;
+  var pos05 = $("#asocon_3point2").offset().top;
+  var pos06 = $("#asocon_3point3").offset().top;
+  var pos07 = $("#asocon_3point4").offset().top;
+            var windowHeight = $(window).height();
+            console.log(pos02);
+            console.log(pos03);
+            console.log(pos04);
+            console.log(pos05);
+            console.log(pos06);
+            console.log(pos07);
+            pos05 *= 1.05;
+            pos06 *= 1.05;
+            pos07 *= 1.05;
+            console.log(windowHeight);
+            console.log(pos3lines);
+  $(window).on('load resize scroll',function(){
+    var posScroll = $(window).scrollTop();
+    var pos3lines = $('#vsp').scrollTop();
+            console.log(pos3lines);
+    if(pos01 <= posScroll && posScroll < pos02) {
+      $("[id *= 'navi-dot']").removeClass('nowhere');
+        if(pos01 <= pos3lines && pos3lines < pos02) {
+            $("#navi-dot1").addClass('nowhere');
+        } else if(pos02 <= pos3lines && pos3lines <= pos03) {
+            $("#navi-dot2").addClass('nowhere');            
+        } else if(pos03 < pos3lines) {
+            $("#navi-dot3").addClass('nowhere');            
+        }
+    } else if(pos02 <= posScroll && posScroll < pos03) {
+      $("[id *= 'navi-dot']").removeClass('nowhere');
+      $("#navi-dot4").addClass('nowhere');
+    } else if(pos03 <= posScroll && posScroll < pos04) {
+      $("[id *= 'navi-dot']").removeClass('nowhere');
+      $("#navi-dot5").addClass('nowhere');
+    } else if(pos04 <= posScroll && posScroll < pos05) {
+      $("[id *= 'navi-dot']").removeClass('nowhere');
+      $("#navi-dot5").addClass('nowhere');
+    } else if(pos05 <= posScroll && posScroll < pos06) {
+      $("[id *= 'navi-dot']").removeClass('nowhere');
+      $("#navi-dot6").addClass('nowhere');
+    } else if(pos06 <= posScroll && posScroll < pos07) {
+      $("[id *= 'navi-dot']").removeClass('nowhere');
+      $("#navi-dot7").addClass('nowhere');
+    };
+  });
+});
+
+</script>
     <style>
         div, body{
             margin: 0;
             padding: 0;
+            
         }
         body {
-            height: 100vh;
-            width: 100vw;
-            overflow-y: scroll;
-            -ms-scroll-snap-type: mandatory;
--ms-scroll-snap-points-y: repeat(100vh);
--webkit-scroll-snap-type: mandatory;
--webkit-scroll-snap-points-y: repeat(100vh);
-            scroll-snap-points-y: repeat(100vh);      
-            scroll-snap-type: y mandatory !important;
+            scroll-snap-type: y mandatory;
+            scroll-snap-points-y: repeat(100vh);            
         }
         .vsp img {
             width: 100%;
@@ -131,27 +179,31 @@ $(function() {
         .asocon_container .spupdate {
             position: fixed;
             left: 42%;
-            top: 5%;
+            top: 10%;
             width: 39%;
         }
         .asocon3lines img {
             width: 100%;
             position: relative;
-            top: 48%;
+            top: 50%;
             transform: translateY(-50%);
         }
         .asocon3lines {
             scroll-snap-align: start;
             width: 50%; 
             left: 43%; 
-            position: relative;
             height: 100vh;
             max-width: 700px;
             vertical-align: middle;
+            position: relative;
+            top: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
         }
         .readmore {
             position: absolute; 
-            bottom: 8vh;
+            bottom: 10vh;
             left: 0;
             width: 100%;
             text-align: center;
@@ -160,7 +212,7 @@ $(function() {
             position: fixed;
         }
         .readmore img {
-            width: 60px;
+            width: 70px;
 
         }
         .asocon_3point {
@@ -176,6 +228,7 @@ $(function() {
         .asocon_3points_container {
             width: 100%;
             position: relative;
+            scroll-snap-align: start;
         }
         .asocon_3point:nth-child(2) {
             background-image: url(https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_11.png);
@@ -274,8 +327,6 @@ $(function() {
             overflow-y: scroll; 
             scroll-snap-type: y mandatory;
             height: 100%;
-            top: 0;
-            left: 0;
             max-height: inherit;
             -ms-overflow-style: none;
             scrollbar-width: none;                            
@@ -284,7 +335,6 @@ $(function() {
             display: none;
         }            
         .asocon3lines {
-            position: relative;
                 width: 85%;
                 height: 100%;
                 top: 0;
@@ -431,14 +481,14 @@ $('#asocon_update').scroll(function(){
         <div id="asocon_3point1" class="asocon_3point effect">
             <div class="update_disc hop">
                 asobozeは、バッグ作りを通して<br>
-                「自分らしくアップデートできる日々」を<br>
+                「自分らしくアップデートできる日々を<br>
                 皆様と一緒に作っていきます。
             </div>
             <div class="update_3dots effect">
                 <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_09.png" class="hop" alt="">
             </div>
-            <div class="readmore effect2" id="readmore2">
-                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_10.png" alt="" class="hop2">
+            <div class="readmore hop" id="readmore2">
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_10.png" alt="">
             </div>
             
         </div>
@@ -454,8 +504,8 @@ $('#asocon_update').scroll(function(){
                     <div class="hop3">これまで培ってきた技術や素材へのこだわりをベースに、現代的な視点から得たコンセプトに忠実でミニマルなデザインの製品を生み出していきたい。便利で楽しく、自分をアップデートしてくれるような生活を提供します。</div>
                 </div>
             </div>
-            <div class="readmore effect3" id="readmore3">
-                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_10.png" alt="" class="hop3">
+            <div class="readmore hop" id="readmore3">
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_10.png" alt="">
             </div>                
         </div>
         <div id="asocon_3point3" class="asocon_3point effect">
@@ -471,8 +521,8 @@ $('#asocon_update').scroll(function(){
                         また、商品にまつわるリアルな声や作り手からのメッセージも商品と供にお届けして参ります。</div>
                 </div>
             </div>
-            <div class="readmore effect3" id="readmore4">
-                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_10.png" alt="" class="hop3">
+            <div class="readmore hop" id="readmore4">
+                <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_10.png" alt="">
             </div>
         </div>
         <div id="asocon_3point4" class="asocon_3point effect">
@@ -484,7 +534,7 @@ $('#asocon_update').scroll(function(){
                 <div class="hop2 effect3">
                     <div>安心のサポート</div>
                     <div>長く商品を使っていただきたいから。</div>
-                    <div class="hop3">徹底した検品から、梱包の工夫、お手入れ方法のご案内など、充実した製品サポート体制をご用意しております。一人一人のお客様に対するお問い合わせに、丁寧に向き合って参ります。  
+                    <div class="hop3">徹底した検品から、梱包の工夫、お手入れ方法のご案内など、充実した製品サポート体勢をご用意しております。一人一人のお客様に対するお問い合わせに、丁寧に向き合って参ります。  
                     </div>
                 </div>
             </div>
@@ -492,122 +542,6 @@ $('#asocon_update').scroll(function(){
     </div>
 </div>
     <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
- <script>
-        $(window).on('load resize',function(){
-  var pos01 = 0;
-  var pos02 = $("#pcthreemenu2").offset().top - 100;
-  var pos03 = $("#pcthreemenu3").offset().top - 100;
-  var pos04 = $("#asocon_3point1").offset().top - 100;
-  var pos05 = $("#asocon_3point2").offset().top - 100;
-  var pos06 = $("#asocon_3point3").offset().top - 100;
-  var pos07 = $("#asocon_3point4").offset().top - 100;
-            var windowHeight = $(window).height();
-  $(window).on('load resize scroll',function(){
-    var posScroll = $(window).scrollTop();
-    if(pos01 <= posScroll && posScroll < pos02) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot1").addClass('nowhere');        
-    } else if(pos02 <= posScroll && posScroll < pos03) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot2").addClass('nowhere');
-    } else if(pos03 <= posScroll && posScroll < pos04) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot3").addClass('nowhere');
-    } else if(pos04 <= posScroll && posScroll < pos05) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot4").addClass('nowhere');
-    } else if(pos05 <= posScroll && posScroll < pos06) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot5").addClass('nowhere');
-    } else if(pos06 <= posScroll && posScroll < pos07) {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot6").addClass('nowhere');
-    } else {
-      $("[id *= 'navi-dot']").removeClass('nowhere');
-      $("#navi-dot7").addClass('nowhere');        
-    }
-  });
-});
-
-</script>
-    <script>
-            var speed = 400;
-        var timer = false;
-  var pos01 = 0;
-  var pos02 = $("#pcthreemenu2").offset().top;
-  var pos03 = $("#pcthreemenu3").offset().top;
-  var pos04 = $("#asocon_3point1").offset().top;
-  var pos05 = $("#asocon_3point2").offset().top;
-  var pos06 = $("#asocon_3point3").offset().top;
-  var pos07 = $("#asocon_3point4").offset().top;
-var pos08 = pos02 / 2;  
-var pos09 = (pos02 + pos03) / 2;  
-var pos10 = (pos03 + pos04) / 2;    
-var pos11 = (pos04 + pos05) / 2;  
-var pos12 = (pos05 + pos06) / 2;
-var pos13 = (pos06 + pos07) / 2;
-var pos14 = pos01 + 100;
-var pos15 = pos02 * 0.9;
-var pos16 = pos02 * 1.1;
-var pos17 = pos03 * 0.9;
-var pos18 = pos03 * 1.1;
-var pos19 = pos04 * 0.9;
-var pos20 = pos04 * 1.1;
-var pos21 = pos05 * 0.9;
-var pos22 = pos05 * 1.1;
-var pos23 = pos06 * 0.9;
-var pos24 = pos06 * 1.1;
-var pos25 = pos07 * 0.9;
-  $(window).on('load resize scroll',function(){
-    if (timer !== false) {
-        clearTimeout(timer);
-    };
-    timer = setTimeout(function() {
-          pos02 = $("#pcthreemenu2").offset().top;
-          pos03 = $("#pcthreemenu3").offset().top;
-          pos04 = $("#asocon_3point1").offset().top;
-          pos05 = $("#asocon_3point2").offset().top;
-          pos06 = $("#asocon_3point3").offset().top;
-          pos07 = $("#asocon_3point4").offset().top;
-          pos08 = pos02 / 2;  
-          pos09 = (pos02 + pos03) / 2;  
-          pos10 = (pos03 + pos04) / 2;    
-          pos11 = (pos04 + pos05) / 2;  
-          pos12 = (pos05 + pos06) / 2;
-          pos13 = (pos06 + pos07) / 2;
-          pos14 = pos01 + 100;
-          pos15 = pos02 * 0.9;
-          pos16 = pos02 * 1.1;
-          pos17 = pos03 * 0.9;
-          pos18 = pos03 * 1.1;
-          pos19 = pos04 * 0.9;
-          pos20 = pos04 * 1.1;
-          pos21 = pos05 * 0.9;
-          pos22 = pos05 * 1.1;
-          pos23 = pos06 * 0.9;
-          pos24 = pos06 * 1.1;
-          pos25 = pos07 * 0.9;
-
-            var windowHeight = $(window).scrollTop();
-        if (windowHeight < pos08 && windowHeight != pos01 && windowHeight != pos02 && windowHeight != pos03 && windowHeight != pos04 && windowHeight != pos05 && windowHeight != pos06 && windowHeight != pos07) {
-    $("html, body").animate({scrollTop:0}, speed, "swing");
-        } else if (pos08 < windowHeight && windowHeight < pos09 && windowHeight != pos01 && windowHeight != pos02 && windowHeight != pos03 && windowHeight != pos04 && windowHeight != pos05 && windowHeight != pos06 && windowHeight != pos07) {
-    $("html, body").animate({scrollTop:pos02}, speed, "swing");
-        } else if (pos09 < windowHeight && windowHeight < pos10 && windowHeight != pos01 && windowHeight != pos02 && windowHeight != pos03 && windowHeight != pos04 && windowHeight != pos05 && windowHeight != pos06 && windowHeight != pos07) {
-    $("html, body").animate({scrollTop:pos03}, speed, "swing");
-        } else if (pos10 < windowHeight && windowHeight < pos11 && windowHeight != pos01 && windowHeight != pos02 && windowHeight != pos03 && windowHeight != pos04 && windowHeight != pos05 && windowHeight != pos06 && windowHeight != pos07) {
-    $("html, body").animate({scrollTop:pos04}, speed, "swing");
-        } else if (pos11 < windowHeight && windowHeight < pos12 && windowHeight != pos01 && windowHeight != pos02 && windowHeight != pos03 && windowHeight != pos04 && windowHeight != pos05 && windowHeight != pos06 && windowHeight != pos07) {
-    $("html, body").animate({scrollTop:pos05}, speed, "swing");
-        } else if (pos12 < windowHeight && windowHeight < pos13 && windowHeight != pos01 && windowHeight != pos02 && windowHeight != pos03 && windowHeight != pos04 && windowHeight != pos05 && windowHeight != pos06 && windowHeight != pos07) {
-    $("html, body").animate({scrollTop:pos06}, speed, "swing");
-        } else if (pos13 < windowHeight && windowHeight != pos01 && windowHeight != pos02 && windowHeight != pos03 && windowHeight != pos04 && windowHeight != pos05 && windowHeight != pos06 && windowHeight != pos07) {
-    $("html, body").animate({scrollTop:pos07}, speed, "swing");
-        };
-    }, 800);
-});
-
-    </script>
 
 </body>
 </html>
