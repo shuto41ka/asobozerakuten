@@ -109,7 +109,7 @@ $(window).on('resize',function(){
 });
         });
     </script>
-<style>
+    <style>
         div, body{
             margin: 0;
             padding: 0;
@@ -134,17 +134,7 @@ $(window).on('resize',function(){
             display: none;
         }
         
-        .asocon_container {
-            background-image: url(https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_17.jpg); 
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            width: 100vw; 
-            background-size: cover; 
-            background-position: top left; 
-            position: relative;            
-            z-index: 0;
-        }
-        .asocon_container .spupdate {
+ .spupdate {
             position: fixed;
             left: 42%;
             top: 11%;
@@ -158,12 +148,17 @@ $(window).on('resize',function(){
         }
         .asocon3lines {
             scroll-snap-align: start;
-            width: 50%; 
-            left: 43%; 
-            position: relative;
             height: 100vh;
             max-width: 700px;
             vertical-align: middle;
+            background-image: url(https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_17.jpg); 
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            width: 100vw; 
+            background-size: cover; 
+            background-position: top left; 
+            position: relative;            
+            z-index: 0;
         }
         .readmore {
             position: fixed; 
@@ -256,15 +251,15 @@ $(window).on('resize',function(){
             line-height: 1.6em;
         }
         .hop {
-            transition-delay: .3s;
+            transition-delay: 1s;
         }
         .hop2 {
-            transition-delay: .8s;
-            transition-duration: 1.5s;
+            transition-delay: 2s;
+            transition-duration: 2s;
         }
         .hop3 {
-            transition-duration: 1.5s;
-            transition-delay: 1.5s;
+            transition-duration: 2s;
+            transition-delay: 3s;
         }
         /* スマホをイメージ */
         @media screen and (orientation: portrait) {
@@ -435,20 +430,16 @@ $('#asocon_update').scroll(function(){
     </script> 
     
 <!-- 2020コンセプトページ　-->
-<div class="asocon_update" id="asocon_update">
-    <div class="asocon_container" id="asocon_container">
         <img class="spupdate" src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_24.png" alt="">
-            <div class="vsp" id="vsp">
-                <div class="asocon3lines_01 asocon3lines box effect" id="spthreemenu1"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_03.png" alt="" class="hop"></div>
-                <div class="asocon3lines_02 asocon3lines box effect" id="pcthreemenu2"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_04.png" class="hop" alt=""></div>
-                <div class="asocon3lines_03 asocon3lines box effect" id="pcthreemenu3"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_05.png" class="hop" alt=""></div>
-            </div>
+                <div class="asocon3lines_01 asocon3lines box" id="spthreemenu1"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_03.png" alt=""></div>
+                <div class="asocon3lines_02 asocon3lines box" id="pcthreemenu2"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_04.png" alt=""></div>
+                <div class="asocon3lines_03 asocon3lines box" id="pcthreemenu3"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_05.png" alt=""></div>
         <div class="readmore" id="readmore1">
             <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
         </div>
         
-    </div>
-    <div id="asocon_3points" class="asocon_3points_container">
+
+
         <div id="asocon_3point1" class="asocon_3point effect box">
             <div class="update_disc hop">
                 asobozeは、バッグ作りを通して<br>
@@ -504,8 +495,6 @@ $('#asocon_update').scroll(function(){
                 </div>
             </div>
         </div>
-    </div>
-</div>
     <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
  <script>
         $(window).on('load resize',function(){
@@ -536,13 +525,13 @@ $('#asocon_update').scroll(function(){
     } else if(pos03 <= posScroll && posScroll < pos04) {
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot3").addClass('nowhere');
-        $('#readmore2').hide(1000);
-        $('#readmore1').show(1000);
+        $('#readmore2').hide();
+        $('#readmore1').show();
     } else if(pos04 <= posScroll && posScroll < pos05) {
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot4").addClass('nowhere');
-        $('#readmore1').hide(1000);
-        $('#readmore2').show(1000);
+        $('#readmore1').hide();
+        $('#readmore2').show();
     } else if(pos05 <= posScroll && posScroll < pos06) {
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot5").addClass('nowhere');
@@ -557,14 +546,14 @@ $('#asocon_update').scroll(function(){
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot7").addClass('nowhere');        
         $('#readmore1').hide();
-        $('#readmore2').hide(1000);
+        $('#readmore2').show();
     }
   });
 });
 
 </script>
-        <script>
-       var speed = 300;
+    <script>
+            var speed = 300;
         var timer = false;
   var pos01 = 0;
   var pos02 = $("#pcthreemenu2").offset().top;
@@ -573,14 +562,26 @@ $('#asocon_update').scroll(function(){
   var pos05 = $("#asocon_3point2").offset().top;
   var pos06 = $("#asocon_3point3").offset().top;
   var pos07 = $("#asocon_3point4").offset().top;
-sc_func();
-    function sc_func(){
-        
-        //元々の位置を取得
-        var posBf = $(window).scrollTop();
-        
+var pos08 = pos02 / 2;  
+var pos09 = (pos02 + pos03) / 2;  
+var pos10 = (pos03 + pos04) / 2;    
+var pos11 = (pos04 + pos05) / 2;  
+var pos12 = (pos05 + pos06) / 2;
+var pos13 = (pos06 + pos07) / 2;
+var pos14 = pos01 + 100;
+var pos15 = pos02 * 0.9;
+var pos16 = pos02 * 1.1;
+var pos17 = pos03 * 0.9;
+var pos18 = pos03 * 1.1;
+var pos19 = pos04 * 0.9;
+var pos20 = pos04 * 1.1;
+var pos21 = pos05 * 0.9;
+var pos22 = pos05 * 1.1;
+var pos23 = pos06 * 0.9;
+var pos24 = pos06 * 1.1;
+var pos25 = pos07 * 0.9;
   $(window).on('load resize scroll',function(){
-        if (timer !== false) {
+    if (timer !== false) {
         clearTimeout(timer);
     };
     timer = setTimeout(function() {
@@ -590,49 +591,45 @@ sc_func();
           pos05 = $("#asocon_3point2").offset().top;
           pos06 = $("#asocon_3point3").offset().top;
           pos07 = $("#asocon_3point4").offset().top;
-      
-            //スクロールしたら位置を取得
-            var posAf = $(this).scrollTop();
- 
-            //元々の位置とスクロール後の位置を比較
-            if( posAf < posBf){
-                if (posAf < pos02) {
+          pos08 = pos02 / 2;  
+          pos09 = (pos02 + pos03) / 2;  
+          pos10 = (pos03 + pos04) / 2;    
+          pos11 = (pos04 + pos05) / 2;  
+          pos12 = (pos05 + pos06) / 2;
+          pos13 = (pos06 + pos07) / 2;
+          pos14 = pos01 + 100;
+          pos15 = pos02 * 0.9;
+          pos16 = pos02 * 1.1;
+          pos17 = pos03 * 0.9;
+          pos18 = pos03 * 1.1;
+          pos19 = pos04 * 0.9;
+          pos20 = pos04 * 1.1;
+          pos21 = pos05 * 0.9;
+          pos22 = pos05 * 1.1;
+          pos23 = pos06 * 0.9;
+          pos24 = pos06 * 1.1;
+          pos25 = pos07 * 0.9;
+
+            var windowHeight = $(window).scrollTop();
+        if (windowHeight < pos08 && windowHeight != pos01 && windowHeight != pos02 && windowHeight != pos03 && windowHeight != pos04 && windowHeight != pos05 && windowHeight != pos06 && windowHeight != pos07) {
     $("html, body").animate({scrollTop:0}, speed, "swing");
-                } else if ((pos02 < posAf) && (pos03 > posAf)) {
+        } else if (pos08 < windowHeight && windowHeight < pos09 && windowHeight != pos01 && windowHeight != pos02 && windowHeight != pos03 && windowHeight != pos04 && windowHeight != pos05 && windowHeight != pos06 && windowHeight != pos07) {
     $("html, body").animate({scrollTop:pos02}, speed, "swing");
-                } else if ((pos03 < posAf) && (pos04 > posAf)) {
+        } else if (pos09 < windowHeight && windowHeight < pos10 && windowHeight != pos01 && windowHeight != pos02 && windowHeight != pos03 && windowHeight != pos04 && windowHeight != pos05 && windowHeight != pos06 && windowHeight != pos07) {
     $("html, body").animate({scrollTop:pos03}, speed, "swing");
-                } else if ((pos04 < posAf) && (pos05 > posAf)) {
+        } else if (pos10 < windowHeight && windowHeight < pos11 && windowHeight != pos01 && windowHeight != pos02 && windowHeight != pos03 && windowHeight != pos04 && windowHeight != pos05 && windowHeight != pos06 && windowHeight != pos07) {
     $("html, body").animate({scrollTop:pos04}, speed, "swing");
-                } else if ((pos05 < posAf) && (pos06 > posAf)) {
+        } else if (pos11 < windowHeight && windowHeight < pos12 && windowHeight != pos01 && windowHeight != pos02 && windowHeight != pos03 && windowHeight != pos04 && windowHeight != pos05 && windowHeight != pos06 && windowHeight != pos07) {
     $("html, body").animate({scrollTop:pos05}, speed, "swing");
-                } else if ((pos06 < posAf) && (pos07 > posAf)) {
+        } else if (pos12 < windowHeight && windowHeight < pos13 && windowHeight != pos01 && windowHeight != pos02 && windowHeight != pos03 && windowHeight != pos04 && windowHeight != pos05 && windowHeight != pos06 && windowHeight != pos07) {
     $("html, body").animate({scrollTop:pos06}, speed, "swing");
-                };
-            }else{
-                if ((posAf < pos02) && (posAf != 0)) {
-    $("html, body").animate({scrollTop:pos02}, speed, "swing");
-                } else if ((pos02 < posAf) && (pos03 > posAf)) {
-    $("html, body").animate({scrollTop:pos03}, speed, "swing");
-                } else if ((pos03 < posAf) && (pos04 > posAf)) {
-    $("html, body").animate({scrollTop:pos04}, speed, "swing");
-                } else if ((pos04 < posAf) && (pos05 > posAf)) {
-    $("html, body").animate({scrollTop:pos05}, speed, "swing");
-                } else if ((pos05 < posAf) && (pos06 > posAf)) {
-    $("html, body").animate({scrollTop:pos06}, speed, "swing");
-                } else if ((pos06 < posAf)) {
+        } else if (pos13 < windowHeight && windowHeight != pos01 && windowHeight != pos02 && windowHeight != pos03 && windowHeight != pos04 && windowHeight != pos05 && windowHeight != pos06 && windowHeight != pos07) {
     $("html, body").animate({scrollTop:pos07}, speed, "swing");
-                };
-            }
- 
-            //元々の位置をスクロール後の位置に書き換える
-            posBf = posAf;
-    }, 200);
+        };
+    }, 500);
 });
-    }
 
     </script>
-
 
 </body>
 </html>
