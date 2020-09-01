@@ -949,6 +949,7 @@ transition: 1.0s;
 	max-width: 1200px;
 	width: 100%;
 	border: none;
+    margin: 0 auto;
 	box-sizing: border-box;
 }
 	.tokubox2 .cont-box2 {
@@ -962,7 +963,7 @@ transition: 1.0s;
 	font-size: 14px;
 	color: #494949;
 	line-height: 1.7em;
-	margin: 0;
+	margin: 10px 0 0;
 
 	}
 	.contents21 div {
