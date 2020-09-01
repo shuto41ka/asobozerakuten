@@ -72,6 +72,28 @@ $(function(){
 });
 
 </script>
+<script type="text/javascript">
+    var windowWidth = $(window).width();
+    if (windowWidth >= 1200) {
+$(function(){
+  $('.effect .hop4').css({"opacity":"0", "padding-top":"0"});
+  $(window).on('load resize scroll',function(){
+    $(".effect").each(function(){
+      var imgPos = $(this).offset().top - 100;    
+      var scroll = $(window).scrollTop();
+      var windowHeight = $(window).height();
+      if (scroll >= imgPos){
+        $(".hop",this).css({"opacity":"1", "padding-top": "0" });
+        $("i",this).css({ 
+          "font-size": "100px",
+          "padding": "0 20px 40px"
+        });
+      } 
+    });
+  });
+});        
+    };
+</script>
 
 <script>
 $(function() {
@@ -256,47 +278,47 @@ $(window).on('resize',function(){
             line-height: 1.6em;
         }
         .hop {
-            transition-delay: .3s;
+            transition-delay: .5s;
         }
         .hop2 {
-            transition-delay: .8s;
-            transition-duration: 1.5s;
+            transition-delay: 1.5s;
+            transition-duration: 1s;
         }
         .hop3 {
-            transition-duration: 1.5s;
-            transition-delay: 1.5s;
+            transition-duration: 1s;
+            transition-delay: 2.5s;
         }
-        /* スマホをイメージ */
-        @media screen and (orientation: portrait) {
+    .hop4 {
+        transition-delay: .5s;
+    }
+    /* タブレットをイメージ */
+    @media screen and (max-width: 1200px) {
             body{
             scroll-snap-type: y mandatory;                
             }            
         .asocon_container {
-            background-image: url(https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_23.jpg); 
             width: 100vw; 
             background-repeat: no-repeat;
             height: 100vh; 
-            background-size: 100% auto; 
+            background-size: auto 100vh; 
             background-position: top left; 
             position: relative;
-            
         }
-        .asocon_container .spupdate {
-            width: 88%; 
-            position: fixed; 
-            left: 7.5%; 
-            top: 15%;
+        .asocon_3point {
+            background-size: contain;
+            background-attachment: scroll;
         }
         .vsp {
             position: absolute; 
             overflow-y: scroll; 
             scroll-snap-type: y mandatory;
-            height: 100%;
-            top: 0;
-            left: 0;
             max-height: inherit;
             -ms-overflow-style: none;
-            scrollbar-width: none;                            
+            scrollbar-width: none; 
+            height: 100%;
+            left: 38%;
+            top: 5%;
+            width: 58%;
         }
         .vsp::-webkit-scrollbar {
             display: none;
@@ -323,6 +345,65 @@ $(window).on('resize',function(){
         }
             .readmore img {
                 width: 14%;
+                max-width: 64px;
+            }
+    }
+        /* スマホをイメージ */
+        @media screen and (orientation: portrait) {
+        .asocon_container {
+            background-image: url(https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_23.jpg); 
+            width: 100vw; 
+            background-repeat: no-repeat;
+            height: 100vh; 
+            background-size: 100% auto; 
+            background-position: top left; 
+            position: relative;
+            
+        }
+        .asocon_container .spupdate {
+            width: 88%; 
+            position: fixed; 
+            left: 7.5%; 
+            top: 15%;
+        }
+        .vsp {
+            position: absolute; 
+            overflow-y: scroll; 
+            scroll-snap-type: y mandatory;
+            height: 100%;
+            top: 0;
+            left: 0;
+            max-height: inherit;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            width: 100%;
+        }
+        .vsp::-webkit-scrollbar {
+            display: none;
+        }            
+        .asocon3lines {
+            position: relative;
+                width: 85%;
+                height: 100%;
+                top: 0;
+                left: 7.5%;
+            }
+            .asocon3lines img {
+                top: 45%;
+            }
+         .asocon_3point {
+                height: 100vh;
+             scroll-snap-align: start;
+            }
+            .readmore {
+            text-align: center; 
+                bottom: 5vh;
+            left: 0; 
+            width: 100%;
+        }
+            .readmore img {
+                width: 14%;
+                max-width: 64px;
             }
             .pconly {
                 display: none;
@@ -386,18 +467,15 @@ $(window).on('resize',function(){
             background-attachment: scroll;
                 height: 100vh;            
         }
-        .hop {
-            transition-delay: 1s;
         }
-        .hop2 {
-            transition-delay: 2s;
-            transition-duration: 1.5s;
+    @media and screen and (orientation: portrait) and (min-width: 760px) {
+        .pconly {
+            display: block;
         }
-        .hop3 {
-            transition-duration: 1.5s;
-            transition-delay: 3.5s;
-        }            
+        .sponly {
+            display: none;
         }
+    }
     </style>
 </head>
 
@@ -439,9 +517,9 @@ $('#asocon_update').scroll(function(){
     <div class="asocon_container" id="asocon_container">
         <img class="spupdate" src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_24.png" alt="">
             <div class="vsp" id="vsp">
-                <div class="asocon3lines_01 asocon3lines box effect" id="spthreemenu1"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_03.png" alt="" class="hop"></div>
-                <div class="asocon3lines_02 asocon3lines box effect" id="pcthreemenu2"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_04.png" class="hop" alt=""></div>
-                <div class="asocon3lines_03 asocon3lines box effect" id="pcthreemenu3"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_05.png" class="hop" alt=""></div>
+                <div class="asocon3lines_01 asocon3lines box effect" id="spthreemenu1"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_03.png" alt=""></div>
+                <div class="asocon3lines_02 asocon3lines box effect" id="pcthreemenu2"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_04.png" class="hop4" alt=""></div>
+                <div class="asocon3lines_03 asocon3lines box effect" id="pcthreemenu3"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_05.png" class="hop4" alt=""></div>
             </div>
         <div class="readmore" id="readmore1">
             <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
@@ -536,13 +614,13 @@ $('#asocon_update').scroll(function(){
     } else if(pos03 <= posScroll && posScroll < pos04) {
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot3").addClass('nowhere');
-        $('#readmore2').hide(1000);
-        $('#readmore1').show(1000);
+        $('#readmore2').fadeOut(1000);
+        $('#readmore1').fadeIn(1000);
     } else if(pos04 <= posScroll && posScroll < pos05) {
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot4").addClass('nowhere');
-        $('#readmore1').hide(1000);
-        $('#readmore2').show(1000);
+        $('#readmore1').fadeOut(1000);
+        $('#readmore2').fadeIn(1000);
     } else if(pos05 <= posScroll && posScroll < pos06) {
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot5").addClass('nowhere');
@@ -557,14 +635,14 @@ $('#asocon_update').scroll(function(){
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot7").addClass('nowhere');        
         $('#readmore1').hide();
-        $('#readmore2').hide(1000);
+        $('#readmore2').fadeOut(1000);
     }
   });
 });
 
 </script>
         <script>
-       var speed = 300;
+       var speed = 800;
         var timer = false;
   var pos01 = 0;
   var pos02 = $("#pcthreemenu2").offset().top;
@@ -627,7 +705,7 @@ sc_func();
  
             //元々の位置をスクロール後の位置に書き換える
             posBf = posAf;
-    }, 200);
+    }, 100);
 });
     }
 
