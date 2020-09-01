@@ -83,7 +83,7 @@ $(function(){
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
       if (scroll >= imgPos){
-        $(".hop",this).css({"opacity":"1", "padding-top": "0" });
+        $(".hop4",this).css({"opacity":"1", "padding-top": "0" });
         $("i",this).css({ 
           "font-size": "100px",
           "padding": "0 20px 40px"
@@ -290,6 +290,7 @@ $(window).on('resize',function(){
         }
     .hop4 {
         transition-delay: .5s;
+        transition-duration: 1s;
     }
     /* タブレットをイメージ */
     @media screen and (max-width: 1200px) {
