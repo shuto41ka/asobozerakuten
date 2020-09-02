@@ -164,7 +164,7 @@ $(window).on('resize',function(){
             background-size: cover; 
             background-position: top left; 
             position: relative;            
-            z-index: 0;
+            z-index: 5;
         }
         .asocon_container .spupdate {
             position: fixed;
@@ -178,6 +178,9 @@ $(window).on('resize',function(){
             top: 52%;
             transform: translateY(-50%);
         }
+    .asocon3lines_03 img {
+        top: 54%;
+    }
         .asocon3lines {
             scroll-snap-align: start;
             width: 50%; 
@@ -187,6 +190,7 @@ $(window).on('resize',function(){
             max-width: 700px;
             vertical-align: middle;
         }
+    
         .readmore {
             position: fixed; 
             bottom: 8vh;
@@ -304,6 +308,7 @@ $(window).on('resize',function(){
             background-size: auto 100vh; 
             background-position: top left; 
             position: relative;
+            z-index: 0;
         }
         .asocon_3point {
             background-size: contain;
@@ -516,7 +521,7 @@ $('#asocon_update').scroll(function(){
 <!-- 2020コンセプトページ　-->
 <div class="asocon_update" id="asocon_update">
     <div class="asocon_container" id="asocon_container">
-        <img class="spupdate" src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_24.png" alt="">
+        <img class="spupdate" src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_24.png" id="spupdate_img" alt="">
             <div class="vsp" id="vsp">
                 <div class="asocon3lines_01 asocon3lines box effect" id="spthreemenu1"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_03.png" alt=""></div>
                 <div class="asocon3lines_02 asocon3lines box effect" id="pcthreemenu2"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_04.png" class="hop4" alt=""></div>
@@ -605,38 +610,24 @@ $('#asocon_update').scroll(function(){
     if(pos01 <= posScroll && posScroll < pos02) {
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot1").addClass('nowhere');
-        $('#readmore2').hide();
-        $('#readmore1').show();
     } else if(pos02 <= posScroll && posScroll < pos03) {
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot2").addClass('nowhere');
-        $('#readmore2').hide();
-        $('#readmore1').show();
     } else if(pos03 <= posScroll && posScroll < pos04) {
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot3").addClass('nowhere');
-        $('#readmore2').fadeOut(1000);
-        $('#readmore1').fadeIn(1000);
     } else if(pos04 <= posScroll && posScroll < pos05) {
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot4").addClass('nowhere');
-        $('#readmore1').fadeOut(1000);
-        $('#readmore2').fadeIn(1000);
     } else if(pos05 <= posScroll && posScroll < pos06) {
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot5").addClass('nowhere');
-        $('#readmore1').hide();
-        $('#readmore2').show();
     } else if(pos06 <= posScroll && posScroll < pos07) {
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot6").addClass('nowhere');
-        $('#readmore1').hide();
-        $('#readmore2').show();
     } else {
       $("[id *= 'navi-dot']").removeClass('nowhere');
       $("#navi-dot7").addClass('nowhere');        
-        $('#readmore1').hide();
-        $('#readmore2').fadeOut(1000);
     }
   });
 });
@@ -672,7 +663,14 @@ sc_func();
       
             //スクロールしたら位置を取得
             var posAf = $(this).scrollTop();
- 
+
+        if(posAf >= pos04) {
+            $('#spupdate_img').hide();            
+            $('#readmore1').hide();            
+        } else {
+            $('#spupdate_img').show();
+            $('#readmore1').show();
+        };
             //元々の位置とスクロール後の位置を比較
             if( posAf < posBf){
                 if (posAf < pos02) {
@@ -680,12 +678,16 @@ sc_func();
                 } else if ((pos02 < posAf) && (pos03 > posAf)) {
     $("html, body").animate({scrollTop:pos02}, speed, "swing");
                 } else if ((pos03 < posAf) && (pos04 > posAf)) {
+        $('#spupdate_img').fadeIn(500);            
+        $('#readmore2').fadeOut(1000);
+        $('#readmore1').fadeIn(1000);                    
     $("html, body").animate({scrollTop:pos03}, speed, "swing");
                 } else if ((pos04 < posAf) && (pos05 > posAf)) {
     $("html, body").animate({scrollTop:pos04}, speed, "swing");
                 } else if ((pos05 < posAf) && (pos06 > posAf)) {
     $("html, body").animate({scrollTop:pos05}, speed, "swing");
                 } else if ((pos06 < posAf) && (pos07 > posAf)) {
+                    $('#readmore2').fadeIn(1000);
     $("html, body").animate({scrollTop:pos06}, speed, "swing");
                 };
             }else{
@@ -694,12 +696,16 @@ sc_func();
                 } else if ((pos02 < posAf) && (pos03 > posAf)) {
     $("html, body").animate({scrollTop:pos03}, speed, "swing");
                 } else if ((pos03 < posAf) && (pos04 > posAf)) {
+        $('#spupdate_img').fadeOut(500);                    
+        $('#readmore1').fadeOut(1000);
+        $('#readmore2').fadeIn(1000);
     $("html, body").animate({scrollTop:pos04}, speed, "swing");
                 } else if ((pos04 < posAf) && (pos05 > posAf)) {
     $("html, body").animate({scrollTop:pos05}, speed, "swing");
                 } else if ((pos05 < posAf) && (pos06 > posAf)) {
     $("html, body").animate({scrollTop:pos06}, speed, "swing");
                 } else if ((pos06 < posAf)) {
+                    $('#readmore2').fadeOut(1000);
     $("html, body").animate({scrollTop:pos07}, speed, "swing");
                 };
             }
