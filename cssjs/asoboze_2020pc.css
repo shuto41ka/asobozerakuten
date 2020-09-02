@@ -49,7 +49,7 @@
     }
     .contents_container {
         width: calc(95vw - 140px);
-        margin-left: 5%;
+        margin: 0 auto;
     }
     .contents_container img {
         width: 100%;
