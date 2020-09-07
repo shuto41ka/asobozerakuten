@@ -110,6 +110,12 @@ $(window).on('resize',function(){
         });
     </script>
     <style>
+        #scrollblock {
+            position: fixed;
+            width: 100vw;
+            height: 100vh;
+            background: transparent;
+        }
         div, body{
             margin: 0;
             padding: 0;
@@ -157,7 +163,6 @@ $(window).on('resize',function(){
             transform: translateY(-50%);
         }
         .asocon3lines {
-            scroll-snap-align: start;
             width: 50%; 
             left: 43%; 
             position: relative;
@@ -435,6 +440,7 @@ $('#asocon_update').scroll(function(){
     </script> 
     
 <!-- 2020コンセプトページ　-->
+    <div id="scrollblock"></div>
 <div class="asocon_update" id="asocon_update">
     <div class="asocon_container" id="asocon_container">
         <img class="spupdate" src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_24.png" alt="">
@@ -562,17 +568,8 @@ $('#asocon_update').scroll(function(){
   });
 });
 
-</script>
-    <script>
-       var speed = 300;
+       var speed = 1000;
         var timer = false;
-  var pos01 = 0;
-  var pos02 = $("#pcthreemenu2").offset().top;
-  var pos03 = $("#pcthreemenu3").offset().top;
-  var pos04 = $("#asocon_3point1").offset().top;
-  var pos05 = $("#asocon_3point2").offset().top;
-  var pos06 = $("#asocon_3point3").offset().top;
-  var pos07 = $("#asocon_3point4").offset().top;
 sc_func();
     function sc_func(){
         
@@ -589,7 +586,7 @@ sc_func();
           pos04 = $("#asocon_3point1").offset().top;
           pos05 = $("#asocon_3point2").offset().top;
           pos06 = $("#asocon_3point3").offset().top;
-          pos07 = $("#asocon_3point4").offset().top;
+          pos07 = $(document).height();
       
             //スクロールしたら位置を取得
             var posAf = $(this).scrollTop();
@@ -606,11 +603,11 @@ sc_func();
     $("html, body").animate({scrollTop:pos04}, speed, "swing");
                 } else if ((pos05 < posAf) && (pos06 > posAf)) {
     $("html, body").animate({scrollTop:pos05}, speed, "swing");
-                } else if ((pos06 < posAf) && (pos07 > posAf)) {
+                } else if (pos06 < posAf) {
     $("html, body").animate({scrollTop:pos06}, speed, "swing");
                 };
-            }else{
-                if (posAf < pos02) {
+            }else{u
+                if (posAf < pos02 && posAf != 0) {
     $("html, body").animate({scrollTop:pos02}, speed, "swing");
                 } else if ((pos02 < posAf) && (pos03 > posAf)) {
     $("html, body").animate({scrollTop:pos03}, speed, "swing");
@@ -624,10 +621,9 @@ sc_func();
     $("html, body").animate({scrollTop:pos07}, speed, "swing");
                 };
             }
- 
             //元々の位置をスクロール後の位置に書き換える
             posBf = posAf;
-    }, 200);
+    }, 50);
 });
     }
 

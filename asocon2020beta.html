@@ -110,27 +110,6 @@ $(function() {
 
 });
 </script>
-<script src="https://www.rakuten.ne.jp/gold/asoboze/cssjs/jquery.scrollify.min.js"></script>
-<script src="https://www.rakuten.ne.jp/gold/asoboze/cssjs/jquery.min.js"></script>
-    <script>
-var current;
-        $(function() {
-$.scrollify({
-    section:".box",
-    setHeights:false,
-    easing: "easeOutExpo",
-    before:function(i,box){
-        current = i;
-    },
-});
-$(window).on('resize',function(){
-    if(current){
-        var currentScrl = $('.box').eq(current).offset().top;
-        $(window).scrollTop(currentScrl);
-    }
-});
-        });
-    </script>
 <style>
         div, body{
             margin: 0;
@@ -663,7 +642,7 @@ sc_func();
       
             //スクロールしたら位置を取得
             var posAf = $(this).scrollTop();
-
+        
         if(posAf >= pos04) {
             $('#spupdate_img').hide();            
             $('#readmore1').hide();            
@@ -708,11 +687,11 @@ sc_func();
                     $('#readmore2').fadeOut(1000);
     $("html, body").animate({scrollTop:pos07}, speed, "swing");
                 };
-            }
- 
+            };
+        
             //元々の位置をスクロール後の位置に書き換える
             posBf = posAf;
-    }, 100);
+    }, 500);
 });
     }
 
