@@ -277,6 +277,9 @@ $(function() {
     }
     /* タブレットをイメージ */
     @media screen and (max-width: 1200px) {
+            body{
+            scroll-snap-type: y mandatory;                
+            }            
         .asocon_container {
             width: 100vw; 
             background-repeat: no-repeat;
@@ -293,6 +296,7 @@ $(function() {
         .vsp {
             position: absolute; 
             overflow-y: scroll; 
+            scroll-snap-type: y mandatory;
             max-height: inherit;
             -ms-overflow-style: none;
             scrollbar-width: none; 
@@ -618,12 +622,23 @@ $('#asocon_update').scroll(function(){
   var pos05 = $("#asocon_3point2").offset().top;
   var pos06 = $("#asocon_3point3").offset().top;
   var pos07 = $("#asocon_3point4").offset().top;
+sc_func();
+    function sc_func(){
         
         //元々の位置を取得
+        var posBf = $(window).scrollTop();
         
-        var posBf = 0;
-
-  $(window).scroll(function(){
+  $(window).on('load resize scroll',function(){
+        if (timer !== false) {
+        clearTimeout(timer);
+    };
+    timer = setTimeout(function() {
+          pos02 = $("#pcthreemenu2").offset().top;
+          pos03 = $("#pcthreemenu3").offset().top;
+          pos04 = $("#asocon_3point1").offset().top;
+          pos05 = $("#asocon_3point2").offset().top;
+          pos06 = $("#asocon_3point3").offset().top;
+          pos07 = $("#asocon_3point4").offset().top;
       
             //スクロールしたら位置を取得
             var posAf = $(this).scrollTop();
@@ -639,57 +654,46 @@ $('#asocon_update').scroll(function(){
             if( posAf < posBf){
                 if (posAf < pos02) {
     $("html, body").animate({scrollTop:0}, speed, "swing");
-                    $(window).scrollTop(0);
                 } else if ((pos02 < posAf) && (pos03 > posAf)) {
     $("html, body").animate({scrollTop:pos02}, speed, "swing");
-                    $(window).scrollTop(pos02);
                 } else if ((pos03 < posAf) && (pos04 > posAf)) {
         $('#spupdate_img').fadeIn(500);            
         $('#readmore2').fadeOut(1000);
         $('#readmore1').fadeIn(1000);                    
     $("html, body").animate({scrollTop:pos03}, speed, "swing");
-                    $(window).scrollTop(pos03);
                 } else if ((pos04 < posAf) && (pos05 > posAf)) {
     $("html, body").animate({scrollTop:pos04}, speed, "swing");
-                    $(window).scrollTop(pos04);
                 } else if ((pos05 < posAf) && (pos06 > posAf)) {
     $("html, body").animate({scrollTop:pos05}, speed, "swing");
-                    $(window).scrollTop(pos05);
-                } else if (pos06 < posAf) {
+                } else if ((pos06 < posAf) && (pos07 > posAf)) {
                     $('#readmore2').fadeIn(1000);
     $("html, body").animate({scrollTop:pos06}, speed, "swing");
-                    $(window).scrollTop(pos06);
                 };
-            }else if( posAf > posBf){
+            }else{
                 if ((posAf < pos02) && (posAf != 0)) {
     $("html, body").animate({scrollTop:pos02}, speed, "swing");
-                    $(window).scrollTop(pos02);
                 } else if ((pos02 < posAf) && (pos03 > posAf)) {
     $("html, body").animate({scrollTop:pos03}, speed, "swing");
-                    $(window).scrollTop(pos03);
                 } else if ((pos03 < posAf) && (pos04 > posAf)) {
         $('#spupdate_img').fadeOut(500);                    
         $('#readmore1').fadeOut(1000);
         $('#readmore2').fadeIn(1000);
     $("html, body").animate({scrollTop:pos04}, speed, "swing");
-                    $(window).scrollTop(pos04);
                 } else if ((pos04 < posAf) && (pos05 > posAf)) {
     $("html, body").animate({scrollTop:pos05}, speed, "swing");
-                    $(window).scrollTop(pos05);
                 } else if ((pos05 < posAf) && (pos06 > posAf)) {
     $("html, body").animate({scrollTop:pos06}, speed, "swing");
-                    $(window).scrollTop(pos06);
-                } else if (pos06 < posAf) {
+                } else if ((pos06 < posAf)) {
                     $('#readmore2').fadeOut(1000);
     $("html, body").animate({scrollTop:pos07}, speed, "swing");
-                    $(window).scrollTop(pos07);
                 };
             };
         
             //元々の位置をスクロール後の位置に書き換える
-            posBf = $(window).scrollTop();
-    });
-    
+            posBf = posAf;
+    }, 50);
+});
+    }
 
     </script>
 

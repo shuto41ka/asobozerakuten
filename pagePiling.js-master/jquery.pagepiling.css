@@ -37,12 +37,13 @@ html, body {
 #pp-nav {
     position: fixed;
     z-index: 100;
-    margin-top: -32px;
+    margin-top: -32px !important;
     top: 50%;
+    transform: translateY(-50%);
     opacity: 1;
 }
 #pp-nav.right {
-    right: 17px;
+    right: calc(3vw - 14px);
 }
 #pp-nav.left {
     left: 17px;
@@ -78,7 +79,7 @@ html, body {
     display: block;
     width: 14px;
     height: 13px;
-    margin: 7px;
+    margin: 2em 7px;
     position:relative;
 }
 .pp-slidesNav li {
@@ -96,7 +97,7 @@ html, body {
 }
 #pp-nav li .active span,
 .pp-slidesNav .active span {
-    background: #333;
+    background: #b6a094;
 }
 #pp-nav span,
 .pp-slidesNav span {
@@ -104,8 +105,8 @@ html, body {
     left: 2px;
     width: 8px;
     height: 8px;
-    border: 1px solid #000;
-    background: rgba(0, 0, 0, 0);
+    border: none;
+    background: #b5b5b6;
     border-radius: 50%;
     position: absolute;
     z-index: 1;
