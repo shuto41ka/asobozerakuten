@@ -157,6 +157,7 @@ $(function() {
         }
         .update_img {
             width: 40%;
+            max-width: 520px;
             position: absolute;
             top: 42%;
             transform: translateY(-50%);
@@ -195,9 +196,113 @@ $(function() {
             transition-duration: 1s;
             transition-delay: 3s;
         }
+        .hop5 {
+            transition-duration: 1s;
+            transition-delay: 4s;
+        }
     .hop4 {
         transition-delay: .5s;
         transition-duration: 1s;
+    }
+    .section:nth-last-child(1){
+        width: 100vw;
+        height: 100vh;
+    }
+    .section:nth-last-child(1) div {
+        display: flex;
+    }
+    .update_last {
+        width: 600px;
+        height: 400px;
+        position: relative;
+        top: 50%;
+        left: calc(50% - 10vw);
+        transform: translate(-50%, -50%);
+    }
+    .link_shoptop {
+        position: absolute;
+        bottom: 0;
+        right: -10vw;
+    }
+    .update_last a {
+        text-decoration: none;
+    }
+    .update_about {
+        grid-row: 1 /4;
+        grid-column: 1;
+    }
+    .update_mokuji dd {
+        position: relative;
+    }
+    .update_mokuji dd::after {
+        content: '';
+        width: 45px;
+        height: 90px;
+        top: -65px;
+        left: -62px;
+        border-bottom: 2px solid #bbb;
+        border-left: 2px solid #bbb;
+        position: absolute;
+    }
+    .update_mokuji dd.hop2::after {
+        height: 77px;
+        top: -52px;
+    }
+    .update_mokuji .update_about + dd::after {
+        top: -77px;
+        border-left: none;
+        width: 100px;
+        left: -112px;
+    }
+    /*
+    .update_mokuji::after {
+        border-left: 2px solid #bbb;
+        content: '';
+        position: absolute;
+        top: 29px;
+        left: 206px;
+        height: 259px;
+        width: 0;
+        
+    }
+    */
+    .update_mokuji {
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 18% 25% 25% 25%;
+    }
+    .update_items {
+        grid-row: auto;
+        grid-column: 2;
+    }
+    .update_items:first-child {
+        margin-top: 0;
+    }
+    .update_items:last-child {
+        margin-bottom: 0;
+    }
+    .update_items a {
+        color: #000;
+        transition-duration: .2s;
+        white-space: nowrap;
+    }
+    .update_items img {
+        position: absolute;
+        top:0px;
+        height: 90px;
+        right: -160px;
+        opacity: 0;
+        transition-duration: .5s;
+    }
+    .update_items.first_item img {
+        top: -30px
+    }
+    .update_items a:hover {
+        font-size: 20px;
+    }
+    .update_items a:hover + img {
+        opacity: 1;
     }
     /* タブレット（縦） */
     @media screen and (orientation: portrait) {
@@ -490,6 +595,7 @@ $('#asocon_update').scroll(function(){
         <li data-menuanchor="page5"><a href="#page5">Page5</a></li>
         <li data-menuanchor="page6"><a href="#page6">Page6</a></li>
         <li data-menuanchor="page7"><a href="#page7">Page7</a></li>
+        <li data-menuanchor="page8"><a href="#page8">Page8</a></li>
     </ul>
 </nav>    
 <!-- 2020コンセプトページ　-->
@@ -509,6 +615,8 @@ $('#asocon_update').scroll(function(){
     </section>
     <section class="section" id="section3">
         <div class="asocon3lines_03 asocon3lines box effect" id="pcthreemenu3"><img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_33.png" alt="" class="hop"></div>
+
+
     </section>
     <section class="section" id="section4">
         <div id="asocon_3point1" class="asocon_3point effect box">
@@ -570,15 +678,53 @@ $('#asocon_update').scroll(function(){
             </div>
         </div>
     </section>
+    <section class="section" id="section8">
+        <div class="update_last">
+            <dl class="update_mokuji effect effect3 effect4 effect2">
+                <dt class="update_about hop">＞＞&nbsp;&nbsp;about&nbsp;asoboze</dt>
+                <dd class="update_items first_item hop">
+                    <a href="#page1">
+                        アップデートしてみる？
+                    </a>
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_37.png" alt="">
+                </dd>
+                <dd class="update_items hop2">
+                    <a href="#page5">
+                        <div class="update_item_topic">ものづくり</div>
+                        <div class="update_item_disc">自慢したくなるようなものを作りたい。</div>
+                    </a>
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_36.png" alt="">
+                </dd>
+                <dd class="update_items hop3">
+                    <a href="#page6">
+                        <div class="update_item_topic">伝える姿勢</div>
+                        <div class="update_item_disc">思いを商品と一緒にお届けします。</div>
+                    </a>
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_35.png" alt="">
+                </dd>
+                <dd class="update_items hop5">
+                    <a href="#page7">
+                        <div class="update_item_topic">安心のサポート</div>
+                        <div class="update_item_disc">長く商品を使っていただきたいから。</div>                    
+                    </a>
+                    <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_34.png" alt="">
+                </dd>
+            </dl>
+            <a href="https://www.rakuten.ne.jp/gold/asoboze/"><div class="link_shoptop">
+                ショップトップページ&nbsp;&nbsp;＞＞
+            </div></a>
+        </div>
+    </section>
 </div>
     <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://www.rakuten.ne.jp/gold/asoboze/pagePiling.js-master/jquery.pagepiling.min.js"></script>
     <script>
         $(function() {
            $('#asocon2020').pagepiling({
+               scrollingSpeed: 1500,
                sectionSelecter: '.section',
                menu: '#nav',
-               anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7'],
+               anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8'],
                navigation: {
             'textColor': '#b6a094',
             'bulletsColor': '#b6a094',
@@ -595,6 +741,7 @@ $('#asocon_update').scroll(function(){
         var sec5hasClass = $('#section5').hasClass('active');
         var sec6hasClass = $('#section6').hasClass('active');
         var sec7hasClass = $('#section7').hasClass('active');
+        var sec8hasClass = $('#section8').hasClass('active');
 $.fn.animate_aso = function (properties, duration, ease) {
     ease = ease || 'ease';
     var $this = this;
@@ -612,8 +759,9 @@ $.fn.animate_aso = function (properties, duration, ease) {
         $('.hop2').css('opacity', '0');
         $('.hop3').css('opacity', '0');
         $('.hop4').css('opacity', '0');
+        $('.hop5').css('opacity', '0');
         $(window).on('load scroll hashchange',function() {
-            if ((location.hash == '#page4') || (location.hash == '#page5') || (location.hash == '#page6') || (location.hash == '#page7')) {
+            if ((location.hash == '#page4') || (location.hash == '#page5') || (location.hash == '#page6') || (location.hash == '#page7') || (location.hash == '#page8')) {
                     $('.spupdate_img').fadeOut(500);
                     $('#readmore1').fadeOut(500);
                     if (location.hash == '#page4') {
@@ -631,11 +779,18 @@ $.fn.animate_aso = function (properties, duration, ease) {
                 $('#section6 .hop2').css('opacity', '1');
                 $('#section6 .hop3').css('opacity', '1');
                 $('#section6 .hop4').css('opacity', '1');                        
-                    } else {
+                    } else if (location.hash == '#page7'){
                 $('#section7 .hop').css('opacity', '1');
                 $('#section7 .hop2').css('opacity', '1');
                 $('#section7 .hop3').css('opacity', '1');
                 $('#section7 .hop4').css('opacity', '1');                 
+                    } else {
+                $('#section8 .hop').css('opacity', '1');
+                $('#section8 .hop2').css('opacity', '1');
+                $('#section8 .hop3').css('opacity', '1');
+                $('#section8 .hop4').css('opacity', '1');
+                $('#section8 .hop5').css('opacity', '1');
+                        $('#readmore4').fadeOut(500);
                     }
                 } else {
                 $('.spupdate_img').fadeIn(500);
