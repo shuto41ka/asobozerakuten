@@ -310,6 +310,7 @@ a img:hover{
 	 max-width: 1200px;
 	box-sizing: border-box;
 	margin-bottom: 30px;
+    grid-gap: 0.5%;
 }
 
 .shoukaigrid > div {
