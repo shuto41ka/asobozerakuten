@@ -50,6 +50,7 @@
     .contents_container {
         width: calc(95vw - 140px);
         margin: 0 auto;
+        max-width: 1200px;
     }
     .contents_container img {
         width: 100%;
