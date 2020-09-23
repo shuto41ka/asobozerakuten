@@ -133,7 +133,7 @@
             width: 30%;
             position: absolute;
             top: 45%;
-            right: 22%;
+            left: calc(520px + 15vw);
             transform: translateY(-50%);
         }
         .update_text div:nth-child(1) {
