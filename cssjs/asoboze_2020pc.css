@@ -585,6 +585,9 @@ font-weight: 700;
     .footer_aso .effect {
         display: inline-block;
     }
+    .footer_aso div {
+        overflow: inherit;
+    }
     .category_aso {
         grid-column: 1 / 2;
         grid-row: 1;
