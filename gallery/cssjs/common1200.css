@@ -42,12 +42,12 @@ html{
 
 /*　トップページ　wrapper　*/
 a img {
-    transition: .5s;
+    transition: .2s;
 }
 a img:hover {
     transform: scale(1.02, 1.02);
 }
-a {
+div {
     overflow: hidden;
 }
 
@@ -383,9 +383,7 @@ border-radius: 3px;
 	padding: 10px;
 	text-align:center;
 }
-.snslogos a img:hover {
-	opacity:0.8;
-}
+
 .snslogos {
 	width:500px;
 	margin:60px auto 0;

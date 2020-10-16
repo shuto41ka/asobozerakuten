@@ -471,9 +471,7 @@ input[type="checkbox"]#sample + #cover > iframe {
 	padding: 5px;
 	text-align:center;
 }
-.snslogos a img:hover {
-	opacity:0.8;
-}
+
 .snslogos {
 	width: 80%;
 	margin:20px auto 0;

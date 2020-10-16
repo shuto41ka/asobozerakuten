@@ -80,12 +80,12 @@ html, body{
 }
 
 a img {
-    transition: .5s;
+    transition: .2s;
 }
 a img:hover {
     transform: scale(1.02, 1.02);
 }
-a {
+div {
     overflow: hidden;
 }
 
