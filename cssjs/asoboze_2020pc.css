@@ -585,7 +585,10 @@ font-weight: 700;
     .footer_aso .effect {
         display: inline-block;
     }
-    .footer_aso div {
+    #footer-aso {
+        overflow: inherit;
+    }
+    #footer-aso div {
         overflow: inherit;
     }
     .category_aso {
