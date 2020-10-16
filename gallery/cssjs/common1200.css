@@ -41,8 +41,14 @@ html{
 }
 
 /*　トップページ　wrapper　*/
-a img:hover{
-	opacity:0.8;
+a img {
+    transition: .5s;
+}
+a img:hover {
+    transform: scale(1.02, 1.02);
+}
+a {
+    overflow: hidden;
 }
 
 

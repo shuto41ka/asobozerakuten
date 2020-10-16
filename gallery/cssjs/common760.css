@@ -79,6 +79,16 @@ html, body{
 	visibility:hidden;
 }
 
+a img {
+    transition: .5s;
+}
+a img:hover {
+    transform: scale(1.02, 1.02);
+}
+a {
+    overflow: hidden;
+}
+
 /*　スペック　*/
 
 .spec01 {
@@ -1826,9 +1836,7 @@ img[id*="large"]{
 	padding: 10px;
 	text-align:center;
 }
-.snslogos a img:hover {
-	opacity:0.8;
-}
+
 .snslogos {
 	width:500px;
 	margin:60px auto 0;
