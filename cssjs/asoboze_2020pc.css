@@ -64,10 +64,7 @@ div {
     .contents_container img {
         width: 100%;
     }
-    #pcthreemenu2 {
-        overflow: inherit;
-    }
-    #pcthreemenu3 {
+    #pcthreemenu2, #pcthreemenu3, #pcrightmenu, #pcrightmenu div {
         overflow: inherit;
     }
     .aso_pcleft {
