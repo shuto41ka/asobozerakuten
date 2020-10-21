@@ -64,7 +64,7 @@ div {
     .contents_container img {
         width: 100%;
     }
-    #pcthreemenu2, #pcthreemenu3, #pcrightmenu, #pcrightmenu div {
+    #pcthreemenu2, #pcthreemenu3, #pcrightmenu, #pcrightmenu div, #footer_aso, #footer_aso div {
         overflow: inherit;
     }
     .aso_pcleft {
