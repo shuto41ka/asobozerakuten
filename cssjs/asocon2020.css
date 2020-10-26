@@ -61,6 +61,9 @@
             width: 39%;        
             z-index: 10;
     }
+.asocon2020 div {
+    overflow: inherit;
+}
         .asocon3lines img {
             width: 100%;
             position: relative;
@@ -76,6 +79,9 @@
             vertical-align: middle;
             transition-duration: .5s;
         }
+.asocon2020 .asocon3lines {
+    display: block;
+}
         .readmore {
             position: fixed; 
             bottom: 8vh;
@@ -190,6 +196,12 @@
         left: calc(50% - 10vw);
         transform: translate(-50%, -50%);
     }
+.asocon2020 .update_last {
+    overflow: inherit;
+}
+.asocon2020 .update_last .update_mokuji {
+    display: inline-grid;
+}
     .update_last .update_item_disc {
         font-weight: bold;
     }
@@ -385,6 +397,12 @@
             background-attachment: scroll;
                 height: 100vh;            
         }
+        .asocon2020 div .asocon_3point {
+            overflow: inherit;
+        }
+        .asocon2020 .asocon_3point div {
+            display: block;
+        }
         .update_mokuji .update_about + dd::after {
         width: 45px;
 
@@ -447,7 +465,7 @@
                 left: 8%;
             }
             .asocon3lines img {
-                top: 25%;
+                top: 27%;
                 transform: none;
             }
             .readmore {
