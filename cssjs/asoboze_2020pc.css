@@ -406,6 +406,7 @@ font-weight: 700;
         background-color: #666464;
         border-radius: 2.6vw;
         overflow: inherit;
+        border: 1px solid #666464;
     }
 .snslogos a img:hover {
 	opacity:0.8;
