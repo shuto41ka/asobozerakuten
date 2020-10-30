@@ -330,6 +330,7 @@ div {
 	width:150px; height:30px; background-color:#898989; color:#FFFFFF; text-align:center; text-decoration: none;
 	vertical-align: middle;
 border-radius: 3px;
+    border: 1px solid #898989;
 }
 .kuwashikumiru a {
 	text-decoration: none;
