@@ -421,13 +421,13 @@ font-weight: 700;
         transition: .3s ease-in-out;
         box-sizing: border-box;
         font-size: 1.3vw;
+        border: 1px solid #666464;
+        border-radius: 2.6vw;
     }
     .kuwashiku a:hover {
         transition: .3s ease-in-out;
         background-color: #ffffff;
         color: #666464;
-        border: 1px solid #666464;
-        border-radius: 2.6vw;
     }
         .space {
             width: 100%;

@@ -197,6 +197,13 @@ img[id*="large"] {
 	line-height:20px;
 	margin-bottom:0;
 }
+.cntr_ctgr2 div, .cntr_ctgr2 p {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    margin-bottom: 0;
+    letter-spacing: -0.05em;
+}
 .swiper-container{
 	width:100%;
 }
