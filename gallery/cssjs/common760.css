@@ -1608,19 +1608,15 @@ table.gallerytable td img{
 	width:100%;
 }
 .galleryshohin{
-	width:50%;
 	float:left;
 	margin-bottom:5%;
 	box-sizing: border-box;
     clear: both;
 }
 .galleryshohin a img{
-	width:50% !important;
 	box-sizing: border-box;
 }
 .gallerylink{
-	width:50%;
-	float:right;
 	margin:0 auto;
 	padding:5% 0 5% 5%;
 	box-sizing:border-box;
@@ -1819,8 +1815,12 @@ img[id*="large"]{
 .shoukaigrid {
 	width: 760px;
 	
-	display: block;
-	
+	display: inline-grid;
+ grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);	
 	box-sizing: border-box;
 
 	margin:0 auto 30px;
