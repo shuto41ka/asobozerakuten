@@ -30,6 +30,65 @@ a img {
             color: #3e3a39;
             text-align-last: left;
         }
+    .cntr20 p {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+line-height: 1.4em;
+    padding-right: 22px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+.cntr20 div {
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+line-height: 1.4em;
+    padding-right: 22px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+}
+.index_2020dec {
+    display: inline-grid;
+    grid-template-columns: 80px 80px 80px;
+            grid-template-rows: auto;
+    grid-column-gap: 20px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+                }
+    .indexParts_2020dec a {
+        color: #3e3a39;
+        font-size: 9px;
+        letter-spacing: -0.05em;
+        text-decoration: none;
+    }
+    .indexParts_2020dec .cntr21 .div {
+        width: max-content;
+        margin: 0 auto;
+    }
+.cntr_ctgr2 div, .cntr_ctgr2 p {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 0;
+    letter-spacing: -0.05em;
+    padding: 0 30px 10px 30px;
+}
+.cntr_ctgr2_left div, .cntr_ctgr2_left p {
+    font-size: 20px;
+    line-height: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+    padding: 0 30px 10px 30px;
+    letter-spacing: -0.05em;
+}
+    
         .clearbox {
             clear: both;
         }
@@ -351,6 +410,7 @@ a img {
         .pricebutton a img {
             width: 100%;
             margin: 0;
+            box-sizing: border-box;
             padding:6px 5%;
         }
         .contentbutton {
@@ -868,59 +928,6 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         width: 95%;
         margin: 0 2.5%;
     }
-.cntr20 p {
-    font-size: 16px;
-    text-align: center;
-    font-weight: bold;
-    color: #191919;
-    margin: 10px 0 0 0;
-line-height: 1.4em;
-    padding-top: 0;
-    padding-right: 22px;
-    padding-left: 30px;
-    padding-bottom: 0px;
-}
-.cntr20 div {
-    font-size: 16px;
-    text-align: center;
-    font-weight: bold;
-    color: #191919;
-    margin: 10px 0 0 0;
-line-height: 1.4em;
-    padding-top: 0;
-    padding-right: 22px;
-    padding-left: 30px;
-    padding-bottom: 0px;
-}
-.index_2020dec {
-    display: inline-grid;
-    grid-template-columns: 80px 80px 80px;
-            grid-template-rows: auto;
-    grid-column-gap: 20px;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-                }
-    .indexParts_2020dec a {
-        color: #3e3a39;
-        text-decoration: none;
-    }
-.cntr_ctgr2 div, .cntr_ctgr2 p {
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 0;
-    letter-spacing: -0.05em;
-}
-.cntr_ctgr2_left div, .cntr_ctgr2_left p {
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: bold;
-    margin-bottom: 0;
-    padding: 0 30px 40px 30px;
-    letter-spacing: -0.05em;
-}
-    
+
 }
 
