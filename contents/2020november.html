@@ -53,8 +53,6 @@ $(function() {
     $("#pcIndexRight").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pcindex_rightmenu.html");
     $("#pc_toplinebanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_toplinebanner.html");    $("#pcleftbanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_leftbanner.html");
     $("#pcrightmenu").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_rightmenu.html");
-$("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .topthree2");
-    $("#pcthreemenu3").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .topthree3");
     $("#spheader").load("https://www.rakuten.ne.jp/gold/asoboze/parts/header_aso.html");
     $("#footer-aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
         $("#styles").load("https://www.rakuten.ne.jp/gold/asoboze/parts/othergallery.html");
@@ -77,10 +75,14 @@ $("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta
     height: auto;
             }
         }
-
+        @media and screen and (orientation: portrait) {
+            body {
+                overflow-x: hidden;
+            }
+        }
     </style>
 </head>
-    <body style="max-width: 100vw; overflow-x: hidden;">
+    <body>
     <script>
     if($(window).scrollTop() >= 200) {
       $(".spheader_aso").css("top", "-" + 50 + "px");
@@ -92,12 +94,12 @@ $("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta
 });  
     </script>
     <div id="spheader" class="spheader_aso sponly"></div>
-        <div id="pcIndexRight" class="pconly"></div>
+        <div id="pcIndexRight" class="pconly pcindex_right"></div>
         <div id="pc_toplinebanner" class="pconly"></div>
         <div id="pcleftbanner" class="pconly"></div>
     <div style="width: 100%; height: 80px;" class="sponly">
 </div>
-<div class="contents_container">
+<div class="contents_container" id="spthreemenu1">
 
     <div class="sponly" style="width: 100%;">
         <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/2020dec/2020dec_01.jpg" alt="">
@@ -227,6 +229,7 @@ Rintosh（リントッシュ） <br>本革ビジネスバッグ <br>¥43,800 -
 
 </div></div></article>
     </div>
+    <span id="pcthreemenu2"></span>
 <div class="wraphalf pconly">
         <div class="cntr_ctgr2_left">
             <div>wallet&nbsp;&amp;&nbsp;accesories</div>
@@ -290,6 +293,7 @@ walpac（ウォルパック） <br>コイン+カードケース <br>¥8,400 -   
 	</div></div></article>
 	
   </div>
+    <span id="pcthreemenu3"></span>
     <div class="wraphalf" id="giftSet">
         <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/2020dec/2020dec_16.jpg" alt="">
     </div>
