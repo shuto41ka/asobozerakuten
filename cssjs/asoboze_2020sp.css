@@ -747,6 +747,71 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         grid-template-rows: auto auto;
         grid-template-columns: auto auto;
     }
+            .staffreview_title {
+            max-width: 430px;
+            margin: 2vh auto 2vh;
+            width: 60%;
+            display: block;
+        }
+        .staffreview_paragraph {
+            font-size: 12px;
+            color: #727171;
+            width: max-content;
+            margin: auto;
+            display: block;
+        }
+        .staffreview_index {
+            max-width: 90vw;
+            border-bottom: 1.5px solid #595757;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            margin-bottom: 20px;
+        }
+        .staffreview_index ul {
+            padding: 10px 5px;
+        }
+        .staffreview_index ul li {
+            display: inline-block;
+            padding: 5px 20px;
+            margin-bottom: 20px;
+            border-right: 1px solid #727171;
+            font-size: 12px
+        }
+        .staffreview_index ul li:first-child {
+            border-left: 1px solid #727171;
+        }
+        .staffreview_contents {
+            grid-template-columns: 100vw;
+            padding-bottom: 20px;
+            grid-row-gap: 50px;
+            border-bottom: 1px solid #595757;
+        }
+        .staffreview_item_img {
+            margin-bottom: 20px;
+        }
+        .staffreview_discription {
+            margin-bottom: 20px;
+        }
+        .staffreview_discription a {
+            color: #000000;
+            font-size: 18px;
+            text-decoration: none;
+            display: block;
+            padding-left: 20px;
+            line-height: 1.75em;
+            transition-duration: .1s;
+        }
+        .staffreview_discription a:hover {
+            color: #bbbbbb;
+        }
+        .staffreview_data {
+            color: #727171;
+            font-size: 12px;
+            padding-left: 20px;
+            margin-bottom: 30px;
+        }
+
     
 }
 @media screen and (max-width: 760px) and (min-width: 600px) {
