@@ -811,6 +811,27 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
             padding-left: 20px;
             margin-bottom: 30px;
         }
+        .tohyowrapper {
+            display: inline-grid;
+            grid-template-columns: 100%;
+            grid-row-gap: 30px;
+            margin-bottom: 30px;
+            width: 80%;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .kuwashikumiru {
+            width: max-content;
+            height: auto;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 20px;
+        }
+        .kuwashikumiru a {
+            padding: 10px 20px;
+        }
 
     
 }

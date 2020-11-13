@@ -1325,6 +1325,27 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     .pcsetsumei .sponly {
         display: inherit;
     }
+        .tohyowrapper {
+            display: inline-grid;
+            grid-template-columns: 45% 45%;
+            grid-column-gap: 10%;
+            width: 80%;
+            position: relative;
+            margin-bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .kuwashikumiru {
+            width: max-content;
+            height: auto;
+            position: relative;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 20px;
+        }
+        .kuwashikumiru a {
+            padding: 10px 20px;
+        }
 
 }
     @media screen and (orientation: landscape) and (max-aspect-ratio: 8 / 5) {
