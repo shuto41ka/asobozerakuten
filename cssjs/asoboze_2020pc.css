@@ -1343,10 +1343,21 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
             transform: translateX(-50%);
             border-radius: 20px;
         }
-        .kuwashikumiru a {
-            padding: 10px 20px;
-        }
-
+    .kuwashikumiru a {
+        height: 30px;
+	text-decoration: none;
+	color: #FFFFFF;
+	box-sizing: border-box;
+	display: block;
+	line-height: 30px;        
+    }
+.kuwashikumiru a:hover {
+	color: #898989;
+	background-color: #FFFFFF;
+	border-radius: 3px;
+	transition-duration: 0.5s;
+}
+    
 }
     @media screen and (orientation: landscape) and (max-aspect-ratio: 8 / 5) {
         .text .disc {

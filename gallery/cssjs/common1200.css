@@ -332,21 +332,6 @@ div {
 border-radius: 3px;
     border: 1px solid #898989;
 }
-.kuwashikumiru a {
-	text-decoration: none;
-	color: #FFFFFF;
-	box-sizing: border-box;
-	display: block;
-
-	line-height: 30px;
-}
-.kuwashikumiru a:hover {
-	color: #898989;
-	background-color: #FFFFFF;
-	border: 1px solid #898989;
-	border-radius: 3px;
-	transition-duration: 0.5s;
-}
 /*  index page */
 	.topicstable tr td {
 		width: 400px;
