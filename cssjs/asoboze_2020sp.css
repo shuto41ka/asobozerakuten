@@ -831,7 +831,8 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         }
         .kuwashikumiru a {
             height: 30px;
-            width: 8em;
+            width: max-content;
+            padding: 0.5em 2em;
         }
 
     

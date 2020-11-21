@@ -1350,7 +1350,8 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
 	box-sizing: border-box;
 	display: block;
 	line-height: 30px;        
-        width: 8em;
+        width: max-content;
+        padding: 0 2em;
     }
 .kuwashikumiru a:hover {
 	color: #898989;
