@@ -1505,7 +1505,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
             margin-top: 10px;
         }
     }
-@media screen and (orientation: landscape) and (max-height: 800px) {
+@media screen and (orientation: landscape) and (max-height: 800px) and (min-width: 760px) {
 .pick_brand .pickup_menu .pick6menus {
     grid-template-rows: 281px 281px;
     grid-template-columns: 150px 150px 150px;
@@ -1524,7 +1524,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         margin-left: 0;
     }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) and (min-width: 760px) {
     .copyright_aso {
         margin-left: 0;
     }
@@ -1538,7 +1538,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         box-sizing: border-box;
     }
     .category_aso {
-        padding-left: 10vw;
+        padding: 0 10vw;
     }
     .contents_aso {
         padding: 0 10vw;
@@ -1555,20 +1555,20 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     .footerguide {
         grid-gap: 10px 50px;
         width: 80vw;
-        margin-left: 10vw;
+        margin: 0 10vw;
     }
     .footercate {
         max-width: 85vw;
     }
 
 }
-@media screen and (orientation: landscape) and (max-height: 800px) or (max-width: 1200px) {
+@media screen and (orientation: landscape) and (max-height: 800px){
         .pcmenu_aso {
             height: 95%;
         }
     
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px) and (min-width: 760px) {
             .category_blocks {
             display: inline-grid;
             grid-template-columns: 47.5% 47.5%;
@@ -1634,7 +1634,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
                     display: none;
                 }
             }
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 760px) and (orientation: landscape) {
         .category_aso {
             width: 100%;
             background-color: #f9f7f5;
