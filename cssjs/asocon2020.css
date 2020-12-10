@@ -105,11 +105,11 @@
             width: 30%;
             height: auto;
             line-height: 3em;
-            top: 47%;
             left: 15%;
             font-size: 1.4vw;
             font-weight: bold;
             min-width: max-content;
+            -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
             position: relative;
         }
