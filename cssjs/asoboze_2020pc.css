@@ -1362,6 +1362,9 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     .item-name--3YAKV {
         overflow: hidden!important;
     }
+    .spacer--xFAdr.full-width--2JiOP {
+        overflow: hidden!important;
+    }
 }
     @media screen and (orientation: landscape) and (max-aspect-ratio: 8 / 5) {
         .text .disc {
