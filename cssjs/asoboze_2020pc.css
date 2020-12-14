@@ -1359,7 +1359,9 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
 	border-radius: 3px;
 	transition-duration: 0.5s;
 }
-    
+    .item-name--3YAKV {
+        overflow: hidden!important;
+    }
 }
     @media screen and (orientation: landscape) and (max-aspect-ratio: 8 / 5) {
         .text .disc {
