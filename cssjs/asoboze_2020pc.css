@@ -890,7 +890,7 @@ font-weight: 700;
         width: max-content;
         margin: 0 auto 5vh;
         text-align: center;
-        font-size: calc(0.3vw + 8px);
+        font-size: 14px;
         max-width: 1200px;
         color: #ffffff;
         line-height: 2em;
@@ -904,8 +904,9 @@ font-weight: 700;
     }
     .footerguide {
         width: 65vw;
-        margin-left: 15vw;
-        display: inline-grid;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
         grid-template-rows: auto;
         grid-template-columns: 2fr 2fr 1fr;
         grid-gap: 40px 100px;
@@ -929,10 +930,10 @@ font-weight: 700;
 font-weight: 700;
         border-bottom: 1px solid #ffffff;
         padding-bottom: 10px;
-        font-size: 1vw;
+        font-size: 16px;
     }
     .fguide_texts {
-        font-size: 0.8vw;
+        font-size: 16px;
         padding-top: 10px;
         line-height: 1.7em;
     }
@@ -1754,11 +1755,11 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
         margin: 2vh 0;
     }
     .footercate {
-        margin: 0 2vh 1vh 5%;
+        margin: 0 2vh 1vh 150px;
     }
     .footerguide {
         width: 75vw;
-        margin-left: 5vw;
+        margin-left: 150px;
     }
 }
 @media screen and (min-width: 760px) and (orientation: portrait) {
