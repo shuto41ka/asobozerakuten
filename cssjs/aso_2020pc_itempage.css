@@ -38,9 +38,13 @@
                grid-template-columns: 1fr 1fr;
                grid-column-gap: 39px;
            }
+.aso_itemmain div.aso_itemmain_img.color_1 {
+    grid-template-columns: 1fr;
+}
            .aso_itemmain_img img {
                width: 13.4vw;
                min-width: 150px;
+               max-width: 265px;
            }
            .aso_itemmain div.aso_itemmain_catch {
                font-size: 48px;
