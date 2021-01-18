@@ -317,6 +317,7 @@ div {
 	box-sizing: border-box;
 	margin-bottom: 30px;
     grid-gap: 0.5%;
+	margin-top: 20px;
 }
 
 .shoukaigrid > div {
@@ -1696,6 +1697,12 @@ table.gallerytable{
 	margin-bottom:50px;
 	box-sizing: border-box;
 }
+.shoukaigrid .galleryshohin.regileKonmari img {
+    max-width: 210px;
+    margin: auto;
+    display: block;
+    max-height: 210px;
+}
 .gallerylink{
     max-width: 600px;
     width: 100%;
@@ -1713,6 +1720,10 @@ table.gallerytable{
 .gallerylink p {
     padding: 10px 0;
     line-height: 30px;
+}
+.regileKonmari .gallerylink p {
+    width: max-content;
+    margin: auto
 }
 .gallerylink div {
     line-height: 30px;

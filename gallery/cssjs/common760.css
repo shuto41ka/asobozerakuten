@@ -1616,6 +1616,13 @@ table.gallerytable td img{
 .galleryshohin a img{
 	box-sizing: border-box;
 }
+.shoukaigrid .galleryshohin.regileKonmari img {
+    max-width: 210px;
+    margin: auto;
+    display: block;
+    max-height: 210px;
+    
+}
 .gallerylink{
 	margin:0 auto;
 	padding:5% 0 5% 5%;
@@ -1626,6 +1633,11 @@ table.gallerytable td img{
     padding: 10px 0;
     line-height: 24px;
 }
+.regileKonmari .gallerylink p {
+    width: max-content;
+    margin: auto
+}
+
 .gallerylink div {
     line-height: 24px;
 }
@@ -1822,8 +1834,8 @@ img[id*="large"]{
     left: 50%;
     transform: translateX(-50%);	
 	box-sizing: border-box;
-
-	margin:0 auto 30px;
+	
+	margin: 30px auto 30px;
 }
 
 .shoukaigrid > div {
