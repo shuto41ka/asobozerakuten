@@ -99,7 +99,6 @@
                 display: block;
             }
             .aso_gallery {
-                margin-bottom: 10vw;
                 overflow: hidden !important;
             }
             .aso_itemdetail_storage {
@@ -248,7 +247,6 @@
 		.aso_othersizes_text {
 			line-height: 150px;
 			width: max-content;
-			font-size: 24px;
 			margin: auto;
 			font-weight: bold;
 		}
@@ -274,19 +272,20 @@
 			background-color: #333;
 			color: #c3c3c3;
 		}
-		.aso_storage_othersizes {
+	#pagebody div.aso_storage_othersizes {
 			width: 100%;
 			margin-top: 45px;
-			height: max-content;
+			overflow: hidden;
 		}
 		.aso_storage_othersizes01 {
 			width: max-content;
 			float: left;
+			max-width: 35vw;
 		}
 		.aso_storage_othersizes02 {
 			width: max-content;
 			height: 100%;
-			float: left;
+			float: right;
 		}
 				.aso_storage_othersizes02 a {
 			border: 1px solid #000;
