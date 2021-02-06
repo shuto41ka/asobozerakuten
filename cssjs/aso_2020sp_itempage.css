@@ -294,3 +294,136 @@
                 text-align: center;
                 padding-left: 1em;
             }
+		.contents_container2021 img {
+				width: 100%;
+			}
+			.betsu_setsumei {
+				margin: 55px 46px 22px;
+				font-size: 16px;
+			}
+		.betsu_setsumei_honbun {
+			margin-bottom: 50px;
+			    line-height: 1.8em;
+		}
+		.betsu_setsumei_number {
+			font-size: 60px;
+			margin-bottom: 19px;
+			font-weight: bold;
+		}
+		.betsu_setsumei_midashi {
+			font-size: 23px;
+			margin-bottom: 20px;
+			font-weight: bold;
+		}
+			.betsu_setsumei_images {
+				margin:  0 14px;
+				border-top: 1px solid #808080;
+			}
+		.betsu_setsumei_images_title {
+			margin: 30px 0 10px;
+			font-size: 16px;
+			width: 100%;
+			text-align: center;
+			font-weight: bold;
+		}
+		.betsu_setsumei_images_table {
+			display: grid;
+			width: 100%;
+			grid-template-columns:  1fr 1fr;
+			grid-column-gap: 7px;
+			grid-template-rows: auto;
+			grid-row-gap: 11px;
+			margin-bottom: 13px;
+		}
+		.betsu_setsumei_images_disc {
+			font-size: 14px;
+			margin-bottom: 42px;
+		}
+				.betsu_setsumei_images_table .betsu_setsumei_images_disc {
+					margin: 13px 0 11px;
+		}
+		.betsu_setsumei_images_table01 .betsu_setsumei_image01 {
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+		.betsu_setsumei_images_table02 .betsu_setsumei_image01 {
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+		.betsu_setsumei_images_table03 {
+			display: grid;
+			width: 100%;
+			grid-template-columns:  auto;
+			grid-column-gap: 7px;
+			grid-template-rows: auto;
+			grid-row-gap: 11px;
+			margin-bottom: 13px;
+		}
+		.designer_diary {
+			background-color: #E9EAEA;
+			padding: 27px 11px;
+		}
+		.designer_diary_title {
+			background-color: #939394;
+			text-align: center !important;
+			height: 40px;
+			line-height: 40px;
+			display: block;
+			color: #ffffff;
+		}
+		.designer_diary_honbun {
+			margin: 24px 0 38px;
+			
+		}
+		.designer_diary_honbun ol {
+			margin: 0;
+			padding-inline-start: 11px;
+			margin-inline-start: 11px;
+		}
+		.designer_diary_grid {
+			display: grid;
+			width: 100%;
+			grid-template-columns: 1fr 1fr;
+			grid-gap: 8px;
+			text-align: center;
+		}
+		.designer_diary_grid_image01 {
+			grid-column-start: 1;
+			grid-column-end: 1;
+		}
+		.designer_diary_grid_image02 {
+			grid-column-start: 2;
+			grid-column-end: 2;
+		}
+		.designer_diary_grid_text {
+			font-size: 14px;
+			text-align: center;
+			margin-bottom: 12px;
+			font-weight: bold;
+		}
+		.designer_diary_text {
+			margin-top: 8px;
+			margin-bottom: 14px;
+		}
+		.vegan {
+			margin-top: 30px;
+			font-size: 16px;
+			margin-bottom: 7px;
+		}
+		.vegan p:first-child {
+			margin-bottom: 6px;
+			font-weight: bold;
+		}
+		.komejirushi {
+			font-size: 14px;
+			margin-bottom: 35px;
+		}
+		.betsu_setsumei_nakami,.betsu_setsumei_nakami_comment {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+		.betsu_setsumei_nakami ul {
+			list-style-type: "・";
+			margin-block-start: 0.5rem;
+			padding-inline-start: 1rem;
+		}

@@ -326,3 +326,257 @@
 			width: 100%;
 			height: auto;
 		}
+		.contents_container2021 img {
+				width: 100%;
+			}
+			.betsu_setsumei {
+				margin: 6vw  auto 15px;
+				font-size: 16px;
+				max-width: 1260px;
+				width: 90%;
+			}
+		.betsu_setsumei_honbun {
+			margin-bottom: 50px;
+			font-size: 24px;
+			    line-height: 1.8em;
+		}
+		.betsu_setsumei_number {
+			font-size: 120px;
+			margin-bottom: 30px;
+			width: max-content;
+			font-weight: bold;
+			display: table-cell;
+			vertical-align: top;
+		}
+		.betsu_setsumei_midashi {
+			display: table;
+			margin-bottom: 30px;
+		}
+			.betsu_setsumei_title {
+			padding-left: 65px;
+				padding-top: 10px;
+			font-weight: bold;
+				display: table-cell;
+				vertical-align: middle;
+				font-size: 36px;
+			}
+			.betsu_setsumei_2board {
+				display: table;
+				border-collapse: separate;
+				border-spacing: 39px;
+				margin: 0 auto;
+				max-width: 1299px;
+				    width: calc(90% + 39px)
+			}
+			.betsu_setsumei_2board .betsu_setsumei_images {
+				display: table-cell;
+				border-top: none;
+			}
+			.betsu_setsumei_images {
+				margin:  0 auto;
+				border-top: 1px solid #808080;
+				max-width: 1260px;
+			}
+			.betsu_setsumei_images.noborder {
+				border-top: none;
+				width: 90%;
+			}
+		.betsu_setsumei_images_title {
+			margin: 30px 0 10px;
+			font-size: 24px;
+			width: 100%;
+			font-weight: bold;
+    		text-align: center;
+		}
+
+			.betsu_setsumei_images_table {
+			display: grid;
+			width: 100%;
+			grid-template-columns:  1fr 1fr;
+			grid-column-gap: 7px;
+			grid-template-rows: auto;
+			grid-row-gap: 11px;
+			margin-bottom: 13px;
+		}
+		.betsu_setsumei_images_disc {
+			font-size: 21px;
+			margin-bottom: 42px;
+		}
+				.betsu_setsumei_images_table .betsu_setsumei_images_disc {
+					margin: 13px auto 11px;
+					width: 100%;
+					max-width: 1260px;
+		}
+		.betsu_setsumei_images_table01 .betsu_setsumei_image01 {
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+		.betsu_setsumei_images_table02 .betsu_setsumei_image01 {
+			grid-column-start: 1;
+			grid-column-end: 3;
+		}
+					.betsu_setsumei_images_table02 .betsu_setsumei_image01.naisou {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-column-gap: 63px;
+						margin-bottom: 100px;
+			}
+			.betsu_setsumei_images_table02 .betsu_setsumei_image01.naisou img {
+				grid-column: 2 / 3;
+			}
+			.betsu_setsumei_images_table02 .betsu_setsumei_image01.naisou div {
+				grid-column: 1 / 2;
+				grid-row: 1;
+			}
+			.betsu_setsumei_images_table02 .betsu_setsumei_image01.naisou div.betsu_setsumei_images_disc {
+				display: table;
+				height: 100%;
+			}			
+			.betsu_setsumei_images_table02 .betsu_setsumei_image01.naisou div.betsu_setsumei_images_disc div {
+				display: table-cell;
+				vertical-align: top;
+			}
+			.betsu_setsumei_images_table03 {
+			display: grid;
+			width: 100%;
+			max-width: 1260px;
+			grid-template-columns:  1fr 1fr;
+			grid-column-gap: 32px;
+			grid-template-rows: auto;
+			grid-row-gap: 11px;
+			margin: 0 auto 13px;
+		}
+			.betsu_setsumei_images_table03 .betsu_setsumei_image03{
+				grid-column: 1 / 3;
+				margin: auto;
+			}
+		.designer_diary {
+			background-color: #E9EAEA;
+			padding: 95px 0;
+		}
+			.designer_diary_wraper {
+				max-width: 1260px;
+				margin: 0 auto;
+			display: grid;
+			grid-template-columns: 248px 1fr;
+			grid-column-gap: 23px;
+			grid-row-gap: 7px;
+				width: 90%;
+			}
+		.designer_diary_title {
+			background-color: #939394;
+			text-align: center !important;
+			height: 108px;
+			margin: 5px auto 0;
+			width: 248px;
+			display: table-cell;
+			vertical-align: middle;
+			font-size: 36px;
+			display: block;
+			color: #ffffff;
+			line-height: 1.2em;
+		   padding-top: 9px
+		}
+		.designer_diary_honbun {
+			margin: 0 0 0 78px;
+			font-size: 24px;
+		}
+		.designer_diary_honbun ol {
+			margin: 0;
+			padding-inline-start: 1em;
+		}
+		.designer_diary_grid {
+			display: grid;
+			width: 100%;
+			grid-column: 1 / 3;
+			grid-template-columns: 248px 1fr 1fr;
+			grid-gap: 8px;
+			margin-top: 32px;
+			text-align: center;
+		}
+		.designer_diary_grid_image01 {
+			grid-column-start: 2;
+			grid-column-end: 2;
+		}
+		.designer_diary_grid_image02 {
+			grid-column-start: 3;
+			grid-column-end: 3;
+		}
+			.designer_diary_angle {
+				margin:auto;
+				font-size: 24px;
+			}
+		.designer_diary_grid_text {
+			font-size: 24px;
+			text-align: center;
+			font-weight: bold;
+			margin-bottom: 12px;
+		}
+		.designer_diary_text {
+			margin-top: 32px;
+			font-size: 24px;
+			margin-bottom: 0;
+			grid-column: 2 / 3;
+		}
+		.vegan {
+			margin-top: 30px;
+			font-size: 24px;
+			margin-bottom: 1em;
+		}
+		.vegan p:first-child {
+			margin-bottom: 6px;
+			font-weight: bold;
+			margin-top: 60px;
+		}
+			.betsu_shuno_grid .vegan p:first-child {
+				margin-top: 0;
+			}
+			.betsu_shuno_grid .vegan {
+				margin-bottom: 0;
+			}			
+		.komejirushi {
+			font-size: 20px;
+			margin-bottom: 35px;
+		}
+			.betsu_shuno_grid .betsu_setsumei_images_table01 .betsu_setsumei_image01 {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				grid-column-gap: 12px;
+			}
+			.betsu_shuno_grid .betsu_setsumei_images_table .betsu_setsumei_images_disc {
+				grid-column: 1 / 4;
+			}
+			.betsu_shuno_grid .betsu_setsumei_images_table01 .betsu_setsumei_image01 .betsu_setsumei_nakami01 {
+				grid-column: 1 / 2;
+				grid-row: 3;
+			}			
+			.betsu_shuno_grid .betsu_setsumei_images_table01 .betsu_setsumei_image01 .betsu_setsumei_nakami02 {
+				grid-column: 2 / 3;
+				grid-row: 3;
+			}			
+			.betsu_shuno_grid .betsu_setsumei_images_table01 .betsu_setsumei_image01 .betsu_setsumei_nakami03 {
+				grid-column: 3 / 4;
+				grid-row: 3;
+			}			
+			.betsu_shuno_grid .betsu_setsumei_images_table01 .betsu_setsumei_image01 .betsu_setsumei_nakami {
+				grid-column: 1 / 4;
+				grid-row: 2;
+				margin-top: 0;
+				margin-bottom: 18px;
+			}	
+			.betsu_shuno_grid .betsu_setsumei_images_table01 .betsu_setsumei_image01 .betsu_setsumei_nakami_comment {
+				grid-column: 1 / 4;
+				grid-row: 4;
+				margin-top: 40px;
+				margin-bottom: 48px;
+			}						
+		.betsu_setsumei_nakami,.betsu_setsumei_nakami_comment {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			font-size: 24px;
+		}
+		.betsu_setsumei_nakami ul {
+			list-style-type: "・";
+			margin-block-start: 0.5rem;
+			padding-inline-start: 1rem;
+		}
