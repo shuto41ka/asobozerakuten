@@ -238,6 +238,9 @@
 			max-width: 332px;
 			width: 30vw;
 		}
+	_::-webkit-full-page-media, _:future, :root .aso_itemmain_plus {
+			top: -500px;
+}
 
 /*Safariだけに適用されるCSSハック*/
 @media screen and (-webkit-min-device-pixel-ratio:0)  {

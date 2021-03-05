@@ -26,6 +26,22 @@
     #rnkInShopPartsArea {
         margin: auto;
     }
+	
+
+/*Safariだけに適用されるCSSハック*/
+@media screen and (-webkit-min-device-pixel-ratio:0) and (min-width:760px) {
+  ::i-block-chrome, 
+    .aso_itemmain_plus {
+			position: absolute;
+			top: -500px;
+			left: 50vw;
+			max-width: 332px;
+			width: 30vw;
+	}
+}	
+	_::-webkit-full-page-media, _:future, :root .aso_itemmain_plus {
+			top: -500px;
+}
     </style>
 </head>
 <body onpageshow="
