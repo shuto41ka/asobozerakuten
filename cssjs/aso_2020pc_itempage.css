@@ -239,7 +239,7 @@
 			width: 30vw;
 		}
 	_::-webkit-full-page-media, _:future, :root .aso_itemmain_plus {
-			top: -500px;
+			top: calc(-7vw - 300px);
 }
 
 /*Safariだけに適用されるCSSハック*/
