@@ -605,3 +605,123 @@ position: absolute;
 			margin-block-start: 0.5rem;
 			padding-inline-start: 1rem;
 		}
+
+
+/* みんなのレジルひろば*/
+			.hiroba_wrap {
+				overflow: initial;
+				margin-bottom: 100px;
+			}
+			.hiroba_wrap div:first-child {
+				margin-top: 0;
+			}
+			.hiroba_wrap div{
+				overflow: inherit;
+			}
+			.hiroba_review {
+				max-width: 80vw;
+				background-repeat: no-repeat;
+				background-size: calc(15% - 10px);
+				width: 90%;
+				margin: 60px auto;				
+			}
+			.arrow01.hiroba_review {
+				background-position: left bottom;
+			}
+			.arrow02.hiroba_review {
+				background-position: right bottom;
+			}
+			.hiroba_review_good_woman {
+				background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/regile/icon00003_woman_like.jpg);
+			}
+			.hiroba_review_bad {
+				background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/regile/icon00001_dislike.jpg);
+			}
+			.hiroba_review_good_man {
+				background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/regile/icon00002_men_like.jpg);
+			}
+			.hiroba_review_idea_man {
+				background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/regile/icon00005_men_idea.jpg);
+			}
+			.hiroba_review_idea_woman {
+				background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/regile/icon00005_woman_idea.jpg);
+			}
+			.hiroba_review_gift {
+				background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/regile/icon00004_gift.jpg);
+			}
+		.arrow_box{
+    position:relative;
+    padding:2vw;
+    border:2px solid #5C5C5C;
+    color:#393939;
+			width: 85%;
+			max-width: 70vw;
+			height: max-content;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+}
+			.arrow_box .review_person {
+				line-height: 3em;
+			}
+.arrow_box:after,.arrow_box:before{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    pointer-events:none;
+    position:absolute;
+    bottom:50px;
+}
+			.arrow01 .arrow_box:after, .arrow01 .arrow_box:before{
+    right:100%;				
+			}
+			.arrow02 .arrow_box:after, .arrow02 .arrow_box:before{
+    left:100%;				
+			}
+.arrow_box:after{
+    border-color: rgba(255, 255, 255, 0);
+    border-top-width:10px;
+    border-bottom-width:10px;
+    border-left-width:10px;
+    border-right-width:10px;
+    margin-top: -10px;
+}
+.arrow_box:before{
+    border-color: rgba(92, 92, 92, 0);
+    border-top-width:12px;
+    border-bottom-width:12px;
+			}
+			.arrow01 .arrow_box:before{
+    border-left-width:12px;
+    border-right-width:12px;
+    margin-top: -12px;
+    margin-right: 2px;				
+    border-right-color:#5C5C5C;
+			}
+			.arrow01 .arrow_box:after {
+				    border-right-color:#FFFFFF;
+			}
+			.arrow02 .arrow_box:after {
+				    border-left-color:#FFFFFF;
+			}
+				.arrow02 .arrow_box:before{
+    border-left-width:12px;
+    border-right-width:12px;
+    margin-top: -12px;
+    margin-left: 2px;			
+    border-left-color:#5C5C5C;
+			}
+		
+			.arrow02 .arrow_box:after, .arrow02 .arrow_box:before{
+    left:100%;				
+			}
+		
+			.arrow01  >  div{
+				margin-left: auto;
+				margin-right: 0;
+			}
+			.arrow02  >  div{
+				margin-left: 0;
+				margin-right: auto;
+			}
