@@ -30,7 +30,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <script src="https://www.rakuten.ne.jp/gold/asoboze/jquery-3.2.1.min.js"></script>    
-
+<!--
 <script type="text/javascript">
 $(function(){
   $('.effect2021 .hop').css({"opacity":"0", "transform":"translateY(10px)"});
@@ -51,7 +51,7 @@ $(function(){
 });
 
 </script>
-
+-->
 <script>
 $(function() {
     $("#pcIndexRight").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pcindex_rightmenu.html");
@@ -116,7 +116,10 @@ $(function() {
         <div id="pcleftbanner" class="pconly"></div>
     <div style="width: 100%; height: 80px;" class="sponly">
 </div>
-
+<style>
+	@media screen and (max-width: 759px) {
+	}
+		</style>
 		<div class="contents_container2021" id="spthreemenu1">
     <div class="pconly">
         <img src="https://image.rakuten.co.jp/asoboze/cabinet/regile/hiroba_pc_00001.jpg" alt="">
@@ -192,8 +195,10 @@ $(function() {
 	<div class="hiroba_wrap">
 		<div class="effect2021">
 			<div class="hiroba_review hiroba_review_good_woman arrow01 hop">
-				<div class="hiroba_review_text_wrap arrow_box">
-					<div class="hiroba_review_text">
+				<div class="hiroba_review_text_wrap arrow_box cp_box">
+						<input type="checkbox" class="sponly" id="cp0001">
+						<label for="cp0001" class="sponly"></label>
+					<div class="hiroba_review_text cp_container">
 						エコバッグはそこそこ持っていますが、この薄さと畳んだときのコンパクトさに惹かれて購入。結果大正解でした！いつも小さいバッグなのですが、そこにスルリと入る大きさでした。<br>色はラベンダー。<br>透けるかなと思いましたが、そこまで気にならず、きれいな色でした。<br>Lサイズも検討中です＾＾
 					</div>
 						<span class="review_person">（Mサイズ・楽天市場店でご購入・40代女性）</span>
@@ -203,8 +208,10 @@ $(function() {
 		
 		<div class="effect2021">
 			<div class="hiroba_review hiroba_review_good_man arrow02 hop">
-				<div class="hiroba_review_text_wrap arrow_box">
-					<div class="hiroba_review_text">
+				<div class="hiroba_review_text_wrap arrow_box cp_box">
+						<input type="checkbox" class="sponly" id="cp0002">
+						<label for="cp0002" class="sponly"></label>
+					<div class="hiroba_review_text cp_container">
 						毎日、お昼ご飯を買いにコンビニへ行くので、レジ袋有料化を機に購入しました。ペットボトル、弁当、味噌汁…ちょうど、ジャストサイズで入ります。折りたたみもしやすく耐久性もありそうなので便利です。
 					</div>
 						<span class="review_person">（Mサイズ・楽天市場店でご購入・40代男性）</span>
@@ -214,8 +221,10 @@ $(function() {
 			
 		<div class="effect2021">
 			<div class="hiroba_review hiroba_review_bad arrow01 hop">
-				<div class="hiroba_review_text_wrap arrow_box">
-					<div class="hiroba_review_text">
+				<div class="hiroba_review_text_wrap arrow_box cp_box">
+						<input type="checkbox" class="sponly" id="cp0003">
+						<label for="cp0003" class="sponly"></label>
+					<div class="hiroba_review_text cp_container">
 						見た目より沢山入り、シンプルで良いです。ただ、折って小さく戻すのが面倒くさい。グレーがいつも売り切れなの何とかして欲しいです。他の色は、地域のゴミ袋と色が被って敢えて持ちたくないものもあるし。
 					</div>
 						<span class="review_person">（Lサイズ・楽天市場店でご購入・50代女性）</span>
@@ -225,8 +234,10 @@ $(function() {
 
 		<div class="effect2021">
 			<div class="hiroba_review hiroba_review_good_woman arrow02 hop">
-				<div class="hiroba_review_text_wrap arrow_box">
-					<div class="hiroba_review_text">
+				<div class="hiroba_review_text_wrap arrow_box cp_box">
+						<input type="checkbox" class="sponly" id="cp0004">
+						<label for="cp0004" class="sponly"></label>
+					<div class="hiroba_review_text cp_container">
 						おしゃれで、かつ小さく畳めると言うことで、かなり機能性は高いです。生ものから汁が出ても沁みないので安心です。<br>ただ、Mサイズはかなり小さめなので、スーパー等に買い物に行く際はLサイズがいいのかなと感じました。コンビニ程度だとちょうどいいサイズ感で、使い勝手もいいです。
 					</div>
 						<span class="review_person">（Mサイズ・楽天市場店でご購入・20代女性）</span>
@@ -234,7 +245,55 @@ $(function() {
 			</div>
 		</div>
 
+		<div class="effect2021">
+			<div class="hiroba_review hiroba_review_good_woman arrow01 hop">
+				<div class="hiroba_review_text_wrap arrow_box cp_box">
+						<input type="checkbox" class="sponly" id="cp0005">
+						<label for="cp0005" class="sponly"></label>
+					<div class="hiroba_review_text cp_container">
+						今まで使っていたアンパンマンミュージアムで買った簡単に綺麗に折りたためる森の本屋さん本型アンパンマンエコバッグ(使い心地神)が死んでしまったので、常にエコバッグを鞄に忍ばせるため小さく折り畳めるよりもとにかく薄く折り畳めるエコバッグが欲しくてこちらを購入させていただきました。<br>
+						収納方法は本型アンパンマンエコバッグが特殊設計だったため(あの折り畳み方は神だった、検索したら画像出てきます)こちらはよくある折り畳んで内ポケットに仕舞う形式です。内ポケットに仕舞う形式は畳み方が悪いと塊になって厚みが出てしまって鞄に入れておくのが嫌になるのですが、こちらの商品は多少適当に折り畳んでもかなり薄さを維持出来ているのでストレスフリーです。<br>
+						デザインもシンプルだけど他に無い印象でかなり良いです。<br>
+						そしてかなり丈夫です。アンパンマンは2リットルペットボトル2本で悲鳴を上げていましたがこちらは全然大丈夫そうです。あと水もめっちゃ弾きます。アンパンマンは防水性ゼロだったので雨の日は外も中もエコバッグ持ってる自分も悲惨なことになりました、アンパンマンが死んだ原因も雨です。しかしこの商品は大丈夫です、濡れたらタオルでサッと拭けばOKです。<br>
+						ただ唯一アンパンマンに完全敗北を認めざるを得ない点は持ち手の狭さです。コンビニ袋をイメージしたデザインのためか持ち手は手で持つことを想定されていて肩から下げると若干窮屈さを感じます。私はLサイズを購入したので肩から下げれないこともないですが沢山の物を入れるとこれ腕通るかな…という感覚です、腕の血が止まりそうな血圧検査みたいな圧迫感です。<br>
+						最大耐荷重約20kgを上腕だけで支えるのは無理だけど肩から下げればいけなくもないので、やはり持ち手をあと一回り程大きくしていただきたかったです。一回り大きければ間違いなく★5でした。<br>しかしかなり満足しているので買ってよかったと心から感じています。ありがとうございました。
+					</div>
+						<span class="review_person">（Lサイズ・楽天・20代女性）</span>
+				</div>
+			</div>
+		</div>
 
+		<div class="effect2021">
+			<div class="hiroba_review hiroba_review_good_man arrow02 hop">
+				<div class="hiroba_review_text_wrap arrow_box cp_box">
+						<input type="checkbox" class="sponly" id="cp0006">
+						<label for="cp0006" class="sponly"></label>
+					<div class="hiroba_review_text cp_container">
+						エコバッグとしては高額な部類ですが、意外に丈夫で耐久性は有りそうなので元はとれるかなと。<br>
+						コンパクトに畳めて、コンビニMサイズの袋ぐらいな容量はあるので結構使えます。
+					</div>
+						<span class="review_person">（Mサイズ・楽天市場店でご購入・50代男性）</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="effect2021">
+			<div class="hiroba_review hiroba_review_bad arrow01 hop">
+				<div class="hiroba_review_text_wrap arrow_box cp_box">
+						<input type="checkbox" class="sponly" id="cp0007">
+						<label for="cp0007" class="sponly"></label>
+					<div class="hiroba_review_text cp_container">
+						黄色しかなかったので黄色を購入。<br>
+						レジ袋みたいなデザインや使い勝手はいい感じ。<br>
+						ただ、洗濯機では洗えないので定期的にアルコール消毒して使っていこうと思います。
+					</div>
+						<span class="review_person">（Lサイズ・楽天・30代男性）</span>
+				</div>
+			</div>
+		</div>
+		
+		
+		
   </div>
 	
 	
@@ -300,8 +359,10 @@ $(function() {
 	<div class="hiroba_wrap">
 		<div class="effect2021">
 			<div class="hiroba_review hiroba_review_idea_woman arrow01 hop">
-				<div class="hiroba_review_text_wrap arrow_box">
-					<div class="hiroba_review_text">
+				<div class="hiroba_review_text_wrap arrow_box cp_box">
+						<input type="checkbox" class="sponly" id="cp1001">
+						<label for="cp1001" class="sponly"></label>
+					<div class="hiroba_review_text cp_container">
 						Mサイズを購入した後<br>Lサイズも購入しました。<br>とても気に入ってます♪<br>普段はMサイズでちょうどいいサイズ。<br>野菜やお肉、卵など買うときはLサイズ、<br>という感じで鞄に2つ入れて使い分けています。<br>写真の感じだと柔らかいゴムのような感じかなと思っていましたが、とても丈夫で折り畳むのも簡単です。<br>グレーを購入しましたが、透け感は思ったよりなかったです。
 					</div>
 						<span class="review_person">（Lサイズ・楽天市場店でご購入・20代女性）</span>
@@ -311,8 +372,10 @@ $(function() {
 		
 		<div class="effect2021">
 			<div class="hiroba_review hiroba_review_idea_man arrow02 hop">
-				<div class="hiroba_review_text_wrap arrow_box">
-					<div class="hiroba_review_text">
+				<div class="hiroba_review_text_wrap arrow_box cp_box">
+						<input type="checkbox" class="sponly" id="1002">
+						<label for="1002" class="sponly"></label>
+					<div class="hiroba_review_text cp_container">
 						使いやすい形で畳むと薄く軽い、素材も安っぽくないので（まぁ実際エコバッグとしては随分高価なのですが）とても気に入って色違いサイズ違いで何枚か購入してしまいました。通勤鞄にはコンビニ用のSサイズとちょっとした買い物用のMサイズを、プライベートで使う鞄にはMサイズとガッツリ買い物用のLサイズを常備。色も通勤時用にはネイビーなど濃い目の透けない色、普段の買い物用にはカラフルな色…と使い分けています。最初の頃はエコバッグなんて面倒で嫌だなと思っていましたが、良いエコバッグですねと褒められる事も多いので、今では人前で使うのがちょっと楽しみだったりします。
 					</div>
 						<span class="review_person">（Mサイズ・楽天市場店でご購入・50代男性）</span>
@@ -322,8 +385,10 @@ $(function() {
 			
 		<div class="effect2021">
 			<div class="hiroba_review hiroba_review_good_woman arrow01 hop">
-				<div class="hiroba_review_text_wrap arrow_box">
-					<div class="hiroba_review_text">
+				<div class="hiroba_review_text_wrap arrow_box cp_box">
+						<input type="checkbox" class="sponly" id="cp1003">
+						<label for="cp1003" class="sponly"></label>
+					<div class="hiroba_review_text cp_container">
 						コンパクトで良かったです。財布へ入れています。<br>息子用と２つ買いました。<br>息子も持っていたエコバックをやめてこちらを鞄に入れています。<br>私はまだチャンスがなく使っていませんが、楽しみです。
 					</div>
 						<span class="review_person">（Mサイズ・楽天市場店でご購入・50代女性）</span>
@@ -358,6 +423,8 @@ $(function() {
 	</div>
     <div class="clearbox" style="height: 100px;"></div>
 
+	
+	
     <span id="pcthreemenu3"></span>
 	<div class="effect2021">
         <div class="wraphalf sponly hop">
@@ -386,8 +453,10 @@ $(function() {
 	<div class="hiroba_wrap">
 		<div class="effect2021">
 			<div class="hiroba_review hiroba_review_gift arrow01 hop">
-				<div class="hiroba_review_text_wrap arrow_box">
-					<div class="hiroba_review_text">
+				<div class="hiroba_review_text_wrap arrow_box cp_box">
+						<input type="checkbox" class="sponly" id="cp2001">
+						<label for="cp2001" class="sponly"></label>
+					<div class="hiroba_review_text cp_container">
 						エコバックをなかなか買う機会がないとのことで、彼にプレゼントしました。<br>本当にとてもコンパクトなので、荷物の少ない彼でも、常に持ち歩いてくれてます。すごく良い！だそうです。<br>ギフトラッピングもとても素敵で、総合的に大変喜んでもらえました！
 					</div>
 						<span class="review_person">（ギフトセット・楽天市場店でご購入・20代女性）</span>
@@ -397,8 +466,10 @@ $(function() {
 		
 		<div class="effect2021">
 			<div class="hiroba_review hiroba_review_idea_woman arrow02 hop">
-				<div class="hiroba_review_text_wrap arrow_box">
-					<div class="hiroba_review_text">
+				<div class="hiroba_review_text_wrap arrow_box cp_box">
+						<input type="checkbox" class="sponly" id="cp2002">
+						<label for="cp2002" class="sponly"></label>
+					<div class="hiroba_review_text cp_container">
 						主人にプレゼントしたら喜んでもらえました。<br>あまり生活感のないエコバッグで会社でも使いやすいと言ってくれました。
 					</div>
 						<span class="review_person">（Mサイズ・楽天市場店でご購入・30代女性）</span>
@@ -406,10 +477,64 @@ $(function() {
 			</div>
 		</div>
 
+	<div class="hiroba_wrap">
+		<div class="effect2021">
+			<div class="hiroba_review hiroba_review_good_woman arrow01 hop">
+				<div class="hiroba_review_text_wrap arrow_box cp_box">
+						<input type="checkbox" class="sponly" id="cp2003">
+						<label for="cp2003" class="sponly"></label>
+					<div class="hiroba_review_text cp_container">
+						エコバッグを持っていない彼氏の為にプレゼントしました。<br>
+						オレンジ色が好きなのでピッタリだと思いこちらの商品にしました。<br>
+						コンビニやちょっとした買い物に丁度良いサイズだと思います。<br>
+						渡してからずっと使ってもらっている様なので気に入ってもらえたと思います。<br>
+						ありがとうございました。
+					</div>
+						<span class="review_person">（ギフトセット・楽天市場店でご購入・40代女性）</span>
+				</div>
+			</div>
+		</div>
+		
+		<div class="effect2021">
+			<div class="hiroba_review hiroba_review_gift arrow02 hop">
+				<div class="hiroba_review_text_wrap arrow_box cp_box">
+						<input type="checkbox" class="sponly" id="cp2004">
+						<label for="cp2004" class="sponly"></label>
+					<div class="hiroba_review_text cp_container">
+						リピートで購入いたしました。<br>
+						父の日にプレゼントとして購入したのですが、丈夫でかっこよく男性がコンビニやドラッグストア等で買い物をする時にちょうど良い大きさなので、男性へのプレゼントに購入しました。<br>気に入っていただき、使いやすいとのことです。<br>
+						ありがとうございます！
+					</div>
+						<span class="review_person">（Lサイズ・楽天市場店でご購入・30代女性）</span>
+				</div>
+			</div>
+		</div>
+		
 
   </div>
+	<div class="effect2021">
+		    <div class="wraphalf hop">
+        <img src="https://image.rakuten.co.jp/asoboze/cabinet/regile/hiroba_sp_00010.jpg" alt="" class="sponly">
+        <img src="https://image.rakuten.co.jp/asoboze/cabinet/regile/hiroba_pc_00010.jpg" alt="" class="pconly">			
+    </div>
+    <div class="wraphalf hop">
+		<div class="base22">&nbsp;</div>
+        <div class="base20">
+            <div>
+				店長インタビュー
+		  </div>
+        </div>
+        <div class="base21">
+            <div>
+				Regileは、サイバール株式会社「いっしょにちがおう」プロジェクトにより生まれました。 asoboze店長の浜端に、開発過程についてインタビューしました。
+          </div>
+        </div>
+			<div class="kuwashikumiru" style="display: inline-block; float: left; margin-right: 2vw; left: calc(50% - 60px);"><a href="https://www.rakuten.ne.jp/gold/asoboze/family/shoku.html">詳しく見る</a></div>
+			<div class="kuwashikumiru" style="display: inline-block;  left: calc(50% - 60px);"><a href="#spthreemenu1">ページTOP</a></div>
+    </div>
 	
-	
+	</div>
+	<div class="clearbox" style="height: 100px;"></div>
 <div class="pconly">
 	
 	

@@ -427,3 +427,189 @@
 			margin-block-start: 0.5rem;
 			padding-inline-start: 1rem;
 		}
+	/* みんなのレジルひろば*/
+			.hiroba_wrap {
+				overflow: initial;
+				margin-bottom: 100px;
+			}
+			.hiroba_wrap div:first-child {
+				margin-top: 0;
+			}
+			.hiroba_review {
+				max-width: 96vw;
+				background-repeat: no-repeat;
+				background-size: calc(25% - 10px);
+				width: 90%;
+				font-size: 12px;
+				margin: 40px 2vw;				
+			}
+		.hiroba_wrap .hiroba_review_text {
+			margin-bottom: 20px;
+			text-overflow: ellipsis;
+		}
+		.hiroba_review_text_closed {
+			height: 100px;
+		}
+			.arrow01.hiroba_review {
+				background-position: left bottom;
+			}
+			.arrow02.hiroba_review {
+				background-position: right bottom;
+			}
+			.hiroba_review_good_woman {
+				background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/regile/icon00003_woman_like.jpg);
+			}
+			.hiroba_review_bad {
+				background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/regile/icon00001_dislike.jpg);
+			}
+			.hiroba_review_good_man {
+				background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/regile/icon00002_men_like.jpg);
+			}
+			.hiroba_review_idea_man {
+				background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/regile/icon00005_men_idea.jpg);
+			}
+			.hiroba_review_idea_woman {
+				background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/regile/icon00005_woman_idea.jpg);
+			}
+			.hiroba_review_gift {
+				background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/regile/icon00004_gift.jpg);
+			}
+		.arrow_box{
+    position:relative;
+    padding:20px;
+    border:2px solid #5C5C5C;
+    color:#393939;
+			width: 75%;
+			height: max-content;
+    border-radius:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+			line-height: 1.5em;
+}
+			.arrow_box .review_person {
+				color: #505050;
+				display: block;
+				z-index: 100;
+			}
+.arrow_box:after,.arrow_box:before{
+    border: solid transparent;
+    content:'';
+    height:0;
+    width:0;
+    pointer-events:none;
+    position:absolute;
+    bottom:20px;
+}
+			.arrow01 .arrow_box:after, .arrow01 .arrow_box:before{
+    right:100%;				
+			}
+			.arrow02 .arrow_box:after, .arrow02 .arrow_box:before{
+    left:100%;				
+			}
+.arrow_box:after{
+    border-color: rgba(255, 255, 255, 0);
+    border-top-width:10px;
+    border-bottom-width:10px;
+    border-left-width:10px;
+    border-right-width:10px;
+    margin-top: -10px;
+}
+.arrow_box:before{
+    border-color: rgba(92, 92, 92, 0);
+    border-top-width:12px;
+    border-bottom-width:12px;
+			}
+			.arrow01 .arrow_box:before{
+    border-left-width:12px;
+    border-right-width:12px;
+    margin-top: -12px;
+    margin-right: 2px;				
+    border-right-color:#5C5C5C;
+			}
+			.arrow01 .arrow_box:after {
+				    border-right-color:#FFFFFF;
+			}
+			.arrow02 .arrow_box:after {
+				    border-left-color:#FFFFFF;
+			}
+				.arrow02 .arrow_box:before{
+    border-left-width:12px;
+    border-right-width:12px;
+    margin-top: -12px;
+    margin-left: 2px;			
+    border-left-color:#5C5C5C;
+			}
+		
+			.arrow02 .arrow_box:after, .arrow02 .arrow_box:before{
+    left:100%;				
+			}
+		
+			.arrow01  >  div{
+				margin-left: auto;
+				margin-right: 0;
+			}
+			.arrow02  >  div{
+				margin-left: 0;
+				margin-right: auto;
+			}
+		.cp_box *, .cp_box *:before, .cp_box *:after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.cp_box {
+	position: relative;
+	padding-bottom: 70px
+}
+.cp_box label {
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	height: 100%; /* グラデーションの高さ */
+	cursor: pointer;
+	text-align: center;
+	/* 以下グラデーションは背景を自身のサイトに合わせて設定してください */
+	background: linear-gradient(to bottom, rgba(250, 252, 252, 0) 0%, rgba(250, 252, 252, 0.65) 30%, rgba(250, 252, 252, 0.65) 49%, rgba(250, 252, 252, 0) 50%);
+	background-position: center center;
+left: 1%;
+	width: 98%;
+}
+.cp_box input:checked + label {
+	background: inherit; /* 開いた時にグラデーションを消す */
+}
+.cp_box label:after {
+	line-height: 2.5rem;
+	position: absolute;
+	z-index: 2;
+	bottom: 20px;
+	left: 50%;
+	width: 7rem;
+	content: ' 開く';
+	transform: translate(-50%, 0);
+	letter-spacing: 0.05em;
+	color: #ffffff;
+	border-radius: 20px;
+	background-color: rgba(27, 37, 56, 1);
+}
+.cp_box input {
+	display: none;
+}
+div.cp_box div.cp_container {
+	overflow: hidden;
+	height: 70px; /* 開く前に見えている部分の高さ */
+				transition: all .5s;
+				-webkit-transition: all .5s -webkit-transform ease;
+	
+}
+.cp_box input:checked + label {
+/*	display: none ; */
+}
+.cp_box input:checked + label:after {
+	content:' 閉じる';
+}
+.cp_box input:checked ~ .cp_container {
+	height: auto;
+/* 	padding-bottom: 80px; 閉じるボタンのbottomからの位置 */
+}
+.kuwashikumiru {
+	margin-bottom: 20px;
+}
