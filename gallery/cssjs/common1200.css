@@ -315,9 +315,8 @@ div {
     width: 100%;
 	 max-width: 1200px;
 	box-sizing: border-box;
-	margin-bottom: 30px;
     grid-gap: 0.5%;
-	margin-top: 20px;
+	margin: 20px auto 30px;
 }
 
 .shoukaigrid > div {
