@@ -52,7 +52,7 @@
                line-height: 73px;
                color: #000000;
                width: max-content;
-               margin: 0 auto 2.8vw;
+               margin: 0 auto 34px;
                font-weight: bold;
            }
            .aso_itemmain div.aso_itemmain_name {
@@ -725,3 +725,149 @@ position: absolute;
 				margin-left: 0;
 				margin-right: auto;
 			}
+
+/* 2021レジル商品ページリニューアル */
+		.aso_itemmain div.aso_itemmain_img.aso_itemmain_img.color_regile {
+
+			grid-template-columns: 1fr;
+
+			margin-top: 80px;
+
+			margin-bottom: 53px;
+
+}
+
+		
+
+		.aso_itemmain_img.color_regile img {
+
+			max-width: 1068px;
+
+		}
+
+		.regile_itemmain_color {
+
+			max-width: 495px;
+
+		}
+
+		.aso_itemmain div.regile_itemmain_japan {
+
+			position: absolute;
+
+top: 20px;
+
+left: calc(55vw + 200px);
+
+width: 70px;
+
+		}
+
+		.aso_itemmain div.aso_itemmain_price.regile_itemmain_price{
+
+			margin-bottom: 26px;
+
+		}
+
+		.regile_othersizes {
+
+			display: grid;
+
+			width: 90vw;
+
+			grid-template-columns: 1fr 1fr 1fr;
+
+			max-width: 1341px;
+
+			margin: 24px auto;
+
+			grid-column-gap: 25px;
+
+		}
+
+		.regile_othersizes div {
+
+			  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+		}		
+
+		.regile_othersizes div p {
+
+			text-align: center;
+
+			font-weight: bold;
+
+			font-size: 1.3rem;;
+
+			margin: auto;
+
+		}
+
+		.aso_gallery.regile_size_detail {
+
+			padding: 0 8vw;
+
+			margin-bottom: 100px;
+
+		}
+
+		.regile_size_detail .aso_itemdetail_size_detail {
+
+			grid-template-columns: 1fr 1fr 1fr 1fr;
+
+		}
+
+		.aso_itemdetail_size.regile_itemdetail_size {
+
+			padding-bottom: 0;
+
+		}
+
+		.regile_color_sukekan {
+
+			grid-column: 1 / 4;
+
+			
+
+		}
+
+		.regile_color_sukekan p {
+
+			display: flex;
+
+			justify-content: center;
+
+			align-items: center;
+
+			padding-top: 50px;
+
+			padding-bottom: 30px;
+
+		}
+
+		.regile_color_sukekan p span {
+
+			display: block;
+
+			color: #fff;
+
+			font-size: 1.4rem;
+
+			background-color: #4C4948;
+
+			width: 294px;
+
+			height: 54px;
+
+			text-align: center;
+
+			line-height: 54px;
+
+			border-radius: 27px;
+
+		}
+/* 2021レジル商品ページリニューアル */
