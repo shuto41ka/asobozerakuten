@@ -298,7 +298,7 @@
 				width: 100%;
 			}
 			.betsu_setsumei {
-				margin: 55px 46px 22px;
+				margin: 55px 20px 22px;
 				font-size: 16px;
 			}
 		.betsu_setsumei_honbun {
@@ -312,8 +312,8 @@
 		}
 		.betsu_setsumei_midashi {
 			font-size: 23px;
-			margin-bottom: 20px;
 			font-weight: bold;
+			margin: 0 20px 20px;
 		}
 			.betsu_setsumei_images {
 				margin:  0 14px;
@@ -637,3 +637,35 @@ opacity: 0.3;
 .kuwashikumiru {
 	margin-bottom: 20px;
 }
+
+/* タフトラップ　別ページ  */
+		.toftwrap_03contents .text p{
+			font-size: 16px;
+		}
+			p.text_title {
+				font-size: 24px;
+				font-weight: bold;
+			}
+			.makuake {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: auto;
+			}
+			.makuake_img {
+				width: 97px;
+				margin: 20px  auto;
+			}
+			.makuake .toftsack {
+				grid-row: 1;
+			}
+			.text {
+				padding-bottom: 22px;
+				padding-left: 20px;
+				padding-right: 20px;
+			}
+			.text_title {
+				padding: 17px 0 14px;
+			}
+
+/* タフトラップ　別ページ  */
+
