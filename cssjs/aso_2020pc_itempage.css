@@ -982,3 +982,11 @@ width: 70px;
 
 
 /* タフトラップ　別ページ  */
+
+/* 特集ページ */
+.pcContentstop2021 {
+	width: 100vw;
+}
+.pcContentstop2021 img {
+	width: 100%;
+}
