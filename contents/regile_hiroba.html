@@ -24,23 +24,22 @@
 <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020sp.css" media="screen and (orientation: portrait) and (max-width: 759px)" />
     <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/aso_2020pc_itempage.css" media="screen and (min-width: 760px)" />    
 <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/aso_2020sp_itempage.css" media="screen and (orientation: portrait) and (max-width: 759px)" />
-	
 <link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.css" />
     <script src="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.js"></script> <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <script src="https://www.rakuten.ne.jp/gold/asoboze/jquery-3.2.1.min.js"></script>    
-<!--
+
 <script type="text/javascript">
 $(function(){
-  $('.effect2021 .hop').css({"opacity":"0", "transform":"translateY(10px)"});
+  $('.effect .hop').css({"opacity":"0", "padding-top":"10px"});
   $(window).scroll(function (){
-    $(".effect2021").each(function(){
+    $(".effect").each(function(){
       var imgPos = $(this).offset().top;    
       var scroll = $(window).scrollTop();
       var windowHeight = $(window).height();
       if (scroll > imgPos - windowHeight + windowHeight/10){
-        $(".hop",this).css({"opacity":"1", "transform": "translateY(0)" });
+        $(".hop",this).css({"opacity":"1", "padding-top": "0" });
         $("i",this).css({ 
           "font-size": "100px",
           "padding": "0 20px 40px"
@@ -51,7 +50,7 @@ $(function(){
 });
 
 </script>
--->
+
 <script>
 $(function() {
     $("#pcIndexRight").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pcindex_rightmenu.html");
@@ -70,12 +69,11 @@ $(function() {
     var target = $(href == "#" || href == "" ? 'html' : href);
     var position = target.offset().top;
 	  position -= 200;
-    $("html, body").animate({scrollTop: position}, 550, "swing");
+    $("html, body").animate({scrollTop: position}, 1500, "swing");
     return false;
   });
 	
 });
-
 </script>
     <style>
         @media and screen and (min-width: 1200px) {
@@ -88,16 +86,13 @@ $(function() {
     align-items: center;
     height: auto;
             }
-			
         }
         @media and screen and (orientation: portrait) {
             body {
                 overflow-x: hidden;
             }
         }
-		
     </style>
-
 </head>
     <body>
     <script>
@@ -676,6 +671,7 @@ $(function() {
 
 
 </div>
+		</div>
 <div id="footer-aso"></div>
 
     </body>
