@@ -990,3 +990,42 @@ width: 70px;
 .pcContentstop2021 img {
 	width: 100%;
 }
+
+
+/* 仕入れ商品用のスタイル */
+	.aso_itemcontent p {
+		font-size: 30px;
+		width: max-content;
+		margin: 50px auto 160px;
+	}
+	.aso_itemcontent_wrapper {
+		max-width: 1186px;
+		width: 90%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 46px;
+		margin: auto;
+	}
+	.aso_itemcontents_small {
+		margin: 0 0 82px;
+	}
+	.aso_itemcontents_small p {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.aso_itemcontents_small p.smallcontent_title {
+		font-size: 30px;
+		font-weight: bold;
+		margin-top: 40px;
+		margin-bottom: 26px;
+	}
+	.aso_itemcontents_small p.smallcontent_body {
+		font-size: 20px;
+		line-height: 1.5em;
+	}
+	.aso_itemdetail_size.shiire_size {
+		padding: 0 8vw;
+	}
+	.aso_itemdetail_size_detail.shiire_size_detail {
+		padding: 0 10vw 77px;
+	}
