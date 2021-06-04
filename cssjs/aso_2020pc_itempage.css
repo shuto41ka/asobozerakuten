@@ -997,6 +997,7 @@ width: 70px;
 		font-size: 30px;
 		width: max-content;
 		margin: 50px auto 160px;
+		font-weight: bold;
 	}
 	.aso_itemcontent_wrapper {
 		max-width: 1186px;
