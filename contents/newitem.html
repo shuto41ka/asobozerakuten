@@ -96,6 +96,11 @@ $(function() {
 </head>
     <body>
     <script>
+var menuHeight = 50;
+var startPos = 0;
+$(window).scroll(function(){
+  var currentPos = $(this).scrollTop();
+  if (currentPos > startPos && $("body").hasClass("fixing") == false) {
     if($(window).scrollTop() >= 200) {
       $(".spheader_aso").css("top", "-" + 50 + "px");
     }
