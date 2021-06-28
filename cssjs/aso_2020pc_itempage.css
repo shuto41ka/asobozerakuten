@@ -41,6 +41,10 @@
 .aso_itemmain div.aso_itemmain_img.color_1 {
     grid-template-columns: 1fr;
 }
+.aso_itemmain div.aso_itemmain_img.color_3 {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
            .aso_itemmain_img img {
                width: 13.4vw;
                min-width: 150px;
