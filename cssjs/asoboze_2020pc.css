@@ -32,6 +32,18 @@ a img:hover {
 div {
     overflow: hidden;
 }
+	div#lightBox1, div#lightBox1 div {
+		overflow: visible;
+	}
+	.floatingCouponWrapper div {
+		overflow: visible;
+	}
+	.floatingCouponWrapper div .popupContent {
+		overflow: hidden;
+	}
+	.floatingCouponWrapper div.couponOverlay {
+		overflow: hidden;
+	}
     .swiper-container {
 
         width: 100%;
