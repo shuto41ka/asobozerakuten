@@ -672,3 +672,79 @@ opacity: 0.3;
 
 /* タフトラップ　別ページ  */
 
+/* B4S別ページ  */
+			.b4s_left_text {
+
+				padding-top: 33px;
+
+			}
+
+			.b4s_right_text {
+
+				padding-bottom: 50px;
+
+			}
+
+			.betsu_setsumei_cream_imgs {
+
+				padding-top: 33px;
+
+				padding-bottom: 33px;
+
+			}
+
+			.cntr21 p, .cntr21 div {
+
+				max-width: 80vw;
+
+				margin: auto;
+
+			}
+
+			.space_240px {
+
+				height: 30vw;
+
+			}
+
+			.betsu_setsumei_title.small {
+
+				font-size: 16px;
+
+			}
+
+			.betsu_setsumei .betsu_setsumei_honbun.aso_sp_mbottom0 {
+
+				margin-bottom: 0;
+
+			}
+
+			.cntr20.cntr20_2021 p, .cntr20.cntr20_2021 div {
+
+				margin-top: 0;
+
+				font-size: 23px;
+
+			}
+
+			.cntr21.cntr21_2021 p, .cntr21.cntr21_2021 div {
+
+				font-size: 16px;
+
+				letter-spacing: 0;
+
+			}
+
+			.betsu_setsumei_cream .betsu_setsumei {
+
+				margin-top: 0;
+
+			}
+
+			.betsu_setsumei_cream .betsu_setsumei .betsu_setsumei_honbun {
+
+				margin-left: 10px;
+
+				margin-right: 10px;
+}
+/* B4S別ページ  */

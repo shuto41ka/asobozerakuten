@@ -376,13 +376,13 @@ position: absolute;
 			font-weight: bold;
 			display: table-cell;
 			vertical-align: top;
+			padding-right: 65px;
 		}
 		.betsu_setsumei_midashi {
 			display: table;
 			margin-bottom: 30px;
 		}
 			.betsu_setsumei_title {
-			padding-left: 65px;
 				padding-top: 10px;
 			font-weight: bold;
 				display: table-cell;
@@ -1034,3 +1034,52 @@ width: 70px;
 	.aso_itemdetail_size_detail.shiire_size_detail {
 		padding: 0 10vw 77px;
 	}
+
+/* B4S別ページ */
+			.betsu_setsumei_title.small{
+				font-size: 24px;
+				display: block;
+				clear: both;
+			}
+			.space_240px {
+				height: 12vw;
+			}
+			.betsu_setsumei_cream .betsu_setsumei_honbun {
+				table-layout: fixed;
+				display: flex;
+				align-items: center;
+				margin-bottom: 0;
+			}
+			.betsu_setsumei_cream .betsu_setsumei {
+				margin-top: 2vw;
+				margin-bottom: 2vw;
+			}
+			.betsu_setsumei .wraphalf {
+				display: table;
+			}			
+			.betsu_setsumei .wraphalf .betsu_setsumei_honbun p{
+				table-layout: fixed;
+				display: flex;
+				align-items: center;				
+			}
+			#b4s_info03 {
+				table-layout: fixed;
+
+				display: flex;
+
+				align-items: center;				
+			}
+			.b4s_right_text {
+				padding-left: 120px;
+			}
+			.betsu_setsumei_cream_img  img {
+				max-width: 300px;
+			}
+			.cntr20.cntr20_2021 p, .cntr20.cntr20_2021 div {
+				
+				font-size: 36px;
+			}
+			.cntr21.cntr21_2021 p, .cntr21.cntr21_2021 div {
+				font-size: 24px;
+			}			
+/* B4S別ページ */
