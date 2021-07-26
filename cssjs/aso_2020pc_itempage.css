@@ -1083,3 +1083,57 @@ width: 70px;
 				font-size: 24px;
 			}			
 /* B4S別ページ */
+	/*  B4SPCページ用CSS */
+	.ambassador {
+		background-color: #eaece5;
+		width: 100%;
+		margin-bottom: 100px;
+		padding: 104px calc(18vw + 120px) 85px;
+	}
+	.ambassador_title {
+		background-color: #6B705F;
+		color: #ffffff;
+		padding: 19px 17px 19px;
+		width: max-content;
+	}
+	.ambassador_title div{	
+		color: #fff;
+		font-size: 22px;
+	}
+	.ambassador_midashi {
+		font-size: 36px;
+		font-weight: bold;
+		padding: 72px 0 96px;
+	}
+	.ambassador_honbun {
+		font-size: 22px;
+	}
+	#aso_2021container .base21 div.b4s_info_link {
+width: max-content;
+height: 74px;
+/* UI Properties */
+background: #3E3A39 0% 0% no-repeat padding-box;
+border-radius: 37px;
+		margin-left: auto;
+		border: 1px solid #fff;
+		padding: 0;
+	}
+	#aso_2021container .base21 div.b4s_info_link a{
+		color: #fff;
+		font-size: 24px;
+		line-height: 74px;
+		text-decoration: none;
+		transition-duration: .5s;
+		vertical-align: baseline;
+		display: block;
+	padding: 0 67px;
+	}
+	#aso_2021container div.b4s_info_link:hover {
+		background-color: #fff;
+		border: 1px solid  #3e3a39;
+	}
+	#aso_2021container div.b4s_info_link:hover a{
+		color: #3e3a39;
+		
+	}	
+	/*  B4SPCページ用CSS */
