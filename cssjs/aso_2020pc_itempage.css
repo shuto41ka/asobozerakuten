@@ -1137,3 +1137,77 @@ border-radius: 37px;
 		
 	}	
 	/*  B4SPCページ用CSS */
+
+/* メディア情報コーナー　*/
+.informationGrid {
+
+	display: grid;
+    grid-template-columns: 33% 33% 33%;
+    width: 100%;
+	max-width: 1200px;
+	box-sizing: border-box;
+    grid-gap: 0.5%;
+	margin: 8px auto 20px;
+}
+.recTitle{
+
+	font-weight:bolder;
+	font-size:130%;
+	text-align:center;
+	border:1px solid #000;
+	margin:2em 10% 0 0;
+	padding:0.3em 0 0.3em 0;
+	
+}
+
+
+
+/*ボタン装飾*/
+.hidden_box label {
+		margin:1em auto 0 0;
+		max-width:1200px;
+		background-color: #3e3a39;
+		width: max-content;
+		height: auto;
+		left: 50%;
+		border-radius: 20px;
+		height: 35px;
+		text-decoration: none;
+		color: #FFFFFF;
+		box-sizing: border-box;
+		display: block;
+		line-height: 35px;
+		padding: 0 2em;
+
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+		color: #3e3a39;
+		background-color: #FFFFFF;
+		border: 1px solid #3e3a39;
+		transition-duration: 0.5s;
+}
+
+/*チェック非表示*/
+.hidden_box input {
+    display: none;
+}
+
+/*中身を非表示*/
+.hidden_box .hidden_show {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+
+}
+/* メディア情報コーナー */

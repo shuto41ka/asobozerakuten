@@ -748,3 +748,83 @@ opacity: 0.3;
 				margin-right: 10px;
 }
 /* B4S別ページ  */
+
+/* メディア情報コーナー */
+
+
+
+
+@media only screen and (min-width:376px) and (max-width:760px) {
+
+/*tablet用のcss*/
+
+.recTitle{
+
+	margin:2em auto 0 auto;
+
+	padding:0.3em 1.5em 0.3em 1.5em;
+
+	width: max-content;
+
+	
+
+}
+
+
+
+.informationGrid {
+
+	padding:0.5em 0.8em 0 0.8em;
+
+	display: block;
+
+
+
+}
+
+.hidden_box label {
+
+	margin:1em auto 0 auto;
+
+}
+
+}
+
+ 
+
+@media screen and (max-width:375px) {
+
+/*スマホ用のcss*/
+
+.recTitle{
+
+	margin:2em auto 0 auto;
+
+	padding:0.3em 0.8em 0.3em 0.8em;
+
+	width: max-content;
+
+}
+
+
+
+.informationGrid {
+
+	padding:0.5em 0.8em 0 0.8em;
+
+	display: block;
+
+
+
+}
+
+.hidden_box label {
+
+	margin:1em auto 0 auto;
+
+}
+
+
+
+}
+/* メディア情報コーナー */
