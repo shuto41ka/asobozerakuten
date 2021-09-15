@@ -1211,3 +1211,46 @@ border-radius: 37px;
 
 }
 /* メディア情報コーナー */
+
+
+/* レイヤーポーチプロ用  */
+	.asopro_blackback {
+		background-color: #191919;
+	}
+	#aso_2021container.asopro_blackback div,
+	#aso_2021container.asopro_blackback .aso_itemmain div.aso_itemmain_catch,
+		#aso_2021container.asopro_blackback .aso_itemmain div.aso_itemmain_setsumei,
+		#aso_2021container.asopro_blackback .aso_itemmain div.aso_itemmain_price
+	{
+		color: #fff ;
+	}
+	#aso_2021container.asopro_blackback .aso_itemmain div.aso_itemmain_name,
+	#aso_2021container.asopro_blackback .aso_itemmain div.aso_itemmain_spec
+	{
+		color: #9e9e9e;
+	}
+	.lpPro_gentei {
+		font-size: 12px;
+		vertical-align: middle;
+	}
+	#aso_2021container.asopro_blackback .aso_othersizes_text {
+		color: #191919;
+	}
+	#aso_2021container.asopro_blackback .aso_othersizes_text {
+		background-color: #bfbfbf;
+	}
+	.asopro_itemdetail.aso_itemdetail_size {
+		background-color: #333333;
+	}
+	#aso_2021container.asopro_blackback .aso_storage_othersizes02 a {
+		border: 1px solid #ffffff;
+	}
+					.lp_kanrenShohin {
+					display: table;
+				}
+
+				.lp_kanrenShohin div {
+					display: table-cell;
+					padding: 25px;
+				}
+/* レイヤーポーチプロ用  */

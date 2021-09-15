@@ -408,6 +408,8 @@ border-radius: 3px;
 		width: 30%;
 		box-sizing: border-box;
 		margin:0 auto;
+		vertical-align: top;
+		
 	}
 	.topicstable tr td img {
 		width: 100%;

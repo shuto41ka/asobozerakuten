@@ -844,6 +844,8 @@ div {
 		width: 250px;
 		box-sizing: border-box;
 		margin:0 auto;
+		vertical-align: top;
+		
 	}
 	.topicsitem {
 		width: 230px;
