@@ -53,12 +53,6 @@ $(function(){
 
 <script>
 $(function() {
-    $("#pcIndexRight").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pcindex_rightmenu.html");
-    $("#pc_toplinebanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_toplinebanner.html");    $("#pcleftbanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_leftbanner.html");
-    $("#pcrightmenu").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_rightmenu.html");
-    $("#spheader").load("https://www.rakuten.ne.jp/gold/asoboze/parts/header_aso.html");
-    $("#footer-aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
-        $("#styles").load("https://www.rakuten.ne.jp/gold/asoboze/parts/othergallery.html");
     $(".icon-wrap").click(function() {
             $(this).toggleClass("active");
             $("body").toggleClass("fixing");
@@ -85,19 +79,18 @@ $(function() {
 			$('#cytown_slider_as').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_aso.html .cytown_slider_aso");
 			$('#cytown_slider_br').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_broome.html .cytown_slider_broome");
 			$('#cytown_slider_tr').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_tranparan.html .cytown_slider_tranparan");
-			$('#cytown_slider_ta').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_tavarat.html .cytown_slider_tavarat");
+			$('#cytown_slider_ta').load("https://www.rakuten.ne.jp/gold/tavarat/cytown/cytown_dataset_tavarat.html .cytown_slider_tavarat");
 			$('#cytown_slider_or').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_oruta.html .cytown_slider_oruta");
 
 			
-	$('#cytown_product_stockbox_broome').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_broome.html .cytown_product_data_broome');
-			$('#cytown_product_stockbox_tranparan').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_tranparan.html .cytown_product_data_tranparan');
-			$('#cytown_product_stockbox_tavarat').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_tavarat.html .cytown_product_data_tavarat');
-			$('#cytown_product_stockbox_oruta').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_oruta.html .cytown_product_data_oruta');
-			$('#cytown_product_stockbox_aso').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_aso.html .cytown_product_data_aso');
+	$('#cytown_product_stockbox_broome').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_broome.html .brand_broome');
+			$('#cytown_product_stockbox_tranparan').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_tranparan.html .brand_tranparan');
+			$('#cytown_product_stockbox_tavarat').load('https://www.rakuten.ne.jp/gold/tavarat/cytown/cytown_dataset_tavarat.html .brand_tavarat');
+			$('#cytown_product_stockbox_oruta').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_oruta.html .brand_oruta');
+			$('#cytown_product_stockbox_aso').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_aso.html .brand_aso');
 			
 			
 			
-		$('#cytown_gaiyo').load("https://www.rakuten.ne.jp/gold/cyberl2010/ .broome_top");
 		
 		});
 	</script>
@@ -129,23 +122,7 @@ $(function() {
     </style>
 </head>
 
-<body>
-	    <script>
-    if($(window).scrollTop() >= 200) {
-      $(".spheader_aso").css("top", "-" + 50 + "px");
-    }
-  } else {
-    $(".spheader_aso").css("top", 0 + "px");
-  }
-  startPos = currentPos;
-});  
-    </script>
-    <div id="spheader" class="spheader_aso sponly"></div>
-        <div id="pcrightmenu" class="pconly"></div>
-        <div id="pc_toplinebanner" class="pconly"></div>
-        <div id="pcleftbanner" class="pconly"></div>
-    <div style="width: 100%; height: 80px;" class="sponly">
-</div>
+<body ontouchstart="">
 
 	<!-- ここからトップバナー -->
 	<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/202109ss/202109ss_pc01.jpg" width="100%" alt="">
@@ -156,7 +133,7 @@ $(function() {
 	
 <!-- ここからスライダー -->
 	<style>
-		
+		　/* オルタないモールは、「child(5)」を「child(4)」に変更*/
 .carousel > input[type=radio]:nth-child(5):checked ~ .carousel__next > label:nth-child(1), .carousel > input[type=radio]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .carousel > input[type=radio]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .carousel > input[type=radio]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .carousel > input[type=radio]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .carousel > input[type=radio]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .carousel > input[type=radio]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .carousel > input[type=radio]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .carousel > input[type=radio]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .carousel > input[type=radio]:nth-child(1):checked ~ .carousel__prev > label:nth-child(5) {
   opacity: 1 !important;
   z-index: 3;
@@ -325,24 +302,28 @@ $(function() {
 
 
 <div class="container">
+	<!--  オルタないモールは5番目の要素を消していく -->
 	<div class="carousel">
 		<input type="radio" id="carousel-1" name="carousel[]" checked>
 		<input type="radio" id="carousel-2" name="carousel[]">
      <input type="radio" id="carousel-3" name="carousel[]">
 		<input type="radio" id="carousel-4" name="carousel[]">
+	<!--  オルタないモールは5番目の要素を消していく -->
 		<input type="radio" id="carousel-5" name="carousel[]">
 		<ul class="carousel__items">
 			<li class="carousel__item" id="cytown_slider_br"><img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt=""></li>
 			<li class="carousel__item" id="cytown_slider_tr"><img src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg" alt=""></li>
 			<li class="carousel__item" id="cytown_slider_ta"><img src="//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg" alt=""></li>
-			<li class="carousel__item" id="cytown_slider_or"><img src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg" alt=""></li>
-			<li class="carousel__item" id="cytown_slider_as"><img src="//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg" alt=""></li>
+			<li class="carousel__item" id="cytown_slider_as"><img src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg" alt=""></li>
+	<!--  オルタないモールは5番目の要素を消していく -->
+			<li class="carousel__item" id="cytown_slider_or"><img src="//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg" alt=""></li>
 		</ul>
      <div class="carousel__prev">
      	<label for="carousel-1"></label>
      	<label for="carousel-2"></label>
      	<label for="carousel-3"></label>
      	<label for="carousel-4"></label>
+	<!--  オルタないモールは5番目の要素を消していく -->
      	<label for="carousel-5"></label>
      </div>
      <div class="carousel__next">
@@ -350,6 +331,7 @@ $(function() {
        <label for="carousel-2"></label>
        <label for="carousel-3"></label>
        <label for="carousel-4"></label>
+	<!--  オルタないモールは5番目の要素を消していく -->
        <label for="carousel-5"></label>
      </div>
      <div class="carousel__nav">
@@ -357,6 +339,7 @@ $(function() {
        <label for="carousel-2"></label>
        <label for="carousel-3"></label>
        <label for="carousel-4"></label>
+	<!--  オルタないモールは5番目の要素を消していく -->
        <label for="carousel-5"></label>
      </div>
    </div>
@@ -573,7 +556,7 @@ $(function() {
 		
 	</style>
 	<div>
-	<div class="gnav">
+	<div class="gnav" ontouchstart="">
 <ul class="nav">
 
 <li><p class="cytown_menu">季節のイベント</p>
@@ -756,7 +739,7 @@ $(function() {
 </li>	
 		</ul>
 		</div>
-		<div class="gnav">
+		<div class="gnav" ontouchstart="">
 <ul class="nav">
 <li><p class="cytown_menu">素材別</p>
 <ul>
@@ -964,8 +947,8 @@ $(function() {
 	.cytown_product {
 		display: inline-block;
 		float: left;
-		width: calc(30% - 30px);
-		margin: 30px 3%;
+width: 25%;
+margin: 30px 4%;
 	}
 	.cytown_products {
 		width: auto;
@@ -984,7 +967,21 @@ $(function() {
 		margin: 50px auto;
 		min-height: 80vh;
 	}
-	 .cytown_product_hide,
+
+	@media (min-width: 760px) {
+		.cytown_product_wrap {
+			grid-gap: 100px;
+			max-width: 760px;
+			margin: 100px auto;
+		}
+			.cytown_product {
+		display: inline-block;
+		float: left;
+		width: calc(20% - 60px);
+		margin: 30px 30px;
+	}
+	}
+		 .cytown_product_hide,
 	 .cytown_product_hide1,
 	 .cytown_product_hide2,
 	 .cytown_product_hide3,
@@ -996,44 +993,17 @@ $(function() {
 		display: none;
 	}
 
-	@media (min-width: 760px) {
-		.cytown_product_wrap {
-			grid-gap: 100px;
-			max-width: 760px;
-			margin: 100px auto;
-		}
-	}
-	
 	</style>
 	
 <script>
 
 	//最初に表示するタグ（初回はクリスマスなので、scene_christmasを持つ商品は表示
 	$(window).on('load', function(){
-		if(
-		$('#category_1000').prop("checked") == true ) {
-			$('.category_1000').removeClass('cytown_product_hide');
-		};
-		if(
-		$('#category_3000').prop("checked") == true ) {
-			$('.category_3000').removeClass('cytown_product_hide');
-		};
-		if(
-		$('#category_5000').prop("checked") == true ) {
-			$('.category_5000').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#category_10000').prop("checked") == true ) {
-			$('.category_10000').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#category_20000').prop("checked") == true ) {
-			$('.category_20000').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#category_over').prop("checked") == true ) {
-			$('.category_over').removeClass('cytown_product_hide');
-		}
+		
+		//cytown_productタグを追加
+		$('.cytown_products div').addClass('cytown_product');
+		$('.cytown_products div').addClass('cytown_product_hide');
+		
 		if(
 		$('#scene_christmas').prop("checked") == true ) {
 			$('.scene_christmas').removeClass('cytown_product_hide');
@@ -1047,8 +1017,8 @@ $(function() {
 			$('.scene_nyuen').removeClass('cytown_product_hide');
 		}
 		if(
-		$('#scene_nyugaku').prop("checked") == true ) {
-			$('.scene_nyugaku').removeClass('cytown_product_hide');
+		$('#scene_shinseikatsu').prop("checked") == true ) {
+			$('.scene_shinseikatsu').removeClass('cytown_product_hide');
 		}
 		if(
 		$('#scene_shushoku').prop("checked") == true ) {
@@ -1067,65 +1037,10 @@ $(function() {
 			$('.scene_keiro').removeClass('cytown_product_hide');
 		}
 		if(
-		$('#color_white').prop("checked") == true ) {
-			$('.color_white').removeClass('cytown_product_hide');
+		$('#scene_valentine').prop("checked") == true ) {
+			$('.scene_valentine')	.removeClass('cytown_product_hide');
 		}
-		if(
-		$('#color_gray').prop("checked") == true ) {
-			$('.color_gray').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#color_black').prop("checked") == true ) {
-			$('.color_black').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#color_brown').prop("checked") == true ) {
-			$('.color_brown').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#color_red').prop("checked") == true ) {
-			$('.color_red').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#color_green').prop("checked") == true ) {
-			$('.color_green').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#color_navy').prop("checked") == true ) {
-			$('.color_navy').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#color_pink').prop("checked") == true ) {
-			$('.color_pink').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#color_beige').prop("checked") == true ) {
-			$('.color_beige').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#color_lightblue').prop("checked") == true ) {
-			$('.color_lightblue').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#color_yellow').prop("checked") == true ) {
-			$('.color_yellow').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#color_silver').prop("checked") == true ) {
-			$('.color_silver').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#color_gold').prop("checked") == true ) {
-			$('.color_gold').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#option_shishu').prop("checked") == true ) {
-			$('.option_shishu').removeClass('cytown_product_hide');
-		}
-		if(
-		$('#option_kokuin').prop("checked") == true ) {
-			$('.option_kokuin').removeClass('cytown_product_hide');
-		}
+		
 
 	});
 
@@ -1177,15 +1092,9 @@ $(function() {
 			$('.scene_keiro') .addClass('cytown_product_hide1');						
 			}
 		if (
-		$("#scene_nyuen").prop("checked") == false		
+		$("#scene_birthday").prop("checked") == false		
 		) {
-			$('.scene_nyuen') .addClass('cytown_product_hide1');						
-			}
-		if (
-		$("#scene_shinseikatsu").prop("checked") == false		
-		) {
-			$('.scene_shinseikatsu') .addClass('cytown_product_hide1');									
-		
+			$('.scene_birthday') .addClass('cytown_product_hide1');						
 			}
 		if (
 		$("#scene_christmas").prop("checked") == false		
@@ -1519,7 +1428,6 @@ $(function() {
 			display: none;
 		}
 	</style>
-<div id="footer-aso"></div>
 	
 </body>
 </html>
