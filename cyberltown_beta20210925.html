@@ -883,6 +883,12 @@ $(function() {
 				ゴールド
 			</label>
 	</li>
+	<li>
+		<input type="checkbox" id="color_orange" class="cytown_menu" name="color" value="color_orange" >
+			<label for="color_orange">
+				オレンジ
+			</label>
+	</li>
 	</ul>
 	</li>
 	
@@ -1354,6 +1360,11 @@ margin: 30px 4%;
 		$('#color_gold').prop('checked') 
 			) {
 			$('.color_gold').removeClass('cytown_product_hide6');
+				}
+		if (
+		$('#color_orange').prop('checked') 
+			) {
+			$('.color_orange').removeClass('cytown_product_hide6');
 				}
 	}else {
 					$('.cytown_product').removeClass('cytown_product_hide6');
