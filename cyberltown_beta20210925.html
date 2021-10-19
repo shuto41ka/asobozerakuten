@@ -1024,43 +1024,43 @@ margin: 30px 4%;
 		
 		//cytown_productタグを追加
 		$('.cytown_products div').addClass('cytown_product');
-		$('.cytown_products div').addClass('cytown_product_hide');
+		$('.cytown_products div').addClass('cytown_product_hide1');
 		
 		if(
 		$('#scene_christmas').prop("checked") == true ) {
-			$('.scene_christmas').removeClass('cytown_product_hide');
+			$('.scene_christmas').removeClass('cytown_product_hide1');
 		}
 		if(
 		$('#scene_newyear').prop("checked") == true ) {
-			$('.scene_newyear').removeClass('cytown_product_hide');
+			$('.scene_newyear').removeClass('cytown_product_hide1');
 		}
 		if(
 		$('#scene_nyuen').prop("checked") == true ) {
-			$('.scene_nyuen').removeClass('cytown_product_hide');
+			$('.scene_nyuen').removeClass('cytown_product_hide1');
 		}
 		if(
 		$('#scene_shinseikatsu').prop("checked") == true ) {
-			$('.scene_shinseikatsu').removeClass('cytown_product_hide');
+			$('.scene_shinseikatsu').removeClass('cytown_product_hide1');
 		}
 		if(
 		$('#scene_shushoku').prop("checked") == true ) {
-			$('.scene_shushoku').removeClass('cytown_product_hide');
+			$('.scene_shushoku').removeClass('cytown_product_hide1');
 		}
 		if(
 		$('#scene_hahanohi').prop("checked") == true ) {
-			$('.scene_hahanohi').removeClass('cytown_product_hide');
+			$('.scene_hahanohi').removeClass('cytown_product_hide1');
 		}
 		if(
 		$('#scene_chichi').prop("checked") == true ) {
-			$('.scene_chichi').removeClass('cytown_product_hide');
+			$('.scene_chichi').removeClass('cytown_product_hide1');
 		}
 		if(
 		$('#scene_keiro').prop("checked") == true ) {
-			$('.scene_keiro').removeClass('cytown_product_hide');
+			$('.scene_keiro').removeClass('cytown_product_hide1');
 		}
 		if(
 		$('#scene_valentine').prop("checked") == true ) {
-			$('.scene_valentine')	.removeClass('cytown_product_hide');
+			$('.scene_valentine')	.removeClass('cytown_product_hide1');
 		}
 		
 
@@ -1077,54 +1077,52 @@ margin: 30px 4%;
 	if(
 	$('.cytown_menu[id *="scene"]:checked').length >  0
 	){
-		$('.cytown_product').removeClass('cytown_product_hide1');
+		$('.cytown_product').addClass('cytown_product_hide1');
 		if (
-		$("#scene_newyear").prop("checked") == false
+		$("#scene_newyear").prop("checked") == true
 		){
-			$('.scene_newyear') .addClass('cytown_product_hide1');
+			$('.scene_newyear') .removeClass('cytown_product_hide1');
 		}; 
 		if (
-		$("#scene_valentine").prop("checked") == false		
+		$("#scene_valentine").prop("checked") == true		
 		) {
-			$('.scene_valentine') .addClass('cytown_product_hide1');			
-			}
+			$('.scene_valentine') .removeClass('cytown_product_hide1');			
+			};
 		if (
-		$("#scene_nyuen").prop("checked") == false		
+		$("#scene_nyuen").prop("checked") == true		
 		) {
-			$('.scene_nyuen') .addClass('cytown_product_hide1');						
-			}
+			$('.scene_nyuen') .removeClass('cytown_product_hide1');						
+			};
 		if (
-		$("#scene_shinseikatsu").prop("checked") == false		
+		$("#scene_shinseikatsu").prop("checked") == true		
 		) {
-			$('.scene_shinseikatsu') .addClass('cytown_product_hide1');						
-			}
+			$('.scene_shinseikatsu') .removeClass('cytown_product_hide1');						
+			};
 		if (
-		$("#scene_hahanohi").prop("checked") == false		
+		$("#scene_hahanohi").prop("checked") == true		
 		) {
-			$('.scene_hahanohi') .addClass('cytown_product_hide1');						
-			}
+			$('.scene_hahanohi') .removeClass('cytown_product_hide1');						
+			};
 		if (
-		$("#scene_chichi").prop("checked") == false		
+		$("#scene_chichi").prop("checked") == true		
 		) {
-			$('.scene_chichi') .addClass('cytown_product_hide1');						
-			}
+			$('.scene_chichi') .removeClass('cytown_product_hide1');						
+			};
 		if (
-		$("#scene_keiro").prop("checked") == false		
+		$("#scene_keiro").prop("checked") == true		
 		) {
-			$('.scene_keiro') .addClass('cytown_product_hide1');						
-			}
+			$('.scene_keiro') .removeClass('cytown_product_hide1');						
+			};
 		if (
-		$("#scene_birthday").prop("checked") == false		
+		$("#scene_birthday").prop("checked") == true		
 		) {
-			$('.scene_birthday') .addClass('cytown_product_hide1');						
-			}
+			$('.scene_birthday') .removeClass('cytown_product_hide1');						
+			};
 		if (
-		$("#scene_christmas").prop("checked") == false		
+		$("#scene_christmas").prop("checked") == true		
 		) {
-			$('.scene_christmas') .addClass('cytown_product_hide1');									
-	}else {
-		;
-	};
+			$('.scene_christmas') .removeClass('cytown_product_hide1');									
+	}
 	}else {
 				$('.cytown_product').removeClass('cytown_product_hide1');
 	};
