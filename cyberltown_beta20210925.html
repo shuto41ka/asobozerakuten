@@ -124,13 +124,53 @@ $(function() {
 		.spheader_aso {
 			overflow-x: hidden;
 		}
+		.family_disc_wrap {
+			width: 80vw;
+margin: 20px auto 0;
+max-width: 760px;
+}
+		
+		
+		.family_disc_wrap p {
+			color: #666;
+		}
+		.family_disc_head p {
+			font-size: 16px;
+			font-weight: bold;
+			margin-bottom: 1em;
+		}
+		.family_disc_body p {
+			font-size: 12px;
+			padding-left: 1em;
+		}
+		@media (min-width:760px) {
+		.family_disc_wrap {
+			margin-top: 50px;
+			}
+			.family_disc_head p {
+			font-size: 24px;
+		}
+		.family_disc_body p {
+			font-size: 16px;
+		}
+			
+		}
     </style>
 </head>
 
 <body ontouchstart="">
 
 	<!-- ここからトップバナー -->
-	<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/202109ss/202109ss_pc01.jpg" width="100%" alt="">
+	<img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/green1500_top.jpg" width="100%" alt="">
+	<div class="family_disc_wrap">
+		<div class="family_disc_head">
+			<p>「5人の家族」とは</p>
+		</div>
+		<div class="family_disc_body">
+			<p>サイバール株式会社が運営する5つのブランド（Broome・TRAN PARAN・oruTa・TAVARAT・asoboze）を1つの家族のメンバーとして表現しています。</p>
+			<p>それぞれのブランドについて詳しくご覧になりたい方は<a href="#cytown_gaiyo">こちら</a>をクリックしてください。</p>
+		</div>
+	</div>
 	<!-- ここからトップバナー -->
 	
 	
@@ -155,11 +195,15 @@ $(function() {
 
 
 .container {
-  width: 240px;
-  min-width: 240px;
+  width: 100%;
+  margin: 20px auto;
+}
+		@media (min-width:760px) {
+.container {
   margin: 50px auto;
 }
-
+			
+		}
 .carousel {
   width: 100%;
   position: relative;
@@ -221,7 +265,7 @@ $(function() {
   padding: 0;
   list-style-type: none;
   width: 100%;
-  height: 160px;
+  height: 33vw;
   position: relative;
 }
 .carousel__item {
@@ -303,50 +347,187 @@ $(function() {
   width: 10px;
   height: 10px;
 }
+		/* external css: flickity.css */
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body { font-family: sans-serif; }
+
+.gallery {
+}
+
+.gallery-cell {
+  width: 66%;
+  margin-right: 10px;
+  counter-increment: gallery-cell;
+	padding: 10px;
+}
+		@media (min-width:760px) {
+			.gallery-cell {
+				padding: 20px;
+			}
+		}
+/* cell number */
+.gallery-cell:before {
+  display: none;
+}
+		/*! Flickity v2.2.2
+https://flickity.metafizzy.co
+---------------------------------------------- */
+
+.flickity-enabled {
+  position: relative;
+}
+
+.flickity-enabled:focus { outline: none; }
+
+.flickity-viewport {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.flickity-slider {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* draggable */
+
+.flickity-enabled.is-draggable {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport.is-pointer-down {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+
+/* ---- flickity-button ---- */
+
+.flickity-button {
+  position: absolute;
+  background: hsla(0, 0%, 100%, 0.75);
+  border: none;
+  color: #333;
+}
+
+.flickity-button:hover {
+  background: white;
+  cursor: pointer;
+}
+
+.flickity-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 5px #19F;
+}
+
+.flickity-button:active {
+  opacity: 0.6;
+}
+
+.flickity-button:disabled {
+  opacity: 0.3;
+  cursor: auto;
+  /* prevent disabled button from capturing pointer up event. #716 */
+  pointer-events: none;
+}
+
+.flickity-button-icon {
+  fill: currentColor;
+}
+
+/* ---- previous/next buttons ---- */
+
+.flickity-prev-next-button {
+  top: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* vertically center */
+  transform: translateY(-50%);
+}
+
+.flickity-prev-next-button.previous { left: 10px; }
+.flickity-prev-next-button.next { right: 10px; }
+/* right to left */
+.flickity-rtl .flickity-prev-next-button.previous {
+  left: auto;
+  right: 10px;
+}
+.flickity-rtl .flickity-prev-next-button.next {
+  right: auto;
+  left: 10px;
+}
+
+.flickity-prev-next-button .flickity-button-icon {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- page dots ---- */
+
+.flickity-page-dots {
+  position: absolute;
+  width: 100%;
+  bottom: -25px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  line-height: 1;
+}
+
+.flickity-rtl .flickity-page-dots { direction: rtl; }
+
+.flickity-page-dots .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 8px;
+  background: #333;
+  border-radius: 50%;
+  opacity: 0.25;
+  cursor: pointer;
+}
+
+.flickity-page-dots .dot.is-selected {
+  opacity: 1;
+}
 	</style>
 
-
 <div class="container">
+<script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
 	<!--  オルタないモールは5番目の要素を消していく -->
 	<div class="carousel">
-		<input type="radio" id="carousel-1" name="carousel[]" checked>
-		<input type="radio" id="carousel-2" name="carousel[]">
-     <input type="radio" id="carousel-3" name="carousel[]">
-		<input type="radio" id="carousel-4" name="carousel[]">
+		<div class="carousel__items gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+			<div class="carousel__item gallery-cell" id="cytown_slider_br"><img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt=""></div>
+			<div class="carousel__item gallery-cell" id="cytown_slider_tr"><img src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg" alt=""></div>
+			<div class="carousel__item gallery-cell" id="cytown_slider_ta"><img src="//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg" alt=""></div>
+			<div class="carousel__item gallery-cell" id="cytown_slider_as"><img src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg" alt=""></div>
 	<!--  オルタないモールは5番目の要素を消していく -->
-		<input type="radio" id="carousel-5" name="carousel[]">
-		<ul class="carousel__items">
-			<li class="carousel__item" id="cytown_slider_br"><img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt=""></li>
-			<li class="carousel__item" id="cytown_slider_tr"><img src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg" alt=""></li>
-			<li class="carousel__item" id="cytown_slider_ta"><img src="//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg" alt=""></li>
-			<li class="carousel__item" id="cytown_slider_as"><img src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg" alt=""></li>
-	<!--  オルタないモールは5番目の要素を消していく -->
-			<li class="carousel__item" id="cytown_slider_or"><img src="//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg" alt=""></li>
-		</ul>
-     <div class="carousel__prev">
-     	<label for="carousel-1"></label>
-     	<label for="carousel-2"></label>
-     	<label for="carousel-3"></label>
-     	<label for="carousel-4"></label>
-	<!--  オルタないモールは5番目の要素を消していく -->
-     	<label for="carousel-5"></label>
-     </div>
-     <div class="carousel__next">
-       <label for="carousel-1"></label>
-       <label for="carousel-2"></label>
-       <label for="carousel-3"></label>
-       <label for="carousel-4"></label>
-	<!--  オルタないモールは5番目の要素を消していく -->
-       <label for="carousel-5"></label>
-     </div>
-     <div class="carousel__nav">
-       <label for="carousel-1"></label>
-       <label for="carousel-2"></label>
-       <label for="carousel-3"></label>
-       <label for="carousel-4"></label>
-	<!--  オルタないモールは5番目の要素を消していく -->
-       <label for="carousel-5"></label>
-     </div>
+			<div class="carousel__item gallery-cell" id="cytown_slider_or"><img src="//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg" alt=""></div>
+		</div>
+     
+     
+     
    </div>
  </div>
 <!--  ここまでスライダー -->
@@ -360,7 +541,7 @@ $(function() {
   height: 40px;
   margin: 0;
   padding: 0;
-  background: #9fb7d4;
+  background: #fff;
 	box-sizing: border-box;
 }
 .gnav .nav {
@@ -376,7 +557,7 @@ $(function() {
   list-style: none;
   box-sizing: border-box;
   border-left: 1px solid #eee;
-	transition: 0.1s ease-in-out;
+	transition: 0.5s ease-in-out;
 	width: 100%;
 }
 .gnav .nav li .cytown_menu {
@@ -384,10 +565,9 @@ $(function() {
   width: 100v%;
   height: 40px;
   text-align: center;
-  color: #fff;
+  color: #6e6e6e;
   font-size: 8px;
   line-height: 40px;
-  background: #9fb7d4;
   box-sizing: border-box;
   text-decoration: none;
 	display: grid;
@@ -406,7 +586,7 @@ $(function() {
   color: #fff;
   font-size: 8px;
   line-height:40px;
-  background: #9fb7d4;
+  background: #c0c0c0;
   box-sizing: border-box;
   text-decoration: none;
 
@@ -420,22 +600,22 @@ $(function() {
   border-right: 1px solid #eee;
 }
 .gnav .nav > li:hover > .cytown_menu {/*layer-1*/
-  color: orange;
-  background: #afc6e2;
+  color: #fff;
+  background: #808080;
 }
 
 .gnav .nav > li li:hover > .cytown_menu + label{/*layer-2*/
-  color: olive;
-  background: #afc6e2;
+  color: #636363;
+  background: #ffffe0;
 }
 .gnav .nav li  .cytown_menu:checked + label{/*layer-2*/
-  color: olive;
-  background: red;
+  color: #636363;
+  background: #ffffe0;
 }
 .gnav .nav > li li:hover > .cytown_menu:checked + label{/*layer-2*/
-  color: olive;
-  background: red;
-}		
+color: #fff;
+background: #606060;
+		}		
 		
 .gnav .nav li ul {
   top: 40px;
@@ -446,6 +626,7 @@ $(function() {
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .gnav .nav li ul li {
+	z-index: 100;
   overflow: hidden;
   height: 0;
 }
@@ -966,8 +1147,8 @@ $(function() {
 	.cytown_product {
 		display: inline-block;
 		float: left;
-width: 25%;
-margin: 30px 4%;
+width: 31%;
+margin: 30px 1%;
 		position: relative;
 	}
 
@@ -985,9 +1166,15 @@ margin: 30px 4%;
 	}
 	.cytown_product_wrap {
 		width: 90%;
-		margin: 50px auto;
+		margin: 20px auto;
 		overflow: auto;
 		min-height: 80vh;
+		max-width: 760px;
+	}
+	@media (min-width: 760px) {
+		.cytown_product_wrap {
+			margin: 50px auto;
+		}
 	}
 .brand_aso
 	@media (min-width: 760px) {
@@ -1001,6 +1188,7 @@ margin: 30px 4%;
 		float: left;
 		width: calc(20% - 60px);
 		margin: 30px 30px;
+			padding: 15px;
 	}
 	}
 		 .cytown_product_hide,
@@ -1449,15 +1637,25 @@ $(function() {
 	
 	</div>
 	<div id="cytown_gaiyo" class="cytown_gaiyo">
-		<center>
-概要
-</center>
+		<!-- リンク先をそれぞれのモールにしないといけないので注意してください -->
+		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.ne.jp/gold/cyberl2010/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_br.jpg" alt="" width="100%"></a></div>
+		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.ne.jp/gold/oruta/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_tr.jpg" alt="" width="100%"></a></div>
+		<div class="cytown_gaiyo_items"><img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_or.jpg" alt="" width="100%"></div>
+		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.ne.jp/gold/tavarat/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_ta.jpg" alt="" width="100%"></a></div>
+		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.co.jp/asoboze"><img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_as.jpg" alt="" width="100%"></a></div>
 	</div>
 	<style>
-		.cytown_gaiyo {
-			background-color:darkred;
-			color: #fff;
-			height: 100px;
+		.cytown_gaiyo_items {
+			width: 100%;
+		}
+		@media (min-width:760px) {
+			.cytown_gaiyo {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				width: 100%;
+				max-width: 1200px;
+				margin: auto;
+			}
 		}
 		#cytown_product_stockbox {
 			display: none;
