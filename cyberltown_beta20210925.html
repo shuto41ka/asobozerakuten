@@ -126,7 +126,7 @@ $(function() {
 		}
 		.family_disc_wrap {
 			width: 80vw;
-margin: 20px auto 0;
+margin: 20px auto;
 max-width: 760px;
 }
 		
@@ -158,10 +158,10 @@ max-width: 760px;
     </style>
 </head>
 
-<body ontouchstart="">
+<body>
 
 	<!-- ここからトップバナー -->
-	<img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/green1500_top.jpg" width="100%" alt="">
+	<img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/green1500_top.jpg" width="100%" alt="" id="cytownTop">
 	<div class="family_disc_wrap">
 		<div class="family_disc_head">
 			<p>「5人の家族」とは</p>
@@ -363,7 +363,6 @@ body { font-family: sans-serif; }
   width: 66%;
   margin-right: 10px;
   counter-increment: gallery-cell;
-	padding: 10px;
 }
 		@media (min-width:760px) {
 			.gallery-cell {
@@ -535,10 +534,12 @@ https://flickity.metafizzy.co
 	
 	<!-- ここからメニュー  -->
 	<style>
-
+		.cytownMenuCheckbox {
+			display: none;
+		}
 .gnav {
   width: 100%;
-  height: 40px;
+  height: 100px;
   margin: 0;
   padding: 0;
   background: #fff;
@@ -546,7 +547,6 @@ https://flickity.metafizzy.co
 }
 .gnav .nav {
   width: 100%;
-  height: 40px;
   margin: 0;
   padding: 0;
   display: flex;
@@ -559,20 +559,108 @@ https://flickity.metafizzy.co
   border-left: 1px solid #eee;
 	transition: 0.5s ease-in-out;
 	width: 100%;
+	height: 100px;
+  color: #6e6e6e;
+	cursor: pointer;
 }
+		.gnav .nav >  li p::after {
+			display: block;
+			position: absolute;
+			content: "";
+width: 15vw;
+height: 12vw;
+margin: 0 4.5vw;
+			top: 3vw;
+			padding: 20px;
+			box-sizing: border-box;
+max-width: 100px;
+max-height: 80px;
+			background-size: contain;
+			background-position: center center;
+		}
+		.gnav .nav > li.cytown_scene p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/scene.gif);
+		}
+		.gnav .nav > li.cytown_category p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/category.gif);
+		}
+		.gnav .nav > li.cytown_person p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/person.gif);
+		}
+		.gnav .nav > li.cytown_material p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/material.gif);
+		}
+		.gnav .nav > li.cytown_color p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/color.gif);
+		}
+		.gnav .nav > li.cytown_brand p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/brand.gif);
+		}
+		.gnav .nav > li.cytown_option p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/option.gif);
+		}
+		.gnav .nav > li.cytown_check p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/check.gif);
+		}
+				.gnav .nav > li.cytown_scene:hover p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/scene_white.gif);
+		}
+		.gnav .nav > li.cytown_category:hover p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/category_white.gif);
+		}
+		.gnav .nav > li.cytown_person:hover p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/person_white.gif);
+		}
+		.gnav .nav > li.cytown_material:hover p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/material_white.gif);
+		}
+		.gnav .nav > li.cytown_option:hover p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/option_white.gif);
+		}
+		.gnav .nav > li.cytown_brand:hover p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/brand_white.gif);
+		}
+		.gnav .nav > li.cytown_check:hover p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/check_white.gif);
+		}
+				.gnav .nav li #cytownMenuCheckbox01:checked + label  p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/scene_white.gif);
+		}
+				.gnav .nav li #cytownMenuCheckbox02:checked + label  p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/category_white.gif);
+		}
+				.gnav .nav li #cytownMenuCheckbox03:checked + label  p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/person_white.gif);
+		}
+				.gnav .nav li #cytownMenuCheckbox04:checked + label  p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/option_white.gif);
+		}
+				.gnav .nav li #cytownMenuCheckbox05:checked + label  p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/material_white.gif);
+		}
+				.gnav .nav li #cytownMenuCheckbox06:checked + label  p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/color_white.gif);
+		}
+				.gnav .nav li #cytownMenuCheckbox07:checked + label  p::after {
+			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/brand_white.gif);
+		}
+
 .gnav .nav li .cytown_menu {
   display: block;
-  width: 100v%;
-  height: 40px;
+  width: 100%;
   text-align: center;
-  color: #6e6e6e;
-  font-size: 8px;
-  line-height: 40px;
-  box-sizing: border-box;
+  font-size: 2.7vw;
+  box-sizing: content-box;
   text-decoration: none;
-	display: grid;
 	grid-template-rows: 1fr 1fr 1fr 1fr;
-}
+	  color: #6e6e6e;
+height: 2em;
+	position: relative;
+	height: 100px;
+	line-height: 160px;
+vertical-align: bottom;
+overflow: hidden;
+		}
 
 		.gnav .nav li input.cytown_menu {
 			display: none;
@@ -584,27 +672,158 @@ https://flickity.metafizzy.co
   height: 40px;
   text-align: center;
   color: #fff;
-  font-size: 8px;
+  font-size: 3vw;
   line-height:40px;
   background: #c0c0c0;
   box-sizing: border-box;
   text-decoration: none;
+position: relative;
+		}
+		.gnav .nav li.cytown_color .cytown_menu + label {
+			color: #636363;
+			background-color: #fff;
+			font-size: 2vw;
+			padding-left: 30px;
+			text-align: left;
+		}
+				.gnav .nav li.cytown_color .cytown_menu + label::before {
+					display: block;
+					position: absolute;
+width: 15px;
+height: 15px;
+box-sizing: border-box;
+border-radius: 50%;
+content: "";
+top: 50%;
+left: 1.5vw;
+transform: translateY(-50%);
+		}
+						.gnav .nav li.cytown_color .cytown_menu + label.color_beige::before {
+							background-color: beige;
+		}
+						.gnav .nav li.cytown_color .cytown_menu + label.color_black::before {
+							background-color: black;
+		}
+						.gnav .nav li.cytown_color .cytown_menu + label.color_brown::before {
+							background-color: brown;
+		}
+								.gnav .nav li.cytown_color .cytown_menu + label.color_gold::before {
+									background-color: gold;
+		}
+						.gnav .nav li.cytown_color .cytown_menu + label.color_gray::before {
+							background-color: gray;
+		}
+						.gnav .nav li.cytown_color .cytown_menu + label.color_green::before {
+							background-color: green;
+		}
+						.gnav .nav li.cytown_color .cytown_menu + label.color_blue::before {
+							background-color: blue;
+		}
+						.gnav .nav li.cytown_color .cytown_menu + label.color_multi::before {
+							background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/color-16.gif);
+							background-size: contain;
+							background-position: center center;
+		}
+								.gnav .nav li.cytown_color .cytown_menu + label.color_navy::before {
+									background-color: navy;
+		}
+						.gnav .nav li.cytown_color .cytown_menu + label.color_orange::before {
+							background-color: orange;
+		}
+						.gnav .nav li.cytown_color .cytown_menu + label.color_pink::before {
+							background-color: pink;
+		}
+						.gnav .nav li.cytown_color .cytown_menu + label.color_purple::before {
+							background-color: purple;
+		}
+						.gnav .nav li.cytown_color .cytown_menu + label.color_red::before {
+							background-color: red;
+		}
+						.gnav .nav li.cytown_color .cytown_menu + label.color_silver::before {
+							background-color: silver;
+		}
+						.gnav .nav li.cytown_color .cytown_menu + label.color_white::before {
+							border: 1px solid #888;
+		}
+						.gnav .nav li.cytown_color .cytown_menu + label.color_yellow::before {
+							background-color: yellow;
+		}
 
+		.gnav .nav li.category_towel ul li .cytown_menu + label {
+			background: #ddd;
+		}
+			@media (min-width:760px) {
+						.gnav .nav >  li p::after {
+margin: 0 45px;
+top: 20px;
+		}
+
+								.gnav .nav li.cytown_color .cytown_menu + label::before {
+									width: 20px;
+height: 20px;
+left: 25px;
+				}
+			.gnav .nav li .cytown_menu + label {
+				font-size: 16px
+			}
+			.gnav .nav li .cytown_menu {
+				font-size: 20px;
+			}
 		}
 .gnav .nav li:first-child {
   border-left: 1px solid #eee;
 }
 .gnav .nav li:nth-child(4),
+		.gnav .nav li ul li ul li:nth-child(3),
 .gnav .nav li:nth-child(8),
 		.gnav .nav li:nth-child(12)	{
   border-right: 1px solid #eee;
 }
-.gnav .nav > li:hover > .cytown_menu {/*layer-1*/
-  color: #fff;
+		.gnav .nav li ul li ul li:nth-child(4) {
+			border-right: none;
+		}
+.gnav .nav > li:hover {/*layer-1*/
   background: #808080;
 }
+		
 
+.gnav .nav > li:hover .cytown_menu{/*layer-1*/
+	  color: #fff;
+		}
+.gnav .nav > li #cytownMenuCheckbox01:checked ~ label .cytown_menu{/*layer-1*/
+	  color: #fff;
+	background-color: #6e6e6e;
+		}
+.gnav .nav > li #cytownMenuCheckbox02:checked ~ label .cytown_menu{/*layer-1*/
+	  color: #fff;
+	background-color: #6e6e6e;
+		}
+.gnav .nav > li #cytownMenuCheckbox03:checked ~ label .cytown_menu{/*layer-1*/
+	  color: #fff;
+	background-color: #6e6e6e;
+		}
+.gnav .nav > li #cytownMenuCheckbox04:checked ~ label .cytown_menu{/*layer-1*/
+	  color: #fff;
+	background-color: #6e6e6e;
+		}
+.gnav .nav > li #cytownMenuCheckbox05:checked ~ label .cytown_menu{/*layer-1*/
+	  color: #fff;
+	background-color: #6e6e6e;
+		}
+.gnav .nav > li #cytownMenuCheckbox06:checked ~ label .cytown_menu{/*layer-1*/
+	  color: #fff;
+	background-color: #6e6e6e;
+		}
+.gnav .nav > li #cytownMenuCheckbox07:checked ~ label .cytown_menu{/*layer-1*/
+	  color: #fff;
+	background-color: #6e6e6e;
+		}
+		
 .gnav .nav > li li:hover > .cytown_menu + label{/*layer-2*/
+  color: #636363;
+  background: #ffffe0;
+}
+		.gnav .nav li.category_towel ul li .cytown_menu:hover + label {/*layer-2*/
   color: #636363;
   background: #ffffe0;
 }
@@ -612,13 +831,17 @@ https://flickity.metafizzy.co
   color: #636363;
   background: #ffffe0;
 }
+.gnav .nav li.category_towel  .cytown_menu:checked + label{/*layer-2*/
+  color: #636363;
+  background: #ffffe0;
+}
 .gnav .nav > li li:hover > .cytown_menu:checked + label{/*layer-2*/
-color: #fff;
-background: #606060;
+  color: #636363;
+  background: #ffffe0;
 		}		
 		
 .gnav .nav li ul {
-  top: 40px;
+  top: 100px;
   left: -40px;
   position: absolute;
 	width: calc(100% + 40px );
@@ -630,17 +853,73 @@ background: #606060;
   overflow: hidden;
   height: 0;
 }
+.gnav .nav li ul li ul li{
+	z-index: 100;
+  overflow: hidden;
+  height: 0;
+}
+.gnav .nav li ul li ul{
+  top: 40px;
+  left: -40px;
+position: absolute;
+width: calc(75vw + 40px);
+	display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+.gnav .nav li ul li ul li{
+	z-index: 100;
+  overflow: hidden;
+  height: 0;
+}
 .gnav .nav li ul li .cytown_menu {
   border-top: 1px solid #eee;
 }
-.gnav .nav li:hover > ul > li {
+.gnav .nav li #cate_towel:checked ~ ul > li {
+  overflow: visible;
+  height: 40px;
+	z-index: 40;
+}
+.gnav .nav li #cytownMenuCheckbox01:checked ~ ul > li {
+  overflow: visible;
+  height: 40px;
+	z-index: 30;
+}
+.gnav .nav li #cytownMenuCheckbox02:checked ~ ul > li {
+  overflow: visible;
+  height: 40px;
+	z-index: 30;
+}
+		.gnav .nav li #cytownMenuCheckbox02:checked ~ ul > li.category_towel {
+			z-index: 200;
+		}
+.gnav .nav li #cytownMenuCheckbox03:checked ~ ul > li {
+  overflow: visible;
+  height: 40px;
+	z-index: 30;
+}
+.gnav .nav li #cytownMenuCheckbox04:checked ~ ul > li {
+  overflow: visible;
+  height: 40px;
+	z-index: 30;
+}
+.gnav .nav li #cytownMenuCheckbox05:checked ~ ul > li {
+  overflow: visible;
+  height: 40px;
+	z-index: 30;
+}
+.gnav .nav li #cytownMenuCheckbox06:checked ~ ul > li {
+  overflow: visible;
+  height: 40px;
+	z-index: 30;
+}
+.gnav .nav li #cytownMenuCheckbox07:checked ~ ul > li {
   overflow: visible;
   height: 40px;
 	z-index: 30;
 }
   .gnav .nav li ul li ul {
     top: 0;
-    left: 20px;
+    left: 25vw;
   }
   .gnav .nav li ul li ul:before {/*layer-2▷*/
     position: absolute;
@@ -683,27 +962,38 @@ background: #606060;
 		
 		
 @media (min-width: 769px) {
+		.gnav .nav >  li::before {
+			margin: 10px 45px;
+		}
 
 .gnav {
-  overflow: visible;
+	height: 150px;
 }
 .gnav .nav {
   width: 755px;
 	margin: 0 auto;
 }
 .gnav .nav li {
-  box-sizing: border-box;
+	height: 150px;
 }
+	.gnav .nav li ul {
+		top: 150px;
+	}
 .gnav .nav li .cytown_menu {
   display: block;
-  height: 40px;
   font-size: 14px;
   line-height: 2.8;
+	padding-top: 100px;
+	height: 50px;
 }
 	.gnav .nav li .cytown_menu + label {
 		font-size: 12px;
 	}
-.gnav .nav li:first-child {
+		.gnav .nav li.cytown_color .cytown_menu + label {
+			font-size: 12px;
+			padding-left: 35%;
+
+	}.gnav .nav li:first-child {
   border-left: 1px solid #eee;
 }
 .gnav .nav li:nth-child(4),
@@ -715,7 +1005,8 @@ background: #606060;
 }
   .gnav .nav li ul li ul {
     top: 0;
-    left: 110px;
+    left: 190px;
+	  width: calc(100% - 190px);
   }
   .gnav .nav li ul li ul:before {/*layer-2▷*/
     left: 30px;
@@ -738,11 +1029,16 @@ background: #606060;
 		
 	</style>
 	<div>
-	<div class="gnav" ontouchstart="">
+	<div class="gnav">
 <ul class="nav">
-
-<li><p class="cytown_menu">季節のイベント</p>
-<ul>
+<li class="cytown_scene">
+	<input type="checkbox" id="cytownMenuCheckbox01" class="cytownMenuCheckbox">
+	<label for="cytownMenuCheckbox01" id="cytownMenuCheckbutton01">
+	<p class="cytown_menu">
+		イベント
+	</p>	
+	</label>
+<ul id="cytownMenuOpen01">
 	<li>
 		<!-- 初回は「クリスマス特集」ということで、クリスマスの属性にcheckedを追加しています -->
 		<input type="checkbox" id="scene_christmas" name="scene" value="scene_christmas" class="cytown_menu" checked>
@@ -799,16 +1095,64 @@ background: #606060;
 				誕生日
 			</label>
 	</li>
+	<li>
+		<input type="checkbox" id="scene_marriage" class="cytown_menu" name="scene" value="scene_marriage" >
+			<label for="scene_marriage">
+				結婚
+			</label>
+	</li>
+	<li>
+		<input type="checkbox" id="scene_birth" class="cytown_menu" name="scene" value="scene_birth" >
+			<label for="scene_birth">
+				出産
+			</label>
+	</li>
 </ul>
 </li>	
 	
-<li><p class="cytown_menu">商品カテゴリ</p>
-<ul>
-	<li>
-		<input type="checkbox" id="category_towel" class="cytown_menu"  name="category" value="category_towel"  >
-			<label for="category_towel">
+<li class="cytown_category">
+	<input type="checkbox" id="cytownMenuCheckbox02" class="cytownMenuCheckbox">
+	<label for="cytownMenuCheckbox02" id="cytownMenuCheckbutton02">
+	<p class="cytown_menu">商品カテゴリ</p>
+	</label>
+<ul id="cytownMenuOpen02">
+	<li class="category_towel">
+		<input type="checkbox" id="cate_towel" class="cytown_menu"  name="category"  >
+			<label for="cate_towel">
 				タオル
 			</label>
+		<ul>
+			<li>
+		<input type="checkbox" id="category_towel_bath" class="cytown_menu"  name="category" value="category_towel_bath"  >
+			<label for="category_towel_bath">
+				バスタオル
+			</label>				
+			</li>
+			<li>
+		<input type="checkbox" id="category_towel_face" class="cytown_menu"  name="category" value="category_towel_face"  >
+			<label for="category_towel_face">
+				フェイスタオル
+			</label>
+			</li>
+			<li>
+		<input type="checkbox" id="category_towel_hand" class="cytown_menu"  name="category" value="category_towel_hand"  >
+			<label for="category_towel_hand">
+				ハンドタオル
+			</label>
+			</li>
+			<li>
+		<input type="checkbox" id="category_towel_gauze" class="cytown_menu"  name="category" value="category_towel_gauze"  >
+			<label for="category_towel_gauze">
+				ガーゼタオル
+			</label>
+			</li>
+			<li>
+		<input type="checkbox" id="category_towel_assort" class="cytown_menu"  name="category" value="category_towel_assort"  >
+			<label for="category_towel_assort">
+				各種アソート
+			</label>
+			</li>
+		</ul>
 	</li>
 	<li>
 		<input type="checkbox" id="category_bag" class="cytown_menu"  name="category" value="category_bag" >
@@ -829,6 +1173,12 @@ background: #606060;
 			</label>
 	</li>
 	<li>
+		<input type="checkbox" id="category_sleep" class="cytown_menu"  name="category" value="category_sleep" >
+			<label for="category_sleep">
+				寝具
+			</label>
+	</li>
+	<li>
 		<input type="checkbox" id="category_fashion" class="cytown_menu"  name="category" value="category_fashion" >
 			<label for="category_fashion">
 				ファッション雑貨
@@ -837,8 +1187,12 @@ background: #606060;
 </ul>
 </li>
 
-<li><p class="cytown_menu">相手別</p>
-<ul>
+<li class="cytown_person">
+		<input type="checkbox" id="cytownMenuCheckbox03" class="cytownMenuCheckbox">
+	<label for="cytownMenuCheckbox03" id="cytownMenuCheckbutton03">
+	<p class="cytown_menu">相手別</p>
+	</label>
+<ul id="cytownMenuOpen03">
 	<li>
 		<input type="checkbox" id="person_men" class="cytown_menu" name="person" value="person_men" >
 			<label for="person_men">
@@ -849,6 +1203,12 @@ background: #606060;
 		<input type="checkbox" id="person_women" class="cytown_menu" name="person" value="person_women" >
 			<label for="person_women">
 				女性
+			</label>
+	</li>
+	<li>
+		<input type="checkbox" id="person_baby" class="cytown_menu" name="person" value="person_baby" >
+			<label for="person_baby">
+				ベビー
 			</label>
 	</li>
 	<li>
@@ -885,8 +1245,12 @@ background: #606060;
 </li>	
 	
 	
-<li><p class="cytown_menu">ギフトオプション</p>
-<ul>
+<li class="cytown_option">
+		<input type="checkbox" id="cytownMenuCheckbox04" class="cytownMenuCheckbox">
+	<label for="cytownMenuCheckbox04" id="cytownMenuCheckbutton04">
+	<p class="cytown_menu">ギフトオプション</p>
+	</label>
+<ul id="cytownMenuOpen04">
 	<li>
 		<input type="checkbox" id="option_set" class="cytown_menu" name="option" value="option_set" >
 			<label for="option_set">
@@ -921,26 +1285,43 @@ background: #606060;
 </li>	
 		</ul>
 		</div>
-		<div class="gnav" ontouchstart="">
+		<div class="gnav">
 <ul class="nav">
-<li><p class="cytown_menu">素材別</p>
-<ul>
+<li class="cytown_material">
+		<input type="checkbox" id="cytownMenuCheckbox05" class="cytownMenuCheckbox">
+	<label for="cytownMenuCheckbox05" id="cytownMenuCheckbutton05">
+
+	<p class="cytown_menu">素材別</p>
+	</label>
+<ul id="cytownMenuOpen05">
 	<li>
 		<input type="checkbox" id="material_pile" class="cytown_menu" name="material" value="material_pile" >
 			<label for="material_pile">
-				パイル生地
+				綿（コットン）
 			</label>
 	</li>
 	<li>
-		<input type="checkbox" id="material_gauze" class="cytown_menu" name="material" value="material_gauze" >
-			<label for="material_gauze">
-				ガーゼ生地
+		<input type="checkbox" id="material_poly" class="cytown_menu" name="material" value="material_poly" >
+			<label for="material_poly">
+				フリース
 			</label>
 	</li>
 	<li>
-		<input type="checkbox" id="material_fur" class="cytown_menu" name="material" value="material_fur" >
-			<label for="material_fur">
-				毛布
+		<input type="checkbox" id="material_cashmere" class="cytown_menu" name="material" value="material_cashmere" >
+			<label for="material_cashmere">
+				カシミヤ
+			</label>
+	</li>
+	<li>
+		<input type="checkbox" id="material_silk" class="cytown_menu" name="material" value="material_silk" >
+			<label for="material_silk">
+				シルク
+			</label>
+	</li>
+	<li>
+		<input type="checkbox" id="material_wool" class="cytown_menu" name="material" value="material_wool" >
+			<label for="material_wool">
+				ウール
 			</label>
 	</li>
 	<li>
@@ -979,115 +1360,125 @@ background: #606060;
 				紙
 			</label>
 	</li>
-	<li>
-		<input type="checkbox" id="material_silk" class="cytown_menu" name="material" value="material_silk" >
-			<label for="material_silk">
-				シルク
-			</label>
-	</li>
-	<li>
-		<input type="checkbox" id="material_wool" class="cytown_menu" name="material" value="material_wool" >
-			<label for="material_wool">
-				ウール
-			</label>
-	</li>
 </ul>
 </li>
 
 	
 	
-<li><p class="cytown_menu">カラー別</p>
-<ul>
+<li class="cytown_color">
+		<input type="checkbox" id="cytownMenuCheckbox06" class="cytownMenuCheckbox">
+	<label for="cytownMenuCheckbox06" id="cytownMenuCheckbutton06">
+
+	<p class="cytown_menu">カラー別</p>
+	</label>
+<ul id="cytownMenuOpen06">
 	<li>
 		<input type="checkbox" id="color_white" class="cytown_menu" name="color" value="color_white" >
-			<label for="color_white">
+			<label for="color_white" class="color_white">
 				ホワイト
 			</label>
 	</li>
 	<li>
 		<input type="checkbox" id="color_gray" class="cytown_menu" name="color" value="color_gray" >
-			<label for="color_gray">
+			<label for="color_gray" class="color_gray">
 				グレー
 			</label>
 	</li>
 	<li>
 		<input type="checkbox" id="color_black" class="cytown_menu" name="color" value="color_black" >
-			<label for="color_black">
+			<label for="color_black" class="color_black">
 				ブラック
 			</label>
 	</li>
 	<li>
 		<input type="checkbox" id="color_brown" class="cytown_menu" name="color" value="color_brown" >
-			<label for="color_brown">
+			<label for="color_brown" class="color_brown">
 				ブラウン
 			</label>
 	</li>
 	<li>
 		<input type="checkbox" id="color_red" class="cytown_menu" name="color" value="color_red" >
-			<label for="color_red">
+			<label for="color_red" class="color_red">
 				レッド
 			</label>
 	</li>
 	<li>
 		<input type="checkbox" id="color_green" class="cytown_menu" name="color" value="color_green" >
-			<label for="color_green">
+			<label for="color_green" class="color_green">
 				グリーン
 			</label>
 	</li>
 	<li>
 		<input type="checkbox" id="color_navy" class="cytown_menu" name="color" value="color_navy" >
-			<label for="color_navy">
+			<label for="color_navy" class="color_navy">
 				ネイビー
 			</label>
 	</li>
 	<li>
 		<input type="checkbox" id="color_pink" class="cytown_menu" name="color" value="color_pink" >
-			<label for="color_pink">
+			<label for="color_pink" class="color_pink">
 				ピンク
 			</label>
 	</li>
 	<li>
-		<input type="checkbox" id="color_beige" class="cytown_menu" name="color" value="color_beige" >
-			<label for="color_beige">
-				ベージュ
+		<input type="checkbox" id="color_purple" class="cytown_menu" name="color" value="color_purple" >
+			<label for="color_purple" class="color_purple">
+				パープル
 			</label>
 	</li>
 	<li>
-		<input type="checkbox" id="color_lightblue" class="cytown_menu" name="color" value="color_lightblue" >
-			<label for="color_lightblue">
-				ライトブルー
+		<input type="checkbox" id="color_beige" class="cytown_menu" name="color" value="color_beige" >
+			<label for="color_beige" class="color_beige">
+				アイボリー
+			</label>
+	</li>
+	<li>
+		<input type="checkbox" id="color_blue" class="cytown_menu" name="color" value="color_blue" >
+			<label for="color_blue" class="color_blue">
+				ブルー
 			</label>
 	</li>
 	<li>
 		<input type="checkbox" id="color_yellow" class="cytown_menu" name="color" value="color_yellow" >
-			<label for="color_yellow">
+			<label for="color_yellow" class="color_yellow">
 				イエロー
 			</label>
 	</li>
 	<li>
+		<input type="checkbox" id="color_orange" class="cytown_menu" name="color" value="color_orange" >
+			<label for="color_orange" class="color_orange">
+				オレンジ
+			</label>
+	</li>
+	<li>
 		<input type="checkbox" id="color_silver" class="cytown_menu" name="color" value="color_silver" >
-			<label for="color_silver">
+			<label for="color_silver" class="color_silver">
 				シルバー
 			</label>
 	</li>
 	<li>
 		<input type="checkbox" id="color_gold" class="cytown_menu" name="color" value="color_gold" >
-			<label for="color_gold">
+			<label for="color_gold" class="color_gold">
 				ゴールド
 			</label>
 	</li>
 	<li>
-		<input type="checkbox" id="color_orange" class="cytown_menu" name="color" value="color_orange" >
-			<label for="color_orange">
-				オレンジ
+		<input type="checkbox" id="color_multi" class="cytown_menu" name="color" value="color_multi" >
+			<label for="color_multi" class="color_multi">
+				マルチカラー
 			</label>
 	</li>
 	</ul>
 	</li>
 	
 	
-<li><p class="cytown_menu">ブランド</p>
-<ul>
+<li class="cytown_brand">
+		<input type="checkbox" id="cytownMenuCheckbox07" class="cytownMenuCheckbox">
+	<label for="cytownMenuCheckbox07" id="cytownMenuCheckbutton07">
+
+	<p class="cytown_menu">ブランド</p>
+	</label>
+<ul id="cytownMenuOpen07">
 	<li>
 		<input type="checkbox" id="brand_broome" class="cytown_menu" name="brand" value="brand_broome" >
 			<label for="brand_broome">
@@ -1121,7 +1512,7 @@ background: #606060;
 	
 	</ul>
 </li>
-<li>
+<li class="cytown_check">
 	<p class="cytown_menu" id="cytown_menu_reset">チェックを外す</p>
 	</li>
 <!--nav--></ul>
@@ -1136,8 +1527,8 @@ background: #606060;
 		 
 <div class="cytown_product_wrap" id="cytown_product_wrap">
 			<div id="cytown_product_stockbox_broome"  class="cytown_products"></div>
-			<div id="cytown_product_stockbox_tranparan" class="cytown_products"></div>
 			<div id="cytown_product_stockbox_tavarat" class="cytown_products"></div>
+			<div id="cytown_product_stockbox_tranparan" class="cytown_products"></div>
 			<div id="cytown_product_stockbox_oruta" class="cytown_products"></div>
 			<div id="cytown_product_stockbox_aso" class="cytown_products"></div>			
 	
@@ -1311,6 +1702,16 @@ margin: 30px 1%;
 		) {
 			$('.scene_christmas') .removeClass('cytown_product_hide1');									
 	}
+		if (
+		$("#scene_marriage").prop("checked") == true		
+		) {
+			$('.scene_marriage') .removeClass('cytown_product_hide1');									
+	}
+		if (
+		$("#scene_birth").prop("checked") == true		
+		) {
+			$('.scene_birth') .removeClass('cytown_product_hide1');									
+	}
 	}else {
 				$('.cytown_product').removeClass('cytown_product_hide1');
 	};
@@ -1321,9 +1722,29 @@ margin: 30px 1%;
 	){
 		$('.cytown_product').removeClass('cytown_product_hide2');
 		if (
-		$("#category_towel").prop("checked") == false
+		$("#category_towel_bath").prop("checked") == false
 		){
-			$('.category_towel') .addClass('cytown_product_hide2');
+			$('.category_towel_bath') .addClass('cytown_product_hide2');
+		}; 
+		if (
+		$("#category_towel_face").prop("checked") == false
+		){
+			$('.category_towel_face') .addClass('cytown_product_hide2');
+		}; 
+		if (
+		$("#category_towel_hand").prop("checked") == false
+		){
+			$('.category_towel_hand') .addClass('cytown_product_hide2');
+		}; 
+		if (
+		$("#category_towel_gauze").prop("checked") == false
+		){
+			$('.category_towel_gauze') .addClass('cytown_product_hide2');
+		}; 
+		if (
+		$("#category_towel_assort").prop("checked") == false
+		){
+			$('.category_towel_assort') .addClass('cytown_product_hide2');
 		}; 
 		if (
 		$("#category_bag").prop("checked") == false		
@@ -1339,6 +1760,11 @@ margin: 30px 1%;
 		$("#category_home").prop("checked") == false		
 		) {
 			$('.category_home') .addClass('cytown_product_hide2');						
+			}
+		if (
+		$("#category_sleep").prop("checked") == false		
+		) {
+			$('.category_sleep') .addClass('cytown_product_hide2');						
 			}
 		if (
 		$("#category_fashion").prop("checked") == false		
@@ -1390,6 +1816,11 @@ margin: 30px 1%;
 		$('#person_silver').prop('checked') 
 			) {
 			$('.person_silver').removeClass('cytown_product_hide3');
+				}
+		if (
+		$('#person_baby').prop('checked') 
+			) {
+			$('.person_baby').removeClass('cytown_product_hide3');
 				}
 		
 	}else {
@@ -1449,11 +1880,6 @@ margin: 30px 1%;
 			$('.material_gauze').removeClass('cytown_product_hide5');
 		} 
 		if (
-		$('#material_fur').prop('checked') 
-		) {
-			$('.material_fur').removeClass('cytown_product_hide5');
-			} 
-		if (
 		$('#material_leather').prop('checked')	
 			) {
 			$('.material_leather').removeClass('cytown_product_hide5');
@@ -1492,6 +1918,16 @@ margin: 30px 1%;
 		$('#material_wool').prop('checked')
 			) {
 			$('.material_wool').removeClass('cytown_product_hide5');
+				} 
+		if (
+		$('#material_poly').prop('checked')
+			) {
+			$('.material_poly').removeClass('cytown_product_hide5');
+				} 
+		if (
+		$('#material_cashmere').prop('checked')
+			) {
+			$('.material_cashmere').removeClass('cytown_product_hide5');
 				} 
 		
 	}else {
@@ -1550,9 +1986,9 @@ margin: 30px 1%;
 			$('.color_beige').removeClass('cytown_product_hide6');
 			} 
 		if (
-		$('#color_lightblue').prop('checked') 
+		$('#color_blue').prop('checked') 
 			) {
-			$('.color_lightblue').removeClass('cytown_product_hide6');
+			$('.color_blue').removeClass('cytown_product_hide6');
 			} 
 		if (
 		$('#color_yellow').prop('checked') 
@@ -1574,6 +2010,17 @@ margin: 30px 1%;
 			) {
 			$('.color_orange').removeClass('cytown_product_hide6');
 				}
+		if (
+		$('#color_purple').prop('checked') 
+			) {
+			$('.color_purple').removeClass('cytown_product_hide6');
+				}
+		if (
+		$('#color_multi').prop('checked') 
+			) {
+			$('.color_multi').removeClass('cytown_product_hide6');
+				}
+
 	}else {
 					$('.cytown_product').removeClass('cytown_product_hide6');
 				};
@@ -1617,6 +2064,21 @@ margin: 30px 1%;
 			
 		});
 	});
+	
+	//複数チェックを入れられないように
+	//商品カテゴリ「タオル」の設定を解除
+	$(function() {
+		$('.cytownMenuCheckbox').click(function() {
+		if($(this).prop('checked')) {
+			$('.cytownMenuCheckbox').prop('checked', false);
+			$(this).prop('checked', true);
+			$('#cate_towel').prop('checked', false);
+		};
+		});
+	});
+	
+
+	
 //リセット
 $(function() {
 	$('#cytown_menu_reset').click(function() {
@@ -1637,12 +2099,36 @@ $(function() {
 	
 	</div>
 	<div id="cytown_gaiyo" class="cytown_gaiyo">
+		<style>
+			.cytown_gaiyo p::before {
+				display: block;
+				content: "";
+				width: 100%;
+				border-top: 1px solid #ddd;
+				height: 10px;
+			}
+		</style>
+		<p style="text-align: center; width: max-content; margin: 10px auto;">
+			5人の家族
+		</p>
 		<!-- リンク先をそれぞれのモールにしないといけないので注意してください -->
 		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.ne.jp/gold/cyberl2010/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_br.jpg" alt="" width="100%"></a></div>
 		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.ne.jp/gold/oruta/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_tr.jpg" alt="" width="100%"></a></div>
 		<div class="cytown_gaiyo_items"><img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_or.jpg" alt="" width="100%"></div>
 		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.ne.jp/gold/tavarat/"><img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_ta.jpg" alt="" width="100%"></a></div>
 		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.co.jp/asoboze"><img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_as.jpg" alt="" width="100%"></a></div>
+	</div>
+	<div class="cytown_backTop">
+		<style>
+			.cytown_backTop {
+				display: block;
+				width: max-content;
+				margin-right: 0px;
+				margin-left: auto;
+				margin-bottom: 20px;
+			}
+		</style>
+		<a href="#cytownTop">ページTOPへ戻る</a>
 	</div>
 	<style>
 		.cytown_gaiyo_items {
