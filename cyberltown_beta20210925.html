@@ -602,25 +602,25 @@ max-height: 80px;
 		.gnav .nav > li.cytown_check p::after {
 			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/check.gif);
 		}
-				.gnav .nav > li.cytown_scene:hover p::after {
+				.gnav .nav > li.cytown_scene:active p::after {
 			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/scene_white.gif);
 		}
-		.gnav .nav > li.cytown_category:hover p::after {
+		.gnav .nav > li.cytown_category:active p::after {
 			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/category_white.gif);
 		}
-		.gnav .nav > li.cytown_person:hover p::after {
+		.gnav .nav > li.cytown_person:active p::after {
 			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/person_white.gif);
 		}
-		.gnav .nav > li.cytown_material:hover p::after {
+		.gnav .nav > li.cytown_material:active p::after {
 			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/material_white.gif);
 		}
-		.gnav .nav > li.cytown_option:hover p::after {
+		.gnav .nav > li.cytown_option:active p::after {
 			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/option_white.gif);
 		}
-		.gnav .nav > li.cytown_brand:hover p::after {
+		.gnav .nav > li.cytown_brand:active p::after {
 			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/brand_white.gif);
 		}
-		.gnav .nav > li.cytown_check:hover p::after {
+		.gnav .nav > li.cytown_check:active p::after {
 			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/cytown/check_white.gif);
 		}
 				.gnav .nav li #cytownMenuCheckbox01:checked + label  p::after {
@@ -705,7 +705,7 @@ transform: translateY(-50%);
 							background-color: brown;
 		}
 								.gnav .nav li.cytown_color .cytown_menu + label.color_gold::before {
-									background-color: gold;
+									background: linear-gradient(45deg,  #ffeea8 0%,#d9b61d 50%,#fff3c1 100%);
 		}
 						.gnav .nav li.cytown_color .cytown_menu + label.color_gray::before {
 							background-color: gray;
@@ -737,7 +737,7 @@ transform: translateY(-50%);
 							background-color: red;
 		}
 						.gnav .nav li.cytown_color .cytown_menu + label.color_silver::before {
-							background-color: silver;
+							background: linear-gradient(45deg,  #f4f4f4 0%,#aaaaaa 50%,#e4e4e4 100%);
 		}
 						.gnav .nav li.cytown_color .cytown_menu + label.color_white::before {
 							border: 1px solid #888;
@@ -779,12 +779,12 @@ left: 25px;
 		.gnav .nav li ul li ul li:nth-child(4) {
 			border-right: none;
 		}
-.gnav .nav > li:hover {/*layer-1*/
+.gnav .nav > li:active {/*layer-1*/
   background: #808080;
 }
 		
 
-.gnav .nav > li:hover .cytown_menu{/*layer-1*/
+.gnav .nav > li:active .cytown_menu{/*layer-1*/
 	  color: #fff;
 		}
 .gnav .nav > li #cytownMenuCheckbox01:checked ~ label .cytown_menu{/*layer-1*/
@@ -816,11 +816,11 @@ left: 25px;
 	background-color: #6e6e6e;
 		}
 		
-.gnav .nav > li li:hover > .cytown_menu + label{/*layer-2*/
+.gnav .nav > li li:active > .cytown_menu + label{/*layer-2*/
   color: #636363;
   background: #ffffe0;
 }
-		.gnav .nav li.category_towel ul li .cytown_menu:hover + label {/*layer-2*/
+		.gnav .nav li.category_towel ul li .cytown_menu:active + label {/*layer-2*/
   color: #636363;
   background: #ffffe0;
 }
@@ -832,7 +832,7 @@ left: 25px;
   color: #636363;
   background: #ffffe0;
 }
-.gnav .nav > li li:hover > .cytown_menu:checked + label{/*layer-2*/
+.gnav .nav > li li:active > .cytown_menu:checked + label{/*layer-2*/
   color: #636363;
   background: #ffffe0;
 		}		
