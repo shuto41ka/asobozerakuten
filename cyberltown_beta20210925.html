@@ -22,6 +22,8 @@
  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
 <meta name="description" content="" />
 <meta name="keywords" content="" />
+<meta name="description" content="革製品とビジネスバッグの通販サイトasoboze楽天市場店です。ブリーフケース、クラッチバッグなどメンズ向けのカバンからコインケース、ブックカバーなどこだわりの革小物を各種揃えています。" />
+<meta name="keywords" content="ビジネスバッグ,メンズ,ブリーフケース,カバン,鞄,セカンドバッグ,ガーメントバッグ,財布,小銭入れ,コインケース,ブックカバー,アタッシュケース,ダレスバッグ" />
 
 <link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.css" />
     <script src="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.js"></script> <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
@@ -29,10 +31,35 @@
 
     <script src="https://www.rakuten.ne.jp/gold/asoboze/jquery-3.2.1.min.js"></script>    
 
+<script>
+	$(function() {
+		$('a[href="#cytown_gaiyo"]').click(function(){
+			$('#cytown_gaiyo').removeClass('cytown_gaiyo_hide');
+		$('.cytown_menu').prop('checked', false);
+			$('.cytownMenuCheckbox').prop('checked', false);			
+		});
+//ページ内リンクスムーススクロール
+  $('a[href^="#"]').on('click', function () {
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+	  position -= 200;
+    $("html, body").animate({scrollTop: position}, 1500, "swing");
+    return false;
+  });
+	});
+	</script>
 
+<script>
+$(function() {
+    $(".icon-wrap").click(function() {
+            $(this).toggleClass("active");
+            $("body").toggleClass("fixing");
+        });
 
-
-
+	
+});
+</script>
 	<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
 	<script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
 
@@ -493,7 +520,7 @@ https://flickity.metafizzy.co
 <div class="container">
 	<!--  オルタないモールは5番目の要素を消していく -->
 	<div class="carousel">
-		<div class="carousel__items gallery js-flickity" data-flickity-options="{ 'wrapAround': true }">
+		<div class="carousel__items gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
 			<div class="carousel__item gallery-cell" id="cytown_slider_br"><img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt=""></div>
 			<div class="carousel__item gallery-cell" id="cytown_slider_tr"><img src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg" alt=""></div>
 			<div class="carousel__item gallery-cell" id="cytown_slider_ta"><img src="//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg" alt=""></div>
@@ -1003,6 +1030,7 @@ grid-template-columns: 1fr 1fr 1fr;
 		}
 		
 	</style>
+	
 	<div>
 	<div class="gnav">
 <ul class="nav">
@@ -1453,8 +1481,49 @@ grid-template-columns: 1fr 1fr 1fr;
 <!--gnav--></div>
 		
 	<!-- ここまでメニュー  -->
-	
+	<div id="cytown_gaiyo" class="cytown_gaiyo cytown_gaiyo_hide">
+		<style>
+			.cytown_gaiyo {
+				max-height: 10000px;
+				transition-duration: .5s;
+			}
+			.cytown_gaiyo.cytown_gaiyo_hide {
+				display: none;
+				height: 0;
+			}
+			.cytown_gaiyo p::before {
+				display: block;
+				content: "";
+				width: 100%;
+				border-top: 1px solid #ddd;
+				height: 10px;
+			}
+		</style>
+		<p style="text-align: center; width: max-content; margin: 10px auto; grid-column: 1 / 3;">
+			5人の家族
+		</p>
+		<!-- リンク先をそれぞれのモールにしないといけないので注意してください -->
+		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.ne.jp/gold/cyberl2010/"><img class="lazyload" data-src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_br.jpg" alt="" width="100%"></a></div>
+		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.ne.jp/gold/oruta/"><img class="lazyload" data-src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_tr.jpg" alt="" width="100%"></a></div>
+		<div class="cytown_gaiyo_items"><img class="lazyload" data-src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_or.jpg" alt="" width="100%"></div>
+		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.ne.jp/gold/tavarat/"><img class="lazyload" data-src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_ta.jpg" alt="" width="100%"></a></div>
+		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.co.jp/asoboze"><img class="lazyload" data-src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_as.jpg" alt="" width="100%"></a></div>
+				<div class="cytown_backTop">
+		<style>
+			.cytown_backTop {
+				display: block;
+				width: max-content;
+				margin-right: 0px;
+				margin-left: auto;
+				margin-bottom: 20px;
+			}
+		</style>
+		<a href="#cytownTop">ページTOPへ戻る</a>
+	</div>
+	</div>
+
 	<!--  チェック入ってる人を表示 -->
+		
 		<div id="cytown_product_stockbox">
 		</div>
 		
@@ -1593,7 +1662,7 @@ shuffleContent($(".cytown_products"));
 	$(function(){
 		$('.cytown_menu').click(function(){
 			$('.cytown_product').removeClass('cytown_product_hide');
-		
+		$('#cytown_gaiyo').addClass('cytown_gaiyo_hide');
 
 
 			
@@ -2005,36 +2074,9 @@ $(function() {
 		
 	
 	</div>
-	<div id="cytown_gaiyo" class="cytown_gaiyo">
-		<style>
-			.cytown_gaiyo p::before {
-				display: block;
-				content: "";
-				width: 100%;
-				border-top: 1px solid #ddd;
-				height: 10px;
-			}
-		</style>
-		<p style="text-align: center; width: max-content; margin: 10px auto;">
-			5人の家族
-		</p>
-		<!-- リンク先をそれぞれのモールにしないといけないので注意してください -->
-		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.ne.jp/gold/cyberl2010/"><img class="lazyload" data-src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_br.jpg" alt="" width="100%"></a></div>
-		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.ne.jp/gold/oruta/"><img class="lazyload" data-src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_tr.jpg" alt="" width="100%"></a></div>
-		<div class="cytown_gaiyo_items"><img class="lazyload" data-src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_or.jpg" alt="" width="100%"></div>
-		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.ne.jp/gold/tavarat/"><img class="lazyload" data-src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_ta.jpg" alt="" width="100%"></a></div>
-		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.co.jp/asoboze"><img class="lazyload" data-src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_as.jpg" alt="" width="100%"></a></div>
-	</div>
+	
+	
 	<div class="cytown_backTop">
-		<style>
-			.cytown_backTop {
-				display: block;
-				width: max-content;
-				margin-right: 0px;
-				margin-left: auto;
-				margin-bottom: 20px;
-			}
-		</style>
 		<a href="#cytownTop">ページTOPへ戻る</a>
 	</div>
 	<style>
