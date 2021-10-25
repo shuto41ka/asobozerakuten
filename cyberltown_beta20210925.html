@@ -17,7 +17,7 @@
     <title>革製品とビジネスバッグの通販サイト | asoboze (アソボーゼ)楽天市場店｜</title>
 <meta name="description" content="" />
 <meta name="keywords" content="" />
-	-<link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.css" />
+<link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.css" />
     <script src="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.js"></script> 
  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
 <meta name="description" content="" />
@@ -37,6 +37,9 @@
 			$('#cytown_gaiyo').removeClass('cytown_gaiyo_hide');
 		$('.cytown_menu').prop('checked', false);
 			$('.cytownMenuCheckbox').prop('checked', false);			
+		});
+		$('a[href="#cytownTop"]').click(function(){
+			$('#cytown_gaiyo').addClass('cytown_gaiyo_hide');			
 		});
 //ページ内リンクスムーススクロール
   $('a[href^="#"]').on('click', function () {
@@ -148,6 +151,10 @@ max-width: 760px;
 			font-size: 12px;
 			padding-left: 1em;
 		}
+		.family_disc_body p.family_disc_caution {
+			font-size: 10px;
+			margin-top: 20px;
+		}
 		@media (min-width:760px) {
 		.family_disc_wrap {
 			margin-top: 50px;
@@ -157,6 +164,9 @@ max-width: 760px;
 		}
 		.family_disc_body p {
 			font-size: 16px;
+		}
+		.family_disc_body p.family_disc_caution {
+			font-size: 12px;
 		}
 			
 		}
@@ -174,6 +184,7 @@ max-width: 760px;
 		<div class="family_disc_body">
 			<p>サイバール株式会社が運営する5つのブランド（Broome・TRAN PARAN・oruTa・TAVARAT・asoboze）を1つの家族のメンバーとして表現しています。</p>
 			<p>それぞれのブランドについて詳しくご覧になりたい方は<a href="#cytown_gaiyo">こちら</a>をクリックしてください。</p>
+			<p class="family_disc_caution">※商品についてのお問い合わせは、その商品のお買い物ページよりお問い合わせくださいませ。その商品の取り扱いのないブランドにお問い合わせいただきましてもお答えいたしかねますので、あらかじめご了承ください。</p>
 		</div>
 	</div>
 	<!-- ここからトップバナー -->
