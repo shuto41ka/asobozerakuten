@@ -18,8 +18,8 @@
 <meta name="description" content="タオルや生活雑貨からファッション小物まで、幅広いギフトアイテムが勢揃い。" />
 <meta name="keywords" content="ギフト,プレゼント,クリスマス,誕生日" />
 	
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
 	$(function() {
 		$('a[href="#cytown_gaiyo"]').click(function(){
@@ -53,9 +53,8 @@ $(function() {
 });
 </script>
 	<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
-	<script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
+<script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
 
-	
 	<!-- 各自で更新し、tavarat担当にサーバアップしてもらうファイルを読み込む場所 -->
 	<script>
 
@@ -66,7 +65,7 @@ $(function() {
 			$('#cytown_slider_br').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_broome.html .cytown_slider_broome");
 			$('#cytown_slider_tr').load("https://www.rakuten.ne.jp/gold/oruta/event/cytown_dataset_tranparan.html .cytown_slider_tranparan");
 			$('#cytown_slider_ta').load("https://www.rakuten.ne.jp/gold/tavarat/cytown/cytown_dataset_tavarat.html .cytown_slider_tavarat");
-			$('#cytown_slider_or').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_oruta.html .cytown_slider_oruta");
+			//$('#cytown_slider_or').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_oruta.html .cytown_slider_oruta");
 
 			
 	$('#cytown_product_stockbox_broome').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_broome.html .brand_broome');
@@ -85,6 +84,8 @@ $(function() {
 		
 	</script>
 	<!-- 各自で更新し、tavarat担当にサーバアップしてもらうファイルを読み込む場所 -->
+	
+	
 	
 	<!-- 画像が多すぎるので遅延ロード　-->
 
@@ -520,7 +521,7 @@ https://flickity.metafizzy.co
 <div class="container">
 	<!--  オルタないモールは5番目の要素を消していく -->
 	<div class="carousel">
-		<div class="carousel__items gallery js-flickity" data-flickity-options="'{ 'wrapAround': true }">
+		<div class="carousel__items gallery js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay": 3000 }'>
 			<div class="carousel__item gallery-cell" id="cytown_slider_br"><img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt=""></div>
 			<div class="carousel__item gallery-cell" id="cytown_slider_tr"><img src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg" alt=""></div>
 			<div class="carousel__item gallery-cell" id="cytown_slider_ta"><img src="//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg" alt=""></div>
