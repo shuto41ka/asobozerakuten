@@ -1727,56 +1727,56 @@ shuffleContent($(".cytown_products"));
 	if(
 	$('.cytown_menu[id *="category"]:checked').length >  0
 	){
-		$('.cytown_product').removeClass('cytown_product_hide2');
+		$('.cytown_product').addClass('cytown_product_hide2');
 		if (
-		$("#category_towel_bath").prop("checked") == false
+		$("#category_towel_bath").prop("checked") == true
 		){
-			$('.category_towel_bath') .addClass('cytown_product_hide2');
+			$('.category_towel_bath') .removeClass('cytown_product_hide2');
 		}; 
 		if (
-		$("#category_towel_face").prop("checked") == false
+		$("#category_towel_face").prop("checked") == true
 		){
-			$('.category_towel_face') .addClass('cytown_product_hide2');
+			$('.category_towel_face') .removeClass('cytown_product_hide2');
 		}; 
 		if (
-		$("#category_towel_hand").prop("checked") == false
+		$("#category_towel_hand").prop("checked") == true
 		){
-			$('.category_towel_hand') .addClass('cytown_product_hide2');
+			$('.category_towel_hand') .removeClass('cytown_product_hide2');
 		}; 
 		if (
-		$("#category_towel_gauze").prop("checked") == false
+		$("#category_towel_gauze").prop("checked") == true
 		){
-			$('.category_towel_gauze') .addClass('cytown_product_hide2');
+			$('.category_towel_gauze') .removeClass('cytown_product_hide2');
 		}; 
 		if (
-		$("#category_towel_assort").prop("checked") == false
+		$("#category_towel_assort").prop("checked") == true
 		){
-			$('.category_towel_assort') .addClass('cytown_product_hide2');
+			$('.category_towel_assort') .removeClass('cytown_product_hide2');
 		}; 
 		if (
-		$("#category_bag").prop("checked") == false		
+		$("#category_bag").prop("checked") == true		
 		) {
-			$('.category_bag') .addClass('cytown_product_hide2');			
+			$('.category_bag') .removeClass('cytown_product_hide2');			
 			}
 		if (
-		$("#category_leathergoods").prop("checked") == false		
+		$("#category_leathergoods").prop("checked") == true		
 		) {
-			$('.category_leathergoods') .addClass('cytown_product_hide2');						
+			$('.category_leathergoods') .removeClass('cytown_product_hide2');						
 			}
 		if (
-		$("#category_home").prop("checked") == false		
+		$("#category_home").prop("checked") == true		
 		) {
-			$('.category_home') .addClass('cytown_product_hide2');						
+			$('.category_home') .removeClass('cytown_product_hide2');						
 			}
 		if (
-		$("#category_sleep").prop("checked") == false		
+		$("#category_sleep").prop("checked") == true		
 		) {
-			$('.category_sleep') .addClass('cytown_product_hide2');						
+			$('.category_sleep') .removeClass('cytown_product_hide2');						
 			}
 		if (
-		$("#category_fashion").prop("checked") == false		
+		$("#category_fashion").prop("checked") == true		
 		) {
-			$('.category_fashion') .addClass('cytown_product_hide2');						
+			$('.category_fashion') .removeClass('cytown_product_hide2');						
 			}else {
 				;
 	};
@@ -1871,7 +1871,7 @@ shuffleContent($(".cytown_products"));
 		}
 			;
 			
-			//素材で探すとき			
+			//価格で探すとき			
 	if(
 	$('.cytown_menu[id *="price"]:checked').length > 0
 	){
