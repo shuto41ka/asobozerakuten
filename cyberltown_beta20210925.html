@@ -60,11 +60,24 @@ $(function() {
 			//$('#cytown_slider_or').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_oruta.html .cytown_slider_oruta");
 
 			
-	$('#cytown_product_stockbox_broome').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_broome.html .brand_broome');
-			$('#cytown_product_stockbox_tranparan').load('https://www.rakuten.ne.jp/gold/oruta/event/cytown_dataset_tranparan.html .brand_tranparan');
-			$('#cytown_product_stockbox_tavarat').load('https://www.rakuten.ne.jp/gold/tavarat/cytown/cytown_dataset_tavarat.html .brand_tavarat');
-			$('#cytown_product_stockbox_oruta').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_oruta.html .brand_oruta');
-			$('#cytown_product_stockbox_aso').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_aso.html .brand_aso');
+	$('#cytown_product_stockbox_broome').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_broome.html .brand_broome', function(response, status, xhr){
+		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_broome div'));
+	});
+			$('#cytown_product_stockbox_tranparan').load('https://www.rakuten.ne.jp/gold/oruta/event/cytown_dataset_tranparan.html .brand_tranparan', function(response, status, xhr){
+		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_tranparan div'));
+	});
+			$('#cytown_product_stockbox_tavarat').load('https://www.rakuten.ne.jp/gold/tavarat/cytown/cytown_dataset_tavarat.html .brand_tavarat', function(response, status, xhr){
+		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_tavarat div'));
+	});
+			$('#cytown_product_stockbox_oruta').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_oruta.html .brand_oruta', function(response, status, xhr){
+		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_oruta div'));
+	});
+			$('#cytown_product_stockbox_aso').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_aso.html .brand_aso', function(response, status, xhr){
+		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_aso div'));
+	});
+
+
+			
 				
 			  $("img.lazyload").lazyload();
 
@@ -1517,17 +1530,17 @@ grid-template-columns: 1fr 1fr 1fr;
 
 	<!--  チェック入ってる人を表示 -->
 		
-		<div id="cytown_product_stockbox">
-		</div>
-		
+
 		 
 <div class="cytown_product_wrap" id="cytown_product_wrap">
-			<div id="cytown_product_stockbox_broome"  class="cytown_products"></div>
-			<div id="cytown_product_stockbox_tavarat" class="cytown_products"></div>
-			<div id="cytown_product_stockbox_tranparan" class="cytown_products"></div>
-			<div id="cytown_product_stockbox_oruta" class="cytown_products"></div>
-			<div id="cytown_product_stockbox_aso" class="cytown_products"></div>			
-	
+			<div id="cytown_product_stockbox_broome"  class="cytown_products" style="display: none;"></div>
+			<div id="cytown_product_stockbox_tavarat" class="cytown_products" style="display: none;"></div>
+			<div id="cytown_product_stockbox_tranparan" class="cytown_products" style="display: none;"></div>
+			<div id="cytown_product_stockbox_oruta" class="cytown_products" style="display: none;"></div>
+			<div id="cytown_product_stockbox_aso" class="cytown_products" style="display: none;"></div>			
+			<div id="cytown_product_stockbox" class="cytown_products">
+		</div>
+		
 		</div>
 	
 <style>
@@ -1602,20 +1615,30 @@ margin: 30px 1%;
 }
 	//最初に表示するタグ（初回はクリスマスなので、scene_christmasを持つ商品は表示
 	$(window).on('load', function(){
-shuffleContent($(".cytown_products"));
-		const set = new Set();
+		
+		
+		/*
+		$(function(){
+  var randomContent = [];
+  $('#cytown_products > *').each(function() {
+    randomContent.push($(this).html());
+  });
+  
+  randomContent.sort(function() {
+    return Math.random() - Math.random();
+  });
+  $('#cytown_products > *').empty();
+    i = 0;
+    $('#cytown_products > *').each(function() {
+    $(this).append(randomContent[i]);
+    i++;
+  });
+});
 
-$('.cytown_product').filter(
-    function() {
-        const t = $(this).html();
-        if (set.has(t))
-            return true;
-        else {
-            set.add(t);
-            return false;
-        }
-    }
-).remove();
+*/
+shuffleContent($(".cytown_products"));
+
+
 		  $("img.lazyload").lazyload();
 
 		//cytown_productタグを追加
@@ -2099,7 +2122,7 @@ $(function() {
 			}
 		}
 		#cytown_product_stockbox {
-			display: none;
+			/*display: none;*/
 		}
 	</style>
 
