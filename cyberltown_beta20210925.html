@@ -1603,6 +1603,19 @@ margin: 30px 1%;
 	//最初に表示するタグ（初回はクリスマスなので、scene_christmasを持つ商品は表示
 	$(window).on('load', function(){
 shuffleContent($(".cytown_products"));
+		const set = new Set();
+
+$('.cytown_product').filter(
+    function() {
+        const t = $(this).html();
+        if (set.has(t))
+            return true;
+        else {
+            set.add(t);
+            return false;
+        }
+    }
+).remove();
 		  $("img.lazyload").lazyload();
 
 		//cytown_productタグを追加
