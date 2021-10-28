@@ -843,7 +843,9 @@ margin: 30px 1%;
 			width: 100%;
 		}
 
-
+		.cytown_product_stockbox_hide{
+			display: none;
+		}
 	@media (min-width: 760px) {
 		
 						.cytown_gaiyo {
@@ -964,9 +966,20 @@ left: 25px;
 		
 	}
 
-	
+			 .cytown_product_hide,
+	 .cytown_product_hide1,
+	 .cytown_product_hide2,
+	 .cytown_product_hide3,
+	 .cytown_product_hide4,
+	 .cytown_product_hide5,
+	 .cytown_product_hide6,
+	 .cytown_product_hide7	
+	{
+		display: none;
+	}
     </style>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script>
 	$(function() {
 		$('a[href="#cytown_gaiyo"]').click(function(){
@@ -995,7 +1008,6 @@ left: 25px;
 <script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
 	
 
-	<!-- 各自で更新し、tavarat担当にサーバアップしてもらうファイルを読み込む場所 -->
 	<script>
 
 		$(function() {
@@ -1005,7 +1017,7 @@ left: 25px;
 			$('#cytown_slider_br').load("https://www.rakuten.ne.jp/gold/cyberl2010/cytown_dataset_broome.html .cytown_slider_broome");
 			$('#cytown_slider_tr').load("https://www.rakuten.ne.jp/gold/oruta/event/cytown_dataset_tranparan.html .cytown_slider_tranparan");
 			$('#cytown_slider_ta').load("https://www.rakuten.ne.jp/gold/tavarat/cytown/cytown_dataset_tavarat.html .cytown_slider_tavarat");
-			//$('#cytown_slider_or').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_oruta.html .cytown_slider_oruta");
+			$('#cytown_slider_or').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_oruta.html .cytown_slider_oruta");
 
 			
 	$('#cytown_product_stockbox_broome').load('https://www.rakuten.ne.jp/gold/cyberl2010/cytown_dataset_broome.html .brand_broome', function(response, status, xhr){
@@ -1035,7 +1047,6 @@ left: 25px;
 		
 
 	</script>
-	<!-- 各自で更新し、tavarat担当にサーバアップしてもらうファイルを読み込む場所 -->
 
 
 	
@@ -1566,7 +1577,7 @@ left: 25px;
 			<div id="cytown_product_stockbox_tranparan" class="cytown_products" style="display: none;"></div>
 			<div id="cytown_product_stockbox_oruta" class="cytown_products" style="display: none;"></div>
 			<div id="cytown_product_stockbox_aso" class="cytown_products" style="display: none;"></div>			
-			<div id="cytown_product_stockbox" class="cytown_products">
+			<div id="cytown_product_stockbox" class="cytown_products cytown_product_stockbox_hide">
 		</div>
 		
 		</div>
@@ -1583,9 +1594,9 @@ left: 25px;
 }
 	//最初に表示するタグ（初回はクリスマスなので、scene_christmasを持つ商品は表示
 	$(window).on('load', function(){
-		
 	
 shuffleContent($(".cytown_products"));
+		$('#cytown_product_stockbox').removeClass('cytown_product_stockbox_hide');
 
 
 		  $("img.lazyload").lazyload();
