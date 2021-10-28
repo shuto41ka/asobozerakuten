@@ -9,95 +9,9 @@
     <title>「5人の家族」が贈る、とっておきのアイテム。|　cyberl town（サイバールタウン）｜</title>
 <meta name="description" content="タオルや生活雑貨からファッション小物まで、幅広いギフトアイテムが勢揃い。" />
 <meta name="keywords" content="ギフト,プレゼント,クリスマス,誕生日" />
-	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-	$(function() {
-		$('a[href="#cytown_gaiyo"]').click(function(){
-			$('#cytown_gaiyo').removeClass('cytown_gaiyo_hide');
-		$('.cytown_menu').prop('checked', false);
-			$('.cytownMenuCheckbox').prop('checked', false);			
-		});
-		$('a[href="#cytownTop"]').click(function(){
-			$('#cytown_gaiyo').addClass('cytown_gaiyo_hide');			
-		});
-//ページ内リンクスムーススクロール
-  $('a[href^="#"]').on('click', function () {
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == "" ? 'html' : href);
-    var position = target.offset().top;
-	  position -= 200;
-    $("html, body").animate({scrollTop: position}, 1500, "swing");
-    return false;
-  });
-	});
-	</script>
-
-<script>
-$(function() {
-    $(".icon-wrap").click(function() {
-            $(this).toggleClass("active");
-            $("body").toggleClass("fixing");
-        });
-
-	
-});
-</script>
-	<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
-<script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
-
-	<!-- 各自で更新し、tavarat担当にサーバアップしてもらうファイルを読み込む場所 -->
-	<script>
-
-		$(function() {
-			
-			//スライダー用の場所。
-			$('#cytown_slider_as').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_aso.html .cytown_slider_aso");
-			$('#cytown_slider_br').load("https://www.rakuten.ne.jp/gold/cyberl2010/cytown_dataset_broome.html .cytown_slider_broome");
-			$('#cytown_slider_tr').load("https://www.rakuten.ne.jp/gold/oruta/event/cytown_dataset_tranparan.html .cytown_slider_tranparan");
-			$('#cytown_slider_ta').load("https://www.rakuten.ne.jp/gold/tavarat/cytown/cytown_dataset_tavarat.html .cytown_slider_tavarat");
-			//$('#cytown_slider_or').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_oruta.html .cytown_slider_oruta");
-
-			
-	$('#cytown_product_stockbox_broome').load('https://www.rakuten.ne.jp/gold/cyberl2010/cytown_dataset_broome.html .brand_broome', function(response, status, xhr){
-		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_broome div'));
-	});
-			$('#cytown_product_stockbox_tranparan').load('https://www.rakuten.ne.jp/gold/oruta/event/cytown_dataset_tranparan.html .brand_tranparan', function(response, status, xhr){
-		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_tranparan div'));
-	});
-			$('#cytown_product_stockbox_tavarat').load('https://www.rakuten.ne.jp/gold/tavarat/cytown/cytown_dataset_tavarat.html .brand_tavarat', function(response, status, xhr){
-		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_tavarat div'));
-	});
-			$('#cytown_product_stockbox_oruta').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_oruta.html .brand_oruta', function(response, status, xhr){
-		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_oruta div'));
-	});
-			$('#cytown_product_stockbox_aso').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_aso.html .brand_aso', function(response, status, xhr){
-		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_aso div'));
-	});
-
-
-			
-				
-			  $("img.lazyload").lazyload();
-
-
 		
-		});
-		
-
-		
-	</script>
-	<!-- 各自で更新し、tavarat担当にサーバアップしてもらうファイルを読み込む場所 -->
-	
-	
-	
-	<!-- 画像が多すぎるので遅延ロード　-->
-
-	
-	
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
     <style>
-		@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
 
 		
 		    div, p, img, body {
@@ -108,25 +22,11 @@ $(function() {
         color: #3e3a39;
     }
 
-        @media and screen and (min-width: 1200px) {
-            .wraphalf {
-                display: -webkit-flex;
-                display: flex;
-                    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-align-items: center;
-    align-items: center;
-    height: auto;
-            }
-        }
-        @media and screen and (orientation: portrait) {
+
             body {
                 overflow-x: hidden;
             }
-        }
-		.spheader_aso {
-			overflow-x: hidden;
-		}
+
 		.family_disc_wrap {
 			width: 80vw;
 margin: 20px auto;
@@ -150,46 +50,7 @@ max-width: 760px;
 			font-size: 10px;
 			margin-top: 20px;
 		}
-		@media (min-width:760px) {
-		.family_disc_wrap {
-			margin-top: 50px;
-			}
-			.family_disc_head p {
-			font-size: 24px;
-		}
-		.family_disc_body p {
-			font-size: 16px;
-		}
-		.family_disc_body p.family_disc_caution {
-			font-size: 12px;
-		}
-			
-		}
-    </style>
-</head>
-
-<body>
-
-	<!-- ここからトップバナー -->
-	<img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/green1500_top.jpg" width="100%" alt="" id="cytownTop">
-	<div class="family_disc_wrap">
-		<div class="family_disc_head">
-			<p>「5人の家族」とは</p>
-		</div>
-		<div class="family_disc_body">
-			<p>サイバール株式会社が運営する5つのブランド（Broome・TRAN PARAN・oruTa・TAVARAT・asoboze）を1つの家族のメンバーとして表現しています。</p>
-			<p>それぞれのブランドについて詳しくご覧になりたい方は<a href="#cytown_gaiyo">こちら</a>をクリックしてください。</p>
-			<p class="family_disc_caution">※商品についてのお問い合わせは、その商品のお買い物ページよりお問い合わせくださいませ。その商品の取り扱いのないブランドにお問い合わせいただきましてもお答えいたしかねますので、あらかじめご了承ください。</p>
-		</div>
-	</div>
-	<!-- ここからトップバナー -->
-	
-	
-	
-	
-<!-- ここからスライダー -->
-	<style>
-		　/* オルタないモールは、「child(5)」を「child(4)」に変更*/
+	　/* オルタないモールは、「child(5)」を「child(4)」に変更*/
 .carousel > input[type=radio]:nth-child(5):checked ~ .carousel__next > label:nth-child(1), .carousel > input[type=radio]:nth-child(5):checked ~ .carousel__prev > label:nth-child(4), .carousel > input[type=radio]:nth-child(4):checked ~ .carousel__next > label:nth-child(5), .carousel > input[type=radio]:nth-child(4):checked ~ .carousel__prev > label:nth-child(3), .carousel > input[type=radio]:nth-child(3):checked ~ .carousel__next > label:nth-child(4), .carousel > input[type=radio]:nth-child(3):checked ~ .carousel__prev > label:nth-child(2), .carousel > input[type=radio]:nth-child(2):checked ~ .carousel__next > label:nth-child(3), .carousel > input[type=radio]:nth-child(2):checked ~ .carousel__prev > label:nth-child(1), .carousel > input[type=radio]:nth-child(1):checked ~ .carousel__next > label:nth-child(2), .carousel > input[type=radio]:nth-child(1):checked ~ .carousel__prev > label:nth-child(5) {
   opacity: 1 !important;
   z-index: 3;
@@ -209,12 +70,7 @@ max-width: 760px;
   width: 100%;
   margin: 20px auto;
 }
-		@media (min-width:760px) {
-.container {
-  margin: 50px auto;
-}
-			
-		}
+
 .carousel {
   width: 100%;
   position: relative;
@@ -375,11 +231,7 @@ body { font-family: sans-serif; }
   margin-right: 10px;
   counter-increment: gallery-cell;
 }
-		@media (min-width:760px) {
-			.gallery-cell {
-				padding: 20px;
-			}
-		}
+
 /* cell number */
 .gallery-cell:before {
   display: none;
@@ -521,29 +373,7 @@ https://flickity.metafizzy.co
 .flickity-page-dots .dot.is-selected {
   opacity: 1;
 }
-	</style>
-
-<div class="container">
-	<!--  オルタないモールは5番目の要素を消していく -->
-	<div class="carousel">
-		<div class="carousel__items gallery js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay": 3000 }'>
-			<div class="carousel__item gallery-cell" id="cytown_slider_br"><img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt=""></div>
-			<div class="carousel__item gallery-cell" id="cytown_slider_tr"><img src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg" alt=""></div>
-			<div class="carousel__item gallery-cell" id="cytown_slider_ta"><img src="//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg" alt=""></div>
-			<div class="carousel__item gallery-cell" id="cytown_slider_as"><img src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg" alt=""></div>
-	<!--  オルタないモールは5番目の要素を消していく 
-			<div class="carousel__item gallery-cell" id="cytown_slider_or"><img src="//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg" alt=""></div>-->
-		</div>
-     
-     
-     
-   </div>
- </div>
-<!--  ここまでスライダー -->
-	
-	
-	<!-- ここからメニュー  -->
-	<style>
+		
 		.cytownMenuCheckbox {
 			display: none;
 		}
@@ -561,6 +391,7 @@ https://flickity.metafizzy.co
   padding: 0;
   display: flex;
 	box-sizing: border-box;
+
 	position: relative;
 }
 .gnav .nav li {
@@ -760,24 +591,7 @@ transform: translateY(-50%);
 		.gnav .nav li.category_towel ul li .cytown_menu + label {
 			background: #ddd;
 		}
-			@media (min-width:760px) {
-						.gnav .nav >  li p::after {
-margin: 0 45px;
-top: 20px;
-		}
 
-								.gnav .nav li.cytown_color .cytown_menu + label::before {
-									width: 20px;
-height: 20px;
-left: 25px;
-				}
-			.gnav .nav li .cytown_menu + label {
-				font-size: 16px
-			}
-			.gnav .nav li .cytown_menu {
-				font-size: 20px;
-			}
-		}
 .gnav .nav li:first-child {
   border-left: 1px solid #eee;
 }
@@ -969,8 +783,126 @@ grid-template-columns: 1fr 1fr 1fr;
 }
 		
 		
-@media (min-width: 769px) {
-		.gnav .nav >  li::before {
+
+
+
+	
+		
+					.cytown_gaiyo {
+				max-height: 10000px;
+				transition-duration: .5s;
+			}
+			.cytown_gaiyo.cytown_gaiyo_hide {
+				display: none;
+				height: 0;
+			}
+			.cytown_gaiyo p::before {
+				display: block;
+				content: "";
+				width: 100%;
+				border-top: 1px solid #ddd;
+				height: 10px;
+			}
+		
+					.cytown_backTop {
+				display: block;
+				width: max-content;
+				margin-right: 0px;
+				margin-left: auto;
+				margin-bottom: 20px;
+			}
+			.cytown_product {
+		display: inline-block;
+		float: left;
+width: 31%;
+margin: 30px 1%;
+		position: relative;
+	}
+
+	.cytown_products {
+		width: auto;
+		display: inline;
+		/*
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 30px;		
+		*/
+	}
+	.cytown_menu {
+		cursor: pointer;
+	}
+	.cytown_product_wrap {
+		width: 90%;
+		margin: 20px auto;
+		overflow: auto;
+		min-height: 80vh;
+		max-width: 760px;
+	}
+
+				.cytown_gaiyo_items {
+			width: 100%;
+		}
+
+
+	@media (min-width: 760px) {
+		
+						.cytown_gaiyo {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				width: 100%;
+				max-width: 1200px;
+				margin: auto;
+			}
+					.family_disc_wrap {
+			margin-top: 50px;
+			}
+			.family_disc_head p {
+			font-size: 24px;
+		}
+		.family_disc_body p {
+			font-size: 16px;
+		}
+		.family_disc_body p.family_disc_caution {
+			font-size: 12px;
+		}
+.container {
+  margin: 50px auto;
+}
+			
+		
+								.gnav .nav >  li p::after {
+margin: 0 45px;
+top: 20px;
+		}
+
+								.gnav .nav li.cytown_color .cytown_menu + label::before {
+									width: 20px;
+height: 20px;
+left: 25px;
+				}
+			.gnav .nav li .cytown_menu + label {
+				font-size: 16px
+			}
+			.gnav .nav li .cytown_menu {
+				font-size: 20px;
+			}
+					.gallery-cell {
+				padding: 20px;
+			}
+		.cytown_product_wrap {
+			grid-gap: 100px;
+			max-width: 760px;
+			margin: 100px auto;
+		}
+			.cytown_product {
+		display: inline-block;
+		float: left;
+			padding: 15px;
+	}
+				.cytown_product_wrap {
+			margin: 50px auto;
+		}
+				.gnav .nav >  li::before {
 			margin: 10px 45px;
 		}
 
@@ -1029,13 +961,133 @@ grid-template-columns: 1fr 1fr 1fr;
 .content {
   width: 755px;
 }
-/* ** */}
 		
+	}
+
+	
+    </style>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+	$(function() {
+		$('a[href="#cytown_gaiyo"]').click(function(){
+			$('#cytown_gaiyo').removeClass('cytown_gaiyo_hide');
+		$('.cytown_menu').prop('checked', false);
+			$('.cytownMenuCheckbox').prop('checked', false);			
+		});
+		$('a[href="#cytownTop"]').click(function(){
+			$('#cytown_gaiyo').addClass('cytown_gaiyo_hide');			
+		});
+//ページ内リンクスムーススクロール
+  $('a[href^="#"]').on('click', function () {
+    var href = $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top;
+	  position -= 200;
+    $("html, body").animate({scrollTop: position}, 1500, "swing");
+    return false;
+  });
+	});
+	
+	</script>
 
 
-		}
+	<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+<script src="https://unpkg.com/flickity@2.2.2/dist/flickity.pkgd.min.js"></script>
+	
+
+	<!-- 各自で更新し、tavarat担当にサーバアップしてもらうファイルを読み込む場所 -->
+	<script>
+
+		$(function() {
+
+			//スライダー用の場所。
+			$('#cytown_slider_as').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_aso.html .cytown_slider_aso");
+			$('#cytown_slider_br').load("https://www.rakuten.ne.jp/gold/cyberl2010/cytown_dataset_broome.html .cytown_slider_broome");
+			$('#cytown_slider_tr').load("https://www.rakuten.ne.jp/gold/oruta/event/cytown_dataset_tranparan.html .cytown_slider_tranparan");
+			$('#cytown_slider_ta').load("https://www.rakuten.ne.jp/gold/tavarat/cytown/cytown_dataset_tavarat.html .cytown_slider_tavarat");
+			//$('#cytown_slider_or').load("https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_oruta.html .cytown_slider_oruta");
+
+			
+	$('#cytown_product_stockbox_broome').load('https://www.rakuten.ne.jp/gold/cyberl2010/cytown_dataset_broome.html .brand_broome', function(response, status, xhr){
+		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_broome div'));
+	});
+			$('#cytown_product_stockbox_tranparan').load('https://www.rakuten.ne.jp/gold/oruta/event/cytown_dataset_tranparan.html .brand_tranparan', function(response, status, xhr){
+		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_tranparan div'));
+	});
+			$('#cytown_product_stockbox_tavarat').load('https://www.rakuten.ne.jp/gold/tavarat/cytown/cytown_dataset_tavarat.html .brand_tavarat', function(response, status, xhr){
+		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_tavarat div'));
+	});
+			$('#cytown_product_stockbox_oruta').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_oruta.html .brand_oruta', function(response, status, xhr){
+		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_oruta div'));
+	});
+			$('#cytown_product_stockbox_aso').load('https://www.rakuten.ne.jp/gold/asoboze/cytown_dataset/cytown_dataset_aso.html .brand_aso', function(response, status, xhr){
+		$('#cytown_product_stockbox').append($('#cytown_product_stockbox_aso div'));
+	});
+
+
+			
+				
+			  $("img.lazyload").lazyload();
+			
+			$('#loader').addClass('loaded');
+
+		});
 		
-	</style>
+
+	</script>
+	<!-- 各自で更新し、tavarat担当にサーバアップしてもらうファイルを読み込む場所 -->
+
+
+	
+	
+
+
+</head>
+
+<body>
+
+	
+	<div id="afterLoad">
+			<img src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/green1500_top.jpg" width="100%" alt="" id="cytownTop">
+	<div class="family_disc_wrap">
+		<div class="family_disc_head">
+			<p>「5人の家族」とは</p>
+		</div>
+		<div class="family_disc_body">
+			<p>サイバール株式会社が運営する5つのブランド（Broome・TRAN PARAN・oruTa・TAVARAT・asoboze）を1つの家族のメンバーとして表現しています。</p>
+			<p>それぞれのブランドについて詳しくご覧になりたい方は<a href="#cytown_gaiyo">こちら</a>をクリックしてください。</p>
+			<p class="family_disc_caution">※商品についてのお問い合わせは、その商品のお買い物ページよりお問い合わせくださいませ。その商品の取り扱いのないブランドにお問い合わせいただきましてもお答えいたしかねますので、あらかじめご了承ください。</p>
+		</div>
+	</div>
+	<!-- ここからトップバナー -->
+	
+	
+	
+	
+<!-- ここからスライダー -->
+
+
+<div class="container">
+	<!--  オルタないモールは5番目の要素を消していく -->
+	<div class="carousel">
+		<div class="carousel__items gallery js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay": 3000 }'>
+			<div class="carousel__item gallery-cell" id="cytown_slider_br"><img src="//lh5.googleusercontent.com/-cTEgPOnd3l8/U8-EmaZ4KNI/AAAAAAAABc8/6eacbALkQ6A/w1358-h905-no/carousel-1.JPG" alt=""></div>
+			<div class="carousel__item gallery-cell" id="cytown_slider_tr"><img src="//lh4.googleusercontent.com/-ntVHbbWX5eo/U8-EmV8P4cI/AAAAAAAABc4/ICYBGkcztTc/w1358-h905-no/carousel-2.jpg" alt=""></div>
+			<div class="carousel__item gallery-cell" id="cytown_slider_ta"><img src="//lh5.googleusercontent.com/-batEXUZE_e4/U8-EmLF9-hI/AAAAAAAABc0/J3tJVUa6Buk/w1358-h905-no/carousel-3.jpg" alt=""></div>
+			<div class="carousel__item gallery-cell" id="cytown_slider_as"><img src="//lh5.googleusercontent.com/-gywqIeMvel0/U8-EolKdtkI/AAAAAAAABdM/G0-NHuvvJUU/w1358-h905-no/carousel-4.jpg" alt=""></div>
+	<!--  オルタないモールは5番目の要素を消していく 
+			<div class="carousel__item gallery-cell" id="cytown_slider_or"><img src="//lh5.googleusercontent.com/--2iANjL3ikc/U8-EoGJ18mI/AAAAAAAABdI/fBe-q3Gos6Y/w1358-h905-no/carousel-5.jpg" alt=""></div>-->
+		</div>
+     
+     
+     
+   </div>
+ </div>
+<!--  ここまでスライダー -->
+	
+	
+	<!-- ここからメニュー  -->
+
 	
 	<div>
 	<div class="gnav">
@@ -1488,23 +1540,7 @@ grid-template-columns: 1fr 1fr 1fr;
 		
 	<!-- ここまでメニュー  -->
 	<div id="cytown_gaiyo" class="cytown_gaiyo cytown_gaiyo_hide">
-		<style>
-			.cytown_gaiyo {
-				max-height: 10000px;
-				transition-duration: .5s;
-			}
-			.cytown_gaiyo.cytown_gaiyo_hide {
-				display: none;
-				height: 0;
-			}
-			.cytown_gaiyo p::before {
-				display: block;
-				content: "";
-				width: 100%;
-				border-top: 1px solid #ddd;
-				height: 10px;
-			}
-		</style>
+
 		<p style="text-align: center; width: max-content; margin: 10px auto; grid-column: 1 / 3;">
 			5人の家族
 		</p>
@@ -1515,15 +1551,7 @@ grid-template-columns: 1fr 1fr 1fr;
 		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.ne.jp/gold/tavarat/"><img class="lazyload" data-src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_ta.jpg" alt="" width="100%"></a></div>
 		<div class="cytown_gaiyo_items"><a href="https://www.rakuten.co.jp/asoboze"><img class="lazyload" data-src="https://image.rakuten.co.jp/asoboze/cabinet/cytown/cytown_gaiyo_as.jpg" alt="" width="100%"></a></div>
 				<div class="cytown_backTop">
-		<style>
-			.cytown_backTop {
-				display: block;
-				width: max-content;
-				margin-right: 0px;
-				margin-left: auto;
-				margin-bottom: 20px;
-			}
-		</style>
+
 		<a href="#cytownTop">ページTOPへ戻る</a>
 	</div>
 	</div>
@@ -1543,67 +1571,7 @@ grid-template-columns: 1fr 1fr 1fr;
 		
 		</div>
 	
-<style>
-	.cytown_product {
-		display: inline-block;
-		float: left;
-width: 31%;
-margin: 30px 1%;
-		position: relative;
-	}
 
-	.cytown_products {
-		width: auto;
-		display: inline;
-		/*
-		display: grid;
-		grid-template-columns: 1fr 1fr 1fr;
-		grid-gap: 30px;		
-		*/
-	}
-	.cytown_menu {
-		cursor: pointer;
-	}
-	.cytown_product_wrap {
-		width: 90%;
-		margin: 20px auto;
-		overflow: auto;
-		min-height: 80vh;
-		max-width: 760px;
-	}
-	@media (min-width: 760px) {
-		.cytown_product_wrap {
-			margin: 50px auto;
-		}
-	}
-.brand_aso
-	@media (min-width: 760px) {
-		.cytown_product_wrap {
-			grid-gap: 100px;
-			max-width: 760px;
-			margin: 100px auto;
-		}
-			.cytown_product {
-		display: inline-block;
-		float: left;
-		width: calc(20% - 60px);
-		margin: 30px 30px;
-			padding: 15px;
-	}
-	}
-		 .cytown_product_hide,
-	 .cytown_product_hide1,
-	 .cytown_product_hide2,
-	 .cytown_product_hide3,
-	 .cytown_product_hide4,
-	 .cytown_product_hide5,
-	 .cytown_product_hide6,
-	 .cytown_product_hide7	
-	{
-		display: none;
-	}
-
-	</style>
 	
 <script>
 			function shuffleContent(container) {
@@ -1616,26 +1584,7 @@ margin: 30px 1%;
 	//最初に表示するタグ（初回はクリスマスなので、scene_christmasを持つ商品は表示
 	$(window).on('load', function(){
 		
-		
-		/*
-		$(function(){
-  var randomContent = [];
-  $('#cytown_products > *').each(function() {
-    randomContent.push($(this).html());
-  });
-  
-  randomContent.sort(function() {
-    return Math.random() - Math.random();
-  });
-  $('#cytown_products > *').empty();
-    i = 0;
-    $('#cytown_products > *').each(function() {
-    $(this).append(randomContent[i]);
-    i++;
-  });
-});
-
-*/
+	
 shuffleContent($(".cytown_products"));
 
 
@@ -2108,23 +2057,11 @@ $(function() {
 	<div class="cytown_backTop">
 		<a href="#cytownTop">ページTOPへ戻る</a>
 	</div>
-	<style>
-		.cytown_gaiyo_items {
-			width: 100%;
-		}
-		@media (min-width:760px) {
-			.cytown_gaiyo {
-				display: grid;
-				grid-template-columns: 1fr 1fr;
-				width: 100%;
-				max-width: 1200px;
-				margin: auto;
-			}
-		}
-		#cytown_product_stockbox {
-			/*display: none;*/
-		}
-	</style>
+	</div>
+	
+	<!-- ここからトップバナー -->
+
+
 
 </body>
 </html>
