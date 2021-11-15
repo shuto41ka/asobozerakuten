@@ -334,13 +334,11 @@ border-radius: 3px;
 }
 /*  index page */
 	.topicstable tr td {
-		width: 400px;
 		box-sizing: border-box;
 		margin:0 auto;
 		vertical-align: top;
 	}
 	.topicsitem {
-		width: 370px;
 		margin:0 auto 30px;
 	}
 	.asobase03 {
