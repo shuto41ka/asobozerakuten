@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
-@media screen and (min-width: 760px) {
+ 
     .sponly {
         display: none !important;
     }
@@ -15,6 +15,7 @@
         padding: 0;
         margin: 0;
            font-family: 'Noto Sans JP', sans-serif;
+         font-feature-settings: "pkna" 1;
         font-weight: 400;
         color: #3e3a39;
     }
@@ -1378,7 +1379,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
     .spacer--xFAdr.full-width--2JiOP {
         overflow: hidden!important;
     }
-}
+
     @media screen and (orientation: landscape) and (max-aspect-ratio: 8 / 5) {
         .text .disc {
             margin-left: 10%;
