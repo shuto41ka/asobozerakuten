@@ -95,6 +95,7 @@ line-height: 1.4em;
 :root {
 --swiper-theme-color: #ffffff !important;
 }
+    
         .container_aso a img {
             max-width: 100%;
         }
@@ -676,6 +677,13 @@ input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
         .swiper-slide img {
             width: 100%;
         }
+        #footer_aso #styles .swiper {
+        overflow: hidden;
+        width: 100%;
+    }
+    #footer_aso .swiper-wrapper {
+        overflow: visible;
+    }
         .copyright_aso {
             width: 100%;
             height: 60px;
