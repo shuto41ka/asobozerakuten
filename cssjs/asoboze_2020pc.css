@@ -115,7 +115,7 @@ div {
         overflow: inherit;
     }
     #pcIndexRight div {
-        overflow: inherit;
+        overflow: initial;
     }
     .pcindex_right {
         position: fixed;
