@@ -44,9 +44,12 @@ div {
 	.floatingCouponWrapper div.couponOverlay {
 		overflow: hidden;
 	}
-    .swiper-container {
-
+    #footer_aso #styles .swiper {
+        overflow: hidden;
         width: 100%;
+    }
+    #footer_aso .swiper-wrapper {
+        overflow: visible;
     }
     .aso_linebanner {
         position: fixed;
@@ -66,7 +69,7 @@ div {
         width: 94%;
         box-sizing: border-box;
         margin-left: 0;
-        overflow: inherit;
+        overflow: visible;
     }
     .contents_container {
         width: calc(95vw - 140px);
