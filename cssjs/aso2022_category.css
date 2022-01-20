@@ -1,9 +1,6 @@
 @charset "UTF-8";
 /* CSS Document */
 
-        * {
-            overflow-y: hidden;
-        }
                 .aso_cate_menu {
             max-width: calc(100vw - 11px);
             margin: 90px auto 50px;
