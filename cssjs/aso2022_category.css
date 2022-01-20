@@ -235,6 +235,7 @@
         .aso_cate_menu {
             max-width: 1150px;
             margin: 176px auto 100px;
+            font-size: 16px;
         }
         .aso_cate_menu_title div {
             line-height: 36px;
