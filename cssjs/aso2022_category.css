@@ -5,7 +5,6 @@
                 .aso_cate_menu {
             max-width: calc(100vw - 11px);
             margin: 90px auto 50px;
-                    font-size: 12px;
         }
         .aso_cate_menu_title div {
             line-height: 26px;
@@ -88,7 +87,7 @@
             padding-top: 15px;
         }
         .aso_cate_newItem .aso_cate_item_title, .aso_cate_items .aso_cate_item_title {
-            font-size: 16px;
+            font-size: 12px;
             padding-top: 30px;
             padding-bottom: 3px;
             font-weight: bold;
