@@ -175,9 +175,6 @@
             width: 12px;
             height: 12px;
         }
-        .aso_cate_menu_body ul li:first-child, .aso_cate_menu_body ul li:nth-child(5){
-            border-top: 1px solid #000;
-        }
         .aso_cate_newItem {
             background-color: #F2F0EE;            
         }
@@ -292,9 +289,7 @@
             width: 12px;
             height: 12px;
         }
-        .aso_cate_menu_body ul li:first-child, .aso_cate_menu_body ul li:nth-child(5){
-            border-top: 1px solid #000;
-        }
+
         .aso_cate_newItem {
             background-color: #F2F0EE;            
         }
