@@ -117,7 +117,14 @@
 		}
 	</style>
 	<style>
-		body {}
+		//カスタムプロパティの設定
+		:root {
+			--myheight: 100px;
+		}
+
+		body {
+			overflow-x: hidden;
+		}
 
 		table th {
 			padding: 10px;
@@ -203,7 +210,7 @@
 
 		[class*="tsuyu_pages"] {
 			width: 100vw;
-			height: 100vh;
+			height: calc(100vh - 10px);
 			background-size: cover;
 			overflow: hidden;
 			background-position: center center;
@@ -253,7 +260,7 @@
 			height: 70px;
 			/*高さ指定*/
 			z-index: 2;
-			width: 100%;
+			width: 99.9%, TO;
 			background: #fff;
 			/*背景色*/
 		}
@@ -264,14 +271,12 @@
 			/*header とfooterを手前にするため数字を小さく*/
 		}
 
-		div.fixed {
+		/*div.fixed {
 			position: -webkit-sticky;
-			/*Safari*/
 			position: sticky;
 			/*top:70px;/*Header高さ分で止まるようにする*/
-			/*padding: 600px 0;/*デモ画面の高さを持たすための上下余白*/
-		}
-
+		/*padding: 600px 0;/*デモ画面の高さを持たすための上下余白*/
+		/*}*/
 
 
 		div.fixed:last-of-type {
@@ -284,7 +289,7 @@
 			z-index: 2;
 		}
 
-		.fadeInUpTrigger {
+		[class*="fadeInUpTrigger"]  {
 			opacity: 0;
 		}
 
@@ -325,7 +330,8 @@
 				transform: translateY(0);
 			}
 
-			100% {
+			99.9%,
+			TO {
 				opacity: 0;
 
 				transform: translateY(-100px);
@@ -352,7 +358,7 @@
 			position: fixed;
 			bottom: 15px;
 			left: 0;
-			width: 100%;
+			width: 99.9%, TO;
 			text-align: center;
 			z-index: 10;
 		}
@@ -360,8 +366,6 @@
 		.readmore img {
 			width: 60px;
 		}
-
-		.tsuyu_pages03_contents {}
 
 		.pages03_text {
 			text-align: center;
@@ -423,7 +427,8 @@
 				transform: translateY(10vh);
 			}
 
-			100% {
+			99.9%,
+			TO {
 				opacity: 1;
 
 				transform: translateY(calc(10vh - 130px));
@@ -498,7 +503,7 @@
 		.pages_content {
 			position: relative;
 			width: 100vw;
-			height: 100vh;
+			height: calc(100vh - 10px);
 			overflow: hidden;
 		}
 
@@ -512,7 +517,7 @@
 		.change02 {
 			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960879.gif);
 			width: 100vw;
-			height: 100vh;
+			height: calc(100vh - 10px);
 			background-size: 100vw;
 			background-position: bottom;
 			position: absolute;
@@ -550,15 +555,19 @@
 			animation-fill-mode: forwards;
 			transform: translateY(100vh);
 			animation-delay: 13s;
+			opacity: 0;
 		}
 
 		@keyframes fadeUpAnime5 {
 
 			0% {
+				opacity: 0;
 				transform: translateY(100vh);
 			}
 
-			100% {
+			99.9%,
+			TO {
+				opacity: 1;
 				transform: translateY(0);
 			}
 		}
@@ -577,6 +586,7 @@
 			animation-fill-mode: forwards;
 			transform: translateY(100vh);
 			animation-delay: 15s;
+
 		}
 
 		@keyframes fadeUpAnime6 {
@@ -596,10 +606,7 @@
 
 		.pages_content_body_image {
 			width: 76vw;
-			margin: auto auto 0;
-			left: 12vw;
-			position: absolute;
-			bottom: 50px;
+			margin: 50px 12vw 0;
 		}
 
 		.pages06_background01 {
@@ -635,27 +642,28 @@
 				transform: translateY(0);
 			}
 
-			100% {
+			99.9%,
+			TO {
 				opacity: 0;
 				transform: translateY(-100px);
 			}
 		}
 
 		.pages_content_body.change {
-			height: calc(100vh - 132px);
+			height: calc(100vh - 10px);
 		}
 
 		.change_item02.fadeInUpTrigger5.fadeUp6.fadeUp {
-			height: calc(100vh - 132px);
+			height: calc(100vh - 10px);
 			position: relative;
 		}
 
 		.change_item01.fadeInUpTrigger4.fadeUp5 {
-			height: calc(100vh - 132px);
+			height: calc(100vh - 10px);
 		}
 
 		.change_item01.fadeInUpTrigger.fadeUp {
-			height: calc(100vh - 132px);
+			height: calc(100vh - 10px);
 			position: relative;
 		}
 
@@ -663,9 +671,9 @@
 			position: absolute;
 			left: 0;
 			top: 0;
-			width: 100%;
+			width: 99.9%, TO;
 			transform: rotate(10deg);
-			height: 100%;
+			height: 99.9%, TO;
 		}
 
 		/*widthは雨の太さ、heightは長さ*/
@@ -753,6 +761,13 @@
 
 		.recommendItem .backTo div a {
 			margin-left: 0;
+		}
+
+		/*768px以下は現在地表示のテキストを非表示*/
+		@media screen and (max-width:768px) {
+			.pagination a .hover-text {
+				display: none;
+			}
 		}
 	</style>
 	<style>
@@ -872,7 +887,7 @@
 		}
 
 		.rains span:nth-child(20) {
-			left: 100%;
+			left: 99.9%, TO;
 			top: -190px;
 			animation: rain-anim9 13s infinite;
 		}
@@ -1033,7 +1048,8 @@
 				transform: translate(50px, 600px);
 			}
 
-			100% {
+			99.9%,
+			TO {
 				transform: translate(0px, 0px);
 			}
 
@@ -1044,8 +1060,8 @@
 			position: absolute;
 			left: 0;
 			top: 0;
-			width: 100%;
-			height: 100%;
+			width: 99.9%, TO;
+			height: 99.9%, TO;
 		}
 
 		.splat span {
@@ -1172,7 +1188,7 @@
 		}
 
 		.splat span:nth-child(20) {
-			left: 100%;
+			left: 99.9%, TO;
 			top: 85%;
 			animation: splat-anim 8.2s infinite;
 		}
@@ -1261,13 +1277,16 @@
 				transform: scale(0);
 			}
 
-			100% {
+			99.9%,
+			TO {
 				opacity: 0;
 				transform: scale(0);
 			}
 
 		}
 	</style>
+
+	<link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/pagePiling.js-master/jquery.pagepiling.css">
 </head>
 
 <body>
@@ -1292,9 +1311,6 @@
 					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/2022tsuyu/imgrc0108746308.gif"
 						width="100%" alt="">
 				</div>
-			</div>
-			<div class="readmore" id="readmore1">
-				<img src="https://asoboze.itembox.design/item/asocon_06.png" alt="">
 			</div>
 		</div>
 		<div id="box3" class="box tsuyu_pages03 fixed" data-section-name="Area3">
@@ -1340,9 +1356,6 @@
 						</li>
 					</ul>
 				</div>
-				<div class="readmore" id="readmore1">
-					<img src="https://asoboze.itembox.design/item/asocon_06.png" alt="">
-				</div>
 				<div class="pages03_img02 anime">
 					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108768624.gif"
 						width="100%" alt="">
@@ -1375,9 +1388,6 @@
 								alt="">
 						</div>
 					</div>
-					<div class="readmore" id="readmore1">
-						<img src="https://asoboze.itembox.design/item/asocon_06.png" alt="">
-					</div>
 				</div>
 			</div>
 		</div>
@@ -1399,7 +1409,8 @@
 									alt="">
 							</div>
 						</div>
-						<div class="change_item02">
+						<div class="change_item02" style="height: calc( var(--vh) * 100);
+						">
 							<div class="pages_content_body_image fadeInUpTrigger5 fadeUp6">
 								<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960878.gif"
 									alt="">
@@ -1410,28 +1421,27 @@
 
 				</div>
 			</div>
-
-			<div class="change02 fadeInUpTrigger7" style="z-index: -2;">
-				<div class="pages_content">
-					&nbsp;
-				</div>
-			</div>
 			<div class="" style="position: absolute;">
 				<div class="pages_content_body_text fadeInUpTrigger7 fadeUp13">
 					一般的なレジ袋は摩擦で破れてしまう恐れがありますが、丈夫な素材のRegileなら繰り返し使うこともできます。
 				</div>
+				<div class="change02 fadeInUpTrigger7" style="z-index: -2;">
+					<div class="pages_content">
+					</div>
+				</div>
 				<div class="pages_content_body_text fadeInUpTrigger8 fadeUp11">
 					折りたたんでコンパクトに収納できるので、いざという時に試してみてください。 </div>
+				<div class="change02 secondBackground fadeInUpTrigger8 fadeUp11" style="z-index: -1;">
+				</div>
 			</div>
-			<div class="change02 secondBackground fadeInUpTrigger8 fadeUp11" style="z-index: -1;">
-			</div>
+
 		</div>
 		<div id="box6" class="box tsuyu_pages06 fixed" data-section-name="Area6">
-			<div class="pages_content_title fadeInUpTrigger">
+			<div class="pages_content_title fadeInUpTrigger" style="position: relative;">
 				<div class="pages03_menu_number">03</div>
 				<div class="pages03_menu_content">折りたたみ傘のたたみ方</div>
 			</div>
-			<div class="pages_content_body change">
+			<div class="pages_content_body change" style="position: absolute;">
 				<div class="change_item01 fadeInUpTrigger4">
 					<div class="pages_content_body_text">
 						折りたたみ傘を畳むとき、柄の部分にあたる「中棒」を最初に縮めていませんか？　実は中棒を最初に縮めると、生地をうまく畳むことができなくなります。
@@ -1441,19 +1451,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="change_item02 fadeInUpTrigger9 fadeUp6" style="position: absolute;">
-				<div class="pages_content_body_text">
+			<div class="" style="position: absolute;">
+				<div class="pages_content_body_text fadeInUpTrigger4 fadeUp6">
 					キレイに畳むコツは、中棒を伸ばしたまま親骨を折り畳み、片手で中棒を持ちつつ半開きのまま折り目を整えること。
 				</div>
-			</div>
-			<div class="change02 pages06_background01 fadeInUpTrigger fadeUp6"></div>
-			<div class="change_item02 fadeInUpTrigger fadeUp11" style="position: absolute;">
-				<div class="pages_content_body_text">
+				<div class="change02 pages06_background01 fadeInUpTrigger7 fadeUp6" style="position: absolute;"></div>
+				<div class="pages_content_body_text fadeInUpTrigger8 fadeUp13">
 					折り目の山をしっかり伸ばしたら手で露先（生地の端の部分）を束ね、傘を巻き、最後に中棒を縮めましょう。この方法で畳めば、時間が経っても生地が広がってしまうことはありません。
 				</div>
+				<div class="change02 pages06_background02 fadeInUpTrigger8 fadeUp13" style="position: absolute;"></div>
 			</div>
-			<div class="change02 pages06_background02 fadeInUpTrigger fadeUp11"></div>
-
 		</div>
 		<div id="box7" class="box tsuyu_pages07 fixed" data-section-name="Area7">
 			<div class="pages_content_title fadeInUpTrigger">
@@ -1498,11 +1505,15 @@
 							<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960886.gif"
 								alt="">
 						</div>
+						<div class="readmore" id="readmore1">
+							<img src="https://asoboze.itembox.design/item/asocon_06.png" alt="">
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="box9" class="box tsuyu_pages09 fixed" data-section-name="Area9" style="overflow-y: scroll;">
+		<div id="box9" class="box tsuyu_pages09 pp-scrollable fixed" data-section-name="Area9"
+			style="overflow-y: scroll; position: relative;">
 			<div style="position: relative;">
 				<div class="rains">
 					<span></span><span></span><span></span><span></span><span></span>
@@ -1532,7 +1543,8 @@
 				<div class="recommendItemList" id="recommend01"><a
 						href="https://item.rakuten.co.jp/asoboze/am-pe7210/"><img
 							src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/191.jpg" alt=""
-							width="100%"></a></div>
+							width="100%"></a>
+				</div>
 				<div style="position: relative;">
 					<div class="rains">
 						<span></span><span></span><span></span><span></span><span></span>
@@ -1578,7 +1590,8 @@
 							width="100%"></a></div>
 				<div class="backTo">
 					<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021767.gif"
-							alt=""></div>
+							alt="">
+					</div>
 					<div class="pages03_menus">
 						<ul>
 							<li>
@@ -1621,11 +1634,12 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+	<script src="https://www.rakuten.ne.jp/gold/asoboze/pagePiling.js-master/jquery.pagepiling.min.js"></script>
 	<!--自作のJS-->
-	<script src="js/6-1.js"></script>
-	<script src="js/3-2-3-1.js"></script>
 	<!--←本体の下に設置しないと動きません！-->
 	<script>
+		var height = window.innerHeight;
+		document.documentElement.style.setProperty('--vh', height / 100 + 'px');
 		$.scrollify({
 			section: ".box",//1ページスクロールさせたいエリアクラス名
 			scrollbars: "false",//スクロールバー表示・非表示設定
@@ -1663,7 +1677,7 @@
 
 			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
 			$('.fadeInUpTrigger').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top - 50; //要素より、50px上の
+				var elemPos = $(this).offset().top; //要素より、50px上の
 				var scroll = $(window).scrollTop();
 				var windowHeight = $(window).height();
 				if (scroll >= elemPos - windowHeight) {
@@ -1673,7 +1687,7 @@
 			});
 			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
 			$('.fadeInUpTrigger2').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top - 50; //要素より、50px上の
+				var elemPos = $(this).offset().top; //要素より、50px上の
 				var scroll = $(window).scrollTop();
 				var windowHeight = $(window).height();
 				if (scroll >= elemPos - windowHeight) {
@@ -1683,7 +1697,7 @@
 			});
 			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
 			$('.fadeInUpTrigger3').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top - 50; //要素より、50px上の
+				var elemPos = $(this).offset().top; //要素より、50px上の
 				var scroll = $(window).scrollTop();
 				var windowHeight = $(window).height();
 				if (scroll >= elemPos - windowHeight) {
@@ -1693,7 +1707,7 @@
 			});
 			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
 			$('.fadeInUpTrigger4').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top - 50; //要素より、50px上の
+				var elemPos = $(this).offset().top; //要素より、50px上の
 				var scroll = $(window).scrollTop();
 				var windowHeight = $(window).height();
 				if (scroll >= elemPos - windowHeight) {
@@ -1704,7 +1718,7 @@
 
 			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
 			$('.fadeInUpTrigger5').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top - 50; //要素より、50px上の
+				var elemPos = $(this).offset().top; //要素より、50px上の
 				var scroll = $(window).scrollTop();
 				var windowHeight = $(window).height();
 				if (scroll >= elemPos - windowHeight) {
@@ -1715,7 +1729,7 @@
 
 			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
 			$('.fadeInUpTrigger6').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top - 50; //要素より、50px上の
+				var elemPos = $(this).offset().top; //要素より、50px上の
 				var scroll = $(window).scrollTop();
 				var windowHeight = $(window).height();
 				if (scroll >= elemPos - windowHeight) {
@@ -1726,7 +1740,7 @@
 
 			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
 			$('.fadeInUpTrigger7').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top - 50; //要素より、50px上の
+				var elemPos = $(this).offset().top; //要素より、50px上の
 				var scroll = $(window).scrollTop();
 				var windowHeight = $(window).height();
 				if (scroll >= elemPos - windowHeight) {
@@ -1737,7 +1751,7 @@
 
 			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
 			$('.fadeInUpTrigger8').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top - 50; //要素より、50px上の
+				var elemPos = $(this).offset().top; //要素より、50px上の
 				var scroll = $(window).scrollTop();
 				var windowHeight = $(window).height();
 				if (scroll >= elemPos - windowHeight) {
@@ -1748,7 +1762,7 @@
 
 			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
 			$('.fadeInUpTrigger9').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top - 50; //要素より、50px上の
+				var elemPos = $(this).offset().top; //要素より、50px上の
 				var scroll = $(window).scrollTop();
 				var windowHeight = $(window).height();
 				if (scroll >= elemPos - windowHeight) {
@@ -1779,6 +1793,25 @@
 		$(window).on('load', function () {
 			fadeAnime();/* アニメーション用の関数を呼ぶ*/
 		});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
+	</script>
+	<script>
+		$(function () {
+			$('#container').pagepiling({
+				scrollingSpeed: 2000,
+			});
+		});
+	</script>
+	<script>
+		var sec1hasClass = $('#box1').hasClass('active');
+		var sec2hasClass = $('#box2').hasClass('active');
+		var sec3hasClass = $('#box3').hasClass('active');
+		var sec4hasClass = $('#box4').hasClass('active');
+		var sec5hasClass = $('#box5').hasClass('active');
+		var sec6hasClass = $('#box6').hasClass('active');
+		var sec7hasClass = $('#box7').hasClass('active');
+		var sec8hasClass = $('#box8').hasClass('active');
+		var sec8hasClass = $('#box9').hasClass('active');
+
 	</script>
 </body>
 
