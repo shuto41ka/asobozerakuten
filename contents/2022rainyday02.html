@@ -37,13 +37,17 @@ ul {
 nav {
   display: none;
 }
+.pp-tableCell {
+  vertical-align: top;
+}
 .section {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left;
   border: none;
   background-color: #bcd3d4;
-  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
 #section1 {
   background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/2022tsuyu/imgrc0108719072.jpg);
@@ -82,7 +86,7 @@ div.pages02_img {
 
 .pages03_img01 {
   width: 126px;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 .tsuyu_pages03_contents {
   width: 100vw;
@@ -159,24 +163,7 @@ div.pages02_img {
 [class*="fadeInUpTrigger"] {
   opacity: 0;
 }
-.pages03_img02.anime {
-  animation-name: katatsumuriWalk;
-  /*アニメーションの定義名*/
-  animation-duration: 200s;
-  /*アニメーション変化時間 ※デフォルト*/
-  animation-fill-mode: forwards;
-  /*アニメーションの開始と終了時の状態を指定*/
-}
-/*アニメーションの開始から終了までを指定する*/
-@keyframes katatsumuriWalk {
-  from {
-    left: 0;
-  }
 
-  to {
-    left: 100vw;
-  }
-}
 .pages03_text {
   text-align: center;
 }
@@ -376,12 +363,12 @@ div div.fadeUp6 {
 
 .pages_content_title {
   width: 80vw;
-  margin: 69px 10vw 0;
+  margin: 119px 10vw 0;
   max-width: 400px;
 }
 
 .pages_content_body_text {
-  width: 75vw;
+  width: 80vw;
   margin: 20px 10vw 0;
   position: relative;
   max-width: 400px;
@@ -828,7 +815,6 @@ div div.fadeUp6 {
     left: 8%;
   }
   .asocon3lines img {
-    top: 27%;
     transform: none;
   }
   .readmore {
@@ -1809,7 +1795,7 @@ div div.fadeUp6 {
 
     </div>
   </section>
-  <section class="section pp-scrollable" id="section9">
+  <section class="section pp-scrollable" id="section9" style="overflow-x: hidden;">
 
     <div class="recommendItem hop">
       <div style="padding-top: 90px; max-width: 376px; width: 100%;">
@@ -1893,6 +1879,12 @@ div div.fadeUp6 {
 <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
 <script src="https://www.rakuten.ne.jp/gold/asoboze/pagePiling.js-master/jquery.pagepiling.min.js"></script>
     <script>
+      $(document).ready(function(){
+        $('.section').css('height',$(window).height());
+      });
+      $(window).resize(function(){
+        $('.section').css('height',$(window).height());
+      })
          $(function() {
            $('#asocon2020').pagepiling({
                scrollingSpeed: 1500,
@@ -1966,7 +1958,7 @@ $.fn.animate_aso = function (properties, duration, ease) {
                 $('#section8 .hop6').css('opacity', '1');
                     } else {
                 $('#section9 .hop').css('opacity', '1');
-                      $('#readmore').hide(1000);
+                      $('#readmore1').hide(1000);
                     }
                 } else {
             if (location.hash == '#page1'){
