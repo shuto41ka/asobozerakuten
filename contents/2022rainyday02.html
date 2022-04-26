@@ -488,8 +488,10 @@
 
     .asocon2020 .asocon3lines {
       display: block;
+      width: 100vw;
+      height: 100vh;
     }
-
+  
     .readmore {
       position: absolute;
       bottom: 8vh;
@@ -880,7 +882,7 @@
         width: 88%;
         height: 100%;
         top: 0;
-        left: 8%;
+        left: 0;
       }
 
       .asocon3lines img {
@@ -1091,13 +1093,16 @@
       .sponly {
         display: none;
       }
+      .asocon3lines img {
+        top: 100vh;
+      }
+      .pp-tableCell {
+        height: 100vh;
+      }
     }
 
     /* タブレット（横） */
     @media screen and (orientation: landscape) and (max-width: 1199px) {
-      .asocon3lines img {
-        top: 48%;
-      }
 
       .readmore img {
         width: 45px;
@@ -1627,7 +1632,7 @@
     }
 
     /* レスポンシブ（タブレット）　横幅760px以上かつ縦向き */
-    @media screen(min-width: 760px) and (orientation: portrait) {
+    @media screen and (min-width: 760px) and (orientation: portrait) {
       .asocon3lines img {
         width: 400px;
       }
@@ -1683,13 +1688,13 @@
     /* レスポンシブ（タブレット）　横幅760px以上かつ縦向き */
 
     /* レスポンシブ（タブレット）　横幅760px以上かつ横向き */
-    @media screen(min-width: 760px) and (orientation: landscape) {
+    @media screen and (min-width: 760px) and (orientation: landscape) {
       .asocon2020 .asocon3lines {
         width: 100vw;
         height: 100vh;
       }
 
-      .asocon2020 .asocon3lines {
+      .asocon2020 .asocon3lines.asocon3lines_02 {
         height: 100vh;
       }
 
@@ -1709,9 +1714,6 @@
         height: auto;
       }
 
-      .asocon3lines img {
-        right: 100px;
-      }
 
       .pages03_img01 {
         margin-left: 100px;
@@ -1730,12 +1732,29 @@
       .pages_content_title {
         margin: 200px auto 0;
       }
-    }
+      .pages03_img01.hop {
+        margin-left: 10vw;
+      }
+      .pages_content_body_image {
+        width: 100%;
+      }
+      .change_item01, .change_item02 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100vw;
 
-    /* レスポンシブ（タブレット）　横幅500px以上かつ横向き */
+      }
+      .pages_content_body_text {
+        margin: 20px 15vw 0;
+      }
+      [id*="section"]:not(#section3) .pages_content_title {
+        margin: 200px 15vw 0;
+      }
+    }
+    /* レスポンシブ（タブレット）　横幅760px以上かつ横向き */
 
     /* レスポンシブ（PC）横幅1200px以上 */
-    @media screen(min-width: 1200px) {}
+    @media screen and (min-width: 1200px) {}
 
     /* レスポンシブ（PC）横幅1200px以上 */
   </style>
@@ -1997,7 +2016,7 @@
                 <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960884.gif" alt="">
               </div>
             </div>
-            <div class="" style="position: absolute;">
+            <div class="change_item02" style="position: absolute;">
               <div class="pages_content_body_text hop02" style="animation-delay: 7s;">
                 そんな時は、洗濯物と一緒に乾いたバスタオルを2枚ほど入れると早く洗濯物を乾燥させることができるそうです。
               </div>
