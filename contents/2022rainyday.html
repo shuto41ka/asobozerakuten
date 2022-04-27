@@ -1,1818 +1,2411 @@
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html lang="ja" xmlns="http://www.w3.org/1999/xhtml">
+<!doctype html>
+<html>
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-45604769-3"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-45604769-3');
-	</script>
-
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" charset="utf-8" />
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<title>aso 楽天市場店</title>
-	<meta name="description" content="asoは「アップデートしてみる？」をコンセプトに、日々の暮らしをちょっとだけ良くするミニマルで機能的なバッグやポーチ、雑貨を取り扱っています。">
-	<meta name="keywords" content="aso,asoboze,アソボーゼ,アソ,ガジェット,バッグ,タブレット,ポーチiPad,iPhone,macbook,エコバッグ,ミニポーチ,革小物,レザー,財布">
-	<link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020pc.css">
-	<link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020sp.css"
-		media="screen and (orientation: portrait)">
-	<link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.css">
-	<link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.css">
-	<script src="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.js"></script>
-	<script src="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.0.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
-	<script src="https://www.rakuten.ne.jp/gold/asoboze/jquery-3.2.1.min.js"></script>
-
-
-
-	<script>
-		$(function () {
-			// #で始まるa要素をクリックした場合に処理（"#"←ダブルクォーテンションで囲むのを忘れずに。忘れるとjQueryのバージョンによっては動かない。。）
-			$('a[href^="#"]').click(function () {
-				// 移動先を0px調整する。0を30にすると30px下にずらすことができる。
-				var adjust = -50;
-				// スクロールの速度（ミリ秒）
-				var speed = 1500;
-				// アンカーの値取得 リンク先（href）を取得して、hrefという変数に代入
-				var href = $(this).attr("href");
-				// 移動先を取得 リンク先(href）のidがある要素を探して、targetに代入
-				var target = $(href == "#" || href == "" ? 'html' : href);
-				// 移動先を調整 idの要素の位置をoffset()で取得して、positionに代入
-				var position = target.offset().top + adjust;
-				// スムーススクロール linear（等速） or swing（変速）
-				$('body,html').animate({ scrollTop: position }, speed, 'swing');
-				return false;
-			});
-		});
-
-	</script>
-
-	<script>
-		$(function () {
-			$("#pcIndexRight").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pcindex_rightmenu.html");
-			$("#pc_toplinebanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_toplinebanner.html"); $("#pcleftbanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_leftbanner.html");
-			$("#pcrightmenu").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_rightmenu.html");
-			$("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .topthree2");
-			$("#pcthreemenu3").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .topthree3");
-			$("#spheader").load("https://www.rakuten.ne.jp/gold/asoboze/parts/header_aso.html");
-			$("#footer-aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
-			$("#styles").load("https://www.rakuten.ne.jp/gold/asoboze/parts/othergallery.html");
-			$(".icon-wrap").click(function () {
-				$(this).toggleClass("active");
-				$("body").toggleClass("fixing");
-			});
-
-		});
-	</script>
-
-
-
-
-	<style>
-		body {
-			font-family: 'Noto Sans JP', sans-serif;
-		}
-
-		.pcma a[href^="#pcmenu"] img:hover {
-			transform: scale(1, 1) !important;
-		}
-
-		.current {
-			border-bottom: 3px #A2C5CF solid;
-		}
-
-		.mainsentence {
-			font-weight: 300;
-			font-size: 1.2em;
-
-		}
-
-		.headlineTitle {
-			font-weight: 600;
-			font-size: 1.5em;
-
-		}
-
-		.headline {
-			font-weight: 700;
-			font-size: 1.8em;
-
-		}
-
-		.orange {
-			color: #e47a4e;
-		}
-
-		.spcontents {
-			width: 90%;
-			margin: auto;
-		}
-	</style>
-	<style>
-		//カスタムプロパティの設定
-		:root {
-			--myheight: 100px;
-		}
-
-		body {
-			overflow-x: hidden;
-		}
-
-		table th {
-			padding: 10px;
-		}
-
-		table td {
-			padding: 20px 10px;
-
-		}
-
-		/* スマホ用 */
-		@media screen and (max-width: 600px) {
-
-			table th {
-				padding: 5px;
-			}
-
-			table td {
-				padding: 10px 0px;
-
-			}
-		}
-
-		/*========= ページネーションCSS ===============*/
-		* {
-			padding: 0;
-			margin: 0;
-		}
-
-		.pagination {
-			position: fixed;
-			right: 20px;
-			top: 50%;
-			transform: translateY(-50%);
-			font-size: 1em;
-			z-index: 10;
-			list-style: none;
-		}
-
-		.pagination a {
-			display: block;
-			height: 20px;
-			margin-bottom: 5px;
-			color: #fff;
-			position: relative;
-			padding: 4px;
-		}
-
-		.pagination a.active:after {
-			box-shadow: inset 0 0 0 5px;
-		}
-
-		/*現在地表示のテキストの設定*/
-		.pagination a .hover-text {
-			position: absolute;
-			right: 15px;
-			top: 0;
-			opacity: 0;
-			-webkit-transition: opacity 0.5s ease;
-			transition: opacity 0.5s ease;
-			padding-right: 15px;
-		}
-
-		.pagination a:hover .hover-text {
-			opacity: 1;
-		}
-
-		.pagination a:after {
-			-webkit-transition: box-shadow 0.5s ease;
-			transition: box-shadow 0.5s ease;
-			width: 10px;
-			height: 10px;
-			display: block;
-			border: 1px solid;
-			border-radius: 50%;
-			content: "";
-			position: absolute;
-			margin: auto;
-			top: 0;
-			right: 3px;
-			bottom: 0;
-		}
-
-		[class*="tsuyu_pages"] {
-			width: 100vw;
-			height: calc(100vh - 10px);
-			background-size: cover;
-			overflow: hidden;
-			background-position: center center;
-			position: relative;
-		}
-
-		[class*="tsuyu_pages"]:not(.tsuyu_pages01) {
-			background-color: #bcd3d4;
-		}
-
-		[class*="pages"] {
-			line-height: 1.7rem;
-			font-family: sans-serif;
-			color: #324749;
-		}
-
-		.tsuyu_pages01 {
-			background-image: url("https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/2022tsuyu/imgrc0108719072.jpg");
-			background-color: inherit;
-		}
-
-		.pages01_title {
-			width: 287px;
-			height: auto;
-			margin: auto;
-			max-width: 77vw;
-			padding-top: 45vh;
-		}
-
-		.pages02_text {
-			padding: 63px 12vw;
-			width: 100vw;
-			box-sizing: border-box;
-		}
-
-		div.pages02_img {
-			width: 80vw;
-			max-width: 340px;
-			margin: auto auto 0;
-		}
-
-
-		#header {
-			position: fixed;
-			/*Header固定*/
-			top: 0;
-			height: 70px;
-			/*高さ指定*/
-			z-index: 2;
-			width: 100%;
-			background: #fff;
-			/*背景色*/
-		}
-
-		#container {
-			position: relative;
-			z-index: 1;
-			/*header とfooterを手前にするため数字を小さく*/
-		}
-
-		/*div.fixed {
-			position: -webkit-sticky;
-			position: sticky;
-			/*top:70px;/*Header高さ分で止まるようにする*/
-		/*padding: 600px 0;/*デモ画面の高さを持たすための上下余白*/
-		/*}*/
-
-
-		div.fixed:last-of-type {
-			/*padding-top:70px;
-/*最後のセクションだけ止まらないため、エリア内の情報が少ない時は、Header分の高さをpadding-topに追加して上部が見えるようにする*/
-		}
-
-		#footer {
-			position: relative;
-			z-index: 2;
-		}
-
-		[class*="fadeInUpTrigger"]  {
-			opacity: 0;
-		}
-
-		.fadeUp {
-			animation-name: fadeUpAnime;
-			animation-duration: 2s;
-			animation-fill-mode: forwards;
-			opacity: 0;
-			animation-delay: .5s;
-		}
-
-		div.fadeUp2 {
-			animation-delay: 3s;
-		}
-
-		.fadeUp5 {
-			animation-name: fadeUpAnime3;
-			animation-duration: 7s;
-			animation-fill-mode: forwards;
-			opacity: 0;
-			animation-delay: .5s;
-			position: absolute;
-		}
-
-		@keyframes fadeUpAnime3 {
-			0% {
-				opacity: 0;
-				transform: translateY(100px);
-			}
-
-			25% {
-				opacity: 1;
-				transform: translateY(0);
-			}
-
-			75% {
-				opacity: 1;
-				transform: translateY(0);
-			}
-
-			99.9%,
-			TO {
-				opacity: 0;
-
-				transform: translateY(-100px);
-			}
-		}
-
-		div.fadeUp6 {
-			animation-delay: 7s;
-		}
-
-		@keyframes fadeUpAnime {
-			from {
-				opacity: 0;
-				transform: translateY(100px);
-			}
-
-			to {
-				opacity: 1;
-				transform: translateY(0);
-			}
-		}
-
-		.readmore {
-			position: fixed;
-			bottom: 15px;
-			left: 0;
-			width: 100%;
-			text-align: center;
-			z-index: 10;
-		}
-
-		.readmore img {
-			width: 60px;
-		}
-
-		.pages03_text {
-			text-align: center;
-		}
-
-		.pages03_img01 {
-			width: 126px;
-		}
-
-		.pages03_img02 {
-			width: 126px;
-			position: absolute;
-			bottom: 0;
-		}
-
-		.pages03_img02.anime {
-			animation-name: katatsumuriWalk;
-			/*アニメーションの定義名*/
-			animation-duration: 200s;
-			/*アニメーション変化時間 ※デフォルト*/
-			animation-fill-mode: forwards;
-			/*アニメーションの開始と終了時の状態を指定*/
-		}
-
-		/*アニメーションの開始から終了までを指定する*/
-		@keyframes katatsumuriWalk {
-			from {
-				left: 0;
-			}
-
-			to {
-				left: 100vw;
-			}
-		}
-
-
-		.fadeUp3 {
-			animation-name: fadeUpAnime2;
-			animation-duration: 5s;
-			animation-fill-mode: forwards;
-			opacity: 0;
-			animation-delay: .5s;
-		}
-
-		@keyframes fadeUpAnime2 {
-			0% {
-				opacity: 0;
-				transform: translateY(30vh);
-			}
-
-			25% {
-				opacity: 1;
-				transform: translateY(10vh);
-			}
-
-			75% {
-				opacity: 1;
-
-				transform: translateY(10vh);
-			}
-
-			99.9%,
-			TO {
-				opacity: 1;
-
-				transform: translateY(calc(10vh - 130px));
-			}
-		}
-
-		.fadeUp4 {
-			animation-name: fadeUpAnime;
-			animation-duration: 2s;
-			animation-fill-mode: forwards;
-			opacity: 0;
-			animation-delay: 5s;
-		}
-
-		.pages03_menus ul,
-		.pages_content+div {
-			margin: 15px 10vw;
-			list-style-type: none;
-			width: max-content;
-		}
-
-		.pages_content_body_text {
-			margin: 15px auto;
-		}
-
-		.pages03_menus a {
-			display: block;
-			text-decoration: none;
-		}
-
-		.pages03_menus li {
-			margin: 15px 0;
-		}
-
-		.pages03_menu_number {
-			color: #fff;
-			font-weight: bold;
-			width: 43px;
-			height: 43px;
-			background-color: #324749;
-			text-align: center;
-			line-height: 43px;
-			border-radius: 50%;
-			font-size: 18px;
-			text-decoration: none;
-			display: inline-block;
-		}
-
-		.pages03_menu_content {
-			text-decoration: none;
-			color: #324749;
-			display: inline-block;
-			margin-left: 15px;
-		}
-
-		div.page_content_body div.pages_content_body_image {
-			width: 280px;
-			margin: auto;
-		}
-
-		div.page_content_body .pages_content_body_backgroundimage {
-			width: 100vw;
-
-		}
-
-		.pages_content_title {
-			width: 80vw;
-			margin: 69px 10vw 0;
-			max-width: 400px;
-		}
-
-		.pages_content {
-			position: relative;
-			width: 100vw;
-			height: calc(100vh - 10px);
-			overflow: hidden;
-		}
-
-		.pages_content_body_text {
-			width: 75vw;
-			margin: 20px 10vw 0;
-			position: relative;
-			max-width: 400px;
-		}
-
-		.change02 {
-			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960879.gif);
-			width: 100vw;
-			height: calc(100vh - 10px);
-			background-size: 100vw;
-			background-position: bottom;
-			position: absolute;
-			top: 0;
-			background-repeat: no-repeat;
-			left: 0;
-		}
-
-		.change02.secondBackground {
-			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960880.gif);
-		}
-
-		.fadeUp8 {
-			animation-name: fadeUpAnime4;
-			animation-duration: 2s;
-			animation-fill-mode: forwards;
-			opacity: 1;
-			animation-delay: 13s;
-		}
-
-		@keyframes fadeUpAnime4 {
-			from {
-				opacity: 1;
-			}
-
-			to {
-				opacity: 0;
-				transform: translateY(-100vh);
-			}
-		}
-
-		.fadeUp9 {
-			animation-name: fadeUpAnime5;
-			animation-duration: 2s;
-			animation-fill-mode: forwards;
-			transform: translateY(100vh);
-			animation-delay: 13s;
-			opacity: 0;
-		}
-
-		@keyframes fadeUpAnime5 {
-
-			0% {
-				opacity: 0;
-				transform: translateY(100vh);
-			}
-
-			99.9%,
-			TO {
-				opacity: 1;
-				transform: translateY(0);
-			}
-		}
-
-		div.fadeUp11 {
-			animation-delay: 18s;
-		}
-
-		div.fadeUp13 {
-			animation-delay: 13s;
-		}
-
-		.fadeUp12 {
-			animation-name: fadeUpAnime6;
-			animation-duration: 2s;
-			animation-fill-mode: forwards;
-			transform: translateY(100vh);
-			animation-delay: 15s;
-
-		}
-
-		@keyframes fadeUpAnime6 {
-
-			from {
-				transform: translateY(100vh);
-			}
-
-			to {
-				transform: translateY(0);
-			}
-		}
-
-		.change_item03 {
-			left: 10vw;
-		}
-
-		.pages_content_body_image {
-			width: 76vw;
-			margin: 50px 12vw 0;
-		}
-
-		.pages06_background01 {
-			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960882.gif);
-		}
-
-		.pages06_background02 {
-			background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960883.gif);
-		}
-
-		.fadeUp14 {
-			animation-name: fadeUpAnime7;
-			animation-duration: 13s;
-			animation-fill-mode: forwards;
-			opacity: 0;
-		}
-
-		@keyframes fadeUpAnime7 {
-
-			0% {
-				opacity: 0;
-				transform: translateY(100px);
-			}
-
-			25% {
-				opacity: 1;
-				transform: translateY(0);
-			}
-
-			75% {
-				opacity: 1;
-
-				transform: translateY(0);
-			}
-
-			99.9%,
-			TO {
-				opacity: 0;
-				transform: translateY(-100px);
-			}
-		}
-
-		.pages_content_body.change {
-			height: calc(100vh - 10px);
-		}
-
-		.change_item02.fadeInUpTrigger5.fadeUp6.fadeUp {
-			height: calc(100vh - 10px);
-			position: relative;
-		}
-
-		.change_item01.fadeInUpTrigger4.fadeUp5 {
-			height: calc(100vh - 10px);
-		}
-
-		.change_item01.fadeInUpTrigger.fadeUp {
-			height: calc(100vh - 10px);
-			position: relative;
-		}
-
-		.rains {
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			transform: rotate(10deg);
-			height: 99.9%, TO;
-		}
-
-		/*widthは雨の太さ、heightは長さ*/
-		.rains span {
-			position: absolute;
-			width: 1px;
-			height: 180px;
-			background: #FFF;
-			opacity: 0.4;
-		}
-
-
-		.recommendItem {
-			background-color: #324749;
-			color: #bcd3d4;
-			margin-bottom: 100px;
-		}
-
-		.recommendItem div {
-			color: #bcd3d4;
-			margin-bottom: 20px;
-		}
-
-		.recommendItem div a {
-			text-decoration: none;
-			color: #bcd3d4;
-			display: inline-block;
-			margin-left: 15px;
-			line-height: 1.7rem;
-		}
-
-		.recommendItem div ul {
-			margin: 15px;
-			font-weight: bold;
-			list-style-type: none;
-			margin-bottom: 40px;
-		}
-
-		.recommendItem div li {
-			text-decoration: none;
-			padding: 15px;
-		}
-
-		.recommendItemList {
-			width: 80vw;
-			margin: 10px;
-		}
-
-		.backTo {
-			width: 90vw;
-			margin-left: 10vw;
-			padding-bottom: 100px;
-			margin-top: 100px;
-		}
-
-		.backTo .pages03_menu_number {
-			color: #324749;
-			font-weight: bold;
-			width: 43px;
-			height: 43px;
-			background-color: #bcd3d4;
-			text-align: center;
-			line-height: 43px;
-			border-radius: 50%;
-			font-size: 18px;
-			text-decoration: none;
-			display: inline-block;
-		}
-
-		.backTo .pages03_menu_content {
-			text-decoration: none;
-			color: #bcd3d4;
-			display: inline-block;
-			margin-left: 15px;
-		}
-
-		.recommendItem .backTo div ul {
-			margin: 15px 0;
-
-		}
-
-		.recommendItem .backTo div li {
-			padding: 15px 0;
-		}
-
-		.recommendItem .backTo div a {
-			margin-left: 0;
-		}
-
-		/*768px以下は現在地表示のテキストを非表示*/
-		@media screen and (max-width:768px) {
-			.pagination a .hover-text {
-				display: none;
-			}
-		}
-	</style>
-	<style>
-		/*雨の初期位置とアニメーション指定、leftはx座標での基準位置、topは開始位置、アニメーション時間は揺らぎ*/
-		.rains span:nth-child(1) {
-			left: 5%;
-			top: -190px;
-			animation: rain-anim 10s infinite;
-		}
-
-		.rains span:nth-child(2) {
-			left: 10%;
-			top: -180px;
-			animation: rain-anim 11s infinite;
-		}
-
-		.rains span:nth-child(3) {
-			left: 15%;
-			top: -170px;
-			animation: rain-anim 8s infinite;
-		}
-
-		.rains span:nth-child(4) {
-			left: 20%;
-			top: -160px;
-			animation: rain-anim 12s infinite;
-		}
-
-		.rains span:nth-child(5) {
-			left: 25%;
-			top: -150px;
-			animation: rain-anim 10s infinite;
-		}
-
-		.rains span:nth-child(6) {
-			left: 30%;
-			top: -150px;
-			animation: rain-anim 11s infinite;
-		}
-
-		.rains span:nth-child(7) {
-			left: 35%;
-			top: -160px;
-			animation: rain-anim 13s infinite;
-		}
-
-		.rains span:nth-child(8) {
-			left: 40%;
-			top: -170px;
-			animation: rain-anim 7s infinite;
-		}
-
-		.rains span:nth-child(9) {
-			left: 45%;
-			top: -180px;
-			animation: rain-anim 9s infinite;
-		}
-
-		.rains span:nth-child(10) {
-			left: 50%;
-			top: -190px;
-			animation: rain-anim 11s infinite;
-		}
-
-		.rains span:nth-child(11) {
-			left: 55%;
-			top: -190px;
-			animation: rain-anim 10s infinite;
-		}
-
-		.rains span:nth-child(12) {
-			left: 60%;
-			top: -180px;
-			animation: rain-anim 6s infinite;
-		}
-
-		.rains span:nth-child(13) {
-			left: 65%;
-			top: -170px;
-			animation: rain-anim 14s infinite;
-		}
-
-		.rains span:nth-child(14) {
-			left: 70%;
-			top: -160px;
-			animation: rain-anim 12s infinite;
-		}
-
-		.rains span:nth-child(15) {
-			left: 75%;
-			top: -150px;
-			animation: rain-anim 10s infinite;
-		}
-
-		.rains span:nth-child(16) {
-			left: 80%;
-			top: -150px;
-			animation: rain-anim 14s infinite;
-		}
-
-		.rains span:nth-child(17) {
-			left: 85%;
-			top: -160px;
-			animation: rain-anim 8s infinite;
-		}
-
-		.rains span:nth-child(18) {
-			left: 90%;
-			top: -170px;
-			animation: rain-anim 9s infinite;
-		}
-
-		.rains span:nth-child(19) {
-			left: 95%;
-			top: -180px;
-			animation: rain-anim 11s infinite;
-		}
-
-		.rains span:nth-child(20) {
-			left: 99.9%, TO;
-			top: -190px;
-			animation: rain-anim9 13s infinite;
-		}
-
-		/*アニメーションキーフレーム
+  <meta charset="UTF-8">
+  <title>aso&nbsp;楽天市場店</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020pc.css">
+  <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020sp.css"
+    media="screen and (orientation: portrait)">
+  <link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.css">
+  <link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.css">
+  <script src="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.js"></script>
+  <script src="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.js"></script>
+  <script src="https://www.rakuten.ne.jp/gold/asoboze/jquery-3.2.1.min.js"></script>
+
+  <script>
+    $(function () {
+      $("#pcIndexRight").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pcconcept_rightmenu.html");
+      $("#pc_toplinebanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_toplinebanner.html");
+      $("#pcleftbanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_leftbanner.html");
+      $("#pcrightmenu").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_rightmenu.html");
+      $("#spheader").load("https://www.rakuten.ne.jp/gold/asoboze/parts/header_aso.html");
+      $("#footer-aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
+      $("#styles").load("https://www.rakuten.ne.jp/gold/asoboze/parts/othergallery.html");
+      $(".icon-wrap").click(function () {
+        $(this).toggleClass("active");
+        $("body").toggleClass("fixing");
+      });
+    }); Ï
+  </script>
+  <link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/pagePiling.js-master/jquery.pagepiling.css">
+  <style>
+    @charset "UTF-8";
+
+    ul {
+      padding-left: 0;
+    }
+
+    nav {
+      display: none;
+    }
+
+    .pp-tableCell {
+      vertical-align: top;
+      overflow: inherit;
+    }
+
+    .section {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top left;
+      border: none;
+      background-color: #bcd3d4;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #section1 {
+      background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyusp_01.jpg);
+      background-position: center;
+      background-size: cover;
+    }
+
+    [class*="pages"] {
+      line-height: 1.7rem;
+      font-family: sans-serif;
+      color: #324749;
+    }
+
+    .pages02_text {
+      padding: 113px 12vw;
+      box-sizing: border-box;
+    }
+
+    div.pages02_img {
+      width: 80vw;
+      max-width: 340px;
+      margin: auto;
+      height: 100%;
+    }
+
+    .fadeUp {
+      animation-name: fadeUpAnime;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      animation-delay: 0.5s;
+    }
+
+    .pages03_text {
+      text-align: center;
+    }
+
+    .pages03_img01 {
+      width: 126px;
+      padding-top: 40px;
+    }
+
+    .tsuyu_pages03_contents {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .pages03_img02 {
+      width: 126px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    .pages03_img02.anime {
+      animation-name: katatsumuriWalk;
+      /*アニメーションの定義名*/
+      animation-duration: 200s;
+      /*アニメーション変化時間 ※デフォルト*/
+      animation-fill-mode: forwards;
+      /*アニメーションの開始と終了時の状態を指定*/
+    }
+
+    /*アニメーションの開始から終了までを指定する*/
+    @keyframes katatsumuriWalk {
+      from {
+        left: 0;
+      }
+
+      to {
+        left: 100vw;
+      }
+    }
+
+    .pages03_menus ul,
+    .pages_content+div {
+      margin: 15px auto;
+      list-style-type: none;
+      width: max-content;
+    }
+
+    .pages_content_body_text {
+      margin: 15px auto;
+    }
+
+    .pages03_menus a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .pages03_menus li {
+      margin: 15px 0;
+    }
+
+    .pages03_menu_number {
+      color: #fff;
+      font-weight: bold;
+      width: 43px;
+      height: 43px;
+      background-color: #324749;
+      text-align: center;
+      line-height: 43px;
+      border-radius: 50%;
+      font-size: 18px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .pages03_menu_content {
+      text-decoration: none;
+      color: #324749;
+      display: inline-block;
+      margin-left: 15px;
+    }
+
+    [class*="fadeInUpTrigger"] {
+      opacity: 0;
+    }
+
+    .pages03_text {
+      text-align: center;
+    }
+
+    .pages03_img01 {
+      width: 126px;
+    }
+
+    .pages03_img02 {
+      width: 126px;
+      position: absolute;
+      bottom: 0;
+    }
+
+    .fadeUp3 {
+      animation-name: fadeUpAnime2;
+      animation-duration: 5s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      animation-delay: 0.5s;
+    }
+
+    @keyframes fadeUpAnime2 {
+      0% {
+        opacity: 0;
+        transform: translateY(30vh);
+      }
+
+      25% {
+        opacity: 1;
+        transform: translateY(10vh);
+      }
+
+      75% {
+        opacity: 1;
+
+        transform: translateY(10vh);
+      }
+
+      99.9%,
+      to {
+        opacity: 1;
+
+        transform: translateY(calc(10vh - 130px));
+      }
+    }
+
+    .fadeUp4 {
+      animation-name: fadeUpAnime;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      animation-delay: 5s;
+    }
+
+    div.fadeUp2 {
+      animation-delay: 3s;
+    }
+
+    .fadeUp5 {
+      animation-name: fadeUpAnime3;
+      animation-duration: 7s;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      animation-delay: 0.5s;
+      position: absolute;
+    }
+
+    @keyframes fadeUpAnime3 {
+      0% {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+
+      25% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      75% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      99.9%,
+      to {
+        opacity: 0;
+
+        transform: translateY(-100px);
+      }
+    }
+
+    div div.fadeUp6 {
+      animation-delay: 7s;
+    }
+
+    @keyframes fadeUpAnime {
+      from {
+        opacity: 0;
+        transform: translateY(100px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fadeUp15 {
+      animation-name: fadeUpAnime10;
+      animation-duration: 2s;
+      animation-fill-mode: forwards;
+      opacity: 1;
+      animation-delay: 12s;
+      position: absolute;
+      transform: translateY(0);
+    }
+
+    @keyframes fadeUpAnime10 {
+      0% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      99.9%,
+      to {
+        opacity: 0;
+
+        transform: translateY(-100px);
+      }
+    }
+
+    #section5 .background01 {
+      animation-delay: 12s;
+      z-index: -2;
+      background: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_10.gif);
+      position: absolute;
+      width: 100vw;
+      height: calc(100vh - 100px);
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+    }
+
+    #section5 .background02 {
+      animation-delay: 17s;
+      z-index: -1;
+      background: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_11.gif);
+      position: absolute;
+      width: 100vw;
+      height: calc(100vh - 100px);
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+    }
+
+    #section6 .background01 {
+      animation-delay: 12s;
+      z-index: -2;
+      background: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_13.gif);
+      position: absolute;
+      width: 100vw;
+      height: calc(100vh - 100px);
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+    }
+
+    #section6 .background02 {
+      animation-delay: 17s;
+      z-index: -1;
+      background: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_14.gif);
+      position: absolute;
+      width: 100vw;
+      height: calc(100vh - 100px);
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: bottom;
+    }
+
+    .change_item01,
+    .change_item02 {
+      position: absolute;
+    }
+
+    .pages_content {
+      position: relative;
+      width: 100vw;
+      height: calc(100vh - 10px);
+      overflow: hidden;
+    }
+
+    .pages_content_title {
+      width: 80vw;
+      margin: 119px 10vw 0;
+      max-width: 400px;
+    }
+
+    .pages_content_body_text {
+      width: 80vw;
+      margin: 20px 10vw 0;
+      position: relative;
+      max-width: 400px;
+    }
+
+    .pages_content_body_image {
+      max-width: 76vw;
+      width: 400px;
+      margin: 50px 12vw 0;
+    }
+
+    #section9 {
+      background-color: #324749;
+      color: #bcd3d4;
+      margin-bottom: 100px;
+    }
+
+    .recommendItem div {
+      color: #bcd3d4;
+      margin-bottom: 20px;
+    }
+
+    .recommendItem div a {
+      text-decoration: none;
+      color: #bcd3d4;
+      display: inline-block;
+      line-height: 1.7rem;
+    }
+
+    .recommendItem div ul {
+      margin: 15px 5vw;
+      font-weight: bold;
+      list-style-type: none;
+      margin-bottom: 40px;
+    }
+
+    .recommendItem div li {
+      text-decoration: none;
+      padding: 5vw;
+    }
+
+    .recommendItemList {
+      margin: 10px auto;
+    }
+
+    .backTo {
+      width: 100%;
+      margin-left: 10vw;
+      padding-bottom: 100px;
+      margin-top: 100px;
+      box-sizing: border-box;
+    }
+
+    .backTo .pages03_menu_number {
+      color: #324749;
+      font-weight: bold;
+      width: 43px;
+      height: 43px;
+      background-color: #bcd3d4;
+      text-align: center;
+      line-height: 43px;
+      border-radius: 50%;
+      font-size: 18px;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .backTo .pages03_menu_content {
+      text-decoration: none;
+      color: #bcd3d4;
+      display: inline-block;
+      margin-left: 15px;
+    }
+
+    .recommendItem .backTo div ul {
+      margin: 15px 0;
+      padding-left: 0;
+    }
+
+    .recommendItem .backTo div li {
+      padding: 15px 0;
+    }
+
+    .recommendItem .backTo div a {
+      margin-left: 0;
+    }
+
+    .asocon3lines img {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      width: 287px;
+      max-width: 77vw;
+      margin: auto;
+    }
+
+    .asocon3lines {
+      position: relative;
+      transition-duration: 0.5s;
+    }
+
+    .asocon2020 .asocon3lines {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .readmore {
+      position: absolute;
+      bottom: 8vh;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      z-index: 10;
+    }
+
+    .readmore.effect2 {
+      z-index: 9;
+    }
+
+    .readmore img {
+      width: 60px;
+    }
+
+    .update_disc {
+      display: block;
+      width: 30%;
+      height: auto;
+      line-height: 3em;
+      left: 15%;
+      font-size: 1.4vw;
+      font-weight: bold;
+      min-width: max-content;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      position: relative;
+    }
+
+    .update_3dots img {
+      width: 100%;
+    }
+
+    .update_3dots {
+      width: 20%;
+      height: auto;
+      position: absolute;
+      top: 42%;
+      transform: translateY(-50%);
+      right: 20%;
+    }
+
+    .update_img img {
+      width: 100%;
+    }
+
+    .update_img {
+      width: 40%;
+      max-width: 520px;
+      position: absolute;
+      top: 42%;
+      transform: translateY(-50%);
+      left: 9vw;
+    }
+
+    .update_text {
+      width: 30%;
+      position: absolute;
+      top: 45%;
+      left: calc(200px + 40vw);
+      transform: translateY(-50%);
+    }
+
+    .update_text div:nth-child(1) {
+      padding: 10px 0 15px;
+      font-size: 1.3vw;
+    }
+
+    .update_text div:nth-child(2) {
+      padding: 0 0 30px 0;
+      font-weight: bold;
+      font-size: 1.6vw;
+    }
+
+    .update_text div:nth-child(3) {
+      font-size: 1.3vw;
+      padding-bottom: 10px;
+      line-height: 1.8em;
+    }
+
+    .hop {
+      transition-delay: 1s;
+    }
+
+    .hop2 {
+      transition-delay: 2s;
+      transition-duration: 1s;
+    }
+
+    .hop3 {
+      transition-duration: 1s;
+      transition-delay: 3s;
+    }
+
+    .hop5 {
+      transition-duration: 1s;
+      transition-delay: 4s;
+    }
+
+    .hop6 {
+      transition-duration: 1s;
+      transition-delay: 5s;
+    }
+
+    .hop4 {
+      transition-delay: 0.5s;
+      transition-duration: 1s;
+    }
+
+    .section:nth-last-child(1) {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .update_last {
+      width: 600px;
+      height: 400px;
+      position: relative;
+      font-weight: bold;
+      top: 50%;
+      left: calc(50% - 10vw);
+      transform: translate(-50%, -50%);
+    }
+
+    .asocon2020 .update_last .update_mokuji {
+      display: inline-grid;
+    }
+
+    .update_last .update_item_disc {
+      font-weight: bold;
+    }
+
+    .link_shoptop {
+      position: absolute;
+      bottom: -5vh;
+      right: -15vw;
+    }
+
+    .update_last a {
+      text-decoration: none;
+    }
+
+    .update_about {
+      grid-row: 1 /4;
+      grid-column: 1;
+    }
+
+    .update_mokuji dd {
+      position: relative;
+    }
+
+    .update_mokuji dd::after {
+      content: "";
+      width: 45px;
+      height: 90px;
+      top: -65px;
+      left: -62px;
+      border-bottom: 2px solid #bbb;
+      border-left: 2px solid #bbb;
+      position: absolute;
+    }
+
+    .update_mokuji dd.hop2::after {
+      height: 77px;
+      top: -52px;
+    }
+
+    .update_mokuji .update_about+dd::after {
+      top: -77px;
+      border-left: none;
+      width: 100px;
+      left: -112px;
+    }
+
+    /*
+    .update_mokuji::after {
+        border-left: 2px solid #bbb;
+        content: '';
+        position: absolute;
+        top: 29px;
+        left: 206px;
+        height: 259px;
+        width: 0;
+        
+    }
+    */
+    .update_mokuji {
+      width: 100%;
+      display: inline-grid;
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 18% 25% 25% 25%;
+    }
+
+    .update_items {
+      grid-row: auto;
+      grid-column: 2;
+    }
+
+    .update_items:first-child {
+      margin-top: 0;
+    }
+
+    .update_items:last-child {
+      margin-bottom: 0;
+    }
+
+    .update_items a {
+      color: #000;
+      font-weight: bold;
+      transition-duration: 0.2s;
+      white-space: nowrap;
+    }
+
+    .update_items img {
+      position: absolute;
+      top: 0px;
+      height: 90px;
+      right: -160px;
+      opacity: 0;
+      transition-duration: 0.5s;
+    }
+
+    .update_items.first_item img {
+      top: -30px;
+    }
+
+    .update_items a:hover {
+      font-size: 20px;
+    }
+
+    .update_items a:hover+img {
+      opacity: 1;
+    }
+
+    /* タブレット（縦） */
+    @media screen and (orientation: portrait) {
+      .aso_pcleft:first-child>a:first-child img {
+        width: 50%;
+      }
+
+      .spupdate {
+        width: 88%;
+        position: fixed;
+        left: 7%;
+        top: 8%;
+      }
+
+      .asocon3lines {
+        position: relative;
+        width: 80%;
+        height: 100%;
+        top: 0;
+        left: 8%;
+      }
+
+      .readmore {
+        text-align: center;
+        bottom: 4vh;
+        left: 0;
+        width: 94vw;
+      }
+
+      .readmore img {
+        width: 12%;
+        max-width: 64px;
+      }
+
+      .pconly {
+        display: none;
+      }
+
+      .update_disc {
+        width: max-content;
+        text-align: center;
+        height: auto;
+        line-height: 3em;
+        top: 30%;
+        left: 50%;
+        font-size: 18px;
+        font-weight: bold;
+        transform: translateX(-50%);
+        position: relative;
+      }
+
+      .update_3dots img {
+        width: 100%;
+      }
+
+      .update_3dots {
+        width: 30%;
+        margin: 0 auto;
+        height: auto;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .update_img img {
+        width: 100%;
+      }
+
+      .update_img {
+        width: 25vh;
+        min-width: 60%;
+        position: relative;
+        top: 4vh;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .update_text {
+        width: 65%;
+        position: relative;
+        top: 12vh;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .update_text div:nth-child(1) {
+        padding: 5px 0 2.5px;
+        font-size: 18px;
+      }
+
+      .update_text div:nth-child(2) {
+        padding: 0 0 10px 0;
+        font-weight: bold;
+        font-size: 22px;
+      }
+
+      .update_text div:nth-child(3) {
+        font-size: 18px;
+        padding-bottom: 5px;
+      }
+
+      .asocon_3point {
+        background-size: 100% auto;
+        background-attachment: scroll;
+        height: 100vh;
+      }
+
+      .asocon2020 .asocon_3point div {
+        display: block;
+      }
+
+      .update_mokuji .update_about+dd::after {
+        width: 45px;
+
+        height: 60px;
+
+        top: -45px;
+
+        left: -62px;
+
+        border-bottom: 2px solid #bbb;
+
+        border-left: 2px solid #bbb;
+      }
+
+      .update_about {
+        position: absolute;
+        top: -80px;
+        left: 120px;
+      }
+
+      .update_last .update_item_topic {
+        font-weight: 400;
+      }
+    }
+
+    /* スマホ */
+    @media screen and (orientation: portrait) and (max-width: 650px) {
+      #pp-nav {
+        display: none;
+      }
+
+      .spupdate {
+        width: 88%;
+        position: fixed;
+        left: 7%;
+        top: 17%;
+      }
+
+      .asocon3lines {
+        position: relative;
+        width: 88%;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+
+      .asocon3lines img {
+        transform: none;
+      }
+
+      div[id*="readmore"].readmore {
+        text-align: center;
+        bottom: 3vh;
+        left: 0;
+        width: 100%;
+      }
+
+      .readmore img {
+        width: 10%;
+        max-width: 64px;
+      }
+
+      .pconly {
+        display: none;
+      }
+
+      .update_disc {
+        width: max-content;
+        height: auto;
+        line-height: 3em;
+        top: 40%;
+        left: 50%;
+        font-size: 12px;
+        font-weight: bold;
+        transform: translate(-50%, -50%);
+        position: relative;
+      }
+
+      .update_3dots img {
+        width: 100%;
+      }
+
+      .update_3dots {
+        width: 30%;
+        margin: 0 auto;
+        height: auto;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .update_img img {
+        width: 100%;
+      }
+
+      .update_img {
+        width: 20vh;
+        min-width: 80%;
+        position: relative;
+        top: 6vh;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .update_text {
+        width: 80%;
+        position: relative;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .update_text div:nth-child(1) {
+        padding: 0 0 2.5px;
+        font-size: 12px;
+      }
+
+      .update_text div:nth-child(2) {
+        padding: 0 0 5px 0;
+        font-weight: bold;
+        font-size: 16px;
+      }
+
+      .update_text div:nth-child(3) {
+        font-size: 12px;
+        padding-bottom: 5px;
+      }
+
+      .asocon_3point {
+        background-size: 100% auto;
+        background-attachment: scroll;
+        height: 100vh;
+      }
+
+      .update_last {
+        width: 300px;
+        height: 400px;
+        position: relative;
+        top: 180px;
+        left: -50px;
+        font-size: 12px;
+        transform: translate(0, 0);
+      }
+
+      .link_shoptop {
+        position: absolute;
+        bottom: 50px;
+        right: -100px;
+        color: #3e3a39;
+      }
+
+      .update_last a {
+        text-decoration: none;
+      }
+
+      .update_about {
+        grid-row: 1 /4;
+        grid-column: 1;
+        position: absolute;
+        top: -50px;
+        left: 90px;
+      }
+
+      .update_mokuji dd {
+        position: relative;
+      }
+
+      .update_mokuji dd::after {
+        content: "";
+        width: 35px;
+        height: 90px;
+        top: -65px;
+        left: -52px;
+        border-bottom: 1px solid #bbb;
+        border-left: 1px solid #bbb;
+        position: absolute;
+      }
+
+      .update_mokuji dd.hop2::after {
+        height: 77px;
+        top: -52px;
+      }
+
+      .update_mokuji {
+        width: 100%;
+        display: inline-grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 14% 20% 20% 20%;
+      }
+
+      .update_items {
+        grid-row: auto;
+        grid-column: 2;
+      }
+
+      .update_items:first-child {
+        margin-top: 0;
+      }
+
+      .update_items:last-child {
+        margin-bottom: 0;
+      }
+
+      .update_items a {
+        color: #000;
+        transition-duration: 0.2s;
+        white-space: nowrap;
+      }
+
+      .update_items img {
+        position: absolute;
+        top: 0px;
+        height: 90px;
+        right: -160px;
+        opacity: 0;
+        transition-duration: 0.5s;
+      }
+
+      .update_items.first_item img {
+        top: -30px;
+      }
+
+      .update_mokuji .update_about+dd::after {
+        width: 35px;
+
+        height: 40px;
+
+        top: -25px;
+
+        left: -52px;
+
+        border-bottom: 1px solid #bbb;
+
+        border-left: 1px solid #bbb;
+      }
+
+      .update_items a:hover {
+        font-size: 12px;
+      }
+
+      .update_items a:hover+img {
+        opacity: 0;
+      }
+    }
+
+    @media screen and (orientation: portrait) and (min-width: 760px) {
+      .pconly {
+        display: block;
+      }
+
+      .sponly {
+        display: none;
+      }
+
+      .asocon3lines img {
+        top: 100vh;
+      }
+
+      .pp-tableCell {
+        height: 100vh;
+      }
+    }
+
+    /* タブレット（横） */
+    @media screen and (orientation: landscape) and (max-width: 1199px) {
+
+      .readmore img {
+        width: 45px;
+      }
+    }
+
+
+
+    /* 雨 */
+    /*雨の初期位置とアニメーション指定、leftはx座標での基準位置、topは開始位置、アニメーション時間は揺らぎ*/
+    .rains span:nth-child(1) {
+      left: 5%;
+      top: -190px;
+      animation: rain-anim 10s infinite;
+    }
+
+    .rains span:nth-child(2) {
+      left: 10%;
+      top: -180px;
+      animation: rain-anim 11s infinite;
+    }
+
+    .rains span:nth-child(3) {
+      left: 15%;
+      top: -170px;
+      animation: rain-anim 8s infinite;
+    }
+
+    .rains span:nth-child(4) {
+      left: 20%;
+      top: -160px;
+      animation: rain-anim 12s infinite;
+    }
+
+    .rains span:nth-child(5) {
+      left: 25%;
+      top: -150px;
+      animation: rain-anim 10s infinite;
+    }
+
+    .rains span:nth-child(6) {
+      left: 30%;
+      top: -150px;
+      animation: rain-anim 11s infinite;
+    }
+
+    .rains span:nth-child(7) {
+      left: 35%;
+      top: -160px;
+      animation: rain-anim 13s infinite;
+    }
+
+    .rains span:nth-child(8) {
+      left: 40%;
+      top: -170px;
+      animation: rain-anim 7s infinite;
+    }
+
+    .rains span:nth-child(9) {
+      left: 45%;
+      top: -180px;
+      animation: rain-anim 9s infinite;
+    }
+
+    .rains span:nth-child(10) {
+      left: 50%;
+      top: -190px;
+      animation: rain-anim 11s infinite;
+    }
+
+    .rains span:nth-child(11) {
+      left: 55%;
+      top: -190px;
+      animation: rain-anim 10s infinite;
+    }
+
+    .rains span:nth-child(12) {
+      left: 60%;
+      top: -180px;
+      animation: rain-anim 6s infinite;
+    }
+
+    .rains span:nth-child(13) {
+      left: 65%;
+      top: -170px;
+      animation: rain-anim 14s infinite;
+    }
+
+    .rains span:nth-child(14) {
+      left: 70%;
+      top: -160px;
+      animation: rain-anim 12s infinite;
+    }
+
+    .rains span:nth-child(15) {
+      left: 75%;
+      top: -150px;
+      animation: rain-anim 10s infinite;
+    }
+
+    .rains span:nth-child(16) {
+      left: 80%;
+      top: -150px;
+      animation: rain-anim 14s infinite;
+    }
+
+    .rains span:nth-child(17) {
+      left: 85%;
+      top: -160px;
+      animation: rain-anim 8s infinite;
+    }
+
+    .rains span:nth-child(18) {
+      left: 90%;
+      top: -170px;
+      animation: rain-anim 9s infinite;
+    }
+
+    .rains span:nth-child(19) {
+      left: 95%;
+      top: -180px;
+      animation: rain-anim 11s infinite;
+    }
+
+    .rains span:nth-child(20) {
+      left: 99.9%, TO;
+      top: -190px;
+      animation: rain-anim9 13s infinite;
+    }
+
+    /*アニメーションキーフレーム
 一度落下したら次はキーフレーム1%の間に高さを戻して左右にずらして降らす*/
-		@keyframes rain-anim {
-
-			0% {
-				transform: translate(0px, 0px);
-			}
-
-			4% {
-				transform: translate(0px, 600px);
-			}
-
-			5% {
-				transform: translate(200px, 0px);
-			}
-
-			9% {
-				transform: translate(200px, 600px);
-			}
-
-			10% {
-				transform: translate(-100px, 0px);
-			}
-
-			14% {
-				transform: translate(-100px, 600px);
-			}
-
-			15% {
-				transform: translate(-200px, 0px);
-			}
-
-			19% {
-				transform: translate(-200px, 600px);
-			}
-
-			20% {
-				transform: translate(100px, 0px);
-			}
-
-			24% {
-				transform: translate(100px, 600px);
-			}
-
-			25% {
-				transform: translate(-150px, 0px);
-			}
-
-			29% {
-				transform: translate(-150px, 600px);
-			}
-
-			30% {
-				transform: translate(-80px, 0px);
-			}
-
-			34% {
-				transform: translate(-80px, 600px);
-			}
-
-			35% {
-				transform: translate(150px, 0px);
-			}
+    @keyframes rain-anim {
+
+      0% {
+        transform: translate(0px, 0px);
+      }
+
+      4% {
+        transform: translate(0px, 600px);
+      }
+
+      5% {
+        transform: translate(200px, 0px);
+      }
+
+      9% {
+        transform: translate(200px, 600px);
+      }
+
+      10% {
+        transform: translate(-100px, 0px);
+      }
+
+      14% {
+        transform: translate(-100px, 600px);
+      }
+
+      15% {
+        transform: translate(-200px, 0px);
+      }
+
+      19% {
+        transform: translate(-200px, 600px);
+      }
+
+      20% {
+        transform: translate(100px, 0px);
+      }
+
+      24% {
+        transform: translate(100px, 600px);
+      }
+
+      25% {
+        transform: translate(-150px, 0px);
+      }
+
+      29% {
+        transform: translate(-150px, 600px);
+      }
+
+      30% {
+        transform: translate(-80px, 0px);
+      }
+
+      34% {
+        transform: translate(-80px, 600px);
+      }
+
+      35% {
+        transform: translate(150px, 0px);
+      }
 
-			39% {
-				transform: translate(150px, 600px);
-			}
-
-			40% {
-				transform: translate(-60px, 0px);
-			}
-
-			44% {
-				transform: translate(-60px, 600px);
-			}
-
-			45% {
-				transform: translate(90px, 0px);
-			}
-
-			49% {
-				transform: translate(90px, 600px);
-			}
-
-			50% {
-				transform: translate(60px, 0px);
-			}
-
-			54% {
-				transform: translate(60px, 600px);
-			}
-
-			55% {
-				transform: translate(-60px, 0px);
-			}
-
-			59% {
-				transform: translate(-60px, 600px);
-			}
-
-			60% {
-				transform: translate(-40px, 0px);
-			}
-
-			64% {
-				transform: translate(-40px, 600px);
-			}
-
-			65% {
-				transform: translate(40px, 0px);
-			}
-
-			69% {
-				transform: translate(40px, 600px);
-			}
-
-			70% {
-				transform: translate(-20px, 0px);
-			}
-
-			74% {
-				transform: translate(-20px, 600px);
-			}
-
-			75% {
-				transform: translate(-110px, 0px);
-			}
-
-			79% {
-				transform: translate(-110px, 600px);
-			}
-
-			80% {
-				transform: translate(20px, 0px);
-			}
-
-			84% {
-				transform: translate(20px, 600px);
-			}
-
-			85% {
-				transform: translate(-20px, 0px);
-			}
-
-			89% {
-				transform: translate(-20px, 600px);
-			}
-
-			90% {
-				transform: translate(50px, 0px);
-			}
-
-			99% {
-				transform: translate(50px, 600px);
-			}
-
-			99.9%,
-			TO {
-				transform: translate(0px, 0px);
-			}
-
-		}
-
-		/*splat*/
-		.splat {
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 99.9%, TO;
-		}
-
-		.splat span {
-			position: absolute;
-			width: 100px;
-			height: 30px;
-			background: #FFF;
-			border-radius: 50%;
-			opacity: 0;
-		}
-
-		.splat span:nth-child(1) {
-			left: 0%;
-			top: 30%;
-			animation: splat-anim 5.5s infinite;
-		}
-
-		.splat span:nth-child(2) {
-			left: 10%;
-			top: 90%;
-			animation: splat-anim 7.2s infinite;
-		}
-
-		.splat span:nth-child(3) {
-			left: 15%;
-			top: 15%;
-			animation: splat-anim 4.3s infinite;
-		}
-
-		.splat span:nth-child(4) {
-			left: 20%;
-			top: 20%;
-			animation: splat-anim 5.7s infinite;
-		}
-
-		.splat span:nth-child(5) {
-			left: 25%;
-			top: 80%;
-			animation: splat-anim 6.3s infinite;
-		}
-
-		.splat span:nth-child(6) {
-			left: 30%;
-			top: 35%;
-			animation: splat-anim 8.5s infinite;
-		}
-
-		.splat span:nth-child(7) {
-			left: 35%;
-			top: 70%;
-			animation: splat-anim 7.7s infinite;
-		}
-
-		.splat span:nth-child(8) {
-			left: 40%;
-			top: 10%;
-			animation: splat-anim 4.8s infinite;
-		}
-
-		.splat span:nth-child(9) {
-			left: 45%;
-			top: 65%;
-			animation: splat-anim 5.3s infinite;
-		}
-
-		.splat span:nth-child(10) {
-			left: 50%;
-			top: 55%;
-			animation: splat-anim 3.5s infinite;
-		}
-
-		.splat span:nth-child(11) {
-			left: 55%;
-			top: 30%;
-			animation: splat-anim 5.1s infinite;
-		}
-
-		.splat span:nth-child(12) {
-			left: 60%;
-			top: 75%;
-			animation: splat-anim 7.1s infinite;
-		}
-
-		.splat span:nth-child(13) {
-			left: 65%;
-			top: 15%;
-			animation: splat-anim 4.2s infinite;
-		}
-
-		.splat span:nth-child(14) {
-			left: 70%;
-			top: 60%;
-			animation: splat-anim 5.0s infinite;
-		}
-
-		.splat span:nth-child(15) {
-			left: 75%;
-			top: 50%;
-			animation: splat-anim 3.0s infinite;
-		}
-
-		.splat span:nth-child(16) {
-			left: 80%;
-			top: 10%;
-			animation: splat-anim 6.4s infinite;
-		}
-
-		.splat span:nth-child(17) {
-			left: 85%;
-			top: 45%;
-			animation: splat-anim 5.9s infinite;
-		}
-
-		.splat span:nth-child(18) {
-			left: 90%;
-			top: 55%;
-			animation: splat-anim 7.0s infinite;
-		}
-
-		.splat span:nth-child(19) {
-			left: 95%;
-			top: 25%;
-			animation: splat-anim 4.0s infinite;
-		}
-
-		.splat span:nth-child(20) {
-			left: 99.9%, TO;
-			top: 85%;
-			animation: splat-anim 8.2s infinite;
-		}
-
-		@keyframes splat-anim {
-
-
-			0% {
-				opacity: 0.0;
-				transform: scale(0);
-			}
-
-			10% {
-				opacity: 0;
-				transform: scale(0);
-			}
-
-			14% {
-				opacity: 0.3;
-				transform: scale(0.4);
-			}
-
-			15% {
-				opacity: 0;
-				transform: scale(0);
-			}
-
-			30% {
-				opacity: 0;
-				transform: scale(0);
-			}
-
-			34% {
-				opacity: 0.2;
-				transform: scale(0.8);
-			}
-
-			35% {
-				opacity: 0;
-				transform: scale(0);
-			}
-
-
-			40% {
-				opacity: 0;
-				transform: scale(0);
-			}
-
-			44% {
-				opacity: 0.2;
-				transform: scale(0.2);
-			}
-
-			45% {
-				opacity: 0;
-				transform: scale(0);
-			}
-
-			50% {
-				opacity: 0;
-				transform: scale(0);
-			}
-
-			54% {
-				opacity: 0.2;
-				transform: scale(0.5);
-			}
-
-			55% {
-				opacity: 0;
-				transform: scale(0);
-			}
-
-			64% {
-				opacity: 0;
-				transform: scale(0);
-			}
-
-			70% {
-				opacity: 0.1;
-				transform: scale(1.0);
-			}
-
-			71% {
-				opacity: 0;
-				transform: scale(0);
-			}
-
-			99.9%,
-			TO {
-				opacity: 0;
-				transform: scale(0);
-			}
-
-		}
-	</style>
-
-	<link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/pagePiling.js-master/jquery.pagepiling.css">
+      39% {
+        transform: translate(150px, 600px);
+      }
+
+      40% {
+        transform: translate(-60px, 0px);
+      }
+
+      44% {
+        transform: translate(-60px, 600px);
+      }
+
+      45% {
+        transform: translate(90px, 0px);
+      }
+
+      49% {
+        transform: translate(90px, 600px);
+      }
+
+      50% {
+        transform: translate(60px, 0px);
+      }
+
+      54% {
+        transform: translate(60px, 600px);
+      }
+
+      55% {
+        transform: translate(-60px, 0px);
+      }
+
+      59% {
+        transform: translate(-60px, 600px);
+      }
+
+      60% {
+        transform: translate(-40px, 0px);
+      }
+
+      64% {
+        transform: translate(-40px, 600px);
+      }
+
+      65% {
+        transform: translate(40px, 0px);
+      }
+
+      69% {
+        transform: translate(40px, 600px);
+      }
+
+      70% {
+        transform: translate(-20px, 0px);
+      }
+
+      74% {
+        transform: translate(-20px, 600px);
+      }
+
+      75% {
+        transform: translate(-110px, 0px);
+      }
+
+      79% {
+        transform: translate(-110px, 600px);
+      }
+
+      80% {
+        transform: translate(20px, 0px);
+      }
+
+      84% {
+        transform: translate(20px, 600px);
+      }
+
+      85% {
+        transform: translate(-20px, 0px);
+      }
+
+      89% {
+        transform: translate(-20px, 600px);
+      }
+
+      90% {
+        transform: translate(50px, 0px);
+      }
+
+      99% {
+        transform: translate(50px, 600px);
+      }
+
+      99.9%,
+      TO {
+        transform: translate(0px, 0px);
+      }
+
+    }
+
+    /*splat*/
+    .splat {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 99.9%, TO;
+    }
+
+    .splat span {
+      position: absolute;
+      width: 100px;
+      height: 30px;
+      background: #FFF;
+      border-radius: 50%;
+      opacity: 0;
+    }
+
+    .splat span:nth-child(1) {
+      left: 0%;
+      top: 30%;
+      animation: splat-anim 5.5s infinite;
+    }
+
+    .splat span:nth-child(2) {
+      left: 10%;
+      top: 90%;
+      animation: splat-anim 7.2s infinite;
+    }
+
+    .splat span:nth-child(3) {
+      left: 15%;
+      top: 15%;
+      animation: splat-anim 4.3s infinite;
+    }
+
+    .splat span:nth-child(4) {
+      left: 20%;
+      top: 20%;
+      animation: splat-anim 5.7s infinite;
+    }
+
+    .splat span:nth-child(5) {
+      left: 25%;
+      top: 80%;
+      animation: splat-anim 6.3s infinite;
+    }
+
+    .splat span:nth-child(6) {
+      left: 30%;
+      top: 35%;
+      animation: splat-anim 8.5s infinite;
+    }
+
+    .splat span:nth-child(7) {
+      left: 35%;
+      top: 70%;
+      animation: splat-anim 7.7s infinite;
+    }
+
+    .splat span:nth-child(8) {
+      left: 40%;
+      top: 10%;
+      animation: splat-anim 4.8s infinite;
+    }
+
+    .splat span:nth-child(9) {
+      left: 45%;
+      top: 65%;
+      animation: splat-anim 5.3s infinite;
+    }
+
+    .splat span:nth-child(10) {
+      left: 50%;
+      top: 55%;
+      animation: splat-anim 3.5s infinite;
+    }
+
+    .splat span:nth-child(11) {
+      left: 55%;
+      top: 30%;
+      animation: splat-anim 5.1s infinite;
+    }
+
+    .splat span:nth-child(12) {
+      left: 60%;
+      top: 75%;
+      animation: splat-anim 7.1s infinite;
+    }
+
+    .splat span:nth-child(13) {
+      left: 65%;
+      top: 15%;
+      animation: splat-anim 4.2s infinite;
+    }
+
+    .splat span:nth-child(14) {
+      left: 70%;
+      top: 60%;
+      animation: splat-anim 5.0s infinite;
+    }
+
+    .splat span:nth-child(15) {
+      left: 75%;
+      top: 50%;
+      animation: splat-anim 3.0s infinite;
+    }
+
+    .splat span:nth-child(16) {
+      left: 80%;
+      top: 10%;
+      animation: splat-anim 6.4s infinite;
+    }
+
+    .splat span:nth-child(17) {
+      left: 85%;
+      top: 45%;
+      animation: splat-anim 5.9s infinite;
+    }
+
+    .splat span:nth-child(18) {
+      left: 90%;
+      top: 55%;
+      animation: splat-anim 7.0s infinite;
+    }
+
+    .splat span:nth-child(19) {
+      left: 95%;
+      top: 25%;
+      animation: splat-anim 4.0s infinite;
+    }
+
+    .splat span:nth-child(20) {
+      left: 99.9%, TO;
+      top: 85%;
+      animation: splat-anim 8.2s infinite;
+    }
+
+    @keyframes splat-anim {
+
+
+      0% {
+        opacity: 0.0;
+        transform: scale(0);
+      }
+
+      10% {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+      14% {
+        opacity: 0.3;
+        transform: scale(0.4);
+      }
+
+      15% {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+      30% {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+      34% {
+        opacity: 0.2;
+        transform: scale(0.8);
+      }
+
+      35% {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+
+      40% {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+      44% {
+        opacity: 0.2;
+        transform: scale(0.2);
+      }
+
+      45% {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+      50% {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+      54% {
+        opacity: 0.2;
+        transform: scale(0.5);
+      }
+
+      55% {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+      64% {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+      70% {
+        opacity: 0.1;
+        transform: scale(1.0);
+      }
+
+      71% {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+      99.9%,
+      TO {
+        opacity: 0;
+        transform: scale(0);
+      }
+
+    }
+
+    .recommendItemListWrapper {
+      width: 90vw;
+      margin: auto;
+    }
+
+    /* レスポンシブ（タブレット）　横幅760px以上かつ縦向き */
+    @media screen and (min-width: 760px) and (orientation: portrait) {
+      .asocon3lines img {
+        width: 400px;
+      }
+
+      .pages02_text {
+        padding: 15vh 6vw;
+      }
+
+      .pages03_img01 {
+        padding-top: 70px;
+        margin-left: 70px;
+      }
+
+      .pages03_menus ul,
+      .pages_content+div {
+        margin: 30px auto;
+      }
+
+      .pages_content_title {
+        margin: 119px 15vw 0;
+      }
+
+      .pages_content_body_text {
+        margin: 20px 15vw 0;
+      }
+      .asocon2020 .asocon3lines {
+        width: 83vw;
+      }
+      .pages_content_body_image {
+        margin: 50px 25vw 0;
+      }
+
+      #section9 .pages_content_body_text {
+        margin: 20px auto 0;
+      }
+
+      #section9 .recommendItem div ul {
+        width: max-content;
+        max-width: 15px auto;
+      }
+
+      .recommendItemListWrapper {
+        display: grid;
+        width: 80vw;
+        max-width: 860px;
+        grid-template-columns: 1fr 1fr;
+
+      }
+
+      .backTo {
+        margin-left: 20vw;
+      }
+
+    }
+
+    /* レスポンシブ（タブレット）　横幅760px以上かつ縦向き */
+
+    /* レスポンシブ（タブレット）　横幅760px以上かつ横向き */
+    @media screen and (min-width: 760px) and (orientation: landscape) {
+      .asocon2020 .asocon3lines {
+        width: 100vw;
+        height: 100vh;
+      }
+
+      .asocon2020 .asocon3lines.asocon3lines_02 {
+        height: 100vh;
+      }
+
+      #pcthreemenu2 {
+        height: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+      }
+      #section1 {
+        background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyupc_01.jpg);
+      }
+      .pages02_text {
+        width: 100%;
+        margin: auto;
+      }
+
+      div.pages02_img {
+        height: auto;
+      }
+
+
+      .pages03_img01 {
+        margin-left: 100px;
+        padding-top: 20px;
+      }
+
+      .pages_content_body_text {
+        max-width: 320px;
+      }
+
+      .change_item01,
+      .change_item02 {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .pages_content_title {
+        margin: 200px auto 0;
+      }
+
+      .pages03_img01.hop {
+        margin-left: 10vw;
+      }
+
+      .pages_content_body_image {
+        width: 300px;
+        margin-left: 0;
+      }
+
+      .change_item01,
+      .change_item02 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100vw;
+
+      }
+
+      .pages_content_body_text {
+        margin: 20px 15vw 0;
+      }
+
+      [id*="section"]:not(#section3) .pages_content_title {
+        margin: 200px 15vw 0;
+      }
+
+      #section5 .background01,
+      #section5 .background02,
+      #section6 .background01,
+      #section6 .background02 {
+        width: 50vw;
+        height: 100vh;
+        top: -252px;
+        left: 50vw;
+        background-size: auto 140%;
+
+      }
+
+      .pages_content_body_image.hop01.fadeUp5 {
+        grid-column: 2 / 2;
+      }
+
+      #section9 .pages_content_body_text {
+        margin: 20px auto 0;
+      }
+
+      .recommendItem div ul {
+        margin: 15px auto;
+        width: max-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 70px;
+      }
+
+      .recommendItem div ul li {
+        padding: 5vw 0;
+      }
+
+      .recommendItemListWrapper {
+        display: grid;
+        width: 80vw;
+        max-width: 1080px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+
+      }
+
+      .backTo {
+        width: max-content;
+        margin: 100px auto 20px;
+      }
+    }
+
+    /* レスポンシブ（タブレット）　横幅760px以上かつ横向き */
+
+    /* レスポンシブ（PC）横幅1200px以上 */
+    @media screen and (min-width: 1200px) {
+      .asocon3lines img {
+        width: 400px;
+
+      }
+
+      .pages_content_body_text {
+        max-width: 30vw;
+      }
+
+      [id*="section"]:not(#section3) .pages_content_title {
+        margin: 300px 15vw 0;
+      }
+      .recommendItem div ul {
+        grid-template-columns: 1fr 1fr 1fr;
+
+      }
+      #section5 .background01,
+      #section5 .background02,
+      #section6 .background01,
+      #section6 .background02 {
+        top: -352px;
+      }
+        }
+
+    /* レスポンシブ（PC）横幅1200px以上 */
+  </style>
 </head>
 
 <body>
-	<div id="container">
-		<section id="box1" class="box tsuyu_pages01 fixed" data-section-name="Area1">
-			<div class="pages01_title fadeInUpTrigger">
-				<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/2022tsuyu/imgrc0108746297.gif"
-					width="100%" alt="">
-			</div>
-		</section>
-		<section id="box2" class="box tsuyu_pages02 fixed" data-section-name="Area2">
-			<div class="tsuyu_pages02_contets">
-				<div class="pages02_text">
-					<div class="pages02_text_first fadeInUpTrigger">
-						夏がくる前に必ずやってくる梅雨の季節。<br>「いつまで続くんだろう・・・」と憂鬱な気持ちになっていませんか？
-					</div>
-					<div class="pages02_text_second fadeInUpTrigger fadeUp2">
-						<br>雨の日は自律神経が乱れやすいので、無理をしてストレスを溜めてしまわないことも大切です。
-					</div>
-				</div>
-				<div class="pages02_img">
-					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/2022tsuyu/imgrc0108746308.gif"
-						width="100%" alt="">
-				</div>
-			</div>
-		</section>
-		<section id="box3" class="box tsuyu_pages03 fixed" data-section-name="Area3">
-			<div class="tsuyu_pages03_contents">
-				<div class="pages03_img01">
-					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108768623.gif"
-						width="100%" alt="">
-				</div>
-				<div class="pages03_text fadeInUpTrigger2">
-					そこで今回は、<br>雨の日に試したくなる<br>ライフハックを<br>5つご紹介します！
-				</div>
-				<div class="pages03_menus fadeInUpTrigger3">
-					<ul>
-						<li>
-							<a href="box4">
-								<div class="pages03_menu_number">01</div>
-								<div class="pages03_menu_content">雨の日に靴が滑らない方法</div>
-							</a>
-						</li>
-						<li>
-							<a href="box5">
-								<div class="pages03_menu_number">02</div>
-								<div class="pages03_menu_content">自転車のサドルカバーの代用品</div>
-							</a>
-						</li>
-						<li>
-							<a href="box6">
-								<div class="pages03_menu_number">03</div>
-								<div class="pages03_menu_content">折りたたみ傘のたたみ方</div>
-							</a>
-						</li>
-						<li>
-							<a href="box7">
-								<div class="pages03_menu_number">04</div>
-								<div class="pages03_menu_content">洗濯物を乾燥機で早く乾かす方法</div>
-							</a>
-						</li>
-						<li>
-							<a href="box8">
-								<div class="pages03_menu_number">05</div>
-								<div class="pages03_menu_content">過ごし方のおすすめ</div>
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class="pages03_img02 anime">
-					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108768624.gif"
-						width="100%" alt="">
-				</div>
-			</div>
-		</section>
-		<section id="box4" class="box tsuyu_pages04 fixed" data-section-name="Area4">
-			<div class="pages_content">
-				<div class="pages_content_title fadeInUpTrigger">
-					<div class="pages03_menu_number">01</div>
-					<div class="pages03_menu_content">雨の日に靴が滑らない方法</div>
-				</div>
-				<div class="pages_content_body change">
-					<div class="change_item01 fadeInUpTrigger4">
-						<div class="pages_content_body_text">
-							靴底に絆創膏を貼ると、足元が濡れている時でも滑りにくくなるそうです。<br>雨の日に簡単に試せそうですね！
-						</div>
-						<div class="pages_content_body_image">
-							<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108959853.gif"
-								alt="">
-						</div>
-					</div>
-					<div class="change_item02 fadeInUpTrigger5 fadeUp6">
-						<div class="pages_content_body_text">
-							実はこの裏技は、警視庁警備部災害対策課がツイッターのオフィシャルアカウントを通じて発表したもの。すぐ剥がれてしまうのでは？と思ってしまいますが、丸1日履いていても剝がれなかったそうです。<br>
-							災害時にも役立ちそうなアイデアですね。
-						</div>
-						<div class="pages_content_body_image">
-							<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108959854.gif"
-								alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="box5" class="box tsuyu_pages05 fixed" data-section-name="Area5">
-			<div class="pages_content_title fadeInUpTrigger">
-				<div class="pages03_menu_number">02</div>
-				<div class="pages03_menu_content">自転車のサドルカバーの代用品</div>
-			</div>
-			<div class="fadeInUpTrigger6">
-				<div class="pages_content" style="position: absolute;">
 
-					<div class="pages_content_body change">
-						<div class="change_item01">
-							<div class="pages_content_body_text fadeInUpTrigger">
-								雨などでサドルが濡れてしまわないようにするサドルカバーですが、こんなもので代用することもできます。
-							</div>
-							<div class="pages_content_body_image fadeInUpTrigger4">
-								<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960877.gif"
-									alt="">
-							</div>
-						</div>
-						<div class="change_item02" style="height: calc( var(--vh) * 100);
-						">
-							<div class="pages_content_body_image fadeInUpTrigger5 fadeUp6">
-								<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960878.gif"
-									alt="">
-							</div>
-						</div>
+  <!-- PC用バナー -->
+  <div id="pc_toplinebanner" class="pconly">
+  </div>
+  <!-- PC用バナー -->
+  <!-- PCレフトメニュー -->
+  <div id="pcleftbanner" class="pconly">
+  </div>
+  <!-- PCレフトメニュー -->
+  <!-- PCトップのライト -->
+  <div id="pcIndexRight" class="pconly">
+  </div>
+  <!-- PCトップのライト -->
+  <div id="spheader" class="sponly spheader_aso">
+  </div>
 
-					</div>
+  <script>
+    var menuHeight = 50;
+    var startPos = 0;
+    $('#asocon_update').scroll(function () {
+      var currentPos = $(this).scrollTop();
+      if (currentPos > startPos && $("body").hasClass("fixing") == false) {
+        if ($('#asocon_update').scrollTop() >= 200) {
+          $(".spheader_aso").css("top", "-" + 50 + "px");
+        }
+      } else {
+        $(".spheader_aso").css("top", 0 + "px");
+      }
+      startPos = currentPos;
+    });
+  </script>
+  <nav style="display: none;">
+    <ul id="nav">
+      <li data-menuanchor="page1" class="active"><a href="#page1">Page1</a></li>
+      <li data-menuanchor="page2"><a href="#page2">Page2</a></li>
+      <li data-menuanchor="page3"><a href="#page3">Page3</a></li>
+      <li data-menuanchor="page4"><a href="#page4">Page4</a></li>
+      <li data-menuanchor="page5"><a href="#page5">Page5</a></li>
+      <li data-menuanchor="page6"><a href="#page6">Page6</a></li>
+      <li data-menuanchor="page7"><a href="#page7">Page7</a></li>
+      <li data-menuanchor="page8"><a href="#page8">Page8</a></li>
+      <li data-menuanchor="page9"><a href="#page9">Page9</a></li>
 
-				</div>
-			</div>
-			<div class="" style="position: absolute;">
-				<div class="pages_content_body_text fadeInUpTrigger7 fadeUp13">
-					一般的なレジ袋は摩擦で破れてしまう恐れがありますが、丈夫な素材のRegileなら繰り返し使うこともできます。
-				</div>
-				<div class="change02 fadeInUpTrigger7" style="z-index: -2;">
-					<div class="pages_content">
-					</div>
-				</div>
-				<div class="pages_content_body_text fadeInUpTrigger8 fadeUp11">
-					折りたたんでコンパクトに収納できるので、いざという時に試してみてください。 </div>
-				<div class="change02 secondBackground fadeInUpTrigger8 fadeUp11" style="z-index: -1;">
-				</div>
-			</div>
+    </ul>
+  </nav>
+  <!-- 2020コンセプトページ　-->
+  <div id="asocon2020" class="asocon2020">
 
-		</section>
-		<section id="box6" class="box tsuyu_pages06 fixed" data-section-name="Area6">
-			<div class="pages_content_title fadeInUpTrigger" style="position: relative;">
-				<div class="pages03_menu_number">03</div>
-				<div class="pages03_menu_content">折りたたみ傘のたたみ方</div>
-			</div>
-			<div class="pages_content_body change" style="position: absolute;">
-				<div class="change_item01 fadeInUpTrigger4">
-					<div class="pages_content_body_text">
-						折りたたみ傘を畳むとき、柄の部分にあたる「中棒」を最初に縮めていませんか？　実は中棒を最初に縮めると、生地をうまく畳むことができなくなります。
-					</div>
-					<div class="pages_content_body_image">
-						<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109018952.gif" alt="">
-					</div>
-				</div>
-			</div>
-			<div class="" style="position: absolute; bottom: 0;">
-				<div class="pages_content_body_text fadeInUpTrigger4 fadeUp6">
-					キレイに畳むコツは、中棒を伸ばしたまま親骨を折り畳み、片手で中棒を持ちつつ半開きのまま折り目を整えること。
-				</div>
-				<div class="change02 pages06_background01 fadeInUpTrigger7 fadeUp6" style="position: absolute;"></div>
-				<div class="pages_content_body_text fadeInUpTrigger8 fadeUp13">
-					折り目の山をしっかり伸ばしたら手で露先（生地の端の部分）を束ね、傘を巻き、最後に中棒を縮めましょう。この方法で畳めば、時間が経っても生地が広がってしまうことはありません。
-				</div>
-				<div class="change02 pages06_background02 fadeInUpTrigger8 fadeUp13" style="position: absolute;"></div>
-			</div>
-		</section>
-		<section id="box7" class="box tsuyu_pages07 fixed" data-section-name="Area7">
-			<div class="pages_content_title fadeInUpTrigger">
-				<div class="pages03_menu_number">04</div>
-				<div class="pages03_menu_content">洗濯物を乾燥機で早く乾かす方法</div>
-			</div>
-			<div class="pages_content_body change">
-				<div class="change_item01 fadeInUpTrigger4">
-					<div class="pages_content_body_text">
-						外で洗濯物を干すことができない時、乾燥機を利用することもあると思います。
-					</div>
-					<div class="pages_content_body_image">
-						<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960884.gif" alt="">
-					</div>
-				</div>
-				<div class="change_item02 fadeInUpTrigger5 fadeUp6">
-					<div class="pages_content_body_text">
-						そんな時は、洗濯物と一緒に乾いたバスタオルを2枚ほど入れると早く洗濯物を乾燥させることができるそうです。
-					</div>
-					<div class="pages_content_body_image fadeInUpTrigger9 fadeUp6" style="position: absolute;">
-						<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021141.gif" alt="">
-					</div>
-					<div class="pages_content_body_image fadeInUpTrigger fadeUp11" style="position: absolute;">
-						<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960885.gif" alt="">
-					</div>
-				</div>
+    <section class="section" id="section1">
+      <div class="asocon3lines_01 asocon3lines box effect" id="spthreemenu1"><img
+          src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_02.gif" width="100%"
+          alt=""></div>
+      <div class="readmore" id="readmore1" style="opacity: 0; transition-delay: 2s;  transition-duration: 1s;">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
+      </div>
+    </section>
+    <section class="section" id="section2">
+      <div class="asocon3lines_02 asocon3lines box effect" id="pcthreemenu2">
+        <div class="pages02_text" style=" z-index: 2;">
+          <div class="pages02_text_first fadeInUpTrigger hop">
+            夏がくる前に必ずやってくる梅雨の季節。<br>「いつまで続くんだろう・・・」と憂鬱な気持ちになっていませんか？
+          </div>
+          <div class="pages02_text_second fadeInUpTrigger fadeUp2 hop">
+            <br>雨の日は自律神経が乱れやすいので、無理をしてストレスを溜めてしまわないことも大切です。
+          </div>
+        </div>
+        <div class="pages02_img hop" style="z-index: -1; animation-duration: 1s; overflow: inherit;">
+          <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_03.gif"
+            width="100%" alt="" style="z-index: -1; top: -52%;">
+        </div>
+      </div>
+      <div class="readmore" id="readmore2" style="opacity: 0; transition-delay: 2s;  transition-duration: 1s;">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" width="100%" alt="">
+      </div>
+    </section>
+    <section class="section" id="section3">
 
-			</div>
-		</section>
-		<section id="box8" class="box tsuyu_pages08 fixed" data-section-name="Area8">
-			<div class="pages_content">
-				<div class="pages_content_title fadeInUpTrigger">
-					<div class="pages03_menu_number">05</div>
-					<div class="pages03_menu_content">過ごし方のおすすめ</div>
-				</div>
-				<div class="pages_content_body change">
-					<div class="change_item01 fadeInUpTrigger">
-						<div class="pages_content_body_text">
-							雨の日は外出するのに気が引けがちですが、それは他の人も同じ。普段は混雑している映画館やショッピングモール、レストランなど、雨の日に客足が遠のくスポットにあえてお出かけしてみるのもおすすめです。
-						</div>
-						<div class="pages_content_body_image">
-							<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960886.gif"
-								alt="">
-						</div>
-						<div class="readmore" id="readmore1">
-							<img src="https://asoboze.itembox.design/item/asocon_06.png" alt="">
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="box9" class="box tsuyu_pages09 pp-scrollable fixed" data-section-name="Area9"
-			style="overflow-y: scroll; position: relative;">
-			<div style="position: relative;">
-				<div class="rains">
-					<span></span><span></span><span></span><span></span><span></span>
-					<span></span><span></span><span></span><span></span><span></span>
-					<span></span><span></span><span></span><span></span><span></span>
-					<span></span><span></span><span></span><span></span><span></span>
-				</div>
+      <div class="box effect" id="pcthreemenu3">
+        <div class="tsuyu_pages03_contents">
+          <div class="pages03_img01 hop">
+            <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_04.gif" width="100%"
+              alt="">
+          </div>
+          <div class="pages03_text fadeInUpTrigger2 hop">
+            そこで今回は、<br>雨の日に試したくなる<br>ライフハックを<br>5つご紹介します！
+          </div>
+          <div class="pages03_menus fadeInUpTrigger3 hop">
+            <ul>
+              <li>
+                <a href="#page4">
+                  <div class="pages03_menu_number">01</div>
+                  <div class="pages03_menu_content">雨の日に靴が滑らない方法</div>
+                </a>
+              </li>
+              <li>
+                <a href="#page5">
+                  <div class="pages03_menu_number">02</div>
+                  <div class="pages03_menu_content">自転車のサドルカバーの代用品</div>
+                </a>
+              </li>
+              <li>
+                <a href="#page6">
+                  <div class="pages03_menu_number">03</div>
+                  <div class="pages03_menu_content">折りたたみ傘のたたみ方</div>
+                </a>
+              </li>
+              <li>
+                <a href="#page7">
+                  <div class="pages03_menu_number">04</div>
+                  <div class="pages03_menu_content">洗濯物を乾燥機で早く乾かす方法</div>
+                </a>
+              </li>
+              <li>
+                <a href="#page8">
+                  <div class="pages03_menu_number">05</div>
+                  <div class="pages03_menu_content">過ごし方のおすすめ</div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="pages03_img02 anime">
+            <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_05.gif" width="100%"
+              alt="">
+          </div>
+        </div>
+      </div>
+      <div class="readmore" id="readmore3" style="opacity: 0; transition-delay: 5s;  transition-duration: 1s;">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" width="100%" alt="">
+      </div>
+    </section>
+    <section class="section" id="section4">
+      <div class="pages_content">
+        <div class="pages_content_title hop">
+          <div class="pages03_menu_number">01</div>
+          <div class="pages03_menu_content">雨の日に靴が滑らない方法</div>
+        </div>
+        <div class="pages_content_body change">
+          <div class="change_item01 hop01">
+            <div class="pages_content_body_text">
+              靴底に絆創膏を貼ると、足元が濡れている時でも滑りにくくなるそうです。<br>雨の日に簡単に試せそうですね！
+            </div>
+            <div class="pages_content_body_image">
+              <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_06.gif" width="100%"
+                alt="">
+            </div>
+          </div>
+          <div class="change_item02 hop02 fadeUp6">
+            <div class="pages_content_body_text">
+              実はこの裏技は、警視庁警備部災害対策課がツイッターのオフィシャルアカウントを通じて発表したもの。すぐ剥がれてしまうのでは？と思ってしまいますが、丸1日履いていても剝がれなかったそうです。<br>
+              災害時にも役立ちそうなアイデアですね。
+            </div>
+            <div class="pages_content_body_image">
+              <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_07.gif" width="100%"
+                alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="readmore" id="readmore4" style="opacity: 0; transition-delay: 8s;  transition-duration: 1s;">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" width="100%" alt="">
+      </div>
+    </section>
+    <section class="section" id="section5">
+      <div id="asocon_3point2" class="">
+        <div class="pages_content">
+          <div class="pages_content_title hop">
+            <div class="pages03_menu_number">02</div>
+            <div class="pages03_menu_content">自転車のサドルカバーの代用品</div>
+          </div>
+          <div class="pages_content_body change">
+            <div class="change_item01 hop03">
+              <div class="pages_content_body_text hop">
+                雨などでサドルが濡れてしまわないようにするサドルカバーですが、こんなもので代用することもできます。
+              </div>
+              <div class="pages_content_body_image hop01" style="animation-duration: 5s;">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_08.gif" width="100%"
+                  alt="">
+              </div>
+              <div class="pages_content_body_image hop02 fadeUp6" style="animation-delay: 5s;">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_09.gif" width="100%"
+                  alt="">
+              </div>
+            </div>
+            <div class="" style="position: absolute; overflow: initial;">
+              <div class="pages_content_body_text hop02" style="animation-delay: 12s;">
+                一般的なレジ袋は摩擦で破れてしまう恐れがありますが、丈夫な素材のRegileなら繰り返し使うこともできます。
+              </div>
+              <div class="hop02 background01">
+                &nbsp;
+              </div>
+              <div class="pages_content_body_text hop02" style="animation-delay: 17s;">
+                折りたたんでコンパクトに収納できるので、いざという時に試してみてください。 </div>
+              <div class="hop02 background02">
+                &nbsp;
+              </div>
+            </div>
 
-			</div>
+          </div>
 
-			<div class="recommendItem fadeInUpTrigger">
-				<div style="padding-top: 40px;">
-					<img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021367.gif" alt="">
-				</div>
-				<div class="pages_content_body_text">
-					最後に、梅雨の時期を楽しく過ごせる、当店とっておきアイテムをご紹介します。
-				</div>
-				<div>
-					<ul>
-						<li><a href="recommend01">一軍のバッグに”入れっぱなし”</a></li>
-						<li><a href="recommend02">お出かけ用ポーチも防水を</a></li>
-						<li><a href="recommend03">持ち物全部まとめて身軽にお出かけ</a></li>
-						<li><a href="recommend04">ジメジメ天気でも気分はふわっと</a></li>
-						<li><a href="recommend05">一度使うと手放せない安心感</a></li>
-					</ul>
-				</div>
-				<div class="recommendItemList" id="recommend01"><a
-						href="https://item.rakuten.co.jp/asoboze/am-pe7210/"><img
-							src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/191.jpg" alt=""
-							width="100%"></a>
-				</div>
-				<div style="position: relative;">
-					<div class="rains">
-						<span></span><span></span><span></span><span></span><span></span>
-						<span></span><span></span><span></span><span></span><span></span>
-						<span></span><span></span><span></span><span></span><span></span>
-						<span></span><span></span><span></span><span></span><span></span>
-					</div>
+        </div>
 
-				</div>
-				<div class="recommendItemList" id="recommend02"><a
-						href="https://item.rakuten.co.jp/asoboze/tf-v219m/"><img
-							src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021430.jpg" alt=""
-							width="100%"></a></div>
-				<div class="recommendItemList" id="recommend03"><a
-						href="https://item.rakuten.co.jp/asoboze/ze-v203/"><img
-							src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021431.jpg" alt=""
-							width="100%"></a></div>
-				<div style="position: relative;">
-					<div class="rains">
-						<span></span><span></span><span></span><span></span><span></span>
-						<span></span><span></span><span></span><span></span><span></span>
-						<span></span><span></span><span></span><span></span><span></span>
-						<span></span><span></span><span></span><span></span><span></span>
-					</div>
+      </div>
+      <div class="readmore" id="readmore5" style="opacity: 0; transition-delay: 20s;  transition-duration: 1s;">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" width="100%" alt="">
+      </div>
+    </section>
+    <section class="section" id="section6">
+      <div id="asocon_3point3" class="">
+        <div class="pages_content">
+          <div class="pages_content_title hop">
+            <div class="pages03_menu_number">03</div>
+            <div class="pages03_menu_content">折りたたみ傘のたたみ方</div>
+          </div>
+          <div class="pages_content_body change">
+            <div class="change_item01 hop03" style="animation-delay: 5s;">
+              <div class="pages_content_body_text hop">
+                折りたたみ傘を畳むとき、柄の部分にあたる「中棒」を最初に縮めていませんか？　実は中棒を最初に縮めると、生地をうまく畳むことができなくなります。 </div>
+              <div class="pages_content_body_image hop">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_12.gif" width="100%"
+                  alt="">
+              </div>
+            </div>
+            <div class="" style="position: absolute; overflow: initial;">
+              <div class="pages_content_body_text hop01"
+                style="animation-delay: 5s; animation-duration: 10s; position: absolute;">
+                キレイに畳むコツは、中棒を伸ばしたまま親骨を折り畳み、片手で中棒を持ちつつ半開きのまま折り目を整えること。
+              </div>
+              <div class="hop02 background01 background" style="animation-delay: 5s;">
+                &nbsp;
+              </div>
+              <div class="pages_content_body_text hop02" style="animation-delay: 13s; position: absolute;">
+                折り目の山をしっかり伸ばしたら手で露先（生地の端の部分）を束ね、傘を巻き、最後に中棒を縮めましょう。この方法で畳めば、時間が経っても生地が広がってしまうことはありません。 </div>
+              <div class="hop02 background02 background" style="animation-delay: 13s;">
+                &nbsp;
+              </div>
+            </div>
 
-				</div>
-				<div class="recommendItemList" id="recommend04"><a
-						href="https://item.rakuten.co.jp/asoboze/ze-v204m/"><img
-							src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021432.jpg" alt=""
-							width="100%"></a></div>
-				<div style="position: relative;">
-					<div class="rains">
-						<span></span><span></span><span></span><span></span><span></span>
-						<span></span><span></span><span></span><span></span><span></span>
-						<span></span><span></span><span></span><span></span><span></span>
-						<span></span><span></span><span></span><span></span><span></span>
-					</div>
+          </div>
 
-				</div>
-				<div class="recommendItemList" id="recommend05"><a
-						href="https://item.rakuten.co.jp/asoboze/toftsack/"><img
-							src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021433.jpg" alt=""
-							width="100%"></a></div>
-				<div class="backTo">
-					<div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021767.gif"
-							alt="">
-					</div>
-					<div class="pages03_menus">
-						<ul>
-							<li>
-								<a href="#box4">
-									<div class="pages03_menu_number">01</div>
-									<div class="pages03_menu_content">雨の日に靴が滑らない方法</div>
-								</a>
-							</li>
-							<li>
-								<a href="#box5">
-									<div class="pages03_menu_number">02</div>
-									<div class="pages03_menu_content">自転車のサドルカバーの代用品</div>
-								</a>
-							</li>
-							<li>
-								<a href="#box6">
-									<div class="pages03_menu_number">03</div>
-									<div class="pages03_menu_content">折りたたみ傘のたたみ方</div>
-								</a>
-							</li>
-							<li>
-								<a href="#box7">
-									<div class="pages03_menu_number">04</div>
-									<div class="pages03_menu_content">洗濯物を乾燥機で早く乾かす方法</div>
-								</a>
-							</li>
-							<li>
-								<a href="#box8">
-									<div class="pages03_menu_number">05</div>
-									<div class="pages03_menu_content">過ごし方のおすすめ</div>
-								</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+        </div>
 
-		</section>
-	</div>
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
-	<script src="https://www.rakuten.ne.jp/gold/asoboze/pagePiling.js-master/jquery.pagepiling.min.js"></script>
-	<!--自作のJS-->
-	<!--←本体の下に設置しないと動きません！-->
-	<script>
-		var height = window.innerHeight;
-		document.documentElement.style.setProperty('--vh', height / 100 + 'px');
-		$.scrollify({
-			section: ".box",//1ページスクロールさせたいエリアクラス名
-			scrollbars: "false",//スクロールバー表示・非表示設定
-			interstitialSection: "#header,#footer",//ヘッダーフッターを認識し、1ページスクロールさせず表示されるように設定
-			easing: "swing", // 他にもlinearやeaseOutExpoといったjQueryのeasing指定可能
-			scrollSpeed: 300, // スクロール時の速度
+      </div>
+      <div class="readmore" id="readmore6" style="opacity: 0; transition-delay: 15s;  transition-duration: 1s;">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" width="100%" alt="">
+      </div>
+    </section>
+    <section class="section" id="section7">
+      <div id="asocon_3point3" class="">
+        <div class="pages_content">
+          <div class="pages_content_title hop">
+            <div class="pages03_menu_number">04</div>
+            <div class="pages03_menu_content">洗濯物を乾燥機で早く乾かす方法</div>
+          </div>
+          <div class="pages_content_body change">
+            <div class="change_item01 hop01" style="">
+              <div class="pages_content_body_text hop">
+                外で洗濯物を干すことができない時、乾燥機を利用することもあると思います。 </div>
+              <div class="pages_content_body_image hop">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_15.gif" width="100%"
+                  alt="">
+              </div>
+            </div>
+            <div class="change_item02" style="position: absolute;">
+              <div class="pages_content_body_text hop02" style="animation-delay: 7s;">
+                そんな時は、洗濯物と一緒に乾いたバスタオルを2枚ほど入れると早く洗濯物を乾燥させることができるそうです。
+              </div>
+              <div class="pages_content_body_image hop01" style="animation-delay: 7s">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_16.gif" width="100%"
+                  alt="">
+              </div>
+              <div class="pages_content_body_image hop02" style="animation-delay: 13s;">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_17.gif" width="100%"
+                  alt="">
+              </div>
+            </div>
 
-			//以下、ページネーション設定
-			before: function (i, panels) {
-				var ref = panels[i].attr("data-section-name");
-				$(".pagination .active").removeClass("active");
-				$(".pagination").find("a[href=\"#" + ref + "\"]").addClass("active");
-			},
-			afterRender: function () {
-				var pagination = "<ul class=\"pagination\">";
-				var activeClass = "";
-				$(".box").each(function (i) {//1ページスクロールさせたいエリアクラス名を指定
-					activeClass = "";
-					if (i === $.scrollify.currentIndex()) {
-						activeClass = "active";
-					}
-					pagination += "<li><a class=\"" + activeClass + "\" href=\"#" + $(this).attr("data-section-name") + "\"><span class=\"hover-text\">" + $(this).attr("data-section-name").charAt(0).toUpperCase() + $(this).attr("data-section-name").slice(1) + "</span></a></li>";
-				});
-				pagination += "</ul>";
+          </div>
 
-				$("div[id^='box']").append(pagination);//はじめのエリアにページネーションを表示
-				$(".pagination a").on("click", $.scrollify.move);
-			}
+        </div>
 
-		});
+      </div>
+      <div class="readmore" id="readmore7" style="opacity: 0; transition-delay: 15s;  transition-duration: 1s;">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" width="100%" alt="">
+      </div>
+    </section>
+    <section class="section" id="section8">
+      <div id="asocon_3point3" class="">
+        <div class="pages_content">
+          <div class="pages_content_title hop">
+            <div class="pages03_menu_number">05</div>
+            <div class="pages03_menu_content">過ごし方のおすすめ</div>
+          </div>
+          <div class="pages_content_body change">
+            <div class="change_item01" style="">
+              <div class="pages_content_body_text hop">
+                雨の日は外出するのに気が引けがちですが、それは他の人も同じ。普段は混雑している映画館やショッピングモール、レストランなど、雨の日に客足が遠のくスポットにあえてお出かけしてみるのもおすすめです。 </div>
+              <div class="pages_content_body_image hop">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_18.gif" width="100%"
+                  alt="">
+              </div>
+            </div>
 
+          </div>
 
-		// 動きのきっかけとなるアニメーションの名前を定義
-		function fadeAnime() {
+        </div>
 
-			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
-			$('.fadeInUpTrigger').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top; //要素より、50px上の
-				var scroll = $(window).scrollTop();
-				var windowHeight = $(window).height();
-				if (scroll >= elemPos - windowHeight) {
-					$(this).addClass('fadeUp');
-					// 画面内に入ったらfadeInというクラス名を追記
-				}
-			});
-			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
-			$('.fadeInUpTrigger2').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top; //要素より、50px上の
-				var scroll = $(window).scrollTop();
-				var windowHeight = $(window).height();
-				if (scroll >= elemPos - windowHeight) {
-					$(this).addClass('fadeUp3');
-					// 画面内に入ったらfadeInというクラス名を追記
-				}
-			});
-			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
-			$('.fadeInUpTrigger3').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top; //要素より、50px上の
-				var scroll = $(window).scrollTop();
-				var windowHeight = $(window).height();
-				if (scroll >= elemPos - windowHeight) {
-					$(this).addClass('fadeUp4');
-					// 画面内に入ったらfadeInというクラス名を追記
-				}
-			});
-			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
-			$('.fadeInUpTrigger4').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top; //要素より、50px上の
-				var scroll = $(window).scrollTop();
-				var windowHeight = $(window).height();
-				if (scroll >= elemPos - windowHeight) {
-					$(this).addClass('fadeUp5');
-					// 画面内に入ったらfadeInというクラス名を追記
-				}
-			});
+      </div>
+      <div class="readmore" id="readmore8" style="opacity: 0; transition-delay: 3s;  transition-duration: 1s;">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" width="100%" alt="">
+      </div>
+    </section>
+    <section class="section pp-scrollable" id="section9" style="overflow-x: hidden;">
 
-			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
-			$('.fadeInUpTrigger5').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top; //要素より、50px上の
-				var scroll = $(window).scrollTop();
-				var windowHeight = $(window).height();
-				if (scroll >= elemPos - windowHeight) {
-					$(this).addClass('fadeUp');
-					// 画面内に入ったらfadeInというクラス名を追記
-				}
-			});
+      <div class="recommendItem hop">
+        <div style="padding-top: 90px; max-width: 376px; width: 100%; margin: auto;">
+          <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_19.gif" width="100%" alt="">
+        </div>
+        <div class="pages_content_body_text">
+          最後に、梅雨の時期を楽しく過ごせる、当店とっておきアイテムをご紹介します。
+        </div>
+        <div class="sponly">
+          <ul>
+            <li><a href="#recommend01">一軍のバッグに”入れっぱなし”</a></li>
+            <li><a href="#recommend02">お出かけ用ポーチも防水を</a></li>
+            <li><a href="#recommend03">持ち物全部まとめて身軽にお出かけ</a></li>
+            <li><a href="#recommend04">ジメジメ天気でも気分はふわっと</a></li>
+            <li><a href="#recommend05">一度使うと手放せない安心感</a></li>
+          </ul>
+        </div>
+        <div class="pconly">
+          <br><br><br>
+        </div>
+        <div class="recommendItemListWrapper">
+          <div class="recommendItemList" id="recommend01"><a href="https://item.rakuten.co.jp/asoboze/am-pe7210/"><img
+                src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_20.jpg" alt="" width="100%"></a>
+          </div>
 
-			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
-			$('.fadeInUpTrigger6').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top; //要素より、50px上の
-				var scroll = $(window).scrollTop();
-				var windowHeight = $(window).height();
-				if (scroll >= elemPos - windowHeight) {
-					$(this).addClass('fadeUp8');
-					// 画面内に入ったらfadeInというクラス名を追記
-				}
-			});
+          <div class="recommendItemList" id="recommend02"><a href="https://item.rakuten.co.jp/asoboze/tf-v219m/"><img
+                src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_21.jpg" alt=""
+                width="100%"></a></div>
+          <div class="recommendItemList" id="recommend03"><a href="https://item.rakuten.co.jp/asoboze/ze-v203/"><img
+                src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_22.jpg" alt=""
+                width="100%"></a></div>
 
-			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
-			$('.fadeInUpTrigger7').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top; //要素より、50px上の
-				var scroll = $(window).scrollTop();
-				var windowHeight = $(window).height();
-				if (scroll >= elemPos - windowHeight) {
-					$(this).addClass('fadeUp9');
-					// 画面内に入ったらfadeInというクラス名を追記
-				}
-			});
+          <div class="recommendItemList" id="recommend04"><a href="https://item.rakuten.co.jp/asoboze/ze-v204m/"><img
+                src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_23.jpg" alt=""
+                width="100%"></a></div>
 
-			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
-			$('.fadeInUpTrigger8').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top; //要素より、50px上の
-				var scroll = $(window).scrollTop();
-				var windowHeight = $(window).height();
-				if (scroll >= elemPos - windowHeight) {
-					$(this).addClass('fadeUp12');
-					// 画面内に入ったらfadeInというクラス名を追記
-				}
-			});
+          <div class="recommendItemList" id="recommend05"><a href="https://item.rakuten.co.jp/asoboze/toftsack/"><img
+                src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_24.jpg" alt=""
+                width="100%"></a></div>
+        </div>
 
-			//ふわっと動くきっかけのクラス名と動きのクラス名の設定
-			$('.fadeInUpTrigger9').each(function () { //fadeInUpTriggerというクラス名が
-				var elemPos = $(this).offset().top; //要素より、50px上の
-				var scroll = $(window).scrollTop();
-				var windowHeight = $(window).height();
-				if (scroll >= elemPos - windowHeight) {
-					$(this).addClass('fadeUp14');
-					// 画面内に入ったらfadeInというクラス名を追記
-				}
-			});
-			//関数でまとめることでこの後に違う動きを追加することが出来ます
-			$('.fadeInDownTrigger').each(function () { //fadeInDownTriggerというクラス名が
-				var elemPos = $(this).offset().top - 50; //要素より、50px上の
-				var scroll = $(window).scrollTop();
-				var windowHeight = $(window).height();
-				if (scroll >= elemPos - windowHeight) {
-					$(this).addClass('fadeDown');
-					// 画面内に入ったらfadeDownというクラス名を追記
-				}
-			});
+        <div class="backTo">
+          <div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_25.gif" width="158" alt="">
+          </div>
+          <div class="pages03_menus">
+            <ul>
+              <li>
+                <a href="#page4">
+                  <div class="pages03_menu_number">01</div>
+                  <div class="pages03_menu_content">雨の日に靴が滑らない方法</div>
+                </a>
+              </li>
+              <li>
+                <a href="#page5">
+                  <div class="pages03_menu_number">02</div>
+                  <div class="pages03_menu_content">自転車のサドルカバーの代用品</div>
+                </a>
+              </li>
+              <li>
+                <a href="#page6">
+                  <div class="pages03_menu_number">03</div>
+                  <div class="pages03_menu_content">折りたたみ傘のたたみ方</div>
+                </a>
+              </li>
+              <li>
+                <a href="#page7">
+                  <div class="pages03_menu_number">04</div>
+                  <div class="pages03_menu_content">洗濯物を乾燥機で早く乾かす方法</div>
+                </a>
+              </li>
+              <li>
+                <a href="#page8">
+                  <div class="pages03_menu_number">05</div>
+                  <div class="pages03_menu_content">過ごし方のおすすめ</div>
 
+                </a>
+              </li>
+              <li>
+                <a href="#asocon2020">
+                  <div class="pages03_menu_number">top</div>
+                  <div class="pages03_menu_content">ページトップへ戻る</div>
 
-		}//ここまでふわっと動くきっかけのクラス名と動きのクラス名の設定
+                </a>
 
-		// 画面をスクロールをしたら動かしたい場合の記述
-		$(window).scroll(function () {
-			fadeAnime();/* アニメーション用の関数を呼ぶ*/
-		});// ここまで画面をスクロールをしたら動かしたい場合の記述
+              </li>
 
-		// 画面が読み込まれたらすぐに動かしたい場合の記述
-		$(window).on('load', function () {
-			fadeAnime();/* アニメーション用の関数を呼ぶ*/
-		});// ここまで画面が読み込まれたらすぐに動かしたい場合の記述
-	</script>
-	<script>
-		$(function () {
-			$('#container').pagepiling({
-				scrollingSpeed: 2000,
-			});
-		});
-	</script>
-	<script>
-		var sec1hasClass = $('#box1').hasClass('active');
-		var sec2hasClass = $('#box2').hasClass('active');
-		var sec3hasClass = $('#box3').hasClass('active');
-		var sec4hasClass = $('#box4').hasClass('active');
-		var sec5hasClass = $('#box5').hasClass('active');
-		var sec6hasClass = $('#box6').hasClass('active');
-		var sec7hasClass = $('#box7').hasClass('active');
-		var sec8hasClass = $('#box8').hasClass('active');
-		var sec8hasClass = $('#box9').hasClass('active');
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-	</script>
+  </div>
+  <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.21/jquery.scrollify.min.js"></script>
+  <script src="https://www.rakuten.ne.jp/gold/asoboze/pagePiling.js-master/jquery.pagepiling.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.section').css('height', $(window).height());
+    });
+    $(window).resize(function () {
+      $('.section').css('height', $(window).height());
+    })
+    $(function () {
+      $('#asocon2020').pagepiling({
+        scrollingSpeed: 1500,
+        sectionSelecter: '.section',
+        menu: '#nav',
+        anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7', 'page8', 'page9'],
+        navigation: {
+          'textColor': '#b6a094',
+          'bulletsColor': '#b6a094',
+          'position': 'right',
+        },
+      });
+    });
+    var sec1hasClass = $('#section1').hasClass('active');
+    var sec2hasClass = $('#section2').hasClass('active');
+    var sec3hasClass = $('#section3').hasClass('active');
+    var sec4hasClass = $('#section4').hasClass('active');
+    var sec5hasClass = $('#section5').hasClass('active');
+    var sec6hasClass = $('#section6').hasClass('active');
+    var sec7hasClass = $('#section7').hasClass('active');
+    var sec8hasClass = $('#section8').hasClass('active');
+    var sec9hasClass = $('#section9').hasClass('active');
+
+    $.fn.animate_aso = function (properties, duration, ease) {
+      ease = ease || 'ease';
+      var $this = this;
+      var cssOrig = { transition: $this.css('transition') };
+      return $this.queue(next => {
+        properties['transition'] = 'all ' + duration + 'ms ' + ease;
+        $this.css(properties);
+        setTimeout(function () {
+          $this.css(cssOrig);
+          next();
+        }, duration);
+      });
+    };
+    $('.hop').css({ 'opacity': '0', 'transform': 'translateY(20px)' });
+    $('.hop2').css('opacity', '0');
+    $('.hop3').css('opacity', '0');
+    $('.hop4').css('opacity', '0');
+    $('.hop5').css('opacity', '0');
+    $('.hop6').css('opacity', '0');
+    $(window).on('load scroll hashchange', function () {
+      if ((location.hash == '#page4') || (location.hash == '#page5') || (location.hash == '#page6') || (location.hash == '#page7') || (location.hash == '#page8') || (location.hash == '#page9')) {
+        if (location.hash == '#page4') {
+          $('#section4 .hop01').addClass('fadeUp5');
+          $('#section4 .hop').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section4 .hop02').addClass('fadeUp');
+          $('#section4 .hop4').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#readmore4').css('opacity', '1');
+        } else if (location.hash == '#page5') {
+          $('#section5 .hop').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section5 .hop01').addClass('fadeUp5');
+          $('#section5 .hop02').addClass('fadeUp');
+          $('#section5 .hop03').addClass('fadeUp15');
+          $('#readmore5').css('opacity', '1');
+        } else if (location.hash == '#page6') {
+          $('#section6 .hop').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section6 .hop01').addClass('fadeUp5');
+          $('#section6 .hop02').addClass('fadeUp');
+          $('#section6 .hop03').addClass('fadeUp15');
+          $('#readmore6').css('opacity', '1');
+        } else if (location.hash == '#page7') {
+          $('#section7 .hop').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section7 .hop01').addClass('fadeUp5');
+          $('#section7 .hop02').addClass('fadeUp');
+          $('#section7 .hop4').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#readmore7').css('opacity', '1');
+        } else if (location.hash == '#page8') {
+          $('#section8 .hop').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section8 .hop2').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section8 .hop3').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section8 .hop4').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section8 .hop5').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section8 .hop6').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#readmore8').css('opacity', '1');
+        } else {
+          $('#section9 .hop').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#readmore1').fadeOut(1000);
+        }
+      } else {
+        if (location.hash == '#page1') {
+          $('#spthreemenu1').css('transform', 'translate3d(0, 0, 0)');
+          $('#pcthreemenu2').css('transform', 'translate3d(0, 100%, 0)');
+          $('#pcthreemenu3').css('transform', 'translate3d(0, 100%, 0)');
+          $('#readmore1').css('opacity', '1');
+        } else if (location.hash == '#page2') {
+          $('#spthreemenu1').css('transform', 'translate3d(0, -100%, 0)');
+          $('#pcthreemenu2').css('transform', 'translate3d(0, 0, 0)');
+          $('#pcthreemenu3').css('transform', 'translate3d(0, 100%, 0)');
+          $('#section2 .hop').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section2 .hop2').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section2 .hop3').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section2 .hop4').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#readmore2').css('opacity', '1');
+        } else if (location.hash == '#page3') {
+          $('#spthreemenu1').css('transform', 'translate3d(0, -100%, 0)');
+          $('#pcthreemenu2').css('transform', 'translate3d(0, -100%, 0)');
+          $('#pcthreemenu3').css('transform', 'translate3d(0, 0, 0)');
+          $('#section3 .hop').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section3 .hop2').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section3 .hop3').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#section3 .hop4').css({ 'opacity': '1', 'transform': 'translateY(0)' });
+          $('#readmore3').css('opacity', '1');
+        }
+      }
+    });
+    function fadeAnime() {
+
+      //ふわっと動くきっかけのクラス名と動きのクラス名の設定
+      $('.fadeInUpTrigger').each(function () { //fadeInUpTriggerというクラス名が
+        var elemPos = $(this).offset().top; //要素より、50px上の
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll >= elemPos - windowHeight) {
+          $(this).addClass('fadeUp');
+          // 画面内に入ったらfadeInというクラス名を追記
+        }
+      });
+      //ふわっと動くきっかけのクラス名と動きのクラス名の設定
+      $('.fadeInUpTrigger2').each(function () { //fadeInUpTriggerというクラス名が
+        var elemPos = $(this).offset().top; //要素より、50px上の
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll >= elemPos - windowHeight) {
+          $(this).addClass('fadeUp3');
+          // 画面内に入ったらfadeInというクラス名を追記
+        }
+      });
+      //ふわっと動くきっかけのクラス名と動きのクラス名の設定
+      $('.fadeInUpTrigger3').each(function () { //fadeInUpTriggerというクラス名が
+        var elemPos = $(this).offset().top; //要素より、50px上の
+        var scroll = $(window).scrollTop();
+        var windowHeight = $(window).height();
+        if (scroll >= elemPos - windowHeight) {
+          $(this).addClass('fadeUp4');
+          // 画面内に入ったらfadeInというクラス名を追記
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>

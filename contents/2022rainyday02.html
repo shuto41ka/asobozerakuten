@@ -57,7 +57,7 @@
     }
 
     #section1 {
-      background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/2022tsuyu/imgrc0108719072.jpg);
+      background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyusp_01.jpg);
       background-position: center;
       background-size: cover;
     }
@@ -309,7 +309,7 @@
     #section5 .background01 {
       animation-delay: 12s;
       z-index: -2;
-      background: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960879.gif);
+      background: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_10.gif);
       position: absolute;
       width: 100vw;
       height: calc(100vh - 100px);
@@ -323,7 +323,7 @@
     #section5 .background02 {
       animation-delay: 17s;
       z-index: -1;
-      background: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960880.gif);
+      background: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_11.gif);
       position: absolute;
       width: 100vw;
       height: calc(100vh - 100px);
@@ -337,7 +337,7 @@
     #section6 .background01 {
       animation-delay: 12s;
       z-index: -2;
-      background: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960882.gif);
+      background: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_13.gif);
       position: absolute;
       width: 100vw;
       height: calc(100vh - 100px);
@@ -351,7 +351,7 @@
     #section6 .background02 {
       animation-delay: 17s;
       z-index: -1;
-      background: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960883.gif);
+      background: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_14.gif);
       position: absolute;
       width: 100vw;
       height: calc(100vh - 100px);
@@ -491,7 +491,7 @@
       width: 100vw;
       height: 100vh;
     }
-  
+
     .readmore {
       position: absolute;
       bottom: 8vh;
@@ -1093,9 +1093,11 @@
       .sponly {
         display: none;
       }
+
       .asocon3lines img {
         top: 100vh;
       }
+
       .pp-tableCell {
         height: 100vh;
       }
@@ -1704,7 +1706,9 @@
         grid-template-columns: 1fr 1fr;
 
       }
-
+      #section1 {
+        background-image: url(https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyupc_01.jpg);
+      }
       .pages02_text {
         width: 100%;
         margin: auto;
@@ -1721,40 +1725,119 @@
       }
 
       .pages_content_body_text {
-        width: 100%;
+        max-width: 320px;
       }
 
-      .change_item01, .change_item02 {
+      .change_item01,
+      .change_item02 {
         display: grid;
         width: 100%;
         grid-template-columns: 1fr 1fr;
       }
+
       .pages_content_title {
         margin: 200px auto 0;
       }
+
       .pages03_img01.hop {
         margin-left: 10vw;
       }
+
       .pages_content_body_image {
-        width: 100%;
+        width: 300px;
+        margin-left: 0;
       }
-      .change_item01, .change_item02 {
+
+      .change_item01,
+      .change_item02 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         width: 100vw;
 
       }
+
       .pages_content_body_text {
         margin: 20px 15vw 0;
       }
+
       [id*="section"]:not(#section3) .pages_content_title {
         margin: 200px 15vw 0;
       }
+
+      #section5 .background01,
+      #section5 .background02,
+      #section6 .background01,
+      #section6 .background02 {
+        width: 50vw;
+        height: 100vh;
+        top: -252px;
+        left: 50vw;
+        background-size: auto 140%;
+
+      }
+
+      .pages_content_body_image.hop01.fadeUp5 {
+        grid-column: 2 / 2;
+      }
+
+      #section9 .pages_content_body_text {
+        margin: 20px auto 0;
+      }
+
+      .recommendItem div ul {
+        margin: 15px auto;
+        width: max-content;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 70px;
+      }
+
+      .recommendItem div ul li {
+        padding: 5vw 0;
+      }
+
+      .recommendItemListWrapper {
+        display: grid;
+        width: 80vw;
+        max-width: 1080px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+
+      }
+
+      .backTo {
+        width: max-content;
+        margin: 100px auto 20px;
+      }
     }
+
     /* レスポンシブ（タブレット）　横幅760px以上かつ横向き */
 
     /* レスポンシブ（PC）横幅1200px以上 */
-    @media screen and (min-width: 1200px) {}
+    @media screen and (min-width: 1200px) {
+      .asocon3lines img {
+        width: 400px;
+
+      }
+
+      .pages_content_body_text {
+        max-width: 30vw;
+      }
+
+      [id*="section"]:not(#section3) .pages_content_title {
+        margin: 300px 15vw 0;
+      }
+      .recommendItem div ul {
+        grid-template-columns: 1fr 1fr 1fr;
+
+      }
+      #section5 .background01,
+      #section5 .background02,
+      #section6 .background01,
+      #section6 .background02 {
+        top: -352px;
+      }
+        }
 
     /* レスポンシブ（PC）横幅1200px以上 */
   </style>
@@ -1811,7 +1894,8 @@
 
     <section class="section" id="section1">
       <div class="asocon3lines_01 asocon3lines box effect" id="spthreemenu1"><img
-          src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/2022tsuyu/imgrc0108746297.gif" alt=""></div>
+          src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_02.gif" width="100%"
+          alt=""></div>
       <div class="readmore" id="readmore1" style="opacity: 0; transition-delay: 2s;  transition-duration: 1s;">
         <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
       </div>
@@ -1827,12 +1911,12 @@
           </div>
         </div>
         <div class="pages02_img hop" style="z-index: -1;">
-          <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/2022tsuyu/imgrc0108746308.gif"
+          <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_03.gif"
             width="100%" alt="" style="z-index: -1; top: -52%;">
         </div>
       </div>
       <div class="readmore" id="readmore2" style="opacity: 0; transition-delay: 2s;  transition-duration: 1s;">
-        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" width="100%" alt="">
       </div>
     </section>
     <section class="section" id="section3">
@@ -1840,7 +1924,7 @@
       <div class="box effect" id="pcthreemenu3">
         <div class="tsuyu_pages03_contents">
           <div class="pages03_img01 hop">
-            <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108768623.gif" width="100%"
+            <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_04.gif" width="100%"
               alt="">
           </div>
           <div class="pages03_text fadeInUpTrigger2 hop">
@@ -1881,13 +1965,13 @@
             </ul>
           </div>
           <div class="pages03_img02 anime">
-            <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108768624.gif" width="100%"
+            <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_05.gif" width="100%"
               alt="">
           </div>
         </div>
       </div>
       <div class="readmore" id="readmore3" style="opacity: 0; transition-delay: 5s;  transition-duration: 1s;">
-        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" width="100%" alt="">
       </div>
     </section>
     <section class="section" id="section4">
@@ -1902,7 +1986,8 @@
               靴底に絆創膏を貼ると、足元が濡れている時でも滑りにくくなるそうです。<br>雨の日に簡単に試せそうですね！
             </div>
             <div class="pages_content_body_image">
-              <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108959853.gif" alt="">
+              <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_06.gif" width="100%"
+                alt="">
             </div>
           </div>
           <div class="change_item02 hop02 fadeUp6">
@@ -1911,13 +1996,14 @@
               災害時にも役立ちそうなアイデアですね。
             </div>
             <div class="pages_content_body_image">
-              <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108959854.gif" alt="">
+              <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_07.gif" width="100%"
+                alt="">
             </div>
           </div>
         </div>
       </div>
       <div class="readmore" id="readmore4" style="opacity: 0; transition-delay: 8s;  transition-duration: 1s;">
-        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" width="100%" alt="">
       </div>
     </section>
     <section class="section" id="section5">
@@ -1933,10 +2019,12 @@
                 雨などでサドルが濡れてしまわないようにするサドルカバーですが、こんなもので代用することもできます。
               </div>
               <div class="pages_content_body_image hop01" style="animation-duration: 5s;">
-                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960877.gif" alt="">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_08.gif" width="100%"
+                  alt="">
               </div>
               <div class="pages_content_body_image hop02 fadeUp6" style="animation-delay: 5s;">
-                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960878.gif" alt="">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_09.gif" width="100%"
+                  alt="">
               </div>
             </div>
             <div class="" style="position: absolute; overflow: initial;">
@@ -1959,7 +2047,7 @@
 
       </div>
       <div class="readmore" id="readmore5" style="opacity: 0; transition-delay: 20s;  transition-duration: 1s;">
-        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" width="100%" alt="">
       </div>
     </section>
     <section class="section" id="section6">
@@ -1974,7 +2062,8 @@
               <div class="pages_content_body_text hop">
                 折りたたみ傘を畳むとき、柄の部分にあたる「中棒」を最初に縮めていませんか？　実は中棒を最初に縮めると、生地をうまく畳むことができなくなります。 </div>
               <div class="pages_content_body_image hop">
-                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109018952.gif" alt="">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_12.gif" width="100%"
+                  alt="">
               </div>
             </div>
             <div class="" style="position: absolute; overflow: initial;">
@@ -1998,7 +2087,7 @@
 
       </div>
       <div class="readmore" id="readmore6" style="opacity: 0; transition-delay: 15s;  transition-duration: 1s;">
-        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" width="100%" alt="">
       </div>
     </section>
     <section class="section" id="section7">
@@ -2013,18 +2102,21 @@
               <div class="pages_content_body_text hop">
                 外で洗濯物を干すことができない時、乾燥機を利用することもあると思います。 </div>
               <div class="pages_content_body_image hop">
-                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960884.gif" alt="">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_15.gif" width="100%"
+                  alt="">
               </div>
             </div>
             <div class="change_item02" style="position: absolute;">
               <div class="pages_content_body_text hop02" style="animation-delay: 7s;">
                 そんな時は、洗濯物と一緒に乾いたバスタオルを2枚ほど入れると早く洗濯物を乾燥させることができるそうです。
               </div>
-              <div class="pages_content_body_image hop01" style="animation-delay: 7s;">
-                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021141.gif" alt="">
+              <div class="pages_content_body_image hop01" style="animation-delay: 7s">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_16.gif" width="100%"
+                  alt="">
               </div>
               <div class="pages_content_body_image hop02" style="animation-delay: 13s;">
-                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960885.gif" alt="">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_17.gif" width="100%"
+                  alt="">
               </div>
             </div>
 
@@ -2034,7 +2126,7 @@
 
       </div>
       <div class="readmore" id="readmore7" style="opacity: 0; transition-delay: 15s;  transition-duration: 1s;">
-        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" width="100%" alt="">
       </div>
     </section>
     <section class="section" id="section8">
@@ -2049,7 +2141,8 @@
               <div class="pages_content_body_text hop">
                 雨の日は外出するのに気が引けがちですが、それは他の人も同じ。普段は混雑している映画館やショッピングモール、レストランなど、雨の日に客足が遠のくスポットにあえてお出かけしてみるのもおすすめです。 </div>
               <div class="pages_content_body_image hop">
-                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0108960886.gif" alt="">
+                <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_18.gif" width="100%"
+                  alt="">
               </div>
             </div>
 
@@ -2059,14 +2152,14 @@
 
       </div>
       <div class="readmore" id="readmore8" style="opacity: 0; transition-delay: 3s;  transition-duration: 1s;">
-        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" alt="">
+        <img src="https://www.rakuten.ne.jp/gold/asoboze/02validname/asocon_06.png" width="100%" alt="">
       </div>
     </section>
     <section class="section pp-scrollable" id="section9" style="overflow-x: hidden;">
 
       <div class="recommendItem hop">
         <div style="padding-top: 90px; max-width: 376px; width: 100%; margin: auto;">
-          <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021367.gif" width="100%" alt="">
+          <img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_19.gif" width="100%" alt="">
         </div>
         <div class="pages_content_body_text">
           最後に、梅雨の時期を楽しく過ごせる、当店とっておきアイテムをご紹介します。
@@ -2082,27 +2175,27 @@
         </div>
         <div class="recommendItemListWrapper">
           <div class="recommendItemList" id="recommend01"><a href="https://item.rakuten.co.jp/asoboze/am-pe7210/"><img
-                src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/191.jpg" alt="" width="100%"></a>
+                src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_20.jpg" alt="" width="100%"></a>
           </div>
 
           <div class="recommendItemList" id="recommend02"><a href="https://item.rakuten.co.jp/asoboze/tf-v219m/"><img
                 src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021430.jpg" alt=""
                 width="100%"></a></div>
           <div class="recommendItemList" id="recommend03"><a href="https://item.rakuten.co.jp/asoboze/ze-v203/"><img
-                src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021431.jpg" alt=""
+                src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_21.jpg" alt=""
                 width="100%"></a></div>
 
           <div class="recommendItemList" id="recommend04"><a href="https://item.rakuten.co.jp/asoboze/ze-v204m/"><img
-                src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021432.jpg" alt=""
+                src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_22.jpg" alt=""
                 width="100%"></a></div>
 
           <div class="recommendItemList" id="recommend05"><a href="https://item.rakuten.co.jp/asoboze/toftsack/"><img
-                src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021433.jpg" alt=""
+                src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_23.jpg" alt=""
                 width="100%"></a></div>
         </div>
 
         <div class="backTo">
-          <div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/imgrc0109021767.gif" alt="">
+          <div><img src="https://image.rakuten.co.jp/asoboze/cabinet/monthlyevents/tsuyu_25.gif" alt="">
           </div>
           <div class="pages03_menus">
             <ul>
