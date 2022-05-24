@@ -694,10 +694,6 @@ font-weight: 700;
             float: left;
             box-sizing: border-box;
         }
-    .contentbutton a:nth-child(1) {
-
-        border-left: 1px solid #dacec8;
-    }
     .contentbutton a:nth-child(5) {
         width: 100%;
         margin: 15px 0;

@@ -702,6 +702,7 @@ font-weight: 700;
 		width: max-content;
 		font-size: 26px;
         padding-left: 1vw;
+        letter-spacing: 0;
     }
     .contents_aso .asomidashi_eng, .asolife .asomidashi_eng {
         display: block;
