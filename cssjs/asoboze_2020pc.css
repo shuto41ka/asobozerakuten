@@ -686,7 +686,6 @@ font-weight: 700;
         width: 100%;
             padding: 0;
             box-sizing: border-box;
-            border-right: 1px solid #dacec8;
     }
         .contentbutton a {
             width: 25%;
