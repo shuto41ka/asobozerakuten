@@ -161,14 +161,7 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		$(function () {
-			$("#viewMoreAsolife").click(function () {
-				$("#asolife_contents_more").load("../parts/asolife_viewmore.html #asolife_contents_viewmore");
-				$("#viewMoreAsolife").hide(1000);
-			});
-		});
-	</script>
+
 	<div class="asolife effect">
 		<div class="asomidashi_eng hop">
 			aso&nbsp;LIFE
@@ -233,7 +226,6 @@
 			<span class="viewmore_arrow"></span>
 		</div>
 		<div class="asolife_contents_more" id="asolife_contents_more">
-
 		</div>
 	</div>
 	<div class="officialsns_aso effect">
@@ -373,3 +365,11 @@
 		</span>
 	</div>
 </div>
+<script>
+	$(function () {
+		$("#viewMoreAsolife").click(function () {
+			$("#asolife_contents_more").load("https://www.rakuten.ne.jp/gold/asoboze/parts/asolife_viewmore.html #asolife_contents_viewmore");
+			$("#viewMoreAsolife").hide(1000);
+		});
+	});
+</script>
