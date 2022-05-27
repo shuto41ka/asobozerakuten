@@ -321,7 +321,6 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
     }
     .effect {
         overflow: inherit;
-        display: inline;
     }
     .topthree .effect > a {
         height: 70vw;
