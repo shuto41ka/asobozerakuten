@@ -193,7 +193,7 @@ div {
         overflow: inherit;
     }
     #pcIndexRight div {
-        overflow: initial;
+        overflow: inherit;
     }
     .pcindex_right {
         position: fixed;
@@ -2613,19 +2613,25 @@ margin-top: 150px;
 }
 /*iframe?��??��?�*/
 input[type="checkbox"]#input-humbmenu + #spmenu_aso { 
-width: 80%;
+width: 85%;
 height: 100%;
 transition: 0.5s ease-in-out;
 position:fixed;
 top: 50px;
-right: -80%;
+right: -90%;
+scrollbar-width: none; /*Firefox対応のスクロールバー非表示コード*/  
+-ms-overflow-style: none;/*Internet Explore対応のスクロールバー非表示コード*/
 }
+
+#spmenu_aso::-webkit-scrollbar {  
+    display: none; /*Google Chrome、Safari、Microsoft Edge対応のスクロールバー非表示コード*/
+  }
 
 /*iframe?��??��?�(?�?��プ?��時)*/
 input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
 overflow:scroll;
 -webkit-overflow-scrolling:touch;
-z-index: 2147483646;
+z-index: -10;
 right: 0;
 -webkit-transform: translateX(0);
 transform: translateX(0);

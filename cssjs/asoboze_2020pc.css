@@ -117,9 +117,6 @@ div {
     #pcIndexRight {
         overflow: inherit;
     }
-    #pcIndexRight div {
-        overflow: initial;
-    }
     .pcindex_right {
         position: fixed;
         right: 0;
@@ -291,20 +288,6 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         padding: 15px 5px 15px 15px;
         box-sizing: border-box;
         font-size: 0.8vw;
-    }
-    .pc4menu:first-child {
-        width: 50%;
-    }
-    .pc4menu:nth-child(3) {
-        width: 50%;
-    }
-    .pc4menu:nth-child(2) {
-        width: 22%;
-        margin-left: 10%;
-    }
-    .pc4menu:last-child {
-        width: 22%;
-        margin-left: 10%;
     }
     .topthree a {
         display: inline-block;

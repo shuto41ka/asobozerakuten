@@ -460,25 +460,8 @@ line-height: 1.4em;
             overflow-y: scroll;
             transition: .4s ease-in-out;
         }
-/*iframe?��??��?�*/
-input[type="checkbox"]#input-humbmenu + #spmenu_aso { 
-	width: 80%;
-	height: 100%;
-    transition: 0.5s ease-in-out;
-    position:fixed;
-    top: 50px;
-    right: -80%;
-}
 
-/*iframe?��??��?�(?�?��プ?��時)*/
-input[type="checkbox"]#input-humbmenu:checked + #spmenu_aso {
-    overflow:scroll;
-	-webkit-overflow-scrolling:touch;
-    z-index: 2147483646;
-    right: 0;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-}
+
         .spmenu_aso a:link {
             color: #ffffff;
             text-decoration: none;
