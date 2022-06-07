@@ -104,9 +104,7 @@ a img {
 a img:hover {
     transform: scale(1.02, 1.02);
 }
-div {
-    overflow: hidden;
-}
+
 	div#lightBox1, div#lightBox1 div {
 		overflow: visible;
 	}
@@ -1069,10 +1067,9 @@ font-weight: 700;
             border-radius: 0;
         }
     .footercate {
-        width: max-content;
-        margin: 0 auto 5vh;
+        margin: 5vh auto;
         text-align: center;
-        font-size: 16px;
+        font-size: 12px;
         max-width: 1200px;
         color: #ffffff;
         line-height: 2em;
@@ -1091,7 +1088,7 @@ font-weight: 700;
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 2fr 2fr 1fr;
-        grid-gap: 40px 100px;
+        grid-gap: 40px 50px;
         max-width: 760px;
         color: #ffffff;
     }
