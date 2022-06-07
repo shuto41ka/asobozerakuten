@@ -267,7 +267,6 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
     .pc4menu-title {
         font-size: 1.3vw;
         border-bottom: 1px solid #666464;
-        padding-left: 1vw;
         padding-bottom: 0.5em;
         margin-bottom: 15px;
     }

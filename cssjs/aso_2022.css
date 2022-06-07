@@ -342,7 +342,6 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
     .pc4menu-title {
         font-size: 1.3vw;
         border-bottom: 1px solid #666464;
-        padding-left: 1vw;
         padding-bottom: 0.5em;
         margin-bottom: 15px;
     }
@@ -354,34 +353,27 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         box-sizing: border-box;
         margin-top: 5vh;
         vertical-align: top;
+        width: 23%;
+        margin-left: 2%;
+    }
+    .pc4menu:first-child {
+        margin-left: 0;
     }
     .pc_4menus {
         width: 80%;
-        margin-left: 12%;
+        margin-left: 8%;
         box-sizing: border-box;
         margin-top: 5vh;
     }
     .pc4menu-grid {
         display: inline-block;
-        width: 200px;
-        padding: 15px 5px 15px 15px;
+        width: 500px;
+        padding: 15px 0px;
         box-sizing: border-box;
         font-size: 0.8vw;
+        border-bottom: 1px solid #666464;
     }
-    .pc4menu:first-child {
-        width: 50%;
-    }
-    .pc4menu:nth-child(3) {
-        width: 50%;
-    }
-    .pc4menu:nth-child(2) {
-        width: 22%;
-        margin-left: 10%;
-    }
-    .pc4menu:last-child {
-        width: 22%;
-        margin-left: 10%;
-    }
+
     .topthree a {
         display: inline-block;
         max-width: 95vh;
