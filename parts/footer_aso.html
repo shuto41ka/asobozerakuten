@@ -170,6 +170,40 @@
 			<article>
 				<div class="asolife_content_viewmore">
 					<div class="asolife_contents_viewmore_img">
+						<a href="https://www.rakuten.ne.jp/gold/asoboze/contents/2022rainyday.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_244.jpg" alt="" width="100%"></a>
+					</div>
+					<div class="asolife_text_wrap">
+						<div class="asolife_contents_viewmore_title">
+							<p>
+								梅雨が来る前におさらい
+							</p>
+						</div>
+						<div class="asolife_contents_viewmore_date">
+							-&nbsp;雨の日に試したいライフハック
+						</div>
+					</div>
+				</div>	
+			</article>
+			<article>
+				<div class="asolife_content_viewmore">
+					<div class="asolife_contents_viewmore_img">
+						<a href="https://www.rakuten.ne.jp/gold/asoboze/contents/2022fathersday.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/asoindex_241.jpg" alt="" width="100%"></a>
+					</div>
+					<div class="asolife_text_wrap">
+						<div class="asolife_contents_viewmore_title">
+							<p>
+								thank you<br>father’ｓ day
+							</p>
+						</div>
+						<div class="asolife_contents_viewmore_date">
+							-&nbsp;2022年父の日特集
+						</div>
+					</div>
+				</div>	
+			</article>
+			<article>
+				<div class="asolife_content_viewmore">
+					<div class="asolife_contents_viewmore_img">
 						<a href="https://www.rakuten.ne.jp/gold/asoboze/contents/asolabo.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/aso_footer00015.jpg" alt="" width="100%"></a>
 					</div>
 					<div class="asolife_text_wrap">
@@ -185,47 +219,15 @@
 					</div>
 				</div>	
 			</article>
-			<article>
-				<div class="asolife_content_viewmore">
-					<div class="asolife_contents_viewmore_img">
-						<a href="https://www.rakuten.ne.jp/gold/asoboze/staffreview/staffreview_1.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/aso_footer00014.jpg" alt="" width="100%"></a>
-					</div>
-					<div class="asolife_text_wrap">
-						<div class="asolife_contents_viewmore_title">
-							<p>
-								staffの愛用品
-							</p>
-						</div>
-						<div class="asolife_contents_viewmore_date">
-							-&nbsp;STAFF&nbsp;REVIEW&nbsp;vol.1<br>walpac
-						</div>	
-					</div>
-				</div>	
-			</article>
-			<article>
-				<div class="asolife_content_viewmore">
-					<div class="asolife_contents_viewmore_img">
-						<a href="https://www.rakuten.ne.jp/gold/asoboze/contents/2022mothersday.html"><img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/aso_footer00016.jpg" alt="" width="100%"></a>
-					</div>
-					<div class="asolife_text_wrap">
-						<div class="asolife_contents_viewmore_title">
-							<p>
-								thank you<br>mother’ｓ day
-							</p>
-						</div>
-						<div class="asolife_contents_viewmore_date">
-							-&nbsp;2022年母の日特集
-						</div>
-					</div>
-				</div>	
-			</article>
+
+
 
 		</div>
 		<div class="viewmore_button" id="viewMoreAsolife">
 			view&nbsp;more
 			<span class="viewmore_arrow"></span>
 		</div>
-		<div class="asolife_contents_more" id="asolife_contents_more">
+		<div class="asolife_contents_more" id="asolife_contents_more" style="opacity: 0; transition-duration: 1s; transition-delay: .5s;">
 		</div>
 	</div>
 	<div class="officialsns_aso effect">
@@ -369,6 +371,7 @@
 	$(function () {
 		$("#viewMoreAsolife").click(function () {
 			$("#asolife_contents_more").load("https://www.rakuten.ne.jp/gold/asoboze/parts/asolife_viewmore.html #asolife_contents_viewmore");
+			$(".asolife_contents_more").css("opacity", "1");
 			$("#viewMoreAsolife").hide(1000);
 		});
 	});
