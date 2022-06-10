@@ -741,9 +741,6 @@ font-weight: 700;
         bottom: 0;
     }
 	.category_aso .asomidashi_eng, .price_aso .asomidashi_eng{
-		letter-spacing: 0.4em;
-		font-weight: 400;
-		font-size: 27px;
         padding-right: 50px;
     }
     .asolife_contents_viewmore_title p {
