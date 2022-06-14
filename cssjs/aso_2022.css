@@ -406,6 +406,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
     }
     .topthree a img {
         width: 100%;
+        height: auto;
     }
     .topthree {
         width: 100%;
@@ -573,9 +574,11 @@ font-weight: 700;
     }
         .grid_2line img {
             width: 100%;
+            height: auto;
         }
         .grid_1line img {
             width: 100%;
+            height: auto;
         }
     .index_grid .grid_1line {
         width: 100%;
@@ -2206,6 +2209,7 @@ letter-spacing: -0.05em;
 
 .container_aso a img {
     max-width: 100%;
+    height: auto;
 }
 .contents_container img {
 width: 100%;
@@ -2371,7 +2375,7 @@ transform: translateY(-8px) rotate(45deg);
 .topthree a img {
     width: 80%;
     padding: 13% 15% 5% 5%;
-    
+    height: auto;
 }
 .topthree .text {
     padding:0 0 0 7%;
@@ -2406,6 +2410,7 @@ transform: translateY(-8px) rotate(45deg);
 }
 .grid_2line img {
     width: 100%;
+    height: auto;
 }
 .space {
     width: 100%;
