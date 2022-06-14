@@ -19,6 +19,7 @@
   <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020pc.css">
   <link type="text/css" rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020sp.css"
     media="screen and (orientation: portrait)">
+  <link rel="stylesheet" href="cssjs/aso_2022.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.3.7/css/swiper.min.css">
   <link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.css">
   <link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.css">
@@ -42,6 +43,7 @@
               "padding": "0 20px 40px"
             });
           }
+
         });
       });
     });
@@ -55,7 +57,6 @@
       $("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .topthree2");
       $("#pcthreemenu3").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .topthree3");
       $("#spheader").load("https://www.rakuten.ne.jp/gold/asoboze/parts/header_aso.html");
-      $("#footer-aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
       $(".icon-wrap").click(function () {
         $(this).toggleClass("active");
         $("body").toggleClass("fixing");
@@ -63,6 +64,25 @@
 
 
     });
+    var flag = false;
+    //スクロールした際の動きを関数でまとめる
+    function PageTopAnime() {
+      var scroll2 = $(window).scrollTop(); //スクロール値を取得
+      var wH = window.innerHeight; //画面の高さを取得
+      var footerPos = $('#footer-aso').offset().top; //footerの位置を取得
+      if (scroll2 + wH >= (footerPos - wH)) {
+        if (!flag) {
+        flag = true;
+        $("#footer-aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
+      }
+      };
+    }
+    $(window).scroll(function () {
+
+        PageTopAnime();/* スクロールした際の動きの関数を呼ぶ*/
+
+    });
+
   </script>
 
 </head>

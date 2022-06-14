@@ -2608,6 +2608,7 @@ input[type="checkbox"]#input-humbmenu + #spmenu_aso {
 width: 85%;
 height: 100%;
 transition: 0.5s ease-in-out;
+transition-delay: .5s;
 position:fixed;
 top: 50px;
 right: -90%;

@@ -1,54 +1,53 @@
-    <link rel="stylesheet" href="https://www.rakuten.ne.jp/gold/asoboze/cssjs/asoboze_2020sp.css">
-<script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="https://www.rakuten.ne.jp/gold/asoboze/jquery-3.2.1.min.js"></script>
 <script>
-    $(function() {
-        $("#spmenu_aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/2020sidemenu.html");
+    $(function () {
+
     })
 </script>
 <script>
-        $(function() {
-        $(".icon-wrap").click(function() {
-            $(this).toggleClass("active");
+    $(function () {
+        $(".icon-wrap").click(function () {
+            $("#spmenu_aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/2020sidemenu.html"); $(this).toggleClass("active");
             $("body").toggleClass("fixing");
             $(".iframe_header").toggleClass("iframe_touched");
         });
     });
-$(function() {
-    $(".iframe_open").click(function() {
-        $(".iframe_header").toggleClass("iframe_touched");
+    $(function () {
+        $(".iframe_open").click(function () {
+            $(".iframe_header").toggleClass("iframe_touched");
+        })
     })
-})
 
-    </script>
+</script>
 
 <div id="spheader_aso" class="sponly spheader_aso">
-        <div class="head_top">
-            <a href="https://www.rakuten.ne.jp/gold/asoboze/" target="_top">
-                <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_105.png" alt="" class="headtopimg">
-            </a>
-            <div class="kensaku2">
-              <form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" id="search"> 
-                    <input type="hidden" name="sv" value="6"> 
-                    <input type="hidden" name="sid" value="362200"> 
-                    <input type="hidden" name="su" value="asoboze"> 
-                    <input type="hidden" name="sn" value="asoboze アソボーゼ"> 
-                    <input type="hidden" name="f" value="A">
-                  <input value="ストア内検索"  type="image" src="https://www.rakuten.ne.jp/gold/asoboze/images/meganemushi.svg" class="btn" alt="検索"/>
-                </form>
-            </div>
-            <div id="humbmenu" class="humbmenu">
-                <input type="checkbox" id="input-humbmenu">
-        <div class="spmenu_aso sponly" id="spmenu_aso">
-        </div>                
-                <label for="input-humbmenu" id="humb-open" class="humb-icon">
-                    <span class="icon-wrap">
-                        <span class="icon-bars"></span>
-                        <span class="icon-bars"></span>
-                        <span class="icon-bars"></span>
-                    </span>
-                </label>
-            </div>
+    <div class="head_top">
+        <a href="https://www.rakuten.ne.jp/gold/asoboze/" target="_top">
+            <img src="https://www.rakuten.ne.jp/gold/asoboze/images/asoindex_105.png" alt="" class="headtopimg">
+        </a>
+        <div class="kensaku2">
+            <form method="get" action="https://esearch.rakuten.co.jp/rms/sd/esearch/vc" id="search">
+                <input type="hidden" name="sv" value="6">
+                <input type="hidden" name="sid" value="362200">
+                <input type="hidden" name="su" value="asoboze">
+                <input type="hidden" name="sn" value="asoboze アソボーゼ">
+                <input type="hidden" name="f" value="A">
+                <input value="ストア内検索" type="image" src="https://www.rakuten.ne.jp/gold/asoboze/images/meganemushi.svg"
+                    class="btn" alt="検索" />
+            </form>
         </div>
-
+        <div id="humbmenu" class="humbmenu">
+            <input type="checkbox" id="input-humbmenu">
+            <div class="spmenu_aso sponly" id="spmenu_aso">
+            </div>
+            <label for="input-humbmenu" id="humb-open" class="humb-icon">
+                <span class="icon-wrap">
+                    <span class="icon-bars"></span>
+                    <span class="icon-bars"></span>
+                    <span class="icon-bars"></span>
+                </span>
+            </label>
+        </div>
     </div>
+
+</div>
