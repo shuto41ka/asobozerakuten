@@ -2604,7 +2604,6 @@ margin-top: 150px;
     background-color: #666464;
     color: #ffffff;
     scroll-behavior: auto;
-    right: 0;
     overflow-y: scroll;
     transition: .4s ease-in-out;
 }

@@ -442,15 +442,7 @@ line-height: 1.4em;
         .guide_grid a img {
             width: 100%;
         }
-        .spmenu_aso {
-            top: 50px;
-            background-color: #666464;
-            color: #ffffff;
-            scroll-behavior: auto;
-            right: 0;
-            overflow-y: scroll;
-            transition: .4s ease-in-out;
-        }
+
 
 
         .spmenu_aso a:link {
