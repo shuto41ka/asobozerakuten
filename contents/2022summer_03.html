@@ -69,7 +69,7 @@
 			var scroll2 = $(window).scrollTop(); //スクロール値を取得
 			var wH = window.innerHeight; //画面の高さを取得
 			var footerPos = $('#footer-aso').offset().top; //footerの位置を取得
-			if (scroll2 + wH >= (footerPos - wH)) {
+			if (scroll2 + wH >= (footerPos - wH - wH)) {
 				if (!flag) {
 					flag = true;
 					$("#footer-aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
@@ -153,7 +153,7 @@
 			font-size: 80%;
 			margin: 10px 0 30px;
 		}
-		
+
 		.summer_about_items {
 			background-color: #eadae6;
 			padding-bottom: 50px;
