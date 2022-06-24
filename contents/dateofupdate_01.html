@@ -52,9 +52,6 @@
 		$(function () {
 			$("#pcIndexRight").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pcindex_rightmenu.html");
 			$("#pc_toplinebanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_toplinebanner.html"); $("#pcleftbanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_leftbanner.html");
-			$("#pcrightmenu").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_rightmenu.html");
-			$("#pcthreemenu2").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .topthree2");
-			$("#pcthreemenu3").load("https://www.rakuten.ne.jp/gold/asoboze/index2020pc_beta.html .topthree3");
 			$("#spheader").load("https://www.rakuten.ne.jp/gold/asoboze/parts/header_aso.html");
 			$(".icon-wrap").click(function () {
 				$(this).toggleClass("active");
@@ -85,7 +82,152 @@
 	</script>
 
 </head>
-
+<style>
+  body {
+    /* PC用の横幅を指定 */
+    min-width: 1080px;
+  }
+  /* スマートフォンのブレイクポイント */
+  @media screen and (max-width: 769px){
+    body {
+      // 初期化
+      min-width: initial;
+    }
+  }	
+  
+  .date{
+    width:10%;
+    font-size:30px;
+  }
+  
+  .title{
+    font-size:34px;
+    }
+  
+  .title02{
+    font-size:28px;
+    }
+  p{
+    font-size:16px;
+    line-height:40px;
+    }	
+  
+  .syoukai{
+    display:flex;
+    }	
+  
+  .syoukai-img img{
+    width:100%;
+    }
+  
+  .syoukai-text{
+    padding:0 20px;
+    line-height:25px;
+    }	
+  
+  .bcolor{
+    background-color:#f1ecea;
+    }
+  
+  .contents1{
+      /* width: calc(95vw - 140px); */
+      margin: 0 auto;
+      max-width: 1200px;
+  }
+  
+  .p1{
+    font-size:14px;
+    line-height:25px;
+    }	
+  
+  .p2{
+    font-size:12px;
+    line-height:25px;
+    }		
+  
+  .topimg{
+    padding:30px 0 0 0;
+    margin:auto;
+    width: 80%;
+    }
+  
+  .pcma{
+    margin:0 120px;
+    }		
+  
+  /* スマホ用 */
+  @media screen and (max-width: 600px) {
+  .date{
+    width:20%;
+    font-size:20px;
+  }
+  
+  .title{
+    font-size:24px;
+    }
+  
+  .title02{
+    font-size:18px;
+    }
+  
+  p{
+    font-size:15px;
+    line-height:30px;
+    }	
+  
+  .syoukai{
+    display:block;
+    }		
+  
+  .syoukai-img{
+    width:60%;
+    margin:auto;
+    }
+  
+  .syoukai-text{
+      margin: 10px;
+    }	
+  .p1{
+    font-size:13px;
+    line-height:25px;
+    }	
+  
+  .p2{
+    font-size:12px;
+    line-height:25px;
+    }
+  .gallerylink {
+      width: 100%;
+    padding: 5% 5% 5% 5%;
+      box-sizing: border-box;
+      height: auto;
+  }
+  .pcma{
+    margin:0 0;
+    }			
+  }
+  
+  
+  @media and screen and (min-width: 1200px) {
+  .wraphalf {
+      display: -webkit-flex;
+      display: flex;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      align-items: center;
+      height: auto;
+      }
+  
+  
+  }
+  @media and screen and (orientation: portrait) {
+  body {
+     overflow-x: hidden;
+    }
+  }
+  
+      </style>
 <body>
 	<!-- PC用バナー -->
 	<div id="pc_toplinebanner" class="pconly"> </div>
