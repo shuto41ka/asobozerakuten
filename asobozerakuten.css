@@ -1,0 +1,2171 @@
+/*商品ページ全体*/
+
+#container {
+	width: 760px;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+#container a img:hover{
+	opacity:0.8;
+}
+/*　トップページ　wrapper　*/
+a img:hover{
+	opacity:0.8;
+}
+
+#allwrapper{
+	width: 100%;
+	margin-top: 20px;
+}
+
+#wrapper{
+	margin:0 auto;
+	text-align: center;
+	width:1000px;
+}
+
+#main{
+	width: 760px;
+	margin-left: 40px;
+	display: block;
+	float: left;
+}
+
+#sidebar{
+	float:left;
+	width:200px;
+}
+/*--商品検索---*/
+#shouhinkensaku {
+	padding: 0px;
+	margin:10px 0;
+	width: 200px;
+}
+#shouhinkensaku .asotext {
+ float:left;
+ width:160px;
+ height:30px;
+ text-indent:10px;
+ margin-right:5px;
+ border-radius:5px;
+ border:solid 1px #333;
+}
+#shouhinkensaku .btn {
+ float:left;
+ height:30px;
+ width:auto;
+}
+/* --- コンテンツ --- */
+.cont-box {
+	float:left;
+	width:350px;
+	margin-right:3px;
+	padding:10px;
+}
+.cont-box_last {
+	float:left;
+	width:350px;
+	padding:10px;
+}
+.tokubox {
+	padding-right: 2px;
+	padding-left: 2px;
+	overflow: hidden;
+}
+.cont-box p {
+	font-family: "游明朝";
+	font-size: 12px;
+	text-align: left;
+	width:330px;
+	padding-left: 10px;
+}
+.cont-box_last p {
+	font-family: "游明朝";
+	font-size: 12px;
+	text-align: left;
+	width:330px;
+}
+.tokubox {
+	padding-right: 2px;
+	padding-left: 20px;
+}
+
+
+
+#allwrapper #wrapper #sidebar .sidepickup p {
+	font-family: "游明朝";
+	font-size: 11px;
+	text-align:left;
+	margin-left:5px;
+	margin-right:5px;
+}
+/*　見出し　*/
+
+.midashi {
+	text-align: center;
+	margin-top: 15px;
+}
+.concept {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+/*　流れるスライダー　*/
+
+#myslider {
+	margin: auto;
+	width:1000px;
+	padding-top: 15px;
+}
+
+
+/*　NEW ITEM　*/
+
+#newitem {
+	width:760px;
+	padding-top: 15px;
+	margin:auto;	
+}
+
+div.imageboxleft {
+	width: 400px; /* 横幅 */
+	float: left; /* 左に配置 */
+	padding-top:15px;
+}
+
+div.imageboxright {
+	width: 345px; /* 横幅 */
+	float: left; /* 左に配置 */
+	padding-left:15px;
+	padding-top:15px;
+}
+
+p.image, p.caption {
+   text-align: left;
+   margin: 7px;        /* 余白・間隔 */
+}
+
+p.caption {
+	font-size: 80%;  /* 文字サイズ */
+	color: #000000;
+	padding-left: 20px;
+	padding-right: 3px;
+}
+
+#wrapper #main .clear {
+	clear:both;
+}
+
+
+
+#middlefotter {
+	width: 1000px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 10px;
+	font-family: "メイリオ";
+}
+
+/*　ページフッター旧ページより　*/
+
+.midashifot .fottertitle tr th {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	border-right-width:1px;
+	border-right-style:solid;
+	border-right-color:#666666;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#666666;
+	width:490px;
+	height:30px;
+	color:#666666;
+	background-color:#EEEEEE;
+	background-position:left top;
+	padding-top:0.3em;
+	padding-bottom:0.3em;
+	padding-right:1em;
+	padding-left:1em;
+	font-size:15px;
+	text-align:left;
+}
+.midashifot .fottertitle {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	width:1000px;
+	border-top-width:1px;
+	border-top-style:solid;
+	border-top-color:#666666;
+	border-left-width:1px;
+	border-left-style:solid;
+	border-left-color:#666666;
+	border-collapse:collapse;
+	border-spacing:0;
+	empty-cells:show;
+}
+.midashifot .fottertitle tr td {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	height:220px;
+	width:490px;
+	border-right-width:1px;
+	border-right-style:solid;
+	border-right-color:#666666;
+	border-bottom-width:1px;
+	border-bottom-style:solid;
+	border-bottom-color:#666666;
+	line-height:160%;
+	font-size:12px;
+	list-style-position:inside;
+	padding-top:0.3em;
+	padding-bottom:0.3em;
+	padding-right:1em;
+	padding-left:1em;
+	text-align:left;
+}
+
+.midashifot .fottertitle tr {
+	text-align:left;
+}
+
+.midashifot {
+	text-align:center;
+	margin-top:15px;
+	margin-bottom:15px;
+	margin-left:auto;
+   	margin-right:auto;
+	width:1000px;
+}
+/*　ヘッダーall背景など　*/
+
+#allfotter {
+	background-color: #8E1728;
+	width: 100%;
+	height: 150px;
+	overflow: hidden;
+	font-family: "メイリオ";
+}
+
+
+/*　フッター　*/
+
+#footer1 {
+	background-color: #8E1728;
+	width: 780px;
+	padding-top: 30px;
+	margin-right: auto;
+	margin-left : auto;
+	font-size: 10px;
+	font-family: "游明朝"
+	color: #FFF;
+}
+
+#footer1 a{
+	text-decoration: none;
+	font-family: "小塚ゴシック Std R", "小塚ゴシック Pro R", "メイリオ";
+	color: #FFFFFF;
+	
+}
+
+#footer1 nav img {
+	vertical-align:middle;
+}
+
+
+#footer2 {
+	background-color: #8E1728;
+	padding-top: 50px;
+	margin-right: auto;
+	margin-left : auto;
+}
+
+#footer3 {
+	background-color: #8E1728;
+	width: 780px;
+	margin-right: auto;
+	margin-left : auto;
+	font-size: 10px;
+	font-family: "小塚ゴシック Std R", "小塚ゴシック Pro R", "メイリオ";
+	color: #FFF;
+	text-align: center;
+	clear: both;
+}
+/*-- 共通説明文--*/
+.aso_rcmd{
+	width:760px;
+	text-align:center;
+}
+.aso_rcmd a img {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.aso_rcmd a img:hover {
+	opacity:0.8;
+}
+
+
+/* ---  コラムページ --- */
+
+#contents_main {
+	margin-left: 20px;
+}
+
+#contents_main .asocolumn .title {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 16px;
+	padding: 0.5em;/*文字周りの余白*/
+	color: #000;/*文字色*/
+	background: #D2D2D2;/*背景色*/
+	border-left: solid 5px #8E1728;/*左線（実線 太さ 色）*/
+	width:300px;
+}
+#contents_main .asocolumn .cate_text {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 14px;
+}
+#contents_main .asocolumn .fot_right {
+	float: right;
+	padding-right: 15px;
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
+#contents_main .asocolumn .fot_right .setumei {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 11px;
+}
+#contents_main .asocolumn .fot_left .setumei {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 11px;
+}
+#contents_main .asocolumn .fot_left {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 11px;
+	margin-right: 20px;
+	float: left;
+}
+#contents_main .asocolumn .cate_text2 {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 14px;
+	margin-left: 30px;
+	float: left;
+}
+
+#contents_main .asocolumn {
+	margin-left: 25px;
+}
+
+/* newpage base */
+
+#container .base01 p {
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size:28px;
+	text-align:left;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+	padding:30px 50px 0px 30px;
+}
+#container .base02 p {
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size:20px;
+	text-align:left;
+	line-height: 1.5;
+	letter-spacing: 0.15em;
+	word-break: normal;
+	padding:0px 65px 50px 30px;
+}
+/*　商品ページインライン表示の下スペース　*/
+
+#frameunder {
+	padding-bottom: 100px;
+}
+
+#container #frameunder {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:12px;
+}
+
+
+
+/*　AV-E113ページ　*/
+
+
+.jyofive01{
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size:20px;
+	text-align:left;
+	line-height:1.3;
+	letter-spacing: 0.1em;
+	word-break: normal;
+}
+
+.jyofive01{
+	padding:20px 55px 10px 35px;
+}
+#container .boxkako01 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 1px #000000;
+	width:240px;
+}
+
+#container .boxkako01 p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+/*ポイント部分*/
+.gazo-box{
+	float:left;
+	width:230px;
+	margin-right:3px;
+	padding:10px;
+}
+.gazo-box_last{
+	float:left;
+	width:230px;
+	padding:10px;
+}
+.listbox {
+	padding-right: 2px;
+	padding-left: 2px;
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+.gazo-box p {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:12px;
+	text-align:left;
+}
+
+.listbox .gazo-box_last p {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 12px;;
+	text-align: left;
+}
+.listbox .gazo-box p {
+	font-size: 12px;
+	text-align: left;
+}
+
+/* Pointl部分 */
+.spec img {
+	float: right;
+	width:300px;
+	 height:250px;
+	margin-right:3px;
+	padding:10px;
+}
+.spec {
+	padding-right: 2px;
+	padding-left: 2px;
+	overflow: hidden;
+	padding-bottom: 100px;
+}
+.spec p {
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size:12px;
+	text-align:left;
+}
+/*　コメント　NEW　*/
+
+.coment01 img {
+	float: left;
+	margin-right:3px;
+	padding:10px;
+}
+
+.coment01 {
+	padding-right: 2px;
+	padding-left: 2px;
+	overflow: hidden;
+	padding-bottom: 0px;
+	padding-top: 50px;
+}
+
+#container .coment01 p {
+	font-size: 18px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align:left;
+	padding-top: 80px;
+}
+.coment01 img {
+	padding-left: 0px;
+	padding-right: 30px;
+}
+/*　スペック */
+
+.spec01 {
+    clear: both;
+    width: 720px;
+    text-align:center;
+	padding-bottom: 60px;
+}
+.spec01 th {
+    width: 120px;
+    padding: 5px 5px 5px 5px;
+    text-align: right;
+    font-size: 16px;
+    vertical-align: top;
+    color: #000;
+    font-weight: normal;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.spec01 td {
+	width:600px;
+    padding: 5px 5px 5px 5px;
+    text-align: left;
+    font-size: 16px;
+    vertical-align: top;
+    color: #000;
+    border-bottom: 1px solid #ccc;
+}
+
+#container .spec01 table {
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 50px;
+}
+/*　商品ページカラバリ　*/
+
+#color {
+	text-align: center;
+	padding-bottom: 100px;
+}
+/*　イメージ下　説明　*/
+
+.coment img {
+	float: left;
+	margin-right:3px;
+	padding:10px;
+}
+
+.coment {
+	padding-right: 2px;
+	padding-left: 2px;
+	overflow: hidden;
+	padding-bottom: 70px;
+	padding-top: 100px;
+}
+
+#container .coment p {
+	font-size:12px;
+	font-family:"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	text-align:left;
+	padding-top: 80px;
+}
+.coment img {
+	padding-right: 80px;
+}
+/*　ze-v158-160 newブックカバー　*/
+
+.book01,.book02{
+	width:730px;
+	margin:0px auto;
+	padding:0px auto;
+}
+.book01 p{
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-size: 28px;
+	letter-spacing: 2.5px;
+	line-height: 1.8;
+	font-weight: 500;
+
+}
+.book02 p{
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size:20px;
+	letter-spacing:3px;
+	line-height:2.0;
+	padding-right: 30px;
+	padding-left: 10px;
+}
+/*　AV-E113ページ　*/
+
+
+.jyofive01{
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size:20px;
+	text-align:left;
+	line-height:1.3;
+	letter-spacing: 0.1em;
+	word-break: normal;
+}
+
+.jyofive01{
+	padding:20px 55px 10px 35px;
+}
+#container .boxkako01 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    border: solid 1px #000000;
+	width:240px;
+}
+
+#container .boxkako01 p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+/* SoLL SO-U157 */
+
+.soll01,.soll02{
+	width:710px;
+	margin:0px auto;
+	padding:0px auto;
+}
+.soll01 p{
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-size: 28px;
+	letter-spacing: 4px;
+	line-height: 3em;
+}
+.soll02 p{
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size: 19px;
+	letter-spacing: 4px;
+	line-height: 3em;
+}
+#container .base03 p {
+	font-family: "游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-size:25px;
+	text-align:left;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+	padding:10px 50px 0px 20px;
+}
+#container .base04 p {
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-size:20px;
+	text-align:left;
+	line-height: 1.5;
+	letter-spacing: 0.15em;
+	word-break: normal;
+	padding:10px 65px 40px 20px;
+}
+
+
+
+/* ---  コラムページ --- */
+
+#contents_main {
+	margin-left: 20px;
+}
+
+#contents_main .asocolumn .title {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 16px;
+	padding: 0.5em;/*文字周りの余白*/
+	color: #000;/*文字色*/
+	background: #D2D2D2;/*背景色*/
+	border-left: solid 5px #8E1728;/*左線（実線 太さ 色）*/
+	width:300px;
+}
+#contents_main .asocolumn .cate_text {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 14px;
+}
+#contents_main .asocolumn .fot_right {
+	float: right;
+	padding-right: 15px;
+	padding-bottom: 30px;
+	padding-top: 20px;
+}
+#contents_main .asocolumn .fot_right .setumei {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 11px;
+}
+#contents_main .asocolumn .fot_left .setumei {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 11px;
+}
+#contents_main .asocolumn .fot_left {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 11px;
+	margin-right: 20px;
+	float: left;
+}
+#contents_main .asocolumn .cate_text2 {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 14px;
+	margin-left: 30px;
+	float: left;
+}
+
+#contents_main .asocolumn {
+	margin-left: 25px;
+}
+
+
+/* ---  コンテンツトップ --- */
+
+.contentstop {
+	margin-left: 30px;
+}
+
+.contentstop p {
+	font-family: "メイリオ";
+	font-size: 13px;
+	text-align: left;
+}
+.tokubox .cont-box p a img:hover {
+	opacity:0.8;
+}
+.tokubox .cont-box_last a img:hover {
+	opacity:0.8;
+}
+
+/*　コンテンツページ共通設定　*/
+
+#container .asocontop01 p {
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size:20px;
+	text-align:center;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+	font-size: 20px;
+}
+
+#container .asocontop02 p {
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size:28px;
+	text-align:center;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+}
+
+#container .asocontop01  {
+	padding:30px 40px 10px 40px;
+}
+#container .asocontop02 {
+	padding:10px 70px 0px 70px;
+}
+
+#container .asocon02 p {
+	padding:5px 65px 25px 65px;
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size:20px;
+	text-align:left;
+	line-height: 1.75;
+	letter-spacing: 0.15em;
+	word-break: normal;
+}
+
+h4.con01 {
+    font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size : 23px;
+   	text-align:center;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+	text-decoration: underline;
+	font-weight:normal;
+}
+
+h5.con02 {
+    font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size:18px;
+	text-align:left;
+	line-height: 1.75;
+	letter-spacing: 0.15em;
+	word-break: normal;
+	font-weight:normal;
+	padding:0px 70px 0px 70px;
+	margin-bottom:100px;
+}
+
+/*　商品のお手入れページ　*/
+
+#care {
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	margin-left:50px;
+	width:760px;
+	font-size: 14px;
+}
+
+#care table tr td .listboxcare .care_a {
+	float:left;
+	width:180px;
+	margin-right:3px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 0px;
+	padding-left: 10px;
+	height: 200px;
+}
+
+#care table tr td .listboxcare .care_a_last{
+	float:left;
+	width:180px;
+	font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 14px;
+	text-align: center;
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-bottom: 0px;
+	height: 200px;
+}
+
+#care table tr td .listboxcare {
+	padding-right: 2px;
+	padding-left: 2px;
+	overflow: hidden;
+	padding-bottom: 2px;
+}
+
+#care table tr td #cream {
+	padding-left: 50px;
+}
+
+/*　コンテンツ　革製品のお手入れ newpage　*/
+
+#container .mentetop01 p {
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size:20px;
+	text-align:center;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+	font-size: 20px;
+}
+
+#container .mentetop02 p {
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-size:28px;
+	text-align:center;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+	font-size: 28px;
+}
+
+#container .mente01 p {
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size:28px;
+	text-align:center;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+	font-size: 28px;
+	text-decoration: underline;
+}
+
+#container .mente02 p {
+font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size:20px;
+	text-align:left;
+	line-height: 1.75;
+	letter-spacing: 0.15em;
+	word-break: normal;
+	font-size: 20px;
+}
+
+#container .mente01 .suuzi {
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size:28px;
+	text-align:center;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+	font-size: 28px;
+}
+#container .mentetop01  {
+	padding:30px 40px 10px 40px;
+}
+#container .mentetop02 {
+	padding:15px 70px 10px 70px;
+}
+
+#container .mente01 {
+	padding:15px 70px 10px 70px;
+}
+
+#container .mente02 p {
+	padding:10px 65px 25px 65px;
+}
+
+
+
+/* newpage base */
+
+#container .base01 p {
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size: 28px;
+	text-align: left;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+	padding: 40px 50px 10px 30px;
+	margin: 0;
+}
+#container .base02 p {
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size: 20px;
+	text-align: left;
+	line-height: 1.5;
+	letter-spacing: 0.15em;
+	word-break: normal;
+	padding: 20px 65px 40px 30px;
+	margin: 0;
+}
+/* --- コンテンツ --- */
+.cont-box {
+	float: left;
+	width: 330px;
+	margin-right: 3px;
+	padding: 10px;
+}
+.cont-box_last {
+	float: right;
+	width: 330px;
+	padding: 10px;
+}
+.tokubox {
+	padding-right: 2px;
+	padding-left: 2px;
+	overflow: hidden;
+}
+.cont-box p {
+	font-family: "メイリオ";
+	font-size: 12px;
+	text-align: left;
+	width: 330px;
+	padding-left: 10px;
+}
+.cont-box_last p {
+	font-family: "メイリオ";
+	font-size: 12px;
+	text-align: left;
+	width: 330px;
+}
+.tokubox {
+	padding-right: 2px;
+	padding-left: 20px;
+}
+/* Rakuten ヘッダー */
+
+#header {
+	text-align: center;
+	width: 1000px;
+	margin-top: 0px;
+	padding-top: 0px;
+}
+#header #h-lefttop {
+	float: left;
+	font-size: 10px;
+	font-weight: 500;
+	padding: 5px 10px;
+	color: #494949;
+}
+#header #h-righttop {
+	float: right;
+	font-weight: 500;
+	font-size: 13px;
+	padding: 3px 10px;
+	background: #8e1728;
+	color: #fff;
+}
+
+#header #h-leftbottom img {
+	float: left;
+	margin-top: 10px;
+}
+#header #h-rightbottom {
+	float: right;
+	margin: 0;
+	padding-right: 0;
+	font-size: 13px;
+	margin-top: 10px;
+	padding-top: 1px;
+	height: 44px;
+	width:520px;
+	padding-left:0;
+}
+#header #h-rightbottom #headmenu .h-menu {
+	float: left;
+	list-style-type: none;
+	padding: 10px;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+}
+#headmenu .h-menu{
+	 position: relative;
+padding: 0em 0.3em 0.3em 0.3em;
+}
+li.h-menu:before {
+position:absolute;
+content:'';
+top: 1em;
+left: 0;
+height:0;
+width:0;
+border-style: solid;
+border-width: 6px 0 6px 9px;
+border-color: transparent transparent transparent #8e1728;
+}
+#header hr {
+	height: 0.5px;
+	width: 100%;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background-color: #ddd;
+}
+#header #headlist {
+	margin: 0px;
+	padding: 0px;
+	width: 1000px;
+	height: 100px;
+}
+#header #headlist #h-listitems {
+
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: inherit;
+	padding-right: inherit;
+	text-align: center;
+	padding-top: 30px;
+}
+#header #headlist #h-listitems .items {
+	float: left;
+	height: 70px;
+	width: 95px;
+	border-right-width: 0.5px;
+	border-right-style: solid;
+	border-right-color: #ddd;
+	font-size: 10px;
+	list-style-type: none;
+}
+#header .clearboth {
+	clear: both;
+}
+#header #headlist #h-listitems .items {
+	text-align: center;
+	width: 110px;
+	padding-top: 12px;
+
+	line-height: 13px;
+	font-size: 12px;
+}
+#header #headlist #h-listitems .itemslast {
+	text-align: center;
+	list-style-type: none;
+	float: left;
+	padding-left: 15px;
+	padding-top: 12px;
+	line-height: 13px;
+	font-size: 12px;
+}
+#header #h-concept {
+	float: left;
+	padding-left: 10px;
+	margin-top: 20px;
+	padding-top: 0px;
+	height: 44px;
+}
+.h-menu a:link {
+	color: #494949;
+	text-decoration: none;
+}
+.h-menu a:visited {
+	color: #000;
+	text-decoration: none;
+}
+.items a:link {
+	color: #494949;
+	text-decoration: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.items a:visited {
+	color: #494949;
+	text-decoration: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.itemslast a:link {
+	color: #494949;
+	text-decoration: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.itemslast a:visited {
+	color: #494949;
+	text-decoration: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.leftnavi a:link {
+	color: #000;
+	text-decoration: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+.leftnavi a:visited{
+	color: #000;
+	text-decoration: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	margin-top: 20px;
+}
+.leftnavi ul li a:hover{
+	text-decoration: none;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	background: #ccc;
+}
+#header #h-concept p {
+	font-family: "メイリオ";
+	font-size: 14px;
+	color: #494949;
+}
+#header #headlist #h-listitems {
+	font-family: "メイリオ";
+	margin: 0px;
+	margin-top: 10px;
+	padding: 0;
+	padding-top: 18px;
+	margin-bottom: 28px;
+}
+#header {
+	font-family: "メイリオ";
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#header a:hover {
+	color: #8e8e88;
+}
+#header a img:hover{
+	opacity:0.8;
+}
+.leftnavi a img:hover{
+	opacity:0.8;
+}
+.clearboth{
+	clear:both;
+}
+
+/*-- レフトカテゴリメニュ --*/
+.ac-container{
+	width: 200px;
+	margin: 0;
+	float: left;
+	padding: 0;
+}
+/*--トップラベル--*/
+.ac-container label{
+	padding: 5px 10px;
+	position:relative;
+	z-index: 20;
+	display: block;
+	height: 30px;
+	cursor: pointer;
+	color: #000;
+	line-height: 33px;
+	font-size: 16px;
+	background: linear-gradient(top, #ffffff 1%,#eaeaea 100%);
+	border:solid 1px #eee;
+	border-collapse:collapse;
+}
+.ac-container label:hover{
+    background: #eee;
+}
+.ac-container input:checked + label,
+.ac-container input:checked + label:hover{
+	background: #f4f4f4;
+	color: #666;
+	margin: 0;
+}
+.ac-container label:hover:after,
+.ac-container input:checked + label:hover:after{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 7px;
+	left:0;
+    background: transparent url(../images/arrow_down.png) no-repeat center center;
+}
+
+.ac-container input{
+    display: none;
+}
+/*--トップラベルおわり--*/
+
+.ac-container ul{
+    background: rgba(255, 255, 255, 0.5);
+    margin-top: -1px;
+    overflow: hidden;
+    height: 0px;
+	position:relative;
+    z-index: 10;
+    transition:
+        height 0.3s ease-in-out,
+        box-shadow 0.6s linear;
+	margin-left:0;
+	padding-left:0;
+}
+.ac-container input:checked ~ ul{
+    transition:
+        height 0.5s ease-in-out,
+        box-shadow 0.1s linear;
+    box-shadow: 0px 0px 0px 1px rgba(155,155,155,0.3);
+}
+.ac-container ul li{
+    line-height: 20px;
+    font-size: 13px;
+    padding-top: 8px ;
+	padding-bottom:8px;
+	padding-left:0;
+	text-align:left;
+	margin-left:0;
+}
+.ac-container input:checked ~ ul.ac-bag{
+    height: 503px;
+}
+.ac-container div .ac-bag li {
+	text-decoration: none;
+	display: block;
+	list-style-type: none;
+	cursor: pointer;
+	padding: 0;
+	font-size: 11.5px;
+
+}
+.ac-container div .ac-bag li a {
+	color: #494949;
+	text-decoration: none;
+	display: block;
+	line-height: 20px;
+	padding: 8px;
+	margin: 0;
+	padding-left: 20px;
+	font-weight: 500;
+}
+.ac-container input:checked ~ ul.ac-kawakomono{
+    height: 285px;
+}
+.ac-container div .ac-kawakomono li {
+	text-decoration: none;
+	display: block;
+	list-style-type: none;
+	cursor: pointer;
+	padding: 0;
+	font-size: 11.5px;
+}
+.ac-container div .ac-kawakomono li a {
+	color: #494949;
+	text-decoration: none;
+	display: block;
+	line-height: 20px;
+	padding: 8px;
+	padding-left: 20px;
+	margin: 0;
+	font-weight: 500;
+}
+.ac-container input:checked ~ ul.ac-small{
+    height: 70px;
+}
+.ac-container div .ac-small li {
+	text-decoration: none;
+	display: inline-block;
+	list-style-type: none;
+	cursor: pointer;
+	padding: 0;
+	width: 200px;
+	font-size: 11.5px;
+}
+.ac-container div .ac-small li a {
+	color: #494949;
+	text-decoration: none;
+	display: block;
+	line-height: 20px;
+	padding: 8px;
+	padding-left: 20px;
+	margin: 0;
+	font-weight: 500;
+}
+.menu .priceserch2 li {
+	text-decoration: none;
+	text-align: left;
+	border: 1px solid #eee;
+	list-style-type: none;
+	padding:0;
+	margin:0;
+}
+.leftnavi {
+	width: 200px;
+	float: left;
+}
+.leftnavi .menu .priceserch2 {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+}
+.leftnavi .menu .priceserch2 li a {
+	color: #494949;
+	text-decoration: none;
+	display: block;
+	line-height: 20px;
+	padding: 8px;
+	margin: 0;
+	font-size: 13px;
+	padding-left: 12px;
+}
+.leftnavi .dramacoope {
+	display: block;
+	margin-top: 20px;
+}
+.leftnavi .menu .ac-container div label {
+	display: block;
+	margin: 0px;
+	text-align: left;
+	font-size: 13px;
+}
+.leftnavi .menu .priceserch {
+	display: block;
+	margin: 0px;
+	padding: 10px;
+	border: solid 1px #eee;
+	border-collapse: collapse;
+	background: #eee;
+}
+/*--カテゴリ一覧--*/
+.leftnavi .menu .categorymenu {
+	display: block;
+	margin: 0px;
+	padding: 10px;
+	border: solid 1px #eee;
+	border-collapse: collapse;
+	background: #eee;
+}
+/*--カテゴリ一覧おわり--*/
+.leftnavi .menu .ac-container div .ac-bag {
+	margin: 0px;
+}
+.leftnavi .menu .ac-container div .ac-kawakomono {
+	margin: 0px;
+}
+#header #slider-pro {
+	margin-top: 28px;
+}
+#banners {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "メイリオ";
+}
+.toptop {
+	cursor: default;
+}
+/*--トップページホバー要素--*/
+#middlefotter a img:hover {
+	opacity: 0.8;
+}
+#banners #main .concept a img:hover {
+	opacity: 0.8;
+}
+#main #newitem a img:hover {
+	opacity:0.8;
+}
+#banners #main .outlet a img:hover {
+	opacity:0.8;
+}
+/*--トップページホバー要素--*/
+#allfotter #footer1 .foota {
+	padding: 15px;
+	color: #fff;
+}
+#banners #main a img:hover {
+	opacity: 0.8;
+}
+/*--asobozeコンセプト--*/
+#a_newconcept {
+	text-align: center;
+	width: 760px;
+	font-family: "游明朝";
+	color: #222;
+}
+#a_newconcept .a_newmain {
+	font-size: 26px;
+	font-weight: 600;
+	line-height: 30px;
+}
+#a_newconcept .a_new01 p {
+	font-size: 20px;
+	line-height: 30px;
+}
+#a_newconcept .a_new02 .a_newtop {
+	font-size: 22px;
+	font-weight: 600;
+	margin: 0;
+	padding: 0;
+}
+#a_newconcept .a_new02 .a_newsub {
+	font-weight: 400;
+	font-size: 18px;
+	color: #999;
+	margin: 5px;
+}
+#a_newconcept .a_new02 .a_newsetsumei {
+	font-size: 18px;
+	margin-bottom: 40px;
+	margin-top: 0px;
+}
+/*--toftsack--*/
+.toftsack {
+	width: 640px;
+	margin:0 auto;
+}
+.toftsack p{
+	width: 640px auto;
+	margin: 0px;
+	padding: 0;
+	padding-top:20px;
+	padding-bottom:30px;
+}
+.toftsack .sack01 p{
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-size: 28px;
+	letter-spacing: 2.5px;
+	line-height: 1.8;
+	font-weight: 500;
+
+}
+.toftsack .sack02 p{
+	font-family: '小塚ゴシック Pro L','Kozuka Gothic Pro Light',sans-serif;
+	font-size:20px;
+	letter-spacing:3px;
+	line-height:2.0;
+}
+/*--カテゴリページうえ--*/
+
+#aso_categories {
+	font-family: "游明朝";
+	width: 760px;
+}
+.catemidashi {
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: auto;
+	padding-right: auto;
+	width: 595px;
+	margin-top: 20px;
+	line-height: 1.75em;
+	margin-bottom:20px;
+}
+#aso_categories .catemidashi p {
+	margin-right: auto;
+	margin-left: auto;
+}
+#aso_categories .cateleft {
+	margin: 0px;
+	float: left;
+	width: 375px;
+}
+#aso_categories p {
+	margin-right: auto;
+	margin-left: auto;
+	width: 325px;
+	font-size:large;
+	margin-top:15px;
+}
+#aso_categories .cateright {
+	margin: 0px;
+	float: right;
+	width: 375px;
+}
+.asocate01 {
+	font-size: 26px;
+	padding: 20px;
+}
+.asocate02 {
+	font-size: 18px;
+	text-align: center;
+	padding: 20px;
+}
+#aso_categories .catecentre p {
+	width: 580px;
+}
+.catebottom img {
+	margin-top: 20px;
+
+}
+.catebottom center a img {
+	margin: 0px;
+}
+.catebottom {
+	margin-top: 20px;
+
+}
+.centrechoice{
+	margin-bottom:50px;
+}
+#aso_categories .centrechoice p {
+	font-size:20px;
+	margin-bottom:10px;
+}
+.centrechoice .catemidashi {
+	width: 630px;
+	font-size:16px;
+	margin:0 auto;
+}
+.centrechoice a img:hover {
+	opacity: 0.8;
+}
+/*--カレンダー--*/
+table.calbase_rakuten     {
+    background-color: #FFFFFF;
+    width: 196px;
+    border-collapse: collapse;
+    padding:0;
+	font-family:"小塚ゴシック Std R", "小塚ゴシック Pro R", "メイリオ";
+    }
+table.calbase_rakuten *   {
+    font-size: 98%;
+    color: #222222;
+    border-collapse: collapse;
+    padding: 0px;
+    margin: 0px;
+    }
+table.calbase_rakuten th  {
+    text-align: center;
+    }
+th.caltitle_rakuten       {
+    font-size: 85%;
+    padding: 10px 0px 0px 0px;
+    }
+table.calframe_rakuten    {
+    border-collapse: collapse;
+    margin: 10px 10px 0px 10px;
+    table-layout: fixed;
+    width: 176px;
+	border: 1px solid #ccc;
+    }
+table.calframe_rakuten th {
+    text-align: center;
+    padding: 0px 0px 3px 0px;
+	background:#eeeeee;
+	padding:5px; 
+
+    }
+table.calframe_rakuten td {
+    border:1px solid #ccc;
+    background-color: #FFFFFF;
+    width:24px;
+    height:20px;
+    text-align: center;
+    }
+tr.weektitle_rakuten td   {
+    background-color: #EEEEEE;
+    }
+td.event1day_rakuten      {
+    background-color: #FFC6C6 !important;
+    }
+font.event1day_rakuten    {
+    color: #FFC6C6;
+    }
+td.event2day_rakuten      {
+    background-color: #B5DAFF !important;
+    }
+font.event2day_rakuten    {
+    color: #B5DAFF;
+    }
+td.event3day_rakuten      {
+    background-color: #FEDE93 !important;
+    }
+font.event3day_rakuten    {
+    color: #FEDE93;
+    }
+table.event_rakuten       {
+    text-align: left;
+    word-break: break-all;
+    margin: 7px 10px 7px 10px;
+    border-collapse: collapse;
+    line-height:120%;
+    table-layout: fixed;
+    width: 176px;
+	font-size:small;
+	
+    }
+table.event_rakuten td   {
+    padding: 3px 0px;
+    }
+table.text_rakuten       {
+    text-align: left;
+    word-break: break-all;
+    margin: 0px 10px 10px 10px;
+    border-collapse: collapse;
+    line-height:120%;
+    table-layout: fixed;
+    width: 176px;
+    }
+/*--バッグを探す--*/
+#bagsagasu {
+	width: 760px;
+	float: right;
+	margin-left: 40px;
+	position: relative;
+	top: 0px;
+	left: 0px;
+}
+#bagsagasu a img:hover{
+	opacity:0.8;
+}
+.takusnshorui {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+.takudares01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 394px;
+}
+.takudares02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 394px;
+}
+.takuata01 img {
+	width: 208px;
+	position: absolute;
+	left: 46px;
+	top: 674px;
+}
+.takuata02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 674px;
+}
+.smaahorui {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+.smabri01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 100px;
+}
+.smabri02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 100px;
+}
+.takusnshorui .shoruifile img {
+	position: absolute;
+	left: 79px;
+	top: 12px;
+}
+.takusnshorui .shoruibento img {
+	position: absolute;
+	left: 419px;
+	top: 12px;
+}
+#arekore {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+.ruck01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 266px;
+}
+.ruck02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 266px;
+}
+.should01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 552px;
+}
+.should02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 552px;
+}
+.bentosukkiri img {
+	position: absolute;
+	left: 446px;
+	top: 100px;
+}
+#bensmart {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+.bentote01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 115px;
+}
+.bentote02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 115px;
+}
+.benbody01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 408px;
+}
+.benbody02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 408px;
+}
+.leftnavi table tr td p {
+	text-align: left;
+	font-family: "メイリオ";
+	font-size: 13px;
+	font-weight: 500;
+	color: #494949;
+	margin: 0;
+	padding: 10px 5px;
+}
+.leftnavi .dramacoope p {
+	text-align: left;
+	font-family: "メイリオ";
+	font-size: 13px;
+	color: #494949;
+	margin: 0;
+	padding: 10px 2px;
+}
+#bagsagasu .erabikata img {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+#bagsagasu .erabikata .shiyou img {
+	position: absolute;
+	left: 288px;
+	top: 607px;
+}
+#sceneerabu {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+.3scenes {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+.busy img {
+	position: absolute;
+	left: 50px;
+	top: 420px;
+	width: 210px;
+}
+.priv img {
+	position: absolute;
+	left: 276px;
+	top: 420px;
+	width: 210px;
+}
+.cele img {
+	position: absolute;
+	left: 509px;
+	top: 420px;
+	width: 210px;
+}
+.scebusy {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+.scebri01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 105px;
+}
+.scebri02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 105px;
+}
+.scedare01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 385px;
+}
+.scedare02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 385px;
+}
+.scebc {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+.scetot01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 76px;
+}
+.scetot02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 76px;
+}
+.scegar01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 431px;
+}
+.scegar02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 431px;
+}
+.scefli01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 713px;
+}
+.scefli02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 713px;
+}
+.sceca {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+.scebod01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 274px;
+}
+.scebod02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 274px;
+}
+.scesho01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 661px;
+}
+.scesho02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 661px;
+}
+.scefor01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 84px;
+}
+.scefor02 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 84px;
+}
+#scefor{
+	position:relative;
+	left:0;
+	top:0;
+}
+#bagsagasu .erabikata .goyosan img {
+	position: absolute;
+	left: 520px;
+	top: 567px;
+}
+.yosans {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+.under01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 140px;
+}
+.under02 img {
+	width: 208px;
+	position: absolute;
+	left: 275px;
+	top: 140px;
+}
+.under03 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 140px;
+}
+.between01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 562px;
+}
+.between02 img {
+	width: 208px;
+	position: absolute;
+	left: 275px;
+	top: 562px;
+}
+.between03 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 562px;
+}
+.over01 img {
+	width: 208px;
+	position: absolute;
+	left: 47px;
+	top: 980px;
+}
+.over02 img {
+	width: 208px;
+	position: absolute;
+	left: 275px;
+	top: 980px;
+}
+.over03 img {
+	width: 208px;
+	position: absolute;
+	left: 503px;
+	top: 980px;
+}
+.mentecome {
+	text-align: left;
+}
+/* newpage base リニューアル　フォントサイズ小さい 2018/10/29 */
+ 
+#container .base03 p {
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-size: 25px;
+	text-align: left;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+	padding: 10px 50px 0px 20px;
+	margin: 0;
+}
+#container .base04 p {
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+	font-size: 20px;
+	text-align: left;
+	line-height: 1.5;
+	letter-spacing: 0.15em;
+	word-break: normal;
+	padding: 10px 65px 40px 20px;
+	margin: 0;
+}
+#middlefotter .aso_rcmd a img {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+/*toftsack*/
+.toftqual{	
+background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/toftsack_31.jpg")  no-repeat;
+}
+#toftqual{
+	background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/toftsack_31.jpg")  no-repeat;
+	width:640px;
+	height:158px;
+	display:block;
+	text-indent:-9999px;
+}
+.toftqual #toftqual:hover{
+	background:url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/toftsack_31_back.jpg")
+	}
+.toftfact{
+    background: url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/toftsack_35.jpg") no-repeat; /* ロールオーバー時のチラつき防止 */
+}
+#toftfact{
+	width:640px;
+	height:110px;
+    background: url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/toftsack_35.jpg") no-repeat;
+	display:block;
+	text-indent:-9999px;
+}
+.toftfact #toftfact:hover{
+    background-image: url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/toftsack_35_back.jpg");
+}
+.toftmedi{
+    background: url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/toftsack_media.jpg") no-repeat; /* ロールオーバー時のチラつき防止 */
+}
+#toftmedi{
+	width:640px;
+	height:110px;
+    background: url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/toftsack_media.jpg") no-repeat;
+	display:block;
+	text-indent:-9999px;
+}
+.toftmedi #toftmedi:hover{
+    background-image: url("https://image.rakuten.co.jp/asoboze/cabinet/bodybag/toftsack/toftsack_media_back.jpg");
+}
+
+
+/* 20181112更新分　*/
+#container .base05 {
+	margin: 0px 15px;
+	padding-top: 0px;
+}
+#container .base06 {
+	margin: 0px 15px;
+	padding-top: 0px;
+}
+
+.base06 p {
+	font-size: 14px;
+	color: #494949;
+	line-height: 1.5em;
+	letter-spacing: 0.1em;
+	font-family: "メイリオ";
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+#container .base05 p {
+	font-family: "メイリオ";
+	font-size: 20px;
+	color: #494949;
+	padding-top: 20px;
+	margin: 0;
+}
+#container .mida03 p {
+	font-family: "メイリオ", "Meiryo";
+	font-size: 20px;
+	text-align: left;
+	line-height: 1.5;
+	letter-spacing: 0.1em;
+	word-break: normal;
+	padding: 10px 65px 50px 30px;
+	margin: 0;
+	color: #494949;
+}
+#container .mida01 p{
+	padding: 5px 65px 10px 28px;
+	font-weight: normal;
+	line-height: 43px;
+	font-size: 32px;
+	font-family: "游明朝", "YuMincho" ,YuMincho;
+	margin: 0;
+}
+#container .mida02 p{
+	font-weight: 500;
+	padding: 10px 65px 20px 30px;
+	line-height: 28px;
+	font-size: 16px;
+	margin: 0;
+}
+.tokubox .cont-box_last a img:hover {
+	opacity:0.8;
+}
+
+/* 画像2つ横並び */
+
+.twobox {
+	width:760px;
+}
+
+.twobox01{
+	float:left;
+}
+
+
+
+/* 画像3つ横並び */
+
+.threebox {
+	width:760px;
+}
+
+.threebox01{
+	float:left;
+}
+
+/*メンズバッグカテゴリ*/
+.left_row {
+	float: left;
+	width: 360px;
+	margin: 0;
+	padding: 0;
+}
+.right_row {
+	float: right;
+	width: 360px;
+	margin: 0;
+	padding: 0;
+}
+.mensbag {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}

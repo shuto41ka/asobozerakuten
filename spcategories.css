@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#headerContents {
+width: 1024px;
+height: 200px; /* iframeの横幅が1024px時の高さを入力（※単位はpx） */
+}
+ 
+#itemImageSlider, .ctgTtl , .imageFlick {
+margin-top: calc(200 / 1024 * 100% + 10px); /* iframeの横幅が1024px時の高さを入力（※単位はつけない） */
+position: relative;
+}
+ 
+#itemImageSlider, #sCLContainer, #sCSLContainer, .ctgTtl , .imageFlick {
+z-index: 1000;
+position: relative;
+}
+ 
+@media screen and (max-width: 1023px) {
+#headerWrap {
+position: relative;
+width: 100%;
+padding-bottom: calc(200 / 1024 * 100%); /* iframeの横幅が1024px時の高さを入力（※単位はつけない） */
+}
+ 
+#autoheight {
+position: absolute;
+top: 8px;
+left: 0;
+width: 100%;
+height: 100%;
+}
+}
+ 
+#absoluteBox {
+position: absolute;
+top: 190px; /* トップからの距離を指定 デフォルトだとこのまま */
+left: 0;
+width: 100%;
+z-index: 0;
+}
