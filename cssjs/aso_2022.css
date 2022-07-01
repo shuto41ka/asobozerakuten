@@ -670,7 +670,7 @@ font-weight: 700;
         overflow: inherit;
     }
     #footer-aso div {
-        overflow: inherit;
+        overflow: visible;
     }
 	.footer_aso.effect.contentbutton {
 		display: grid;

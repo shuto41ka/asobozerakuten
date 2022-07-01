@@ -76,9 +76,7 @@ a img:hover {
     .contents_container img {
         width: 100%;
     }
-    #pcthreemenu2, #pcthreemenu3, #pcrightmenu, #pcrightmenu div, #footer_aso, #footer_aso div, #pagebody, #pagebody div {
-        overflow: inherit;
-    }
+
     .aso_pcleft {
         position: fixed;
         top: 0;
@@ -580,9 +578,7 @@ font-weight: 700;
     #footer-aso {
         overflow: inherit;
     }
-    #footer-aso div {
-        overflow: inherit;
-    }
+
     .category_aso {
         grid-column: 1 / 2;
         grid-row: 1;
