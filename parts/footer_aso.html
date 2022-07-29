@@ -252,6 +252,24 @@
 			</div>
 		</div>
 	</div>
+	<div class="officialsns_grids_text_wrap">
+		<div class="officialsns_grids_text">
+			各種SNSでasoの最新情報をチェック。<br>
+			公式LINEでは商品や配送に関するお問い合わせも受け付けております。
+		</div>
+	</div>
+</div>
+<div class="insta effect">
+<div class="insta_logo_text">
+<img src="https://image.rakuten.co.jp/asoboze/cabinet/index2020/insta_list_logo.jpg">
+<div class="insta_text">
+<a href="https://www.instagram.com/aso_update/" target="_blank">
+もっと見る
+</a>
+</div>
+</div>
+<ul class="insta_list"></ul>
+</div>
 	<div class="about_aso effect">
 		<div class="asomidashi_eng hop">
 			ABOUT&nbsp;aso
@@ -378,3 +396,24 @@
 	$("img.lazyload").lazyload();
 
 </script>
+<script>
+	(function ($) {
+	$.ajax({  // jQueryのajaxでjsonデータを取得
+	type: 'GET',
+	url: 'https://graph.facebook.com/v13.0/17841405414629837?access_token=EAAIyzoligjkBACrp7M5GV0crfm9b1Q6v7ONFfEeIiEe1acAAfqTQmPI3aQve7TINCyaZCCUt4isjdVzp46G9nXZBozH1H4nFRln5ZAegzeyQo8P7P7S6ZAScGhATlEPw0bQ4AHpFgQMkVYIDwWLdKkhGeQavskNoZCMA2KJTlSXcBCRns9Eln&fields=name,media{caption,like_count,media_url,permalink,timestamp,username}',
+	dataType: 'json',　
+	success: function (json) {
+	var insta = json.media.data;
+	for (var i = 0; i < 10; i++) {
+	let url = insta[i].media_url; // 動画ソースのURLを取得
+	let href = insta[i].permalink; // リンク先URLを取得
+	let caption = insta[i].caption; //　投稿のキャプションを取得
+	let like = insta[i].like_count; //　いいね！数の取得
+	if(url.indexOf('.mp4') <= 0){ // 動画は除外.mp4以外を<li>タグで描画します
+	$('.insta_list').append( <li>   <a href="${href}" target="aso_insta">     <img src="${url}" alt="${caption}">   </a> </li>              );
+	}
+	}
+	}
+	});
+	})(jQuery);
+	</script>
