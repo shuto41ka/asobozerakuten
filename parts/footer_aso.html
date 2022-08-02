@@ -447,22 +447,30 @@
 
 <script>
 
-	(function ($) {
-		$.ajax({  // jQueryのajaxでjsonデータを取得
-			type: 'GET',
-			url: 'https://graph.facebook.com/v13.0/17841405414629837?access_token=EAAIyzoligjkBAEkbCwCIqVG5uIouigbs9CqZCrYZBD18gYnWTOFs1tZCHc1BQZAlZC1sacaulrEQgCEgPMRdZBpk0TkJixz2SsojiTLrVF8N5APuu7ShH42vMpkbtEZA9EBVOTjZC0ZB4PiT2wabWgaiTEypaYm4im6R73rU57KY3ctMa7aeYaEv2O&fields=name,media{caption,like_count,media_url,permalink,timestamp,username}',
-			dataType: 'json',
-			success: function (json) {
-				var insta = json.media.data;
-				for (var i = 0; i < 10; i++) {
-					let url = insta[i].media_url; // 動画ソースのURLを取得
-					let href = insta[i].permalink; // リンク先URLを取得
-					let caption = insta[i].caption; //　投稿のキャプションを取得
-					let like = insta[i].like_count; //　いいね！数の取得
-					if (url.indexOf('.mp4') <= 0) { // 動画は除外.mp4以外を<li>タグで描画します
-						 $(".insta_list").append(`<li>  <a href="${href}" target="aso_insta">    <img src="${url}" alt="${caption}">  </a></li>`)};
-				};
-			},
-		});
-	})(jQuery);
+(function ($) {
+    $.ajax({  // jQueryのajaxでjsonデータを取得
+        type: 'GET',
+        url: 'https://graph.facebook.com/v13.0/17841405414629837?access_token=EAAIyzoligjkBAEkbCwCIqVG5uIouibs9CqZCrYZBD18gYnWTOFs1tZCHc1BQZAlZC1sacaulrEQgCEgPMRdZBpk0TkJixz2SsojiTLrVF8N5APuu7ShH42vMpkbtEZA9EBVOTjZC0ZB4PiT2wabWgaiTEypaYm4im6R73rU57KY3ctMa7aeYaEv2O&fields=name,media{caption,like_count,media_url,permalink,timestamp,username}',
+        dataType: 'json',　
+        success: function (json) {
+            var insta = json.media.data;
+            for (var i = 0; i < 10; i++) {
+              let url = insta[i].media_url; // 動画ソースのURLを取得
+              let href = insta[i].permalink; // リンク先URLを取得
+			  let caption = insta[i].caption; //　投稿のキャプションを取得
+              let like = insta[i].like_count; //　いいね！数の取得
+              if(url.indexOf('.mp4') <= 0){ // 動画は除外.mp4以外を<li>タグで描画します
+                $('.insta_list').append(` 
+<li>
+  <a href="${href}" target="aso_insta">
+    <img src="${url}" alt="${caption}">
+  </a>
+</li>
+              `);
+}
+            }
+        }
+    });
+})(jQuery);
+
 </script>
