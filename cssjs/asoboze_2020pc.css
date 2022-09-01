@@ -277,13 +277,7 @@ input[type="checkbox"]#input-pchumbmenu:checked + #pcmenu_aso {
         box-sizing: border-box;
         margin-top: 5vh;
     }
-    .pc4menu-grid {
-        display: inline-block;
-        width: 200px;
-        padding: 15px 5px 15px 15px;
-        box-sizing: border-box;
-        font-size: 0.8vw;
-    }
+
     .topthree a {
         display: inline-block;
         max-width: 95vh;
