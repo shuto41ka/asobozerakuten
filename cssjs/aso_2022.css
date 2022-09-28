@@ -2148,7 +2148,9 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
 display: inherit;
 }
 .asomidashi_eng span.sponly {
-    padding-top: 10px;    
+    padding-top: 10px;
+    width: max-content;
+    margin: auto;
 }
 div,p {
     margin: 0;
@@ -2518,8 +2520,8 @@ margin-top: 150px;
     text-align: center;
     font-weight: 700;
     font-size: 20px;
-    margin-top: 30px;
-    margin-bottom: 40px;
+    width: max-content;
+    margin: 30px auto 40px;
     line-height: 0.5em;
 }
 .category_aso .asomidashi_eng, .price_aso .asomidashi_eng {
@@ -2539,7 +2541,8 @@ margin-top: 150px;
 .asomidashi_jpn {
     text-align: center;
     font-size: 10.67px;
-    margin-bottom: 20px;
+    width: max-content;
+    margin: 0 auto 20px;
 }
 .cate_images {
     width: 95%;
