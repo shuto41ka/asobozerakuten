@@ -1725,6 +1725,10 @@ img[id*="large"]{
 	right:0;
 	background:rgba(255,255,255,0.75);
 }
+.gallerylinkfutoji{
+	font-weight: bold;
+	padding-top: 20px;
+}
 .reviewwrap .reviewtitle p {
 	padding-left:20px;
 	padding-top:10px;
