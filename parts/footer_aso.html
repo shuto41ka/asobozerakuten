@@ -305,7 +305,17 @@
 			</div>
 		</div>
 	</div>
-
+<div class="insta effect">
+    <div class="insta_logo_text">
+			<img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/insta_list_logo.jpg">
+        <div class="insta_text">
+        <a href="https://www.instagram.com/aso_update/">
+				もっと見る
+                </a>
+			</div>
+            </div>
+ <ul class="insta_list"></ul>
+</div>
 	<div class="about_aso effect">
 		<div class="asomidashi_eng hop">
 			ABOUT&nbsp;aso
@@ -441,7 +451,7 @@
 (function ($) {
     $.ajax({  // jQueryのajaxでjsonデータを取得
         type: 'GET',
-        url: 'EAAIyzoligjkBAB6YDvLUO9ZCObfsjy5MyweZC2iI6WqebkIaEZB2wOhNYf8voR84Ssfqqp2CMqKH4ZC4CK7Swgz6QFxTZAaz9UKwz4og4ovMQhQcApzn4iXDrOKouUFGmnfWadTHIapLHhL6ZAAvEnTiU6TyUGtGp286LldzmyjuXwPeTI4IDu&fields=name,media{caption,like_count,media_url,permalink,timestamp,username}',
+        url: ' https://graph.facebook.com/v13.0/17841405414629837?access_token=EAAIyzoligjkBAD194f5qTQURKrxY3CA2UU9QFTKckUoTb5XnWk5MjHM1aOJxvxe5Cz8ksZBxAemrpEcrwXLCtVcsCAzFx7Kx8kVYQlWaweQaulBT9m8cUeDOQ7agtbj5ZAVFzaeSf3pf59vqZCQ7lH43cKu2P7aljESu6ZCR5NYMVKZCJZBshZC&fields=name,media{caption,like_count,media_url,permalink,timestamp,username}',
         dataType: 'json',　
         success: function (json) {
             var insta = json.media.data;
