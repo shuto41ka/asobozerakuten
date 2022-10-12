@@ -2603,6 +2603,8 @@ margin:0px 50px;
     font-size: 10.67px;
     text-align: center;
     padding:0.5em 0 1em 0;
+    width: max-content;
+    margin: auto;
 }
 .price_aso {
     margin: 50px 0;
@@ -3073,9 +3075,11 @@ grid-template-columns: auto auto;
     width: 127px;
     height: 31px;
     line-height: 31px;
+    padding-left: 34px;
 }
 .about_aso .viewmore_button a {
     height: 27px;
+    line-height: 27px;
 }
 .viewmore_arrow {
     width: 25px;
