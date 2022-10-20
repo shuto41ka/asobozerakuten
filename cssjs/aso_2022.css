@@ -2097,6 +2097,7 @@ input[type="checkbox"]#brand_open ~ #brand_menu {
             display: inline-grid;
             grid-template-columns: 330px 330px 330px;
             grid-column-gap: 100px;
+            grid-row-gap: 100px;
             width: max-content;
             position: relative;
             left: 50%;
