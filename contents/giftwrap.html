@@ -51,7 +51,6 @@ $(function() {
     $("#pcIndexRight").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pcindex_rightmenu.html");
     $("#pc_toplinebanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_toplinebanner.html");    $("#pcleftbanner").load("https://www.rakuten.ne.jp/gold/asoboze/parts/pc_leftbanner.html");
 
-
     $("#spheader").load("https://www.rakuten.ne.jp/gold/asoboze/parts/header_aso.html");
     $("#footer-aso").load("https://www.rakuten.ne.jp/gold/asoboze/parts/footer_aso.html");
         $("#styles").load("https://www.rakuten.ne.jp/gold/asoboze/parts/othergallery.html");
@@ -62,103 +61,116 @@ $(function() {
 
 });
 </script>
+    <style>
+        @media and screen and (min-width: 1200px) {
+            .wraphalf {
+                display: -webkit-flex;
+                display: flex;
+                    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    height: auto;
+            }
+        }
+        @media and screen and (orientation: portrait) {
+            body {
+                overflow-x: hidden;
+            }
+        }
+    </style>
 </head>
-<body>
-            
-
-	<div id="pcIndexRight" class="pconly">
-	</div>
-	<div id="spheader" class="sponly spheader_aso">
-</div>
-
+    <body>
     <script>
-var menuHeight = 50;
-var startPos = 0;
-$(window).scroll(function(){
-  var currentPos = $(this).scrollTop();
-  if (currentPos > startPos && $("body").hasClass("fixing") == false) {
     if($(window).scrollTop() >= 200) {
       $(".spheader_aso").css("top", "-" + 50 + "px");
     }
-  } else {
+ else {
     $(".spheader_aso").css("top", 0 + "px");
   }
   startPos = currentPos;
-});  
-    </script>    <div style="width: 100%; height: 80px;" class="sponly">
+    </script>
+</p>
+    <div id="spheader" class="spheader_aso sponly"></div>
+        <div id="pcrightmenu" class="pconly"></div>
+        <div id="pc_toplinebanner" class="pconly"></div>
+<div id="pcleftbanner" class="pconly"></div>
+<span class="pconly"><img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_pc_01.jpg" alt="" width="100%" />
+<img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_pc_02.jpg" alt="" width="100%" />
+<img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_pc_03.jpg" alt="" width="100%" />
+<img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_pc_04.jpg" alt="" width="100%" />
+<img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_pc_05.jpg" alt="" width="100%" />
+<img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_pc_06.jpg" alt="" width="100%" />
+<img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_pc_07.jpg" alt="" width="100%" />
+<img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_pc_08.jpg" alt="" width="100%" />
+<img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_pc_09.jpg" alt="" width="100%" />
+<div class="clearbox pconly" style="height: 50px;"></div>
+<div class="aso_gallery">
+<a href="https://item.rakuten.co.jp/asoboze/c/0000000113/">
+<img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_pc_10.jpg" alt="" width="100%" />
+</a>
 </div>
-<div class="contents_container">
+<img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_11pc.jpg" alt="" width="100%" />
 
-<div class="pconly" id="pcleftbanner">
-  
-</div><div class="pconly" id="pcIndexRight"></div>
+</span>
+<div class="contents_container" id="spthreemenu1">
+
+    <div class="sponly" style="width: 100%;">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_01.jpg
+        " alt="">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_02.jpg
+        " alt="">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_03.jpg
+        " alt="">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_04.jpg
+        " alt="">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_05.jpg
+        " alt="">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_06.jpg
+        " alt="">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_07.jpg
+        " alt="">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_08.jpg
+        " alt="">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_09.jpg
+        " alt="">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_10.jpg
+        " alt="">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_11.jpg
+        " alt="">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_12.jpg
+        " alt="">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_13.jpg
+        " alt="">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_14.jpg
+        " alt="">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_15.jpg
+        " alt="">
+        <a href="https://item.rakuten.co.jp/asoboze/c/0000000113/">
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_sp_16.jpg
+        " alt="">
+        </a>
+        <img src="https://shopping.geocities.jp/asoboze/asobozeyahoo/newimg/giftwrapping_19sp.jpg
+        " alt="">
+        
+        
+        
+  </div><div class="clearbox pconly" style="height: 100px;"></div>
+  <div class="contents_container" id="spthreemenu1">
+
+    <br />
+<div class="shoukaigrid">
 
 
-<div style="width:auto; height:70px;" class="pconly"></div>
-
-	
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/giftwrap_01.jpg" alt="父の日やクリスマスギフトに合わせてラッピングいたします。" />
-    <br>
-    <br>
-    <br>
-<div class="catebase02">
-  <p>ギフトラッピングについて</p>
 </div>
-<div class="effect">
-<div class="catebase03"><p>asoではお誕生日をはじめ母の日や父の日、クリスマスといった記念日の贈り物にご利用いただけるようにラッピングサービスを行なっております。<br />
-  グレーを基調としたオリジナルラッピングは落ち着いた雰囲気を演出し、大切な方へのご贈答などにもお使いいただけます。</p>
-</div></div>
-<div class="effect">
-<div class="kakomi-box1">
-   <p>ラッピング料金 : １商品（1梱包）につき300円(税込) <br>
-    ※<br><br>
-    </p>
-
-  <p>　※商品の大きさに関わらず同料金で承ります。 </p>
-</div></div>
-<br /><br />
-<div class="effect">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/giftwrap_02.jpg" alt="革小物をギフトに贈る" /></div>
-<br /><br />
-<div class="effect">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/giftwrap_03.jpg" alt="ビジネスシーンに合うカバンのギフトを贈る" /></div>
-<br /><br /><br /><br />
-<div class="effect">
-<img src="https://image.rakuten.co.jp/asoboze/cabinet/pages/contents/giftwrap_04.jpg" alt="スタッフが丁寧にラッピングしております。" /></div>
-<br /><br /><br /><hr /><br /><br />
-<div class="effect">
-<div class="catebase02">
-  <p>ショッピングカートからご注文手続きにお進みください。</p>
-</div><br /><br />
 </div>
-	
-<script src="https://www.rakuten.ne.jp/gold/asoboze/swiper-bundle.min.js"></script>
-<script type="text/javascript">
-    var mySwiper = new Swiper ('.swiper-container', {
-      loop: true,
-      slidesPerView: 4,
-      spaceBetween: 10,
-	  autoplay: true,
-	  speed: 6000,
-      centeredSlides : true,
-      pagination: '.swiper-pagination',
-      nextButton: '.swiper-button-next',
-      prevButton: '.swiper-button-prev',
-	  preventClicks: false,
-	  preventClicksPropagation: false, 
-      breakpoints: {
-        759: {
-          slidesPerView: 3,
-          spaceBetween: 0,
-		  speed: 3000,
-		  autoplay: true,
-        }
-      }
-    });
-	</script>
+</div>
+
+<div class="clearbox pconly" style="height: 200px;"></div>
 
 
-	</div>
+
 <div id="footer-aso"></div>
- <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script> </body>
+
+</body>
 </html>
